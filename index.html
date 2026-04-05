@@ -3,132 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Notícias tecnológicas globais coletadas e traduzidas automaticamente para o português." />
-  <meta name="theme-color" content="#080b0f" />
-
-  <!-- Open Graph -->
-  <meta property="og:title"       content="Global Tech News AI" />
-  <meta property="og:description" content="Notícias tecnológicas globais traduzidas automaticamente" />
-  <meta property="og:type"        content="website" />
-
-  <title>Global Tech News AI</title>
-
+  <meta name="description" content="Ayorai — Notícias tecnológicas globais e portfólio de projetos." />
+  <title>Ayorai</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon inline SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
 </head>
-
 <body>
 
-  <!-- ── Header ──────────────────────────────────────────── -->
-  <header>
-    <div class="header-inner">
-
-      <a class="logo" href="/">
-        <span class="logo-title">Global Tech News <span>AI</span></span>
-        <span class="logo-sub">Notícias tecnológicas globais automatizadas</span>
-      </a>
-
-      <div class="header-meta">
-        <span class="update-badge">
-          <span class="dot"></span>
-          Atualizado: <span id="lastUpdate">—</span>
-        </span>
-      </div>
-
-    </div>
-  </header>
-
-  <!-- ── Hero ────────────────────────────────────────────── -->
-  <section class="hero">
-    <div class="hero-kicker">// RSS · Tradução automática · Open Source</div>
-    <h1>Tecnologia global.<br><em>Em português.</em></h1>
-    <p class="hero-desc">
-      Notícias de TechCrunch, Wired, Xataka, Canaltech e mais —
-      coletadas a cada hora, traduzidas automaticamente e organizadas para você.
-    </p>
-  </section>
-
-  <!-- ── Stats Bar ────────────────────────────────────────── -->
-  <div class="stats-bar">
-    <div class="stat">
-      <span class="stat-value" id="statTotal">—</span>
-      <span>notícias coletadas</span>
-    </div>
-    <div class="stat">
-      <span class="stat-value" id="statFiltered">—</span>
-      <span>exibidas</span>
-    </div>
-    <div class="stat">
-      <span class="stat-value">10+</span>
-      <span>fontes globais</span>
-    </div>
-    <div class="stat">
-      <span class="stat-value">5</span>
-      <span>idiomas</span>
-    </div>
-  </div>
-
-  <!-- ── Controls ─────────────────────────────────────────── -->
-  <div class="controls">
-
-    <!-- Search -->
-    <div class="search-wrap">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+<!-- ── TOPBAR ─────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle" id="sidebarToggle" title="Portfólio">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+        <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
       </svg>
-      <input
-        type="search"
-        id="searchInput"
-        placeholder="Buscar notícias…"
-        autocomplete="off"
-        spellcheck="false"
-      />
-    </div>
-
-    <!-- Filters + Sort -->
-    <div style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:center;">
-
-      <div class="filters">
-        <span class="filter-label">Filtrar:</span>
-        <div id="filterBtns" style="display:flex; gap:.5rem; flex-wrap:wrap;"></div>
-      </div>
-
-      <div class="sort-wrap">
-        <label class="sort-label" for="sortSelect">Ordenar:</label>
-        <select id="sortSelect">
-          <option value="newest">Mais recentes</option>
-          <option value="oldest">Mais antigas</option>
-        </select>
-      </div>
-
-    </div>
-
+    </button>
+    <a class="topbar-logo" href="#">Ayorai<span>Tech</span></a>
   </div>
 
-  <!-- ── News Grid ─────────────────────────────────────────── -->
-  <main id="newsGrid" aria-label="Feed de notícias">
-    <!-- Preenchido por script.js -->
-  </main>
+  <nav class="topbar-nav">
+    <a href="#recentes" class="tlink active">Recentes</a>
+    <a href="#semana"   class="tlink">Top Semana</a>
+  </nav>
 
-  <!-- ── Footer ───────────────────────────────────────────── -->
-  <footer>
-    <div class="footer-inner">
-      <p class="footer-text">
-        Atualizado automaticamente via
-        <a href="https://github.com/features/actions" target="_blank" rel="noopener">GitHub Actions</a>
-        · Hospedado no
-        <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
-        · Última coleta: <span id="updateTimestamp">—</span>
-      </p>
-      <p class="footer-text" style="opacity:.5">
-        Conteúdo pertence às respectivas fontes originais. Este site é um agregador sem fins comerciais.
-      </p>
+  <div class="topbar-right">
+    <div class="search-box">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input id="searchInput" type="search"
+             placeholder="Buscar notícias…"
+             autocomplete="off" spellcheck="false" />
     </div>
-  </footer>
+    <div class="live-pill">
+      <span class="live-dot"></span> ao vivo
+    </div>
+  </div>
+</header>
 
-  <script src="script.js"></script>
+<!-- ── LAYOUT PRINCIPAL ───────────────────────────────────── -->
+<div class="layout" id="layout">
+
+  <!-- ── SIDEBAR: PORTFÓLIO ─────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="sidebar-logo">
+        <span class="sidebar-logo-icon">🚀</span>
+        <div>
+          <div class="sidebar-name">Ayorai</div>
+          <div class="sidebar-tagline">Projetos & Estudos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="sidebar-tabs">
+      <button class="stab active" data-tab="projetos">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+        Projetos
+      </button>
+      <button class="stab" data-tab="estudos">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        Estudos
+      </button>
+    </div>
+
+    <!-- Lista de projetos/estudos -->
+    <div class="sidebar-list" id="sidebarList">
+      <div class="sidebar-loading">
+        <div class="mini-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Rodapé da sidebar -->
+    <div class="sidebar-footer">
+      <a href="https://github.com/Ayorinha" target="_blank"
+         rel="noopener" class="github-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        Ver GitHub
+      </a>
+    </div>
+  </aside>
+
+  <!-- ── CONTEÚDO PRINCIPAL ─────────────────────────────── -->
+  <main class="main-content">
+
+    <!-- Filtros de idioma -->
+    <div class="filter-bar">
+      <div id="filterBtns" class="filter-group"></div>
+      <select id="sortSelect" class="sort-sel">
+        <option value="newest">Mais recentes</option>
+        <option value="oldest">Mais antigas</option>
+      </select>
+    </div>
+
+    <!-- ── TOP DA SEMANA ─────────────────────────────── -->
+    <section id="semana" class="news-section">
+      <h1 class="sec-title">MELHORES DA SEMANA</h1>
+      <p class="sec-sub">Notícias de tecnologia com destaque nos últimos dias</p>
+      <div id="weekGrid" class="week-grid"></div>
+    </section>
+
+    <!-- ── NOTÍCIAS RECENTES ──────────────────────────── -->
+    <section id="recentes" class="news-section">
+      <div class="sec-header-row">
+        <div>
+          <h1 class="sec-title">NOTÍCIAS RECENTES</h1>
+          <p class="sec-sub">
+            <strong>As melhores notícias de tecnologia das últimas 24 horas</strong>,
+            resumidas e ordenadas.
+          </p>
+        </div>
+        <span class="sec-date" id="todayDate"></span>
+      </div>
+      <div id="newsList" class="news-list"></div>
+    </section>
+
+  </main>
+</div><!-- /layout -->
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer class="footer">
+  <span>Ayorai Tech News · Atualizado automaticamente via GitHub Actions</span>
+  <span>Conteúdo pertence às respectivas fontes originais</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
