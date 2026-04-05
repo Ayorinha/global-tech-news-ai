@@ -1,1 +1,48 @@
+name: Atualizar Noticias
 
+on:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  fetch-and-deploy:
+    name: Coletar Noticias e Publicar
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: pip install feedparser requests deep-translator
+
+      - name: Coletar e traduzir noticias
+        run: python scripts/fetch_news.py
+
+      - name: Commitar e publicar news.json
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add data/news.json
+          if git diff --staged --quiet; then
+            echo "Nenhuma mudanca para commitar."
+          else
+            git commit -m "chore: atualizar noticias $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push origin HEAD:main
+          fi
