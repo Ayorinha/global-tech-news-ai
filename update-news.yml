@@ -1,0 +1,58 @@
+name: 🔄 Atualizar Notícias
+
+on:
+  # Executa a cada hora no minuto 0
+  schedule:
+    - cron: "0 * * * *"
+
+  # Executa também em cada push ao repositório
+  push:
+    branches:
+      - main
+      - master
+
+  # Permite execução manual pelo painel do GitHub
+  workflow_dispatch:
+
+jobs:
+  fetch-and-deploy:
+    name: Coletar Notícias e Publicar
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # necessário para o git push
+
+    steps:
+      # ── 1. Checkout do repositório ──────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ── 2. Configurar Python ─────────────────────────────────────────
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # ── 3. Instalar dependências ─────────────────────────────────────
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      # ── 4. Executar script de coleta ─────────────────────────────────
+      - name: Coletar e traduzir notícias
+        run: python scripts/fetch_news.py
+
+      # ── 5. Commitar o JSON atualizado ────────────────────────────────
+      - name: Commitar news.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name  "github-actions[bot]"
+          git add data/news.json
+          git diff --staged --quiet || git commit -m "chore: atualizar notícias $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+      # ── 6. Enviar para o repositório ─────────────────────────────────
+      - name: Push
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

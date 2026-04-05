@@ -1,19 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tech News AI</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Notícias tecnológicas globais coletadas e traduzidas automaticamente para o português." />
+  <meta name="theme-color" content="#080b0f" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Global Tech News AI" />
+  <meta property="og:description" content="Notícias tecnológicas globais traduzidas automaticamente" />
+  <meta property="og:type"        content="website" />
+
+  <title>Global Tech News AI</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
 </head>
+
 <body>
-    <header>
-        <h1>Global Tech News AI</h1>
-        <p>Últimas atualizações de tecnologia e IA</p>
-    </header>
-    <main id="news-container">
-        <p>Carregando notícias...</p>
-    </main>
-    <script src="script.js"></script>
+
+  <!-- ── Header ──────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+
+      <a class="logo" href="/">
+        <span class="logo-title">Global Tech News <span>AI</span></span>
+        <span class="logo-sub">Notícias tecnológicas globais automatizadas</span>
+      </a>
+
+      <div class="header-meta">
+        <span class="update-badge">
+          <span class="dot"></span>
+          Atualizado: <span id="lastUpdate">—</span>
+        </span>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── Hero ────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-kicker">// RSS · Tradução automática · Open Source</div>
+    <h1>Tecnologia global.<br><em>Em português.</em></h1>
+    <p class="hero-desc">
+      Notícias de TechCrunch, Wired, Xataka, Canaltech e mais —
+      coletadas a cada hora, traduzidas automaticamente e organizadas para você.
+    </p>
+  </section>
+
+  <!-- ── Stats Bar ────────────────────────────────────────── -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-value" id="statTotal">—</span>
+      <span>notícias coletadas</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="statFiltered">—</span>
+      <span>exibidas</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">10+</span>
+      <span>fontes globais</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">5</span>
+      <span>idiomas</span>
+    </div>
+  </div>
+
+  <!-- ── Controls ─────────────────────────────────────────── -->
+  <div class="controls">
+
+    <!-- Search -->
+    <div class="search-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Buscar notícias…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+
+    <!-- Filters + Sort -->
+    <div style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:center;">
+
+      <div class="filters">
+        <span class="filter-label">Filtrar:</span>
+        <div id="filterBtns" style="display:flex; gap:.5rem; flex-wrap:wrap;"></div>
+      </div>
+
+      <div class="sort-wrap">
+        <label class="sort-label" for="sortSelect">Ordenar:</label>
+        <select id="sortSelect">
+          <option value="newest">Mais recentes</option>
+          <option value="oldest">Mais antigas</option>
+        </select>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ── News Grid ─────────────────────────────────────────── -->
+  <main id="newsGrid" aria-label="Feed de notícias">
+    <!-- Preenchido por script.js -->
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-text">
+        Atualizado automaticamente via
+        <a href="https://github.com/features/actions" target="_blank" rel="noopener">GitHub Actions</a>
+        · Hospedado no
+        <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+        · Última coleta: <span id="updateTimestamp">—</span>
+      </p>
+      <p class="footer-text" style="opacity:.5">
+        Conteúdo pertence às respectivas fontes originais. Este site é um agregador sem fins comerciais.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
