@@ -1,58 +1,59 @@
-name: 🔄 Atualizar Notícias
+name: Atualizar Noticias
 
 on:
-  # Executa a cada hora no minuto 0
   schedule:
     - cron: "0 * * * *"
-
-  # Executa também em cada push ao repositório
   push:
     branches:
       - main
       - master
-
-  # Permite execução manual pelo painel do GitHub
   workflow_dispatch:
 
 jobs:
-  fetch-and-deploy:
-    name: Coletar Notícias e Publicar
+  fetch:
+    name: Coletar Noticias e Publicar
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # necessário para o git push
+      contents: write
 
     steps:
-      # ── 1. Checkout do repositório ──────────────────────────────────
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── 2. Configurar Python ─────────────────────────────────────────
-      - name: Configurar Python 3.11
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
-      # ── 3. Instalar dependências ─────────────────────────────────────
-      - name: Instalar dependências
-        run: pip install -r requirements.txt
-
-      # ── 4. Executar script de coleta ─────────────────────────────────
-      - name: Coletar e traduzir notícias
-        run: python scripts/fetch_news.py
-
-      # ── 5. Commitar o JSON atualizado ────────────────────────────────
-      - name: Commitar news.json
+      - name: Instalar pacotes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name  "github-actions[bot]"
-          git add data/news.json
-          git diff --staged --quiet || git commit -m "chore: atualizar notícias $(date -u +'%Y-%m-%d %H:%M UTC')"
+          pip install feedparser requests deep-translator
+          echo "Pacotes instalados com sucesso"
+          python -c "import feedparser, requests; from deep_translator import GoogleTranslator; print('Imports OK')"
 
-      # ── 6. Enviar para o repositório ─────────────────────────────────
-      - name: Push
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+      - name: Executar script
+        run: |
+          echo "Iniciando coleta..."
+          python scripts/fetch_news.py
+          echo "Script finalizado"
+          echo "Linhas no news.json:"
+          wc -l data/news.json
+          echo "Primeiros 200 chars do news.json:"
+          head -c 200 data/news.json
+
+      - name: Commitar e enviar news.json
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin main --rebase
+          git add data/news.json
+          if git diff --staged --quiet; then
+            echo "news.json nao mudou, nada para commitar"
+          else
+            git commit -m "chore: noticias atualizadas $(date -u +'%Y-%m-%d %H:%M')"
+            git push origin main
+            echo "Push realizado com sucesso!"
+          fi
