@@ -1,9 +1,11 @@
 /**
  * script.js — Global Tech News AI
+ * Lê ./data/news.json, renderiza cards e gerencia filtros/busca.
  */
 
 "use strict";
 
+// ── Estado global ────────────────────────────────────────────
 const state = {
   articles: [],
   activeFilter: "all",
@@ -11,86 +13,93 @@ const state = {
   sortOrder: "newest",
 };
 
+// ── Mapeamento de idiomas ────────────────────────────────────
 const LANG_MAP = {
-  en: { label: "Inglês", flag: "🇺🇸" },
-  es: { label: "Espanhol", flag: "🇪🇸" },
-  pt: { label: "Português", flag: "🇧🇷" },
-  zh: { label: "Chinês", flag: "🇨🇳" },
-  hi: { label: "Índia", flag: "🇮🇳" },
+  en:  { label: "Inglês",    flag: "🇺🇸" },
+  es:  { label: "Espanhol",  flag: "🇪🇸" },
+  pt:  { label: "Português", flag: "🇧🇷" },
+  zh:  { label: "Chinês",    flag: "🇨🇳" },
+  hi:  { label: "Índia",     flag: "🇮🇳" },
 };
 
-const $grid = document.getElementById("newsGrid");
-const $search = document.getElementById("searchInput");
-const $sort = document.getElementById("sortSelect");
-const $filters = document.getElementById("filterBtns");
-const $total = document.getElementById("statTotal");
-const $filtered = document.getElementById("statFiltered");
-const $updateTs = document.getElementById("updateTimestamp");
+// ── Refs DOM ─────────────────────────────────────────────────
+const $grid      = document.getElementById("newsGrid");
+const $search    = document.getElementById("searchInput");
+const $sort      = document.getElementById("sortSelect");
+const $filters   = document.getElementById("filterBtns");
+const $total     = document.getElementById("statTotal");
+const $filtered  = document.getElementById("statFiltered");
+const $updateTs  = document.getElementById("updateTimestamp");
 
+// ── Utilitários ──────────────────────────────────────────────
 function escapeHtml(str = "") {
-  return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 function formatDate(iso) {
   try {
     return new Date(iso).toLocaleString("pt-BR", {
-      day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit",
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
     });
   } catch { return iso; }
 }
 
-async function loadNews() {
-  try {
-    // O SEGREDO ESTÁ AQUI: O ponto antes da barra ajuda o GitHub Pages
-    const res = await fetch("./data/news.json");
-    if (!res.ok) throw new Error(`Erro: ${res.status}`);
-
-    const data = await res.json();
-    state.articles = Array.isArray(data) ? data : [];
-
-    if ($total) $total.textContent = state.articles.length;
-    if ($updateTs && state.articles.length > 0) {
-        $updateTs.textContent = formatDate(state.articles[0].published);
-    }
-
-    buildFilterButtons();
-    renderCards();
-  } catch (err) {
-    console.error("Erro:", err);
-    $grid.innerHTML = `<div class="empty-state"><h3>⚠️ Erro ao carregar dados</h3><p>Verifique o arquivo data/news.json</p></div>`;
-  }
+function debounce(fn, ms) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), ms);
+  };
 }
 
+// ── Lógica de Renderização ───────────────────────────────────
 function renderCards() {
-  const q = state.searchQuery.toLowerCase();
+  const q = state.searchQuery.toLowerCase().trim();
+  
   let filtered = state.articles.filter(a => {
     const langOk = state.activeFilter === "all" || a.language === state.activeFilter;
-    const searchOk = a.title_pt.toLowerCase().includes(q) || a.description_pt.toLowerCase().includes(q);
-    return langOk && searchOk;
+    const textOk = a.title_pt.toLowerCase().includes(q) || a.description_pt.toLowerCase().includes(q);
+    return langOk && textOk;
   });
 
-  if (state.sortOrder === "newest") {
-    filtered.sort((a, b) => new Date(b.published) - new Date(a.published));
-  } else {
-    filtered.sort((a, b) => new Date(a.published) - new Date(b.published));
-  }
+  filtered.sort((a, b) => {
+    const da = new Date(a.published).getTime();
+    const db = new Date(b.published).getTime();
+    return state.sortOrder === "newest" ? db - da : da - db;
+  });
 
   if ($filtered) $filtered.textContent = filtered.length;
 
-  $grid.innerHTML = filtered.map(a => `
-    <article class="card">
-      <div class="card-meta">
-        <span>${escapeHtml(a.source)}</span>
-        <span>${LANG_MAP[a.language]?.flag || ""} ${a.language.toUpperCase()}</span>
-      </div>
-      <h2 class="card-title">${escapeHtml(a.title_pt)}</h2>
-      <p class="card-desc">${escapeHtml(a.description_pt)}</p>
-      <div class="card-footer">
-        <time>${formatDate(a.published)}</time>
-        <a href="${a.link}" target="_blank" class="card-link">Ler original ↗</a>
-      </div>
-    </article>
-  `).join("");
+  if (filtered.length === 0) {
+    $grid.innerHTML = `<div class="empty-state"><h3>Nenhuma notícia encontrada</h3><p>Tente outro filtro ou busca.</p></div>`;
+    return;
+  }
+
+  $grid.innerHTML = filtered.map(a => {
+    const info = LANG_MAP[a.language] || { label: a.language, flag: "🌐" };
+    return `
+      <article class="card" data-lang="${a.language}">
+        <div class="card-meta">
+          <span class="card-source">${escapeHtml(a.source)}</span>
+          <span class="card-lang">${info.flag} ${info.label}</span>
+        </div>
+        <h2 class="card-title">${escapeHtml(a.title_pt)}</h2>
+        <p class="card-desc">${escapeHtml(a.description_pt)}</p>
+        <div class="card-footer">
+          <time>🕐 ${formatDate(a.published)}</time>
+          <a href="${a.link}" target="_blank" rel="noopener" class="card-link">Ler original ↗</a>
+        </div>
+      </article>`;
+  }).join("");
 }
 
 function buildFilterButtons() {
@@ -110,14 +119,38 @@ function buildFilterButtons() {
   });
 }
 
-$search.addEventListener("input", (e) => {
+// ── Carregamento Inicial ─────────────────────────────────────
+async function loadNews() {
+  try {
+    // AJUSTE REALIZADO AQUI PARA GITHUB PAGES:
+    const res = await fetch("./data/news.json");
+    if (!res.ok) throw new Error(`Erro HTTP: ${res.status}`);
+
+    const data = await res.json();
+    state.articles = Array.isArray(data) ? data : [];
+
+    if ($total) $total.textContent = state.articles.length;
+    if ($updateTs && state.articles.length > 0) {
+      $updateTs.textContent = formatDate(state.articles[0].published);
+    }
+
+    buildFilterButtons();
+    renderCards();
+  } catch (err) {
+    console.error("Erro ao carregar notícias:", err);
+    $grid.innerHTML = `<div class="empty-state"><h3>⚠️ Erro ao carregar notícias</h3><p>Verifique se o arquivo news.json foi gerado.</p></div>`;
+  }
+}
+
+// ── Listeners ────────────────────────────────────────────────
+$search.addEventListener("input", debounce(e => {
   state.searchQuery = e.target.value;
   renderCards();
-});
+}, 250));
 
-$sort.addEventListener("change", (e) => {
+$sort.addEventListener("change", e => {
   state.sortOrder = e.target.value;
   renderCards();
 });
 
-loadNews();
+document.addEventListener("DOMContentLoaded", loadNews);
