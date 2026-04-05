@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "category": "projeto",
+    "title": "Ayorai Tech News",
+    "description": "Site automatizado de notícias tecnológicas globais com tradução para português e atualização via GitHub Actions.",
+    "link": "https://ayorinha.github.io/global-tech-news-ai/",
+    "repo": "https://github.com/Ayorinha/global-tech-news-ai",
+    "tags": ["Python", "GitHub Actions", "RSS", "JavaScript"],
+    "status": "ativo",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "category": "estudo",
+    "title": "Python para Automação",
+    "description": "Estudos sobre automação de tarefas com Python: web scraping, APIs e scripts de produtividade.",
+    "link": "",
+    "repo": "",
+    "tags": ["Python", "Automação", "APIs"],
+    "status": "em andamento",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "category": "estudo",
+    "title": "GitHub Actions & CI/CD",
+    "description": "Aprendendo a criar workflows automatizados com GitHub Actions para deploy e execução de scripts.",
+    "link": "",
+    "repo": "",
+    "tags": ["GitHub Actions", "YAML", "DevOps"],
+    "status": "em andamento",
+    "image": ""
+  }
+]
