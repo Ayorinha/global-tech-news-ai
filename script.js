@@ -299,6 +299,10 @@ document.querySelectorAll(".stab").forEach(function(btn){
 });
 
 document.addEventListener("DOMContentLoaded",function(){
+  // No mobile, começa com sidebar fechada
+  if(window.innerWidth <= 768){
+    $layout.classList.add("sidebar-closed");
+  }
   loadNews();
   loadProjects();
 });
