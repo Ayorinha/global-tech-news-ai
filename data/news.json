@@ -1,5 +1,368 @@
 [
   {
+    "title_original": "Sanctioned Chinese AI Firm SenseTime Releases Image Model Built for Speed",
+    "title_pt": "SenseTime, empresa chinesa de IA sancionada, lança modelo de imagem desenvolvido para velocidade",
+    "description_original": "With US restrictions limiting its access to advanced tech, SenseTime is doubling down on open source with a new model optimized to run on Chinese-made chips.",
+    "description_pt": "Com as restrições dos EUA limitando seu acesso à tecnologia avançada, a SenseTime está apostando no código aberto com um novo modelo otimizado para rodar em chips fabricados na China.",
+    "link": "https://www.wired.com/story/chinese-ai-giant-sensetime-is-running-its-new-model-on-chinese-chips/",
+    "published": "2026-04-29T17:23:52+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/69f11e18364b858d165e91bf/master/pass/SenseTime-AI-Models-Chinese-Chips-Business-2154581485.jpg"
+  },
+  {
+    "title_original": "Teoria da internet morta ganha força com boom de sites feitos por IA",
+    "title_pt": "Teoria da internet morta ganha força com boom de sites feitos por IA",
+    "description_original": "Uma das principais afirmações relacionadas à teoria da internet morta é a de que a produção de conteúdos na internet passou a ser dominada por bots de inteligência artificial (IA) . Agora, um estudo intitulado \"The Impact of AI-Generated Text on the Internet\" (\"O impacto do texto gerado por IA na Internet\", em tradução livre) traz dados que podem corroborar essa hipótese. Era do .ai: a internet mudou de 'sobrenome' com a inteligência artificial? Vibe coding: 3 ferramentas para você criar apps e sites com IA Estudiosos do Imperial College London, da Universidade de Stanford e do Internet Archiv",
+    "description_pt": "Uma das principais afirmações relacionadas à teoria da internet morta é a de que a produção de conteúdos na internet passou a ser dominada por bots de inteligência artificial (IA) . Agora, um estudo intitulado \"The Impact of AI-Generated Text on the Internet\" (\"O impacto do texto gerado por IA na Internet\", em tradução livre) traz dados que podem corroborar essa hipótese. Era do .ai: a internet mudou de 'sobrenome' com a inteligência artificial? Vibe coding: 3 ferramentas para você criar apps e sites com IA Estudiosos do Imperial College London, da Universidade de Stanford e do Internet Archiv",
+    "link": "https://canaltech.com.br/inteligencia-artificial/teoria-da-internet-morta-ganha-forca-com-boom-de-sites-feitos-por-ia/",
+    "published": "2026-04-29T17:09:09+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/wCSR429fG5NLE6g46Y3IsRvEjvg=/700x394/smart/i1100989.jpeg"
+  },
+  {
+    "title_original": "别急着All-in DeepSeek V4，先看看这10位从业者的真心话",
+    "title_pt": "别急着All-in DeepSeek V4，先看看这10位从业者的真心话",
+    "description_original": "文｜周鑫雨 王毓婵 编辑｜杨轩 解读DeepSeek V4的技术报告，是这几天AI行业最狂热的集体活动。 V4很强吗？在工程优化的维度中，答案是毋庸置疑的。过去，大家信奉“Scaling Law的暴力美学”——也就是靠堆更多优质算力、更大参数规模来提升模型性能。而V4走的是一条完全不同的路，它定义了一种“模型训练的克制美学”： 它不靠疯狂堆算力和参数，而是通过一系列组合优化和重构： 注意力机制 （让模型学会“抓重点”，像人读长文章时会自动关注关键句子一样） MoE架构（混合专家模型，可以理解为“让不同的专家负责不同类型的问题，每次只激活少数专家，省时又省力”） 后训练 （模型初步练成后再针对性地补课强化） 推理系统工程 （优化实际运行时各个环节的效率） 这样做的成果是把V4-Pro在处理百万Token（大约几十万字）长上下文时需要的算力，压低到了上一代V3.2的27%，同时用来临时存储对话上下文的 KV缓存 （可以理解为模型在跟你聊天时“记笔记”的草稿纸）被压缩到了原来的10%。 不过，工程只是工程，榜单只是榜单。 评价一个模型，我们不希望只停留在纸面参数上，而是放到部署、开发、投资的真实场景中去讨论V4的价值。为此，我们邀请了近10名开发者、应用创业者和投资人，进行了三天左右的体验和测试。 先说一个反直觉的结论：DeepSeek对应用层带来的影响，或许比模型层更大。 在惊叹极致的",
+    "description_pt": "文｜周鑫雨 王毓婵 编辑｜杨轩 解读DeepSeek V4的技术报告，是这几天AI行业最狂热的集体活动。 V4很强吗？在工程优化的维度中，答案是毋庸置疑的。过去，大家信奉“Scaling Law的暴力美学”——也就是靠堆更多优质算力、更大参数规模来提升模型性能。而V4走的是一条完全不同的路，它定义了一种“模型训练的克制美学”： 它不靠疯狂堆算力和参数，而是通过一系列组合优化和重构： 注意力机制 （让模型学会“抓重点”，像人读长文章时会自动关注关键句子一样） MoE架构（混合专家模型，可以理解为“让不同的专家负责不同类型的问题，每次只激活少数专家，省时又省力”） 后训练 （模型初步练成后再针对性地补课强化） 推理系统工程 （优化实际运行时各个环节的效率） 这样做的成果是把V4-Pro在处理百万Token（大约几十万字）长上下文时需要的算力，压低到了上一代V3.2的27%，同时用来临时存储对话上下文的 KV缓存 （可以理解为模型在跟你聊天时“记笔记”的草稿纸）被压缩到了原来的10%。 不过，工程只是工程，榜单只是榜单。 评价一个模型，我们不希望只停留在纸面参数上，而是放到部署、开发、投资的真实场景中去讨论V4的价值。为此，我们邀请了近10名开发者、应用创业者和投资人，进行了三天左右的体验和测试。 先说一个反直觉的结论：DeepSeek对应用层带来的影响，或许比模型层更大。 在惊叹极致的",
+    "link": "https://36kr.com/p/3788151000751364?f=rss",
+    "published": "2026-04-29T17:07:22+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260430/v2_f323208e3d7f405883a280e4a85c355c@5783683_oswg513782oswg1080oswg627_img_000?x-oss-process=image/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "Edge 70 Pro é o smartphone premium da Motorola logo abaixo do Signature",
+    "title_pt": "Edge 70 Pro é o smartphone premium da Motorola logo abaixo do Signature",
+    "description_original": "Lançamento reúne especificações técnicas interessantes, mas não desbanca topo de linha apresentado no início do ano Edge 70 Pro é o smartphone premium da Motorola logo abaixo do Signature",
+    "description_pt": "Lançamento reúne especificações técnicas interessantes, mas não desbanca topo de linha apresentado no início do ano Edge 70 Pro é o smartphone premium da Motorola logo abaixo do Signature",
+    "link": "https://tecnoblog.net/noticias/edge-70-pro-e-o-smartphone-premium-da-motorola-logo-abaixo-do-signature/",
+    "published": "2026-04-29T17:04:49+00:00",
+    "source": "Tecnoblog",
+    "language": "pt",
+    "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/edge-70-pro.png"
+  },
+  {
+    "title_original": "Preço do iPhone pode disparar em 2027; entenda desdobramento da crise",
+    "title_pt": "Preço do iPhone pode disparar em 2027; entenda desdobramento da crise",
+    "description_original": "Nesta quarta (29), novos relatórios indicam que o preço do iPhone pode disparar até 2027 , impulsionado por uma forte alta no custo de memória. Segundo análises da empresa JPMorgan, esse tipo de componente pode saltar de cerca de 10% para até 45% do custo total de fabricação de um iPhone nos próximos anos. iPhone agora é \"compatível\" com cartão de memória usando capinha exótica iPhone de 128 GB é suficiente? Descubra se vale investir em mais memória O principal fator por trás dessa possível alta é a corrida global por infraestrutura de inteligência artificial. Empresas de tecnologia estão inve",
+    "description_pt": "Nesta quarta (29), novos relatórios indicam que o preço do iPhone pode disparar até 2027 , impulsionado por uma forte alta no custo de memória. Segundo análises da empresa JPMorgan, esse tipo de componente pode saltar de cerca de 10% para até 45% do custo total de fabricação de um iPhone nos próximos anos. iPhone agora é \"compatível\" com cartão de memória usando capinha exótica iPhone de 128 GB é suficiente? Descubra se vale investir em mais memória O principal fator por trás dessa possível alta é a corrida global por infraestrutura de inteligência artificial. Empresas de tecnologia estão inve",
+    "link": "https://canaltech.com.br/smartphone/preco-do-iphone-pode-disparar-em-2027-entenda-desdobramento-da-crise/",
+    "published": "2026-04-29T17:02:55+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/9VSm4iykOGuJjADpTAW5-smQkMQ=/700x394/smart/i1058425.jpeg"
+  },
+  {
+    "title_original": "Windows 11 lento? 5 dicas para deixar o PC mais rápido hoje",
+    "title_pt": "Windows 11 lento? 5 dicas para deixar o PC mais rápido hoje",
+    "description_original": "Alguns procedimentos ajudam a resolver episódios de lentidão do Windows 11 sem a necessidade de aumentar a RAM e fazer outras melhorias no computador às pressas. Entre os caminhos, está a remoção de programas sem uso e até a atualização do sistema para otimizá-lo e solucionar falhas. Windows 11 26H2 surge em nova versão de testes; saiba o que esperar Microsoft resolve dor de cabeça comum na instalação do Windows 11 5 truques para deixar o Windows 11 mais rápido A seguir, veja cinco dicas para deixar o seu computador mais rápido: 1. Desinstalar programas sem uso Mesmo sem uso, manter programas ",
+    "description_pt": "Alguns procedimentos ajudam a resolver episódios de lentidão do Windows 11 sem a necessidade de aumentar a RAM e fazer outras melhorias no computador às pressas. Entre os caminhos, está a remoção de programas sem uso e até a atualização do sistema para otimizá-lo e solucionar falhas. Windows 11 26H2 surge em nova versão de testes; saiba o que esperar Microsoft resolve dor de cabeça comum na instalação do Windows 11 5 truques para deixar o Windows 11 mais rápido A seguir, veja cinco dicas para deixar o seu computador mais rápido: 1. Desinstalar programas sem uso Mesmo sem uso, manter programas ",
+    "link": "https://canaltech.com.br/software/windows-11-lento-5-dicas-para-deixar-o-pc-mais-rapido-hoje/",
+    "published": "2026-04-29T16:56:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/rUaNrNrQw9PFM-n4RIfv-6jdM7U=/700x394/smart/i1100281.jpeg"
+  },
+  {
+    "title_original": "Novo CEO da Apple: quem é John Ternus e o que esperar da sua gestão",
+    "title_pt": "Novo CEO da Apple: quem é John Ternus e o que esperar da sua gestão",
+    "description_original": "Tim Cook vai deixar o cargo de CEO da Apple após 15 anos e já tem um sucessor: o atual vice-presidente sênior de engenharia de hardware da empresa, John Ternus . O futuro chefe trabalha na Gigante de Cupertino desde 2001 e esteve presente no desenvolvimento dos principais produtos da companhia desde então. 5 inovações que o iPhone trouxe, mas que as pessoas odiaram Tim Cook abre o jogo sobre seu maior fracasso e sua maior vitória na Apple A mudança marca o fim de uma era em que a empresa viu seu valor de mercado disparar sob o comando de Tim Cook e coloca Ternus diante de holofotes importantes",
+    "description_pt": "Tim Cook vai deixar o cargo de CEO da Apple após 15 anos e já tem um sucessor: o atual vice-presidente sênior de engenharia de hardware da empresa, John Ternus . O futuro chefe trabalha na Gigante de Cupertino desde 2001 e esteve presente no desenvolvimento dos principais produtos da companhia desde então. 5 inovações que o iPhone trouxe, mas que as pessoas odiaram Tim Cook abre o jogo sobre seu maior fracasso e sua maior vitória na Apple A mudança marca o fim de uma era em que a empresa viu seu valor de mercado disparar sob o comando de Tim Cook e coloca Ternus diante de holofotes importantes",
+    "link": "https://canaltech.com.br/mercado/novo-ceo-da-apple-quem-e-john-ternus-e-o-que-esperar-da-sua-gestao/",
+    "published": "2026-04-29T16:45:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/MG6M5s2FEKNqxwJBwR_FZ5WcYbY=/700x394/smart/i1122515.png"
+  },
+  {
+    "title_original": "Como arrumar uma porta que não fecha mais ?",
+    "title_pt": "Como arrumar uma porta que não fecha mais ?",
+    "description_original": "Veja como arrumar uma porta que não fecha com soluções simples usando parafuso ou lixa e resolva rápido sem precisar de marceneiro O post Como arrumar uma porta que não fecha mais ? apareceu primeiro em Olhar Digital .",
+    "description_pt": "Veja como arrumar uma porta que não fecha com soluções simples usando parafuso ou lixa e resolva rápido sem precisar de marceneiro O post Como arrumar uma porta que não fecha mais ? apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/curiosidades/como-arrumar-uma-porta-que-nao-fecha-mais/",
+    "published": "2026-04-29T16:37:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Olhar-Digital_07-8-1024x576.jpg"
+  },
+  {
+    "title_original": "ChatGPT: Queda nos downloads ameaça estreia da OpenAI na Bolsa de Valores",
+    "title_pt": "ChatGPT: Queda nos downloads ameaça estreia da OpenAI na Bolsa de Valores",
+    "description_original": "A OpenAI enfrenta um declínio no ritmo de crescimento do ChatGPT, marcado por queda nas instalações e aumento de desinstalações O post ChatGPT: Queda nos downloads ameaça estreia da OpenAI na Bolsa de Valores apareceu primeiro em Olhar Digital .",
+    "description_pt": "A OpenAI enfrenta um declínio no ritmo de crescimento do ChatGPT, marcado por queda nas instalações e aumento de desinstalações O post ChatGPT: Queda nos downloads ameaça estreia da OpenAI na Bolsa de Valores apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/pro/chatgpt-queda-nos-downloads-ameaca-estreia-da-openai-na-bolsa-de-valores/",
+    "published": "2026-04-29T16:35:42+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/chatgpt-celular-scaled-e1777480129592-1024x577.jpg"
+  },
+  {
+    "title_original": "Uber entra no ramo hoteleiro com auxílio da inteligência artificial; entenda",
+    "title_pt": "Uber entra no ramo hoteleiro com auxílio da inteligência artificial; entenda",
+    "description_original": "Clientes podem fazer reservas via comando de voz por IA, acessar buscas avançadas e receber recomendações de pontos turísticos O post Uber entra no ramo hoteleiro com auxílio da inteligência artificial; entenda apareceu primeiro em Olhar Digital .",
+    "description_pt": "Clientes podem fazer reservas via comando de voz por IA, acessar buscas avançadas e receber recomendações de pontos turísticos O post Uber entra no ramo hoteleiro com auxílio da inteligência artificial; entenda apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/pro/uber-entra-no-ramo-hoteleiro-com-auxilio-da-inteligencia-artificial-entenda/",
+    "published": "2026-04-29T16:32:56+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Hotel_room_in_202604022301-1024x576.jpg"
+  },
+  {
+    "title_original": "Dia das Mães 2026: Galaxy A56 (256 GB) chega a 49% OFF com cupom pelo app Magalu",
+    "title_pt": "Dia das Mães 2026: Galaxy A56 (256 GB) chega a 49% OFF com cupom pelo app Magalu",
+    "description_original": "Smartphone intermediário da Samsung campeão em custo-benefício tem previsão de entrega a tempo do Dia das Mães 2026 nas grandes capitais em oferta no Magazine Luiza Dia das Mães 2026: Galaxy A56 (256 GB) chega a 49% OFF com cupom pelo app Magalu",
+    "description_pt": "Smartphone intermediário da Samsung campeão em custo-benefício tem previsão de entrega a tempo do Dia das Mães 2026 nas grandes capitais em oferta no Magazine Luiza Dia das Mães 2026: Galaxy A56 (256 GB) chega a 49% OFF com cupom pelo app Magalu",
+    "link": "https://tecnoblog.net/achados/dia-das-maes-2026-galaxy-a56-256-gb-chega-a-49-off-com-cupom-pelo-app-magalu/",
+    "published": "2026-04-29T16:21:38+00:00",
+    "source": "Tecnoblog",
+    "language": "pt",
+    "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/04/samsung-galaxy-a56-back-close-up-achados-dia-das-maes-1060x596.jpg"
+  },
+  {
+    "title_original": "Melhor fone Bluetooth custo-benefício 2026",
+    "title_pt": "Melhor fone Bluetooth custo-benefício 2026",
+    "description_original": "Se você está procurando um fone de ouvido Bluetooth barato, confortável e funcional para o dia a dia, essa é uma ótima oportunidade. Dois modelos estão em promoção e oferecem boas opções para quem quer ouvir música, estudar ou trabalhar sem gastar muito. Neste comparativo, você vai conhecer o Dapon H02d e o Pulse HB200, [&#8230;] O post Melhor fone Bluetooth custo-benefício 2026 apareceu primeiro em Olhar Digital .",
+    "description_pt": "Se você está procurando um fone de ouvido Bluetooth barato, confortável e funcional para o dia a dia, essa é uma ótima oportunidade. Dois modelos estão em promoção e oferecem boas opções para quem quer ouvir música, estudar ou trabalhar sem gastar muito. Neste comparativo, você vai conhecer o Dapon H02d e o Pulse HB200, [&#8230;] O post Melhor fone Bluetooth custo-benefício 2026 apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/reviews/melhor-fone-bluetooth-custo-beneficio-2026/",
+    "published": "2026-04-29T16:15:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/D_NQ_NP_2X_871158-MLA99870084511_112025-F-1-922x1024.webp"
+  },
+  {
+    "title_original": "SpaceX decola com seu foguete mais poderoso em operação após um ano e meio",
+    "title_pt": "SpaceX decola com seu foguete mais poderoso em operação após um ano e meio",
+    "description_original": "Foguete da SpaceX decolou do Centro Espacial Kennedy na quarta (29) com o ViaSat-3 F3, terceiro satélite de uma constelação de banda larga O post SpaceX decola com seu foguete mais poderoso em operação após um ano e meio apareceu primeiro em Olhar Digital .",
+    "description_pt": "Foguete da SpaceX decolou do Centro Espacial Kennedy na quarta (29) com o ViaSat-3 F3, terceiro satélite de uma constelação de banda larga O post SpaceX decola com seu foguete mais poderoso em operação após um ano e meio apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/ciencia-e-espaco/spacex-decola-com-seu-foguete-mais-poderoso-em-operacao-apos-um-ano-e-meio/",
+    "published": "2026-04-29T16:11:21+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": ""
+  },
+  {
+    "title_original": "Cidade brasileira usa lixo para gerar energia limpa e surpreende com modelo sustentável na América Latina",
+    "title_pt": "Cidade brasileira usa lixo para gerar energia limpa e surpreende com modelo sustentável na América Latina",
+    "description_original": "Entenda como a gestão de resíduos no Rio transforma lixo em energia, reduz impactos ambientais e se torna referência sustentável na América Latina O post Cidade brasileira usa lixo para gerar energia limpa e surpreende com modelo sustentável na América Latina apareceu primeiro em Olhar Digital .",
+    "description_pt": "Entenda como a gestão de resíduos no Rio transforma lixo em energia, reduz impactos ambientais e se torna referência sustentável na América Latina O post Cidade brasileira usa lixo para gerar energia limpa e surpreende com modelo sustentável na América Latina apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/curiosidades/cidade-brasileira-usa-lixo-para-gerar-energia-limpa-e-surpreende-com-modelo-sustentavel-na-america-latina/",
+    "published": "2026-04-29T16:07:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Olhar-Digital_08-10-1024x576.jpg"
+  },
+  {
+    "title_original": "Nvidia fixes the 8GB RAM problem with one of its GPUs—if you can pay for it",
+    "title_pt": "A Nvidia corrige o problema de 8 GB de RAM com uma de suas GPUs – se você puder pagar por isso",
+    "description_original": "Framework charges nearly double for the 12GB version of the mobile RTX 5070.",
+    "description_pt": "A estrutura cobra quase o dobro pela versão de 12 GB do RTX 5070 móvel.",
+    "link": "https://arstechnica.com/gadgets/2026/04/nvidia-fixes-the-8gb-ram-problem-with-one-of-its-gpus-if-you-can-pay-for-it/",
+    "published": "2026-04-29T16:06:28+00:00",
+    "source": "Ars Technica",
+    "language": "en",
+    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/geforce-rtx-50-series-laptop-hero-af360-p@2x-1152x648.jpg"
+  },
+  {
+    "title_original": "Celular top do ano, Galaxy S26 está com preço no chão: desconto de R$ 2.755",
+    "title_pt": "Celular top do ano, Galaxy S26 está com preço no chão: desconto de R$ 2.755",
+    "description_original": "O Mercado Livre colocou em oferta um dos principais lançamentos da Samsung em 2026. O Galaxy S26 aparece por R$ 3.720,42 usando cupom e fazendo pagamento via Pix, com frete grátis. O valor representa um corte de mais de R$ 2.700 em relação ao preço cheio, posicionando o aparelho como uma das ofertas mais agressivas já vistas para um topo de linha recente. 🥇 Melhor oferta: Galaxy S26 256 GB — R$ 3.720,42 (cupom + Pix, frete grátis); 🥈 Alternativa Apple: iPhone 17e 256 GB — R$ 4.498; 🥉 Opção Motorola mais barata: Edge 70 256 GB — R$ 3.599; 🚨 Atenção: se você está vendo esta matéria depois da dat",
+    "description_pt": "O Mercado Livre colocou em oferta um dos principais lançamentos da Samsung em 2026. O Galaxy S26 aparece por R$ 3.720,42 usando cupom e fazendo pagamento via Pix, com frete grátis. O valor representa um corte de mais de R$ 2.700 em relação ao preço cheio, posicionando o aparelho como uma das ofertas mais agressivas já vistas para um topo de linha recente. 🥇 Melhor oferta: Galaxy S26 256 GB — R$ 3.720,42 (cupom + Pix, frete grátis); 🥈 Alternativa Apple: iPhone 17e 256 GB — R$ 4.498; 🥉 Opção Motorola mais barata: Edge 70 256 GB — R$ 3.599; 🚨 Atenção: se você está vendo esta matéria depois da dat",
+    "link": "https://canaltech.com.br/smartphone/celular-top-do-ano-galaxy-s26-esta-com-preco-no-chao-desconto-de-r-2755/",
+    "published": "2026-04-29T16:06:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/G37oGddKcc6vUbYanlNT1L3neGQ=/700x394/smart/i1105053.jpeg"
+  },
+  {
+    "title_original": "Ruas inteligentes: como a tecnologia V2X pode transformar o trânsito",
+    "title_pt": "Ruas inteligentes: como a tecnologia V2X pode transformar o trânsito",
+    "description_original": "A mobilidade urbana é um desafio constante às autoridades, tanto para reduzir o número de congestionamentos quanto para minimizar os acidentes. Uma aliada que vem ganhando corpo em diversos países é a tecnologia V2X (Vehicle-to-Everything), justamente por ser capaz de conectar carros , pedestres e semáforos em uma rede integrada. Essa comunicação em tempo real permite que motoristas recebam alertas sobre riscos antes mesmo de enxergá-los, tornando as ruas mais inteligentes e, assim, o trânsito mais seguro e eficiente. Câmeras que fiscalizam trânsito “se multiplicam” e preocupam motoristas Carr",
+    "description_pt": "A mobilidade urbana é um desafio constante às autoridades, tanto para reduzir o número de congestionamentos quanto para minimizar os acidentes. Uma aliada que vem ganhando corpo em diversos países é a tecnologia V2X (Vehicle-to-Everything), justamente por ser capaz de conectar carros , pedestres e semáforos em uma rede integrada. Essa comunicação em tempo real permite que motoristas recebam alertas sobre riscos antes mesmo de enxergá-los, tornando as ruas mais inteligentes e, assim, o trânsito mais seguro e eficiente. Câmeras que fiscalizam trânsito “se multiplicam” e preocupam motoristas Carr",
+    "link": "https://canaltech.com.br/carros/ruas-inteligentes-como-a-tecnologia-v2x-pode-transformar-o-transito/",
+    "published": "2026-04-29T16:05:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/mANQ7Pvn7dIeGpBvj5DmfTMei3I=/700x394/smart/i1120807.jpeg"
+  },
+  {
+    "title_original": "Motorola just revealed the Razr Fold’s price and hoo boy",
+    "title_pt": "A Motorola acaba de revelar o preço do Razr Fold e hoo boy",
+    "description_original": "2026 is shaping up to be a tough year to launch a high-end phone. The memory crisis has phone prices rising across the board, so an already expensive phone risks becoming a much too expensive phone. That might be what happened to the Razr Fold, which will cost $1,900 when it goes on sale in [&#8230;]",
+    "description_pt": "2026 parece ser um ano difícil para o lançamento de um telefone de última geração. A crise de memória fez com que os preços dos telefones subissem de forma generalizada, portanto, um telefone já caro corre o risco de se tornar um telefone caro demais. Pode ser o que aconteceu com o Razr Fold, que custará US$ 1.900 quando estiver à venda em [&#8230;]",
+    "link": "https://www.theverge.com/gadgets/919460/motorola-razr-2026-price-availability",
+    "published": "2026-04-29T16:00:00+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/DSC03509_processed.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "The new Razr Ultra is still the best-looking phone out there",
+    "title_pt": "O novo Razr Ultra ainda é o telefone mais bonito que existe",
+    "description_original": "Look, you're not going to find much new on the 2026 version of the Motorola Razr Ultra. There's a new main camera sensor, a slightly bigger battery, and a higher price: $1,499, up from $1,299. But one thing hasn't changed: this is a darn good looking phone. The wood-finish back panel returns, and is joined [&#8230;]",
+    "description_pt": "Olha, você não vai encontrar muitas novidades na versão 2026 do Motorola Razr Ultra. Há um novo sensor de câmera principal, uma bateria um pouco maior e um preço mais alto: US$ 1.499, acima dos US$ 1.299. Mas uma coisa não mudou: este é um telefone muito bonito. O painel traseiro com acabamento em madeira retorna e é unido [&#8230;]",
+    "link": "https://www.theverge.com/tech/920183/motorola-razr-ultra-2026-wood-finish-alcantara-price",
+    "published": "2026-04-29T16:00:00+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/DSC03413_processed.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "The Moto Razr and Razr Plus are victims of shrinkflation",
+    "title_pt": "O Moto Razr e o Razr Plus são vítimas da contraflação",
+    "description_original": "The memory crisis claims another couple of victims. Motorola's midtier and entry-level flip phones cost $100 more than their predecessors, and have few upgrades to show for it. The 2026 Razr Plus costs $1,099, up from $999. It still comes with a Snapdragon 8S Gen 3 chipset - two years old at this point - [&#8230;]",
+    "description_pt": "A crise de memória faz mais algumas vítimas. Os telefones flip intermediários e básicos da Motorola custam US$ 100 a mais que seus antecessores e têm poucas atualizações para mostrar. O 2026 Razr Plus custa US$ 1.099, acima dos US$ 999. Ele ainda vem com um chipset Snapdragon 8S Gen 3 – com dois anos neste momento – [&#8230;]",
+    "link": "https://www.theverge.com/tech/920236/motorola-razr-plus-2026-price",
+    "published": "2026-04-29T16:00:00+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/DSC03500_processed.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "Google Photos launches an AI try-on feature for clothes you already have",
+    "title_pt": "O Google Fotos lança um recurso de teste de IA para roupas que você já possui",
+    "description_original": "Google Photos is launching a new AI-powered feature you can use to virtually try on clothes you already have. Using the photos in your gallery, Google will create a virtual \"wardrobe,\" allowing you to mix and match outfits, save the looks you like, and share them with friends. A video shared by Google shows how [&#8230;]",
+    "description_pt": "O Google Fotos está lançando um novo recurso com tecnologia de IA que você pode usar para experimentar virtualmente as roupas que já possui. Usando as fotos da sua galeria, o Google criará um “guarda-roupa” virtual, permitindo misturar e combinar roupas, salvar os looks que desejar e compartilhá-los com os amigos. Um vídeo compartilhado pelo Google mostra como [&#8230;]",
+    "link": "https://www.theverge.com/tech/920420/google-photos-ai-try-on-wardrobe",
+    "published": "2026-04-29T16:00:00+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/wardrobe-try-on.png?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "Motorola's New Razr Folding Phones Command a Higher Price and Few Upgrades",
+    "title_pt": "Os novos telefones dobráveis ​​Razr da Motorola têm um preço mais alto e poucas atualizações",
+    "description_original": "Say hello (Moto) to price hikes on all three of Motorola's latest Razr flip phones.",
+    "description_pt": "Diga olá (Moto) aos aumentos de preços em todos os três telefones flip Razr mais recentes da Motorola.",
+    "link": "https://www.wired.com/story/motorola-razr-2026-folding-phones/",
+    "published": "2026-04-29T16:00:00+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/69f0e07b54b5e4ced7a0a17c/master/pass/motorola%20razr%20ultra%20-%202026_%20Lifestyle%20Imagery_0042.jpg"
+  },
+  {
+    "title_original": "Motorola lança linha Razr 70 com dois celulares dobráveis flip; veja o preço",
+    "title_pt": "Motorola lança linha Razr 70 com dois celulares dobráveis flip; veja o preço",
+    "description_original": "Razr 70, versão de entrada, chega ao Brasil por R$ 5.999. Modelo mais potente, Razr 70 Ultra ainda não tem data prevista para lançamento. Motorola lança linha Razr 70 com dois celulares dobráveis flip; veja o preço",
+    "description_pt": "Razr 70, versão de entrada, chega ao Brasil por R$ 5.999. Modelo mais potente, Razr 70 Ultra ainda não tem data prevista para lançamento. Motorola lança linha Razr 70 com dois celulares dobráveis flip; veja o preço",
+    "link": "https://tecnoblog.net/noticias/motorola-lanca-linha-razr-70-com-dois-celulares-dobraveis-flip-veja-o-preco/",
+    "published": "2026-04-29T16:00:00+00:00",
+    "source": "Tecnoblog",
+    "language": "pt",
+    "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/razr-70-ultra.png"
+  },
+  {
+    "title_original": "Professional school grads from diverse classes get higher salaries",
+    "title_pt": "Graduados de escolas profissionais de diversas classes recebem salários mais altos",
+    "description_original": "Study authors say courts should reconsider rulings in light of this new evidence.",
+    "description_pt": "Os autores do estudo dizem que os tribunais deveriam reconsiderar as decisões à luz destas novas evidências.",
+    "link": "https://arstechnica.com/science/2026/04/professional-school-grads-from-diverse-classes-get-higher-salaries/",
+    "published": "2026-04-29T15:55:55+00:00",
+    "source": "Ars Technica",
+    "language": "en",
+    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1374727807-1152x648.jpg"
+  },
+  {
+    "title_original": "OpenAI e Sam Altman são processados por famílias de vítimas de massacre no Canadá",
+    "title_pt": "OpenAI e Sam Altman são processados por famílias de vítimas de massacre no Canadá",
+    "description_original": "Ação judicial alega que a empresa omitiu alertas de segurança para proteger sua avaliação de mercado antes de uma abertura de capital bilionária O post OpenAI e Sam Altman são processados por famílias de vítimas de massacre no Canadá apareceu primeiro em Olhar Digital .",
+    "description_pt": "Ação judicial alega que a empresa omitiu alertas de segurança para proteger sua avaliação de mercado antes de uma abertura de capital bilionária O post OpenAI e Sam Altman são processados por famílias de vítimas de massacre no Canadá apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/pro/openai-e-sam-altman-sao-processados-por-familias-de-vitimas-de-massacre-no-canada/",
+    "published": "2026-04-29T15:50:42+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": ""
+  },
+  {
+    "title_original": "IA custa mais caro do que manter funcionários, diz executivo da Nvidia",
+    "title_pt": "IA custa mais caro do que manter funcionários, diz executivo da Nvidia",
+    "description_original": "Bryan Catanzaro afirmou que infraestrutura de inteligência artificial sai mais cara que pagar salários. Empresas têm feito demissões em massa para bancar a tecnologia. IA custa mais caro do que manter funcionários, diz executivo da Nvidia",
+    "description_pt": "Bryan Catanzaro afirmou que infraestrutura de inteligência artificial sai mais cara que pagar salários. Empresas têm feito demissões em massa para bancar a tecnologia. IA custa mais caro do que manter funcionários, diz executivo da Nvidia",
+    "link": "https://tecnoblog.net/noticias/ia-custa-mais-caro-do-que-manter-funcionarios-diz-executivo-da-nvidia/",
+    "published": "2026-04-29T15:49:59+00:00",
+    "source": "Tecnoblog",
+    "language": "pt",
+    "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/bryan-nvidia-1.webp"
+  },
+  {
+    "title_original": "Promoção de Smart TV: escolha a ideal para você",
+    "title_pt": "Promoção de Smart TV: escolha a ideal para você",
+    "description_original": "Se você está pensando em trocar de TV, este é um ótimo momento. As Smart TVs da LG estão com descontos expressivos e oferecem tecnologia de ponta, seja para quem busca uma opção mais acessível ou uma experiência mais premium. Neste comparativo, você vai conhecer duas excelentes opções: uma TV Full HD de 43” com [&#8230;] O post Promoção de Smart TV: escolha a ideal para você apareceu primeiro em Olhar Digital .",
+    "description_pt": "Se você está pensando em trocar de TV, este é um ótimo momento. As Smart TVs da LG estão com descontos expressivos e oferecem tecnologia de ponta, seja para quem busca uma opção mais acessível ou uma experiência mais premium. Neste comparativo, você vai conhecer duas excelentes opções: uma TV Full HD de 43” com [&#8230;] O post Promoção de Smart TV: escolha a ideal para você apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/reviews/promocao-de-smart-tv-escolha-a-ideal-para-voce/",
+    "published": "2026-04-29T15:45:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/D_NQ_NP_2X_929244-MLA104540336039_012026-F-2.webp"
+  },
+  {
+    "title_original": "Microsoft is giving its Xbox employees an Xbox email address",
+    "title_pt": "A Microsoft está fornecendo aos seus funcionários do Xbox um endereço de e-mail do Xbox",
+    "description_original": "Xbox CEO Asha Sharma wants everyone to know: \"We are Xbox.\" Just last week, she scrapped Microsoft Gaming as the name of Microsoft's gaming division in favor of simply Xbox. Now, to reinforce that message, sources at Xbox tell me that all Xbox employees are getting an @xbox.com email address next month. The new Xbox [&#8230;]",
+    "description_pt": "O CEO do Xbox, Asha Sharma, quer que todos saibam: “Nós somos o Xbox”. Na semana passada, ela descartou Microsoft Gaming como nome da divisão de jogos da Microsoft em favor de simplesmente Xbox. Agora, para reforçar essa mensagem, fontes do Xbox me disseram que todos os funcionários do Xbox receberão um endereço de e-mail @xbox.com no próximo mês. O novo Xbox [&#8230;]",
+    "link": "https://www.theverge.com/report/920525/microsoft-xbox-email-address-change",
+    "published": "2026-04-29T15:43:24+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23926023/acastro_STK048_02.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "Microsoft libera código-fonte do 86-DOS 1.00, o “pai” do MS-DOS",
+    "title_pt": "Microsoft libera código-fonte do 86-DOS 1.00, o “pai” do MS-DOS",
+    "description_original": "Microsoft abriu código-fonte do 86-DOS 1.00 e do PC-DOS 1.00 sob licença MIT. Material inclui kernel do sistema operacional e utilitários clássicos. Microsoft libera código-fonte do 86-DOS 1.00, o &#8220;pai&#8221; do MS-DOS",
+    "description_pt": "Microsoft abriu código-fonte do 86-DOS 1.00 e do PC-DOS 1.00 sob licença MIT. Material inclui kernel do sistema operacional e utilitários clássicos. Microsoft libera código-fonte do 86-DOS 1.00, o &#8220;pai&#8221; do MS-DOS",
+    "link": "https://tecnoblog.net/noticias/microsoft-libera-codigo-fonte-do-86-dos-1-00-o-pai-do-ms-dos/",
+    "published": "2026-04-29T15:37:54+00:00",
+    "source": "Tecnoblog",
+    "language": "pt",
+    "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/86-dos-em-papel-1.jpg"
+  },
+  {
+    "title_original": "O motivo curioso que faz os macacos de Gibraltar comerem terra",
+    "title_pt": "O motivo curioso que faz os macacos de Gibraltar comerem terra",
+    "description_original": "Descubra por que os macacos de Gibraltar comem terra para aliviar a má digestão causada por alimentos humanos, segundo um estudo recente O post O motivo curioso que faz os macacos de Gibraltar comerem terra apareceu primeiro em Olhar Digital .",
+    "description_pt": "Descubra por que os macacos de Gibraltar comem terra para aliviar a má digestão causada por alimentos humanos, segundo um estudo recente O post O motivo curioso que faz os macacos de Gibraltar comerem terra apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/curiosidades/o-motivo-curioso-que-faz-os-macacos-de-gibraltar-comerem-terra/",
+    "published": "2026-04-29T15:37:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Olhar-Digital_23-9-1024x576.jpg"
+  },
+  {
+    "title_original": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI",
+    "title_pt": "Atualizações ao vivo da batalha judicial de Elon Musk e Sam Altman sobre o futuro do OpenAI",
+    "description_original": "Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusing OpenAI of abandoning its founding mission of developing AI to benefit humanity and shifting focus to boosting profits instead. The trial began with [&#8230;]",
+    "description_pt": "Sam Altman e Elon Musk estão se enfrentando em um teste de alto risco que pode alterar o futuro do OpenAI e de seu produto mais conhecido, o ChatGPT. Em 2024, Musk entrou com uma ação judicial acusando a OpenAI de abandonar sua missão fundadora de desenvolver IA para beneficiar a humanidade e, em vez disso, mudar o foco para aumentar os lucros. O julgamento começou com [&#8230;]",
+    "link": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+    "published": "2026-04-29T15:35:32+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/268474_musk_vs_altman_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "Alexa em oferta: Echo Spot vs Echo Dot",
+    "title_pt": "Alexa em oferta: Echo Spot vs Echo Dot",
+    "description_original": "Os dispositivos com Alexa se tornaram parte do dia a dia de muitas pessoas, trazendo mais praticidade, automação e entretenimento para dentro de casa. Desde controlar luzes até tocar músicas ou lembrar compromissos, esses smart speakers fazem muito mais do que aparentam. Agora, com o Echo Spot e o Echo Dot em promoção, ficou ainda [&#8230;] O post Alexa em oferta: Echo Spot vs Echo Dot apareceu primeiro em Olhar Digital .",
+    "description_pt": "Os dispositivos com Alexa se tornaram parte do dia a dia de muitas pessoas, trazendo mais praticidade, automação e entretenimento para dentro de casa. Desde controlar luzes até tocar músicas ou lembrar compromissos, esses smart speakers fazem muito mais do que aparentam. Agora, com o Echo Spot e o Echo Dot em promoção, ficou ainda [&#8230;] O post Alexa em oferta: Echo Spot vs Echo Dot apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/04/29/reviews/alexa-em-oferta-echo-spot-vs-echo-dot/",
+    "published": "2026-04-29T15:25:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/71Qtzczw2fL._AC_SL1500_-998x1024.jpg"
+  },
+  {
+    "title_original": "The best deals we found during Amazon’s Gaming Week",
+    "title_pt": "As melhores ofertas que encontramos durante a Amazon’s Gaming Week",
+    "description_original": "Amazon’s annual Gaming Week is bringing discounts on video games, accessories, and PC components through May 4th. This event is smaller than Amazon’s other sales, but there are some genuinely good deals. This year, we’ve found deals on popular titles like Elden Ring Nightreign, plus rare discounts on the Nex Playground console and on top-notch [&#8230;]",
+    "description_pt": "A Gaming Week anual da Amazon traz descontos em videogames, acessórios e componentes de PC até 4 de maio. Este evento é menor do que outras vendas da Amazon, mas há alguns negócios genuinamente bons. Este ano, encontramos ofertas em títulos populares como Elden Ring Nightreign, além de descontos raros no console Nex Playground e em produtos de primeira linha [&#8230;]",
+    "link": "https://www.theverge.com/gadgets/919671/amazon-gaming-week-2026-deal-sale",
+    "published": "2026-04-29T15:14:53+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/ELDEN-RING-NIGHTREIGN-DeepOfNight-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
     "title_original": "\"Estamos treinando a IA para tomar nossos empregos\", dizem funcionários da Meta",
     "title_pt": "\"Estamos treinando a IA para tomar nossos empregos\", dizem funcionários da Meta",
     "description_original": "Mais de 700 funcionários da Covalen, empresa contratada pela Meta em Dublin, na Irlanda, foram informados na última terça-feira (28) de que seus empregos estão em risco. Por que a Meta cortou 600 vagas de IA depois de investir US$ 70 bilhões? Por que a China bloqueou aquisição da Manus pela Meta A notícia foi comunicada em uma reunião por vídeo breve, sem espaço para perguntas, segundo relato de Nick Bennett, um dos trabalhadores na chamada, publicado na WIRED. Cerca de 500 desses funcionários são anotadores de dados, pessoas responsáveis por revisar conteúdos gerados pelos modelos de inteligê",
@@ -66,8 +429,8 @@
     "image": "https://t.ctcdn.com.br/nKQjPAmwV5iUoHw1mbgeUXhHxBk=/700x394/smart/i1093891.png"
   },
   {
-    "title_original": "Tumbler Ridge families sue OpenAI for not alerting police to the suspect’s ChatGPT activity",
-    "title_pt": "Famílias de Tumbler Ridge processam OpenAI por não alertar a polícia sobre a atividade ChatGPT do suspeito",
+    "title_original": "Tumbler Ridge families are suing OpenAI",
+    "title_pt": "Famílias Tumbler Ridge estão processando OpenAI",
     "description_original": "Seven families of victims injured or killed in the Tumbler Ridge school shooting in Canada have filed lawsuits against OpenAI and CEO Sam Altman, accusing the company and its leadership of negligence after they failed to alert police to the suspected shooter's ChatGPT activity. The families allege OpenAI stayed silent after its systems flagged activity [&#8230;]",
     "description_pt": "Sete famílias de vítimas feridas ou mortas no tiroteio na escola Tumbler Ridge, no Canadá, entraram com ações judiciais contra a OpenAI e o CEO Sam Altman, acusando a empresa e sua liderança de negligência depois de não alertarem a polícia sobre a atividade ChatGPT do suposto atirador. As famílias alegam que a OpenAI permaneceu em silêncio depois que seus sistemas sinalizaram atividade [&#8230;]",
     "link": "https://www.theverge.com/ai-artificial-intelligence/920479/tumbler-ridge-chagpt-openai-lawsuit",
@@ -75,17 +438,6 @@
     "source": "The Verge",
     "language": "en",
     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-2260765297.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-  },
-  {
-    "title_original": "ChatGPT downloads are slowing — and may cause problems for OpenAI&#8217;s IPO",
-    "title_pt": "Os downloads do ChatGPT estão lentos – e podem causar problemas para o IPO da OpenAI",
-    "description_original": "ChatGPT is struggling to keep up its once-explosive growth as users uninstall the app or opt for rival chatbots instead. According to data from market intelligence firm Sensor Tower, ChatGPT experienced a 132 percent increase in uninstalls year over year in April. Its uninstall rate was even higher last month, up 413 percent year-over-year, following [&#8230;]",
-    "description_pt": "O ChatGPT está lutando para manter seu crescimento antes explosivo, à medida que os usuários desinstalam o aplicativo ou optam por chatbots rivais. De acordo com dados da empresa de inteligência de mercado Sensor Tower, o ChatGPT registrou um aumento de 132% nas desinstalações ano após ano em abril. Sua taxa de desinstalação foi ainda maior no mês passado, um aumento de 413% ano a ano, seguindo [&#8230;]",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/920476/openai-chatgpt-downloads-slow-down-ipo",
-    "published": "2026-04-29T14:43:41+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25844039/STK155_OPEN_AI_CVirginia__A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
   },
   {
     "title_original": "Portátil Anbernic RG Rotate vai rodar jogos de PS2 e Wii",
@@ -97,28 +449,6 @@
     "source": "Canaltech",
     "language": "pt",
     "image": "https://t.ctcdn.com.br/Vm-KeYV5AaEsKuNVmJMQRjeg1UE=/700x394/smart/i1122645.jpeg"
-  },
-  {
-    "title_original": "Chefe da NASA quer que Plutão volte a ser planeta; entenda",
-    "title_pt": "Chefe da NASA quer que Plutão volte a ser planeta; entenda",
-    "description_original": "O administrador da NASA, Jared Isaacman, defendeu a campanha \"Faça Plutão um Planeta Novamente\" durante apresentação no Senado dos EUA O post Chefe da NASA quer que Plutão volte a ser planeta; entenda apareceu primeiro em Olhar Digital .",
-    "description_pt": "O administrador da NASA, Jared Isaacman, defendeu a campanha \"Faça Plutão um Planeta Novamente\" durante apresentação no Senado dos EUA O post Chefe da NASA quer que Plutão volte a ser planeta; entenda apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/ciencia-e-espaco/chefe-da-nasa-quer-que-plutao-volte-a-ser-planeta/",
-    "published": "2026-04-29T14:32:19+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Jared-Isaacman-NASA-1024x576.jpg"
-  },
-  {
-    "title_original": "Redes sociais: Europa quer adoção rápida de aplicativo de verificação de idade",
-    "title_pt": "Redes sociais: Europa quer adoção rápida de aplicativo de verificação de idade",
-    "description_original": "União Europeia quer que países do bloco acelerem a adoção do app, que deve ficar disponível ainda este ano O post Redes sociais: Europa quer adoção rápida de aplicativo de verificação de idade apareceu primeiro em Olhar Digital .",
-    "description_pt": "União Europeia quer que países do bloco acelerem a adoção do app, que deve ficar disponível ainda este ano O post Redes sociais: Europa quer adoção rápida de aplicativo de verificação de idade apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/internet-e-redes-sociais/redes-sociais-europa-quer-adocao-rapida-de-aplicativo-de-verificacao-de-idade/",
-    "published": "2026-04-29T14:24:50+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/03/redes-sociais-2-1024x682.jpg"
   },
   {
     "title_original": "China desenvolve bateria barata que pode durar 16 anos",
@@ -143,28 +473,6 @@
     "image": "https://t.ctcdn.com.br/iknnw6B_CB_QqIiPs7vFGpI1qaY=/700x394/smart/i984205.jpeg"
   },
   {
-    "title_original": "The keyboard used to score Dune 2 is getting more affordable",
-    "title_pt": "O teclado usado para pontuar Dune 2 está ficando mais acessível",
-    "description_original": "Expressive E is making its Osmose MPE keyboard (comparatively) more affordable by ditching the synthesizer and making it a simple MIDI controller. The new Osmose CE comes in two sizes, 49 and 61 keys, for $999 and $1,199, respectively. Now, $999 is pretty expensive for a MIDI controller, but it's far less than Osmose's $1,799 [&#8230;]",
-    "description_pt": "Expressive E está tornando seu teclado Osmose MPE (comparativamente) mais acessível, abandonando o sintetizador e tornando-o um controlador MIDI simples. O novo Osmose CE vem em dois tamanhos, 49 e 61 chaves, por US$ 999 e US$ 1.199, respectivamente. Agora, US$ 999 é muito caro para um controlador MIDI, mas é muito menos do que os US$ 1.799 do Osmose [&#8230;]",
-    "link": "https://www.theverge.com/gadgets/920432/osmose-ce-mpe-midi-controller",
-    "published": "2026-04-29T14:07:53+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/osmosece49_00086407-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-  },
-  {
-    "title_original": "Esse arquipélago parece as Maldivas, mas é um dos lugares mais isolados do planeta",
-    "title_pt": "Esse arquipélago parece as Maldivas, mas é um dos lugares mais isolados do planeta",
-    "description_original": "Arquipélago secreto do Índico impressiona com dunas gigantes, praias vazias e valor geológico único, rivalizando com destinos famosos O post Esse arquipélago parece as Maldivas, mas é um dos lugares mais isolados do planeta apareceu primeiro em Olhar Digital .",
-    "description_pt": "Arquipélago secreto do Índico impressiona com dunas gigantes, praias vazias e valor geológico único, rivalizando com destinos famosos O post Esse arquipélago parece as Maldivas, mas é um dos lugares mais isolados do planeta apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/curiosidades/esse-arquipelago-parece-as-maldivas-mas-e-um-dos-lugares-mais-isolados-do-planeta/",
-    "published": "2026-04-29T14:07:00+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Olhar-Digital_05-8-1024x576.jpg"
-  },
-  {
     "title_original": "Attempt to repeal Colorado's right-to-repair law fails",
     "title_pt": "Tentativa de revogar a lei do direito de reparação do Colorado falha",
     "description_original": "Manufacturers backed effort to repeal the law but ultimately failed.",
@@ -174,17 +482,6 @@
     "source": "Ars Technica",
     "language": "en",
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/phonerepair-1152x648.jpg"
-  },
-  {
-    "title_original": "Promoção imperdível: equipe sua cozinha gastando menos",
-    "title_pt": "Promoção imperdível: equipe sua cozinha gastando menos",
-    "description_original": "Montar ou renovar a cozinha pode ser caro, mas aproveitar boas promoções faz toda a diferença no orçamento. E quando surgem ofertas em itens essenciais como micro-ondas e depurador de ar, é a oportunidade perfeita para investir com economia. A seguir, você confere dois produtos muito úteis para o dia a dia, ambos com ótimo [&#8230;] O post Promoção imperdível: equipe sua cozinha gastando menos apareceu primeiro em Olhar Digital .",
-    "description_pt": "Montar ou renovar a cozinha pode ser caro, mas aproveitar boas promoções faz toda a diferença no orçamento. E quando surgem ofertas em itens essenciais como micro-ondas e depurador de ar, é a oportunidade perfeita para investir com economia. A seguir, você confere dois produtos muito úteis para o dia a dia, ambos com ótimo [&#8230;] O post Promoção imperdível: equipe sua cozinha gastando menos apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/reviews/promocao-imperdivel-equipe-sua-cozinha-gastando-menos/",
-    "published": "2026-04-29T14:00:00+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/51J4KNNtX5L._AC_SL1000_.jpg"
   },
   {
     "title_original": "Sky renova marca e confirma internet por satélite no Brasil",
@@ -198,61 +495,6 @@
     "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/sky-novo-logotipo.jpg"
   },
   {
-    "title_original": "Larry’s risky business",
-    "title_pt": "O negócio arriscado de Larry",
-    "description_original": "If you want to know whether the AI bubble is bursting, there's only one publicly traded company that will tell you: Oracle. That's right, the database company. Oracle has burned its boats and pivoted to AI, but not in any kind of usual way. It is not a foundation model builder like OpenAI or Anthropic, [&#8230;]",
-    "description_pt": "Se você quiser saber se a bolha da IA ​​está estourando, só há uma empresa de capital aberto que lhe dirá: a Oracle. Isso mesmo, a empresa de banco de dados. A Oracle queimou seus barcos e se voltou para a IA, mas não da maneira usual. Não é um construtor de modelo básico como OpenAI ou Anthropic, [&#8230;]",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/920378/oracle-openai-datacenter-buildout",
-    "published": "2026-04-29T13:57:16+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/68456_ORACLE_BELLWEATHER7.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-  },
-  {
-    "title_original": "iOS 27 deve trazer recurso de IA para não ficar atrás do One UI dos Galaxy",
-    "title_pt": "iOS 27 deve trazer recurso de IA para não ficar atrás do One UI dos Galaxy",
-    "description_original": "O iOS 27 deve ganhar uma nova leva de ferramentas de edição de fotos com inteligência artificial, em uma tentativa clara da Apple de alcançar recursos que já existem em celulares Galaxy com One UI e também na linha Pixel . Segundo a Bloomberg, a empresa está preparando uma reformulação no editor do app Fotos , com funções inéditas baseadas no Apple Intelligence. Quais iPhones devem receber o iOS 27 em 2026? Mais IA e outras novidades ao iPhone: o que esperar do iOS 27? As novidades ainda estão em desenvolvimento e não estão disponíveis para usuários neste momento. A expectativa é que elas seja",
-    "description_pt": "O iOS 27 deve ganhar uma nova leva de ferramentas de edição de fotos com inteligência artificial, em uma tentativa clara da Apple de alcançar recursos que já existem em celulares Galaxy com One UI e também na linha Pixel . Segundo a Bloomberg, a empresa está preparando uma reformulação no editor do app Fotos , com funções inéditas baseadas no Apple Intelligence. Quais iPhones devem receber o iOS 27 em 2026? Mais IA e outras novidades ao iPhone: o que esperar do iOS 27? As novidades ainda estão em desenvolvimento e não estão disponíveis para usuários neste momento. A expectativa é que elas seja",
-    "link": "https://canaltech.com.br/apps/ios-27-deve-trazer-recurso-de-ia-para-nao-ficar-atras-do-one-ui-dos-galaxy/",
-    "published": "2026-04-29T13:53:48+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/G-RZP2VRpjfB9P-3iNm_RumrOS8=/700x394/smart/i941957.jpeg"
-  },
-  {
-    "title_original": "Chega de celular balançando na mesa: Galaxy S27 pode acabar com problema",
-    "title_pt": "Chega de celular balançando na mesa: Galaxy S27 pode acabar com problema",
-    "description_original": "Um dos incômodos mais comuns dos smartphones atuais pode estar com os dias contados. Quem nunca apoiou o celular na mesa e se irritou com o balanço causado pelo módulo de câmeras? Pois o Galaxy S27 pode trazer uma solução justamente para isso. Samsung prepara mudança de design no Galaxy S27; veja expectativas Novo top da Samsung terá \"bateria à moda chinesa\" em 2027, diz leaker Novos rumores indicam que a marca sul-coreana estuda uma reformulação significativa no design traseiro da linha Galaxy S27. A mudança envolveria o reposicionamento das lentes, abandonando o tradicional alinhamento verti",
-    "description_pt": "Um dos incômodos mais comuns dos smartphones atuais pode estar com os dias contados. Quem nunca apoiou o celular na mesa e se irritou com o balanço causado pelo módulo de câmeras? Pois o Galaxy S27 pode trazer uma solução justamente para isso. Samsung prepara mudança de design no Galaxy S27; veja expectativas Novo top da Samsung terá \"bateria à moda chinesa\" em 2027, diz leaker Novos rumores indicam que a marca sul-coreana estuda uma reformulação significativa no design traseiro da linha Galaxy S27. A mudança envolveria o reposicionamento das lentes, abandonando o tradicional alinhamento verti",
-    "link": "https://canaltech.com.br/smartphone/chega-de-celular-balancando-na-mesa-galaxy-s27-pode-acabar-com-problema/",
-    "published": "2026-04-29T13:51:17+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/12FhZ-dR6UstCYIXAQG3PLWa-pk=/700x394/smart/i1123021.png"
-  },
-  {
-    "title_original": "Quanto você paga de imposto em um celular no Brasil? Entenda",
-    "title_pt": "Quanto você paga de imposto em um celular no Brasil? Entenda",
-    "description_original": "O preço de um celular no Brasil frequentemente chama a atenção, especialmente quando comparado a outros países. E boa parte desse valor está ligada à carga tributária que incide sobre esses produtos. Então quanto você paga de imposto em um celular no Brasil ? Conversamos com especialistas para entender e montar uma estimativa. 6 celulares mais incríveis que as grandes marcas já lançaram Celular do Pix: 5 modelos baratinhos para deixar o app do banco sempre em casa De acordo com o advogado tributarista Carlos Eduardo Pereira Dutra, professor da PUCPR, o sistema brasileiro é complexo e passa por",
-    "description_pt": "O preço de um celular no Brasil frequentemente chama a atenção, especialmente quando comparado a outros países. E boa parte desse valor está ligada à carga tributária que incide sobre esses produtos. Então quanto você paga de imposto em um celular no Brasil ? Conversamos com especialistas para entender e montar uma estimativa. 6 celulares mais incríveis que as grandes marcas já lançaram Celular do Pix: 5 modelos baratinhos para deixar o app do banco sempre em casa De acordo com o advogado tributarista Carlos Eduardo Pereira Dutra, professor da PUCPR, o sistema brasileiro é complexo e passa por",
-    "link": "https://canaltech.com.br/smartphone/quanto-voce-paga-de-imposto-em-um-celular-no-brasil-entenda/",
-    "published": "2026-04-29T13:46:00+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/kbBPcQvHHT_VoR4unQfTEHj5WtA=/700x394/smart/i975601.jpeg"
-  },
-  {
-    "title_original": "Oferta imperdível: Air Fryers Oven Electrolux e Philco",
-    "title_pt": "Oferta imperdível: Air Fryers Oven Electrolux e Philco",
-    "description_original": "As Air Fryers estilo forno se tornaram uma das melhores soluções para quem busca praticidade na cozinha. Com maior capacidade e múltiplas funções, elas substituem vários eletrodomésticos e permitem preparar refeições completas com menos óleo e mais rapidez. Neste comparativo, você vai conhecer duas excelentes opções de Air Fryer Oven 12L em oferta: modelos da [&#8230;] O post Oferta imperdível: Air Fryers Oven Electrolux e Philco apareceu primeiro em Olhar Digital .",
-    "description_pt": "As Air Fryers estilo forno se tornaram uma das melhores soluções para quem busca praticidade na cozinha. Com maior capacidade e múltiplas funções, elas substituem vários eletrodomésticos e permitem preparar refeições completas com menos óleo e mais rapidez. Neste comparativo, você vai conhecer duas excelentes opções de Air Fryer Oven 12L em oferta: modelos da [&#8230;] O post Oferta imperdível: Air Fryers Oven Electrolux e Philco apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/reviews/oferta-imperdivel-air-fryers-oven-electrolux-e-philco/",
-    "published": "2026-04-29T13:45:00+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/5183mlQX54L._AC_SL1000_.jpg"
-  },
-  {
     "title_original": "TV LG OLED 55” tem menor preço em meses por até 12x para o Dia das Mães 2026",
     "title_pt": "TV LG OLED 55” tem menor preço em meses por até 12x para o Dia das Mães 2026",
     "description_original": "LG B5 traz tela OLED 4K de 120 Hz com alta fidelidade de cores e suporta jogos na nuvem; Smart TV tem desconto de 31% em até 12x sem juros em ofera do Dia das Mães 2026 TV LG OLED 55” tem menor preço em meses por até 12x para o Dia das Mães 2026",
@@ -264,94 +506,6 @@
     "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/04/lg-b5-oled-tv-achados-dia-das-maes-1060x596.jpg"
   },
   {
-    "title_original": "Elon Musk tem um novo desafio: levar a SpaceX à bolsa de valores",
-    "title_pt": "Elon Musk tem um novo desafio: levar a SpaceX à bolsa de valores",
-    "description_original": "Musk planeja posicionar a SpaceX não só como uma empresa espacial, mas também no setor de IA O post Elon Musk tem um novo desafio: levar a SpaceX à bolsa de valores apareceu primeiro em Olhar Digital .",
-    "description_pt": "Musk planeja posicionar a SpaceX não só como uma empresa espacial, mas também no setor de IA O post Elon Musk tem um novo desafio: levar a SpaceX à bolsa de valores apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/pro/elon-musk-tem-um-novo-desafio-levar-a-spacex-a-bolsa-de-valores/",
-    "published": "2026-04-29T13:36:01+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/starship-v3-scaled-e1776864751173-1024x577.jpeg"
-  },
-  {
-    "title_original": "Hackers da ShinyHunters vazam dados de 1,4 milhão de usuários da Udemy",
-    "title_pt": "Hackers da ShinyHunters vazam dados de 1,4 milhão de usuários da Udemy",
-    "description_original": "Na última sexta-feira (24), o grupo hacker ShinyHunters alertou ter encontrado uma brecha na plataforma de ensino digital Udemy, ameaçando a empresa de vazar mais de 1,4 milhão de registros com dados pessoais de usuários, bem como informações corporativas. Como a companhia se recusou a chegar a um acordo com os cibercriminosos, os dados foram vazados na última segunda-feira (27). Como saber se uma senha vazou na Internet? 3 meios para verificar exposições Como saber se seus dados estão no maior vazamento da história O prazo para as conversas dado pelos hackers era até a segunda-feira: segundo ",
-    "description_pt": "Na última sexta-feira (24), o grupo hacker ShinyHunters alertou ter encontrado uma brecha na plataforma de ensino digital Udemy, ameaçando a empresa de vazar mais de 1,4 milhão de registros com dados pessoais de usuários, bem como informações corporativas. Como a companhia se recusou a chegar a um acordo com os cibercriminosos, os dados foram vazados na última segunda-feira (27). Como saber se uma senha vazou na Internet? 3 meios para verificar exposições Como saber se seus dados estão no maior vazamento da história O prazo para as conversas dado pelos hackers era até a segunda-feira: segundo ",
-    "link": "https://canaltech.com.br/seguranca/hackers-da-shinyhunters-vazam-dados-de-14-milhao-de-usuarios-da-udemy/",
-    "published": "2026-04-29T13:35:00+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/dhqeFFcXAXGHY0fEmDknV9k0Xm8=/700x394/smart/i1122873.png"
-  },
-  {
-    "title_original": "Como nivelar um piso torto sem quebrar o porcelanato",
-    "title_pt": "Como nivelar um piso torto sem quebrar o porcelanato",
-    "description_original": "Veja como nivelar piso torto sem quebrar porcelanato usando autonivelante, com cuidados para evitar trincas e falhas O post Como nivelar um piso torto sem quebrar o porcelanato apareceu primeiro em Olhar Digital .",
-    "description_pt": "Veja como nivelar piso torto sem quebrar porcelanato usando autonivelante, com cuidados para evitar trincas e falhas O post Como nivelar um piso torto sem quebrar o porcelanato apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/curiosidades/como-nivelar-um-piso-torto-sem-quebrar-o-porcelanato/",
-    "published": "2026-04-29T13:30:00+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Olhar-Digital_01-6-1024x576.jpg"
-  },
-  {
-    "title_original": "Spotify tenta rotular músicas de IA, mas solução frustra assinantes",
-    "title_pt": "Spotify tenta rotular músicas de IA, mas solução frustra assinantes",
-    "description_original": "O Spotify é um dos serviços de streaming de música mais populares do mundo, ultrapassando 760 milhões de usuários ativos mensais . Contudo, apesar de ser o companheiro diário de muitas pessoas, o aplicativo ainda parece fazer vista grossa para músicas geradas por inteligência artificial (IA) presentes na plataforma. 6 truques para não ouvir músicas ruins no Spotify Assinatura mais cara? 5 dicas para economizar no Spotify e outros streamings E esse ponto diz respeito principalmente à rotulação das faixas sintéticas encontradas no app . A queixa dos usuários sobre essa questão se torna cada vez ",
-    "description_pt": "O Spotify é um dos serviços de streaming de música mais populares do mundo, ultrapassando 760 milhões de usuários ativos mensais . Contudo, apesar de ser o companheiro diário de muitas pessoas, o aplicativo ainda parece fazer vista grossa para músicas geradas por inteligência artificial (IA) presentes na plataforma. 6 truques para não ouvir músicas ruins no Spotify Assinatura mais cara? 5 dicas para economizar no Spotify e outros streamings E esse ponto diz respeito principalmente à rotulação das faixas sintéticas encontradas no app . A queixa dos usuários sobre essa questão se torna cada vez ",
-    "link": "https://canaltech.com.br/apps/spotify-tenta-rotular-musicas-de-ia-mas-solucao-frustra-assinantes/",
-    "published": "2026-04-29T13:29:41+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/0P2GcFqpvhtMMLSQnos1zrEsaBY=/700x394/smart/i1111777.png"
-  },
-  {
-    "title_original": "iPhone 16 e iPhone 16e em oferta com ótimo preço e desempenho",
-    "title_pt": "iPhone 16 e iPhone 16e em oferta com ótimo preço e desempenho",
-    "description_original": "Os novos iPhones continuam sendo referência quando o assunto é desempenho, câmeras e durabilidade. E quando aparecem em oferta, o interesse cresce ainda mais — afinal, não é sempre que dá para economizar bastante em um aparelho premium da Apple. Neste comparativo, você vai entender as diferenças entre o iPhone 16 e o iPhone 16e, [&#8230;] O post iPhone 16 e iPhone 16e em oferta com ótimo preço e desempenho apareceu primeiro em Olhar Digital .",
-    "description_pt": "Os novos iPhones continuam sendo referência quando o assunto é desempenho, câmeras e durabilidade. E quando aparecem em oferta, o interesse cresce ainda mais — afinal, não é sempre que dá para economizar bastante em um aparelho premium da Apple. Neste comparativo, você vai entender as diferenças entre o iPhone 16 e o iPhone 16e, [&#8230;] O post iPhone 16 e iPhone 16e em oferta com ótimo preço e desempenho apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/reviews/iphone-16-e-iphone-16e-em-oferta-com-otimo-preco-e-desempenho/",
-    "published": "2026-04-29T13:25:00+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/412RWxKFt8L._AC_SL1000_-3.jpg"
-  },
-  {
-    "title_original": "Conectores do Claude: o novo jeito de colocar IA no Photoshop, Blender e Ableton",
-    "title_pt": "Conectores do Claude: o novo jeito de colocar IA no Photoshop, Blender e Ableton",
-    "description_original": "A Anthropic anunciou um conjunto de conectores que permitem ao Claude integrar-se a softwares da indústria criativa bem conhecidos O post Conectores do Claude: o novo jeito de colocar IA no Photoshop, Blender e Ableton apareceu primeiro em Olhar Digital .",
-    "description_pt": "A Anthropic anunciou um conjunto de conectores que permitem ao Claude integrar-se a softwares da indústria criativa bem conhecidos O post Conectores do Claude: o novo jeito de colocar IA no Photoshop, Blender e Ableton apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/inteligencia-artificial/conectores-do-claude-o-novo-jeito-de-colocar-ia-no-photoshop-blender-e-ableton/",
-    "published": "2026-04-29T13:20:29+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/04/Claude-criativo-1024x576.jpg"
-  },
-  {
-    "title_original": "Ofertas do dia: Echo com Alexa, notebook gamer, TV 4K e mais itens em promoção",
-    "title_pt": "Ofertas do dia: Echo com Alexa, notebook gamer, TV 4K e mais itens em promoção",
-    "description_original": "Com o 5.5 se aproximando, as ofertas começam a esquentar: confira a seleção preparada pelo Olhar Digital e aproveite para economizar O post Ofertas do dia: Echo com Alexa, notebook gamer, TV 4K e mais itens em promoção apareceu primeiro em Olhar Digital .",
-    "description_pt": "Com o 5.5 se aproximando, as ofertas começam a esquentar: confira a seleção preparada pelo Olhar Digital e aproveite para economizar O post Ofertas do dia: Echo com Alexa, notebook gamer, TV 4K e mais itens em promoção apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/04/29/reviews/ofertas-do-dia-echo-com-alexa-notebook-gamer-tv-4k-e-mais-itens-em-promocao/",
-    "published": "2026-04-29T13:15:00+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://img.odcdn.com.br/wp-content/uploads/2026/04/1-90-1024x576.jpg"
-  },
-  {
-    "title_original": "Quando a marca para de comprar atenção e começa a produzi-la",
-    "title_pt": "Quando a marca para de comprar atenção e começa a produzi-la",
-    "description_original": "Existe um momento específico em que uma empresa percebe que o problema não é orçamento de mídia. É posicionamento . Dentro de minha área de estudo encontrei o caso da Printi, que chegou a esse momento com uma das maiores infra estruturas gráficas da América Latina operando abaixo do seu potencial. Havia uma capacidade maior de produção, muito potencial a ser explorado,mas porque o mercado enxergava a empresa como apenas uma gráfica digital. Para quem era de fora, a Printi era a gráfica do cartão de visita. Para quem estava dentro, ela tinha capacidade para ser sete gráficas em uma visto todo o",
-    "description_pt": "Existe um momento específico em que uma empresa percebe que o problema não é orçamento de mídia. É posicionamento . Dentro de minha área de estudo encontrei o caso da Printi, que chegou a esse momento com uma das maiores infra estruturas gráficas da América Latina operando abaixo do seu potencial. Havia uma capacidade maior de produção, muito potencial a ser explorado,mas porque o mercado enxergava a empresa como apenas uma gráfica digital. Para quem era de fora, a Printi era a gráfica do cartão de visita. Para quem estava dentro, ela tinha capacidade para ser sete gráficas em uma visto todo o",
-    "link": "https://canaltech.com.br/colunas/quando-a-marca-para-de-comprar-atencao-e-comeca-a-produzi-la/",
-    "published": "2026-04-29T13:08:28+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/yryNxGWqK8VLfsnVwetCZ5buDWM=/700x394/smart/i652733.jpeg"
-  },
-  {
     "title_original": "Novio raises Rs 100 Cr in Series A led by Cornerstone Ventures",
     "title_pt": "Novio levanta Rs 100 Cr na Série A liderada pela Cornerstone Ventures",
     "description_original": "Fintech startup Novio will use this funding to scale its distribution network, product development and enhance AI capabilities.",
@@ -361,17 +515,6 @@
     "source": "YourStory",
     "language": "hi",
     "image": "https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/Novio-1777466258393.png"
-  },
-  {
-    "title_original": "Taylor Swift deepfakes are pushing scams on TikTok",
-    "title_pt": "Deepfakes de Taylor Swift estão promovendo golpes no TikTok",
-    "description_original": "Scammers are using AI-generated videos of celebrities including Taylor Swift and Rihanna to promote shady services on TikTok, according to authentication company Copyleaks. The ads typically show celebrities in interview settings, such as red carpets, podcasts, or talk shows, and often manipulate real footage with AI, the company said. Many promote rewards programs claiming users [&#8230;]",
-    "description_pt": "Os golpistas estão usando vídeos de celebridades gerados por IA, incluindo Taylor Swift e Rihanna, para promover serviços obscuros no TikTok, de acordo com a empresa de autenticação Copyleaks. Os anúncios normalmente mostram celebridades em ambientes de entrevistas, como tapetes vermelhos, podcasts ou talk shows, e muitas vezes manipulam imagens reais com IA, disse a empresa. Muitos promovem programas de recompensas reivindicando usuários [&#8230;]",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/920351/ai-celebrity-deepfake-ads-tiktok-copyleaks",
-    "published": "2026-04-29T13:00:00+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-2267995710.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
   },
   {
     "title_original": "Galaxy S26 Plus (512 GB) recebe 50% de desconto para Dia das Mães no Mercado Livre",
@@ -429,26 +572,15 @@
     "image": "https://images.yourstory.com/cs/2/1a70b4f0170611edbdd8b5d28d859895/HydrogenAnodeBlower5-1777456828772.jpg"
   },
   {
-    "title_original": "Broking platform Sahi raises $33M in Series B led by Accel",
-    "title_pt": "A plataforma de corretagem Sahi levanta US$ 33 milhões na Série B liderada pela Accel",
-    "description_original": "Sahi will use this funding round to build on its technology & AI stack and expand product suite to scale user base",
-    "description_pt": "Sahi usará esta rodada de financiamento para desenvolver sua pilha de tecnologia e IA e expandir o conjunto de produtos para dimensionar a base de usuários.",
-    "link": "https://yourstory.com/2026/04/funding-broking-platform-sahi-33-million-series-b-accel",
-    "published": "2026-04-29T12:22:55+00:00",
+    "title_original": "Startup news and updates: Daily roundup (April 29, 2026)",
+    "title_pt": "Notícias e atualizações de startups: resumo diário (29 de abril de 2026)",
+    "description_original": "YourStory presents the daily news roundup for Wednesday, April 29, 2026.",
+    "description_pt": "YourStory apresenta o resumo diário de notícias de quarta-feira, 29 de abril de 2026.",
+    "link": "https://yourstory.com/2026/04/startup-news-updates-daily-roundup-april-29-2026",
+    "published": "2026-04-29T12:12:49+00:00",
     "source": "YourStory",
     "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Imagespzl-1680421400903.jpg"
-  },
-  {
-    "title_original": "Galaxy S26 (256 GB) tem desconto imbatível de 47% antes do Dia das Mães 2026",
-    "title_pt": "Galaxy S26 (256 GB) tem desconto imbatível de 47% antes do Dia das Mães 2026",
-    "description_original": "Galaxy S26 (256 GB) tem tela de 120 Hz, 12 GB de RAM e câmera de 50 MP; celular da Samsung recebe desconto jamais visto de 47% no Pix no cupom no Dia das Mães 2026 Galaxy S26 (256 GB) tem desconto imbatível de 47% antes do Dia das Mães 2026",
-    "description_pt": "Galaxy S26 (256 GB) tem tela de 120 Hz, 12 GB de RAM e câmera de 50 MP; celular da Samsung recebe desconto jamais visto de 47% no Pix no cupom no Dia das Mães 2026 Galaxy S26 (256 GB) tem desconto imbatível de 47% antes do Dia das Mães 2026",
-    "link": "https://tecnoblog.net/achados/galaxy-s26-256-gb-tem-desconto-imbativel-de-47-antes-do-dia-das-maes-2026/",
-    "published": "2026-04-29T12:14:38+00:00",
-    "source": "Tecnoblog",
-    "language": "pt",
-    "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/04/samsung-galaxy-s26-back-2-achados-dia-das-maes-1060x596.jpg"
+    "image": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg"
   },
   {
     "title_original": "The Download: storing nuclear waste and orchestrating agents",
@@ -473,28 +605,6 @@
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-2261040231-1024x648.jpg"
   },
   {
-    "title_original": "Electric air taxis are finally taking flight — just not with passengers",
-    "title_pt": "Os táxis aéreos elétricos estão finalmente decolando – mas não com passageiros",
-    "description_original": "It was the perfect day for an electric air taxi demonstration - albeit one without passengers. On Monday, an electric aircraft from Joby Aviation took off from JFK Airport for a flight demonstrating the company's future air taxi route to Manhattan. The aircraft - egg-shaped cabin, six tilt-rotor propellers, electric motor - made its way [&#8230;]",
-    "description_pt": "Foi o dia perfeito para uma demonstração de táxi aéreo elétrico - embora sem passageiros. Na segunda-feira, uma aeronave elétrica da Joby Aviation decolou do aeroporto JFK para um voo demonstrando a futura rota de táxi aéreo da empresa para Manhattan. A aeronave – cabine em formato de ovo, seis hélices de rotor basculante, motor elétrico – fez o seu caminho [&#8230;]",
-    "link": "https://www.theverge.com/transportation/919532/joby-aviation-electric-air-taxi-jfk-manhattan-faa",
-    "published": "2026-04-29T12:00:00+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/DSC01562.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-  },
-  {
-    "title_original": "Saros reminded me how great the DualSense can be",
-    "title_pt": "Saros me lembrou o quão bom o DualSense pode ser",
-    "description_original": "The DualSense controller was one of Sony's main selling points for the PS5. Beyond things like a striking new design and adaptive triggers, the controller's haptic feedback offered genuinely cool new experiences for games. Rumble effects had been around for decades at that point, but the DualSense offered something very different: I'm still blown away [&#8230;]",
-    "description_pt": "O controlador DualSense foi um dos principais pontos de venda da Sony para o PS5. Além de coisas como um novo design impressionante e gatilhos adaptativos, o feedback tátil do controlador ofereceu novas experiências genuinamente interessantes para os jogos. Os efeitos Rumble já existiam há décadas, mas o DualSense ofereceu algo muito diferente: ainda estou impressionado [&#8230;]",
-    "link": "https://www.theverge.com/games/920070/saros-ps5-dualsense-controller-haptics-rumble",
-    "published": "2026-04-29T12:00:00+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/saros-screenshot-02-en-14feb25.webp?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-  },
-  {
     "title_original": "Best Walking Pads for Working From Home (2026)",
     "title_pt": "Melhores almofadas de caminhada para trabalhar em casa (2026)",
     "description_original": "Our remote team clocked serious hours walking, working, and sometimes jogging to find the best under-desk treadmills for home offices and small spaces.",
@@ -504,17 +614,6 @@
     "source": "Wired",
     "language": "en",
     "image": "https://media.wired.com/photos/698a2d1c96a5f6f94a9077c0/master/pass/Update-%20Best%20Walking%20Pads.png"
-  },
-  {
-    "title_original": "Your PS5 can now transform into a Linux PC",
-    "title_pt": "Seu PS5 agora pode se transformar em um PC Linux",
-    "description_original": "A developer has created a method to get Linux running on some versions of Sony's PlayStation 5 console. Andy Nguyen previously showed off a ported version of Ubuntu running PC games on a PS5 last month, and he's now published the installation steps on GitHub this week. This is a soft mod, so it won't [&#8230;]",
-    "description_pt": "Um desenvolvedor criou um método para fazer o Linux rodar em algumas versões do console PlayStation 5 da Sony. Andy Nguyen exibiu anteriormente uma versão portada do Ubuntu rodando jogos de PC em um PS5 no mês passado, e agora publicou as etapas de instalação no GitHub esta semana. Este é um mod suave, então não [&#8230;]",
-    "link": "https://www.theverge.com/news/920322/ps5-linux-project-exploit-install",
-    "published": "2026-04-29T11:43:55+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/ps5linux.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
   },
   {
     "title_original": "Smart Cat Collars: Which Is Best for Health and GPS Tracking?",
@@ -572,17 +671,6 @@
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2021/07/data-breach.jpeg"
   },
   {
-    "title_original": "Adidas Adizero Adios Pro Evo 3 Shoe Review: World Record Breaker",
-    "title_pt": "Adidas Adizero Adios Pro Evo 3 Review: World Record Breaker",
-    "description_original": "I ran in Sabastian Sawe’s world-record-breaking running shoe. It’s fast, but only if you can maintain your locked-in form for 26 miles.",
-    "description_pt": "Corri com o tênis de corrida recorde mundial de Sabastian Sawe. É rápido, mas apenas se você conseguir manter a forma travada por 42 quilômetros.",
-    "link": "https://www.wired.com/review/adidas-adizero-pro-evo-3/",
-    "published": "2026-04-29T11:00:00+00:00",
-    "source": "Wired",
-    "language": "en",
-    "image": "https://media.wired.com/photos/69f14b9fe50c55ffd1028715/master/pass/Sabastian%20Sawe_London%20Marathon_07.jpg"
-  },
-  {
     "title_original": "Your Phone Notifications Reveal More Than You Realize. Here’s How to Lock Them Down",
     "title_pt": "As notificações do seu telefone revelam mais do que você imagina. Veja como bloqueá-los",
     "description_original": "A recent case shows law enforcement can see incoming Signal messages by searching an iPhone, even after the Signal app has been deleted. Here’s what to know, and how to protect yourself.",
@@ -594,8 +682,19 @@
     "image": "https://media.wired.com/photos/69ebc2fb8bd883f99bb0f0e5/master/pass/Forensic-Searches-Can-Expose-Deleted-Signal-Messages-Gear-2264943495.jpg"
   },
   {
+    "title_original": "Adidas Adizero Adios Pro Evo 3 Shoe Review: World Record Breaker",
+    "title_pt": "Adidas Adizero Adios Pro Evo 3 Review: World Record Breaker",
+    "description_original": "I ran in Sabastian Sawe’s world-record-breaking running shoe. It’s fast, but only if you can maintain your locked-in form for 26 miles.",
+    "description_pt": "Corri com o tênis de corrida recorde mundial de Sabastian Sawe. É rápido, mas apenas se você conseguir manter a forma travada por 42 quilômetros.",
+    "link": "https://www.wired.com/review/adidas-adizero-pro-evo-3/",
+    "published": "2026-04-29T11:00:00+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/69f14b9fe50c55ffd1028715/master/pass/Sabastian%20Sawe_London%20Marathon_07.jpg"
+  },
+  {
     "title_original": "Which Automatic Litter Box Is Best? We Tested Litter-Robot’s Lineup",
-    "title_pt": "Qual caixa de areia automática é a melhor? Testamos a programação do Litter-Robot",
+    "title_pt": "Qual caixa sanitária automática é a melhor? Testamos a programação do Litter-Robot",
     "description_original": "Whisker’s Litter-Robot name has become synonymous with the automatic litter box. We’ve tested the entire lineup and can help you choose the best model for your household.",
     "description_pt": "O nome Litter-Robot de Whisker tornou-se sinônimo de caixa sanitária automática. Testamos toda a linha e podemos ajudá-lo a escolher o melhor modelo para sua casa.",
     "link": "https://www.wired.com/story/which-litter-robot-is-right-for-you/",
@@ -603,28 +702,6 @@
     "source": "Wired",
     "language": "en",
     "image": "https://media.wired.com/photos/69f180e1da470ee246085f2b/master/pass/Which-Litter-Robot-Model-Is-Right-for-You-.jpg"
-  },
-  {
-    "title_original": "‘The Damage Is Massive’: How the Justice Department Dismantled Its Voting Rights Section",
-    "title_pt": "‘O dano é enorme’: como o Departamento de Justiça desmantelou sua seção de direitos de voto",
-    "description_original": "There were around 30 attorneys in the DOJ’s Voting Section on the day of Donald Trump’s second inauguration. Three months later, all but two were gone. Now the election deniers are in control.",
-    "description_pt": "Havia cerca de 30 advogados na Seção de Votação do DOJ no dia da segunda posse de Donald Trump. Três meses depois, todos, exceto dois, haviam desaparecido. Agora os negadores das eleições estão no controle.",
-    "link": "https://www.wired.com/story/the-justice-department-has-destroyed-its-voting-rights-section/",
-    "published": "2026-04-29T10:30:00+00:00",
-    "source": "Wired",
-    "language": "en",
-    "image": "https://media.wired.com/photos/69f14b43423c2e71c99af5dd/master/pass/Justice-Department-Has-Destroyed-Its-Voting-Rights-Section-Politics.jpg"
-  },
-  {
-    "title_original": "I've Covered Robots for Years. This One Is Different",
-    "title_pt": "Eu cobri robôs há anos. Este é diferente",
-    "description_original": "From sorting chicken nuggets to screwing in lightbulbs, Eka’s robotic claw feels like we're approaching a ChatGPT moment for the physical world.",
-    "description_pt": "Desde separar nuggets de frango até enroscar lâmpadas, a garra robótica de Eka parece que estamos nos aproximando de um momento ChatGPT para o mundo físico.",
-    "link": "https://www.wired.com/story/when-robots-have-their-chatgpt-moment-remember-these-pincers/",
-    "published": "2026-04-29T10:00:00+00:00",
-    "source": "Wired",
-    "language": "en",
-    "image": "https://media.wired.com/photos/69f11fc37df9442e8d9b4374/master/pass/20260320-wired-eka-robotics-0429.jpg"
   },
   {
     "title_original": "“36氪企业全情报”官方股票舆情交流社群，正式开放招募！",
@@ -663,7 +740,7 @@
     "title_original": "It’s time to make a plan for nuclear waste",
     "title_pt": "É hora de fazer um plano para o lixo nuclear",
     "description_original": "Today, nuclear energy enjoys a rare moment of support across the political spectrum in the US. Interest from tech companies that are scrambling to meet demand for massive data centers has sparked a resurgence of money and attention in the industry. That newfound interest is exactly why it’s time to talk about an old problem:&#8230;",
-    "description_pt": "Hoje, a energia nuclear desfruta de um raro momento de apoio em todo o espectro político nos EUA. O interesse das empresas tecnológicas que lutam para satisfazer a procura de centros de dados massivos provocou um ressurgimento de dinheiro e atenção na indústria. Esse interesse recém-descoberto é exatamente o motivo pelo qual é hora de falar sobre um problema antigo:&#8230;",
+    "description_pt": "Hoje, a energia nuclear desfruta de um raro momento de apoio em todo o espectro político nos EUA. O interesse das empresas tecnológicas que lutam para satisfazer a procura de centros de dados massivos provocou um ressurgimento de dinheiro e atenção na indústria. Esse novo interesse é exatamente o motivo pelo qual é hora de falar sobre um problema antigo:&#8230;",
     "link": "https://www.technologyreview.com/2026/04/29/1136659/plan-nuclear-waste/",
     "published": "2026-04-29T08:00:00+00:00",
     "source": "MIT Tech Review",
@@ -691,17 +768,6 @@
     "source": "YourStory",
     "language": "hi",
     "image": "https://images.yourstory.com/cs/4/8e7cc4102d6c11e9aa979329348d4c3e/DeepFakeTwitterPreview-1699620792094.jpeg"
-  },
-  {
-    "title_original": "Robôs humanoides são os novos “funcionários” de aeroporto no Japão",
-    "title_pt": "Robôs humanoides são os novos “funcionários” de aeroporto no Japão",
-    "description_original": "Aparelhos são fornecidos pela chinesa Unitree. Robôs humanoides são os novos “funcionários” de aeroporto no Japão",
-    "description_pt": "Aparelhos são fornecidos pela chinesa Unitree. Robôs humanoides são os novos “funcionários” de aeroporto no Japão",
-    "link": "https://tecnoblog.net/noticias/robos-humanoides-sao-os-novos-funcionarios-de-aeroporto-no-japao/",
-    "published": "2026-04-29T04:25:58+00:00",
-    "source": "Tecnoblog",
-    "language": "pt",
-    "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/img_1493.webp"
   },
   {
     "title_original": "最前线｜未来宇航发布FX锋行系列空间飞行器，切入卫星组网部署与在轨服务市场",
@@ -748,17 +814,6 @@
     "image": "https://img.36krcdn.com/hsossms/20260427/v2_a99141ff7e9e419a97d9c1934c6a0752@5809365_oswg919744oswg2000oswg1500_img_jpg?x-oss-process=image/quality,q_90/format,jpg/interlace,1"
   },
   {
-    "title_original": "前米哈游高管创业，AI 原生增长 Agent LeapMind Growth 获 CMC 资本领投",
-    "title_pt": "前米哈游高管创业，AI 原生增长 Agent LeapMind Growth 获 CMC 资本领投",
-    "description_original": "2026 年 4 月 29 日，上海讯 —— AI 原生增长 Agent LeapMind Growth 今日宣布完成天使 + 轮融资，由 CMC 资本领投。本轮融资将主要用于核心产品 GrowthGPT 的研发迭代、产研团队扩充及早期市场拓展。 LeapMind Growth 成立于 2025 年 4 月，由前米哈游全球用户增长负责人、前快手增长策略中心负责人 马如平（Rubin） 创立，此前也曾在 TikTok 负责用户增长，累计主导规模超 50 亿美元的用户增长项目。公司核心成员均来自字节跳动、米哈游、快手、美团等企业，核心团队兼具超大规模增长管理、AI 系统工程化与全球化发行的复合能力。 公司核心产品为 AI 原生的 自主迭代增长 Agent ——GrowthGPT，旨在以 AI Agent 接管增长执行全链路：用户只需设定目标与边界，GrowthGPT 即可完成后续的策略制定、落地执行与持续优化全流程。 GrowthGPT 覆盖增长执行全链路：从跨平台数据诊断发现问题，到创意洞察驱动内容迭代，再到自动下达执行指令并完成效果优化。系统内置预算安全防护机制，可有效防范超支风险；同时通过增长记忆沉淀业务上下文，实现越用越贴合企业业务需求的效果。 GrowthGPT 端到端增长闭环：从市场洞察到实时优化 GrowthGPT 已在跨境出海、DTC 品牌及全球游戏发行等场景中取得显著",
-    "description_pt": "2026 年 4 月 29 日，上海讯 —— AI 原生增长 Agent LeapMind Growth 今日宣布完成天使 + 轮融资，由 CMC 资本领投。本轮融资将主要用于核心产品 GrowthGPT 的研发迭代、产研团队扩充及早期市场拓展。 LeapMind Growth 成立于 2025 年 4 月，由前米哈游全球用户增长负责人、前快手增长策略中心负责人 马如平（Rubin） 创立，此前也曾在 TikTok 负责用户增长，累计主导规模超 50 亿美元的用户增长项目。公司核心成员均来自字节跳动、米哈游、快手、美团等企业，核心团队兼具超大规模增长管理、AI 系统工程化与全球化发行的复合能力。 公司核心产品为 AI 原生的 自主迭代增长 Agent ——GrowthGPT，旨在以 AI Agent 接管增长执行全链路：用户只需设定目标与边界，GrowthGPT 即可完成后续的策略制定、落地执行与持续优化全流程。 GrowthGPT 覆盖增长执行全链路：从跨平台数据诊断发现问题，到创意洞察驱动内容迭代，再到自动下达执行指令并完成效果优化。系统内置预算安全防护机制，可有效防范超支风险；同时通过增长记忆沉淀业务上下文，实现越用越贴合企业业务需求的效果。 GrowthGPT 端到端增长闭环：从市场洞察到实时优化 GrowthGPT 已在跨境出海、DTC 品牌及全球游戏发行等场景中取得显著",
-    "link": "https://36kr.com/p/3786123369094405?f=rss",
-    "published": "2026-04-29T01:00:00+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260428/v2_0d36eda714704fb8b30f027b15cb071a@5023078_oswg961892oswg2560oswg1440_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1"
-  },
-  {
     "title_original": "Anti-Trump Instagram pic of seashells now enough to indict ex-FBI directors",
     "title_pt": "Foto anti-Trump de conchas no Instagram agora é suficiente para indiciar ex-diretores do FBI",
     "description_original": "The clown car is all gassed up.",
@@ -768,39 +823,6 @@
     "source": "Ars Technica",
     "language": "en",
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/department-of-clowns-1152x648.jpg"
-  },
-  {
-    "title_original": "Celular com 256 GB: 15 modelos partir de R$ 800 para comprar em 2026",
-    "title_pt": "Celular com 256 GB: 15 modelos partir de R$ 800 para comprar em 2026",
-    "description_original": "Lista reúne celulares com 256 GB de marcas como Samsung, Motorola e Xiaomi, com opções baratas, intermediárias e premium para comprar em 2026 Celular com 256 GB: 15 modelos partir de R$ 800 para comprar em 2026",
-    "description_pt": "Lista reúne celulares com 256 GB de marcas como Samsung, Motorola e Xiaomi, com opções baratas, intermediárias e premium para comprar em 2026 Celular com 256 GB: 15 modelos partir de R$ 800 para comprar em 2026",
-    "link": "https://tecnoblog.net/guias/celular-256gb-melhores-para-comprar/",
-    "published": "2026-04-28T22:42:19+00:00",
-    "source": "Tecnoblog",
-    "language": "pt",
-    "image": "https://files.tecnoblog.net/wp-content/uploads/2026/04/celular-256gb-guia-tb-indica.png"
-  },
-  {
-    "title_original": "Galaxy Watch 8 tem melhor preço de 2026 em oferta de Dia das Mães no Magalu",
-    "title_pt": "Galaxy Watch 8 tem melhor preço de 2026 em oferta de Dia das Mães no Magalu",
-    "description_original": "Galaxy Watch 8 monitora sono, estresse, atividades físicas e outros dados de saúde; smarwatch pode ser um bom presente para esse Dia das Mães Galaxy Watch 8 tem melhor preço de 2026 em oferta de Dia das Mães no Magalu",
-    "description_pt": "Galaxy Watch 8 monitora sono, estresse, atividades físicas e outros dados de saúde; smarwatch pode ser um bom presente para esse Dia das Mães Galaxy Watch 8 tem melhor preço de 2026 em oferta de Dia das Mães no Magalu",
-    "link": "https://tecnoblog.net/achados/galaxy-watch-8-tem-melhor-preco-de-2026-em-oferta-de-dia-das-maes-no-magalu/",
-    "published": "2026-04-28T22:02:19+00:00",
-    "source": "Tecnoblog",
-    "language": "pt",
-    "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/04/galaxy-watch-8-foto-thassius-velosotecnoblog-1-1060x596.png"
-  },
-  {
-    "title_original": "Galaxy Watch 8 Classic tem 47% OFF em até 12x na Amazon para o Dia das Mães 2026",
-    "title_pt": "Galaxy Watch 8 Classic tem 47% OFF em até 12x na Amazon para o Dia das Mães 2026",
-    "description_original": "Smartwach premium da Samsung traz tela AMOLED, inteligência artificial integrada e alta resistência somados a sensores avançados Galaxy Watch 8 Classic tem 47% OFF em até 12x na Amazon para o Dia das Mães 2026",
-    "description_pt": "Smartwach premium da Samsung traz tela AMOLED, inteligência artificial integrada e alta resistência somados a sensores avançados Galaxy Watch 8 Classic tem 47% OFF em até 12x na Amazon para o Dia das Mães 2026",
-    "link": "https://tecnoblog.net/achados/galaxy-watch-8-classic-tem-47-off-em-ate-12x-na-amazon-para-o-dia-das-maes-2026/",
-    "published": "2026-04-28T21:46:32+00:00",
-    "source": "Tecnoblog",
-    "language": "pt",
-    "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/04/galaxy-watch-8-classic-dia-das-maes-1060x596.png"
   },
   {
     "title_original": "Flesh-eating bacteria devour man's arm and leg in just three days",
@@ -825,28 +847,6 @@
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/09/jimmy-kimmel-1152x648-1758212989.jpg"
   },
   {
-    "title_original": "Drone pilot makes US rescind no-fly zones around unmarked, moving ICE vehicles",
-    "title_pt": "Piloto de drone faz os EUA rescindirem zonas de exclusão aérea em torno de veículos ICE em movimento e não marcados",
-    "description_original": "Civil liberty concerns spur FAA to revise drone no-fly zones near ICE vehicles.",
-    "description_pt": "As preocupações com a liberdade civil estimulam a FAA a revisar as zonas de exclusão aérea de drones perto dos veículos ICE.",
-    "link": "https://arstechnica.com/gadgets/2026/04/no-fly-zones-around-moving-ice-vehicles-this-drone-pilot-fought-back-and-won/",
-    "published": "2026-04-28T19:37:09+00:00",
-    "source": "Ars Technica",
-    "language": "en",
-    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/powderhorn_jan_10-1152x648.jpg"
-  },
-  {
-    "title_original": "Humanoid robots start sorting luggage in Tokyo airport test amid labor shortage",
-    "title_pt": "Robôs humanóides começam a separar bagagens em teste no aeroporto de Tóquio em meio à escassez de mão de obra",
-    "description_original": "Humanoid robots could load cargo and clean aircraft cabins at Haneda Airport.",
-    "description_pt": "Robôs humanóides poderiam carregar cargas e limpar cabines de aeronaves no aeroporto de Haneda.",
-    "link": "https://arstechnica.com/ai/2026/04/japan-airlines-tests-having-robots-instead-of-humans-handle-travelers-luggage/",
-    "published": "2026-04-28T18:01:36+00:00",
-    "source": "Ars Technica",
-    "language": "en",
-    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-2272048837-1152x648.jpg"
-  },
-  {
     "title_original": "Zomato parent Eternal’s revenue jumps as Blinkit drives growth",
     "title_pt": "A receita da Eternal, controladora da Zomato, aumenta à medida que o Blinkit impulsiona o crescimento",
     "description_original": "The company posted a profit after tax (PAT) of Rs 174 crore for the quarter, up from Rs 39 crore a year earlier and Rs 102 crore in the December quarter, reflecting a steady improvement in profitability.",
@@ -869,15 +869,15 @@
     "image": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Mitvirus_color.webp?w=2127"
   },
   {
-    "title_original": "Battery Smart raises $15M in debt from Mirova",
-    "title_pt": "Battery Smart levanta dívida de US$ 15 milhões com Mirova",
-    "description_original": "The fresh capital will be used to expand the company’s BaaS infrastructure and further develop its network of partner-operated stations across major urban and semi-urban regions in India.",
-    "description_pt": "O novo capital será usado para expandir a infraestrutura BaaS da empresa e desenvolver ainda mais sua rede de estações operadas por parceiros nas principais regiões urbanas e semiurbanas da Índia.",
-    "link": "https://yourstory.com/2026/04/battery-smart-raises-15m-debt-mirova",
-    "published": "2026-04-28T11:22:35+00:00",
+    "title_original": "EON Space Labs: India’s satellite optics bet",
+    "title_pt": "EON Space Labs: aposta óptica de satélite da Índia",
+    "description_original": "EON Space Labs builds lightweight EO-IR payloads. Its MIRA telescope flew on PSLV-C62, reducing launch weight and import dependence.",
+    "description_pt": "EON Space Labs constrói cargas úteis EO-IR leves. Seu telescópio MIRA voou no PSLV-C62, reduzindo o peso de lançamento e a dependência de importações.",
+    "link": "https://yourstory.com/2026/04/eon-space-labs-optical-payloads",
+    "published": "2026-04-28T11:42:04+00:00",
     "source": "YourStory",
     "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/Imagetm2r-1777375238038.jpg"
+    "image": "https://images.yourstory.com/cs/286/1a70b4f0170611edbdd8b5d28d859895/1-1777370473289.jpg"
   },
   {
     "title_original": "Sahamati raises Rs 50 Cr from financial sector entities",
@@ -891,26 +891,26 @@
     "image": "https://images.yourstory.com/cs/2/c2cedff02d6111ef9021856619e24ca1/CopyofNewPPTTemplates-1777372321381.jpg"
   },
   {
-    "title_original": "HyugaLife raises Rs 100 Cr in Series A led by IvyCap Ventures",
-    "title_pt": "HyugaLife levanta Rs 100 Cr na Série A liderada pela IvyCap Ventures",
-    "description_original": "HyugaLife said it will use this funding to strengthen its AI-led personalisation technology, expansion of its dark store network, and setting up offline retail presence.",
-    "description_pt": "A HyugaLife disse que usará esse financiamento para fortalecer sua tecnologia de personalização liderada por IA, expandir sua rede de lojas escuras e estabelecer presença no varejo offline.",
-    "link": "https://yourstory.com/2026/04/funding-hyugalife-rs-100-crore-series-a-ivycap-ventures",
-    "published": "2026-04-28T10:19:34+00:00",
+    "title_original": "Startup news and updates: daily roundup (April 28, 2026)",
+    "title_pt": "Notícias e atualizações de startups: resumo diário (28 de abril de 2026)",
+    "description_original": "YourStory presents the daily news roundup for Tuesday, April 28, 2026.",
+    "description_pt": "YourStory apresenta o resumo diário de notícias de terça-feira, 28 de abril de 2026.",
+    "link": "https://yourstory.com/2026/04/startup-news-and-updates-daily-roundup-april-28-2026",
+    "published": "2026-04-28T11:02:00+00:00",
     "source": "YourStory",
     "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/rupee-final-1660220498225.png"
+    "image": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg"
   },
   {
-    "title_original": "Rebalance is building India's missing capital pipeline for women founders",
-    "title_pt": "Rebalance está construindo o canal de capital que faltava na Índia para mulheres fundadoras",
-    "description_original": "Gurugram-based accelerator and angel community Rebalance backs women-led startups with mentorship and investor access, proving that opportunity, not talent, was the missing link.",
-    "description_pt": "A aceleradora e comunidade anjo baseada em Gurugram, Rebalance, apoia startups lideradas por mulheres com orientação e acesso a investidores, provando que a oportunidade, e não o talento, era o elo que faltava.",
-    "link": "https://yourstory.com/2026/04/rebalance-india-accelerator-women-founders-funding",
-    "published": "2026-04-28T06:33:23+00:00",
+    "title_original": "Building a climate-tech startup in India: Lessons from solving real-world water challenges",
+    "title_pt": "Construindo uma startup de tecnologia climática na Índia: lições da solução de desafios hídricos do mundo real",
+    "description_original": "India’s water crisis is not a future scenario, it is a present operational reality. For climate-tech founders building inside that crisis, the lessons are sharper, stranger, and more useful than anything a business school curriculum covers. Navkaran Singh Bagga India’s fresh water supply crisis i",
+    "description_pt": "A crise hídrica da Índia não é um cenário futuro, é uma realidade operacional presente. Para os fundadores da tecnologia climática que estão a construir dentro dessa crise, as lições são mais nítidas, mais estranhas e mais úteis do que qualquer coisa que um currículo de escola de negócios cubra. Crise de abastecimento de água doce de Navkaran Singh Bagga Índia i",
+    "link": "https://yourstory.com/2026/04/lessons-from-solving-real-world-water-challenges",
+    "published": "2026-04-28T06:46:08+00:00",
     "source": "YourStory",
     "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/727115006d2011f09259ebc21ca89457/Rebalance1600x9001-1777292824268.jpg"
+    "image": "https://images.yourstory.com/cs/2/bd251c602d6a11e9aa979329348d4c3e/8c65c3959c8335ee365469af3d2820b21571211825922jpg"
   },
   {
     "title_original": "Elon Musk and Sam Altman are going to court over OpenAI’s future",
@@ -980,7 +980,7 @@
   },
   {
     "title_original": "Health-care AI is here. We don’t know if it actually helps patients.",
-    "title_pt": "A IA na área da saúde está aqui. Não sabemos se isso realmente ajuda os pacientes.",
+    "title_pt": "A IA em saúde está aqui. Não sabemos se isso realmente ajuda os pacientes.",
     "description_original": "I don’t need to tell you that&#160;AI is everywhere. Or that it is being used, increasingly, in hospitals. Doctors are using AI to help them with note-taking. AI-based tools are trawling through patient records, flagging people who may require certain support or treatments. They are also used to interpret medical exam results and x-rays. A&#8230;",
     "description_pt": "Não preciso dizer que a IA está em toda parte. Ou que está sendo utilizado, cada vez mais, em hospitais. Os médicos estão usando IA para ajudá-los a fazer anotações. Ferramentas baseadas em IA vasculham os registros dos pacientes, sinalizando pessoas que podem precisar de determinado suporte ou tratamento. Eles também são usados ​​para interpretar resultados de exames médicos e radiografias. A&#8230;",
     "link": "https://www.technologyreview.com/2026/04/24/1136352/health-care-ai-dont-know-actually-helps-patients/",
@@ -1046,7 +1046,7 @@
   },
   {
     "title_original": "Beginner Guide to CJ Affiliate (Commission Junction) in 2022",
-    "title_pt": "Guia para iniciantes para afiliado CJ (Commission Junction) em 2022",
+    "title_pt": "Guia para iniciantes para afiliados CJ (Commission Junction) em 2022",
     "description_original": "Image by vectorjuice on Freepik In this CJ Affiliate guide, I will share with you everything you need to get started on the platform, I will give you an in-depth look at the network and how it works. You will learn how to earn money with the platform. If you're not interested, I'll share some of the best CJ affiliate programs and alternatives. By the end of this post, I will also answer some of the FAQs on the platform and give my quick CJ review. Sounds Good So let’s start What is CJ Affiliate? Commission Junction is an online advertising company that offers affiliate programs for various ret",
     "description_pt": "Imagem de vectorjuice no Freepik Neste guia de afiliados CJ, compartilharei com você tudo o que você precisa para começar na plataforma, darei uma visão aprofundada da rede e como ela funciona. Você aprenderá como ganhar dinheiro com a plataforma. Se você não estiver interessado, compartilharei alguns dos melhores programas e alternativas de afiliados CJ. Ao final deste post, também responderei algumas perguntas frequentes sobre a plataforma e darei minha rápida análise do CJ. Parece bom, então vamos começar. O que é CJ Affiliate? Commission Junction é uma empresa de publicidade online que ofe",
     "link": "https://techncruncher.blogspot.com/2022/09/cj-affiliate-ultimate-guide-to.html",
