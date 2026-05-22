@@ -1,47 +1,300 @@
 [
   {
-    "title_original": "AI+供应链：大模型与智能决策如何重构供应链全链路| 2026AI Partner·北京亦庄AI+产业大会",
-    "title_pt": "AI+供应链：大模型与智能决策如何重构供应链全链路| 2026AI Partner·北京亦庄AI+产业大会",
-    "description_original": "AI究竟如何为产业创造价值？见证AI从“热点”转化为“生产力”的关键一跃。 今天的顺丰已经用AI调度着中国三分之一的航空货运。从百万人的协同、二十万辆车的调度，到每天五千万票件的动态路由——物流供应链的复杂度，正是AI落地的最佳试验田。一个超大规模网络如何用大模型、Agent和运筹算法，将“24小时达”从承诺变成日常，并将这份能力输送给更多中国企业。 以下为顺丰集团数智供应链解决方案事业群高级副总裁 唐恺 演讲内容，经36氪整理编辑： 唐恺丨顺丰集团数智供应链解决方案事业群高级副总裁 各位来宾下午好，很高兴来到亦庄这样的场合跟大家分享物流供应链AI的应用。 开始之前跟大家讲一下供应链，从智能化视角或者数字化视角来看供应链，需要把供应链做一个抽象或者分层，统一来讲供应链是无从下手的，会用要素、链路、网络这三个层级去看整个供应链的协同以及看供应链的数字化进展和智能化进展，供应链基础要素我们叫作人车货场，所有供应链的动作和执行都是跟要素串联相关的，要素的调动形成链路，链路交织形成网络，单纯从顺丰来看，我们讲其中一个点顺丰自身在供应链领域的超大规模性，人车货场，人，在顺丰体系协同的员工超过一百万人的协同规模，整个车辆自有车辆超过20万辆，更大是中国的航空空运网络，中国有240架全货机，110架是在顺丰手上，更密集的航空网络是整个辅仓运力网络，客机辅仓也是运货的，辅仓运力三分之一是在顺丰的手",
-    "description_pt": "AI究竟如何为产业创造价值？见证AI从“热点”转化为“生产力”的关键一跃。 今天的顺丰已经用AI调度着中国三分之一的航空货运。从百万人的协同、二十万辆车的调度，到每天五千万票件的动态路由——物流供应链的复杂度，正是AI落地的最佳试验田。一个超大规模网络如何用大模型、Agent和运筹算法，将“24小时达”从承诺变成日常，并将这份能力输送给更多中国企业。 以下为顺丰集团数智供应链解决方案事业群高级副总裁 唐恺 演讲内容，经36氪整理编辑： 唐恺丨顺丰集团数智供应链解决方案事业群高级副总裁 各位来宾下午好，很高兴来到亦庄这样的场合跟大家分享物流供应链AI的应用。 开始之前跟大家讲一下供应链，从智能化视角或者数字化视角来看供应链，需要把供应链做一个抽象或者分层，统一来讲供应链是无从下手的，会用要素、链路、网络这三个层级去看整个供应链的协同以及看供应链的数字化进展和智能化进展，供应链基础要素我们叫作人车货场，所有供应链的动作和执行都是跟要素串联相关的，要素的调动形成链路，链路交织形成网络，单纯从顺丰来看，我们讲其中一个点顺丰自身在供应链领域的超大规模性，人车货场，人，在顺丰体系协同的员工超过一百万人的协同规模，整个车辆自有车辆超过20万辆，更大是中国的航空空运网络，中国有240架全货机，110架是在顺丰手上，更密集的航空网络是整个辅仓运力网络，客机辅仓也是运货的，辅仓运力三分之一是在顺丰的手",
-    "link": "https://36kr.com/p/3820107133555077?f=rss",
-    "published": "2026-05-22T06:54:18+00:00",
+    "title_original": "从感知环境到改变世界：物理AI的机遇、路径与实践| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "从感知环境到改变世界：物理AI的机遇、路径与实践| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "中国工业物理AI的真正优势不在模型参数，而在全球12倍的工业机器人部署密度、两倍的发电量和密集的5G边缘节点——场景密度、基建底座和开源模型的合力，正在推动物理AI从实验室走向规模化落地。 江行智能提出工业物理AI的三层模型，这套系统已在新能源场站和电网巡检场景落地——覆盖贵州、内蒙古等多地，核心算法准确率达99%。陈龙特别指出，工业场景下一个看似简单的巡检任务通常需要拆成100到200个子任务，这对AI的稳定性和可靠性提出了远超消费级应用的要求。 以下为演讲内容，经36氪整理编辑： 陈龙丨江行智能基模CTO 各位嘉宾、行业伙伴下午好，我是来自江行智能的具身基模CTO陈龙，我的分享题目是从感知环境到改变世界：物理AI的机遇、路径和挑战。 AI 的竞争已经从数字世界的模型参数之争，转向了真实物理世界的系统能力之争。中国凭借独特的五层产业基础，正在成为全球工业物理 AI 落地的最佳土壤。江行智能通过打造全栈工业物理 AI 模型架构，已经在新能源、电网等核心领域实现了规模化部署，证明了物理 AI 从概念走向现实的可行性。 AI 竞争正在从模型竞争走向物理系统竞争 过去几年，生成式 AI 在数字世界充分证明了自身价值，能够完成内容生成、代码编写、智能问答等任务。但对于工业企业而言，真正的价值前线不在屏幕里，而在风电场、光伏电站、变电站、矿山、化工园区和生产车间这些真实的物理空间。 AI 正",
+    "description_pt": "中国工业物理AI的真正优势不在模型参数，而在全球12倍的工业机器人部署密度、两倍的发电量和密集的5G边缘节点——场景密度、基建底座和开源模型的合力，正在推动物理AI从实验室走向规模化落地。 江行智能提出工业物理AI的三层模型，这套系统已在新能源场站和电网巡检场景落地——覆盖贵州、内蒙古等多地，核心算法准确率达99%。陈龙特别指出，工业场景下一个看似简单的巡检任务通常需要拆成100到200个子任务，这对AI的稳定性和可靠性提出了远超消费级应用的要求。 以下为演讲内容，经36氪整理编辑： 陈龙丨江行智能基模CTO 各位嘉宾、行业伙伴下午好，我是来自江行智能的具身基模CTO陈龙，我的分享题目是从感知环境到改变世界：物理AI的机遇、路径和挑战。 AI 的竞争已经从数字世界的模型参数之争，转向了真实物理世界的系统能力之争。中国凭借独特的五层产业基础，正在成为全球工业物理 AI 落地的最佳土壤。江行智能通过打造全栈工业物理 AI 模型架构，已经在新能源、电网等核心领域实现了规模化部署，证明了物理 AI 从概念走向现实的可行性。 AI 竞争正在从模型竞争走向物理系统竞争 过去几年，生成式 AI 在数字世界充分证明了自身价值，能够完成内容生成、代码编写、智能问答等任务。但对于工业企业而言，真正的价值前线不在屏幕里，而在风电场、光伏电站、变电站、矿山、化工园区和生产车间这些真实的物理空间。 AI 正",
+    "link": "https://36kr.com/p/3820298219425924?f=rss",
+    "published": "2026-05-22T10:23:21+00:00",
     "source": "36Kr",
     "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_a74464ffd6d84a209c5e0d4a24b00e52@6381723_oswg129508oswg1000oswg666_img_jpg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_a1ca8f4b24bf47fea0247adaa1235e49@6381723_oswg269247oswg1600oswg1067_img_jpg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
   },
   {
-    "title_original": "人形机器人走进工业制造：共育新质生产力",
-    "title_pt": "人形机器人走进工业制造：共育新质生产力",
-    "description_original": "前十年被问“为什么做人形机器人”，如今被追问“怎么落地场景”。谭旻告诉我们，优必选作为人形机器人赛道的“长期主义者”，如何锚定应用落地，一步步将人形机器人送入真实世界，并让中国站上全球具身智能创新链的顶端。 从去年全球率先跑通全尺寸人形机器人量产，并实现超千台交付，到今年冲刺万台规模量产，优必选正在用持续的工业场景实训和三代产品迭代，证明人形机器人进工厂不是科幻，是刚需。谭旻在演讲中指出，中国智能制造核心缺口已超三千万人，人形机器人要做的不是取代人，而是填补“用工难”。 以下为优必选首席品牌官 谭旻 演讲内容，经36氪整理编辑： 谭旻丨优必选首席品牌官 各位早上好，我是来自优必选科技的谭旻，跟大家分享我们怎么一步步在14年的创业过��中锚定人形机器人的落地应用，并找到工业智能制造领域作为突破点；同时我也想分享，为什么我们认为人形机器人是新质生产力的核心代表，以及我们如何让人形机器人成为新质生产力，乃至全球创新链中最重要的一环。 接下来是一些经验的分享，给大家一些灵感，也给大家在创业过程中，特别是在具身智能长期主义征途中有一些共鸣。 目前看来人形机器人是红海了。但优必选创业14年的过程中，在最前面的10年，别人会问你们为什么做人形机器人。现在大家比较确认人形机器人是具有规模性，甚至比智能手机、新能源汽车更大的市场，连接了上下游甚至连接全球的生态，连接全球的价值链，价值大家已经非常清楚",
-    "description_pt": "前十年被问“为什么做人形机器人”，如今被追问“怎么落地场景”。谭旻告诉我们，优必选作为人形机器人赛道的“长期主义者”，如何锚定应用落地，一步步将人形机器人送入真实世界，并让中国站上全球具身智能创新链的顶端。 从去年全球率先跑通全尺寸人形机器人量产，并实现超千台交付，到今年冲刺万台规模量产，优必选正在用持续的工业场景实训和三代产品迭代，证明人形机器人进工厂不是科幻，是刚需。谭旻在演讲中指出，中国智能制造核心缺口已超三千万人，人形机器人要做的不是取代人，而是填补“用工难”。 以下为优必选首席品牌官 谭旻 演讲内容，经36氪整理编辑： 谭旻丨优必选首席品牌官 各位早上好，我是来自优必选科技的谭旻，跟大家分享我们怎么一步步在14年的创业过��中锚定人形机器人的落地应用，并找到工业智能制造领域作为突破点；同时我也想分享，为什么我们认为人形机器人是新质生产力的核心代表，以及我们如何让人形机器人成为新质生产力，乃至全球创新链中最重要的一环。 接下来是一些经验的分享，给大家一些灵感，也给大家在创业过程中，特别是在具身智能长期主义征途中有一些共鸣。 目前看来人形机器人是红海了。但优必选创业14年的过程中，在最前面的10年，别人会问你们为什么做人形机器人。现在大家比较确认人形机器人是具有规模性，甚至比智能手机、新能源汽车更大的市场，连接了上下游甚至连接全球的生态，连接全球的价值链，价值大家已经非常清楚",
-    "link": "https://36kr.com/p/3820101654106243?f=rss",
-    "published": "2026-05-22T06:48:48+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_100d0a6b0d984d97a9beea12d06a4493@6381723_oswg111219oswg1920oswg1280_img_jpg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
+    "title_original": "Flipkart's 13-minute delivery really impressive: Walmart Inc President and CEO",
+    "title_pt": "A entrega de 13 minutos do Flipkart é realmente impressionante: Presidente e CEO do Walmart Inc",
+    "description_original": "Walmart CEO John Furner hailed Flipkart’s 13-minute deliveries as “really impressive”, spotlighting the rapid growth of Flipkart Minutes and its contribution to Walmart International’s strong ecommerce momentum.",
+    "description_pt": "O CEO do Walmart, John Furner, elogiou as entregas de 13 minutos do Flipkart como “realmente impressionantes”, destacando o rápido crescimento do Flipkart Minutes e sua contribuição para o forte impulso do comércio eletrônico do Walmart International.",
+    "link": "https://yourstory.com/2026/05/flipkart-13-minute-delivery-impressive-walmart-inc-president-ceo",
+    "published": "2026-05-22T10:01:24+00:00",
+    "source": "YourStory",
+    "language": "hi",
+    "image": "https://images.yourstory.com/cs/2/47ea3f60084e11efbdcb2f46d4aa7266/FlipcartWalmartFeatureImage-1715923479781.jpg"
   },
   {
-    "title_original": "圆桌对话：AI+的“国家推进计划”与企业的“生存路线图”| 2026AI Partner·北京亦庄AI+产业大会",
-    "title_pt": "圆桌对话：AI+的“国家推进计划”与企业的“生存路线图”| 2026AI Partner·北京亦庄AI+产业大会",
-    "description_original": "AI+正从技术指引转向产业实战，政策红利如何兑现？投入如何变成产出？企业如何在浪潮中生存、打赢？2026北京亦庄AI+产业大会首场圆桌对话，将这些问题摆上台面，不谈空想，只谈干法。 2026北京亦庄AI+产业大会首场圆桌对话聚焦“AI+的国家推进计划与企业的生存路线图”。贝恩公司全球合伙人成鑫主持，上海市人工智能行业协会部长周晗、美的集团AI研究院院长徐翼、云岫资本创始合伙人兼CEO高超、京东AI智能硬件项目负责人张量四位嘉宾，从政策落地、产业实践、资本视角与平台赋能四个维度展开讨论，为企业提炼出2026-2027年的“生存口诀”。 以下为圆桌对话内容，经36氪整理编辑： 成鑫丨贝恩公司全球合伙人、大中华区高科技业务主席（主持） 周晗丨上海市人工智能行业协会部长 徐翼丨美的集团AI研究院院长 高超丨云岫资本创始合伙人兼CEO 张量丨京东AI智能硬件项目负责人 成鑫： 各位嘉宾、各位来宾，大家早上好，非常荣幸担任第一场圆桌对话的主持人，我是贝恩公司的成鑫，也代表主办方再次欢迎今天第一场圆桌对话的嘉宾——周部长、徐院长、高总、张总。今天这个主题下，我们就谈三个实实在在的主题。 第一个，“国家AI+推进计划”给企业带来的真红利、真约束是什么？ 第二个，大企业、产业方、资本方怎么把AI从投入变成产出？ 第三个，2026-2027年，企业能够活下去，打得赢的“生存路线图”怎么画？ 我们今天希",
-    "description_pt": "AI+正从技术指引转向产业实战，政策红利如何兑现？投入如何变成产出？企业如何在浪潮中生存、打赢？2026北京亦庄AI+产业大会首场圆桌对话，将这些问题摆上台面，不谈空想，只谈干法。 2026北京亦庄AI+产业大会首场圆桌对话聚焦“AI+的国家推进计划与企业的生存路线图”。贝恩公司全球合伙人成鑫主持，上海市人工智能行业协会部长周晗、美的集团AI研究院院长徐翼、云岫资本创始合伙人兼CEO高超、京东AI智能硬件项目负责人张量四位嘉宾，从政策落地、产业实践、资本视角与平台赋能四个维度展开讨论，为企业提炼出2026-2027年的“生存口诀”。 以下为圆桌对话内容，经36氪整理编辑： 成鑫丨贝恩公司全球合伙人、大中华区高科技业务主席（主持） 周晗丨上海市人工智能行业协会部长 徐翼丨美的集团AI研究院院长 高超丨云岫资本创始合伙人兼CEO 张量丨京东AI智能硬件项目负责人 成鑫： 各位嘉宾、各位来宾，大家早上好，非常荣幸担任第一场圆桌对话的主持人，我是贝恩公司的成鑫，也代表主办方再次欢迎今天第一场圆桌对话的嘉宾——周部长、徐院长、高总、张总。今天这个主题下，我们就谈三个实实在在的主题。 第一个，“国家AI+推进计划”给企业带来的真红利、真约束是什么？ 第二个，大企业、产业方、资本方怎么把AI从投入变成产出？ 第三个，2026-2027年，企业能够活下去，打得赢的“生存路线图”怎么画？ 我们今天希",
-    "link": "https://36kr.com/p/3820091365871748?f=rss",
-    "published": "2026-05-22T06:38:43+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_cb1fe1051d1a44a9b5da5a1efc0fd7d4@6381723_oswg1915709oswg1626oswg1066_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1"
+    "title_original": "Patente revela celular rolável da Samsung com câmera móvel inédita",
+    "title_pt": "Patente revela celular rolável da Samsung com câmera móvel inédita",
+    "description_original": "A Samsung pode estar preparando mais uma revolução no mercado de smartphones. Após consolidar sua liderança nos celulares dobráveis, agora explora um conceito de celular rolável com um sistema de câmera móvel com tela expansível e módulos de câmera que acompanham o movimento da estrutura. Celular dobrável aumenta produtividade? Testamos rotinas reais Novo celular dobrável tem formato largo inédito para produtividade; veja As informações foram descobertas pelo WearView e pelo leaker xleaks7. A patente, registrada originalmente em junho de 2023 e publicada em maio deste ano, apresenta um smartph",
+    "description_pt": "A Samsung pode estar preparando mais uma revolução no mercado de smartphones. Após consolidar sua liderança nos celulares dobráveis, agora explora um conceito de celular rolável com um sistema de câmera móvel com tela expansível e módulos de câmera que acompanham o movimento da estrutura. Celular dobrável aumenta produtividade? Testamos rotinas reais Novo celular dobrável tem formato largo inédito para produtividade; veja As informações foram descobertas pelo WearView e pelo leaker xleaks7. A patente, registrada originalmente em junho de 2023 e publicada em maio deste ano, apresenta um smartph",
+    "link": "https://canaltech.com.br/smartphone/patente-revela-celular-rolavel-da-samsung-com-camera-movel-inedita/",
+    "published": "2026-05-22T10:01:16+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/fDAKQK1lpSOq_gtKr68Vue8oQ_Y=/700x394/smart/i1128731.png"
   },
   {
-    "title_original": "36氪首发 | 军工背景团队切入船舶电动化，已拿下海南华铁500艘订单",
-    "title_pt": "36氪首发 | 军工背景团队切入船舶电动化，已拿下海南华铁500艘订单",
-    "description_original": "作者丨欧雪 编辑丨袁斯来 硬氪获悉，新能源船舶三电系统全栈供应商比电科技近日完成数千万元A轮融资，本轮投资方由金桥基金及其他产业化资本构成，投中资本担任长期战略财务顾问。资金将主要用于模组和集装箱式电池的开发及取证、研发团队扩充、自动化产线建设及市场拓展。 比电科技成立于2023年，总部位于连云港，聚焦新能源船舶电动化与智能化升级，构建覆盖电池系统、电控系统、电驱系统及船舶能源管理系统的全栈产品体系，形成“三电+AI”核心技术底座。 比电科技创始人袁伟毕业于华北电力大学，曾就职于国家保密技术研究所，后长期从事军工行业。2023年，团队判断军工业务面临调整，同时看好船舶电动化方向，遂转型切入该赛道。 在“双碳”目标与航运业绿色转型加速的背景下，船舶电动化正进入快速成长期。据交通运输部统计，截至2023年底，我国内河运输船舶保有量超10万艘。有行业研究认为，若仅考虑纯电动货船等严格意义上的新能源船舶，其渗透率尚不足2%。另据EVTank等机构预测，2026年我国电动船舶对动力电池的需求量将达到11.2GWh。 2024年8月，国家交通部出台老旧船舶改造及新建补贴政策，多地同步推出过闸优先、通行费减免等配套措施。袁伟判断：“当前阶段相当于新能源车2012年前后的水平，行业正从政策驱动转向市场驱动，未来几年将进入快速爆发期。” 船舶电动化的核心难点在于复杂系统的长期稳定运行与多方协同交付。",
-    "description_pt": "作者丨欧雪 编辑丨袁斯来 硬氪获悉，新能源船舶三电系统全栈供应商比电科技近日完成数千万元A轮融资，本轮投资方由金桥基金及其他产业化资本构成，投中资本担任长期战略财务顾问。资金将主要用于模组和集装箱式电池的开发及取证、研发团队扩充、自动化产线建设及市场拓展。 比电科技成立于2023年，总部位于连云港，聚焦新能源船舶电动化与智能化升级，构建覆盖电池系统、电控系统、电驱系统及船舶能源管理系统的全栈产品体系，形成“三电+AI”核心技术底座。 比电科技创始人袁伟毕业于华北电力大学，曾就职于国家保密技术研究所，后长期从事军工行业。2023年，团队判断军工业务面临调整，同时看好船舶电动化方向，遂转型切入该赛道。 在“双碳”目标与航运业绿色转型加速的背景下，船舶电动化正进入快速成长期。据交通运输部统计，截至2023年底，我国内河运输船舶保有量超10万艘。有行业研究认为，若仅考虑纯电动货船等严格意义上的新能源船舶，其渗透率尚不足2%。另据EVTank等机构预测，2026年我国电动船舶对动力电池的需求量将达到11.2GWh。 2024年8月，国家交通部出台老旧船舶改造及新建补贴政策，多地同步推出过闸优先、通行费减免等配套措施。袁伟判断：“当前阶段相当于新能源车2012年前后的水平，行业正从政策驱动转向市场驱动，未来几年将进入快速爆发期。” 船舶电动化的核心难点在于复杂系统的长期稳定运行与多方协同交付。",
-    "link": "https://36kr.com/p/3820087713403270?f=rss",
-    "published": "2026-05-22T06:34:22+00:00",
+    "title_original": "Como a IA monitora motoristas e combate roubos de carga no Brasil",
+    "title_pt": "Como a IA monitora motoristas e combate roubos de carga no Brasil",
+    "description_original": "Câmeras com inteligência artificial já monitoram motoristas de frota em tempo real no Brasil, detectando fadiga, uso de celular, excesso de velocidade e ausência de cinto, e emitindo alertas automáticos dentro da cabine antes que o comportamento de risco resulte em acidente. 🎧 Ouça o Podcast Canaltech no Spotify 🎧 Ouça o Podcast Canaltech na Deezer 🎧 Ouça o Podcast Canaltech no Apple Podcasts É o que conta Paulo Buriti, gerente corporativo da Corpvs , empresa especializada em telemetria e monitoramento operacional, em entrevista ao Podcast Canaltech desta sexta-feira (22). - Entre no Canal do ",
+    "description_pt": "Câmeras com inteligência artificial já monitoram motoristas de frota em tempo real no Brasil, detectando fadiga, uso de celular, excesso de velocidade e ausência de cinto, e emitindo alertas automáticos dentro da cabine antes que o comportamento de risco resulte em acidente. 🎧 Ouça o Podcast Canaltech no Spotify 🎧 Ouça o Podcast Canaltech na Deezer 🎧 Ouça o Podcast Canaltech no Apple Podcasts É o que conta Paulo Buriti, gerente corporativo da Corpvs , empresa especializada em telemetria e monitoramento operacional, em entrevista ao Podcast Canaltech desta sexta-feira (22). - Entre no Canal do ",
+    "link": "https://canaltech.com.br/carros/como-a-ia-monitora-motoristas-e-combate-roubos-de-carga-no-brasil/",
+    "published": "2026-05-22T10:00:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/EbSR_iQPJArJLqQIgzohTRwVqMY=/700x394/smart/i1128653.png"
+  },
+  {
+    "title_original": "Você sabe como rebocar um carro elétrico?",
+    "title_pt": "Você sabe como rebocar um carro elétrico?",
+    "description_original": "A cada dia que passa, mais carros elétricos são vistos nas ruas por todo o Brasil e, com isso, crescem também as dúvidas. Uma das mais comuns diz respeito ao que fazer no caso de uma \" pane geral \", daquelas que impede o motorista de movimentar o veículo . Nesse caso, muita gente ainda se pergunta: como rebocar um carro elétrico? Quanto custa por ano manter um carro elétrico? Quantas placas solares precisa para carregar um carro elétrico? Talvez você não saiba, mas o procedimento exige uma série de cuidados . Afinal, diferentemente dos veículos a combustão, os elétricos possuem sistemas de tra",
+    "description_pt": "A cada dia que passa, mais carros elétricos são vistos nas ruas por todo o Brasil e, com isso, crescem também as dúvidas. Uma das mais comuns diz respeito ao que fazer no caso de uma \" pane geral \", daquelas que impede o motorista de movimentar o veículo . Nesse caso, muita gente ainda se pergunta: como rebocar um carro elétrico? Quanto custa por ano manter um carro elétrico? Quantas placas solares precisa para carregar um carro elétrico? Talvez você não saiba, mas o procedimento exige uma série de cuidados . Afinal, diferentemente dos veículos a combustão, os elétricos possuem sistemas de tra",
+    "link": "https://canaltech.com.br/carros/voce-sabe-como-rebocar-um-carro-eletrico/",
+    "published": "2026-05-22T09:55:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/mDRHtWIDDbNNVwaeDvHcW9gVUGU=/700x394/smart/i1128097.jpeg"
+  },
+  {
+    "title_original": "Microsoft is letting Office users remove an annoying Copilot button",
+    "title_pt": "A Microsoft está permitindo que os usuários do Office removam um botão irritante do Copilot",
+    "description_original": "Microsoft is rolling out Office app updates next week that allow users to disable a floating Copilot button. The button appeared in Word, Excel, and PowerPoint in recent weeks, and floats above the bottom right-hand section of spreadsheets or documents. It has angered many Excel users in particular, because it obstructs cells and you can't [&#8230;]",
+    "description_pt": "A Microsoft está lançando atualizações de aplicativos do Office na próxima semana que permitem aos usuários desativar um botão flutuante do Copilot. O botão apareceu no Word, Excel e PowerPoint nas últimas semanas e flutua acima da seção inferior direita de planilhas ou documentos. Isso irritou muitos usuários do Excel em particular, porque obstrui as células e você não pode [&#8230;]",
+    "link": "https://www.theverge.com/news/935967/microsoft-copilot-floating-button-office-excel-apps-removal",
+    "published": "2026-05-22T09:52:19+00:00",
+    "source": "The Verge",
+    "language": "en",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25193260/microsoft_copilot_app_logo.png?quality=90&#038;strip=all&#038;crop=0,0,100,100"
+  },
+  {
+    "title_original": "Can Astrotalk build the Amazon of spiritual commerce?",
+    "title_pt": "O Astrotalk pode construir a Amazônia do comércio espiritual?",
+    "description_original": "The astrology startup that built a profitable consultations business is now pushing into ecommerce, gemstones, and offline stores, as it bets on spirituality becoming India's next organised consumer category.",
+    "description_pt": "A startup de astrologia que construiu um negócio lucrativo de consultoria está agora investindo no comércio eletrônico, pedras preciosas e lojas off-line, enquanto aposta que a espiritualidade se tornará a próxima categoria de consumo organizado da Índia.",
+    "link": "https://yourstory.com/2026/05/can-astrotalk-build-the-amazon-of-spiritual-commerce",
+    "published": "2026-05-22T09:35:31+00:00",
+    "source": "YourStory",
+    "language": "hi",
+    "image": "https://images.yourstory.com/cs/2/a1c35720cce711efabacb7b767fb7698/Astrotalk1600x900-1779440667182.jpeg"
+  },
+  {
+    "title_original": "Razer Viper V4 Pro Review: Iterative Update Packs Big Performance",
+    "title_pt": "Análise do Razer Viper V4 Pro: atualização iterativa traz grande desempenho",
+    "description_original": "Small, iterative improvements bring serious performance gains to Razer’s Viper V4 Pro.",
+    "description_pt": "Pequenas melhorias iterativas trazem sérios ganhos de desempenho ao Viper V4 Pro da Razer.",
+    "link": "https://www.wired.com/review/review-razer-viper-v4-pro/",
+    "published": "2026-05-22T09:32:00+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/6a0df479e29d602973ad0c80/master/pass/Review%20Razer%20Viper%20V4%20Pro%20top%20art%20052026%20SOURCE%20Amazon.jpg"
+  },
+  {
+    "title_original": "Finally, a Great Free Radio App for Windows",
+    "title_pt": "Finalmente, um ótimo aplicativo de rádio gratuito para Windows",
+    "description_original": "Tune into live broadcasts from your Windows desktop with Trdo, a free and open-source application.",
+    "description_pt": "Sintonize transmissões ao vivo na área de trabalho do Windows com Trdo, um aplicativo gratuito e de código aberto.",
+    "link": "https://www.wired.com/story/trdo-is-a-great-free-radio-app-for-windows/",
+    "published": "2026-05-22T09:30:00+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/6a0b416db68d07257efe6909/master/pass/Gear_FreeRadioAppForWindows.jpg"
+  },
+  {
+    "title_original": "Expedição Roblox quer ampliar acesso ao desenvolvimento de jogos no Brasil",
+    "title_pt": "Expedição Roblox quer ampliar acesso ao desenvolvimento de jogos no Brasil",
+    "description_original": "Camila Achutti fala sobre a Expedição Roblox, projeto que ensina desenvolvimento de jogos e amplia acesso ao Roblox Studio no Brasil O post Expedição Roblox quer ampliar acesso ao desenvolvimento de jogos no Brasil apareceu primeiro em Olhar Digital .",
+    "description_pt": "Camila Achutti fala sobre a Expedição Roblox, projeto que ensina desenvolvimento de jogos e amplia acesso ao Roblox Studio no Brasil O post Expedição Roblox quer ampliar acesso ao desenvolvimento de jogos no Brasil apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/05/22/games-e-consoles/expedicao-roblox-quer-ampliar-acesso-ao-desenvolvimento-de-jogos-no-brasil/",
+    "published": "2026-05-22T09:30:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": ""
+  },
+  {
+    "title_original": "How the future of sustainable agriculture is being shaped in small farms of Marathwada",
+    "title_pt": "Como o futuro da agricultura sustentável está sendo moldado nas pequenas propriedades de Marathwada",
+    "description_original": "On small farms in Marathwada, women farmers are redefining what sustainable agriculture looks like through Bayer’s Food Value Chain partnership. With digital tools, climate-smart practices, and stronger market access, they are turning farming into both an economic opportunity and a source of agency.",
+    "description_pt": "Nas pequenas explorações agrícolas em Marathwada, as mulheres agricultoras estão a redefinir o que é a agricultura sustentável através da parceria da Bayer para a Cadeia de Valor Alimentar. Com ferramentas digitais, práticas climaticamente inteligentes e um acesso mais forte ao mercado, estão a transformar a agricultura numa oportunidade económica e numa fonte de agência.",
+    "link": "https://yourstory.com/2026/05/sustainable-agriculture-small-farms-marathwada",
+    "published": "2026-05-22T09:18:26+00:00",
+    "source": "YourStory",
+    "language": "hi",
+    "image": "https://images.yourstory.com/cs/2/21ccd920-843c-11ec-8817-0b5512a0f9d5/1779425196545.png"
+  },
+  {
+    "title_original": "The Gulf’s AI Boom Has an Undersea Cable Problem",
+    "title_pt": "O boom da IA ​​no Golfo tem um problema com cabos submarinos",
+    "description_original": "Hyperscalers are pushing the Gulf to rethink internet infrastructure as AI raises the stakes of cable disruptions.",
+    "description_pt": "Os hiperscaladores estão a pressionar o Golfo a repensar a infra-estrutura da Internet à medida que a IA aumenta os riscos das interrupções de cabos.",
+    "link": "https://www.wired.com/story/the-gulfs-ai-boom-has-an-undersea-cable-problem/",
+    "published": "2026-05-22T09:00:00+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/6a0f1eac22b304758d42f327/master/pass/6a0ecc1805928bccd6b0e6c5_UnderwaterCables_Lead_autoxauto.0000001.jpg"
+  },
+  {
+    "title_original": "The Enhanced Games fit right in with the rest of 2026’s longevity vibes",
+    "title_pt": "Os jogos aprimorados combinam perfeitamente com o restante das vibrações de longevidade de 2026",
+    "description_original": "This Sunday, a group of 42 athletes will gather in Las Vegas to compete in a somewhat unusual sporting competition. Participants in the inaugural Enhanced Games are being encouraged to take performance-enhancing drugs. The goal is to “push the boundaries of human performance.” The games’ organizers have said that competitors will only be taking substances that&#8230;",
+    "description_pt": "Este domingo, um grupo de 42 atletas vai reunir-se em Las Vegas para disputar uma competição desportiva algo inusitada. Os participantes dos primeiros Jogos Avançados estão sendo incentivados a tomar medicamentos para melhorar o desempenho. O objetivo é “ultrapassar os limites do desempenho humano”. Os organizadores dos jogos afirmaram que os competidores só consumirão substâncias que possam ser usadas.",
+    "link": "https://www.technologyreview.com/2026/05/22/1137753/the-enhanced-games-fit-right-in-with-the-rest-of-2026s-longevity-vibes/",
+    "published": "2026-05-22T09:00:00+00:00",
+    "source": "MIT Tech Review",
+    "language": "en",
+    "image": ""
+  },
+  {
+    "title_original": "Estradas brasileiras já estão sendo monitoradas por IA",
+    "title_pt": "Estradas brasileiras já estão sendo monitoradas por IA",
+    "description_original": "Câmeras inteligentes, telemetria e IA já monitoram motoristas e ajudam a prevenir acidentes e roubos de carga no Brasil Ouça ao podcast.",
+    "description_pt": "Câmeras inteligentes, telemetria e IA já monitoram motoristas e ajudam a prevenir acidentes e roubos de carga no Brasil Ouça ao podcast.",
+    "link": "https://canaltech.com.br/podcast/podcast-canaltech/estradas-brasileiras-ja-estao-sendo-monitoradas-por-ia-6521/",
+    "published": "2026-05-22T09:00:00+00:00",
+    "source": "Canaltech",
+    "language": "pt",
+    "image": "https://t.ctcdn.com.br/7kbHtwi1VKZtc6J6h8ZRzuJ1GWM=/700x394/smart/i1128611.png"
+  },
+  {
+    "title_original": "Plástico “vivo” usa bactérias para se autodestruir sob comando",
+    "title_pt": "Plástico “vivo” usa bactérias para se autodestruir sob comando",
+    "description_original": "Cientistas criaram um plástico com bactérias incorporadas que ativa sua própria decomposição em poucos dias, sem gerar microplásticos O post Plástico “vivo” usa bactérias para se autodestruir sob comando apareceu primeiro em Olhar Digital .",
+    "description_pt": "Cientistas criaram um plástico com bactérias incorporadas que ativa sua própria decomposição em poucos dias, sem gerar microplásticos O post Plástico “vivo” usa bactérias para se autodestruir sob comando apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/05/22/ciencia-e-espaco/plastico-vivo-usa-bacterias-para-se-autodestruir-sob-comando/",
+    "published": "2026-05-22T09:00:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/03/Microplastics_swirling_in_202603302215-1024x576.jpg"
+  },
+  {
+    "title_original": "Harvard está pronta para imprimir “músculos” 3D para robôs",
+    "title_pt": "Harvard está pronta para imprimir “músculos” 3D para robôs",
+    "description_original": "Pesquisadores de Harvard criam fibras artificiais impressas em 3D capazes de torcer, expandir e contrair sem motores rígidos O post Harvard está pronta para imprimir &#8220;músculos&#8221; 3D para robôs apareceu primeiro em Olhar Digital .",
+    "description_pt": "Pesquisadores de Harvard criam fibras artificiais impressas em 3D capazes de torcer, expandir e contrair sem motores rígidos O post Harvard está pronta para imprimir &#8220;músculos&#8221; 3D para robôs apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/05/22/robotica/harvard-esta-pronta-para-imprimir-musculos-3d-para-robos/",
+    "published": "2026-05-22T09:00:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2026/05/polimeros-musculares-para-robos-1024x577.jpg"
+  },
+  {
+    "title_original": "小米YU7家族再推新车，雷军：标准版打特斯拉，GT版狙BBA",
+    "title_pt": "小米YU7家族再推新车，雷军：标准版打特斯拉，GT版狙BBA",
+    "description_original": "5月21日晚，小米正式发布YU7系列两款全新车型：标准版起售价23.35万元，GT版起售价38.99万元。至此，YU7车系已扩展至5款车型，价格区间覆盖23.35万元至38.99万元。 YU7是小米于2025年6月推出的首款SUV，上市当晚3分钟内大定订单突破20万辆。发布会上，雷军展示了YU7与特斯拉Model Y的销量对比：2025年7月至2026年4月，YU7累计交付23.2万辆，Model Y则为35.8万辆。 从月度交付表现看，今年1月YU7交付37869辆，成为中国汽车市场全品类销量冠军。然而，随着市场竞争加剧，YU7近几个月的交付量有所回落。 在小米的调研中，特斯拉Model Y的订单中约70%为续航593公里的后驱标准版。对许多用户而言，500-600公里续航已足够日常通勤，且特斯拉的五年免息政策吸引力显著，有用户直言该政策相当于直接减免2万元。 雷军坦言，YU7项目初期便规划了类似的后驱标准版车型。“说实话，当时我们认为产品线过于复杂，因此从4款减为3款， 砍掉了标准版，这对YU7与Model Y的竞争尤其不利 。 经过复盘，我们决定把标准版加回来，这样就能实现‘标准版对标准版、长续航对长续航’的直面竞争。无论对方如何推出五年零息，我们都有绝对的竞争力。” 此次推出的YU7标准版售价23.35万元，价格较此前再降2万元，相比Model Y更低3万元，而配置上仅电池",
+    "description_pt": "5月21日晚，小米正式发布YU7系列两款全新车型：标准版起售价23.35万元，GT版起售价38.99万元。至此，YU7车系已扩展至5款车型，价格区间覆盖23.35万元至38.99万元。 YU7是小米于2025年6月推出的首款SUV，上市当晚3分钟内大定订单突破20万辆。发布会上，雷军展示了YU7与特斯拉Model Y的销量对比：2025年7月至2026年4月，YU7累计交付23.2万辆，Model Y则为35.8万辆。 从月度交付表现看，今年1月YU7交付37869辆，成为中国汽车市场全品类销量冠军。然而，随着市场竞争加剧，YU7近几个月的交付量有所回落。 在小米的调研中，特斯拉Model Y的订单中约70%为续航593公里的后驱标准版。对许多用户而言，500-600公里续航已足够日常通勤，且特斯拉的五年免息政策吸引力显著，有用户直言该政策相当于直接减免2万元。 雷军坦言，YU7项目初期便规划了类似的后驱标准版车型。“说实话，当时我们认为产品线过于复杂，因此从4款减为3款， 砍掉了标准版，这对YU7与Model Y的竞争尤其不利 。 经过复盘，我们决定把标准版加回来，这样就能实现‘标准版对标准版、长续航对长续航’的直面竞争。无论对方如何推出五年零息，我们都有绝对的竞争力。” 此次推出的YU7标准版售价23.35万元，价格较此前再降2万元，相比Model Y更低3万元，而配置上仅电池",
+    "link": "https://36kr.com/p/3817022407181188?f=rss",
+    "published": "2026-05-22T08:59:11+00:00",
     "source": "36Kr",
     "language": "zh",
     "image": ""
+  },
+  {
+    "title_original": "让智能体看见世界：CV × AI Agent 的行业场景新实践| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "让智能体看见世界：CV × AI Agent 的行业场景新实践| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "让智能体“看见”世界，不是给它装上摄像头那么简单。当CV遇上AI Agent，乘数效应正在发生。AI Agent不等于Chatbot，真正的价值在于静默看护与自主决策。 AI进入产业腹地仍面临两大鸿沟：视觉认知与行业的理解。为此，大华股份构建了星汉大模型系列——V系列视觉大模型让系统“看得懂”物理世界，L系列行业模型打通业务逻辑。未来“基模+行业Know-how”将成为新范式，而AI的终局不是刷榜，是让每个行业、每个个体都不掉队。 以下为大华股份研发中心副总裁 周文凯 演讲内容，经36氪整理编辑： 周文凯丨大华股份研发中心副总裁 非常感谢北京亦庄和36氪给我们这个机会来给大家做一个分享。 我今天分享的主题是让智能体看见世界。为什么让智能体看见世界？看见世界并不是让数字世界的智能体装上摄像头，或者输入视频数据让它看得到物理世界这么简单，CV × AI Agent，为什么是乘，CV是视觉计算，AI Agent是智能体，让数字世界的AI智能体可以认知物理世界非常重要，这两个事情并不是特性和功能的孤立，而是相互乘数效应的加强。 简单来说，AI智能体对物理世界的认知，可以为我们对于数字世界的决策带来更大的帮助。 2022年ChatGPT面世，自发布至今已三年多，AI产业发生了非常大的变化。我们看到AI更多的发展是在2C消费者领域，在政企、行业落地过程中依然遇到非常多的问题。 从硬件角度上看，",
+    "description_pt": "让智能体“看见”世界，不是给它装上摄像头那么简单。当CV遇上AI Agent，乘数效应正在发生。AI Agent不等于Chatbot，真正的价值在于静默看护与自主决策。 AI进入产业腹地仍面临两大鸿沟：视觉认知与行业的理解。为此，大华股份构建了星汉大模型系列——V系列视觉大模型让系统“看得懂”物理世界，L系列行业模型打通业务逻辑。未来“基模+行业Know-how”将成为新范式，而AI的终局不是刷榜，是让每个行业、每个个体都不掉队。 以下为大华股份研发中心副总裁 周文凯 演讲内容，经36氪整理编辑： 周文凯丨大华股份研发中心副总裁 非常感谢北京亦庄和36氪给我们这个机会来给大家做一个分享。 我今天分享的主题是让智能体看见世界。为什么让智能体看见世界？看见世界并不是让数字世界的智能体装上摄像头，或者输入视频数据让它看得到物理世界这么简单，CV × AI Agent，为什么是乘，CV是视觉计算，AI Agent是智能体，让数字世界的AI智能体可以认知物理世界非常重要，这两个事情并不是特性和功能的孤立，而是相互乘数效应的加强。 简单来说，AI智能体对物理世界的认知，可以为我们对于数字世界的决策带来更大的帮助。 2022年ChatGPT面世，自发布至今已三年多，AI产业发生了非常大的变化。我们看到AI更多的发展是在2C消费者领域，在政企、行业落地过程中依然遇到非常多的问题。 从硬件角度上看，",
+    "link": "https://36kr.com/p/3820220616495492?f=rss",
+    "published": "2026-05-22T08:57:09+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_6a7e57a5f6814ecd8796b49d2f2cf81b@6381723_oswg64374oswg1280oswg853_img_jpeg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "让好项目，更早被看见",
+    "title_pt": "让好项目，更早被看见",
+    "description_original": "提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候，它可能已经拿了融资，跑出了数据，进入了热门赛道，也开始频繁出现在投资人、媒体和产业方的视野里。 但创业不是从融资新闻开始的。 在更早的时候，一个项目可能只是一支还不够知名的团队，一个刚刚跑通的产品，一个藏在垂直行业里的新方法，或者一个还没有被充分解释清楚的市场判断。 它不一定站在风口中央，也不一定拥有明星机构背书。更多时候，它甚至还没学会把自己的价值讲清楚。 但这并不意味着它不值得被看见。 36氪推出「AI寻求报道」，想做的正是这件事：把好项目被看见的时间，再往前推一点。 它不是一个简单的发稿入口，也不是把项目包装成流量故事的工具。更准确地说，它是一套面向项目方、FA、投资机构、园区、孵化器和产业服务方开放的 项目发现与内容表达机制 。 我们希望通过更轻量的提报方式、更结构化的信息采集、AI 辅助成稿与人工审核，让那些有实质推进、有成长潜力、有行业意义的项目，在还没有被充分讨论之前，先获得一次被认真理解的机会。 一、很多项目缺的不是曝光，是一次有效表达 在创投市场里，信息从来不稀缺。 每天都有大量项目在融资、路演、找客户、谈合作、发产品。真正稀缺的是：能被投资人、产业方、媒体和",
+    "description_pt": "提交报道链接： https://36kr.com/seek-report-new?t=1779418211266 36氪AI寻求报道 很多项目第一次被行业真正看见，往往已经不是它最需要被看见的时候。 那时候，它可能已经拿了融资，跑出了数据，进入了热门赛道，也开始频繁出现在投资人、媒体和产业方的视野里。 但创业不是从融资新闻开始的。 在更早的时候，一个项目可能只是一支还不够知名的团队，一个刚刚跑通的产品，一个藏在垂直行业里的新方法，或者一个还没有被充分解释清楚的市场判断。 它不一定站在风口中央，也不一定拥有明星机构背书。更多时候，它甚至还没学会把自己的价值讲清楚。 但这并不意味着它不值得被看见。 36氪推出「AI寻求报道」，想做的正是这件事：把好项目被看见的时间，再往前推一点。 它不是一个简单的发稿入口，也不是把项目包装成流量故事的工具。更准确地说，它是一套面向项目方、FA、投资机构、园区、孵化器和产业服务方开放的 项目发现与内容表达机制 。 我们希望通过更轻量的提报方式、更结构化的信息采集、AI 辅助成稿与人工审核，让那些有实质推进、有成长潜力、有行业意义的项目，在还没有被充分讨论之前，先获得一次被认真理解的机会。 一、很多项目缺的不是曝光，是一次有效表达 在创投市场里，信息从来不稀缺。 每天都有大量项目在融资、路演、找客户、谈合作、发产品。真正稀缺的是：能被投资人、产业方、媒体和",
+    "link": "https://36kr.com/p/3820226045104257?f=rss",
+    "published": "2026-05-22T08:55:24+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_59e6f1f1286e410196bbf3050cfd0e03@5284654_oswg680475oswg1280oswg478_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "Treino de força com cardio atrapalha o ganho de músculo? Estudo brasileiro responde",
+    "title_pt": "Treino de força com cardio atrapalha o ganho de músculo? Estudo brasileiro responde",
+    "description_original": "Pesquisa indica que treino combinado preserva crescimento muscular, mas sugere interferência no desempenho de força máxima em iniciantes O post Treino de força com cardio atrapalha o ganho de músculo? Estudo brasileiro responde apareceu primeiro em Olhar Digital .",
+    "description_pt": "Pesquisa indica que treino combinado preserva crescimento muscular, mas sugere interferência no desempenho de força máxima em iniciantes O post Treino de força com cardio atrapalha o ganho de músculo? Estudo brasileiro responde apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/05/22/medicina-e-saude/treino-de-forca-com-cardio-atrapalha-o-ganho-de-musculo-estudo-brasileiro-responde/",
+    "published": "2026-05-22T08:30:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2024/06/musculacao-1024x668.jpg"
+  },
+  {
+    "title_original": "Tubarão-da-Groenlândia pode esconder segredo genético contra envelhecimento e câncer",
+    "title_pt": "Tubarão-da-Groenlândia pode esconder segredo genético contra envelhecimento e câncer",
+    "description_original": "Estudo revela mecanismos genéticos que podem explicar como o tubarão-da-Groenlândia vive por séculos com baixa incidência de câncer O post Tubarão-da-Groenlândia pode esconder segredo genético contra envelhecimento e câncer apareceu primeiro em Olhar Digital .",
+    "description_pt": "Estudo revela mecanismos genéticos que podem explicar como o tubarão-da-Groenlândia vive por séculos com baixa incidência de câncer O post Tubarão-da-Groenlândia pode esconder segredo genético contra envelhecimento e câncer apareceu primeiro em Olhar Digital .",
+    "link": "https://olhardigital.com.br/2026/05/22/ciencia-e-espaco/tubarao-da-groenlandia-pode-esconder-segredo-genetico-contra-envelhecimento-e-cancer/",
+    "published": "2026-05-22T08:00:00+00:00",
+    "source": "Olhar Digital",
+    "language": "pt",
+    "image": "https://olhardigital.com.br/wp-content/uploads/2024/07/Tubarao-da-Groenlandia-1-1024x576.jpg"
+  },
+  {
+    "title_original": "能落地的请留下，讲故事的请离场",
+    "title_pt": "能落地的请留下，讲故事的请离场",
+    "description_original": "让合作当场发生！ 2026年的AI行业，正在经历一次价值体系的深层重构。过去两年，聚光灯始终偏向技术侧——参数、算力、榜单排名。但今天，话语权正在向产业方转移：那些拥有真实需求、真实场景、真实业务压力的企业，开始掌握定义权。产业界最关切的问题变得具体而迫切：在必须交付结果的地方，AI到底靠不靠得住？ 5月19日，以“带着AI去前线”为主题的2026 AI Partner大会在北京亦庄通明湖会展中心开幕。本次大会由北京经开区管委会指导、36氪主办、国家信创园承办。作为首都高精尖产业的主阵地，北京经开区正以场景开放为核心，构建覆盖多领域的“全域AI试验场”。本届大会正是这一思路从“规划”走向“实战”的集中体现。 36氪与北京经开区在推动AI产业落地的战略上深度契合。作为产业创新的长期观察者与连接者，36氪紧扣经开区的全域场景蓝图，专门设立AI+产业对接会，让需求与方案现场碰撞，加速“AI+”在实体经济中生根。正是这一设计，让外会场供需双方的热情远超预期——需求方带着痛点来，技术方带着方案上，让合作当场发生！ “带着AI去前线”： 不是口号，是判断 大会期间，36氪CEO冯大刚接受中央广播电视总台等媒体采访时表示：“‘带着AI去前线’不只是一句口号，而是一个判断。”他指出，当一种技术的颠覆力超越互联网，它就不再是一个赛道，而是一个基础设施。这次大会不是一场AI会，而是一场产业大会——主角",
+    "description_pt": "让合作当场发生！ 2026年的AI行业，正在经历一次价值体系的深层重构。过去两年，聚光灯始终偏向技术侧——参数、算力、榜单排名。但今天，话语权正在向产业方转移：那些拥有真实需求、真实场景、真实业务压力的企业，开始掌握定义权。产业界最关切的问题变得具体而迫切：在必须交付结果的地方，AI到底靠不靠得住？ 5月19日，以“带着AI去前线”为主题的2026 AI Partner大会在北京亦庄通明湖会展中心开幕。本次大会由北京经开区管委会指导、36氪主办、国家信创园承办。作为首都高精尖产业的主阵地，北京经开区正以场景开放为核心，构建覆盖多领域的“全域AI试验场”。本届大会正是这一思路从“规划”走向“实战”的集中体现。 36氪与北京经开区在推动AI产业落地的战略上深度契合。作为产业创新的长期观察者与连接者，36氪紧扣经开区的全域场景蓝图，专门设立AI+产业对接会，让需求与方案现场碰撞，加速“AI+”在实体经济中生根。正是这一设计，让外会场供需双方的热情远超预期——需求方带着痛点来，技术方带着方案上，让合作当场发生！ “带着AI去前线”： 不是口号，是判断 大会期间，36氪CEO冯大刚接受中央广播电视总台等媒体采访时表示：“‘带着AI去前线’不只是一句口号，而是一个判断。”他指出，当一种技术的颠覆力超越互联网，它就不再是一个赛道，而是一个基础设施。这次大会不是一场AI会，而是一场产业大会——主角",
+    "link": "https://36kr.com/p/3820169156890759?f=rss",
+    "published": "2026-05-22T07:58:39+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_4e052dc0b7f94da997a055104d50505c@6381723_oswg491451oswg900oswg480_img_000?x-oss-process=image/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "圆桌对话：看见实效：从技术到处方，AI +医疗的场景落地与价值闭环| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "圆桌对话：看见实效：从技术到处方，AI +医疗的场景落地与价值闭环| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "从五年前的技术炫技到今天的临床刚需，AI+医疗终于走过了“证明我能”的喧嚣，进入“解决痛点”的深水区。不做替代医生的空想，只做减轻负担的助手——这场对话告诉我们，AI医疗落地的第一步不是说服院长，而是赢得科室主任的信任；关键不是单点突破，而是多元数据联动形成闭环 圆桌对话直面AI进医院的真实卡点：系统对接难、医生怕麻烦、责任划不清。从左医科技深耕九年的实战出发，从协和到宁夏中卫，揭示了分层落地的差异化逻辑——三甲提效率，基层补人力。用病历生成这一通用痛点作为中枢，往前接分诊，往后连随访，让“黑科技”变成医生愿意每天打开的工具。 以下为圆桌演讲内容，经36氪整理编辑： 张戈丨华弋数智创始人 CEO（主持） 韩旭丨左医科技医学合伙人 张戈： 各位来宾和直播前的各位朋友大家好，我是本轮对话主持人华弋数智张戈，非常欢迎韩总的到来，今天会聊一个特别实在的话题，AI医疗到底是怎么落地的，首先请韩总给大家打个招呼，用30秒告诉我们一件事，左医现在做的跟五年前那波AI辅助医疗热潮有什么本质区别？ 韩旭： 谢谢张总，谢谢主办方的邀请，今天能在这儿跟大家做一个交流分享，左医科技从2016年开始深耕AI+医疗行业，我们也经历了AI医疗在国内发展的不同阶段，就我们理解五年前AI医疗更多的是技术和资本驱动的，大家想的是如何用AI技术来改造医疗甚至代替医生，做的东西更多是从技术角度出发，没有解决临床真正的问题",
+    "description_pt": "从五年前的技术炫技到今天的临床刚需，AI+医疗终于走过了“证明我能”的喧嚣，进入“解决痛点”的深水区。不做替代医生的空想，只做减轻负担的助手——这场对话告诉我们，AI医疗落地的第一步不是说服院长，而是赢得科室主任的信任；关键不是单点突破，而是多元数据联动形成闭环 圆桌对话直面AI进医院的真实卡点：系统对接难、医生怕麻烦、责任划不清。从左医科技深耕九年的实战出发，从协和到宁夏中卫，揭示了分层落地的差异化逻辑——三甲提效率，基层补人力。用病历生成这一通用痛点作为中枢，往前接分诊，往后连随访，让“黑科技”变成医生愿意每天打开的工具。 以下为圆桌演讲内容，经36氪整理编辑： 张戈丨华弋数智创始人 CEO（主持） 韩旭丨左医科技医学合伙人 张戈： 各位来宾和直播前的各位朋友大家好，我是本轮对话主持人华弋数智张戈，非常欢迎韩总的到来，今天会聊一个特别实在的话题，AI医疗到底是怎么落地的，首先请韩总给大家打个招呼，用30秒告诉我们一件事，左医现在做的跟五年前那波AI辅助医疗热潮有什么本质区别？ 韩旭： 谢谢张总，谢谢主办方的邀请，今天能在这儿跟大家做一个交流分享，左医科技从2016年开始深耕AI+医疗行业，我们也经历了AI医疗在国内发展的不同阶段，就我们理解五年前AI医疗更多的是技术和资本驱动的，大家想的是如何用AI技术来改造医疗甚至代替医生，做的东西更多是从技术角度出发，没有解决临床真正的问题",
+    "link": "https://36kr.com/p/3820150778531972?f=rss",
+    "published": "2026-05-22T07:38:36+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_e151a6e19d87477eb9ce48cb616cc38a@6381723_oswg109820oswg1000oswg667_img_jpg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "以场景为锚，以AI为翼：大健康产业的实践与突破| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "以场景为锚，以AI为翼：大健康产业的实践与突破| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "当大健康产业遇上AI，最大的难题不是技术够不够强，而是场景够不够深、信任够不够厚。百度健康用六年时间给出了自己的答案：从单点智能走向全局协同，从技术赋能走向价值创造。 中国慢病人群超5亿，每千人执业医生数却远低于发达国家——供需矛盾之下，AI成为医疗健康供给侧改革的新基建。百度健康总经理杨明璐结合百度健康的实战经验，拆解了AI在用户、医生、医院三大场景的落地实践。AI不是炫技，而是让每一环都更专业、更可信 。 杨明璐作为百度健康品牌的创立者与搭建者，其在2019年底确立了该业务的战略方向与组织架构，2020年孵化了百度健康品牌，百度健康已成为全网最大的健康科普平台和领先的互联网医疗平台，平台每日服务1.3亿人次的健康精准搜索，拥有6亿+专业健康知识库，并与全国3300余名权威专家、430余家顶级医疗机构及36万名医生直连。其后一直带领团队深耕AI+健康赛道，她指出，过去两年AI行业经历了重要转变——从卷模型到卷应用，从关注参数到关注场景，而健康正是AI落地最重要的场景之一。AI正驱动大健康产业进入供需重构的新阶段，而生态协同与专业可信是AI落地的关键破局点。 杨明璐分析，从需求侧看，中国将于2035年进入重度老龄化社会，慢病人群已超5亿，健康需求井喷。然而供给侧每千人执业医生数仅为3.04人，远低于发达国家。这一矛盾下，AI已成为扩容医疗健康供给的新基建。她也强调，健康产业链路深、",
+    "description_pt": "当大健康产业遇上AI，最大的难题不是技术够不够强，而是场景够不够深、信任够不够厚。百度健康用六年时间给出了自己的答案：从单点智能走向全局协同，从技术赋能走向价值创造。 中国慢病人群超5亿，每千人执业医生数却远低于发达国家——供需矛盾之下，AI成为医疗健康供给侧改革的新基建。百度健康总经理杨明璐结合百度健康的实战经验，拆解了AI在用户、医生、医院三大场景的落地实践。AI不是炫技，而是让每一环都更专业、更可信 。 杨明璐作为百度健康品牌的创立者与搭建者，其在2019年底确立了该业务的战略方向与组织架构，2020年孵化了百度健康品牌，百度健康已成为全网最大的健康科普平台和领先的互联网医疗平台，平台每日服务1.3亿人次的健康精准搜索，拥有6亿+专业健康知识库，并与全国3300余名权威专家、430余家顶级医疗机构及36万名医生直连。其后一直带领团队深耕AI+健康赛道，她指出，过去两年AI行业经历了重要转变——从卷模型到卷应用，从关注参数到关注场景，而健康正是AI落地最重要的场景之一。AI正驱动大健康产业进入供需重构的新阶段，而生态协同与专业可信是AI落地的关键破局点。 杨明璐分析，从需求侧看，中国将于2035年进入重度老龄化社会，慢病人群已超5亿，健康需求井喷。然而供给侧每千人执业医生数仅为3.04人，远低于发达国家。这一矛盾下，AI已成为扩容医疗健康供给的新基建。她也强调，健康产业链路深、",
+    "link": "https://36kr.com/p/3820143885455751?f=rss",
+    "published": "2026-05-22T07:32:35+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_bff9000e4e6b4c3db18e74f2f353872f@6381723_oswg799187oswg1269oswg847_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "算力浪潮下，AI智能影像的无线化变革| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "算力浪潮下，AI智能影像的无线化变革| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "神眸做的事情不是追逐英伟达，而是在算力浪潮的下游，用极致的低功耗芯片设计，让摄像头摆脱电线的束缚，打开一个千亿只智能视觉终端的未来。 杨作兴带领神眸实现了摄像头功耗降低一个数量级的突破——第一代芯片达业界三分之一功耗，第二代达十分之一，首次用1瓦太阳能板驱动全天候智能摄像机。他认为，当前全球安防摄像头年出货量仅3到4亿只，但到2035年将达100亿只，2045年更将达1000亿只，因为世界大模型需要万亿级摄像头来实时映射物理世界。而在推理算力领域，杨作兴判断中国创业公司仍有大机会。 以下为演讲内容全文，经36氪整理编辑： 杨作兴丨杭州研极微电子有限公司董事长、神眸品牌创始人 大家下午好，今天非常开心，去年在上海参加了36氪的AI+大会，今天是第二次。一年时间过去了，AI发生了非常大的变化，大家都异常兴奋。36氪AI+大会，明显感觉到今年跟去年相比有很大的变化，在此感谢主办方36氪。 我是杭州研极微董事长、神眸品牌创始人杨作兴。AI是世界风暴的中心，这个风暴中心我们能不能再往深里看，风暴中心的眼是什么，我们认为是新质生产力。 目前，全球市值最高的公司是英伟达，它超越了苹果、微软、亚马逊、台积电，正是因为它掌握了新质生产力——GPU算力。 在算力浪潮下，神眸有哪些机遇呢？ 我们观察到，随着技术的发展，手机、电脑、平板很早就脱离了电线。但只是视觉传感器的摄像头，却一直有电线，且大大增加了",
+    "description_pt": "神眸做的事情不是追逐英伟达，而是在算力浪潮的下游，用极致的低功耗芯片设计，让摄像头摆脱电线的束缚，打开一个千亿只智能视觉终端的未来。 杨作兴带领神眸实现了摄像头功耗降低一个数量级的突破——第一代芯片达业界三分之一功耗，第二代达十分之一，首次用1瓦太阳能板驱动全天候智能摄像机。他认为，当前全球安防摄像头年出货量仅3到4亿只，但到2035年将达100亿只，2045年更将达1000亿只，因为世界大模型需要万亿级摄像头来实时映射物理世界。而在推理算力领域，杨作兴判断中国创业公司仍有大机会。 以下为演讲内容全文，经36氪整理编辑： 杨作兴丨杭州研极微电子有限公司董事长、神眸品牌创始人 大家下午好，今天非常开心，去年在上海参加了36氪的AI+大会，今天是第二次。一年时间过去了，AI发生了非常大的变化，大家都异常兴奋。36氪AI+大会，明显感觉到今年跟去年相比有很大的变化，在此感谢主办方36氪。 我是杭州研极微董事长、神眸品牌创始人杨作兴。AI是世界风暴的中心，这个风暴中心我们能不能再往深里看，风暴中心的眼是什么，我们认为是新质生产力。 目前，全球市值最高的公司是英伟达，它超越了苹果、微软、亚马逊、台积电，正是因为它掌握了新质生产力——GPU算力。 在算力浪潮下，神眸有哪些机遇呢？ 我们观察到，随着技术的发展，手机、电脑、平板很早就脱离了电线。但只是视觉传感器的摄像头，却一直有电线，且大大增加了",
+    "link": "https://36kr.com/p/3818843802665862?f=rss",
+    "published": "2026-05-22T07:29:37+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260521/v2_247c29c87060421c8248aad9f152c50f@6381723_oswg92941oswg1269oswg847_img_jpeg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "AI+数字资产：激活企业沉睡数据，释放商业价值| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "AI+数字资产：激活企业沉睡数据，释放商业价值| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "当AI开始帮投资机构“面试”企业、帮合作伙伴“背调”公司时，你的数据还在沉睡吗？艾迪普用22年经验告诉我们：AI时代的第一场战役，是数据治理战。 现在投资方、银行甚至客户都在用AI智能体“打听”你的企业——如果你的数据没有被主动整理、标注、推向市场，就等于在AI的“筛选网”里隐身。艾迪普推出元典大模型+企业数字资产专区，80%的整理工作可由AI完成，但安全底线不能丢——拒绝大厂直接索要工程文件，坚持在可信容器内训练。从品牌营销到内部Agent训练，数据只有封装、流转、使用，才能真正入表、增值。 以下为艾迪普创始人兼董事长 唐兴波 演讲内容，经36氪整理编辑： 唐兴波丨艾迪普创始人兼董事长 非常感谢大家能给我这个机会跟大家一起分享交流AI+数字资产的内容，我将围绕行业现状、破局路径、价值释放、愿景展望及公司概况展开分享。 分享主题之前，我想跟大家分享两件事： 一个是在上周，中国音乐学院的专家到访我们公司进行交流，一起探讨如何把中国音乐学院的资产，转化为高质量数据集，实现资产与价值变现的路径。他跟我表示，在来之前，他们已经通过豆包、DeepSeek、千问等大模型提前了解了艾迪普，还从这些模型上，获取了如何与艾迪普技术结合的可行方案，模型给出的建议和答案他们觉得非常满意。 另一个是今年315晚会，曝光的一些相关的数据安全问题。 从这两件事就能反映出，在数字化飞速发展的今天，尤其是AI的出",
+    "description_pt": "当AI开始帮投资机构“面试”企业、帮合作伙伴“背调”公司时，你的数据还在沉睡吗？艾迪普用22年经验告诉我们：AI时代的第一场战役，是数据治理战。 现在投资方、银行甚至客户都在用AI智能体“打听”你的企业——如果你的数据没有被主动整理、标注、推向市场，就等于在AI的“筛选网”里隐身。艾迪普推出元典大模型+企业数字资产专区，80%的整理工作可由AI完成，但安全底线不能丢——拒绝大厂直接索要工程文件，坚持在可信容器内训练。从品牌营销到内部Agent训练，数据只有封装、流转、使用，才能真正入表、增值。 以下为艾迪普创始人兼董事长 唐兴波 演讲内容，经36氪整理编辑： 唐兴波丨艾迪普创始人兼董事长 非常感谢大家能给我这个机会跟大家一起分享交流AI+数字资产的内容，我将围绕行业现状、破局路径、价值释放、愿景展望及公司概况展开分享。 分享主题之前，我想跟大家分享两件事： 一个是在上周，中国音乐学院的专家到访我们公司进行交流，一起探讨如何把中国音乐学院的资产，转化为高质量数据集，实现资产与价值变现的路径。他跟我表示，在来之前，他们已经通过豆包、DeepSeek、千问等大模型提前了解了艾迪普，还从这些模型上，获取了如何与艾迪普技术结合的可行方案，模型给出的建议和答案他们觉得非常满意。 另一个是今年315晚会，曝光的一些相关的数据安全问题。 从这两件事就能反映出，在数字化飞速发展的今天，尤其是AI的出",
+    "link": "https://36kr.com/p/3820136301728135?f=rss",
+    "published": "2026-05-22T07:24:24+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_4bacf3feb83247d395f33e26588ff4b5@6381723_oswg583536oswg1198oswg799_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1"
+  },
+  {
+    "title_original": "圆桌对话：降本增效 风控提智：数字员工驱动金融数智化转型的实战样本| 2026AI Partner·北京亦庄AI+产业大会",
+    "title_pt": "圆桌对话：降本增效 风控提智：数字员工驱动金融数智化转型的实战样本| 2026AI Partner·北京亦庄AI+产业大会",
+    "description_original": "金智维与银河期货七年合作，从十万级的RPA项目走到百万级的智能流程重构，证明了一件事：企业级AI的价值不在于回答问题，而在于把事办成。 从RPA到Agentic Flow，金智维与银河期货用七年时间跑通了企业流程智能化的完整路径。如今，数字员工已在银河期货落地50多个场景，每天执行超三千条业务流程，准确率99.97%。2025年，双方再度联手探索“智能流程”新范式，试图让流程本身具备自构建、自优化、自演化的能力。 以下为圆桌对话内容，经36氪整理编辑： 吴越丨AI-CenkerAl创始人、科技博主（主持） 廖万里丨珠海金智维人工智能股份有限公司创始人 董事长 沈毅丨银河期货高级技术总监 胡箐丨金智维首席AI科学家 吴越： 大家下午好，欢迎回到36氪AI产业大会的圆桌论坛，我是今天的主持人吴越，我们早上聆听了信息密度极大的演讲，每个嘉宾都提到AI能做什么以及能改变什么，下午这个环节跟大家聊聊AI怎么落地，不是PPT上的落地也不是发布会上的落地，是我们怎么真正进入到企业的核心流程，产生价值的落地。今天这场圆桌我们邀请了三位嘉宾： 金智维的CEO廖总，金智维是一家深耕企业流程智能化的公司，他们已经做了十年了，去年他们发布了企业级平台Ki-AgentS，与银河期货探索Agentic Flow新的概念，待会儿也会跟大家详细展开。 银河期货CIO沈毅，银河期货是我们金融行业里做数字化转型先行者",
+    "description_pt": "金智维与银河期货七年合作，从十万级的RPA项目走到百万级的智能流程重构，证明了一件事：企业级AI的价值不在于回答问题，而在于把事办成。 从RPA到Agentic Flow，金智维与银河期货用七年时间跑通了企业流程智能化的完整路径。如今，数字员工已在银河期货落地50多个场景，每天执行超三千条业务流程，准确率99.97%。2025年，双方再度联手探索“智能流程”新范式，试图让流程本身具备自构建、自优化、自演化的能力。 以下为圆桌对话内容，经36氪整理编辑： 吴越丨AI-CenkerAl创始人、科技博主（主持） 廖万里丨珠海金智维人工智能股份有限公司创始人 董事长 沈毅丨银河期货高级技术总监 胡箐丨金智维首席AI科学家 吴越： 大家下午好，欢迎回到36氪AI产业大会的圆桌论坛，我是今天的主持人吴越，我们早上聆听了信息密度极大的演讲，每个嘉宾都提到AI能做什么以及能改变什么，下午这个环节跟大家聊聊AI怎么落地，不是PPT上的落地也不是发布会上的落地，是我们怎么真正进入到企业的核心流程，产生价值的落地。今天这场圆桌我们邀请了三位嘉宾： 金智维的CEO廖总，金智维是一家深耕企业流程智能化的公司，他们已经做了十年了，去年他们发布了企业级平台Ki-AgentS，与银河期货探索Agentic Flow新的概念，待会儿也会跟大家详细展开。 银河期货CIO沈毅，银河期货是我们金融行业里做数字化转型先行者",
+    "link": "https://36kr.com/p/3820121808540034?f=rss",
+    "published": "2026-05-22T07:09:25+00:00",
+    "source": "36Kr",
+    "language": "zh",
+    "image": "https://img.36krcdn.com/hsossms/20260522/v2_9a54f0003e934bc09bce8e93ec31adff@6381723_oswg135687oswg1000oswg667_img_jpg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
   },
   {
     "title_original": "Nike Promo Codes and Discounts: 30% for May 2026",
@@ -132,72 +385,6 @@
     "image": "https://images.yourstory.com/cs/2/47ea3f60084e11efbdcb2f46d4aa7266/NameImage5-1730716662847.jpg"
   },
   {
-    "title_original": "5个月MaaS收入增长15倍，阿里云找到了做大Token生意的办法",
-    "title_pt": "5个月MaaS收入增长15倍，阿里云找到了做大Token生意的办法",
-    "description_original": "文｜邓咏仪 编辑｜张雨忻 “阿里云MaaS业务的Token收入，在2026年的过去5个月里增长了15倍，月度Token收入已经达到数亿元级别。”这是阿里云在5月20日的发布会上给出的最新数字。而拉动这笔收入的最直接原因指向了一个词：Agent。 这一天，阿里云发布了新一代旗舰模型Qwen 3.7 Max等一系列产品，这距离Qwen 3.6 Max的面世仅仅过去了一个月。 为什么这么着急？随着今年2月OpenClaw的爆火，各家模型厂商都开始针对Agent做模型在Coding能力上的提升。大模型的Coding能力之争越来越白热化，阿里也必须端出一款在Coding方面能打的模型，保持自身MaaS业务的竞争力。“未来是Agent Cloud的时代。”阿里云公共云总裁刘伟光表示。 无独有偶，大洋彼岸的硅谷，Google I/O大会也在同一天举办，主题同样是Agent Cloud，Google新发布的芯片、模型、应用……几乎所有产品也都围绕Agent展开。 Agent Coding，已经成为全球现阶段的AI共识。 △图源：阿里云 狠狠做Agent 发布会第一个端上来的新“千问云”官网，这是一个为Agent设计的网页，也是阿里云成立17年以来，第一次为单独业务做的独立官网。 △图源：千问云 “千问云是为Agent设计的，而不是人类。”阿里云公共云事业部负责人刘伟光说，这来自2024年底，阿里云",
-    "description_pt": "文｜邓咏仪 编辑｜张雨忻 “阿里云MaaS业务的Token收入，在2026年的过去5个月里增长了15倍，月度Token收入已经达到数亿元级别。”这是阿里云在5月20日的发布会上给出的最新数字。而拉动这笔收入的最直接原因指向了一个词：Agent。 这一天，阿里云发布了新一代旗舰模型Qwen 3.7 Max等一系列产品，这距离Qwen 3.6 Max的面世仅仅过去了一个月。 为什么这么着急？随着今年2月OpenClaw的爆火，各家模型厂商都开始针对Agent做模型在Coding能力上的提升。大模型的Coding能力之争越来越白热化，阿里也必须端出一款在Coding方面能打的模型，保持自身MaaS业务的竞争力。“未来是Agent Cloud的时代。”阿里云公共云总裁刘伟光表示。 无独有偶，大洋彼岸的硅谷，Google I/O大会也在同一天举办，主题同样是Agent Cloud，Google新发布的芯片、模型、应用……几乎所有产品也都围绕Agent展开。 Agent Coding，已经成为全球现阶段的AI共识。 △图源：阿里云 狠狠做Agent 发布会第一个端上来的新“千问云”官网，这是一个为Agent设计的网页，也是阿里云成立17年以来，第一次为单独业务做的独立官网。 △图源：千问云 “千问云是为Agent设计的，而不是人类。”阿里云公共云事业部负责人刘伟光说，这来自2024年底，阿里云",
-    "link": "https://36kr.com/p/3819955387371649?f=rss",
-    "published": "2026-05-22T04:21:02+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_ad42efb5946e4267a0767d6e3c83efe1@2057308263_oswg637921oswg1080oswg618_img_000?x-oss-process=image/format,jpg/interlace,1"
-  },
-  {
-    "title_original": "潮水退去，裸泳的一定不止五粮液",
-    "title_pt": "潮水退去，裸泳的一定不止五粮液",
-    "description_original": "作者 | 谢芸子 编辑 | 张帆 封面来源 | 企业官微 5月18日的临时股东大会，五粮液“真诚道歉”了，原因在于其创造的、最令A股错愕的“财务变脸”。 就在刚刚过去的4月末财报季，这家常年位于行业第二的白酒龙头企业，发布了一份“更正公告”，大幅抹去了公司去年前三季度超过50%的营收，以及近70%的净利润。 调整后的财报最终显示：2025年，五粮液实现营收405.29亿元，同比下滑54.6%；归母净利润89.54亿元，同比下滑71.9%。业绩大幅调整的原因指向财报中首次出现的两个新科目——49.07亿元的“监管商品”和263.15亿元的“监管商品款项”。 尽管五粮液至今未解释“监管商品”的含义，但多家券商机构将其理解为：“已发货、未实现终端动销的存货成本”，以及“已收款、未满足收入确认条件的预收款项，待终端销售完成后才会计入收入”。 “中译中”，经销商打款提走的货，只要还没卖到消费者手中，就不再被计入真实收入。从这一层面看，五粮液亲手戳破了白酒行业维系了数十年的增长范式。 只不过，这种堪称魔术般的财务调整，也动摇了资本市场对中国白酒行业的信任。 在雪球等交易平台上，已有股民戏称五粮液为“赖子王”。多家国际投行也看空五粮液。花旗银行直接表示，本次财务修正并非简单的会计差错，而是公司长期向经销商强制压货、虚增营收和利润的集中清算。过往靓丽的业绩存在明显水分，真实经营质量远低于市场认知。",
-    "description_pt": "作者 | 谢芸子 编辑 | 张帆 封面来源 | 企业官微 5月18日的临时股东大会，五粮液“真诚道歉”了，原因在于其创造的、最令A股错愕的“财务变脸”。 就在刚刚过去的4月末财报季，这家常年位于行业第二的白酒龙头企业，发布了一份“更正公告”，大幅抹去了公司去年前三季度超过50%的营收，以及近70%的净利润。 调整后的财报最终显示：2025年，五粮液实现营收405.29亿元，同比下滑54.6%；归母净利润89.54亿元，同比下滑71.9%。业绩大幅调整的原因指向财报中首次出现的两个新科目——49.07亿元的“监管商品”和263.15亿元的“监管商品款项”。 尽管五粮液至今未解释“监管商品”的含义，但多家券商机构将其理解为：“已发货、未实现终端动销的存货成本”，以及“已收款、未满足收入确认条件的预收款项，待终端销售完成后才会计入收入”。 “中译中”，经销商打款提走的货，只要还没卖到消费者手中，就不再被计入真实收入。从这一层面看，五粮液亲手戳破了白酒行业维系了数十年的增长范式。 只不过，这种堪称魔术般的财务调整，也动摇了资本市场对中国白酒行业的信任。 在雪球等交易平台上，已有股民戏称五粮液为“赖子王”。多家国际投行也看空五粮液。花旗银行直接表示，本次财务修正并非简单的会计差错，而是公司长期向经销商强制压货、虚增营收和利润的集中清算。过往靓丽的业绩存在明显水分，真实经营质量远低于市场认知。",
-    "link": "https://36kr.com/p/3819884036051074?f=rss",
-    "published": "2026-05-22T03:26:05+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_c27fdffe2eb64fd093d16c2347b623d4@394564713_oswg95342oswg1080oswg199_img_000?x-oss-process=image/format,jpg/interlace,1"
-  },
-  {
-    "title_original": "签约仪式：带着AI去赛场:AI+电竞全流程赋能战略发布仪式| 2026AI Partner·北京亦庄AI+产业大会",
-    "title_pt": "签约仪式：带着AI去赛场:AI+电竞全流程赋能战略发布仪式| 2026AI Partner·北京亦庄AI+产业大会",
-    "description_original": "邵斌丨北京中关村学院教授、中关村人工智能研究院院长 左伟丨首都体育学院副校长 叶靖波丨京奥电竞（北京）科技有限公司董事长 在今天的大会上我们还将举行一场重量级的三方签约。 中关村人工智能研究院致力于面向未来，致力于面向未来、具有产业价值和颠覆意义的人工智能与交叉学科领域的科学探索,推动创新成果产业化落地，北京中关村学院和中关村人工智能研究院两院一体两面，是北京人工智能领域的一面崭新的旗帜； 首都体育学院是北京高校首批本科电竞专业，为电竞产业培养大量的优质人才。 京奥电竞(北京)科技公司立足于北京经济技术开发区，深度运营北京智慧电竞中心，青年人才培养，行业资源整合及品牌传播，形成了以赛促产的特色发展路径，并参与了国内外顶级赛事的落地执行，如英雄联盟全球总决赛，三角洲烽火联赛。 三方将依托各自的优势，充分协作，实现产学研一体的全面突破。 下面我们正式进入签约环节，共同见证一场重量级的签约。允许我介绍以下嘉宾，让我们欢迎: 北京中关村学院教授、中关村人工智能研究院院长邵斌； 首都体育学院副院长左伟； 京奥电竞(北京)科技有限公司董事长叶靖波； 有请各位落座，签约，请领导留步，我们在台前进行合影留念。 签约仪式圆满结束，希望有更多AI+电竞的优质成果诞生在联合框架下，谢谢大家。 主持人：在AI从技术走向产业的关键路上，总有人率先出发，照亮前路。他们是AI场景落地的先行者，以远见与魄力，为整",
-    "description_pt": "邵斌丨北京中关村学院教授、中关村人工智能研究院院长 左伟丨首都体育学院副校长 叶靖波丨京奥电竞（北京）科技有限公司董事长 在今天的大会上我们还将举行一场重量级的三方签约。 中关村人工智能研究院致力于面向未来，致力于面向未来、具有产业价值和颠覆意义的人工智能与交叉学科领域的科学探索,推动创新成果产业化落地，北京中关村学院和中关村人工智能研究院两院一体两面，是北京人工智能领域的一面崭新的旗帜； 首都体育学院是北京高校首批本科电竞专业，为电竞产业培养大量的优质人才。 京奥电竞(北京)科技公司立足于北京经济技术开发区，深度运营北京智慧电竞中心，青年人才培养，行业资源整合及品牌传播，形成了以赛促产的特色发展路径，并参与了国内外顶级赛事的落地执行，如英雄联盟全球总决赛，三角洲烽火联赛。 三方将依托各自的优势，充分协作，实现产学研一体的全面突破。 下面我们正式进入签约环节，共同见证一场重量级的签约。允许我介绍以下嘉宾，让我们欢迎: 北京中关村学院教授、中关村人工智能研究院院长邵斌； 首都体育学院副院长左伟； 京奥电竞(北京)科技有限公司董事长叶靖波； 有请各位落座，签约，请领导留步，我们在台前进行合影留念。 签约仪式圆满结束，希望有更多AI+电竞的优质成果诞生在联合框架下，谢谢大家。 主持人：在AI从技术走向产业的关键路上，总有人率先出发，照亮前路。他们是AI场景落地的先行者，以远见与魄力，为整",
-    "link": "https://36kr.com/p/3819898058330240?f=rss",
-    "published": "2026-05-22T03:22:01+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_cfae2a35d75e41958a6a0133d64259b0@6381723_oswg80822oswg1280oswg853_img_jpeg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
-  },
-  {
-    "title_original": "带着AI去赛场:AI+电竞全流程赋能 | 2026AI Partner·北京亦庄AI+产业大会",
-    "title_pt": "带着AI去赛场:AI+电竞全流程赋能 | 2026AI Partner·北京亦庄AI+产业大会",
-    "description_original": "AI的加入，让电竞的竞争维度从操作层面延伸到数据与策略层面。 AI+电竞，不只是让电脑变强，而是让整个产业变聪明。赵鉴指出，在选手端，AI可分析操作习惯与决策模式，模拟不同风格的对手进行针对性训练；在赛事端，AI能理解比赛形势，生成风格化解说，并赋能赛事管理与商业运营；在产业端，AI驱动智能剪辑、虚拟主播和衍生品开发。 以下为演讲内容，经36氪整理编辑： 赵鉴|北京中关村学院助理教授、AI+游戏/电竞负责人 尊敬的各位领导、各位朋友大家好，我是来自北京中关村学院的赵鉴，目前是一名大学的博士生导师，课题组从事AI+电竞+产业。 今天与大家分享的主题带着AI去赛场，AI+电竞全流程赋能。 电竞是第99个体育竞赛项目，首次入选杭州亚运会，沙特将筹办首届奥林匹克电子竞技运动会，据不完全统计，中国已经成为了全球最大的电竞市场，产业规模超过1500亿元人民币，电竞赛事不只是年轻人的娱乐方式，更成为推动数字经济发展的新动能。 在这样的背景下，人工智能技术的引入为电竞注入新的活力，主要体现三个方面： 一、在选手玩家端，传统的电竞训练依赖行为预测、模拟对抗，为选手提供精准的训练方案。AI可以分析选手的操作习惯、反应时间与决策模式，同时AI还能模拟不同风格的对手，帮助选手进行针对性的演练，提高训练效率， AI分析对手的英雄选择、出装偏好，这意味着电竞比赛不仅是操作的比拼，更是数据与策略的较量。 二、赛",
-    "description_pt": "AI的加入，让电竞的竞争维度从操作层面延伸到数据与策略层面。 AI+电竞，不只是让电脑变强，而是让整个产业变聪明。赵鉴指出，在选手端，AI可分析操作习惯与决策模式，模拟不同风格的对手进行针对性训练；在赛事端，AI能理解比赛形势，生成风格化解说，并赋能赛事管理与商业运营；在产业端，AI驱动智能剪辑、虚拟主播和衍生品开发。 以下为演讲内容，经36氪整理编辑： 赵鉴|北京中关村学院助理教授、AI+游戏/电竞负责人 尊敬的各位领导、各位朋友大家好，我是来自北京中关村学院的赵鉴，目前是一名大学的博士生导师，课题组从事AI+电竞+产业。 今天与大家分享的主题带着AI去赛场，AI+电竞全流程赋能。 电竞是第99个体育竞赛项目，首次入选杭州亚运会，沙特将筹办首届奥林匹克电子竞技运动会，据不完全统计，中国已经成为了全球最大的电竞市场，产业规模超过1500亿元人民币，电竞赛事不只是年轻人的娱乐方式，更成为推动数字经济发展的新动能。 在这样的背景下，人工智能技术的引入为电竞注入新的活力，主要体现三个方面： 一、在选手玩家端，传统的电竞训练依赖行为预测、模拟对抗，为选手提供精准的训练方案。AI可以分析选手的操作习惯、反应时间与决策模式，同时AI还能模拟不同风格的对手，帮助选手进行针对性的演练，提高训练效率， AI分析对手的英雄选择、出装偏好，这意味着电竞比赛不仅是操作的比拼，更是数据与策略的较量。 二、赛",
-    "link": "https://36kr.com/p/3819893521666436?f=rss",
-    "published": "2026-05-22T03:18:08+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_00e8099e36ba4892917c8f5962aafdc9@6381723_oswg89174oswg1269oswg847_img_jpeg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
-  },
-  {
-    "title_original": "从混沌到秩序：具身智能的数据供给革命与技能结构化实践| 2026AI Partner·北京亦庄AI+产业大会",
-    "title_pt": "从混沌到秩序：具身智能的数据供给革命与技能结构化实践| 2026AI Partner·北京亦庄AI+产业大会",
-    "description_original": "大语言模型可以靠堆数据跑通Scaling Law，但机器人面对的是动态、多模态、强时序关联的物理世界，杂乱的数据堆在一起，训不出可靠的模型。从混沌到秩序的工业化路径，质量比数量更重要。 机器人进工厂、进场景，真正的挑战不在模型本身，而在数据。徐良威指出，具身智能的数据不是时间、空间、任务意图紧密耦合的多模态资产。智域基石提出了五层数据编译管线模型，每一层都有明确的质量指标，唯有构建数据底座生态，让本体方、模型方、产业方各司其职，高质量物理世界的数据才能真正流通起来，支撑具身智能的规模化落地。 以下为演讲内容，经36氪整理编辑： 徐良威丨智域基石CTO 大家好，我是智域基石的联合创始人兼CTO，今天我跟大家分享的是从具身智能的数据供给革命与技能结构化实践，标题是从混沌到秩序。为什么是从混沌到秩序？具身智能的到来让大家发现原先在大语言模型、自动驾驶或者在所有过去AI的数据实践在具身智能里不够用了，今天主要讲一下智域基石在上面做了什么样的工作，主要讨论两个话题，第一个事情我们在具身智能的数据上怎么去做标准化的工业化实践。第二个如何把数据和模型本体、产业、场景结合起来，变成一个生态，而不是单纯数据的事情。 我们直接到机器人的落地，2026年我们可以看到一部分的机器人已经从小样逐渐往产业里跑了，原先我们考虑到的是怎么把实验室里的算法用视频或者现场展示的方式展现出来，这个事情已经远远不一样了，",
-    "description_pt": "大语言模型可以靠堆数据跑通Scaling Law，但机器人面对的是动态、多模态、强时序关联的物理世界，杂乱的数据堆在一起，训不出可靠的模型。从混沌到秩序的工业化路径，质量比数量更重要。 机器人进工厂、进场景，真正的挑战不在模型本身，而在数据。徐良威指出，具身智能的数据不是时间、空间、任务意图紧密耦合的多模态资产。智域基石提出了五层数据编译管线模型，每一层都有明确的质量指标，唯有构建数据底座生态，让本体方、模型方、产业方各司其职，高质量物理世界的数据才能真正流通起来，支撑具身智能的规模化落地。 以下为演讲内容，经36氪整理编辑： 徐良威丨智域基石CTO 大家好，我是智域基石的联合创始人兼CTO，今天我跟大家分享的是从具身智能的数据供给革命与技能结构化实践，标题是从混沌到秩序。为什么是从混沌到秩序？具身智能的到来让大家发现原先在大语言模型、自动驾驶或者在所有过去AI的数据实践在具身智能里不够用了，今天主要讲一下智域基石在上面做了什么样的工作，主要讨论两个话题，第一个事情我们在具身智能的数据上怎么去做标准化的工业化实践。第二个如何把数据和模型本体、产业、场景结合起来，变成一个生态，而不是单纯数据的事情。 我们直接到机器人的落地，2026年我们可以看到一部分的机器人已经从小样逐渐往产业里跑了，原先我们考虑到的是怎么把实验室里的算法用视频或者现场展示的方式展现出来，这个事情已经远远不一样了，",
-    "link": "https://36kr.com/p/3819884983226497?f=rss",
-    "published": "2026-05-22T03:10:14+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_afe27e50fae8453eb6ff325ec14b080e@6381723_oswg89175oswg1280oswg853_img_jpeg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
-  },
-  {
-    "title_original": "从Demo到生产力：阿尔特太乙如何让AI走进汽车设计研发深水区| 2026AI Partner·北京亦庄AI+产业大会",
-    "title_pt": "从Demo到生产力：阿尔特太乙如何让AI走进汽车设计研发深水区| 2026AI Partner·北京亦庄AI+产业大会",
-    "description_original": "Demo 具备单点开放能够验证东西的作用，但不应该只停留在展示层，而要进入汽车研发体系内部，成为一种新的工程能力。 汽车设计研发是一项高复杂度、高成本、高安全要求的系统工程，单点AI Demo难以真正落地。阿尔特太乙基于一线研发经验与私域数据，构建了从知识大模型、造型AI创绘、空气动力学智能预测、CAD智能检索、零部件智能生成到2D智能投图的产品矩阵。其核心理念不是做单点工具，而是打造“工程师一句话，平台全程跑完”的全流程AI研发设计平台，让AI从“惊艳一刻”走向“长期生产力”。 以下为演讲内容，经36氪整理编辑： 刘亚彬丨阿尔特汽车副总裁、阿尔特太乙人工智能总经理 大家上午好，我是阿尔特汽车的刘亚彬，非常高兴有机会在这里跟大家分享我们有关AI+汽车设计研发持续的实践和思考。 今天的主题是：当 AI 走出 Demo，它如何真正进入汽车设计研发的深水区？过去一年多，AI 给整个科技产业带来了非常大的震动，但站在汽车研发这个行业里，我们会更冷静地看待这件事。一辆车从产品定义、造型设计、工程设计，到仿真验证、试验验证、工艺制造、质量交付，每一个环节都有大量约束。它既有性能目标，也有法规要求；既有成本边界，也有制造工艺；既要满足用户体验，也要承担安全责任。我们自己在做AI的过程中做了一二百个Demo，也收到过几千个Demo，真正落地的并不多，这个过程中我们有一些思考跟大家分享一下。 一个D",
-    "description_pt": "Demo 具备单点开放能够验证东西的作用，但不应该只停留在展示层，而要进入汽车研发体系内部，成为一种新的工程能力。 汽车设计研发是一项高复杂度、高成本、高安全要求的系统工程，单点AI Demo难以真正落地。阿尔特太乙基于一线研发经验与私域数据，构建了从知识大模型、造型AI创绘、空气动力学智能预测、CAD智能检索、零部件智能生成到2D智能投图的产品矩阵。其核心理念不是做单点工具，而是打造“工程师一句话，平台全程跑完”的全流程AI研发设计平台，让AI从“惊艳一刻”走向“长期生产力”。 以下为演讲内容，经36氪整理编辑： 刘亚彬丨阿尔特汽车副总裁、阿尔特太乙人工智能总经理 大家上午好，我是阿尔特汽车的刘亚彬，非常高兴有机会在这里跟大家分享我们有关AI+汽车设计研发持续的实践和思考。 今天的主题是：当 AI 走出 Demo，它如何真正进入汽车设计研发的深水区？过去一年多，AI 给整个科技产业带来了非常大的震动，但站在汽车研发这个行业里，我们会更冷静地看待这件事。一辆车从产品定义、造型设计、工程设计，到仿真验证、试验验证、工艺制造、质量交付，每一个环节都有大量约束。它既有性能目标，也有法规要求；既有成本边界，也有制造工艺；既要满足用户体验，也要承担安全责任。我们自己在做AI的过程中做了一二百个Demo，也收到过几千个Demo，真正落地的并不多，这个过程中我们有一些思考跟大家分享一下。 一个D",
-    "link": "https://36kr.com/p/3819837355921544?f=rss",
-    "published": "2026-05-22T03:03:17+00:00",
-    "source": "36Kr",
-    "language": "zh",
-    "image": "https://img.36krcdn.com/hsossms/20260522/v2_3b9fb7bb08fc4a86a53d3731847152b3@6381723_oswg82363oswg1280oswg853_img_jpeg?x-oss-process=image/quality,q_100/format,jpg/interlace,1"
-  },
-  {
     "title_original": "Ford entra na onda da IA e anima Wall Street",
     "title_pt": "Ford entra na onda da IA e anima Wall Street",
     "description_original": "Ações da companhia dispararam 21% em apenas dois dias na semana passada após anúncio do lançamento de nova divisão de armazenamento de energia O post Ford entra na onda da IA e anima Wall Street apareceu primeiro em Olhar Digital .",
@@ -262,28 +449,6 @@
     "source": "Olhar Digital",
     "language": "pt",
     "image": ""
-  },
-  {
-    "title_original": "Can OpenAI’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?",
-    "title_pt": "O ‘Master of Disaster’ da OpenAI pode resolver a crise de reputação da IA?",
-    "description_original": "Global affairs chief Chris Lehane wants to tone down the debate over AI’s societal impacts—and get states to pass laws that won’t derail OpenAI’s meteoric rise.",
-    "description_pt": "O chefe de assuntos globais, Chris Lehane, quer atenuar o debate sobre os impactos sociais da IA ​​– e fazer com que os estados aprovem leis que não atrapalhem a ascensão meteórica da OpenAI.",
-    "link": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/",
-    "published": "2026-05-22T00:04:25+00:00",
-    "source": "Wired",
-    "language": "en",
-    "image": "https://media.wired.com/photos/6a0f679a40b54a02fd444453/master/pass/Model-Behavior-Can-OpenAI-Global-Affairs-Chief-Fix-AI-Reputation-Problem-Business.jpg"
-  },
-  {
-    "title_original": "SpaceX cancela lançamento da nova versão do foguete Starship",
-    "title_pt": "SpaceX cancela lançamento da nova versão do foguete Starship",
-    "description_original": "Após três adiamentos, o 12º lançamento do Starship (e primeiro da nova versão do foguete) foi cancelado nesta quinta-feira (21) O post SpaceX cancela lançamento da nova versão do foguete Starship apareceu primeiro em Olhar Digital .",
-    "description_pt": "Após três adiamentos, o 12º lançamento do Starship (e primeiro da nova versão do foguete) foi cancelado nesta quinta-feira (21) O post SpaceX cancela lançamento da nova versão do foguete Starship apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/05/21/ciencia-e-espaco/spacex-cancela-lancamento-da-nova-versao-do-foguete-starship/",
-    "published": "2026-05-21T23:47:04+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2024/10/propulsor-1024x485.png"
   },
   {
     "title_original": "Anker’s new earbuds are the first with its AI chip that boosts noise reduction",
@@ -374,28 +539,6 @@
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/AI-chatbot-icons-on-smartphone-1-1152x648.jpg"
   },
   {
-    "title_original": "What to Do in LA if You’re Here for Business (2025)",
-    "title_pt": "O que fazer em Los Angeles se você estiver aqui a negócios (2025)",
-    "description_original": "A tech industry guide to where to stay, eat, work, and play while visiting LA.",
-    "description_pt": "Um guia da indústria de tecnologia sobre onde ficar, comer, trabalhar e se divertir enquanto visita Los Angeles.",
-    "link": "https://www.wired.com/story/los-angeles-tech-travel-guide/",
-    "published": "2026-05-21T21:47:47+00:00",
-    "source": "Wired",
-    "language": "en",
-    "image": "https://media.wired.com/photos/6a0f539666610aa777436c9e/master/pass/CITY%20GUIDE%20Los%20Angeles.jpg"
-  },
-  {
-    "title_original": "Elon Musk terá poder absoluto sobre a SpaceX após IPO",
-    "title_pt": "Elon Musk terá poder absoluto sobre a SpaceX após IPO",
-    "description_original": "Documento do IPO mostra que, depois do IPO, Elon Musk terá mais de 50% do poder de voto e controle amplo sobre a SpaceX O post Elon Musk terá poder absoluto sobre a SpaceX após IPO apareceu primeiro em Olhar Digital .",
-    "description_pt": "Documento do IPO mostra que, depois do IPO, Elon Musk terá mais de 50% do poder de voto e controle amplo sobre a SpaceX O post Elon Musk terá poder absoluto sobre a SpaceX após IPO apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/05/21/pro/elon-musk-tera-poder-absoluto-sobre-a-spacex-apos-ipo/",
-    "published": "2026-05-21T21:47:01+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/05/spacex-1024x682.jpg"
-  },
-  {
     "title_original": "Galaxy S26 (256 GB) recebe 46% de desconto com cupom no Magalu",
     "title_pt": "Galaxy S26 (256 GB) recebe 46% de desconto com cupom no Magalu",
     "description_original": "Galaxy S26 traz sistema de câmeras que grava em 8K, 12 GB de RAM e tela AMOLED Dinâmico de 120 Hz.; smartphone premium promete receber sete atualizações Android Galaxy S26 (256 GB) recebe 46% de desconto com cupom no Magalu",
@@ -405,28 +548,6 @@
     "source": "Tecnoblog",
     "language": "pt",
     "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/05/samsung-galaxy-s26-back-achados-1060x597.jpg"
-  },
-  {
-    "title_original": "‘Creepy’ Listening Tool for Targeted Ads Didn’t Actually Work, FTC Says",
-    "title_pt": "A ferramenta de escuta ‘assustadora’ para anúncios direcionados não funcionou de verdade, afirma a FTC",
-    "description_original": "Three firms will pay nearly $1 million for selling “Active Listening” technology that they claimed tapped people’s phones for advertising. The FTC alleges the “tech” was just pricey email lists.",
-    "description_pt": "Três empresas pagarão quase US$ 1 milhão pela venda da tecnologia de “escuta ativa”, que alegam ter grampeado os telefones das pessoas para fins publicitários. A FTC alega que a “tecnologia” eram apenas listas de e-mail caras.",
-    "link": "https://www.wired.com/story/creepy-listening-tool-for-targeted-ads-didnt-actually-work-ftc-says/",
-    "published": "2026-05-21T21:35:52+00:00",
-    "source": "Wired",
-    "language": "en",
-    "image": "https://media.wired.com/photos/6a0f5e238910d0bdf1e57ed8/master/pass/Marketing-Firms-Lied-About-Active-Listening-Security-1154103612.jpg"
-  },
-  {
-    "title_original": "Anthropic: especialistas relativizam temores sobre Mythos",
-    "title_pt": "Anthropic: especialistas relativizam temores sobre Mythos",
-    "description_original": "Segundo a empresa, os impactos da disseminação do modelo poderiam ser severos O post Anthropic: especialistas relativizam temores sobre Mythos apareceu primeiro em Olhar Digital .",
-    "description_pt": "Segundo a empresa, os impactos da disseminação do modelo poderiam ser severos O post Anthropic: especialistas relativizam temores sobre Mythos apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/05/21/inteligencia-artificial/anthropic-especialistas-relativizam-temores-sobre-mythos/",
-    "published": "2026-05-21T21:32:36+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/05/anthropic-2-1024x681.jpg"
   },
   {
     "title_original": "Baixou mais: iPhone 17 Pro Max (256 GB) cai 30% para menor preço que já vimos",
@@ -495,17 +616,6 @@
     "image": "https://tecnoblog.net/files.tecnoblog.net/wp-content/uploads/2026/01/galaxy-watch-8-achados-1060x596.png"
   },
   {
-    "title_original": "Cannes recebe filme criado inteiramente por IA; custo foi de US$ 500 mil",
-    "title_pt": "Cannes recebe filme criado inteiramente por IA; custo foi de US$ 500 mil",
-    "description_original": "Filme criado totalmente por IA estreia em Cannes após custar US$ 500 mil, com 80% do orçamento dedicado à computação O post Cannes recebe filme criado inteiramente por IA; custo foi de US$ 500 mil apareceu primeiro em Olhar Digital .",
-    "description_pt": "Filme criado totalmente por IA estreia em Cannes após custar US$ 500 mil, com 80% do orçamento dedicado à computação O post Cannes recebe filme criado inteiramente por IA; custo foi de US$ 500 mil apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/05/21/inteligencia-artificial/cannes-recebe-filme-criado-inteiramente-por-ia-custo-foi-de-us-500-mil/",
-    "published": "2026-05-21T20:54:36+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": ""
-  },
-  {
     "title_original": "5 truques que vão mudar completamente como você usa o ChatGPT",
     "title_pt": "5 truques que vão mudar completamente como você usa o ChatGPT",
     "description_original": "A maioria das pessoas utiliza o ChatGPT como um buscador mais inteligente. Faz uma pergunta, recebe uma resposta e segue em frente. Mas quem já usa o ChatGPT com mais atenção percebe que pequenas mudanças na forma de escrever os prompts podem melhorar muito a qualidade das respostas. 8 formas inesperadas de usar o ChatGPT no dia a dia 3 comandos secretos para treinar o ChatGPT Não são comandos longos ou complexos que fazem diferença, mas sim instruções simples e estratégicas que orientam melhor o comportamento da IA. 5 truques para usar o ChatGPT Confira cinco truques que vão mudar a forma que",
@@ -526,17 +636,6 @@
     "source": "MIT Tech Review",
     "language": "en",
     "image": ""
-  },
-  {
-    "title_original": "Anthropic paga bilhões à SpaceX e negocia com Microsoft para expandir infraestrutura de IA",
-    "title_pt": "Anthropic paga bilhões à SpaceX e negocia com Microsoft para expandir infraestrutura de IA",
-    "description_original": "Movimentos indicam corrida global por infraestrutura de IA, com contratos de longo prazo e alta flexibilidade operacional O post Anthropic paga bilhões à SpaceX e negocia com Microsoft para expandir infraestrutura de IA apareceu primeiro em Olhar Digital .",
-    "description_pt": "Movimentos indicam corrida global por infraestrutura de IA, com contratos de longo prazo e alta flexibilidade operacional O post Anthropic paga bilhões à SpaceX e negocia com Microsoft para expandir infraestrutura de IA apareceu primeiro em Olhar Digital .",
-    "link": "https://olhardigital.com.br/2026/05/21/inteligencia-artificial/anthropic-paga-bilhoes-a-spacex-e-negocia-com-microsoft-para-expandir-infraestrutura-de-ia/",
-    "published": "2026-05-21T20:38:14+00:00",
-    "source": "Olhar Digital",
-    "language": "pt",
-    "image": "https://olhardigital.com.br/wp-content/uploads/2026/05/microsoft-1024x682.jpg"
   },
   {
     "title_original": "All of the updates from Elon Musk and Sam Altman’s battle over OpenAI",
@@ -616,17 +715,6 @@
     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2276390812.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
   },
   {
-    "title_original": "Robô pedreiro levanta parede de tijolo na velocidade de 6 humanos; veja vídeo",
-    "title_pt": "Robô pedreiro levanta parede de tijolo na velocidade de 6 humanos; veja vídeo",
-    "description_original": "O setor da construção civil ganhou um reforço tecnológico importante para resolver a escassez de mão de obra qualificada. O robô WLTR , pronunciado como “Walter”, assume a tarefa pesada e repetitiva em canteiros de obras e promete acelerar a edificação de residências. Robô humanoide levanta geladeira sozinho enquanto humano mexe no celular; veja Honor revela robô humanoide que imita Michael Jackson e dá salto mortal; vídeo A máquina necessita do comando de apenas um supervisor humano e opera sob qualquer condição climática. Em apenas uma hora, o dispositivo entrega o equivalente ao esforço coo",
-    "description_pt": "O setor da construção civil ganhou um reforço tecnológico importante para resolver a escassez de mão de obra qualificada. O robô WLTR , pronunciado como “Walter”, assume a tarefa pesada e repetitiva em canteiros de obras e promete acelerar a edificação de residências. Robô humanoide levanta geladeira sozinho enquanto humano mexe no celular; veja Honor revela robô humanoide que imita Michael Jackson e dá salto mortal; vídeo A máquina necessita do comando de apenas um supervisor humano e opera sob qualquer condição climática. Em apenas uma hora, o dispositivo entrega o equivalente ao esforço coo",
-    "link": "https://canaltech.com.br/produtos/robo-pedreiro-levanta-parede-de-tijolo-na-velocidade-de-6-humanos-veja-video/",
-    "published": "2026-05-21T19:45:00+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/j5r9QrmeZgI1cLRIXwwG05X_i-w=/700x394/smart/i1128649.png"
-  },
-  {
     "title_original": "Philips’ new display has a screen on both sides",
     "title_pt": "O novo display da Philips tem tela em ambos os lados",
     "description_original": "Its name might be dull and uninspired, but the Philips 24B2D5300 Business Monitor brings a novel feature I've never seen on a display before: screens on either side. The design will primarily benefit people who are constantly angling their computer screen so those on both sides of a desk can see it, like a car [&#8230;]",
@@ -649,17 +737,6 @@
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/image-1-1152x648.jpeg"
   },
   {
-    "title_original": "27 prompts para virar Cavaleiro do Zodíaco com IA",
-    "title_pt": "27 prompts para virar Cavaleiro do Zodíaco com IA",
-    "description_original": "Todo fã de Os Cavaleiros do Zodíaco imaginou como seria vestir os trajes de seu personagem favorito ou como ficaria com as lendárias armaduras de ouro. Nas redes sociais, muitos estão recriando suas fotos como guerreiros de Atena usando IA, com direito a detalhes metálicos, aura cósmica, cenários épicos e visual digno de abertura clássica de anime. Truque no Gemini mostra seu retrato daqui a alguns anos; veja como usar Carro em miniatura com IA: veja como fazer a ‘transformação’ no Gemini e ChatGPT A seguir, confira: Antes de começar: cuidados com a foto Prompts de Cavaleiros de Bronze Prompts",
-    "description_pt": "Todo fã de Os Cavaleiros do Zodíaco imaginou como seria vestir os trajes de seu personagem favorito ou como ficaria com as lendárias armaduras de ouro. Nas redes sociais, muitos estão recriando suas fotos como guerreiros de Atena usando IA, com direito a detalhes metálicos, aura cósmica, cenários épicos e visual digno de abertura clássica de anime. Truque no Gemini mostra seu retrato daqui a alguns anos; veja como usar Carro em miniatura com IA: veja como fazer a ‘transformação’ no Gemini e ChatGPT A seguir, confira: Antes de começar: cuidados com a foto Prompts de Cavaleiros de Bronze Prompts",
-    "link": "https://canaltech.com.br/inteligencia-artificial/como-virar-cavaleiro-do-zodiaco-com-ia-veja-27-prompts/",
-    "published": "2026-05-21T19:20:00+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/Puqqr_YWBj87TAGGmBdqYsUtF7U=/700x394/smart/i1128257.png"
-  },
-  {
     "title_original": "Scaling creativity in the age of AI",
     "title_pt": "Escalando a criatividade na era da IA",
     "description_original": "Storytelling is core to humanity&#8217;s DNA, stemming from our impulse to express ideals, warnings, hopes, and experiences. Technology has always been woven through the medium and the distribution: from early humans&#8217; innovation of natural pigments and charcoals for cave paintings to literal representation by the camera. The landscape of storytelling continues to shift under our&#8230;",
@@ -669,28 +746,6 @@
     "source": "MIT Tech Review",
     "language": "en",
     "image": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Digital-paper-marble.jpeg"
-  },
-  {
-    "title_original": "Apple vai transmitir futebol ao vivo usando iPhones em vez de câmeras de TV",
-    "title_pt": "Apple vai transmitir futebol ao vivo usando iPhones em vez de câmeras de TV",
-    "description_original": "Se você é apaixonado por futebol e frequenta estádios, provavelmente já usou o celular para filmar momentos da partida. Mas já imaginou assistir a um jogo na TV inteiramente filmado com smartphones? A Apple vai proporcionar essa experiência usando iPhones em uma partida da Major League Soccer (MLS) neste sábado (23) . Galaxy S26 Ultra x iPhone 17 Pro: qual é o melhor topo de linha de 2026? iPhone 17 Pro de colecionador com pedaço do 1º iPhone na carcaça custa R$ 54.000 O confronto será entre LA Galaxy e Houston Dynamo FC e será dispuado no Dignity Health Sports Park, em Carson, na Califórnia. ",
-    "description_pt": "Se você é apaixonado por futebol e frequenta estádios, provavelmente já usou o celular para filmar momentos da partida. Mas já imaginou assistir a um jogo na TV inteiramente filmado com smartphones? A Apple vai proporcionar essa experiência usando iPhones em uma partida da Major League Soccer (MLS) neste sábado (23) . Galaxy S26 Ultra x iPhone 17 Pro: qual é o melhor topo de linha de 2026? iPhone 17 Pro de colecionador com pedaço do 1º iPhone na carcaça custa R$ 54.000 O confronto será entre LA Galaxy e Houston Dynamo FC e será dispuado no Dignity Health Sports Park, em Carson, na Califórnia. ",
-    "link": "https://canaltech.com.br/smartphone/apple-vai-transmitir-futebol-ao-vivo-usando-iphones-em-vez-de-cameras-de-tv/",
-    "published": "2026-05-21T19:06:55+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/9VSm4iykOGuJjADpTAW5-smQkMQ=/700x394/smart/i1058425.jpeg"
-  },
-  {
-    "title_original": "Hack de dinheiro infinito em Forza Horizon 6 já corre solto no Japão",
-    "title_pt": "Hack de dinheiro infinito em Forza Horizon 6 já corre solto no Japão",
-    "description_original": "Apenas dois dias se passaram desde o lançamento global de Forza Horizon 6 e alguns jogadores já encontraram uma forma de conseguir CR (dinheiro do jogo) de maneira rápida, sem nem precisar dirigir. 5 carros mais velozes de Forza Horizon 6 Quando Forza Horizon 6 vai ser lançado para PlayStation 5? O criador de conteúdo conhecido como XMBWesley lançou um vídeo ensinando como os jogadores podem ganhar créditos rapidamente e farmar muita experiência em pouco tempo no jogo de corrida da Playground Games. A ideia dele foi desenvolver pistas personalizadas lotadas de objetos destrutíveis e longas ret",
-    "description_pt": "Apenas dois dias se passaram desde o lançamento global de Forza Horizon 6 e alguns jogadores já encontraram uma forma de conseguir CR (dinheiro do jogo) de maneira rápida, sem nem precisar dirigir. 5 carros mais velozes de Forza Horizon 6 Quando Forza Horizon 6 vai ser lançado para PlayStation 5? O criador de conteúdo conhecido como XMBWesley lançou um vídeo ensinando como os jogadores podem ganhar créditos rapidamente e farmar muita experiência em pouco tempo no jogo de corrida da Playground Games. A ideia dele foi desenvolver pistas personalizadas lotadas de objetos destrutíveis e longas ret",
-    "link": "https://canaltech.com.br/games/hack-de-dinheiro-infinito-em-forza-horizon-6-ja-corre-solto-no-japao/",
-    "published": "2026-05-21T19:00:00+00:00",
-    "source": "Canaltech",
-    "language": "pt",
-    "image": "https://t.ctcdn.com.br/hp1f53PUtng6uaYdSKkJNQGazf4=/700x394/smart/i1126831.png"
   },
   {
     "title_original": "One of Meta’s big legal reckonings just ended in a settlement",
@@ -748,17 +803,6 @@
     "image": "https://files.tecnoblog.net/wp-content/uploads/2026/05/charles-babbage-01.jpg"
   },
   {
-    "title_original": "Bungie gives up on Destiny",
-    "title_pt": "Bungie desiste de Destiny",
-    "description_original": "Bungie is moving on from Destiny 2. The studio announced Thursday that it's releasing the last major update for the game on June 9th as its focus \"turns towards a new beginning for Bungie.\" After that final update, the game will remain playable, much like the first Destiny. \"Many changes in this final update will [&#8230;]",
-    "description_pt": "A Bungie está saindo de Destiny 2. O estúdio anunciou na quinta-feira que lançará a última grande atualização do jogo em 9 de junho, já que seu foco “se volta para um novo começo para a Bungie”. Após a atualização final, o jogo permanecerá jogável, assim como o primeiro Destiny. \"Muitas mudanças nesta atualização final irão [&#8230;]",
-    "link": "https://www.theverge.com/games/935536/bungie-destiny-2-final-update-date",
-    "published": "2026-05-21T17:48:34+00:00",
-    "source": "The Verge",
-    "language": "en",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/ss_5065e2bb5de91535dc5e390e27e391a8b9b367ee.1920x1080.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100"
-  },
-  {
     "title_original": "Stunning aerial footage still best thing about Top Gun at 40",
     "title_pt": "Imagens aéreas impressionantes ainda são a melhor coisa de Top Gun aos 40 anos",
     "description_original": "Tony Scott's 1986 blockbuster and the 2022 sequel are the best recruitment tools the US Navy could hope for.",
@@ -779,17 +823,6 @@
     "source": "Ars Technica",
     "language": "en",
     "image": "https://cdn.arstechnica.net/wp-content/uploads/2018/12/International_Space_Station_after_undocking_of_STS-132-1152x648.jpg"
-  },
-  {
-    "title_original": "Honasa Consumer Q4 profit surges to Rs 69.43 Cr; declares maiden final dividend",
-    "title_pt": "O lucro do Honasa Consumer no quarto trimestre sobe para Rs 69,43 centenas de milhares; declara o primeiro dividendo final",
-    "description_original": "The company's revenue from operations surged 23.15% to Rs 657.08 crore in the Q4, from Rs 533.56 crore a year ago.",
-    "description_pt": "A receita operacional da empresa aumentou 23,15%, para 657,08 milhões de rupias no quarto trimestre, de 533,56 milhões de rupias um ano atrás.",
-    "link": "https://yourstory.com/2026/05/honasa-consumer-q4-profit-surges-to-rs-6943-cr-declares-maiden-final-dividend",
-    "published": "2026-05-21T16:03:03+00:00",
-    "source": "YourStory",
-    "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/47ea3f60084e11efbdcb2f46d4aa7266/HonasaFeatureImage-1732265227560.jpg"
   },
   {
     "title_original": "Anthropic’s Code with Claude showed off coding’s future—whether you like it or not",
@@ -836,15 +869,15 @@
     "image": "https://wp.technologyreview.com/wp-content/uploads/2023/06/AF-MIT-JUAREZ-MAR2023-029.jpeg?w=3000"
   },
   {
-    "title_original": "Startup news and updates: daily roundup (May 21, 2026)",
-    "title_pt": "Notícias e atualizações de startups: resumo diário (21 de maio de 2026)",
-    "description_original": "YourStory presents the daily news roundup from the Indian startup ecosystem and beyond. Here's the roundup for Thursday, May 21, 2026.",
-    "description_pt": "YourStory apresenta o resumo diário de notícias do ecossistema de startups indiano e além. Aqui está o resumo de quinta-feira, 21 de maio de 2026.",
-    "link": "https://yourstory.com/2026/05/startup-news-and-updates-daily-roundup-may-21-2026",
-    "published": "2026-05-21T11:15:00+00:00",
+    "title_original": "Bharat Innovates 2026 Brings Global Focus to Indian Deep-tech",
+    "title_pt": "Bharat Inova 2026 traz foco global para tecnologia profunda indiana",
+    "description_original": "The Ministry of Education hosted the Bharat Innovates Investor Showcase in Bengaluru, connecting Indian deep-tech start-ups with global investors.",
+    "description_pt": "O Ministério da Educação organizou o Bharat Innovates Investor Showcase em Bengaluru, conectando start-ups indianas de tecnologia profunda com investidores globais.",
+    "link": "https://yourstory.com/2026/05/bharat-innovates-investor-showcase-bengaluru-deeptech-startups",
+    "published": "2026-05-21T10:24:25+00:00",
     "source": "YourStory",
     "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/11718bd02d6d11e9aa979329348d4c3e/DailyRoundupImages1600x900-1774005165949.jpg"
+    "image": "https://images.yourstory.com/cs/2/6db16ae008d911e9bb473d9d98ed1e05/Imagebh2p-1779357536714.jpg"
   },
   {
     "title_original": "Climate tech companies are pivoting to critical minerals",
@@ -880,6 +913,17 @@
     "image": ""
   },
   {
+    "title_original": "Scapia raises $63M led by General Catalyst",
+    "title_pt": "Scapia levanta US$ 63 milhões liderado pela General Catalyst",
+    "description_original": "Scapia will use funding round towards strengthening its brand and investment in AI led initiatives.",
+    "description_pt": "Scapia utilizará a rodada de financiamento para fortalecer sua marca e investir em iniciativas lideradas por IA.",
+    "link": "https://yourstory.com/2026/05/scapia-raises-63-million-led-by-general-catalyst",
+    "published": "2026-05-21T08:00:30+00:00",
+    "source": "YourStory",
+    "language": "hi",
+    "image": "https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/Scapia-FOUNDER-final-1779347815301.png"
+  },
+  {
     "title_original": "NVIDIA’s Huang says world will have ‘billions of agents’ as AI boom lifts fiscal results",
     "title_pt": "Huang, da NVIDIA, diz que o mundo terá “bilhões de agentes” à medida que o boom da IA ​​eleva os resultados fiscais",
     "description_original": "NVIDIA reported a strong first quarter as its net income soared 211% year-on-year to $58.3 billion, and revenue rose 85% to $81.6 billion.",
@@ -913,43 +957,10 @@
     "image": "https://images.yourstory.com/cs/2/96eabe90392211eb93f18319e8c07a74/Imaget390-1705908831391.jpg"
   },
   {
-    "title_original": "Anscer Robotics raises $5.4M in Series A funding round led by IAN Alpha Fund",
-    "title_pt": "Anscer Robotics levanta US$ 5,4 milhões na rodada de financiamento da Série A liderada pelo IAN Alpha Fund",
-    "description_original": "The Bengaluru-based industrial robotics startup will use the funds for product development, scaling operations, and market expansion.",
-    "description_pt": "A startup de robótica industrial com sede em Bengaluru usará os fundos para desenvolvimento de produtos, escalonamento de operações e expansão de mercado.",
-    "link": "https://yourstory.com/2026/05/anscer-robotics-series-a-funding-round-led-by-ian-alpha-fund",
-    "published": "2026-05-20T14:30:00+00:00",
-    "source": "YourStory",
-    "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/Anscer-robotics-final-1779195170648.png"
-  },
-  {
-    "title_original": "Piper Serica launches Rs 800 Cr Bharat Tech Fund",
-    "title_pt": "Piper Serica lança fundo de tecnologia Bharat de Rs 800 bilhões",
-    "description_original": "Piper Serica plans to invest at Series A and B stages with cheque size of Rs 25-50 crore in each startup.",
-    "description_pt": "Piper Serica planeja investir nos estágios das Séries A e B com cheques de Rs 25-50 crore em cada startup.",
-    "link": "https://yourstory.com/2026/05/piper-serica-launches-rs-800-crore-bharat-tech-fund",
-    "published": "2026-05-20T14:29:26+00:00",
-    "source": "YourStory",
-    "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/c2cedff02d6111ef9021856619e24ca1/IMG0470-1744635312325.jpeg"
-  },
-  {
-    "title_original": "India has over two lakh startups, expansion reaching smaller cities: Minister Khadse",
-    "title_pt": "A Índia tem mais de duas lakh startups, e a expansão atinge cidades menores: Ministro Khadse",
-    "description_original": "India now has over two lakh startups, with the ecosystem expanding beyond metros into smaller towns, Union minister Raksha Khadse said at the BRICS Youth Entrepreneurship Working Group Meeting in Indore.",
-    "description_pt": "A Índia tem agora mais de duas lakh startups, com o ecossistema se expandindo além das áreas metropolitanas para cidades menores, disse o ministro da União, Raksha Khadse, na reunião do Grupo de Trabalho de Empreendedorismo Juvenil do BRICS, em Indore.",
-    "link": "https://yourstory.com/2026/05/india-two-lakh-startups-expansion-smaller-cities-minister-khadse",
-    "published": "2026-05-20T13:02:46+00:00",
-    "source": "YourStory",
-    "language": "hi",
-    "image": "https://images.yourstory.com/cs/2/fd6b2ee0c6f411e8af1c974e95f3b2db/Imagey7gz-1577804946153.jpg"
-  },
-  {
     "title_original": "Green steel startup Boston Metal is doubling down on critical metals",
     "title_pt": "A startup de aço verde Boston Metal está dobrando sua aposta em metais críticos",
     "description_original": "The startup Boston Metal has raised a $75 million funding round to produce critical metals, MIT Technology Review can exclusively report.&#160;&#160; The company has been known largely for its efforts to clean up steel production, an industry that&#8217;s responsible for about 8% of global greenhouse emissions today. With the additional money, the new focus could&#8230;",
-    "description_pt": "A startup Boston Metal levantou uma rodada de financiamento de US$ 75 milhões para produzir metais críticos, pode relatar com exclusividade o MIT Technology Review. A empresa é amplamente conhecida pelos seus esforços para limpar a produção de aço, uma indústria que é hoje responsável por cerca de 8% das emissões globais de gases com efeito de estufa. Com o dinheiro adicional, o novo foco poderia…",
+    "description_pt": "A startup Boston Metal levantou uma rodada de financiamento de US$ 75 milhões para produzir metais críticos, segundo o MIT Technology Review pode relatar com exclusividade. A empresa é amplamente conhecida pelos seus esforços para limpar a produção de aço, uma indústria que é hoje responsável por cerca de 8% das emissões globais de gases com efeito de estufa. Com o dinheiro adicional, o novo foco poderia…",
     "link": "https://www.technologyreview.com/2026/05/20/1137523/boston-metal-funding-critical-metals/",
     "published": "2026-05-20T13:00:00+00:00",
     "source": "MIT Tech Review",
@@ -971,23 +982,12 @@
     "title_original": "Roundtables: Inside the Musk v. Altman Trial",
     "title_pt": "Mesas Redondas: Por Dentro do Julgamento Musk v. Altman",
     "description_original": "Listen to the session or watch below Elon Musk lost his suit against OpenAI, in which he alleged CEO Sam Altman and President Greg Brockman had deceived him over the company’s non-profit status. Watch as AI reporter and attorney Michelle Kim, who covered the trial for MIT Technology Review, joins in conversation with editor in&#8230;",
-    "description_pt": "Ouça a sessão ou assista abaixo Elon Musk perdeu o processo contra a OpenAI, no qual alegou que o CEO Sam Altman e o presidente Greg Brockman o enganaram sobre o status de organização sem fins lucrativos da empresa. Veja como a repórter e advogada de IA Michelle Kim, que cobriu o julgamento para o MIT Technology Review, conversa com o editor em & # 8230;",
+    "description_pt": "Ouça a sessão ou assista abaixo Elon Musk perdeu o processo contra a OpenAI, no qual alegou que o CEO Sam Altman e o presidente Greg Brockman o enganaram sobre o status de organização sem fins lucrativos da empresa. Veja como a repórter e advogada de IA Michelle Kim, que cobriu o julgamento para a MIT Technology Review, conversa com o editor em & # 8230;",
     "link": "https://www.technologyreview.com/2026/05/19/1137454/roundtables-inside-the-musk-v-altman-trial/",
     "published": "2026-05-19T20:15:18+00:00",
     "source": "MIT Tech Review",
     "language": "en",
     "image": ""
-  },
-  {
-    "title_original": "Understanding the modern cybercrime landscape",
-    "title_pt": "Compreendendo o cenário moderno do crime cibernético",
-    "description_original": "Throughout 2025, HPE observed significant changes in how cybercriminals operate. Analyzing real-world threats, our HPE Threat Labs highlighted an industrialization of the cyber criminals’ methods in its new In the Wild Report, enabling greater scale, speed and structure in their campaigns. They typically use automation and AI to exploit longstanding vulnerabilities, and many have adopted&#8230;",
-    "description_pt": "Ao longo de 2025, a HPE observou mudanças significativas na forma como os cibercriminosos operam. Analisando ameaças do mundo real, nossos Laboratórios de Ameaças HPE destacaram a industrialização dos métodos dos criminosos cibernéticos em seu novo relatório In the Wild, permitindo maior escala, velocidade e estrutura em suas campanhas. Eles normalmente usam automação e IA para explorar vulnerabilidades de longa data, e muitos adotaram…",
-    "link": "https://www.technologyreview.com/2026/05/19/1136925/understanding-the-modern-cybercrime-landscape/",
-    "published": "2026-05-19T13:00:00+00:00",
-    "source": "MIT Tech Review",
-    "language": "en",
-    "image": "https://wp.technologyreview.com/wp-content/uploads/2026/04/HPE_VL_Backgrounds_HR_1920x1080_E.jpg?w=1920"
   },
   {
     "title_original": "How I Get Free Traffic from ChatGPT in 2025 (AIO vs SEO)",
@@ -1057,7 +1057,7 @@
   },
   {
     "title_original": "TOP 11 AI MARKETING TOOLS YOU SHOULD USE (Updated 2022)",
-    "title_pt": "11 PRINCIPAIS FERRAMENTAS DE MARKETING DE IA QUE VOCÊ DEVE USAR (atualizado em 2022)",
+    "title_pt": "As 11 PRINCIPAIS FERRAMENTAS DE MARKETING DE IA QUE VOCÊ DEVE USAR (atualizado em 2022)",
     "description_original": "The marketing industry is turning to artificial intelligence (AI) as a way to save time and execute smarter, more personalized campaigns. 61% of marketers say AI software is the most important aspect of their data strategy. If you’re late to the AI party, don’t worry. It’s easier than you think to start leveraging artificial intelligence tools in your marketing strategy. Here are 11 AI marketing tools every marketer should start using today. 1. Jasper Ai (Formerly known as Jarvis) Jasper is a content writing and content generation tool that uses artificial intelligence to identify the best wor",
     "description_pt": "A indústria de marketing está recorrendo à inteligência artificial (IA) como forma de economizar tempo e executar campanhas mais inteligentes e personalizadas. 61% dos profissionais de marketing afirmam que o software de IA é o aspecto mais importante de sua estratégia de dados. Se você estiver atrasado para a festa da IA, não se preocupe. É mais fácil do que você pensa começar a utilizar ferramentas de inteligência artificial em sua estratégia de marketing. Aqui estão 11 ferramentas de marketing de IA que todo profissional de marketing deve começar a usar hoje. 1. Jasper Ai (anteriormente con",
     "link": "https://techncruncher.blogspot.com/2022/07/top-10-ai-marketing-tools-you-should-use.html",
