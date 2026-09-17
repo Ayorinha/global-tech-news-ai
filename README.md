@@ -1,219 +1,111 @@
-# 🌐 Global Tech News AI
+# Ayorai Global Tech News AI
 
-> Agregador automatizado de notícias tecnológicas globais com tradução automática para português.
+> Automated technology-news ingestion, translation and publishing pipeline.
 
----
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![RSS](https://img.shields.io/badge/Data-RSS%20Feeds-orange)](https://www.rssboard.org/rss-specification)
 
-## 📸 Visão Geral
+## Overview
 
-Este projeto coleta automaticamente notícias de tecnologia de **10+ fontes globais** (inglês, espanhol, português, chinês e hindi), traduz tudo para o português e exibe em um site moderno com **dark mode**, busca e filtros por idioma.
+Ayorai Global Tech News AI is a lightweight automated pipeline that collects technology news from multiple RSS sources, extracts available metadata and images, translates supported content to Portuguese, and publishes a browser-based news experience through GitHub Pages.
 
-**Funciona 100% gratuitamente:**
-- 🔄 **GitHub Actions** — coleta e traduz notícias a cada 1 hora
-- 🌍 **GitHub Pages** — hospeda o site sem custo
-- 🤖 **deep-translator** — tradução via Google Translate (gratuito)
+The project demonstrates a practical combination of **data ingestion, content processing, automation and static web deployment** without requiring a dedicated application server.
 
----
+## Architecture
 
-## 🗂 Estrutura do Projeto
+```text
+RSS Sources
+    │
+    ▼
+Python Ingestion
+    │
+    ├── Feed parsing
+    ├── Metadata extraction
+    ├── Image discovery
+    └── Translation
+    │
+    ▼
+data/news.json
+    │
+    ▼
+Static Web Application
+    │
+    ▼
+GitHub Pages
 
-```
-project-news/
-├── index.html              # Página principal do site
-├── style.css               # Estilos (dark mode, responsivo)
-├── script.js               # Lógica de filtros, busca e renderização
-├── data/
-│   └── news.json           # Notícias coletadas (gerado automaticamente)
-├── scripts/
-│   └── fetch_news.py       # Script de coleta e tradução
-├── .github/
-│   └── workflows/
-│       └── update-news.yml # Automação via GitHub Actions
-├── requirements.txt        # Dependências Python
-└── README.md               # Esta documentação
-```
-
----
-
-## 🚀 Como Publicar no GitHub
-
-### 1. Criar repositório
-
-```bash
-# Inicializar git no diretório do projeto
-git init
-git add .
-git commit -m "feat: projeto inicial Global Tech News AI"
+GitHub Actions ── scheduled automation ──► pipeline
 ```
 
-### 2. Conectar ao GitHub
+## Current capabilities
 
-```bash
-# Substitua SEU_USUARIO e SEU_REPO pelos seus dados
-git remote add origin https://github.com/SEU_USUARIO/SEU_REPO.git
-git branch -M main
-git push -u origin main
+- Multi-source RSS ingestion
+- Multiple source languages
+- Portuguese translation workflow
+- Article metadata normalization
+- Image extraction from RSS metadata/content
+- Timestamp normalization
+- Structured JSON output
+- Automated hourly execution through GitHub Actions
+- Automatic commit/publish of updated news data
+- Static browser-based frontend
+
+## Technology
+
+- Python 3.11+
+- feedparser
+- requests
+- deep-translator
+- HTML / CSS / JavaScript
+- GitHub Actions
+- GitHub Pages
+
+## Repository structure
+
+```text
+.
+├── .github/workflows/      # CI automation
+├── data/                   # Generated news dataset
+├── scripts/                # Ingestion and processing scripts
+├── index.html              # Web application
+├── script.js               # Frontend behavior
+├── style.css               # Frontend presentation
+├── requirements.txt        # Python dependencies
+└── README.md
 ```
 
-### 3. Ativar GitHub Pages
+## Automation
 
-1. Vá em **Settings** → **Pages**
-2. Em **Source**, selecione `Deploy from a branch`
-3. Escolha a branch `main` e pasta `/ (root)`
-4. Clique em **Save**
+The production workflow runs on a schedule and can also be triggered manually. The workflow has write permission only for repository contents because the generated dataset is committed back to the repository. The existing deployment pipeline is intentionally preserved while the portfolio documentation is improved.
 
-Seu site estará disponível em:
-`https://SEU_USUARIO.github.io/SEU_REPO`
+## Data and attribution
 
----
+The project stores article metadata and links back to the original sources. It does not claim ownership of third-party articles. Source attribution remains part of the published dataset and user experience.
 
-## ⚙️ Como Ativar GitHub Actions
+## Privacy and security
 
-O GitHub Actions **já está configurado** no arquivo `.github/workflows/update-news.yml`.
+No private organizational credentials, personal records or internal business datasets are required by the public pipeline. API keys are not embedded in the application code.
 
-Após o push, ele será executado:
-- ✅ Automaticamente a cada **1 hora**
-- ✅ Em todo `git push` para `main`
-- ✅ Manualmente pelo painel em **Actions → Run workflow**
+## Portfolio relevance
 
-### Verificar execução
+This repository is part of the Ayorai portfolio and demonstrates:
 
-Acesse: `github.com/SEU_USUARIO/SEU_REPO/actions`
+- Data ingestion pipelines
+- Automation engineering
+- Lightweight ETL
+- Content normalization
+- Translation workflows
+- GitHub Actions
+- Static deployment
+- Maintainable browser-based applications
 
----
+## Status
 
-## 💻 Como Executar Localmente
+**Active project.** The automated news-update workflow and existing site behavior are intentionally preserved while the repository is progressively documented and organized.
 
-### Pré-requisitos
+## Author
 
-- Python 3.9+
-- pip
+**Anderson Leon Ayora**  
+Data Scientist · AI Engineer · Data Architect
 
-### Instalar dependências
+Ayorai — Applied AI · Data · Intelligent Automation
 
-```bash
-pip install -r requirements.txt
-```
-
-### Coletar notícias
-
-```bash
-python scripts/fetch_news.py
-```
-
-Isso vai criar/atualizar `data/news.json`.
-
-### Visualizar o site
-
-Use qualquer servidor local. Exemplos:
-
-```bash
-# Python (mais simples)
-python -m http.server 8000
-
-# Node.js (se tiver npx)
-npx serve .
-```
-
-Abra `http://localhost:8000` no navegador.
-
----
-
-## ➕ Como Adicionar Novas Fontes RSS
-
-Abra `scripts/fetch_news.py` e edite o dicionário `RSS_SOURCES`:
-
-```python
-RSS_SOURCES = {
-    "en": [
-        # Adicione sua fonte aqui:
-        {"url": "https://exemplo.com/feed.xml", "name": "Nome da Fonte"},
-        ...
-    ],
-    ...
-}
-```
-
-**Idiomas suportados:**
-
-| Chave | Idioma     |
-|-------|------------|
-| `en`  | Inglês     |
-| `es`  | Espanhol   |
-| `pt`  | Português  |
-| `zh`  | Chinês     |
-| `hi`  | Hindi      |
-
-Para adicionar um novo idioma, basta criar uma nova chave no dicionário e adicionar o nome do idioma em `LANG_MAP` no `script.js`.
-
----
-
-## ⏰ Como Alterar a Frequência de Atualização
-
-Edite `.github/workflows/update-news.yml`:
-
-```yaml
-on:
-  schedule:
-    - cron: "0 * * * *"   # A cada hora (padrão)
-    # Exemplos alternativos:
-    # - cron: "*/30 * * * *"  # A cada 30 minutos
-    # - cron: "0 */6 * * *"   # A cada 6 horas
-    # - cron: "0 8 * * *"     # Todo dia às 8h UTC
-```
-
-**Referência cron:** `Minuto Hora DiaMes Mes DiaSemana`
-
----
-
-## 🧠 Como Funciona a Tradução
-
-O script usa a biblioteca [deep-translator](https://github.com/nidhaloff/deep-translator) com o motor **Google Translate** (gratuito, sem API key).
-
-- Se a tradução falhar (rate limit, timeout), o texto original é mantido.
-- Textos maiores que 4500 caracteres são truncados antes da tradução.
-- Um delay de 300ms entre traduções evita bloqueios por excesso de requisições.
-
----
-
-## 🛠 Tecnologias Utilizadas
-
-| Categoria   | Tecnologia             |
-|-------------|------------------------|
-| Frontend    | HTML5, CSS3, JavaScript |
-| Backend     | Python 3               |
-| Coleta RSS  | feedparser             |
-| HTTP        | requests               |
-| Tradução    | deep-translator        |
-| Automação   | GitHub Actions         |
-| Hospedagem  | GitHub Pages           |
-
----
-
-## 📄 Fontes de Notícias
-
-| Fonte              | Idioma     | URL                              |
-|--------------------|------------|----------------------------------|
-| TechCrunch         | Inglês     | techcrunch.com                   |
-| The Verge          | Inglês     | theverge.com                     |
-| Wired              | Inglês     | wired.com                        |
-| Ars Technica       | Inglês     | arstechnica.com                  |
-| MIT Tech Review    | Inglês     | technologyreview.com             |
-| Xataka             | Espanhol   | xataka.com                       |
-| Genbeta            | Espanhol   | genbeta.com                      |
-| Canaltech          | Português  | canaltech.com.br                 |
-| Tecnoblog          | Português  | tecnoblog.net                    |
-| Olhar Digital      | Português  | olhardigital.com.br              |
-| 36Kr               | Chinês     | 36kr.com                         |
-| YourStory          | Hindi      | yourstory.com                    |
-
----
-
-## 📝 Licença
-
-Projeto open source para fins educacionais e de portfólio.  
-O conteúdo das notícias pertence às respectivas fontes originais.
-
----
-
-*Feito com ❤️ e automatizado com GitHub Actions*
+[LinkedIn](https://www.linkedin.com/in/anderson-leon-ayora) · [GitHub](https://github.com/Ayorinha)
