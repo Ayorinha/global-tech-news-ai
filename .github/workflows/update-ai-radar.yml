@@ -1,0 +1,54 @@
+name: Atualizar AI Radar
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: atualizar-ai-radar-main
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    name: Descobrir novas IAs e tendências
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install feedparser requests
+
+      - name: Sincronizar com main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+
+      - name: Construir AI Radar
+        run: python scripts/fetch_ai_radar.py
+
+      - name: Publicar dataset
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add data/ai-radar.json
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração no Radar."
+          else
+            git commit -m "chore: atualizar AI Radar $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
