@@ -1,20 +1,32 @@
 /* AyoraiTech · Technical references enhancement */
 (function(){
   "use strict";
-  function esc(s){return String(s||"").replace(/[&<>\"]/g,function(c){return ({"&":"&amp;","<":"&lt;",">":"&gt;",'\"':"&quot;"})[c];});}
+  function addLink(box,cls,url,icon,label){
+    if(!url) return;
+    var a=document.createElement("a");
+    a.className="news-tech-link "+cls;
+    a.href=url;
+    a.target="_blank";
+    a.rel="noopener noreferrer";
+    a.innerHTML='<span class="news-tech-icon">'+icon+'</span> '+label;
+    a.addEventListener("click",function(e){e.stopPropagation();});
+    box.appendChild(a);
+  }
   function enhance(){
     document.querySelectorAll(".news-item:not([data-tech-ref])").forEach(function(card){
       card.setAttribute("data-tech-ref","1");
       var title=(card.querySelector(".news-item-title")||{}).textContent||"";
-      var source=(card.querySelector(".news-badge")||{}).textContent||"";
-      var sourceUrl=card.getAttribute("href")||"#";
+      var sourceUrl=card.getAttribute("href")||"";
       var q=encodeURIComponent(title.trim());
       var box=document.createElement("div");
       box.className="news-tech-links";
-      box.innerHTML='<span class="news-tech-label">Referências técnicas</span>'
-        +'<a class="news-tech-link source" href="'+sourceUrl+'" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="news-tech-icon">↗</span> Fonte original</a>'
-        +'<a class="news-tech-link hf" href="https://huggingface.co/models?search='+q+'" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="news-tech-icon">🤗</span> Hugging Face</a>'
-        +'<a class="news-tech-link github" href="https://github.com/search?q='+q+'&type=repositories" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="news-tech-icon">◉</span> GitHub</a>';
+      var label=document.createElement("span");
+      label.className="news-tech-label";
+      label.textContent="REFERÊNCIAS TÉCNICAS";
+      box.appendChild(label);
+      addLink(box,"source",sourceUrl,"↗","Fonte original");
+      addLink(box,"hf","https://huggingface.co/models?search="+q,"🤗","Hugging Face · Modelos");
+      addLink(box,"github","https://github.com/search?q="+q+"&type=repositories","◉","GitHub · Código");
       var body=card.querySelector(".news-body");
       if(body) body.appendChild(box);
     });
@@ -24,8 +36,13 @@
       var q=encodeURIComponent(title.trim());
       var box=document.createElement("div");
       box.className="week-tech-links";
-      box.innerHTML='<a class="week-tech-link" href="https://huggingface.co/models?search='+q+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">🤗 Hugging Face</a>'
-        +'<a class="week-tech-link" href="https://github.com/search?q='+q+'&type=repositories" target="_blank" rel="noopener" onclick="event.stopPropagation()">◉ GitHub</a>';
+      var hf=document.createElement("a");
+      hf.className="week-tech-link"; hf.href="https://huggingface.co/models?search="+q; hf.target="_blank"; hf.rel="noopener noreferrer"; hf.textContent="🤗 Hugging Face · Modelos";
+      hf.addEventListener("click",function(e){e.stopPropagation();});
+      var gh=document.createElement("a");
+      gh.className="week-tech-link"; gh.href="https://github.com/search?q="+q+"&type=repositories"; gh.target="_blank"; gh.rel="noopener noreferrer"; gh.textContent="◉ GitHub · Código";
+      gh.addEventListener("click",function(e){e.stopPropagation();});
+      box.appendChild(hf); box.appendChild(gh);
       var body=card.querySelector(".week-body");
       if(body) body.appendChild(box);
     });
