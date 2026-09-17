@@ -1,0 +1,24 @@
+name: Agent Defense Lab
+
+on:
+  push:
+    paths:
+      - 'labs/ayorai-agent-defense-lab/**'
+  pull_request:
+    paths:
+      - 'labs/ayorai-agent-defense-lab/**'
+
+jobs:
+  security-benchmark:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: labs/ayorai-agent-defense-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      - run: python -m app.cli
