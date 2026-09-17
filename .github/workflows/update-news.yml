@@ -7,18 +7,21 @@ on:
     branches:
       - main
       - master
+    paths-ignore:
+      - "data/news.json"
   workflow_dispatch:
 
-# Evita que duas execucoes do mesmo workflow tentem publicar
-# simultaneamente no branch principal.
+# Evita execucoes concorrentes e impede que o proprio commit de news.json
+# dispare uma nova coleta em loop.
 concurrency:
   group: atualizar-noticias-main
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   fetch-and-deploy:
     name: Coletar Noticias e Publicar
     runs-on: ubuntu-latest
+    timeout-minutes: 12
 
     permissions:
       contents: write
@@ -49,6 +52,24 @@ jobs:
       - name: Validar referencias tecnicas
         run: python scripts/enrich_technical_refs.py
 
+      - name: Validar news.json
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/news.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          if not isinstance(data, list):
+              raise SystemExit("news.json precisa ser uma lista JSON")
+          if not data:
+              raise SystemExit("news.json ficou vazio; preservando a versao anterior")
+          required = {"title_pt", "link", "source", "published", "language"}
+          bad = [i for i, item in enumerate(data) if not required.issubset(item)]
+          if bad:
+              raise SystemExit(f"Noticias invalidas nas posicoes: {bad[:10]}")
+          print(f"OK: {len(data)} noticias validas")
+          PY
+
       - name: Commitar e publicar news.json
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -58,9 +79,6 @@ jobs:
             echo "Nenhuma mudanca para commitar."
           else
             git commit -m "chore: atualizar noticias $(date -u +'%Y-%m-%d %H:%M UTC')"
-
-            # Atualiza novamente antes do push para evitar non-fast-forward
-            # caso o main tenha recebido uma alteracao durante a coleta.
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
