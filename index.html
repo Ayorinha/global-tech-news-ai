@@ -13,15 +13,14 @@
   <style>
     .topbar-nav{display:flex;align-items:center;gap:6px;padding:4px;background:rgba(7,17,31,.42);border:1px solid rgba(120,170,210,.16);border-radius:10px}
     .topbar-nav .tlink{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 12px;border-radius:7px;font-size:.76rem;font-weight:600;letter-spacing:.01em;transition:background .18s,color .18s}
-    .topbar-nav .tlink:hover{background:rgba(0,212,255,.08);color:#fff}
-    .topbar-nav .tlink.active{background:rgba(0,212,255,.12);color:#fff}
-    .topbar-nav .tlink .nav-icon{margin-right:5px;opacity:.8}
+    .topbar-nav .tlink:hover{background:rgba(0,212,255,.08);color:#fff}.topbar-nav .tlink.active{background:rgba(0,212,255,.12);color:#fff}.topbar-nav .tlink .nav-icon{margin-right:5px;opacity:.8}
     .language-switcher{display:flex;align-items:center;gap:2px;margin-left:2px;padding:3px;border:1px solid rgba(120,170,210,.16);background:rgba(7,17,31,.42);border-radius:9px}
-    .language-switcher button{border:0;background:transparent;cursor:pointer;font-size:16px;line-height:1;padding:5px 5px;border-radius:6px;opacity:.55;transition:.18s}
+    .language-switcher button{width:32px;height:28px;border:0;background:transparent;cursor:pointer;padding:5px;border-radius:6px;opacity:.58;transition:.18s;display:flex;align-items:center;justify-content:center}
+    .language-switcher button svg{width:24px;height:17px;display:block;filter:saturate(1.08);border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
     .language-switcher button:hover,.language-switcher button.active{opacity:1;background:rgba(0,212,255,.1)}
     @media(max-width:980px){.topbar{gap:.75rem}.topbar-nav .tlink{padding:0 9px}.search-box{max-width:180px}}
     @media(max-width:760px){.topbar-nav{display:none}.live-pill{display:none}.search-box{max-width:150px}.language-switcher{margin-left:0}}
-    @media(max-width:520px){.topbar{padding:0 .7rem}.topbar-logo{font-size:1.1rem}.search-box{max-width:42px;padding:.38rem .55rem}.search-box #searchInput{display:none}.language-switcher button{font-size:14px;padding:4px}}
+    @media(max-width:520px){.topbar{padding:0 .7rem}.topbar-logo{font-size:1.1rem}.search-box{max-width:42px;padding:.38rem .55rem}.search-box #searchInput{display:none}.language-switcher button{width:28px;height:25px;padding:4px}.language-switcher button svg{width:22px;height:16px}}
   </style>
 </head>
 <body>
@@ -30,31 +29,12 @@
     <button class="sidebar-toggle" id="sidebarToggle" title="Portfólio" aria-label="Abrir ou fechar portfólio"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></button>
     <a class="topbar-logo" href="#top">Ayorai<span>Tech</span></a>
   </div>
-  <nav class="topbar-nav" aria-label="Navegação principal">
-    <a href="#recentes" class="tlink active"><span class="nav-icon">▦</span>Notícias</a>
-    <a href="ai-tools.html" class="tlink"><span class="nav-icon">✦</span>AI Index</a>
-    <a href="ai-radar.html" class="tlink"><span class="nav-icon">◉</span>AI Radar</a>
-  </nav>
-  <div class="topbar-right">
-    <div class="search-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="searchInput" type="search" placeholder="Buscar notícias…" autocomplete="off" spellcheck="false" aria-label="Buscar notícias" /></div>
-    <div class="live-pill"><span class="live-dot"></span> atualizado</div>
-  </div>
+  <nav class="topbar-nav" aria-label="Navegação principal"><a href="#recentes" class="tlink active"><span class="nav-icon">▦</span>Notícias</a><a href="ai-tools.html" class="tlink"><span class="nav-icon">✦</span>AI Index</a><a href="ai-radar.html" class="tlink"><span class="nav-icon">◉</span>AI Radar</a></nav>
+  <div class="topbar-right"><div class="search-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="searchInput" type="search" placeholder="Buscar notícias…" autocomplete="off" spellcheck="false" aria-label="Buscar notícias" /></div><div class="live-pill"><span class="live-dot"></span> atualizado</div></div>
 </header>
-<div class="layout" id="layout">
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-head"><div class="sidebar-logo"><span class="sidebar-logo-icon">⚡</span><div><div class="sidebar-name">Ayorai</div><div class="sidebar-tagline">Applied AI · Data · Automation</div></div></div></div>
-    <div class="sidebar-tabs"><button class="stab active" data-tab="projetos">Projetos</button><button class="stab" data-tab="estudos">Estudos</button></div>
-    <div class="sidebar-list" id="sidebarList"><div class="sidebar-loading"><div class="mini-spinner"></div></div></div>
-    <div class="sidebar-footer"><a href="https://github.com/Ayorinha" target="_blank" rel="noopener" class="github-link">GitHub ↗</a></div>
-  </aside>
-  <main class="main-content" id="top">
-    <div class="filter-bar"><div id="filterBtns" class="filter-group"></div><select id="sortSelect" class="sort-sel" aria-label="Ordenar notícias"><option value="newest">Mais recentes</option><option value="oldest">Mais antigas</option></select></div>
-    <section id="recentes" class="news-section"><div class="sec-header-row"><div><h2 class="sec-title">NOTÍCIAS</h2><p class="sec-sub"><strong>Notícias de tecnologia das últimas 24 horas</strong>, resumidas e ordenadas.</p></div><span class="sec-date" id="todayDate"></span></div><div id="newsList" class="news-list"></div></section>
-  </main>
-</div>
+<div class="layout" id="layout"><aside class="sidebar" id="sidebar"><div class="sidebar-head"><div class="sidebar-logo"><span class="sidebar-logo-icon">⚡</span><div><div class="sidebar-name">Ayorai</div><div class="sidebar-tagline">Applied AI · Data · Automation</div></div></div></div><div class="sidebar-tabs"><button class="stab active" data-tab="projetos">Projetos</button><button class="stab" data-tab="estudos">Estudos</button></div><div class="sidebar-list" id="sidebarList"><div class="sidebar-loading"><div class="mini-spinner"></div></div></div><div class="sidebar-footer"><a href="https://github.com/Ayorinha" target="_blank" rel="noopener" class="github-link">GitHub ↗</a></div></aside>
+<main class="main-content" id="top"><div class="filter-bar"><div id="filterBtns" class="filter-group"></div><select id="sortSelect" class="sort-sel" aria-label="Ordenar notícias"><option value="newest">Mais recentes</option><option value="oldest">Mais antigas</option></select></div><section id="recentes" class="news-section"><div class="sec-header-row"><div><h2 class="sec-title">NOTÍCIAS</h2><p class="sec-sub"><strong>Notícias de tecnologia das últimas 24 horas</strong>, resumidas e ordenadas.</p></div><span class="sec-date" id="todayDate"></span></div><div id="newsList" class="news-list"></div></section></main></div>
 <footer class="footer"><span>Ayorai Tech · GitHub Actions</span><span>AI · Data · Technology</span></footer>
-<script src="i18n.js"></script>
-<script src="script.js"></script>
-<script src="references.js"></script>
+<script src="i18n.js"></script><script src="script.js"></script><script src="references.js"></script>
 </body>
 </html>
