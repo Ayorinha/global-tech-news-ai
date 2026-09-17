@@ -1,0 +1,13 @@
+/* AyoraiTech · Technical references layer */
+.news-tech-links{display:flex;flex-wrap:wrap;gap:.42rem;margin-top:.72rem;padding-top:.62rem;border-top:1px solid rgba(35,69,112,.55)}
+.news-tech-label{width:100%;font-size:.58rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#7f9bb8}
+.news-tech-link{display:inline-flex;align-items:center;gap:.35rem;padding:.28rem .55rem;border:1px solid #234570;border-radius:6px;background:rgba(19,40,64,.72);color:#b9d1e8;text-decoration:none;font-size:.62rem;font-weight:700;transition:.18s ease}
+.news-tech-link:hover{border-color:#00d4ff;color:#fff;transform:translateY(-1px)}
+.news-tech-link.source{border-color:rgba(0,212,255,.32)}
+.news-tech-link.hf{border-color:rgba(255,190,60,.28)}
+.news-tech-link.github{border-color:rgba(255,255,255,.18)}
+.news-tech-icon{font-size:.78rem;line-height:1}
+.week-tech-links{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:.55rem}
+.week-tech-link{font-size:.57rem;padding:.22rem .42rem;border:1px solid #234570;border-radius:5px;color:#9eb8d1;text-decoration:none;background:rgba(11,24,41,.5)}
+.week-tech-link:hover{border-color:#00d4ff;color:#fff}
+@media(max-width:720px){.news-tech-links{gap:.3rem}.news-tech-link{font-size:.58rem}}
