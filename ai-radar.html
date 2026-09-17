@@ -28,11 +28,7 @@
         <div class="hero-pills"><span>AI Models</span><span>AI Agents</span><span>Developer AI</span><span>AI Safety</span><span>Research</span></div>
       </div>
       <div class="ai-ecosystem-visual" aria-label="Visualização animada do ecossistema de inteligência artificial">
-        <div class="ecosystem-grid"></div>
-        <div class="radar-sweep"></div>
-        <div class="ecosystem-orbit orbit-a"></div>
-        <div class="ecosystem-orbit orbit-b"></div>
-        <div class="ecosystem-core"><span>AI</span><small>RADAR</small></div>
+        <div class="ecosystem-grid"></div><div class="radar-sweep"></div><div class="ecosystem-orbit orbit-a"></div><div class="ecosystem-orbit orbit-b"></div><div class="ecosystem-core"><span>AI</span><small>RADAR</small></div>
         <button class="ai-node node-1" type="button" data-ai-name="LLMs" data-ai-desc="Modelos de linguagem e raciocínio generativo." style="--x:16%;--y:22%;">LLM</button>
         <button class="ai-node node-2" type="button" data-ai-name="AI Agents" data-ai-desc="Sistemas capazes de planejar, executar tarefas e usar ferramentas." style="--x:72%;--y:16%;">AGENTS</button>
         <button class="ai-node node-3" type="button" data-ai-name="Developer AI" data-ai-desc="IA aplicada a código, engenharia de software e produtividade." style="--x:82%;--y:67%;">DEV AI</button>
@@ -41,37 +37,17 @@
         <div class="ai-node-detail" id="aiNodeDetail"><span>SELECT A SIGNAL</span><strong>Explore uma categoria</strong><small>Toque nos sinais para entender o que cada área representa.</small></div>
       </div>
     </section>
-
-    <section class="radar-search">
-      <div class="search-wrap"><span>⌕</span><input id="radarSearch" type="search" placeholder="Pesquisar IA, modelo, agente, empresa ou tendência..." autocomplete="off" /></div>
-      <div id="categoryFilters" class="category-filters"></div>
-    </section>
-
+    <section class="radar-search"><div class="search-wrap"><span>⌕</span><input id="radarSearch" type="search" placeholder="Pesquisar IA, modelo, agente, empresa ou tendência..." autocomplete="off" /></div><div id="categoryFilters" class="category-filters"></div></section>
     <section class="metric-row" id="metrics"></section>
-
     <section class="dashboard-grid">
-      <div class="panel panel-main">
-        <div class="panel-head"><div><span class="eyebrow">NEW SIGNALS</span><h2>IA em movimento</h2></div><span class="panel-note">descoberta automática</span></div>
-        <div id="signals" class="signal-list"><div class="loading">Carregando sinais...</div></div>
-      </div>
-      <aside class="panel trend-panel">
-        <div class="panel-head"><div><span class="eyebrow">MOMENTUM</span><h2>Trending AI</h2></div><span class="panel-note">24h</span></div>
-        <div id="trends" class="trend-list"><div class="loading">Calculando tendências...</div></div>
-      </aside>
+      <div class="panel panel-main"><div class="panel-head"><div><span class="eyebrow">NEW SIGNALS</span><h2>IA em movimento</h2></div><span class="panel-note">descoberta automática</span></div><div id="signals" class="signal-list"><div class="loading">Carregando sinais...</div></div></div>
+      <aside class="panel trend-panel"><div class="panel-head"><div><span class="eyebrow">MOMENTUM</span><h2>Trending AI</h2></div><span class="panel-note">24h</span></div><div id="trends" class="trend-list"><div class="loading">Calculando tendências...</div></div></aside>
     </section>
-
-    <section class="panel category-panel">
-      <div class="panel-head"><div><span class="eyebrow">AI LANDSCAPE</span><h2>Mapa de categorias</h2></div><span class="panel-note">sinais monitorados</span></div>
-      <div id="categoryMap" class="category-map"></div>
-    </section>
-
-    <section class="panel methodology">
-      <div class="method-copy"><span class="eyebrow">HOW IT WORKS</span><h2>Como o Radar se alimenta</h2><p>O sistema coleta fontes públicas, normaliza títulos, remove duplicidades, identifica categorias e calcula sinais de momentum por recência e recorrência. O painel é atualizado automaticamente pelo GitHub Actions.</p></div>
-      <div class="pipeline"><span>RSS / News</span><b>→</b><span>Discovery</span><b>→</b><span>Classification</span><b>→</b><span>Trend Score</span><b>→</b><strong>AI RADAR</strong></div>
-    </section>
+    <section class="panel category-panel"><div class="panel-head"><div><span class="eyebrow">AI LANDSCAPE</span><h2>Mapa de categorias</h2></div><span class="panel-note">sinais monitorados</span></div><div id="categoryMap" class="category-map"></div></section>
+    <section class="panel methodology"><div class="method-copy"><span class="eyebrow">HOW IT WORKS</span><h2>Como o Radar se alimenta</h2><p>O sistema coleta fontes públicas, normaliza títulos, remove duplicidades, identifica categorias e calcula sinais de momentum por recência e recorrência. O painel é atualizado automaticamente pelo GitHub Actions.</p></div><div class="pipeline"><span>RSS / News</span><b>→</b><span>Discovery</span><b>→</b><span>Classification</span><b>→</b><span>Trend Score</span><b>→</b><strong>AI RADAR</strong></div></section>
   </main>
-
   <footer class="radar-footer"><span>Ayorai AI Radar · Automated AI discovery</span><span>Dados públicos · atualização automática</span></footer>
+  <script src="i18n.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const detail = document.getElementById('aiNodeDetail');
