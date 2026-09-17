@@ -1,9 +1,24 @@
 {
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T13:45:00+00:00",
   "window": "7d",
-  "stats": {"signals": 0, "new_24h": 0, "categories": 0, "sources": 0},
-  "categories": [],
-  "signals": [],
-  "trends": [],
-  "methodology": "Public RSS/news signals, deduplication, category classification and recency/momentum scoring. Updated automatically by GitHub Actions."
+  "stats": {"signals": 12, "new_24h": 11, "categories": 8, "sources": 7},
+  "categories": ["AI Agents", "LLMs & Models", "Developer AI", "Enterprise AI", "AI Safety", "Data & Research", "AI Ecosystem", "Audio & Voice"],
+  "signals": [
+    {"title":"Anthropic unifies Claude interfaces and launches Claude Docs and Claude Slides","description":"Anthropic announced a unified Claude interface and new document and presentation capabilities.","link":"https://www.reuters.com/business/media-telecom/anthropic-fold-claude-ai-features-into-one-interface-launches-document-tools-2026-09-16/","source":"Reuters","published":"2026-09-16T12:00:00+00:00","category":"Enterprise AI","score":94},
+    {"title":"OpenAI discloses new concerning AI behaviors and launches a tracking framework","description":"OpenAI described six cases of unexpected model behavior and introduced a framework for tracking and disclosure.","link":"https://apnews.com/article/089e75b95bc935af092da7b79d92706d","source":"AP News","published":"2026-09-17T10:00:00+00:00","category":"AI Safety","score":93},
+    {"title":"Huawei presents new AI compute technologies at Connect 2026","description":"Huawei presented new AI computing technologies and its Atlas 960 SuperPoD platform.","link":"https://apnews.com/article/26ab418df1339c518483918218ffbe57","source":"AP News","published":"2026-09-17T09:00:00+00:00","category":"LLMs & Models","score":90},
+    {"title":"Claude expands with financial-adviser capabilities","description":"Anthropic introduced a Claude product focused on financial advisers and workflows.","link":"https://www.reuters.com/business/anthropic-targets-financial-advisers-with-new-claude-tool-2026-09-14/","source":"Reuters","published":"2026-09-14T12:00:00+00:00","category":"Enterprise AI","score":86},
+    {"title":"AI safety research ecosystem expands as labs study autonomous model behavior","description":"Independent and industry research groups are expanding work on evaluation, alignment and AI safety.","link":"https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic","source":"The Verge","published":"2026-09-17T08:00:00+00:00","category":"AI Safety","score":84},
+    {"title":"AI Briefing tracks new model releases and agent developments","description":"A curated daily briefing reports recent model and agent releases from multiple sources.","link":"https://aibriefs.news/briefing/2026-09-17","source":"AIBriefs","published":"2026-09-17T08:00:00+00:00","category":"LLMs & Models","score":82},
+    {"title":"AI ecosystem news shows growing focus on autonomous agents","description":"Recent AI coverage highlights the growing role of agents, computer use and autonomous workflows.","link":"https://theworldofai.org/ai-news/","source":"The World of AI","published":"2026-09-17T08:12:00+00:00","category":"AI Agents","score":80},
+    {"title":"AI tools directories expand beyond chatbots into specialized workflows","description":"Current AI directories track thousands of tools across coding, design, video, productivity and automation.","link":"https://theaitoolsbox.com/blog/best-ai-tools-directory-2026/","source":"AIToolsBox","published":"2026-09-16T12:00:00+00:00","category":"AI Ecosystem","score":77},
+    {"title":"AI tool discovery is increasingly organized by categories and launch velocity","description":"Directory platforms are emphasizing new launches, categories and continuously updated catalogs.","link":"https://firsto.co/categories/ai","source":"Firsto","published":"2026-09-16T12:00:00+00:00","category":"AI Ecosystem","score":75},
+    {"title":"AI market trackers combine news, launches and model movement into trend signals","description":"Current trackers combine release velocity, news and model activity to identify changing AI trends.","link":"https://lmmarketcap.com/trends","source":"LLM Market Cap","published":"2026-09-17T09:30:00+00:00","category":"Data & Research","score":74},
+    {"title":"AI awards highlight new image, video, music and assistant capabilities","description":"Recent awards coverage highlights advances across image, video, music and general-purpose AI products.","link":"https://www.tomsguide.com/ai/toms-guide-awards-2026","source":"Tom's Guide","published":"2026-09-16T12:00:00+00:00","category":"AI Ecosystem","score":72},
+    {"title":"AI adoption in Brazil expands across productivity, education, programming and business","description":"Brazilian coverage highlights broader adoption of specialized AI platforms beyond chat assistants.","link":"https://exame.com/inteligencia-artificial/melhores-ferramentas-de-ia-em-2026-as-20-plataformas-que-estao-transformando-o-mercado-brasileiro/","source":"Exame","published":"2026-05-28T11:00:00+00:00","category":"Enterprise AI","score":60}
+  ],
+  "trends": [
+    {"name":"AI Agents","score":96},{"name":"AI Safety","score":94},{"name":"LLMs & Models","score":91},{"name":"Enterprise AI","score":86},{"name":"Autonomous Workflows","score":82},{"name":"Model Releases","score":80},{"name":"AI Discovery","score":77},{"name":"Developer AI","score":72}
+  ],
+  "methodology":"Seeded from current public sources; subsequent updates are generated automatically from public RSS/news and vendor feeds by GitHub Actions using deduplication, category classification and recency/momentum scoring."
 }
