@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ayorai Intelligence Hub — tecnologia, IA, dados e notícias." />
-  <meta name="theme-color" content="#07111f" />
-  <title>Ayorai Intelligence Hub</title>
+  <meta name="description" content="Ayorai Tech — notícias de tecnologia, IA, dados e ferramentas." />
+  <meta name="theme-color" content="#0b1829" />
+  <title>Ayorai Tech</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="v2.css" />
   <link rel="stylesheet" href="references.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
   <style>
-    .language-switcher{display:flex;align-items:center;gap:3px;margin-left:10px;padding:3px;border:1px solid rgba(120,170,210,.25);background:rgba(11,24,41,.7);border-radius:9px}.language-switcher button{border:0;background:transparent;cursor:pointer;font-size:17px;line-height:1;padding:4px 5px;border-radius:6px;opacity:.55;transition:.18s}.language-switcher button:hover,.language-switcher button.active{opacity:1;background:rgba(0,212,255,.12)}
-    @media(max-width:900px){.search-box{max-width:180px}}
-    @media(max-width:720px){.topbar-nav{display:none}.live-pill{display:none}.search-box{max-width:145px}.language-switcher{margin-left:5px}.language-switcher button{font-size:15px;padding:3px}}
+    .topbar-nav{display:flex;align-items:center;gap:6px;padding:4px;background:rgba(7,17,31,.42);border:1px solid rgba(120,170,210,.16);border-radius:10px}
+    .topbar-nav .tlink{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 12px;border-radius:7px;font-size:.76rem;font-weight:600;letter-spacing:.01em;transition:background .18s,color .18s}
+    .topbar-nav .tlink:hover{background:rgba(0,212,255,.08);color:#fff}
+    .topbar-nav .tlink.active{background:rgba(0,212,255,.12);color:#fff}
+    .topbar-nav .tlink .nav-icon{margin-right:5px;opacity:.8}
+    .language-switcher{display:flex;align-items:center;gap:2px;margin-left:2px;padding:3px;border:1px solid rgba(120,170,210,.16);background:rgba(7,17,31,.42);border-radius:9px}
+    .language-switcher button{border:0;background:transparent;cursor:pointer;font-size:16px;line-height:1;padding:5px 5px;border-radius:6px;opacity:.55;transition:.18s}
+    .language-switcher button:hover,.language-switcher button.active{opacity:1;background:rgba(0,212,255,.1)}
+    @media(max-width:980px){.topbar{gap:.75rem}.topbar-nav .tlink{padding:0 9px}.search-box{max-width:180px}}
+    @media(max-width:760px){.topbar-nav{display:none}.live-pill{display:none}.search-box{max-width:150px}.language-switcher{margin-left:0}}
+    @media(max-width:520px){.topbar{padding:0 .7rem}.topbar-logo{font-size:1.1rem}.search-box{max-width:42px;padding:.38rem .55rem}.search-box #searchInput{display:none}.language-switcher button{font-size:14px;padding:4px}}
   </style>
 </head>
 <body>
@@ -23,9 +31,9 @@
     <a class="topbar-logo" href="#top">Ayorai<span>Tech</span></a>
   </div>
   <nav class="topbar-nav" aria-label="Navegação principal">
-    <a href="#recentes" class="tlink active">Notícias</a>
-    <a href="ai-tools.html" class="tlink">✦ AI Index</a>
-    <a href="ai-radar.html" class="tlink">⚡ AI Radar</a>
+    <a href="#recentes" class="tlink active"><span class="nav-icon">▦</span>Notícias</a>
+    <a href="ai-tools.html" class="tlink"><span class="nav-icon">✦</span>AI Index</a>
+    <a href="ai-radar.html" class="tlink"><span class="nav-icon">◉</span>AI Radar</a>
   </nav>
   <div class="topbar-right">
     <div class="search-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="searchInput" type="search" placeholder="Buscar notícias…" autocomplete="off" spellcheck="false" aria-label="Buscar notícias" /></div>
@@ -44,7 +52,7 @@
     <section id="recentes" class="news-section"><div class="sec-header-row"><div><h2 class="sec-title">NOTÍCIAS</h2><p class="sec-sub"><strong>Notícias de tecnologia das últimas 24 horas</strong>, resumidas e ordenadas.</p></div><span class="sec-date" id="todayDate"></span></div><div id="newsList" class="news-list"></div></section>
   </main>
 </div>
-<footer class="footer"><span>Ayorai Intelligence Hub · GitHub Actions</span><span>AI · Data · Technology</span></footer>
+<footer class="footer"><span>Ayorai Tech · GitHub Actions</span><span>AI · Data · Technology</span></footer>
 <script src="i18n.js"></script>
 <script src="script.js"></script>
 <script src="references.js"></script>
