@@ -1,7 +1,8 @@
 """AyoraiTech — valida referências técnicas antes de exibi-las.
 
 Não cria links genéricos. Só adiciona Hugging Face/GitHub quando uma
-entidade técnica conhecida é identificada e a referência é confirmada.
+entidade técnica é identificada em contexto técnico e a referência oficial
+é confirmada pela API correspondente.
 """
 
 import json
@@ -15,7 +16,20 @@ NEWS_FILE = ROOT / "data" / "news.json"
 
 HEADERS = {"User-Agent": "AyoraiTech-News/1.0"}
 
-# Referências oficiais/estáveis que podem ser associadas sem ambiguidade.
+# O nome da empresa sozinho não basta. A notícia também precisa mencionar
+# um artefato técnico: modelo, SDK, API, biblioteca, código, repo etc.
+TECHNICAL_CONTEXT = re.compile(r"""
+\b(?:model|modelo|llm|language model|foundation model|weights|checkpoint|
+    dataset|benchmark|sdk|api|library|biblioteca|framework|software|code|
+    código|codigo|repository|repo|repositor|github|open source|opensource|
+    developer|developers|development|desenvolvimento|package|pacote|tool|
+    ferramenta|agent|agente|inference|inferência|fine[- ]?tuning|training|
+    treinamento|release|released|lança|lancamento|versão|version|v\d|plugin|
+    extension|extensão|hugging face|transformers|pytorch|tensorflow|rag|
+    embedding|multimodal|computer vision|nlp|ocr
+)\b
+""", re.I | re.X)
+
 GITHUB_REFS = [
     (r"\bopenai\b|\bgpt[- ]?[345]\b|\bchatgpt\b", "openai/openai-python"),
     (r"\banthropic\b|\bclaude\b", "anthropics/anthropic-sdk-python"),
@@ -80,6 +94,12 @@ def main():
 
     for article in articles:
         value = text(article)
+
+        # Sem contexto técnico explícito, não há busca nem link para HF/GitHub.
+        if not TECHNICAL_CONTEXT.search(value):
+            article.pop("technical_refs", None)
+            continue
+
         github_repo = find_ref(GITHUB_REFS, value, github_exists)
         hf_repo = find_ref(HF_REFS, value, hf_exists)
 
@@ -96,6 +116,7 @@ def main():
                 "model": hf_repo,
             }
             hf_count += 1
+
         if refs:
             technical += 1
             article["technical_refs"] = refs
