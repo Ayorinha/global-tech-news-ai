@@ -1,6 +1,6 @@
 """
 fetch_news.py — Ayorai Tech News
-Coleta noticias globais, extrai imagens e traduz tudo para portugues.
+Coleta noticias globais, extrai imagens, traduz e aplica filtro editorial tecnico.
 """
 
 import json, os, re, sys, time, logging
@@ -49,6 +49,77 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
+# ── Filtro editorial AyoraiTech ──────────────────────────────
+# A ideia e separar tecnologia de noticias corporativas genericas.
+TECH_TERMS = re.compile(r"""
+\b(?:
+    ai|ia|artificial intelligence|inteligencia artificial|machine learning|ml|deep learning|
+    llm|large language model|generative ai|genai|modelo de linguagem|foundation model|
+    agent|agente|agentic|rag|retrieval augmented generation|embedding|vector database|
+    chatbot|copilot|autonomous|robotics|robotica|computer vision|visao computacional|
+    nlp|natural language processing|ocr|document intelligence|synthetic data|
+    dataset|benchmark|inference|fine[- ]?tuning|training|weights|checkpoint|
+    open source|open[- ]?source|open model|developer tool|sdk|api|library|framework|
+    software|application|app|platform|cloud|aws|azure|google cloud|kubernetes|docker|
+    python|javascript|typescript|rust|java|database|data engineering|data platform|
+    cybersecurity|cybersecurity|security research|zero[- ]?day|vulnerability|encryption|
+    semiconductor|gpu|npu|tpu|chip|accelerator|datacenter|data center|compute|
+    research paper|paper|arxiv|repository|repo|github|hugging face|model release|
+    generative|multimodal|text[- ]?to[- ]?image|speech|voice model|video model
+)\b
+""", re.I | re.X)
+
+STRONG_TECH_TERMS = re.compile(r"""
+\b(?:
+    ai|ia|artificial intelligence|inteligencia artificial|machine learning|deep learning|
+    llm|large language model|generative ai|genai|agentic|rag|chatbot|robotics|robotica|
+    computer vision|nlp|ocr|dataset|benchmark|inference|fine[- ]?tuning|checkpoint|
+    open source|sdk|api|library|framework|software|cloud|kubernetes|docker|
+    cybersecurity|vulnerability|encryption|gpu|npu|tpu|semiconductor|chip|datacenter|
+    research paper|arxiv|repository|github|hugging face|model release|multimodal
+)\b
+""", re.I | re.X)
+
+GENERIC_BUSINESS_TERMS = re.compile(r"""
+\b(?:
+    ceo|chairman|chairwoman|executive|board|appointment|appoints|promoted|promotion|
+    resignation|retirement|shareholder|shares|stock|funding|investment|investor|
+    acquisition|merger|revenue|profit|earnings|quarter|valuation|deal|partnership|
+    corporate|governance|trust|trusts|succession|leadership|president
+)\b
+""", re.I | re.X)
+
+GENERIC_EXCLUDE_TERMS = re.compile(r"""
+\b(?:
+    sports?|football|soccer|cricket|tennis|celebrity|entertainment|movie|film|music|
+    fashion|lifestyle|recipe|travel|real estate|horoscope|lottery|coupon|discount|
+    politics|election|politician|party|government appointment
+)\b
+""", re.I | re.X)
+
+
+def editorial_relevance(title: str, description: str) -> tuple[bool, str, int]:
+    """Retorna (aceitar, categoria, score) com uma heuristica conservadora."""
+    value = f"{title} {description}".lower()
+    tech_hits = len(TECH_TERMS.findall(value))
+    strong_hits = len(STRONG_TECH_TERMS.findall(value))
+    business_hits = len(GENERIC_BUSINESS_TERMS.findall(value))
+    exclude_hits = len(GENERIC_EXCLUDE_TERMS.findall(value))
+
+    score = strong_hits * 3 + max(0, tech_hits - strong_hits) - business_hits - exclude_hits * 3
+
+    # Conteudo explicitamente tecnologico entra mesmo quando ha contexto empresarial.
+    if strong_hits >= 1 and score >= 2:
+        return True, "technology", score
+    if strong_hits >= 2 and business_hits <= 2 and exclude_hits == 0:
+        return True, "technology", score
+
+    # Noticias de hardware/ciencia podem ter menos vocabulario de software.
+    if tech_hits >= 3 and exclude_hits == 0 and score >= 2:
+        return True, "technology", score
+
+    return False, "non_technical", score
+
 # ── Feeds RSS ────────────────────────────────────────────────
 FEEDS = {
     "en": [
@@ -73,30 +144,19 @@ FEEDS = {
 
 # ── Extrair imagem do entry RSS ───────────────────────────────
 def extract_image(entry) -> str:
-    """Tenta todos os metodos possiveis para extrair a imagem."""
-
-    # 1) media:content
     for mc in getattr(entry, "media_content", []):
         url = mc.get("url","")
         if url and is_img(url): return url
-
-    # 2) media:thumbnail
     for mt in getattr(entry, "media_thumbnail", []):
         url = mt.get("url","")
         if url and is_img(url): return url
-
-    # 3) enclosures
     for enc in getattr(entry, "enclosures", []):
         url = enc.get("href", enc.get("url",""))
         typ = enc.get("type","")
         if url and ("image" in typ or is_img(url)): return url
-
-    # 4) links rel=enclosure
     for lnk in getattr(entry, "links", []):
         if "image" in lnk.get("type",""):
             return lnk.get("href","")
-
-    # 5) <img> dentro do summary / content
     for field in ("summary", "content"):
         html = ""
         val  = getattr(entry, field, None)
@@ -107,7 +167,6 @@ def extract_image(entry) -> str:
         if html:
             img = img_from_html(html)
             if img: return img
-
     return ""
 
 
@@ -117,7 +176,6 @@ def is_img(url: str) -> bool:
 
 
 def img_from_html(html: str) -> str:
-    # src de <img>
     for pat in [
         r'<img[^>]+src=["\']([^"\']+)["\']',
         r'<img[^>]+src=([^\s>]+)',
@@ -126,13 +184,9 @@ def img_from_html(html: str) -> str:
         if m:
             u = m.group(1).strip("\"'")
             if u.startswith("http"): return u
-
-    # url() no style
     m2 = re.search(r'url\(["\']?(https?://[^"\')\s]+)["\']?\)', html, re.I)
     if m2: return m2.group(1)
-
     return ""
-
 
 # ── Limpeza de texto ──────────────────────────────────────────
 def clean(text: str, maxlen=3000) -> str:
@@ -142,14 +196,11 @@ def clean(text: str, maxlen=3000) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     return text[:maxlen]
 
-
 # ── Traducao ──────────────────────────────────────────────────
 def translate(text: str, src: str) -> str:
-    """Traduz texto para portugues. Tenta 3 vezes antes de desistir."""
     if not text or not TRANSLATE: return text
-    if src == "pt": return text              # ja e portugues
-
-    text = text[:1500]                       # limite seguro da API gratuita
+    if src == "pt": return text
+    text = text[:1500]
     for attempt in range(3):
         try:
             result = GoogleTranslator(source=src, target="pt").translate(text)
@@ -158,13 +209,10 @@ def translate(text: str, src: str) -> str:
                 return result.strip()
         except Exception as e:
             wait = (attempt + 1) * 2
-            log.warning("    Traducao tentativa %d falhou: %s — aguardando %ds",
-                        attempt+1, str(e)[:60], wait)
+            log.warning("    Traducao tentativa %d falhou: %s — aguardando %ds", attempt+1, str(e)[:60], wait)
             time.sleep(wait)
-
     log.warning("    ✗ Traducao falhou apos 3 tentativas, mantendo original")
     return text
-
 
 # ── Data ──────────────────────────────────────────────────────
 def parse_date(entry) -> str:
@@ -177,17 +225,14 @@ def parse_date(entry) -> str:
                 pass
     return datetime.now(timezone.utc).isoformat()
 
-
 # ── Coletar um feed ───────────────────────────────────────────
 def collect(url: str, name: str, lang: str) -> list:
     articles = []
     log.info("▶ %s [%s]", name, lang.upper())
-
     try:
         resp = requests.get(url, headers=HEADERS, timeout=30, allow_redirects=True)
         log.info("  HTTP %d", resp.status_code)
-        if resp.status_code not in (200, 301, 302):
-            return articles
+        if resp.status_code not in (200, 301, 302): return articles
         feed = feedparser.parse(resp.content)
     except Exception as e:
         log.error("  ERRO ao buscar %s: %s", name, str(e)[:80])
@@ -197,21 +242,20 @@ def collect(url: str, name: str, lang: str) -> list:
     log.info("  %d artigos encontrados", len(entries))
 
     for i, entry in enumerate(entries):
-        # Dados brutos
         title_orig = clean(getattr(entry, "title", ""))
-        desc_orig  = clean(getattr(entry, "summary",
-                           getattr(entry, "description", "")))
+        desc_orig  = clean(getattr(entry, "summary", getattr(entry, "description", "")))
         link       = getattr(entry, "link", "")
         published  = parse_date(entry)
         image      = extract_image(entry)
+        if not title_orig or not link: continue
 
-        if not title_orig or not link:
+        relevant, category, relevance_score = editorial_relevance(title_orig, desc_orig)
+        if not relevant:
+            log.info("  [%d/%d] DESCARTADA (nao tecnica, score %d): %s", i+1, len(entries), relevance_score, title_orig[:70])
             continue
 
-        log.info("  [%d/%d] %s | img:%s",
-                 i+1, len(entries), title_orig[:55], "✓" if image else "✗")
+        log.info("  [%d/%d] ACEITA (score %d): %s | img:%s", i+1, len(entries), relevance_score, title_orig[:55], "✓" if image else "✗")
 
-        # Traduzir
         title_pt = translate(title_orig, lang)
         time.sleep(0.5)
         desc_pt  = translate(desc_orig[:800], lang) if desc_orig else ""
@@ -227,62 +271,60 @@ def collect(url: str, name: str, lang: str) -> list:
             "source":               name,
             "language":             lang,
             "image":                image,
+            "editorial": {
+                "is_technical": True,
+                "category": category,
+                "score": relevance_score,
+            },
         })
 
     return articles
-
 
 # ── Main ──────────────────────────────────────────────────────
 def main():
     log.info("=" * 60)
     log.info("AYORAI TECH NEWS — Coleta iniciada")
     log.info("Data: %s", datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"))
+    log.info("Filtro editorial tecnico: ATIVO")
     log.info("Traducao disponivel: %s", TRANSLATE)
     log.info("=" * 60)
 
     all_articles = []
-    ok = fail = 0
+    ok = fail = discarded = 0
 
     for lang, feeds in FEEDS.items():
         log.info("\n━━ %s ━━", lang.upper())
         for feed in feeds:
+            before = len(all_articles)
             arts = collect(feed["url"], feed["name"], lang)
             if arts:
-                ok  += 1
+                ok += 1
                 all_articles.extend(arts)
             else:
                 fail += 1
+            discarded += max(0, len(feedparser.parse(requests.get(feed["url"], headers=HEADERS, timeout=30).content).entries[:MAX_PER_FEED]) - (len(all_articles) - before)) if False else 0
 
-    # Ordenar por data
     all_articles.sort(key=lambda a: a.get("published",""), reverse=True)
-
-    # Estatisticas
     with_img = sum(1 for a in all_articles if a.get("image"))
-    in_pt    = sum(1 for a in all_articles if a.get("title_pt") and a.get("language") != "pt")
+    in_pt = sum(1 for a in all_articles if a.get("title_pt") and a.get("language") != "pt")
 
     log.info("\n" + "=" * 60)
     log.info("RESULTADO:")
-    log.info("  Total de artigos : %d", len(all_articles))
-    log.info("  Com imagem       : %d", with_img)
-    log.info("  Traduzidos       : %d", in_pt)
-    log.info("  Feeds OK         : %d", ok)
-    log.info("  Feeds com falha  : %d", fail)
+    log.info("  Noticias tecnicas : %d", len(all_articles))
+    log.info("  Com imagem        : %d", with_img)
+    log.info("  Traduzidos        : %d", in_pt)
+    log.info("  Feeds OK          : %d", ok)
+    log.info("  Feeds com falha   : %d", fail)
 
-    # Salvar
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(all_articles, f, ensure_ascii=False, indent=2)
 
-    size_kb = OUTPUT_FILE.stat().st_size / 1024
-    log.info("  Arquivo salvo    : %s (%.1f KB)", OUTPUT_FILE, size_kb)
+    log.info("  Arquivo salvo     : %s (%.1f KB)", OUTPUT_FILE, OUTPUT_FILE.stat().st_size / 1024)
     log.info("=" * 60)
 
-    # Preview dos primeiros 3
-    log.info("\nPRIMEIRAS NOTICIAS:")
     for a in all_articles[:3]:
         log.info("  [%s] %s", a["source"], a["title_pt"][:65])
-        log.info("       img: %s", a["image"][:70] if a["image"] else "SEM IMAGEM")
-
 
 if __name__ == "__main__":
     main()
