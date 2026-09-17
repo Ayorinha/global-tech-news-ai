@@ -46,6 +46,9 @@ jobs:
       - name: Coletar e traduzir noticias
         run: python scripts/fetch_news.py
 
+      - name: Validar referencias tecnicas
+        run: python scripts/enrich_technical_refs.py
+
       - name: Commitar e publicar news.json
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
