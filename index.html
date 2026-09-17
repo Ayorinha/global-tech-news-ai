@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ayorai — Applied AI, Data & Automation. Notícias tecnológicas globais e portfólio de projetos." />
+  <meta name="description" content="Ayorai — Applied AI, Data & Intelligent Automation. Portfólio técnico, projetos de IA e notícias globais de tecnologia." />
   <meta name="theme-color" content="#0b1829" />
-  <title>Ayorai — Applied AI · Data · Automation</title>
+  <title>Ayorai — Applied AI · Data · Intelligent Automation</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
   <style>
-    .portfolio-hero{margin:0 0 2rem;padding:2rem 2rem 1.5rem;background:linear-gradient(135deg,rgba(0,212,255,.10),rgba(15,32,48,.92) 55%,rgba(0,230,118,.06));border:1px solid var(--border);border-radius:14px;position:relative;overflow:hidden}
-    .portfolio-hero:after{content:"";position:absolute;width:240px;height:240px;right:-100px;top:-120px;border:1px solid rgba(0,212,255,.15);border-radius:50%;box-shadow:0 0 0 35px rgba(0,212,255,.025),0 0 0 70px rgba(0,212,255,.018)}
+    .portfolio-hero{margin:0 0 2rem;padding:2.4rem 2.2rem 1.7rem;background:linear-gradient(135deg,rgba(0,212,255,.12),rgba(15,32,48,.94) 55%,rgba(0,230,118,.06));border:1px solid var(--border);border-radius:16px;position:relative;overflow:hidden}
+    .portfolio-hero:after{content:"";position:absolute;width:300px;height:300px;right:-120px;top:-150px;border:1px solid rgba(0,212,255,.15);border-radius:50%;box-shadow:0 0 0 45px rgba(0,212,255,.025),0 0 0 90px rgba(0,212,255,.018)}
     .hero-kicker{font-size:.68rem;font-weight:800;letter-spacing:.14em;color:var(--cyan);margin-bottom:.65rem}
-    .portfolio-hero h1{font-family:var(--font-head);font-size:clamp(2rem,4vw,3.4rem);line-height:1;font-weight:900;letter-spacing:-.025em;max-width:760px;margin-bottom:.8rem}
-    .portfolio-hero p{color:var(--gray-1);max-width:680px;font-size:1rem;line-height:1.6;margin-bottom:1.1rem}
+    .portfolio-hero h1{font-family:var(--font-head);font-size:clamp(2.2rem,4.5vw,4rem);line-height:.98;font-weight:900;letter-spacing:-.035em;max-width:820px;margin-bottom:.9rem}
+    .portfolio-hero p{color:var(--gray-1);max-width:700px;font-size:1rem;line-height:1.65;margin-bottom:1.15rem}
     .hero-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-bottom:1rem}
-    .hero-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:var(--gray-1);border:1px solid var(--border-h);background:rgba(19,40,64,.8);border-radius:7px;padding:.42rem .8rem;font-size:.76rem;font-weight:700;transition:.2s}
+    .hero-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:var(--gray-1);border:1px solid var(--border-h);background:rgba(19,40,64,.8);border-radius:7px;padding:.45rem .85rem;font-size:.76rem;font-weight:700;transition:.2s}
     .hero-btn:hover{border-color:var(--cyan);color:var(--white);transform:translateY(-1px)}
-    .hero-btn.primary{background:var(--cyan);border-color:var(--cyan);color:#001018}
-    .hero-btn.primary:hover{background:var(--cyan-2);color:#001018}
-    .hero-meta{display:flex;gap:.4rem;flex-wrap:wrap}
-    .hero-meta span{font-size:.64rem;color:var(--gray-2);border:1px solid var(--border);background:rgba(11,24,41,.55);border-radius:20px;padding:.2rem .55rem}
-    @media(max-width:720px){.portfolio-hero{padding:1.4rem}.portfolio-hero h1{font-size:2rem}.topbar-nav{display:none}.live-pill{display:none}}
+    .hero-btn.primary{background:var(--cyan);border-color:var(--cyan);color:#001018}.hero-btn.primary:hover{background:var(--cyan-2);color:#001018}
+    .hero-meta{display:flex;gap:.4rem;flex-wrap:wrap}.hero-meta span{font-size:.64rem;color:var(--gray-2);border:1px solid var(--border);background:rgba(11,24,41,.55);border-radius:20px;padding:.2rem .55rem}
+    @media(max-width:720px){.portfolio-hero{padding:1.5rem}.portfolio-hero h1{font-size:2.2rem}.topbar-nav{display:none}.live-pill{display:none}}
   </style>
 </head>
 <body>
@@ -33,7 +31,7 @@
     <a class="topbar-logo" href="#top">Ayorai<span>Tech</span></a>
   </div>
   <nav class="topbar-nav" aria-label="Navegação principal">
-    <a href="#portfolio" class="tlink">Portfólio</a><a href="#recentes" class="tlink active">Recentes</a><a href="#semana" class="tlink">Top Semana</a>
+    <a href="#portfolio" class="tlink active">Portfólio</a><a href="#featured" class="tlink">Projetos</a><a href="#radar" class="tlink">AI Radar</a><a href="#recentes" class="tlink">Notícias</a>
   </nav>
   <div class="topbar-right">
     <div class="search-box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input id="searchInput" type="search" placeholder="Buscar notícias…" autocomplete="off" spellcheck="false" aria-label="Buscar notícias" /></div>
@@ -48,22 +46,46 @@
       <button class="stab" data-tab="estudos"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Estudos</button>
     </div>
     <div class="sidebar-list" id="sidebarList"><div class="sidebar-loading"><div class="mini-spinner"></div></div></div>
-    <div class="sidebar-footer"><a href="https://github.com/Ayorinha" target="_blank" rel="noopener" class="github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>Ver GitHub</a></div>
+    <div class="sidebar-footer"><a href="https://github.com/Ayorinha" target="_blank" rel="noopener" class="github-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>Ver GitHub</a></div>
   </aside>
   <main class="main-content" id="top">
     <section class="portfolio-hero" id="portfolio" aria-labelledby="portfolio-title">
       <div class="hero-kicker">AYORAI · PORTFÓLIO TÉCNICO</div>
       <h1 id="portfolio-title">Applied AI · Data · Intelligent Automation</h1>
-      <p>Projetos práticos em engenharia de IA, ciência de dados, automação e sistemas orientados a dados.</p>
-      <div class="hero-actions"><a class="hero-btn primary" href="https://github.com/Ayorinha" target="_blank" rel="noopener">GitHub</a><a class="hero-btn" href="https://www.linkedin.com/in/anderson-leon-ayora" target="_blank" rel="noopener">LinkedIn</a></div>
-      <div class="hero-meta"><span>Python</span><span>Machine Learning</span><span>RAG</span><span>Document Intelligence</span><span>Automation</span></div>
+      <p>Construindo sistemas práticos de IA, dados e automação — de pipelines e Document Intelligence a Machine Learning, RAG e workflows inteligentes.</p>
+      <div class="hero-actions"><a class="hero-btn primary" href="https://github.com/Ayorinha" target="_blank" rel="noopener">View GitHub</a><a class="hero-btn" href="https://www.linkedin.com/in/anderson-leon-ayora" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+      <div class="hero-meta"><span>Python</span><span>Machine Learning</span><span>RAG</span><span>LLM</span><span>Document Intelligence</span><span>Automation</span></div>
     </section>
+
+    <section class="v2-intro" id="featured">
+      <div class="v2-heading"><div><span class="v2-kicker">BUILT BY AYORAI</span><h2>Featured AI Projects</h2></div><span class="v2-note">Projetos selecionados</span></div>
+      <p class="v2-lead">Uma seleção de sistemas e experimentos que demonstram engenharia aplicada, análise de dados e automação orientada a problemas reais.</p>
+      <div class="featured-grid">
+        <a class="featured-card featured-main" href="https://github.com/Ayorinha/protesto-credit-scoring" target="_blank" rel="noopener"><div class="featured-icon">◈</div><div class="featured-content"><span class="featured-label">APPLIED ML · RISK</span><h3>Protesto Credit Scoring</h3><p>Modelagem de risco com dados sintéticos, EDA, métricas de score, fairness e explicabilidade com SHAP.</p><div class="tech-row"><span>Python</span><span>Scikit-learn</span><span>SHAP</span><span>Fairness</span></div></div><span class="card-arrow">↗</span></a>
+        <a class="featured-card" href="https://github.com/Ayorinha/OCR-Python" target="_blank" rel="noopener"><div class="featured-icon">▣</div><div class="featured-content"><span class="featured-label">DOCUMENT INTELLIGENCE</span><h3>OCR-Python</h3><p>Reconhecimento óptico de caracteres e processamento documental para extração automatizada.</p><div class="tech-row"><span>Python</span><span>OCR</span><span>Automation</span></div></div><span class="card-arrow">↗</span></a>
+        <a class="featured-card" href="https://github.com/Ayorinha/hybrid-data-management-rpa-pipeline" target="_blank" rel="noopener"><div class="featured-icon">⇄</div><div class="featured-content"><span class="featured-label">DATA ENGINEERING · RPA</span><h3>Hybrid Data Management RPA</h3><p>Pipeline híbrido para tratamento de dados e automação de processos repetitivos.</p><div class="tech-row"><span>Python</span><span>ETL</span><span>RPA</span></div></div><span class="card-arrow">↗</span></a>
+        <a class="featured-card" href="https://github.com/Ayorinha/global-tech-news-ai" target="_blank" rel="noopener"><div class="featured-icon">◉</div><div class="featured-content"><span class="featured-label">AI INFORMATION SYSTEM</span><h3>Ayorai Tech News AI</h3><p>Ingestão RSS, normalização, tradução e publicação contínua com GitHub Actions.</p><div class="tech-row"><span>Python</span><span>ETL</span><span>Actions</span></div></div><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="engineering-section">
+      <div class="v2-heading"><div><span class="v2-kicker">AI ENGINEERING</span><h2>How I Build AI Systems</h2></div></div>
+      <p class="v2-lead">Do dado bruto ao sistema operacionalizável, com rastreabilidade, automação e foco em produção.</p>
+      <div class="architecture-flow"><div class="flow-node"><b>01</b><strong>DATA</strong><span>Sources</span></div><i>→</i><div class="flow-node"><b>02</b><strong>PIPELINE</strong><span>Ingestion · ETL</span></div><i>→</i><div class="flow-node accent"><b>03</b><strong>AI / ML</strong><span>Models · LLMs</span></div><i>→</i><div class="flow-node accent"><b>04</b><strong>RAG / AGENTS</strong><span>Reasoning</span></div><i>→</i><div class="flow-node"><b>05</b><strong>AUTOMATION</strong><span>Workflows</span></div></div>
+      <div class="principles-grid"><div><span>01</span><strong>Privacy by Design</strong><p>Dados sintéticos ou anonimizados sempre que possível.</p></div><div><span>02</span><strong>Reproducibility</strong><p>Pipelines versionados e processos automatizados.</p></div><div><span>03</span><strong>Explainability</strong><p>Métricas, auditoria e interpretação dos modelos.</p></div><div><span>04</span><strong>Production Mindset</strong><p>Protótipos pensados para virar sistemas operacionais.</p></div></div>
+    </section>
+
+    <section class="radar-section" id="radar">
+      <div class="v2-heading"><div><span class="v2-kicker">AYORAI AI RADAR</span><h2>What matters in AI</h2></div><span class="radar-live"><span></span> atualizado continuamente</span></div>
+      <div class="radar-grid"><div class="radar-copy"><p>Monitoramento contínuo do ecossistema global de tecnologia, com notícias coletadas automaticamente e organizadas para descoberta rápida.</p><div class="radar-tags"><span>AI Agents</span><span>LLMs</span><span>RAG</span><span>Data Engineering</span><span>Cybersecurity</span><span>Cloud AI</span><span>Robotics</span></div></div><div class="radar-stat"><strong>24/7</strong><span>pipeline automatizado</span><small>RSS → Python → JSON → GitHub Pages</small></div></div>
+    </section>
+
     <div class="filter-bar"><div id="filterBtns" class="filter-group"></div><select id="sortSelect" class="sort-sel" aria-label="Ordenar notícias"><option value="newest">Mais recentes</option><option value="oldest">Mais antigas</option></select></div>
     <section id="semana" class="news-section"><h2 class="sec-title">MELHORES DA SEMANA</h2><p class="sec-sub">Notícias de tecnologia com destaque nos últimos dias</p><div id="weekGrid" class="week-grid"></div></section>
     <section id="recentes" class="news-section"><div class="sec-header-row"><div><h2 class="sec-title">NOTÍCIAS RECENTES</h2><p class="sec-sub"><strong>As melhores notícias de tecnologia das últimas 24 horas</strong>, resumidas e ordenadas.</p></div><span class="sec-date" id="todayDate"></span></div><div id="newsList" class="news-list"></div></section>
   </main>
 </div>
-<footer class="footer"><span>Ayorai Tech News · Atualizado automaticamente via GitHub Actions</span><span>Conteúdo pertence às respectivas fontes originais</span></footer>
+<footer class="footer"><span>Ayorai Tech News · Atualizado automaticamente via GitHub Actions</span><span>Applied AI · Data · Intelligent Automation</span></footer>
 <script src="script.js"></script>
 </body>
 </html>
