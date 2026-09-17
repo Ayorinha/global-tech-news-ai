@@ -20,14 +20,26 @@
   </header>
 
   <main class="radar-shell">
-    <section class="radar-hero">
+    <section class="radar-hero radar-ecosystem">
       <div class="hero-copy">
         <span class="eyebrow">AYORAI · DISCOVERY ENGINE</span>
         <h1>AI Radar</h1>
-        <p>Um painel automatizado para descobrir novas ferramentas, modelos, agentes e movimentos relevantes no ecossistema de IA.</p>
-        <div class="hero-pills"><span>News signals</span><span>New launches</span><span>AI Agents</span><span>LLMs</span><span>Developer AI</span></div>
+        <p>Um mapa vivo do ecossistema de IA: modelos, agentes, ferramentas, plataformas e pesquisas descobertos automaticamente.</p>
+        <div class="hero-pills"><span>AI Models</span><span>AI Agents</span><span>Developer AI</span><span>AI Safety</span><span>Research</span></div>
       </div>
-      <div class="hero-orbit" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit-core">AI</div></div>
+      <div class="ai-ecosystem-visual" aria-label="Visualização animada do ecossistema de inteligência artificial">
+        <div class="ecosystem-grid"></div>
+        <div class="radar-sweep"></div>
+        <div class="ecosystem-orbit orbit-a"></div>
+        <div class="ecosystem-orbit orbit-b"></div>
+        <div class="ecosystem-core"><span>AI</span><small>RADAR</small></div>
+        <button class="ai-node node-1" type="button" data-ai-name="LLMs" data-ai-desc="Modelos de linguagem e raciocínio generativo." style="--x:16%;--y:22%;">LLM</button>
+        <button class="ai-node node-2" type="button" data-ai-name="AI Agents" data-ai-desc="Sistemas capazes de planejar, executar tarefas e usar ferramentas." style="--x:72%;--y:16%;">AGENTS</button>
+        <button class="ai-node node-3" type="button" data-ai-name="Developer AI" data-ai-desc="IA aplicada a código, engenharia de software e produtividade." style="--x:82%;--y:67%;">DEV AI</button>
+        <button class="ai-node node-4" type="button" data-ai-name="AI Safety" data-ai-desc="Pesquisa e ferramentas para segurança, avaliação e controle de IA." style="--x:18%;--y:72%;">SAFETY</button>
+        <button class="ai-node node-5" type="button" data-ai-name="Research" data-ai-desc="Novos papers, benchmarks, métodos e descobertas em IA." style="--x:48%;--y:10%;">RESEARCH</button>
+        <div class="ai-node-detail" id="aiNodeDetail"><span>SELECT A SIGNAL</span><strong>Explore uma categoria</strong><small>Toque nos sinais para entender o que cada área representa.</small></div>
+      </div>
     </section>
 
     <section class="radar-search">
@@ -60,6 +72,16 @@
   </main>
 
   <footer class="radar-footer"><span>Ayorai AI Radar · Automated AI discovery</span><span>Dados públicos · atualização automática</span></footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const detail = document.getElementById('aiNodeDetail');
+      document.querySelectorAll('.ai-node').forEach(node => node.addEventListener('click', () => {
+        document.querySelectorAll('.ai-node').forEach(n => n.classList.remove('selected'));
+        node.classList.add('selected');
+        detail.innerHTML = `<span>AI SIGNAL</span><strong>${node.dataset.aiName}</strong><small>${node.dataset.aiDesc}</small>`;
+      }));
+    });
+  </script>
   <script src="ai-radar.js"></script>
 </body>
 </html>
