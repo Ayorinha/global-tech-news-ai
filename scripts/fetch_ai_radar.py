@@ -1,4 +1,4 @@
-"""Build the Ayorai AI Radar dataset from public news/search RSS feeds.
+"""Build the Ayorai AI Radar dataset from public news and vendor RSS feeds.
 No API key is required. The output is a static JSON consumed by ai-radar.html.
 """
 from __future__ import annotations
@@ -27,23 +27,31 @@ QUERIES = [
     '"AI video" launch OR release',
     '"AI image" launch OR release',
     '"AI research" model OR agent OR tool',
+    '"AI safety" model OR agent OR evaluation',
+]
+
+DIRECT_FEEDS = [
+    ("OpenAI", "https://openai.com/news/rss.xml"),
+    ("Google DeepMind", "https://deepmind.google/blog/rss.xml"),
+    ("Hugging Face", "https://huggingface.co/blog/feed.xml"),
+    ("MIT Technology Review", "https://www.technologyreview.com/feed/"),
 ]
 
 CATEGORY_RULES = {
-    "AI Agents": ["agent", "agents", "agentic", "autonomous"],
-    "LLMs & Models": ["llm", "language model", "foundation model", "model launch", "model release", "reasoning model"],
-    "Developer AI": ["coding", "developer", "code agent", "copilot", "dev tool", "programming"],
+    "AI Agents": ["agent", "agents", "agentic", "autonomous", "computer use", "workflow"],
+    "LLMs & Models": ["llm", "language model", "foundation model", "model launch", "model release", "reasoning model", "multimodal"],
+    "Developer AI": ["coding", "developer", "code agent", "copilot", "dev tool", "programming", "software engineer"],
     "Image AI": ["image generator", "image generation", "text-to-image", "image model", "visual ai"],
     "Video AI": ["video generator", "video generation", "text-to-video", "video model"],
     "Audio & Voice": ["voice", "speech", "text-to-speech", "tts", "music generation", "audio ai"],
-    "Data & Research": ["research", "data analysis", "analytics", "knowledge", "search"],
-    "Enterprise AI": ["enterprise", "business", "finance", "crm", "workplace", "productivity"],
-    "AI Safety": ["safety", "alignment", "eval", "evaluation", "red team", "security"],
+    "Data & Research": ["research", "data analysis", "analytics", "knowledge", "search", "paper", "science"],
+    "Enterprise AI": ["enterprise", "business", "finance", "crm", "workplace", "productivity", "legal"],
+    "AI Safety": ["safety", "alignment", "eval", "evaluation", "red team", "security", "misalignment"],
 }
 
 HEADLINE_SIGNALS = [
     "launch", "launched", "launches", "introduces", "introduced", "unveils", "unveiled",
-    "releases", "released", "debuts", "debut", "new", "preview", "beta", "available",
+    "releases", "released", "debut", "new", "preview", "beta", "available", "announces",
 ]
 
 
@@ -70,32 +78,54 @@ def parse_date(entry):
     return datetime.now(timezone.utc)
 
 
+def add_entry(items, title, link, source, published, description=""):
+    title = clean(title)
+    link = clean(link)
+    if not title or not link:
+        return
+    key = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
+    if key in items:
+        return
+    description = clean(re.sub(r"<[^>]+>", " ", description))[:420]
+    items[key] = {
+        "title": title,
+        "description": description,
+        "link": link,
+        "source": clean(source or "News"),
+        "published": published.isoformat(),
+        "category": category_for(title, description),
+    }
+
+
 def collect():
     items = {}
+    headers = {"User-Agent": "Ayorai-AI-Radar/1.0 (+https://ayorinha.github.io/global-tech-news-ai/)"}
+
     for query in QUERIES:
         try:
-            feed = feedparser.parse(google_rss(query))
-            for e in feed.entries[:40]:
-                title = clean(e.get("title", ""))
-                link = e.get("link", "")
-                if not title or not link:
-                    continue
-                key = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
-                if key in items:
-                    continue
-                source = clean((e.get("source") or {}).get("title", "Google News"))
-                published = parse_date(e)
-                desc = clean(re.sub(r"<[^>]+>", " ", e.get("summary", "")))[:420]
-                items[key] = {
-                    "title": title,
-                    "description": desc,
-                    "link": link,
-                    "source": source,
-                    "published": published.isoformat(),
-                    "category": category_for(title, desc),
-                }
+            feed = feedparser.parse(google_rss(query), request_headers=headers)
+            for e in feed.entries[:50]:
+                add_entry(
+                    items,
+                    e.get("title", ""),
+                    e.get("link", ""),
+                    (e.get("source") or {}).get("title", "Google News"),
+                    parse_date(e),
+                    e.get("summary", ""),
+                )
         except Exception as exc:
-            print("feed error:", query, exc)
+            print("google feed error:", query, exc)
+
+    for source, url in DIRECT_FEEDS:
+        try:
+            response = requests.get(url, headers=headers, timeout=20)
+            response.raise_for_status()
+            feed = feedparser.parse(response.content)
+            for e in feed.entries[:40]:
+                add_entry(items, e.get("title", ""), e.get("link", ""), source, parse_date(e), e.get("summary", ""))
+        except Exception as exc:
+            print("direct feed error:", source, exc)
+
     return list(items.values())
 
 
@@ -115,14 +145,7 @@ def add_existing_news(items):
         text = clean(a.get("description_pt") or a.get("description_original") or a.get("description"))
         if not any(w in (title + " " + text).lower() for w in ["ai", "artificial intelligence", "modelo", "agent", "llm"]):
             continue
-        items.append({
-            "title": title,
-            "description": text[:420],
-            "link": link,
-            "source": clean(a.get("source", "News")),
-            "published": a.get("published") or datetime.now(timezone.utc).isoformat(),
-            "category": category_for(title, text),
-        })
+        add_entry(items, title, link, a.get("source", "News"), parse_date(a), text)
         seen.add(link)
     return items
 
@@ -146,14 +169,14 @@ def build_trends(items):
     recent = [x for x in items if (now - datetime.fromisoformat(x["published"].replace("Z", "+00:00"))) <= timedelta(days=3)]
     cats = Counter(x["category"] for x in recent)
     words = Counter()
-    stop = {"the", "and", "for", "with", "from", "this", "that", "new", "ai", "artificial", "intelligence", "a", "to", "of", "in", "on", "by", "is"}
+    stop = {"the", "and", "for", "with", "from", "this", "that", "new", "ai", "artificial", "intelligence", "a", "to", "of", "in", "on", "by", "is", "its", "how"}
     for x in recent:
         tokens = re.findall(r"[A-Za-z][A-Za-z0-9.-]{3,}", x["title"])
         words.update(t.lower() for t in tokens if t.lower() not in stop)
     trends = []
     for name, count in cats.most_common(8):
         trends.append({"name": name, "score": min(100, count * 9 + 20), "type": "category"})
-    for name, count in words.most_common(12):
+    for name, count in words.most_common(16):
         if count < 2:
             continue
         trends.append({"name": name.title(), "score": min(100, count * 8 + 12), "type": "topic"})
@@ -166,8 +189,15 @@ def build_trends(items):
 def main():
     items = add_existing_news(collect())
     cutoff = datetime.now(timezone.utc) - timedelta(days=7)
-    items = [x for x in items if datetime.fromisoformat(x["published"].replace("Z", "+00:00")) >= cutoff]
-    items = score_items(items)[:120]
+    fresh = []
+    for x in items:
+        try:
+            dt = datetime.fromisoformat(x["published"].replace("Z", "+00:00"))
+        except Exception:
+            dt = datetime.now(timezone.utc)
+        if dt >= cutoff:
+            fresh.append(x)
+    items = score_items(fresh)[:200]
     categories = sorted({x["category"] for x in items})
     now = datetime.now(timezone.utc)
     stats = {
@@ -183,7 +213,7 @@ def main():
         "categories": categories,
         "signals": items,
         "trends": build_trends(items),
-        "methodology": "Public RSS/news signals, deduplication, category classification and recency/momentum scoring. Updated automatically by GitHub Actions.",
+        "methodology": "Public RSS/news signals and vendor feeds, deduplication, category classification and recency/momentum scoring. Updated automatically by GitHub Actions.",
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[ai-radar] {len(items)} signals | {stats['new_24h']} in 24h | {stats['sources']} sources")
