@@ -2,138 +2,152 @@
 
 > Open-source adversarial evaluation laboratory for defensive AI agents operating on sensitive-data and financial workflows.
 
-**Red Agent → Sandbox → Blue Agent → Evaluation → Audit**
+**Red Agent → Policy Boundary → Synthetic Financial Sandbox → Blue Agent → Evaluation → Audit**
 
-This lab demonstrates how an AI security control plane can test an agent against controlled adversarial scenarios without connecting to real systems, credentials, customer data, banking infrastructure, or production services.
+## What is connected in practice
 
-## Why this project exists
+This is now an executable local security lab, not only documentation. The flow is wired end-to-end:
 
-Modern agentic systems can read documents, call tools, retrieve records and make workflow decisions. Security therefore needs more than prompt filtering: it needs policy enforcement, data classification, authorization boundaries, tool controls, observability and repeatable evaluation.
+1. **Red Agent / scenarios** supplies controlled adversarial and benign cases.
+2. **Policy Boundary** classifies data, detects injection indicators, enforces RBAC, tool allowlists, financial thresholds and human-approval rules.
+3. **Synthetic Financial Sandbox** provides fake accounts and a local ledger; no real banking or customer system is contacted.
+4. **Blue Agent** is the defensive baseline. A pluggable local-LLM adapter is included for OpenAI-compatible localhost endpoints such as Ollama/LM Studio.
+5. **Evaluation Engine** measures detection, containment, leakage, authorization and score.
+6. **Audit Log** records evaluation events with SHA-256 event hashes.
+7. **FastAPI + Dashboard** exposes `/health`, `/scenarios`, `/benchmark`, `/arena` and `/audit` for local operation.
+8. **Docker/Compose** provides a repeatable local runtime with read-only filesystem and `no-new-privileges`.
+9. **GitHub Actions** runs regression tests automatically.
 
-The project is aligned conceptually with the OWASP GenAI Security Project and its work on agentic security and red-team evaluation, and with the NIST AI Risk Management Framework and Generative AI Profile. OWASP explicitly covers risks such as prompt injection, data leakage and agentic-system security; NIST provides a risk-management and evaluation-oriented framework. See `docs/framework-mapping.md`.
+**No external model or API key is required for the baseline.**
 
 ## Safety boundary
 
-The Red Agent in this repository is a **simulation engine**. It generates benign adversarial test cases against a local synthetic target. It does not scan networks, exploit third-party systems, execute arbitrary shell commands, bypass real authentication, steal credentials, or interact with external financial infrastructure.
+The Red Agent is a **simulation engine**, not an offensive exploitation framework. It does not scan networks, exploit third-party systems, execute arbitrary shell commands, bypass real authentication, steal credentials, or interact with external financial infrastructure.
 
 All sensitive and financial records are synthetic.
 
 ## Architecture
 
 ```text
-                         AYORAI AGENT DEFENSE LAB
-                                      |
-                    +-----------------+-----------------+
-                    |                                   |
-                RED AGENT                           BLUE AGENT
-          adversarial test cases                detection + policy
-                    |                                   |
-                    +-----------------+-----------------+
-                                      |
-                                  SANDBOX
-                         synthetic financial data
-                                      |
-                              EVALUATION ENGINE
-                                      |
-             +----------------+-------+-------+----------------+
-             |                |               |                |
-          Detection       Containment      Leakage         Auditability
-             |                |               |                |
-             +----------------+-------+-------+----------------+
-                                      |
-                                JSON REPORT
+                     AYORAI AGENT DEFENSE LAB
+                              |
+                +-------------+-------------+
+                |                           |
+            RED AGENT                   BLUE AGENT
+        controlled attacks             defensive model
+                |                           |
+                +-------------+-------------+
+                              |
+                       POLICY BOUNDARY
+                 classification + RBAC + tools
+                              |
+                  SYNTHETIC FINANCIAL SANDBOX
+                    accounts + local ledger
+                              |
+                    EVALUATION ENGINE
+                              |
+                 +------------+------------+
+                 |            |            |
+             Detection   Containment    Leakage
+                 |            |            |
+                 +------------+------------+
+                              |
+                         AUDIT LOG
+                              |
+                       JSON / DASHBOARD
 ```
 
-## Included scenarios
+## Scenarios
 
 - Prompt injection simulation
 - Synthetic sensitive-data exfiltration attempt
-- Tool misuse / unauthorized operation
+- Unauthorized tool request
 - Authorization-boundary violation
 - Financial transaction manipulation simulation
-- PII/secret handling test
-- Benign traffic to measure false positives
+- PII/credential handling
+- Benign financial traffic for false-positive measurement
 
-## Security controls
+## Controls
 
-- Data classification: PUBLIC / INTERNAL / CONFIDENTIAL / RESTRICTED
+- PUBLIC / INTERNAL / CONFIDENTIAL / RESTRICTED classification
+- Role-based tool authorization
 - Allowlisted tools
-- Role-based authorization
 - Transaction amount limits
-- Human approval requirement for high-risk financial actions
+- Human approval for high-risk financial actions
 - Output redaction
-- Prompt and tool policy checks
-- Immutable-style audit events in the local run
-- Deterministic test cases for regression testing
+- Prompt/tool policy checks
+- Synthetic account and ledger state
+- Hash-linked audit event records
+- Deterministic regression tests
 
-## Run locally
-
-Python 3.11+ is recommended.
+## Local operation
 
 ```bash
 python -m venv .venv
 # Windows
 .venv\\Scripts\\activate
-# macOS/Linux
-# source .venv/bin/activate
-
+# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python -m app.cli
-```
-
-The CLI runs the complete Red → Blue → Evaluation pipeline and writes a report to `reports/latest.json`.
-
-For the local dashboard:
-
-```bash
 python -m app.api
 ```
 
-Then open `http://127.0.0.1:8000`.
+Open `http://127.0.0.1:8000`.
 
-No external model or API key is required for the baseline benchmark.
+### Docker
 
-## Optional LLM adapter
-
-The architecture intentionally separates the evaluation engine from the model provider. A future adapter can call a local model such as Ollama/LM Studio, but the sandbox policy remains the security boundary. Never place credentials or real business data in test fixtures.
-
-## Example result
-
-```json
-{
-  "scenario": "financial_transaction_manipulation",
-  "risk": "high",
-  "detected": true,
-  "blocked": true,
-  "sensitive_data_exposed": false,
-  "requires_human_approval": true
-}
+```bash
+docker compose up --build
 ```
+
+The dashboard provides buttons for **Run benchmark**, **Run Agent Arena**, and **View audit + ledger**.
+
+## API
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /health` | Security boundary status |
+| `GET /scenarios` | Synthetic scenario catalog |
+| `POST /benchmark` | Full benchmark + metrics |
+| `POST /arena` | End-to-end agent evaluation |
+| `GET /audit` | Audit events + synthetic ledger snapshot |
+
+## Local LLM integration
+
+`app/agent.py` includes a localhost OpenAI-compatible adapter. It can call a local model endpoint, but **the model never receives permission to execute tools directly**. The policy engine remains the authorization boundary.
+
+This separation is intentional for sensitive-data and financial workflows: model output is untrusted input until policy checks pass.
 
 ## Metrics
 
-The evaluator calculates:
+- Detection rate
+- Containment rate
+- Sensitive-data leakage rate
+- Unauthorized-action rate
+- Human-approval coverage
+- False positives
+- Average score
 
-- detection rate
-- containment rate
-- sensitive-data leakage rate
-- unauthorized-action rate
-- false-positive rate
-- human-approval coverage
-- average response latency
+These are engineering evaluation metrics, not compliance certification.
 
-These metrics are intended for comparative engineering experiments, not certification.
+## Security framework mapping
+
+See `docs/framework-mapping.md` and `docs/threat-model.md` for the conceptual mapping to OWASP GenAI/agentic security work and the NIST AI Risk Management Framework.
+
+## Important boundary
+
+This repository does **not** claim LGPD, PCI DSS, ISO 27001, SOC 2, or NIST certification. It demonstrates technical controls and a repeatable testing methodology that can be adapted to regulated environments.
 
 ## Repository standards
 
-- No real credentials
+- Synthetic data only
+- No secrets or credentials
 - No production endpoints
 - No real personal data
 - No real financial records
 - No offensive automation against external systems
-- Synthetic fixtures only
 - Reproducible tests
-- Security decisions are logged
+- Auditable security decisions
 
 ## License
 
