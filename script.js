@@ -30,6 +30,27 @@ const $layout = document.getElementById("layout");
 const $sbList = document.getElementById("sidebarList");
 const $toggle = document.getElementById("sidebarToggle");
 
+// Keep the presentation layer stable across desktop, tablet and mobile.
+function installHomeFixes() {
+  if (document.getElementById("ayorai-home-fixes")) return;
+  const style = document.createElement("style");
+  style.id = "ayorai-home-fixes";
+  style.textContent = `
+    .main-content{width:100%;max-width:none;min-width:0}
+    .portfolio-hero{width:100%}
+    .hero-content{max-width:980px}
+    .engineering-section{width:100%}
+    .news-section{width:100%}
+    .filter-bar{width:100%}
+    .topbar-right{min-width:0}
+    .search-box{max-width:220px}
+    @media(max-width:1100px){.topbar{gap:.75rem}.topbar-nav{gap:.8rem}.search-box{max-width:180px}.search-box #searchInput{width:130px}}
+    @media(max-width:820px){.topbar{padding:0 .75rem}.topbar-nav{display:none}.topbar-right{gap:.35rem}.search-box{max-width:150px}.search-box #searchInput{width:95px}.portfolio-hero{margin-bottom:1.5rem}.engineering-section{margin-bottom:1.75rem}}
+    @media(max-width:560px){.search-box{max-width:42px;padding:.38rem .55rem}.search-box #searchInput{display:none}.portfolio-hero h1{font-size:2.05rem;line-height:1}.hero-actions{gap:.45rem}.hero-btn{font-size:.7rem;padding:.5rem .72rem}.hero-meta span{font-size:.58rem}.main-content{padding:1rem .9rem 2.5rem}}
+  `;
+  document.head.appendChild(style);
+}
+
 function esc(s) {
   return String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;")
     .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -130,6 +151,7 @@ function newsItem(a, idx) {
 }
 
 function renderNews() {
+  if (!$list) return;
   const filtered = getFiltered();
   $list.innerHTML = filtered.length
     ? filtered.map(newsItem).join("")
@@ -137,6 +159,7 @@ function renderNews() {
 }
 
 function buildFilters() {
+  if (!$filters) return;
   const counts = {};
   state.articles.forEach(function(a) {
     const lang = LANGS[a.language] ? a.language : "en";
@@ -164,13 +187,14 @@ function buildFilters() {
 
 function setFilter(lang) {
   state.filter = lang;
-  $filters.querySelectorAll(".filter-btn").forEach(function(b) {
+  if ($filters) $filters.querySelectorAll(".filter-btn").forEach(function(b) {
     b.classList.toggle("active", b.dataset.lang === lang);
   });
   renderNews();
 }
 
 function renderPortfolio() {
+  if (!$sbList) return;
   const items = state.projects.filter(function(p) {
     return state.activeTab === "projetos" ? p.category === "projeto" : p.category === "estudo";
   });
@@ -207,6 +231,7 @@ function renderPortfolio() {
 }
 
 async function loadNews() {
+  if (!$list) return;
   $list.innerHTML = '<div class="loader"><div class="spinner"></div><p>Carregando notícias...</p></div>';
   try {
     const ts = Math.floor(Date.now() / 60000);
@@ -227,6 +252,7 @@ async function loadNews() {
 }
 
 async function loadProjects() {
+  if (!$sbList) return;
   try {
     const res = await fetch("data/projects.json?v=" + Date.now(), {cache:"no-store"});
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -254,7 +280,7 @@ if ($filters) $filters.addEventListener("click", function(e) {
   if (b) setFilter(b.dataset.lang);
 });
 
-if ($toggle) $toggle.addEventListener("click", function() {
+if ($toggle && $layout) $toggle.addEventListener("click", function() {
   $layout.classList.toggle("sidebar-closed");
 });
 
@@ -268,6 +294,7 @@ document.querySelectorAll(".stab").forEach(function(btn) {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  installHomeFixes();
   if (window.innerWidth <= 768 && $layout) $layout.classList.add("sidebar-closed");
   loadNews();
   loadProjects();
