@@ -9,6 +9,12 @@ on:
       - master
   workflow_dispatch:
 
+# Evita que duas execucoes do mesmo workflow tentem publicar
+# simultaneamente no branch principal.
+concurrency:
+  group: atualizar-noticias-main
+  cancel-in-progress: false
+
 jobs:
   fetch-and-deploy:
     name: Coletar Noticias e Publicar
@@ -32,6 +38,11 @@ jobs:
       - name: Instalar dependencias
         run: pip install feedparser requests deep-translator
 
+      - name: Sincronizar com main antes da coleta
+        run: |
+          git fetch origin main
+          git rebase origin/main
+
       - name: Coletar e traduzir noticias
         run: python scripts/fetch_news.py
 
@@ -44,5 +55,10 @@ jobs:
             echo "Nenhuma mudanca para commitar."
           else
             git commit -m "chore: atualizar noticias $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+            # Atualiza novamente antes do push para evitar non-fast-forward
+            # caso o main tenha recebido uma alteracao durante a coleta.
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main
           fi
