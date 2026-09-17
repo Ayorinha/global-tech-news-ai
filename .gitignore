@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local development
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated/local data
+logs/
+tmp/
+output/
