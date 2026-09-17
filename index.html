@@ -3,134 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ayorai — Notícias tecnológicas globais e portfólio de projetos." />
-  <title>Ayorai</title>
+  <meta name="description" content="Ayorai — Applied AI, Data & Automation. Notícias tecnológicas globais e portfólio de projetos." />
+  <meta name="theme-color" content="#0b1829" />
+  <title>Ayorai — Applied AI · Data · Automation</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
 </head>
 <body>
 
-<!-- ── TOPBAR ─────────────────────────────────────────────── -->
 <header class="topbar">
   <div class="topbar-left">
-    <button class="sidebar-toggle" id="sidebarToggle" title="Portfólio">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2.2"
-           stroke-linecap="round" stroke-linejoin="round">
+    <button class="sidebar-toggle" id="sidebarToggle" title="Portfólio" aria-label="Abrir ou fechar portfólio">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
         <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
       </svg>
     </button>
-    <a class="topbar-logo" href="#">Ayorai<span>Tech</span></a>
+    <a class="topbar-logo" href="#top">Ayorai<span>Tech</span></a>
   </div>
 
-  <nav class="topbar-nav">
+  <nav class="topbar-nav" aria-label="Navegação principal">
+    <a href="#portfolio" class="tlink">Portfólio</a>
     <a href="#recentes" class="tlink active">Recentes</a>
-    <a href="#semana"   class="tlink">Top Semana</a>
+    <a href="#semana" class="tlink">Top Semana</a>
   </nav>
 
   <div class="topbar-right">
     <div class="search-box">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2.5"
-           stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"/>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
       </svg>
-      <input id="searchInput" type="search"
-             placeholder="Buscar notícias…"
-             autocomplete="off" spellcheck="false" />
+      <input id="searchInput" type="search" placeholder="Buscar notícias…" autocomplete="off" spellcheck="false" aria-label="Buscar notícias" />
     </div>
-    <div class="live-pill">
-      <span class="live-dot"></span> ao vivo
-    </div>
+    <div class="live-pill"><span class="live-dot"></span> ao vivo</div>
   </div>
 </header>
 
-<!-- ── LAYOUT PRINCIPAL ───────────────────────────────────── -->
 <div class="layout" id="layout">
 
-  <!-- ── SIDEBAR: PORTFÓLIO ─────────────────────────────── -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-head">
       <div class="sidebar-logo">
         <span class="sidebar-logo-icon">🚀</span>
         <div>
           <div class="sidebar-name">Ayorai</div>
-          <div class="sidebar-tagline">Projetos & Estudos</div>
+          <div class="sidebar-tagline">Applied AI · Data · Automation</div>
         </div>
       </div>
     </div>
 
-    <!-- Tabs -->
     <div class="sidebar-tabs">
       <button class="stab active" data-tab="projetos">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2"
-             stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="16 18 22 12 16 6"/>
-          <polyline points="8 6 2 12 8 18"/>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
         </svg>
         Projetos
       </button>
       <button class="stab" data-tab="estudos">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2"
-             stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
         </svg>
         Estudos
       </button>
     </div>
 
-    <!-- Lista de projetos/estudos -->
     <div class="sidebar-list" id="sidebarList">
-      <div class="sidebar-loading">
-        <div class="mini-spinner"></div>
-      </div>
+      <div class="sidebar-loading"><div class="mini-spinner"></div></div>
     </div>
 
-    <!-- Rodapé da sidebar -->
     <div class="sidebar-footer">
-      <a href="https://github.com/Ayorinha" target="_blank"
-         rel="noopener" class="github-link">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-        </svg>
+      <a href="https://github.com/Ayorinha" target="_blank" rel="noopener" class="github-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         Ver GitHub
       </a>
     </div>
   </aside>
 
-  <!-- ── CONTEÚDO PRINCIPAL ─────────────────────────────── -->
-  <main class="main-content">
+  <main class="main-content" id="top">
 
-    <!-- Filtros de idioma -->
+    <section class="portfolio-hero" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="hero-kicker">AYORAI · PORTFÓLIO TÉCNICO</div>
+      <h1 id="portfolio-title">Applied AI · Data · Intelligent Automation</h1>
+      <p>Projetos práticos em engenharia de IA, ciência de dados, automação e sistemas orientados a dados.</p>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="https://github.com/Ayorinha" target="_blank" rel="noopener">GitHub</a>
+        <a class="hero-btn" href="https://www.linkedin.com/in/anderson-leon-ayora" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="hero-meta">
+        <span>Python</span><span>Machine Learning</span><span>RAG</span><span>Document Intelligence</span><span>Automation</span>
+      </div>
+    </section>
+
     <div class="filter-bar">
       <div id="filterBtns" class="filter-group"></div>
-      <select id="sortSelect" class="sort-sel">
+      <select id="sortSelect" class="sort-sel" aria-label="Ordenar notícias">
         <option value="newest">Mais recentes</option>
         <option value="oldest">Mais antigas</option>
       </select>
     </div>
 
-    <!-- ── TOP DA SEMANA ─────────────────────────────── -->
     <section id="semana" class="news-section">
-      <h1 class="sec-title">MELHORES DA SEMANA</h1>
+      <h2 class="sec-title">MELHORES DA SEMANA</h2>
       <p class="sec-sub">Notícias de tecnologia com destaque nos últimos dias</p>
       <div id="weekGrid" class="week-grid"></div>
     </section>
 
-    <!-- ── NOTÍCIAS RECENTES ──────────────────────────── -->
     <section id="recentes" class="news-section">
       <div class="sec-header-row">
         <div>
-          <h1 class="sec-title">NOTÍCIAS RECENTES</h1>
-          <p class="sec-sub">
-            <strong>As melhores notícias de tecnologia das últimas 24 horas</strong>,
-            resumidas e ordenadas.
-          </p>
+          <h2 class="sec-title">NOTÍCIAS RECENTES</h2>
+          <p class="sec-sub"><strong>As melhores notícias de tecnologia das últimas 24 horas</strong>, resumidas e ordenadas.</p>
         </div>
         <span class="sec-date" id="todayDate"></span>
       </div>
@@ -138,9 +120,8 @@
     </section>
 
   </main>
-</div><!-- /layout -->
+</div>
 
-<!-- ── FOOTER ──────────────────────────────────────────────── -->
 <footer class="footer">
   <span>Ayorai Tech News · Atualizado automaticamente via GitHub Actions</span>
   <span>Conteúdo pertence às respectivas fontes originais</span>
