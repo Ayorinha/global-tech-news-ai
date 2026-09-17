@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ayorai AI Radar — monitoramento automatizado de novas IAs, modelos, agentes e tendências do ecossistema de inteligência artificial." />
+  <meta name="theme-color" content="#081522" />
+  <title>Ayorai AI Radar · AI Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="ai-radar.css" />
+</head>
+<body class="radar-page">
+  <header class="radar-topbar">
+    <a class="radar-brand" href="index.html"><span>AYORAI</span><small>AI INTELLIGENCE</small></a>
+    <nav>
+      <a href="index.html">← Site principal</a>
+      <a class="active" href="ai-radar.html">AI Radar</a>
+    </nav>
+    <div class="radar-status"><i></i><span id="updatedLabel">Atualizando...</span></div>
+  </header>
+
+  <main class="radar-shell">
+    <section class="radar-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">AYORAI · DISCOVERY ENGINE</span>
+        <h1>AI Radar</h1>
+        <p>Um painel automatizado para descobrir novas ferramentas, modelos, agentes e movimentos relevantes no ecossistema de IA.</p>
+        <div class="hero-pills"><span>News signals</span><span>New launches</span><span>AI Agents</span><span>LLMs</span><span>Developer AI</span></div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit-core">AI</div></div>
+    </section>
+
+    <section class="radar-search">
+      <div class="search-wrap"><span>⌕</span><input id="radarSearch" type="search" placeholder="Pesquisar IA, modelo, agente, empresa ou tendência..." autocomplete="off" /></div>
+      <div id="categoryFilters" class="category-filters"></div>
+    </section>
+
+    <section class="metric-row" id="metrics"></section>
+
+    <section class="dashboard-grid">
+      <div class="panel panel-main">
+        <div class="panel-head"><div><span class="eyebrow">NEW SIGNALS</span><h2>IA em movimento</h2></div><span class="panel-note">descoberta automática</span></div>
+        <div id="signals" class="signal-list"><div class="loading">Carregando sinais...</div></div>
+      </div>
+      <aside class="panel trend-panel">
+        <div class="panel-head"><div><span class="eyebrow">MOMENTUM</span><h2>Trending AI</h2></div><span class="panel-note">24h</span></div>
+        <div id="trends" class="trend-list"><div class="loading">Calculando tendências...</div></div>
+      </aside>
+    </section>
+
+    <section class="panel category-panel">
+      <div class="panel-head"><div><span class="eyebrow">AI LANDSCAPE</span><h2>Mapa de categorias</h2></div><span class="panel-note">sinais monitorados</span></div>
+      <div id="categoryMap" class="category-map"></div>
+    </section>
+
+    <section class="panel methodology">
+      <div class="method-copy"><span class="eyebrow">HOW IT WORKS</span><h2>Como o Radar se alimenta</h2><p>O sistema coleta fontes públicas, normaliza títulos, remove duplicidades, identifica categorias e calcula sinais de momentum por recência e recorrência. O painel é atualizado automaticamente pelo GitHub Actions.</p></div>
+      <div class="pipeline"><span>RSS / News</span><b>→</b><span>Discovery</span><b>→</b><span>Classification</span><b>→</b><span>Trend Score</span><b>→</b><strong>AI RADAR</strong></div>
+    </section>
+  </main>
+
+  <footer class="radar-footer"><span>Ayorai AI Radar · Automated AI discovery</span><span>Dados públicos · atualização automática</span></footer>
+  <script src="ai-radar.js"></script>
+</body>
+</html>
