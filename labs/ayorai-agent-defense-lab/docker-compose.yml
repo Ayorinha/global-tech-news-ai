@@ -1,0 +1,11 @@
+services:
+  defense-lab:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      AYORAI_SYNTHETIC_ONLY: "true"
+      AYORAI_EXTERNAL_TARGETS: "false"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
