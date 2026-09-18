@@ -1,0 +1,23 @@
+name: Enterprise AI Ops
+
+on:
+  pull_request:
+    paths:
+      - "labs/ayorai-enterprise-ai-ops/**"
+  push:
+    paths:
+      - "labs/ayorai-enterprise-ai-ops/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: labs/ayorai-enterprise-ai-ops
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: pytest -q
