@@ -12,32 +12,9 @@ The repository also acts as the public technical showcase for the Ayorai portfol
 
 ## Architecture
 
-```text
-RSS Sources
-    │
-    ▼
-Python Ingestion
-    │
-    ├── Feed parsing
-    ├── Metadata extraction
-    ├── Image discovery
-    └── Translation
-    │
-    ▼
-data/news.json
-    │
-    ▼
-Static Web Application
-    │
-    ├── News discovery
-    ├── Search / filters
-    └── Ayorai portfolio
-    │
-    ▼
-GitHub Pages
+RSS Sources → Python Ingestion → data/news.json → Static Web Application → GitHub Pages
 
-GitHub Actions ── scheduled automation ──► pipeline
-```
+GitHub Actions provides scheduled automation for the news pipeline.
 
 ## Current capabilities
 
@@ -52,7 +29,7 @@ GitHub Actions ── scheduled automation ──► pipeline
 - Automatic commit/publish of updated news data
 - Static browser-based frontend
 - Search, language filters and chronological sorting
-- Curated Ayorai project portfolio loaded from `data/projects.json`
+- Curated Ayorai project portfolio loaded from data/projects.json
 
 ## Technology
 
@@ -68,32 +45,30 @@ GitHub Actions ── scheduled automation ──► pipeline
 
 The public site intentionally presents a curated set of projects rather than an exhaustive list of experiments.
 
+- **AYORAI Enterprise AI Operations** — agentic enterprise automation combining RAG, MCP, RPA, Document Intelligence and AI Safety.
+- **AyorAI Agent Defense Lab** — defensive evaluation of AI-agent security controls using synthetic workflows.
 - **Ayorai Tech News AI** — automated RSS ingestion, translation, ETL and publishing.
 - **Protesto Credit Scoring** — synthetic-data credit-risk research with ML, fairness and SHAP explainability.
 - **OCR-Python** — OCR and document-processing study.
 - **Hybrid Data Management RPA Pipeline** — data engineering combined with process automation.
-- **Ayorai Financial Control** — browser-based financial data analysis and visualization.
-- **Sonic MVP Game** — learning project developed in the context of game-development training.
 
 ## Repository structure
 
-```text
-.
-├── .github/workflows/      # CI automation
-├── data/                   # News dataset and portfolio metadata
-├── scripts/                # Ingestion and processing scripts
-├── index.html              # Web application and portfolio entry point
-├── script.js               # Frontend behavior
-├── style.css               # Frontend presentation
-├── requirements.txt        # Python dependencies
-└── README.md
-```
+- .github/workflows/ — CI automation
+- data/ — news dataset and portfolio metadata
+- scripts/ — ingestion and processing scripts
+- labs/ — applied AI engineering laboratories
+- index.html — web application and portfolio entry point
+- script.js — frontend behavior
+- style.css — frontend presentation
+- requirements.txt — Python dependencies
+- README.md
 
 ## Automation
 
 The production workflow runs on a schedule and can also be triggered manually. The workflow has write permission only for repository contents because the generated dataset is committed back to the repository.
 
-The portfolio layer is deliberately separated from the news ingestion flow: project metadata lives in `data/projects.json`, while the news pipeline continues to publish `data/news.json`.
+The portfolio layer is deliberately separated from the news ingestion flow: project metadata lives in data/projects.json, while the news pipeline continues to publish data/news.json.
 
 ## Data and attribution
 
@@ -115,6 +90,9 @@ This repository demonstrates:
 - Translation workflows
 - Automation engineering
 - GitHub Actions and scheduled jobs
+- Applied AI engineering laboratories
+- RAG / MCP / RPA architecture
+- AI Safety and auditable tool execution
 - Static deployment
 - Browser-based application design
 - Portfolio-oriented technical documentation
