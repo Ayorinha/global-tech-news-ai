@@ -1,13 +1,20 @@
 "use strict";
-const state={data:null,query:"",category:"all"};
+const scenarios=[
+{id:"PI",name:"Prompt Injection",desc:"Instrução sintética tenta alterar a política do agente.",risk:"HIGH"},
+{id:"RAG",name:"RAG Poisoning",desc:"Documento não confiável tenta contaminar o contexto recuperado.",risk:"HIGH"},
+{id:"TOOL",name:"Tool Abuse",desc:"Entrada manipulada tenta induzir uma chamada de ferramenta não autorizada.",risk:"HIGH"},
+{id:"EXF",name:"Data Exfiltration",desc:"Cenário simulado tenta provocar saída de dado protegido.",risk:"CRITICAL"},
+{id:"HIJ",name:"Agent Hijacking",desc:"Fluxo sintético tenta desviar o objetivo do agente.",risk:"HIGH"}
+];
+let selected=scenarios[0],blocked=0,detected=0;
 const $=id=>document.getElementById(id);
-const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;");
-function timeAgo(iso){const d=Math.max(0,Date.now()-new Date(iso).getTime()),m=Math.floor(d/60000);if(m<60)return `${m} min atrás`;const h=Math.floor(m/60);if(h<24)return `${h}h atrás`;return `${Math.floor(h/24)}d atrás`}
-function filtered(){const q=state.query.toLowerCase();return (state.data?.signals||[]).filter(x=>(state.category==="all"||x.category===state.category)&&(!q||[x.title,x.source,x.category,x.description].join(" ").toLowerCase().includes(q)))}
-function renderMetrics(){const d=state.data;$("metrics").innerHTML=`<div class="metric"><strong>${d.stats.signals}</strong><span>Sinais analisados</span></div><div class="metric"><strong>${d.stats.new_24h}</strong><span>Novos sinais · 24h</span></div><div class="metric"><strong>${d.stats.categories}</strong><span>Categorias ativas</span></div><div class="metric"><strong>${d.stats.sources}</strong><span>Fontes monitoradas</span></div>`}
-function renderFilters(){const cats=["all",...(state.data?.categories||[])];$("categoryFilters").innerHTML=cats.map(c=>`<button class="${c===state.category?"active":""}" data-cat="${esc(c)}">${c==="all"?"Todas":esc(c)}</button>`).join("");$("categoryFilters").querySelectorAll("button").forEach(b=>b.onclick=()=>{state.category=b.dataset.cat;renderFilters();renderSignals();renderCategories()})}
-function renderSignals(){const list=filtered().slice(0,30);$("signals").innerHTML=list.length?list.map((x,i)=>`<a class="signal" href="${esc(x.link)}" target="_blank" rel="noopener"><span class="signal-rank">${String(i+1).padStart(2,"0")}</span><div><h3>${esc(x.title)}</h3><div class="signal-meta"><span>${esc(x.category)}</span><span>${esc(x.source)}</span><span>${timeAgo(x.published)}</span></div></div><span class="signal-score">+${x.score}</span></a>`).join(""):"<div class='loading'>Nenhum sinal encontrado.</div>"}
-function renderTrends(){const trends=state.data.trends||[];$("trends").innerHTML=trends.slice(0,12).map((x,i)=>`<div class="trend"><span class="trend-num">${String(i+1).padStart(2,"0")}</span><div><div class="trend-name">${esc(x.name)}</div><div class="trend-bar"><i style="width:${Math.min(100,x.score)}%"></i></div></div><span class="trend-score">+${x.score}</span></div>`).join("")}
-function renderCategories(){const counts={};filtered().forEach(x=>counts[x.category]=(counts[x.category]||0)+1);$("categoryMap").innerHTML=Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="cat-card"><strong>${esc(k)}</strong><span>sinais recentes</span><b>${v}</b></div>`).join("")}
-async function load(){try{const r=await fetch(`data/ai-radar.json?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw Error(`HTTP ${r.status}`);state.data=await r.json();$("updatedLabel").textContent=`Atualizado ${timeAgo(state.data.updated_at)}`;renderMetrics();renderFilters();renderSignals();renderTrends();renderCategories()}catch(e){$("signals").innerHTML=`<div class="loading">Não foi possível carregar o Radar: ${esc(e.message)}</div>`;$("updatedLabel").textContent="offline"}}
-$("radarSearch").addEventListener("input",e=>{state.query=e.target.value;renderSignals();renderCategories()});load();setInterval(load,300000);
+const list=$("scenarioList");
+list.innerHTML=scenarios.map((s,i)=>'<button class="scenario '+(i===0?'active':'')+'" data-id="'+s.id+'"><b>'+String(i+1).padStart(2,"0")+'</b><span><strong>'+s.name+'</strong><small>'+s.desc+'</small></span><em class="risk">'+s.risk+'</em></button>').join("");
+list.querySelectorAll(".scenario").forEach(btn=>btn.onclick=()=>{selected=scenarios.find(s=>s.id===btn.dataset.id);list.querySelectorAll(".scenario").forEach(x=>x.classList.remove("active"));btn.classList.add("active")});
+document.querySelectorAll(".threat-dot").forEach(dot=>dot.onclick=()=>{$("radarThreat").textContent=dot.dataset.threat;$("radarThreatState").textContent="detected · isolated simulation"});
+function line(label,status="done"){return '<div class="telemetry-line '+(status==="block"?"block":"done")+'"><b>'+(status==="block"?"!":"✓")+'</b><span>'+label+'</span></div>'}
+$("runTest").onclick=()=>{
+$("testStatus").textContent="RUNNING";$("runTest").disabled=true;$("telemetry").innerHTML="";
+const steps=["Threat payload received","Input Guard · pattern + semantic check","Context Boundary · untrusted content isolated","Policy Engine · privilege evaluated","Tool Guard · action scope validated","Output & Audit · response inspected"];
+steps.forEach((s,i)=>setTimeout(()=>{$("telemetry").insertAdjacentHTML("beforeend",line(s,i===steps.length-1?"block":"done"));if(i===steps.length-1){blocked++;detected++;$("blockedMetric").textContent=String(blocked).padStart(2,"0");$("detectedMetric").textContent=String(detected).padStart(2,"0");$("testStatus").textContent="BLOCKED";$("runTest").disabled=false}},i*420));
+};
