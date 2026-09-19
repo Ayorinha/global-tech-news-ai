@@ -27,21 +27,24 @@ async function fetchSource(source) {
 }
 
 function extractAtlasCandidates(raw) {
-  let data;
-  try { data = JSON.parse(raw); } catch { return []; }
-  const objects = Array.isArray(data.objects) ? data.objects : [];
+  const source = String(raw || "");
+  const section = source.split(/^techniques:\s*$/m)[1]?.split(/^mitigations:\s*$/m)[0] || "";
+  const blocks = section.split(/\n(?=  AML\.T\d)/);
   const seen = new Set();
-  const keywords = /(prompt|jailbreak|poison|leak|exfiltrat|evasion|agent|tool|model|data|supply|injection|extraction|denial|resource)/i;
-  return objects
-    .filter(o => o && o.type === "attack-pattern")
-    .map(o => {
-      const ref = (o.external_references || []).find(r => r.source_name === "mitre-atlas" && /^AML\\.T\\d+/.test(r.external_id || ""));
-      return ref ? { id: ref.external_id, name: o.name || ref.external_id, description: o.description || "" } : null;
-    })
-    .filter(Boolean)
-    .filter(x => keywords.test(x.name + " " + x.description))
-    .filter(x => !seen.has(x.id) && (seen.add(x.id), true))
-    .slice(0, 24);
+  const keywords = /(prompt|jailbreak|poison|leak|exfiltrat|evasion|agent|tool|model|data|supply|injection|extraction|denial|resource|service|scan|trigger|bias|clickbait|runtime|infrastructure)/i;
+  const candidates = [];
+  for (const block of blocks) {
+    const id = block.match(/^  (AML\.T\d+(?:\.\d+)?):/m)?.[1];
+    const name = block.match(/^\s+name:\s*(.+)$/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+    const descriptionMatch = block.match(/^\s+description:\s*([\s\S]*?)(?=^  AML\.T|^\s{2}(?:AML\.|mitigations:|case-studies:)|$)/m);
+    const description = descriptionMatch?.[1] || "";
+    if (!id || !name || seen.has(id)) continue;
+    if (keywords.test(name + " " + description)) {
+      seen.add(id);
+      candidates.push({id,name,description:description.replace(/\s+/g," ").trim()});
+    }
+  }
+  return candidates.slice(0, 24);
 }
 
 const fetched = [];
