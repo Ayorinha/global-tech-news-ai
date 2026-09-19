@@ -18,51 +18,9 @@ function renderAudit(report){$("auditRunId").textContent=report.run_id;$("auditE
 function renderResult(report){report.results.forEach(r=>{const el=$("case-"+r.id);if(!el)return;el.classList.remove("blocked","failed");el.classList.add(r.passed?"blocked":"failed");const tag=el.querySelector(".tag");tag.textContent=r.actual;tag.title="Expected "+r.expected+" · observed "+r.actual+" · "+(r.passed?"PASS":"FAIL");});$("tested").textContent=String(report.totals.tests).padStart(2,"0");$("blocked").textContent=String(report.metrics.blocked).padStart(2,"0");$("bypassed").textContent=String(report.metrics.bypassed).padStart(2,"0");$("falsePositive").textContent=String(report.metrics.false_positives).padStart(2,"0");$("status").textContent=report.metrics.bypassed===0&&report.metrics.false_positives===0?"PASS":"FINDINGS";$("radarState").textContent=report.metrics.bypassed===0?"DEFENSE PASS":"BYPASS FOUND";$("runCount").textContent=String(runCounter);renderAudit(report);setDownload(true);persistReport(report);}
 async function run(cases,mode="manual"){if(running)return;running=true;setDownload(false);clearLog();renderCases(cases);$("status").textContent="RUNNING";$("radarState").textContent="SCANNING";$("runMode").textContent=mode==="continuous"?"AUTONOMOUS":"MANUAL";logLine("BENCHMARK INITIALIZED · "+cases.length+" CONTROLLED CASES");logLine("ENGINE: AYORAI AI SHIELD · AGENTS: AYORAI CYBER DEFENSE AGENTS");const results=[];for(let i=0;i<cases.length;i++){const c=cases[i],el=$("case-"+c.id);el.querySelector(".tag").textContent="PROCESSING";logLine("TEST "+c.id+" · "+c.family);await wait(70);const single=AyoraiAIShield.runCase(c);results.push(single);el.querySelector(".tag").textContent=single.actual;el.classList.add(single.passed?"blocked":"failed");logLine("→ "+single.actual+" · risk "+single.result.risk_score+" · "+single.result.defense_layer+" · "+(single.passed?"PASS":"FAIL"),single.passed?"pass":"fail");$("tested").textContent=String(i+1).padStart(2,"0");}
 const report=AyoraiCyberDefenseAgents.run(AyoraiAIShield,cases);report.results=results;report.execution_ms=Math.max(report.execution_ms,results.reduce((sum,r)=>sum+(r.result.latency_ms||0),0));report.evidence_hash=await evidenceHash(report);lastReport=report;renderResult(report);logLine("AUDIT · "+report.run_id+" · SHA-256 "+report.evidence_hash);logLine("BENCHMARK COMPLETE · "+report.totals.tests+" TESTS · "+report.metrics.bypassed+" BYPASS · "+report.metrics.false_positives+" FALSE POSITIVE",report.metrics.bypassed?"fail":"pass");running=false;}
-async function startContinuous(){if(continuous)return;continuous=true;$("continuousBtn").textContent="■ STOP CONTINUOUS";$("continuousBtn").classList.add("danger");logLine("CONTINUOUS MODE ENABLED · CONTROLLED VARIANT GENERATION");let cycle=0;while(continuous){cycle++;const cases=AyoraiCyberDefenseAgents.generateCases(3);logLine("AUTONOMOUS CYCLE "+cycle+" · "+cases.length+" GENERATED CASES");await run(cases,"continuous");if(continuous)await wait(900);}}
-function stopContinuous(){$("continuousBtn").textContent="⚡ CONTINUOUS TESTING";$("continuousBtn").classList.remove("danger");continuous=false;logLine("CONTINUOUS MODE STOPPED");}
 function downloadReports(){if(!lastReport)return;const stamp=lastReport.generated_at.replace(/[:.]/g,"-");downloadFile("ayorai-ai-shield-"+stamp+".json",JSON.stringify(lastReport,null,2),"application/json");setTimeout(()=>downloadFile("ayorai-ai-shield-"+stamp+".md",markdownReport(lastReport), "text/markdown"),250);}
 renderArchive();
 
-async function runReferenceBenchmark(){
-  if(running)return;
-  running=true; setDownload(false); clearLog();
-  const cases=AyoraiReferenceBenchmark.CASES;
-  renderCases(cases);
-  $("status").textContent="REFERENCE RUN"; $("radarState").textContent="BENCHMARK"; $("runMode").textContent="REFERENCE";
-  logLine("REFERENCE BENCHMARK · 26 CONTROLLED CASES");
-  logLine("OWASP 2025 · MITRE ATLAS · NIST AI 100-2e2025 · OASB");
-  const results=[];
-  for(let i=0;i<cases.length;i++){
-    const c=cases[i],el=$("case-"+c.id);
-    el.querySelector(".tag").textContent="PROCESSING";
-    await wait(45);
-    const r=AyoraiAIShield.runCase(c); results.push(r);
-    el.querySelector(".tag").textContent=r.actual;
-    el.classList.add(r.passed?"blocked":"failed");
-    logLine("REF "+c.id+" · "+r.actual+" · "+(r.passed?"PASS":"FINDING"),r.passed?"pass":"fail");
-    $("tested").textContent=String(i+1).padStart(2,"0");
-  }
-  const base=AyoraiReferenceBenchmark.run(AyoraiAIShield,cases);
-  base.results=results; base.execution_ms=Math.round(results.reduce((n,r)=>n+(r.result.latency_ms||0),0));
-  base.evidence_hash=await evidenceHash(base); lastReport=base;
-  $("refTests").textContent=base.totals.tests;
-  $("refDetection").textContent=base.metrics.detection_rate+"%";
-  $("refBypass").textContent=base.metrics.bypassed;
-  $("refFP").textContent=base.metrics.false_positives;
-  const src=base.by_source||{};
-  $("refOwasp").textContent=src["OWASP LLM Top 10 2025"]?(src["OWASP LLM Top 10 2025"].detected+"/"+src["OWASP LLM Top 10 2025"].adversarial+" adversariais detectados"):"—";
-  $("refAtlas").textContent=src["MITRE ATLAS"]?(src["MITRE ATLAS"].detected+"/"+src["MITRE ATLAS"].adversarial+" adversariais detectados"):"—";
-  $("refNist").textContent=src["NIST AI 100-2e2025"]?(src["NIST AI 100-2e2025"].detected+"/"+src["NIST AI 100-2e2025"].adversarial+" adversariais detectados"):"—";
-  const findings=results.filter(r=>!r.passed);
-  const box=$("refFindings"); box.innerHTML="";
-  if(!findings.length){box.textContent="Nenhum finding nesta execução.";}
-  else findings.forEach(r=>{const d=document.createElement("div");d.className="finding";d.innerHTML="<strong>"+escapeHtml(r.id)+"</strong> · "+escapeHtml(r.name||r.family)+" → "+escapeHtml(r.actual);box.appendChild(d);});
-  $("auditRunId").textContent=base.run_id; $("auditEngine").textContent=base.engine; $("auditVersion").textContent=base.version;
-  $("auditCases").textContent=base.totals.tests+" · "+base.metrics.detection_rate+"% detection";
-  $("auditHash").textContent=base.evidence_hash; $("auditExecution").textContent=base.execution_ms+" ms · "+base.generated_at;
-  setDownload(true); running=false;
-  logLine("REFERENCE COMPLETE · "+base.metrics.detection_rate+"% DETECTION · "+base.metrics.bypassed+" BYPASS · "+base.metrics.false_positives+" FALSE POSITIVE",base.metrics.bypassed||base.metrics.false_positives?"fail":"pass");
-}
 function downloadReferenceReport(){
   if(!lastReport||!lastReport.references)return;
   const r=lastReport,stamp=r.generated_at.replace(/[:.]/g,"-"),m=r.metrics;
@@ -87,7 +45,6 @@ function downloadReferenceReport(){
   downloadFile("ayorai-reference-benchmark-"+stamp+".md",lines.join("\n"),"text/markdown");
   downloadFile("ayorai-reference-benchmark-"+stamp+".json",JSON.stringify(r,null,2),"application/json");
 }
-if($("runReference"))$("runReference").onclick=runReferenceBenchmark;
 const downloadAnyReport=()=>lastReport&&lastReport.references?downloadReferenceReport():downloadReports;
 if($("downloadReport"))$("downloadReport").onclick=downloadAnyReport;
 if($("downloadReport2"))$("downloadReport2").onclick=downloadAnyReport;
