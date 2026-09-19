@@ -7,6 +7,10 @@ on:
   pull_request:
     paths:
       - "research/ayorai-ai-shield-multios/**"
+      - "package.json"
+      - "security-shield.js"
+      - "security-benchmark.js"
+      - "tests/**"
       - ".github/workflows/ayorai-research-validation.yml"
 
 permissions:
@@ -28,3 +32,9 @@ jobs:
       - name: Validate research package
         working-directory: research/ayorai-ai-shield-multios
         run: node validation/validate-research.mjs
+
+      - name: Run public Shield regression
+        run: npm run security:test
+
+      - name: Run cross-platform runtime tests
+        run: npm run research:test
