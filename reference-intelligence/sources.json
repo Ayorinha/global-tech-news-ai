@@ -7,9 +7,10 @@
       "id": "mitre-atlas",
       "name": "MITRE ATLAS",
       "type": "ai-security-taxonomy",
-      "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-navigator-data/main/dist/stix-atlas.json",
+      "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/main/dist/ATLAS-latest.yaml",
       "publisher": "MITRE",
-      "authority": "AI adversarial tactics and techniques"
+      "authority": "MITRE ATLAS current distributed data; monthly content releases",
+      "format": "YAML v6 distributed dataset"
     },
     {
       "id": "owasp-llm-top10",
