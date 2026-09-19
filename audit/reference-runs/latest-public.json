@@ -9,8 +9,8 @@
     "nist": "NIST AI 100-2e2025",
     "oasb": "Open Agent Security Benchmark technique coverage"
   },
-  "run_id": "AYORAI-REF-20260919155320082-FXAFD6",
-  "generated_at": "2026-09-19T15:53:20.082Z",
+  "run_id": "AYORAI-REF-20260919155336019-1414ZI",
+  "generated_at": "2026-09-19T15:53:36.019Z",
   "execution_ms": 2,
   "totals": {
     "tests": 26,
@@ -764,7 +764,7 @@
     }
   ],
   "intelligence": {
-    "run_id": "AYORAI-INTEL-20260919155320027",
+    "run_id": "AYORAI-INTEL-20260919155335981",
     "source_count": 5,
     "dynamic_cases": 0,
     "sources": [
@@ -773,7 +773,7 @@
         "name": "MITRE ATLAS",
         "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-navigator-data/main/dist/stix-atlas.json",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:53:19.344Z",
+        "fetched_at": "2026-09-19T15:53:35.161Z",
         "sha256": "a1bd782257de3c8591797ac863aa9b37fe4ae42ef9284bee98bfc2661fdd1c06"
       },
       {
@@ -781,23 +781,23 @@
         "name": "OWASP Top 10 for LLM Applications 2025",
         "url": "https://genai.owasp.org/llm-top-10/",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:53:19.512Z",
-        "sha256": "56224a88fc3799f7025dbf1bf06d50e2d23d17c84f552236d6ac4ba6b3d93b13"
+        "fetched_at": "2026-09-19T15:53:35.308Z",
+        "sha256": "0e7b0202ac104309e94f13f52ec86ebfacf9891465b0cc4a4ea604146400394a"
       },
       {
         "id": "nist-aml",
         "name": "NIST AI 100-2e2025",
         "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:53:19.601Z",
-        "sha256": "a3e8d2d4f0d9ddfabfb7b97140258849c006f6b4f8d82ff784dca07aff6aa60e"
+        "fetched_at": "2026-09-19T15:53:35.573Z",
+        "sha256": "4038458f8b7858eda56f221c43f2c9832a90507d72a53d7d703bbbfa20b1bce8"
       },
       {
         "id": "cisa-jcdc-ai",
         "name": "CISA JCDC AI Cybersecurity Collaboration Playbook",
         "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook%20TLP%20CLEAR_1.14.25_508c%201.pdf",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:53:19.656Z",
+        "fetched_at": "2026-09-19T15:53:35.825Z",
         "sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671"
       },
       {
@@ -805,16 +805,16 @@
         "name": "NCSC Guidelines for Secure AI System Development",
         "url": "https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:53:20.027Z",
+        "fetched_at": "2026-09-19T15:53:35.981Z",
         "sha256": "a2c4ff7fd66a0f5dc2409f7142a93badc4888b46c1243a8a958a0f3f2c94ed44"
       }
     ]
   },
   "publication": {
     "status": "PUBLISHED_REFERENCE_EVIDENCE",
-    "publication_fingerprint": "ef898ba4a56dd903cb34a71e90c3ae81c8ea61d80f3d51213be72a5b5f25a01a",
-    "published_at": "2026-09-19T15:53:20.150Z",
-    "source_snapshot_sha256": "ca0c79a362f0b82ef6f17542b886c0cd19753bd6377108a617350983a8682300",
+    "publication_fingerprint": "f38a2c9ad4fbc68080c47f06ee2bf6224af306122b94ae2025f86507498e61f3",
+    "published_at": "2026-09-19T15:53:36.489Z",
+    "source_snapshot_sha256": "be2c7a11a2b482560cc2e64528b2cc99b19fa5351a51ecd64cfab236d7312112",
     "note": "Published automatically only when reference intelligence or defensive findings materially change."
   }
 }
