@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
   pull_request:
     paths: ["security-shield.js", "security-benchmark.js", "scripts/run_ai_shield_benchmark.mjs", ".github/workflows/ayorai-ai-shield-scheduled-audit.yml"]
 
