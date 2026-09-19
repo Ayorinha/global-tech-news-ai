@@ -8,15 +8,12 @@
   <title>Ayorai AI Radar · AI Intelligence</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="ai-radar.css" />
-</head>
+<style>.radar-menu-btn,.radar-mobile-menu{display:none}@media(max-width:600px){.radar-topbar{height:60px;padding:0 12px;gap:8px}.radar-desktop-nav{display:none!important}.radar-menu-btn{display:grid;place-items:center;margin-left:auto;width:44px;height:44px;border:1px solid var(--radar-line);border-radius:10px;background:rgba(255,255,255,.03);color:#fff;font-size:19px}.radar-status{order:2}.radar-menu-btn{order:3}.radar-mobile-menu{position:fixed;top:70px;left:10px;right:10px;z-index:50;padding:10px;background:rgba(8,21,34,.98);border:1px solid var(--radar-line);border-radius:14px;box-shadow:0 18px 45px rgba(0,0,0,.4)}.radar-mobile-menu.open{display:grid;grid-template-columns:1fr;gap:8px}.radar-mobile-menu a{min-height:50px;display:flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--radar-line);border-radius:10px;color:var(--radar-text);font-size:.8rem;font-weight:800}.radar-mobile-menu a.active,.radar-mobile-menu a:hover{border-color:var(--radar-cyan);background:rgba(0,212,255,.1)}.radar-shell{padding-left:12px;padding-right:12px}.radar-hero{padding:1.35rem}.ai-ecosystem-visual{width:92vw;height:92vw;min-width:0;min-height:0}.ai-node{padding:.62rem .78rem;font-size:.58rem}.search-wrap{min-width:0;width:100%}.category-filters{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.category-filters button{flex:0 0 auto;min-height:44px}.metric{min-height:82px;padding:.8rem}.panel{padding:.95rem}.signal{min-height:60px;padding:.7rem}.pipeline b{display:none}}</style></head>
 <body class="radar-page">
   <header class="radar-topbar">
     <a class="radar-brand" href="index.html"><span>AYORAI</span><small>AI INTELLIGENCE</small></a>
-    <nav>
-      <a href="index.html">← Site principal</a>
-      <a class="active" href="ai-radar.html">AI Radar</a>
-    </nav>
-    <div class="radar-status"><i></i><span id="updatedLabel">Atualizando...</span></div>
+    <nav class="radar-desktop-nav"><a href="index.html">← Site principal</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">AI Radar</a></nav><button class="radar-menu-btn" id="radarMenuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <div class="radar-status"><i></i><span id="updatedLabel">Atualizando...</span></div><nav class="radar-mobile-menu" id="radarMobileMenu" aria-label="Navegação mobile"><a href="index.html">← Site principal</a><a href="ai-tools.html">✦ AI Index</a><a class="active" href="ai-radar.html">◉ AI Radar</a></nav>
   </header>
 
   <main class="radar-shell">
@@ -59,5 +56,5 @@
     });
   </script>
   <script src="ai-radar.js"></script>
-</body>
+<script>(function(){const b=document.getElementById("radarMenuBtn"),m=document.getElementById("radarMobileMenu");if(!b||!m)return;b.addEventListener("click",()=>{const o=m.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰"});m.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));document.addEventListener("keydown",e=>{if(e.key==="Escape"){m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}})})();</script></body>
 </html>
