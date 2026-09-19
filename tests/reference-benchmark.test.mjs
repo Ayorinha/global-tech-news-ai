@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import { createRequire } from "node:module";
+const require=createRequire(import.meta.url);
+const shield=require("../security-shield.js");
+const benchmark=require("../security-reference-benchmark.js");
+const report=benchmark.run(shield);
+assert.equal(report.totals.tests,26);
+assert.equal(report.totals.adversarial,21);
+assert.equal(report.totals.benign,5);
+assert.ok(report.metrics.detection_rate>=0 && report.metrics.detection_rate<=100);
+assert.ok(report.metrics.false_positive_rate>=0 && report.metrics.false_positive_rate<=100);
+assert.equal(Object.keys(report.by_source).length,4);
+console.log(JSON.stringify(report,null,2));
