@@ -2,65 +2,55 @@
 
 Updated for the research branch.
 
-## Implemented in the current repository
+## Executable capabilities now implemented
 
 - Browser-based AYORAI AI Shield defensive engine.
 - Controlled benchmark and regression corpus.
 - Public research laboratory.
 - Reference-aligned intelligence/evaluation research.
-- Threat model.
-- Global product roadmap.
-- Product requirements.
-- Platform matrix.
-- Failure-mode register.
-- Testing/evaluation strategy.
-- Operations model.
-- Assurance and audit model.
-- Security claims policy.
-- Responsible disclosure policy.
-- Engineering contribution workflow.
-- Research validation CI.
-- Universal security-event schema (design contract).
-- End-to-end engineering/security pipeline (design contract).
-- Release checklist.
+- Versioned universal SecurityEvent runtime contract.
+- Deterministic Risk Engine prototype.
+- Explicit Policy Engine prototype with read-only safety mode.
+- Integrity-hashed Evidence Store prototype.
+- Read-only cross-platform endpoint snapshot agent.
+- Localhost-only Security Control Plane prototype.
+- Runtime regression tests for the new research components.
+- Research validation CI and engineering governance.
+- Threat model, product requirements, failure modes, testing, operations, assurance and release documentation.
 
-## Research architecture only
+## Research architecture still under staged implementation
 
-These are not production capabilities yet:
+The following are **not production capabilities**:
 
-- native Windows/macOS/Linux endpoint agent;
+- native privileged Windows/macOS/Linux enforcement;
 - kernel-level controls;
 - production malware scanner;
 - production ransomware protection;
 - production network enforcement;
 - production email/web interception;
 - mobile security;
-- XDR control plane;
+- production XDR control plane;
 - enterprise multi-tenant management;
 - autonomous adaptive enforcement;
 - global 24x7 SOC;
 - independent certification;
 - commercial signing/release infrastructure.
 
-## Current release boundary
+## Next executable milestones
 
-The repository currently demonstrates a **security research laboratory plus a global-platform engineering blueprint**.
+1. Expand the portable event core with normalization and correlation.
+2. Add safe process/file/network telemetry adapters in read-only mode.
+3. Add deterministic detection pipelines and evidence retention controls.
+4. Build a local Security Center over the control-plane API.
+5. Add controlled response primitives that require explicit authorization.
+6. Add threat-intelligence ingestion with signed/versioned intelligence packages.
+7. Add AI/RAG/MCP agent-security evaluation and policy boundaries.
+8. Build platform adapters independently for Windows, Linux and macOS.
+9. Perform independent security evaluation before any production-security claim.
+10. Build release/signing/update infrastructure only after the security gates are satisfied.
 
-The next implementation milestone is a read-only native endpoint prototype connected to the universal event model, followed by platform-specific adapters and controlled response primitives.
+## Release boundary
 
-## Definition of complete research foundation
+The repository now contains both a **working defensive AI laboratory** and the first **executable components of the cross-platform research architecture**.
 
-The research foundation is considered structurally complete when:
-
-1. architecture is documented;
-2. event contract is documented;
-3. threat model is documented;
-4. requirements are testable;
-5. failure modes are documented;
-6. testing strategy is defined;
-7. release gates are defined;
-8. evidence model is defined;
-9. CI validates the research package;
-10. deployed site remains isolated from experimental work.
-
-All ten conditions are targeted by this branch.
+It is still a research/prototype system. The implementation deliberately avoids privileged enforcement, malware execution, external targeting and autonomous high-impact actions.
