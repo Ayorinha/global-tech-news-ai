@@ -80,10 +80,13 @@ for (const source of sources) {
   }
 }
 
+const atlasVersion = fetched.find(x => x.id === "mitre-atlas" && x.status === "OK")?.resolved_url?.match(/ATLAS-(\\d{4}\\.\\d+)\\.yaml$/)?.[1] || "unknown";
+
 const manifest = {
   intelligence_run_id: "AYORAI-INTEL-" + new Date().toISOString().replace(/[-:.TZ]/g, "").slice(0, 17),
   generated_at: new Date().toISOString(),
-  interval_minutes: 5,
+  interval_minutes: 60,
+  atlas: { current_version: atlasVersion },
   safety_boundary: "Reference data only; no malware, exploit payloads, credentials, or external targets are executed.",
   sources: fetched.map(({content_preview, raw_text, ...x}) => x),
   atlas_candidates: atlasCandidates
