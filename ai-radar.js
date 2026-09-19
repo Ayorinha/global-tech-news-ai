@@ -37,6 +37,7 @@ function renderPublishedEvidence(report) {
   setText("status", "ONLINE");
   setText("radarState", "EVIDENCE");
   setText("tested", totals.tests);
+  setText("detected", `${metrics.detection_rate ?? "—"}%`);
   setText("blocked", metrics.blocked);
   setText("bypassed", metrics.bypassed);
   setText("falsePositive", metrics.false_positives);
