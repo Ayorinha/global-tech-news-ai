@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
-import shield from "../security-shield.js";
-import benchmark from "../security-benchmark.js";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const shield = require("../security-shield.js");
+const benchmark = require("../security-benchmark.js");
 
 const report = benchmark.run(shield);
 
