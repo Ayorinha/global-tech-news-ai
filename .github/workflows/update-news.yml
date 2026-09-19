@@ -2,7 +2,7 @@ name: Atualizar Noticias
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/15 * * * *"
   push:
     branches:
       - main
@@ -21,7 +21,7 @@ jobs:
   fetch-and-deploy:
     name: Coletar Noticias e Publicar
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
 
     permissions:
       contents: write
@@ -39,7 +39,7 @@ jobs:
           python-version: "3.11"
 
       - name: Instalar dependencias
-        run: pip install feedparser requests deep-translator
+        run: pip install --disable-pip-version-check feedparser requests deep-translator
 
       - name: Sincronizar com main antes da coleta
         run: |
