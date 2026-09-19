@@ -88,4 +88,7 @@ function downloadReferenceReport(){
   downloadFile("ayorai-reference-benchmark-"+stamp+".json",JSON.stringify(r,null,2),"application/json");
 }
 if($("runReference"))$("runReference").onclick=runReferenceBenchmark;
+const downloadAnyReport=()=>lastReport&&lastReport.references?downloadReferenceReport():downloadReports;
+if($("downloadReport"))$("downloadReport").onclick=downloadAnyReport;
+if($("downloadReport2"))$("downloadReport2").onclick=downloadAnyReport;
 if($("downloadReport2"))$("downloadReport2").addEventListener("contextmenu",()=>{});
