@@ -1,7 +1,5 @@
 {
-  "name": "iorai-security-lab",
-  "private": true,
-  "scripts": {
-    "security:test": "node tests/security-shield.test.mjs"
-  }
+  "name":"ayorai-ai-shield-lab",
+  "private":true,
+  "scripts":{"security:test":"node tests/security-shield.test.mjs"}
 }
