@@ -1,0 +1,31 @@
+name: AYORAI AI Shield Scheduled Audit
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run regression suite
+        run: npm run security:test
+      - name: Execute continuous audit benchmark
+        run: node scripts/run_ai_shield_benchmark.mjs
+      - name: Publish evidence artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ayorai-ai-shield-audit
+          path: audit/runs/*.json
+          retention-days: 30
+      - name: Write audit summary
+        run: |
+          node -e "const fs=require('fs'); const f=fs.readdirSync('audit/runs').sort().pop(); const r=JSON.parse(fs.readFileSync('audit/runs/'+f)); fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '## AYORAI AI Shield\n\n- Run: '+r.run_id+'\n- Tests: '+r.totals.tests+'\n- Detection: '+r.metrics.detection_rate+'%\n- Bypassed: '+r.metrics.bypassed+'\n- False positives: '+r.metrics.false_positives+'\n');"
