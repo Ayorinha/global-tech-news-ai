@@ -27,8 +27,8 @@ log=logging.getLogger("ayorai-news")
 ROOT=Path(__file__).resolve().parent.parent
 OUTPUT=ROOT/"data"/"news.json"
 MAX_PER_FEED=10
-MAX_ARTICLES=60
-MAX_AGE_DAYS=14
+MAX_ARTICLES=50
+MAX_AGE_DAYS=3
 
 HEADERS={"User-Agent":"AyoraiTechNews/2.0 (+https://ayorinha.github.io/global-tech-news-ai/)","Accept":"application/rss+xml, application/xml, text/xml, */*"}
 
@@ -104,9 +104,25 @@ def image_from(entry):
         log.debug("image fallback failed for %s: %s",link,str(exc)[:80])
     return ""
 
-def relevant(title,desc):
+TOPIC_TERMS={
+ "AI & LLMs": r"\\b(ai|ia|artificial intelligence|inteligência artificial|machine learning|deep learning|llm|large language model|generative ai|genai|foundation model|multimodal|model release|inference|fine[- ]?tuning|training)\\b",
+ "Agents · RAG · MCP": r"\\b(agent|agente|agentic|rag|retrieval augmented generation|embedding|vector database|mcp|model context protocol|tool calling|multi[- ]agent|orchestration)\\b",
+ "Automation · RPA": r"\\b(automation|automação|rpa|robotic process automation|workflow|orchestration|playwright|selenium|bot)\\b",
+ "Cybersecurity · Attacks": r"\\b(cybersecurity|cyber security|cibersegurança|security research|hack|hacker|attack|ataque|malware|ransomware|phishing|prompt injection|data exfiltration|vulnerability|zero[- ]?day|exploit|credential|breach|cve)\\b",
+ "Quantum Computing": r"\\b(quantum|quântico|quântica|quantum computing|quantum computer|qubit|post[- ]quantum|quantum cryptography)\\b",
+ "Advanced Compute · Chips": r"\\b(gpu|npu|tpu|semiconductor|chip|accelerator|datacenter|data center|compute|hpc|supercomputer|edge ai)\\b",
+ "Data · Cloud · Dev": r"\\b(data engineering|data platform|database|cloud|aws|azure|google cloud|kubernetes|docker|python|javascript|typescript|rust|api|sdk|framework|open source|github|hugging face)\\b",
+ "Robotics · Vision · OCR": r"\\b(robotics|robotica|robótica|computer vision|visão computacional|ocr|document intelligence|synthetic data)\\b"
+}
+function=1
+def classify(title,desc):
     value=f"{title} {desc}"
-    return len(TECH_TERMS.findall(value))>=1 and len(EXCLUDE_TERMS.findall(value))==0
+    if len(EXCLUDE_TERMS.findall(value))>0:return []
+    hits=[name for name,pattern in TOPIC_TERMS.items() if re.search(pattern,value,re.I)]
+    return hits
+
+def relevant(title,desc):
+    return len(classify(title,desc))>0
 
 def collect(url,source,language):
     try:
@@ -123,7 +139,7 @@ def collect(url,source,language):
         link=getattr(entry,"link","")
         published=parse_date(entry)
         if not title or not link or published<cutoff or not relevant(title,desc):continue
-        result.append({"title_original":title,"description_original":desc[:700],"link":link,"published":published.isoformat(),"source":source,"language":language,"image":image_from(entry),"editorial":{"is_technical":True,"category":"technology"}})
+        result.append({"title_original":title,"description_original":desc[:700],"link":link,"published":published.isoformat(),"source":source,"language":language,"image":image_from(entry),"editorial":{"is_technical":True,"category":"technology","topics":classify(title,desc)}})
     return result
 
 def translate_bundle(text,source,targets):
