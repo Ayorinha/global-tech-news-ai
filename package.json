@@ -1,7 +1,6 @@
 {
   "name": "ayorai-ai-shield-lab",
   "private": true,
-  "type": "module",
   "scripts": {
     "security:test": "node tests/security-shield.test.mjs",
     "research:test": "node research/ayorai-ai-shield-multios/tests/runtime.test.mjs",
