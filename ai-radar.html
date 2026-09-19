@@ -36,10 +36,9 @@
 </section>
 
 <section class="status-grid">
-  <article><span>SHIELD STATUS</span><b id="status">READY</b><small>AYORAI AI Shield</small></article>
-  <article><span>TEST CASES</span><b id="tested">00</b><small>Executed by benchmark</small></article>
-  <article><span>BLOCKED</span><b id="blocked">00</b><small>Observed decision</small></article>
-  <article><span>BYPASSED</span><b id="bypassed">00</b><small>Adversarial cases allowed</small></article>
+  <article><span>DETECTION</span><b id="detected">—</b><small>Threats identified</small></article>
+  <article><span>BLOCKED</span><b id="blocked">00</b><small>Threats contained</small></article>
+  <article><span>INCIDENTS</span><b id="bypassed">00</b><small>Detected but not blocked</small></article>
   <article><span>FALSE POSITIVE</span><b id="falsePositive">00</b><small>Benign cases blocked</small></article>
 </section>
 
@@ -62,7 +61,7 @@
   <div id="liveTestLog" class="live-test-log">Waiting for a controlled execution.</div>
 </section>
 
-<section class="reference-section">
+<details class="advanced-panel"><summary><span>SECURITY EVIDENCE</span><b>Coverage, references &amp; published run</b><i>+</i></summary><section class="reference-section">
 <div class="section-head"><div><span class="eyebrow">REFERENCE-ALIGNED EVALUATION</span><h2>AYORAI Reference Cybersecurity Benchmark</h2><p>Casos sintéticos controlados · referências oficiais · evidência pública.</p></div><div class="reference-badge">AUTOMATED · OFFICIAL REFERENCES · SYNTHETIC CASES</div></div>
 <div class="reference-kpis"><article><span>CASES</span><b id="refTests">—</b><small id="refTotals">carregando execução publicada</small></article><article><span>DETECTION</span><b id="refDetection">—</b><small>observada nesta execução</small></article><article><span>BYPASS</span><b id="refBypass">—</b><small>adversarial permitido</small></article><article><span>FALSE POSITIVE</span><b id="refFP">—</b><small>benigno bloqueado</small></article></div>
 <div class="coverage-grid"><article><h3>OWASP GenAI LLM Top 10 2026</h3><p>Riscos LLM01–LLM10 (2026) avaliados por casos sintéticos seguros; a referência é oficial, o benchmark é AYORAI.</p><b id="refOwasp">—</b></article><article><h3>MITRE ATLAS <small id="intelAtlasVersion">LATEST</small></h3><p>Versão mais recente sincronizada automaticamente; técnicas, agentes, tools e exfiltração.</p><b id="refAtlas">—</b></article><article><h3>NIST AI 100-2e2025</h3><p>Poisoning, evasion e privacy attack categories.</p><b id="refNist">—</b></article><article><h3>OASB</h3><p>Referência de cobertura para segurança de agentes; cenários não são copiados.</p><b id="refOasb">Technique coverage</b></article></div>
@@ -104,6 +103,8 @@
 </section>
 
 
+
+</details>
 
 <section class="defense-section"><div class="section-head"><div><span class="eyebrow">DEFENSE LAYERS</span><h2>Shield architecture</h2></div></div><div class="pipeline"><div><span>01</span><b>INPUT</b></div><i>→</i><div><span>02</span><b>CONTEXT</b></div><i>→</i><div><span>03</span><b>POLICY</b></div><i>→</i><div><span>04</span><b>TOOLS</b></div><i>→</i><div><span>05</span><b>AUDIT</b></div></div></section>
 
