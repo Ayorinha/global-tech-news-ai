@@ -1,143 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="AYORAI AI Radar Security Lab — laboratório público de simulação e defesa de ataques contra sistemas agentic AI."/>
-<meta name="theme-color" content="#06111d"/>
-<title>AYORAI AI Radar Security Lab</title>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="ai-radar.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#06111d">
+<meta name="description" content="AYORAI AI Radar Security Lab — defesa, detecção e relatório histórico de testes sintéticos contra sistemas de IA.">
+<title>AYORAI · AI Radar Security Lab</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ai-radar.css">
 </head>
 <body class="radar-page">
 <header class="radar-topbar">
-  <a class="radar-brand" href="index.html"><span>AYORAI</span><small>AI SECURITY LAB</small></a>
-  <nav class="radar-desktop-nav" aria-label="Navegação"><a href="index.html">← Site principal</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">AI Radar Security Lab</a></nav>
-  <div class="radar-status"><i></i><span>LAB ONLINE · SIMULAÇÃO</span></div>
-  <button class="radar-menu-btn" id="radarMenuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
-  <nav class="radar-mobile-menu" id="radarMobileMenu" aria-label="Navegação mobile"><a href="index.html">← Site principal</a><a href="ai-tools.html">✦ AI Index</a><a class="active" href="ai-radar.html">🛡️ Security Lab</a></nav>
+  <a class="radar-brand" href="index.html"><strong>AYORAI</strong><span>AI SECURITY LAB</span></a>
+  <nav><a href="index.html">Notícias</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">Security Lab</a><a href="security-report.html">Relatório</a></nav>
+  <div class="top-status"><i></i>DEFENSE ONLINE</div>
+  <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
+  <div id="mobileMenu" class="mobile-menu"><a href="index.html">Notícias</a><a href="ai-tools.html">AI Index</a><a href="security-report.html">🛡️ Relatório histórico</a></div>
 </header>
 
-<main class="radar-shell">
-<section class="lab-hero">
+<main class="shell">
+<section class="hero">
   <div class="hero-copy">
-    <span class="eyebrow">AYORAI · AGENT DEFENSE · ADVERSARIAL TESTING</span>
+    <span class="eyebrow">AYORAI · APPLIED AI · AI SAFETY</span>
     <h1>AI Radar<br><em>Security Lab</em></h1>
-    <p>Um laboratório visual para simular ameaças contra agentes de IA, observar a superfície de ataque e validar camadas defensivas em um ambiente controlado.</p>
-    <div class="hero-pills"><span>Prompt Injection</span><span>RAG Poisoning</span><span>Tool Abuse</span><span>Data Exfiltration</span><span>Agent Hijacking</span></div>
+    <p>Um painel limpo para testar, detectar, bloquear e registrar ameaças sintéticas contra arquiteturas de IA — RAG, MCP, agentes, tool-calling e fluxos multi-agent.</p>
+    <div class="hero-actions">
+      <button id="runAll" class="primary">▶ EXECUTAR DEFESA</button>
+      <a class="secondary" href="security-report.html">▣ VER RELATÓRIO HISTÓRICO</a>
+    </div>
+    <div class="trust-line"><span>●</span> Ambiente fechado · sem malware · sem exploit executável · sem alvo externo</div>
   </div>
-  <div class="threat-command-center" aria-label="Radar visual de ameaças de IA">
-    <div class="planet-stage">
-      <div class="planet-glow"></div><div class="planet"></div><div class="planet-grid"></div>
-      <div class="shield-dome"><span></span></div>
-      <div class="radar-orbit orbit-a"></div><div class="radar-orbit orbit-b"></div>
-      <div class="radar-sweep"></div><div class="radar-origin"></div>
-      <button class="threat-dot dot-a" data-threat="Prompt Injection"></button>
-      <button class="threat-dot dot-b" data-threat="RAG Poisoning"></button>
-      <button class="threat-dot dot-c" data-threat="Tool Abuse"></button>
-      <button class="threat-dot dot-d" data-threat="Agent Hijacking"></button>
-      <div class="threat-beam beam-a"></div><div class="threat-beam beam-b"></div>
-      <div class="radar-readout"><span>CYBER SHIELD AI · THREAT SCAN</span><strong id="radarThreat">Scanning...</strong><small id="radarThreatState">isolated simulation · perimeter active</small></div>
-      <div class="shield-logo" aria-label="Cyber Shield AI"><span>✦</span><b>CYBER<br>SHIELD AI</b></div>
-    </div>
-    <div class="hud-side hud-left">
-      <div class="hud-card"><small>THREAT DETECTION</small><strong>98.7%</strong><i><span style="width:98.7%"></span></i></div>
-      <div class="hud-card"><small>SHIELD INTEGRITY</small><strong>99.2%</strong><i><span style="width:99.2%"></span></i></div>
-      <div class="hud-card"><small>AGENT RISK</small><strong class="warn">LOW</strong><em>● MONITORED</em></div>
-    </div>
-    <div class="hud-side hud-right">
-      <div class="hud-card"><small>RAG SECURITY</small><strong>97.4%</strong><i><span style="width:97.4%"></span></i></div>
-      <div class="hud-card"><small>MCP SECURITY</small><strong>99.0%</strong><i><span style="width:99%"></span></i></div>
-      <div class="hud-card"><small>TOOL SECURITY</small><strong>96.8%</strong><i><span style="width:96.8%"></span></i></div>
-    </div>
+  <div class="radar-visual">
+    <div class="grid-ring r1"></div><div class="grid-ring r2"></div><div class="grid-ring r3"></div>
+    <div class="sweep"></div><div class="core"><span>AI</span><small>DEFENSE</small></div>
+    <button class="signal s1" data-id="pi">01</button><button class="signal s2" data-id="rag">02</button><button class="signal s3" data-id="tool">03</button><button class="signal s4" data-id="hijack">04</button>
+    <div class="radar-label">THREAT RADAR<br><b id="radarState">READY</b></div>
   </div>
 </section>
 
-<section class="lab-toolbar"><div class="lab-telemetry-strip"><span>GLOBAL DEFENSE GRID</span><b>24 / 7</b><span>SIMULATED THREATS</span><b id="threatCount">04</b><span>PERIMETER</span><b>ACTIVE</b></div>
-  <div><div class="eyebrow">CONTROLLED TEST ENVIRONMENT</div><h2>Attack Simulation Console</h2></div>
-  <span class="safe-badge">● DEFENSIVE SANDBOX</span>
+<section class="status-grid">
+  <article><span>DEFENSE STATUS</span><b id="status">READY</b><small>Defense engine</small></article>
+  <article><span>THREATS TESTED</span><b id="tested">00</b><small>Synthetic cases</small></article>
+  <article><span>BLOCKED</span><b id="blocked">00</b><small>Prevented by policy</small></article>
+  <article><span>DETECTED</span><b id="detected">00</b><small>Flagged or blocked</small></article>
+  <article><span>BENIGN PASS</span><b id="benign">00</b><small>False-positive guard</small></article>
 </section>
 
-<section class="benchmark-overview">
-  <div class="bench-card bench-live"><span class="bench-kicker">THREAT INTELLIGENCE</span><strong id="feedStatus">CONNECTING</strong><small id="feedUpdated">Public vulnerability signals · no malware downloaded</small></div>
-  <div class="bench-card"><span class="bench-kicker">BENCHMARK RUN</span><strong id="benchmarkStatus">IDLE</strong><small>Repeatable adversarial evaluation</small></div>
-  <div class="bench-card"><span class="bench-kicker">DEFENSE COVERAGE</span><strong id="coverageMetric">—</strong><small>Blocked / evaluated scenarios</small></div>
-  <div class="bench-card"><span class="bench-kicker">FALSE POSITIVE GUARD</span><strong>ON</strong><small>Benign controls included</small></div>
-</section>
-<section class="benchmark-grid">
-  <div class="panel feed-panel">
-    <div class="panel-head"><div><span class="eyebrow">LIVE CTI SIGNALS</span><h2>Threat Intelligence Queue</h2></div><button id="refreshFeed" class="mini-btn">↻ ATUALIZAR</button></div>
-    <p class="panel-intro">O radar consulta sinais públicos de vulnerabilidades conhecidas e transforma apenas metadados em casos de teste sintéticos. Nenhum malware, exploit executável ou alvo real é baixado ou executado.</p>
-    <div id="feedList" class="feed-list"><div class="telemetry-empty">Carregando sinais públicos…</div></div>
-  </div>
-  <div class="panel benchmark-panel">
-    <div class="panel-head"><div><span class="eyebrow">DEFENSE BENCHMARK</span><h2>Attack → Defend → Measure</h2></div><span id="benchRunState" class="panel-note">READY</span></div>
-    <div class="score-orb"><div><strong id="benchScore">—</strong><span>DEFENSE<br>COVERAGE</span></div></div>
-    <div class="score-grid">
-      <div><b id="evalCount">00</b><span>Evaluados</span></div><div><b id="blockCount">00</b><span>Bloqueados</span></div><div><b id="flagCount">00</b><span>Marcados</span></div><div><b id="fpCount">00</b><span>Benignos OK</span></div>
-    </div>
-    <button id="runBenchmark" class="run-btn">▶ RODAR BENCHMARK COMPLETO</button>
-    <div id="benchmarkLog" class="benchmark-log">Aguardando fila de cenários.</div>
-  </div>
-</section>
-<section class="panel benchmark-method">
-  <div><span class="eyebrow">BENCHMARK METHODOLOGY</span><h2>Threat-informed, repeatable, closed-loop</h2></div>
-  <div class="method-cards">
-    <article><b>01 · INGEST</b><span>CTI público → CVE/KEV e TTPs como sinais de contexto.</span></article>
-    <article><b>02 · SYNTHESIZE</b><span>Sinais viram payloads sintéticos e seguros para o agente.</span></article>
-    <article><b>03 · DEFEND</b><span>Input → Context → Policy → Tool → Output/Audit.</span></article>
-    <article><b>04 · SCORE</b><span>Block rate, detection rate, benign pass e regressões.</span></article>
-  </div>
-  <p class="source-note">Referências de desenho: OWASP AI Agent Security, Microsoft PyRIT, NVIDIA garak/NeMo, MITRE ATT&amp;CK/ATLAS e STIX/TAXII. O benchmark usa inteligência de ameaça para contextualizar testes, não para executar malware.</p>
-</section><section class="console-grid">
-  <div class="panel scenario-panel">
-    <div class="panel-head"><div><span class="eyebrow">ATTACK SCENARIOS</span><h2>Escolha um cenário</h2></div><span class="panel-note">payloads sintéticos</span></div>
-    <div id="scenarioList" class="scenario-list"></div>
-    <button id="runTest" class="run-btn">▶ EXECUTAR SIMULAÇÃO</button>
-  </div>
-  <div class="panel telemetry-panel">
-    <div class="panel-head"><div><span class="eyebrow">LIVE TELEMETRY</span><h2>Defensive Pipeline</h2></div><span id="testStatus" class="panel-note">READY</span></div>
-    <div id="telemetry" class="telemetry"><div class="telemetry-empty">Selecione um cenário e execute o teste.</div></div>
+<section class="section-head"><div><span class="eyebrow">ATTACKER PROFILES</span><h2>Quem o laboratório está simulando</h2><p>O laboratório não identifica uma IA real “atacando”. Cada perfil é um <strong>agente adversarial sintético</strong> que representa uma técnica.</p></div></section>
+<section id="cases" class="case-grid"></section>
+
+<section class="defense-section">
+  <div class="section-head"><div><span class="eyebrow">DEFENSE PIPELINE</span><h2>O que o seu antivírus de IA conseguiu segurar</h2></div></div>
+  <div class="pipeline">
+    <div><span>01</span><b>INPUT GUARD</b><small>Entrada suspeita</small></div><i>→</i>
+    <div><span>02</span><b>CONTEXT BOUNDARY</b><small>Isola conteúdo externo</small></div><i>→</i>
+    <div><span>03</span><b>POLICY ENGINE</b><small>Autoriza / bloqueia</small></div><i>→</i>
+    <div><span>04</span><b>TOOL GUARD</b><small>Controla ferramentas</small></div><i>→</i>
+    <div><span>05</span><b>AUDIT</b><small>Registra evidência</small></div>
   </div>
 </section>
 
-<section class="metric-row" id="metrics">
-  <div class="metric"><strong id="blockedMetric">00</strong><span>Simulações bloqueadas</span></div>
-  <div class="metric"><strong id="detectedMetric">00</strong><span>Ameaças detectadas</span></div>
-  <div class="metric"><strong>05</strong><span>Camadas defensivas</span></div>
-  <div class="metric"><strong>100%</strong><span>Dados sintéticos</span></div>
+<section class="report-callout">
+  <div><div class="eyebrow">PERMANENT RECORD</div><h2>Relatório histórico do laboratório</h2><p>O resultado consolidado fica em uma página versionada no GitHub Pages. Ela registra data, escopo, famílias de ameaça, arquitetura testada, controles defensivos e limitações.</p></div>
+  <a href="security-report.html">ABRIR RELATÓRIO ↗</a>
 </section>
 
-<section class="dashboard-grid">
-  <div class="panel">
-    <div class="panel-head"><div><span class="eyebrow">DEFENSE STACK</span><h2>Camadas de proteção</h2></div><span class="panel-note">zero trust</span></div>
-    <div class="defense-stack">
-      <div><b>01</b><span><strong>Input Guard</strong><small>Classificação e sanitização de entrada</small></span><i>READY</i></div>
-      <div><b>02</b><span><strong>Context Boundary</strong><small>Separação entre instrução e conteúdo não confiável</small></span><i>READY</i></div>
-      <div><b>03</b><span><strong>Policy Engine</strong><small>Regras de autorização e least privilege</small></span><i>READY</i></div>
-      <div><b>04</b><span><strong>Tool Guard</strong><small>Validação de chamadas de ferramentas</small></span><i>READY</i></div>
-      <div><b>05</b><span><strong>Output & Audit</strong><small>Validação de saída, egress control e trilha de auditoria</small></span><i>READY</i></div>
-    </div>
-  </div>
-  <aside class="panel threat-panel">
-    <div class="panel-head"><div><span class="eyebrow">THREAT MAP</span><h2>Superfície monitorada</h2></div></div>
-    <div class="surface-map">
-      <span class="surface node-user">USER</span><span class="surface node-rag">RAG</span><span class="surface node-mcp">MCP</span><span class="surface node-agent">AGENT</span><span class="surface node-tool">TOOLS</span><span class="surface node-data">DATA</span>
-      <div class="surface-core">AI<br><small>TRUST BOUNDARY</small></div>
-    </div>
-  </aside>
-</section>
-
-<section class="panel methodology">
-  <div><span class="eyebrow">LAB PRINCIPLES</span><h2>Como este laboratório funciona</h2><p>O Security Lab usa cenários e respostas simuladas, sem executar comandos contra sistemas externos. O objetivo é tornar observável o ciclo ataque → detecção → política → bloqueio → auditoria. A estrutura segue práticas de defesa para agentes, como validação de entrada, least privilege, autorização explícita e testes adversariais. <a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/" target="_blank" rel="noopener">Referência OWASP ↗</a></p></div>
-  <div class="pipeline"><span>Threat</span><b>→</b><span>Detection</span><b>→</b><span>Policy</span><b>→</b><span>Defense</span><b>→</b><strong>AUDIT</strong></div>
+<section class="method">
+  <span class="eyebrow">SAFE BENCHMARK DESIGN</span>
+  <h2>Threat intelligence → teste sintético → defesa → evidência</h2>
+  <div class="method-grid"><div><b>CTI</b><span>CISA KEV e referências públicas fornecem contexto.</span></div><div><b>SYNTHETIC</b><span>O sinal vira um caso seguro, sem executar malware.</span></div><div><b>DEFENSE</b><span>RAG, MCP, agent, tool e output são tratados como superfícies.</span></div><div><b>EVIDENCE</b><span>Resultado, categoria e camada defensiva são registrados.</span></div></div>
 </section>
 </main>
-<footer class="radar-footer"><span>AYORAI AI Radar Security Lab · Defensive AI Engineering</span><span>Public-safe · Synthetic scenarios · No external actions</span></footer>
-
+<footer>AYORAI · AI Radar Security Lab · Defensive AI Engineering · Public-safe benchmark</footer>
 <script src="ai-radar.js"></script>
 <script>
-(()=>{const b=document.getElementById('radarMenuBtn'),m=document.getElementById('radarMobileMenu');if(!b||!m)return;b.onclick=()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'✕':'☰'};m.querySelectorAll('a').forEach(a=>a.onclick=()=>{m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false')})})();
+(()=>{const b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu');b.onclick=()=>{m.classList.toggle('open');b.textContent=m.classList.contains('open')?'✕':'☰'}})();
 </script>
 </body>
 </html>
