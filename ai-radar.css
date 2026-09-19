@@ -114,3 +114,14 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 @media(max-width:1000px){.processing-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.processing-grid{grid-template-columns:1fr 1fr}.processing-grid b{font-size:13px}.processing-source{line-height:1.6}}
 @media(max-width:420px){.processing-grid{grid-template-columns:1fr}}
+
+/* CLEAN LAB DASHBOARD */
+.advanced-panel{margin-top:34px;border-top:1px solid var(--line);padding-top:2px}
+.advanced-panel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:16px 2px;color:var(--muted);font-size:9px;letter-spacing:.12em}
+.advanced-panel summary::-webkit-details-marker{display:none}
+.advanced-panel summary span{color:var(--cyan);font-weight:700}
+.advanced-panel summary b{font-weight:300;color:var(--text);letter-spacing:0}
+.advanced-panel summary i{margin-left:auto;font-style:normal;font-size:16px;color:var(--cyan);transition:transform .2s}
+.advanced-panel[open] summary i{transform:rotate(45deg)}
+.advanced-panel>.reference-section,.advanced-panel>.processing-section,.advanced-panel>.intelligence-section{margin-top:18px}
+@media(max-width:700px){.advanced-panel summary{gap:8px;flex-wrap:wrap}.advanced-panel summary b{flex:1}}
