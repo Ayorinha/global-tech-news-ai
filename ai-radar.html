@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ayorai AI Radar — monitoramento automatizado de novas IAs, modelos, agentes e tendências do ecossistema de inteligência artificial." />
-  <meta name="theme-color" content="#081522" />
-  <title>Ayorai AI Radar · AI Intelligence</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="ai-radar.css" />
-<style>.radar-menu-btn,.radar-mobile-menu{display:none}@media(max-width:600px){.radar-topbar{height:60px;padding:0 12px;gap:8px}.radar-desktop-nav{display:none!important}.radar-menu-btn{display:grid;place-items:center;margin-left:auto;width:44px;height:44px;border:1px solid var(--radar-line);border-radius:10px;background:rgba(255,255,255,.03);color:#fff;font-size:19px}.radar-status{order:2}.radar-menu-btn{order:3}.radar-mobile-menu{position:fixed;top:70px;left:10px;right:10px;z-index:50;padding:10px;background:rgba(8,21,34,.98);border:1px solid var(--radar-line);border-radius:14px;box-shadow:0 18px 45px rgba(0,0,0,.4)}.radar-mobile-menu.open{display:grid;grid-template-columns:1fr;gap:8px}.radar-mobile-menu a{min-height:50px;display:flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--radar-line);border-radius:10px;color:var(--radar-text);font-size:.8rem;font-weight:800}.radar-mobile-menu a.active,.radar-mobile-menu a:hover{border-color:var(--radar-cyan);background:rgba(0,212,255,.1)}.radar-shell{padding-left:12px;padding-right:12px}.radar-hero{padding:1.35rem}.ai-ecosystem-visual{width:92vw;height:92vw;min-width:0;min-height:0}.ai-node{padding:.62rem .78rem;font-size:.58rem}.search-wrap{min-width:0;width:100%}.category-filters{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.category-filters button{flex:0 0 auto;min-height:44px}.metric{min-height:82px;padding:.8rem}.panel{padding:.95rem}.signal{min-height:60px;padding:.7rem}.pipeline b{display:none}}</style></head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="AYORAI AI Radar Security Lab — laboratório público de simulação e defesa de ataques contra sistemas agentic AI."/>
+<meta name="theme-color" content="#06111d"/>
+<title>AYORAI AI Radar Security Lab</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="ai-radar.css"/>
+</head>
 <body class="radar-page">
-  <header class="radar-topbar">
-    <a class="radar-brand" href="index.html"><span>AYORAI</span><small>AI INTELLIGENCE</small></a>
-    <nav class="radar-desktop-nav"><a href="index.html">← Site principal</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">AI Radar</a></nav><button class="radar-menu-btn" id="radarMenuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    <div class="radar-status"><i></i><span id="updatedLabel">Atualizando...</span></div><nav class="radar-mobile-menu" id="radarMobileMenu" aria-label="Navegação mobile"><a href="index.html">← Site principal</a><a href="ai-tools.html">✦ AI Index</a><a class="active" href="ai-radar.html">◉ AI Radar</a></nav>
-  </header>
+<header class="radar-topbar">
+  <a class="radar-brand" href="index.html"><span>AYORAI</span><small>AI SECURITY LAB</small></a>
+  <nav class="radar-desktop-nav" aria-label="Navegação"><a href="index.html">← Site principal</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">AI Radar Security Lab</a></nav>
+  <div class="radar-status"><i></i><span>LAB ONLINE · SIMULAÇÃO</span></div>
+  <button class="radar-menu-btn" id="radarMenuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="radar-mobile-menu" id="radarMobileMenu" aria-label="Navegação mobile"><a href="index.html">← Site principal</a><a href="ai-tools.html">✦ AI Index</a><a class="active" href="ai-radar.html">🛡️ Security Lab</a></nav>
+</header>
 
-  <main class="radar-shell">
-    <section class="radar-hero radar-ecosystem">
-      <div class="hero-copy">
-        <span class="eyebrow">AYORAI · DISCOVERY ENGINE</span>
-        <h1>AI Radar</h1>
-        <p>Um mapa vivo do ecossistema de IA: modelos, agentes, ferramentas, plataformas e pesquisas descobertos automaticamente.</p>
-        <div class="hero-pills"><span>AI Models</span><span>AI Agents</span><span>Developer AI</span><span>AI Safety</span><span>Research</span></div>
-      </div>
-      <div class="ai-ecosystem-visual" aria-label="Visualização animada do ecossistema de inteligência artificial">
-        <div class="ecosystem-grid"></div><div class="radar-sweep"></div><div class="ecosystem-orbit orbit-a"></div><div class="ecosystem-orbit orbit-b"></div><div class="ecosystem-core"><span>AI</span><small>RADAR</small></div>
-        <button class="ai-node node-1" type="button" data-ai-name="LLMs" data-ai-desc="Modelos de linguagem e raciocínio generativo." style="--x:16%;--y:22%;">LLM</button>
-        <button class="ai-node node-2" type="button" data-ai-name="AI Agents" data-ai-desc="Sistemas capazes de planejar, executar tarefas e usar ferramentas." style="--x:72%;--y:16%;">AGENTS</button>
-        <button class="ai-node node-3" type="button" data-ai-name="Developer AI" data-ai-desc="IA aplicada a código, engenharia de software e produtividade." style="--x:82%;--y:67%;">DEV AI</button>
-        <button class="ai-node node-4" type="button" data-ai-name="AI Safety" data-ai-desc="Pesquisa e ferramentas para segurança, avaliação e controle de IA." style="--x:18%;--y:72%;">SAFETY</button>
-        <button class="ai-node node-5" type="button" data-ai-name="Research" data-ai-desc="Novos papers, benchmarks, métodos e descobertas em IA." style="--x:48%;--y:10%;">RESEARCH</button>
-        <div class="ai-node-detail" id="aiNodeDetail"><span>SELECT A SIGNAL</span><strong>Explore uma categoria</strong><small>Toque nos sinais para entender o que cada área representa.</small></div>
-      </div>
-    </section>
-    <section class="radar-search"><div class="search-wrap"><span>⌕</span><input id="radarSearch" type="search" placeholder="Pesquisar IA, modelo, agente, empresa ou tendência..." autocomplete="off" /></div><div id="categoryFilters" class="category-filters"></div></section>
-    <section class="metric-row" id="metrics"></section>
-    <section class="dashboard-grid">
-      <div class="panel panel-main"><div class="panel-head"><div><span class="eyebrow">NEW SIGNALS</span><h2>IA em movimento</h2></div><span class="panel-note">descoberta automática</span></div><div id="signals" class="signal-list"><div class="loading">Carregando sinais...</div></div></div>
-      <aside class="panel trend-panel"><div class="panel-head"><div><span class="eyebrow">MOMENTUM</span><h2>Trending AI</h2></div><span class="panel-note">24h</span></div><div id="trends" class="trend-list"><div class="loading">Calculando tendências...</div></div></aside>
-    </section>
-    <section class="panel category-panel"><div class="panel-head"><div><span class="eyebrow">AI LANDSCAPE</span><h2>Mapa de categorias</h2></div><span class="panel-note">sinais monitorados</span></div><div id="categoryMap" class="category-map"></div></section>
-    <section class="panel methodology"><div class="method-copy"><span class="eyebrow">HOW IT WORKS</span><h2>Como o Radar se alimenta</h2><p>O sistema coleta fontes públicas, normaliza títulos, remove duplicidades, identifica categorias e calcula sinais de momentum por recência e recorrência. O painel é atualizado automaticamente pelo GitHub Actions.</p></div><div class="pipeline"><span>RSS / News</span><b>→</b><span>Discovery</span><b>→</b><span>Classification</span><b>→</b><span>Trend Score</span><b>→</b><strong>AI RADAR</strong></div></section>
-  </main>
-  <footer class="radar-footer"><span>Ayorai AI Radar · Automated AI discovery</span><span>Dados públicos · atualização automática</span></footer>
-  <script src="i18n.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const detail = document.getElementById('aiNodeDetail');
-      document.querySelectorAll('.ai-node').forEach(node => node.addEventListener('click', () => {
-        document.querySelectorAll('.ai-node').forEach(n => n.classList.remove('selected'));
-        node.classList.add('selected');
-        detail.innerHTML = `<span>AI SIGNAL</span><strong>${node.dataset.aiName}</strong><small>${node.dataset.aiDesc}</small>`;
-      }));
-    });
-  </script>
-  <script src="ai-radar.js"></script>
-<script>(function(){const b=document.getElementById("radarMenuBtn"),m=document.getElementById("radarMobileMenu");if(!b||!m)return;b.addEventListener("click",()=>{const o=m.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰"});m.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));document.addEventListener("keydown",e=>{if(e.key==="Escape"){m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}})})();</script></body>
+<main class="radar-shell">
+<section class="lab-hero">
+  <div class="hero-copy">
+    <span class="eyebrow">AYORAI · AGENT DEFENSE · ADVERSARIAL TESTING</span>
+    <h1>AI Radar<br><em>Security Lab</em></h1>
+    <p>Um laboratório visual para simular ameaças contra agentes de IA, observar a superfície de ataque e validar camadas defensivas em um ambiente controlado.</p>
+    <div class="hero-pills"><span>Prompt Injection</span><span>RAG Poisoning</span><span>Tool Abuse</span><span>Data Exfiltration</span><span>Agent Hijacking</span></div>
+  </div>
+  <div class="threat-command-center" aria-label="Radar visual de ameaças de IA">
+    <div class="planet-stage">
+      <div class="planet-glow"></div><div class="planet"></div><div class="planet-grid"></div>
+      <div class="shield-dome"><span></span></div>
+      <div class="radar-orbit orbit-a"></div><div class="radar-orbit orbit-b"></div>
+      <div class="radar-sweep"></div><div class="radar-origin"></div>
+      <button class="threat-dot dot-a" data-threat="Prompt Injection"></button>
+      <button class="threat-dot dot-b" data-threat="RAG Poisoning"></button>
+      <button class="threat-dot dot-c" data-threat="Tool Abuse"></button>
+      <button class="threat-dot dot-d" data-threat="Agent Hijacking"></button>
+      <div class="threat-beam beam-a"></div><div class="threat-beam beam-b"></div>
+      <div class="radar-readout"><span>CYBER SHIELD AI · THREAT SCAN</span><strong id="radarThreat">Scanning...</strong><small id="radarThreatState">isolated simulation · perimeter active</small></div>
+      <div class="shield-logo" aria-label="Cyber Shield AI"><span>✦</span><b>CYBER<br>SHIELD AI</b></div>
+    </div>
+    <div class="hud-side hud-left">
+      <div class="hud-card"><small>THREAT DETECTION</small><strong>98.7%</strong><i><span style="width:98.7%"></span></i></div>
+      <div class="hud-card"><small>SHIELD INTEGRITY</small><strong>99.2%</strong><i><span style="width:99.2%"></span></i></div>
+      <div class="hud-card"><small>AGENT RISK</small><strong class="warn">LOW</strong><em>● MONITORED</em></div>
+    </div>
+    <div class="hud-side hud-right">
+      <div class="hud-card"><small>RAG SECURITY</small><strong>97.4%</strong><i><span style="width:97.4%"></span></i></div>
+      <div class="hud-card"><small>MCP SECURITY</small><strong>99.0%</strong><i><span style="width:99%"></span></i></div>
+      <div class="hud-card"><small>TOOL SECURITY</small><strong>96.8%</strong><i><span style="width:96.8%"></span></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="lab-toolbar"><div class="lab-telemetry-strip"><span>GLOBAL DEFENSE GRID</span><b>24 / 7</b><span>SIMULATED THREATS</span><b id="threatCount">04</b><span>PERIMETER</span><b>ACTIVE</b></div>
+  <div><div class="eyebrow">CONTROLLED TEST ENVIRONMENT</div><h2>Attack Simulation Console</h2></div>
+  <span class="safe-badge">● DEFENSIVE SANDBOX</span>
+</section>
+
+<section class="console-grid">
+  <div class="panel scenario-panel">
+    <div class="panel-head"><div><span class="eyebrow">ATTACK SCENARIOS</span><h2>Escolha um cenário</h2></div><span class="panel-note">payloads sintéticos</span></div>
+    <div id="scenarioList" class="scenario-list"></div>
+    <button id="runTest" class="run-btn">▶ EXECUTAR SIMULAÇÃO</button>
+  </div>
+  <div class="panel telemetry-panel">
+    <div class="panel-head"><div><span class="eyebrow">LIVE TELEMETRY</span><h2>Defensive Pipeline</h2></div><span id="testStatus" class="panel-note">READY</span></div>
+    <div id="telemetry" class="telemetry"><div class="telemetry-empty">Selecione um cenário e execute o teste.</div></div>
+  </div>
+</section>
+
+<section class="metric-row" id="metrics">
+  <div class="metric"><strong id="blockedMetric">00</strong><span>Simulações bloqueadas</span></div>
+  <div class="metric"><strong id="detectedMetric">00</strong><span>Ameaças detectadas</span></div>
+  <div class="metric"><strong>05</strong><span>Camadas defensivas</span></div>
+  <div class="metric"><strong>100%</strong><span>Dados sintéticos</span></div>
+</section>
+
+<section class="dashboard-grid">
+  <div class="panel">
+    <div class="panel-head"><div><span class="eyebrow">DEFENSE STACK</span><h2>Camadas de proteção</h2></div><span class="panel-note">zero trust</span></div>
+    <div class="defense-stack">
+      <div><b>01</b><span><strong>Input Guard</strong><small>Classificação e sanitização de entrada</small></span><i>READY</i></div>
+      <div><b>02</b><span><strong>Context Boundary</strong><small>Separação entre instrução e conteúdo não confiável</small></span><i>READY</i></div>
+      <div><b>03</b><span><strong>Policy Engine</strong><small>Regras de autorização e least privilege</small></span><i>READY</i></div>
+      <div><b>04</b><span><strong>Tool Guard</strong><small>Validação de chamadas de ferramentas</small></span><i>READY</i></div>
+      <div><b>05</b><span><strong>Output & Audit</strong><small>Validação de saída, egress control e trilha de auditoria</small></span><i>READY</i></div>
+    </div>
+  </div>
+  <aside class="panel threat-panel">
+    <div class="panel-head"><div><span class="eyebrow">THREAT MAP</span><h2>Superfície monitorada</h2></div></div>
+    <div class="surface-map">
+      <span class="surface node-user">USER</span><span class="surface node-rag">RAG</span><span class="surface node-mcp">MCP</span><span class="surface node-agent">AGENT</span><span class="surface node-tool">TOOLS</span><span class="surface node-data">DATA</span>
+      <div class="surface-core">AI<br><small>TRUST BOUNDARY</small></div>
+    </div>
+  </aside>
+</section>
+
+<section class="panel methodology">
+  <div><span class="eyebrow">LAB PRINCIPLES</span><h2>Como este laboratório funciona</h2><p>O Security Lab usa cenários e respostas simuladas, sem executar comandos contra sistemas externos. O objetivo é tornar observável o ciclo ataque → detecção → política → bloqueio → auditoria. A estrutura segue práticas de defesa para agentes, como validação de entrada, least privilege, autorização explícita e testes adversariais. <a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/" target="_blank" rel="noopener">Referência OWASP ↗</a></p></div>
+  <div class="pipeline"><span>Threat</span><b>→</b><span>Detection</span><b>→</b><span>Policy</span><b>→</b><span>Defense</span><b>→</b><strong>AUDIT</strong></div>
+</section>
+</main>
+<footer class="radar-footer"><span>AYORAI AI Radar Security Lab · Defensive AI Engineering</span><span>Public-safe · Synthetic scenarios · No external actions</span></footer>
+
+<script src="ai-radar.js"></script>
+<script>
+(()=>{const b=document.getElementById('radarMenuBtn'),m=document.getElementById('radarMobileMenu');if(!b||!m)return;b.onclick=()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'✕':'☰'};m.querySelectorAll('a').forEach(a=>a.onclick=()=>{m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false')})})();
+</script>
+</body>
 </html>
