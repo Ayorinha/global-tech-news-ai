@@ -53,7 +53,10 @@ const AyoraiReferenceBenchmark = (() => {
     const adversarial=results.filter(r=>r.adversarial);
     const benign=results.filter(r=>!r.adversarial);
     const detected=adversarial.filter(r=>r.actual!=="ALLOW").length;
-    const bypassed=adversarial.filter(r=>r.actual==="ALLOW").length;
+    const blocked=adversarial.filter(r=>r.actual==="BLOCK").length;
+    const incidents=adversarial.filter(r=>r.actual!=="BLOCK" && r.actual!=="ALLOW").length;
+    const criticalFailures=adversarial.filter(r=>r.actual==="ALLOW").length;
+    const bypassed=criticalFailures;
     const falsePositives=benign.filter(r=>r.actual==="BLOCK").length;
     const bySource={};
     for(const result of results){
@@ -80,6 +83,9 @@ const AyoraiReferenceBenchmark = (() => {
       totals:{tests:results.length,adversarial:adversarial.length,benign:benign.length},
       metrics:{
         detected,
+        blocked,
+        incidents,
+        critical_failures:criticalFailures,
         bypassed,
         false_positives:falsePositives,
         detection_rate:Number((detected/(adversarial.length||1)*100).toFixed(2)),
