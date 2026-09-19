@@ -84,7 +84,25 @@ def image_from(entry):
         if url and ("image" in item.get("type","") or re.search(r"\.(jpg|jpeg|png|webp|gif)(\?|$)",url,re.I)):return url
     html=clean(getattr(entry,"summary",""))
     m=re.search(r'<img[^>]+src=["\']([^"\']+)',html,re.I)
-    return m.group(1) if m else ""
+    if m:return m.group(1)
+    link=getattr(entry,"link","")
+    if not link:return ""
+    try:
+        response=requests.get(link,headers=HEADERS,timeout=12,allow_redirects=True)
+        if response.ok:
+            page=response.text[:500000]
+            patterns=[
+                r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']'
+            ]
+            for pattern in patterns:
+                m=re.search(pattern,page,re.I)
+                if m and m.group(1).strip():return m.group(1).strip()
+    except Exception as exc:
+        log.debug("image fallback failed for %s: %s",link,str(exc)[:80])
+    return ""
 
 def relevant(title,desc):
     value=f"{title} {desc}"
