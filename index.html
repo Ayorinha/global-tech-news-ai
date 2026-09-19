@@ -36,7 +36,9 @@
       .topbar{padding:0 .6rem;height:58px}.topbar-logo{font-size:1.05rem}.search-box{max-width:42px;padding:.42rem .55rem;min-width:38px}.search-box #searchInput{display:none}
       .topbar-left{gap:.4rem}.sidebar-toggle{padding:.55rem}.mobile-nav-toggle,.mobile-github{height:40px;min-width:40px}.week-card{flex-direction:column}.week-img{width:100%;height:150px}.sort-sel{max-width:145px}.sec-header-row{gap:.5rem}.sec-date{font-size:.72rem}
     }
-  </style>
+  
+    @media(max-width:760px){.topbar-nav .tlink,.mobile-nav a,.sidebar-tabs .stab,.proj-link{min-height:48px}.mobile-nav a{font-size:.82rem}.mobile-nav{padding:12px}.mobile-nav-toggle:focus-visible,.mobile-github:focus-visible,.sidebar-toggle:focus-visible,.mobile-nav a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}.layout:not(.sidebar-closed) .sidebar{overflow-y:auto}.proj-links{display:grid;grid-template-columns:1fr 1fr;gap:8px}.proj-link{display:flex;align-items:center;justify-content:center;padding:.65rem .7rem;border-radius:9px;border:1px solid var(--border);background:var(--navy-3)}.sidebar-footer .github-link{min-height:46px;display:flex;align-items:center;justify-content:center}.mobile-nav-toggle{touch-action:manipulation}}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -60,7 +62,7 @@
 <footer class="footer"><span>Ayorai Tech · GitHub Actions</span><span>AI · Data · Technology</span></footer>
 <script src="i18n.js"></script><script src="script.js"></script><script src="references.js"></script>
 <script>
-(function(){const toggle=document.getElementById('mobileNavToggle'),nav=document.getElementById('mobileNav');if(!toggle||!nav)return;toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));})();
+(function(){const toggle=document.getElementById('mobileNavToggle'),nav=document.getElementById('mobileNav');if(!toggle||!nav)return;toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}});document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!nav.contains(e.target)&&e.target!==toggle){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}});})();
 </script>
 </body>
 </html>
