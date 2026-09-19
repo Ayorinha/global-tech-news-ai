@@ -11,18 +11,32 @@ async function fetchSource(source) {
     headers: { "User-Agent": "AYORAI-Reference-Intelligence/1.0" }
   });
   if (!response.ok) throw new Error(source.id + " HTTP " + response.status);
-  const buffer = Buffer.from(await response.arrayBuffer());
+  let buffer = Buffer.from(await response.arrayBuffer());
+  let text = buffer.toString("utf8").trim();
+  let resolvedUrl = source.url;
+
+  if (source.id === "mitre-atlas" && /^ATLAS-\d{4}\.\d+\.yaml$/.test(text)) {
+    resolvedUrl = source.url.replace(/ATLAS-latest\.yaml$/, text);
+    const resolved = await fetch(resolvedUrl, {
+      headers: { "User-Agent": "AYORAI-Reference-Intelligence/1.0" }
+    });
+    if (!resolved.ok) throw new Error(source.id + " resolved HTTP " + resolved.status);
+    buffer = Buffer.from(await resolved.arrayBuffer());
+    text = buffer.toString("utf8");
+  }
+
   const sha256 = crypto.createHash("sha256").update(buffer).digest("hex");
-  const text = buffer.toString("utf8");
   return {
     ...source,
+    resolved_url: resolvedUrl,
     fetched_at: new Date().toISOString(),
     status: "OK",
     http_status: response.status,
     bytes: buffer.length,
     sha256,
     latency_ms: Date.now() - started,
-    content_preview: text.replace(/\\s+/g, " ").slice(0, 500)
+    content_preview: text.replace(/\s+/g, " ").slice(0, 500),
+    raw_text: text
   };
 }
 
@@ -54,8 +68,7 @@ for (const source of sources) {
     const item = await fetchSource(source);
     fetched.push(item);
     if (source.id === "mitre-atlas") {
-      const raw = await (await fetch(source.url)).text();
-      atlasCandidates = extractAtlasCandidates(raw);
+      atlasCandidates = extractAtlasCandidates(item.raw_text);
     }
   } catch (error) {
     fetched.push({
@@ -72,7 +85,7 @@ const manifest = {
   generated_at: new Date().toISOString(),
   interval_minutes: 5,
   safety_boundary: "Reference data only; no malware, exploit payloads, credentials, or external targets are executed.",
-  sources: fetched.map(({content_preview, ...x}) => x),
+  sources: fetched.map(({content_preview, raw_text, ...x}) => x),
   atlas_candidates: atlasCandidates
 };
 
