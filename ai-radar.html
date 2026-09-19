@@ -60,6 +60,26 @@
 <div class="finding-panel"><div><span class="eyebrow">LEARNING LOOP</span><h3>O relatório não esconde falhas</h3><p>Bypass e falso positivo ficam destacados. Cada finding pode virar novo teste, regra defensiva, regressão automatizada e evidência versionada.</p></div><div id="refFindings" class="finding-list">Execute o benchmark de referência para gerar findings.</div></div>
 </section>
 
+<section class="intelligence-section">
+  <div class="section-head">
+    <div><span class="eyebrow">REFERENCE INTELLIGENCE · LIVE PROVENANCE</span><h2>Intelligence sincronizada e evidência publicada</h2>
+    <p>O laboratório consulta referências públicas, registra status, horário e SHA-256, gera casos sintéticos e publica somente mudanças materiais no estado defensivo.</p></div>
+    <div id="intelStatus" class="reference-badge">AGUARDANDO SINCRONIZAÇÃO</div>
+  </div>
+  <div class="intelligence-kpis">
+    <article><span>LAST PUBLISHED</span><b id="intelPublished">—</b><small>última mudança material publicada</small></article>
+    <article><span>SOURCES</span><b id="intelSources">—</b><small>fontes com proveniência</small></article>
+    <article><span>DYNAMIC CASES</span><b id="intelDynamic">—</b><small>casos sintéticos derivados</small></article>
+    <article><span>DETECTION</span><b id="intelDetection">—</b><small>resultado observado</small></article>
+    <article><span>BYPASS</span><b id="intelBypass">—</b><small>casos não bloqueados</small></article>
+    <article><span>FALSE POSITIVE</span><b id="intelFP">—</b><small>controles benignos bloqueados</small></article>
+  </div>
+  <div id="intelSourcesGrid" class="intelligence-sources"></div>
+  <div class="finding-panel"><div><span class="eyebrow">AUTHENTICITY & TRACEABILITY</span><h3>Proveniência verificável</h3><p>Cada fonte publicada mantém URL, HTTP status, timestamp e SHA-256. O relatório também registra run ID, metodologia, casos, decisões observadas, regras e métricas.</p></div>
+    <div id="intelFingerprint" class="finding-list">Aguardando o primeiro relatório publicado.</div>
+  </div>
+</section>
+
 <section class="audit-section">
   <div class="section-head"><div><span class="eyebrow">AUDIT & EVIDENCE</span><h2>Rastreabilidade da execução</h2><p>Cada rodada recebe um identificador, versão, timestamp, métricas e hash do manifesto quando o Web Crypto do navegador está disponível.</p></div></div>
   <div class="audit-grid">
