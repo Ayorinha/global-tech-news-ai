@@ -1,0 +1,47 @@
+{
+  "version": "2026.09-intelligence-v1",
+  "purpose": "Public-source reference intelligence for safe synthetic AI-security evaluation.",
+  "policy": "Sources are downloaded as reference intelligence. No malware, exploit payload, credential, or external target is executed.",
+  "sources": [
+    {
+      "id": "mitre-atlas",
+      "name": "MITRE ATLAS",
+      "type": "ai-security-taxonomy",
+      "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-navigator-data/main/dist/stix-atlas.json",
+      "publisher": "MITRE",
+      "authority": "AI adversarial tactics and techniques"
+    },
+    {
+      "id": "owasp-llm-top10",
+      "name": "OWASP Top 10 for LLM Applications 2025",
+      "type": "ai-application-security-reference",
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "publisher": "OWASP",
+      "authority": "LLM and GenAI application risks"
+    },
+    {
+      "id": "nist-aml",
+      "name": "NIST AI 100-2e2025",
+      "type": "ai-security-taxonomy",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "publisher": "NIST",
+      "authority": "Adversarial machine learning attacks and mitigations"
+    },
+    {
+      "id": "cisa-jcdc-ai",
+      "name": "CISA JCDC AI Cybersecurity Collaboration Playbook",
+      "type": "government-ai-cybersecurity-guidance",
+      "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook%20TLP%20CLEAR_1.14.25_508c%201.pdf",
+      "publisher": "CISA / JCDC",
+      "authority": "AI cybersecurity collaboration, incidents and defense"
+    },
+    {
+      "id": "uk-ncsc-ai",
+      "name": "NCSC Guidelines for Secure AI System Development",
+      "type": "government-ai-security-guidance",
+      "url": "https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development",
+      "publisher": "UK NCSC",
+      "authority": "Secure AI design, deployment and operation"
+    }
+  ]
+}

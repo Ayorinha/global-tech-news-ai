@@ -1,0 +1,94 @@
+name: AYORAI Reference Intelligence · 5 Minute Cycle
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "audit/reference-runs/**"
+      - "audit/reference-intelligence/**"
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ayorai-reference-intelligence
+  cancel-in-progress: true
+
+jobs:
+  intelligence-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync public reference intelligence
+        run: node scripts/sync_reference_intelligence.mjs
+
+      - name: Execute synthetic defensive benchmark
+        run: node scripts/run_reference_intelligence_benchmark.mjs
+
+      - name: Publish changed evidence to the repository
+        run: |
+          node scripts/publish_reference_intelligence.mjs
+          if [ -z "$(git status --porcelain -- audit/reference-runs/latest-public.json)" ]; then
+            echo "No material reference or defense change to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/reference-runs/latest-public.json
+          git commit -m "chore(security): publish reference intelligence evidence"
+          git push
+
+      - name: Upload intelligence evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ayorai-reference-intelligence
+          path: |
+            audit/reference-intelligence/*.json
+            audit/reference-runs/*intelligence*.json
+            audit/reference-runs/latest-public.json
+          retention-days: 30
+
+      - name: Publish job summary
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const f = 'audit/reference-runs/latest-intelligence.json';
+          const r = JSON.parse(fs.readFileSync(f, 'utf8'));
+          const lines = [
+            '## AYORAI Reference Intelligence',
+            '',
+            '- Intelligence run: ' + r.intelligence.run_id,
+            '- Checked at: ' + r.generated_at,
+            '- Sources: ' + r.intelligence.source_count,
+            '- Dynamic cases: ' + r.intelligence.dynamic_cases,
+            '- Total tests: ' + r.totals.tests,
+            '- Detection: ' + r.metrics.detection_rate + '%',
+            '- Bypassed: ' + r.metrics.bypassed,
+            '- False positives: ' + r.metrics.false_positives,
+            '',
+            '### Source provenance'
+          ];
+          for (const s of r.intelligence.sources) {
+            lines.push('- ' + s.name + ' · HTTP ' + s.status + ' · ' + (s.sha256 || 'no hash') + ' · ' + s.url);
+          }
+          lines.push(
+            '',
+            '### Authenticity boundary',
+            '- Public reference intelligence is fetched and hashed.',
+            '- Dynamic cases are synthetic and non-executable.',
+            '- No malware, exploit payload, credential, or external target is executed.',
+            '- Repository publication occurs only when the material reference/defense state changes.'
+          );
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
+          NODE

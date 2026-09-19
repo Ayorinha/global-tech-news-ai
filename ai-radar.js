@@ -92,3 +92,31 @@ const downloadAnyReport=()=>lastReport&&lastReport.references?downloadReferenceR
 if($("downloadReport"))$("downloadReport").onclick=downloadAnyReport;
 if($("downloadReport2"))$("downloadReport2").onclick=downloadAnyReport;
 if($("downloadReport2"))$("downloadReport2").addEventListener("contextmenu",()=>{});
+
+
+async function loadPublishedReferenceEvidence(){
+  try{
+    const response=await fetch("audit/reference-runs/latest-public.json?ts="+Date.now(),{cache:"no-store"});
+    if(!response.ok)throw new Error("HTTP "+response.status);
+    const r=await response.json(), p=r.publication||{}, intel=r.intelligence||{};
+    $("intelStatus").textContent="REFERENCE INTELLIGENCE ONLINE";
+    $("intelPublished").textContent=p.published_at?new Date(p.published_at).toLocaleString("pt-BR"):"—";
+    $("intelSources").textContent=intel.source_count??"—";
+    $("intelDynamic").textContent=intel.dynamic_cases??"—";
+    $("intelDetection").textContent=(r.metrics?.detection_rate??"—")+"%";
+    $("intelBypass").textContent=r.metrics?.bypassed??"—";
+    $("intelFP").textContent=r.metrics?.false_positives??"—";
+    $("intelFingerprint").innerHTML="<strong>Publication fingerprint</strong><br>"+escapeHtml(p.publication_fingerprint||"—")+"<br><br><strong>Source snapshot SHA-256</strong><br>"+escapeHtml(p.source_snapshot_sha256||"—")+"<br><br><strong>Intelligence run</strong><br>"+escapeHtml(intel.run_id||"—");
+    const grid=$("intelSourcesGrid");
+    grid.innerHTML=(intel.sources||[]).map(s=>{
+      const status=String(s.status||"UNKNOWN");
+      const ok=status==="200";
+      return '<article class="intelligence-source"><h3>'+escapeHtml(s.name||s.id)+'</h3><p class="source-ok">'+escapeHtml(status)+' · '+escapeHtml(s.fetched_at||"")+'</p><p>SHA-256: '+escapeHtml(s.sha256||"not available")+'</p><code>'+escapeHtml(s.url||"")+'</code></article>';
+    }).join("");
+  }catch(error){
+    $("intelStatus").textContent="REPORT NOT YET PUBLISHED";
+    $("intelFingerprint").textContent="O primeiro ciclo precisa publicar a evidência antes que o painel possa carregá-la.";
+    console.warn("AYORAI reference intelligence unavailable:",error);
+  }
+}
+loadPublishedReferenceEvidence();
