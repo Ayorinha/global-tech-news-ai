@@ -33,19 +33,25 @@ function renderPublishedEvidence(report) {
   const publication = report.publication || {};
   const intelligence = report.intelligence || {};
   const bySource = report.by_source || {};
+  const results = Array.isArray(report.results) ? report.results : [];
+  const adversarial = results.filter(item => item.adversarial);
+  const benign = results.filter(item => !item.adversarial);
+  const blocked = metrics.blocked ?? adversarial.filter(item => item.actual === "BLOCK").length;
+  const criticalFailures = metrics.critical_failures ?? adversarial.filter(item => item.actual === "ALLOW").length;
+  const incidents = metrics.incidents ?? adversarial.filter(item => item.detected && item.actual !== "BLOCK").length;
 
   setText("status", "ONLINE");
   setText("radarState", "EVIDENCE");
   setText("tested", totals.tests);
   setText("detected", `${metrics.detection_rate ?? "—"}%`);
-  setText("blocked", metrics.blocked);
-  setText("bypassed", metrics.bypassed);
+  setText("blocked", blocked);
+  setText("bypassed", criticalFailures);
   setText("falsePositive", metrics.false_positives);
 
   setText("refTests", totals.tests);
   setText("refTotals", `${totals.adversarial ?? "—"} adversariais · ${totals.benign ?? "—"} benignos`);
   setText("refDetection", `${metrics.detection_rate ?? "—"}%`);
-  setText("refBypass", metrics.bypassed);
+  setText("refBypass", criticalFailures);
   setText("refFP", metrics.false_positives);
 
   setText("processingStatus", "PUBLISHED · ONLINE");
@@ -53,7 +59,7 @@ function renderPublishedEvidence(report) {
   setText("processingDate", formatDate(report.generated_at));
   setText("processingCases", totals.tests);
   setText("processingDetection", `${metrics.detection_rate ?? "—"}%`);
-  setText("processingBypass", metrics.bypassed);
+  setText("processingBypass", criticalFailures);
   setText("processingFP", metrics.false_positives);
 
   setText("intelStatus", "REFERENCE INTELLIGENCE ONLINE");
@@ -61,7 +67,7 @@ function renderPublishedEvidence(report) {
   setText("intelSources", intelligence.source_count);
   setText("intelDynamic", intelligence.dynamic_cases);
   setText("intelDetection", `${metrics.detection_rate ?? "—"}%`);
-  setText("intelBypass", metrics.bypassed);
+  setText("intelBypass", criticalFailures);
   setText("intelFP", metrics.false_positives);
 
   const atlasVersion = intelligence.atlas_version || intelligence.atlas?.current_version || "latest";
@@ -107,7 +113,7 @@ function renderPublishedEvidence(report) {
       "\nRun: " + (report.run_id || "—") +
       "\nCasos processados: " + (totals.tests ?? "—") +
       "\nDetecção observada: " + (metrics.detection_rate ?? "—") + "%" +
-      "\nBypass: " + (metrics.bypassed ?? "—") +
+      "\nCritical failures: " + (criticalFailures ?? "—") +
       "\nFalse positive: " + (metrics.false_positives ?? "—") +
       "\nFonte: audit/reference-runs/latest-public.json";
   }
