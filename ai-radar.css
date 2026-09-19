@@ -125,3 +125,6 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .advanced-panel[open] summary i{transform:rotate(45deg)}
 .advanced-panel>.reference-section,.advanced-panel>.processing-section,.advanced-panel>.intelligence-section{margin-top:18px}
 @media(max-width:700px){.advanced-panel summary{gap:8px;flex-wrap:wrap}.advanced-panel summary b{flex:1}}
+
+
+.method-note{display:block;max-width:760px;margin-top:10px;line-height:1.5;opacity:.72}.method-note strong{opacity:1}@media(max-width:700px){.method-note{font-size:.78rem}}
