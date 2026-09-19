@@ -117,7 +117,7 @@ The public portfolio metadata is maintained in `data/projects.json`.
 - **AyorAI Agent Defense Lab** — executable local defensive-agent research environment using synthetic data.
 
 ### Applied AI / Data
-- **Protesto Credit Scoring** — synthetic risk modelling, fairness and explainability.
+- **AYORAI Offline OCR** — Windows-first local OCR API and Document Intelligence foundation.
 - **OCR-Python** — OCR and document-processing engineering.
 - **Hybrid Data Management RPA Pipeline** — data engineering and process automation.
 - **Ayorai Financial Control** — financial analytics and dashboard engineering.
