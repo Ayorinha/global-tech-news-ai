@@ -9,8 +9,8 @@
     "nist": "NIST AI 100-2e2025",
     "oasb": "Open Agent Security Benchmark technique coverage"
   },
-  "run_id": "AYORAI-REF-20260919155417642-9695N6",
-  "generated_at": "2026-09-19T15:54:17.642Z",
+  "run_id": "AYORAI-REF-20260919155444609-K4USAP",
+  "generated_at": "2026-09-19T15:54:44.610Z",
   "execution_ms": 2,
   "totals": {
     "tests": 26,
@@ -764,40 +764,40 @@
     }
   ],
   "intelligence": {
-    "run_id": "AYORAI-INTEL-20260919155417589",
+    "run_id": "AYORAI-INTEL-20260919155444561",
     "source_count": 5,
     "dynamic_cases": 0,
     "sources": [
       {
         "id": "mitre-atlas",
         "name": "MITRE ATLAS",
-        "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/main/dist/ATLAS-latest.yaml",
+        "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/main/dist/v6/ATLAS-latest.yaml",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:54:16.929Z",
-        "sha256": "e16517a97292b21493a42634adfc7bb7869046685990ba9e82f843453d62fff1"
+        "fetched_at": "2026-09-19T15:54:43.225Z",
+        "sha256": "d2b872e9c7ab383ef470b4edd7ccc6f381e9ea00642729dcbb7b7bf2ff94e679"
       },
       {
         "id": "owasp-llm-top10",
         "name": "OWASP Top 10 for LLM Applications 2025",
         "url": "https://genai.owasp.org/llm-top-10/",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:54:17.168Z",
-        "sha256": "d291a0300b126e92211f37f7322c4db801cef13f6a1fff588524aea1660c59ac"
+        "fetched_at": "2026-09-19T15:54:43.544Z",
+        "sha256": "f114adedc1e034c56a1fafc5c089eac181233b950b0da8901de82a5daf0d6d85"
       },
       {
         "id": "nist-aml",
         "name": "NIST AI 100-2e2025",
         "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:54:17.245Z",
-        "sha256": "ba0caf01fb05ea82e936c007dc80d9c72e4694c98b0858bc899ee737a0f9ebd4"
+        "fetched_at": "2026-09-19T15:54:43.878Z",
+        "sha256": "7f6dac1cbc0353147c0129c2b4d1f32dbc337d7c73067e80364222e475fc31fe"
       },
       {
         "id": "cisa-jcdc-ai",
         "name": "CISA JCDC AI Cybersecurity Collaboration Playbook",
         "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook%20TLP%20CLEAR_1.14.25_508c%201.pdf",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:54:17.427Z",
+        "fetched_at": "2026-09-19T15:54:44.225Z",
         "sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671"
       },
       {
@@ -805,16 +805,16 @@
         "name": "NCSC Guidelines for Secure AI System Development",
         "url": "https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development",
         "status": "OK",
-        "fetched_at": "2026-09-19T15:54:17.588Z",
+        "fetched_at": "2026-09-19T15:54:44.561Z",
         "sha256": "a2c4ff7fd66a0f5dc2409f7142a93badc4888b46c1243a8a958a0f3f2c94ed44"
       }
     ]
   },
   "publication": {
     "status": "PUBLISHED_REFERENCE_EVIDENCE",
-    "publication_fingerprint": "cb555d3440dc80c50d2d0943aa4dabd1b3a66fdd0e2475bdc62cbef7325f240c",
-    "published_at": "2026-09-19T15:54:17.714Z",
-    "source_snapshot_sha256": "d6c30a1c69648eebdc95f4c311339b3fce3818232e708ae598407101b0e6fc80",
+    "publication_fingerprint": "672fd4442edabe4976a9361aeaf25c9d181359d9c65bc74c2e0f75fbaf5e09bb",
+    "published_at": "2026-09-19T15:54:44.838Z",
+    "source_snapshot_sha256": "da88ab2b632887e5636c45e446bfba1cb2d83ad4fff30c28daef1ea09c010828",
     "note": "Published automatically only when reference intelligence or defensive findings materially change."
   }
 }
