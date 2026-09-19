@@ -63,7 +63,7 @@ async function loadPublishedReferenceEvidence(){
     const atlasVersion=intel.atlas_version || intel.atlas?.current_version || "latest";
     const atlasCard=document.getElementById("intelAtlasVersion");
     if(atlasCard) atlasCard.textContent="ATLAS "+atlasVersion;
-    $("intelDetection").textContent=(r.metrics?.detection_rate??"—")+"%";
+    $("intelDetection").textContent=(r.metrics?.detection_rate??"—")+"%";\n    const totals=r.totals||{}; const refTests=$("refTests"); const refTotals=$("refTotals"); if(refTests)refTests.textContent=totals.tests??"—"; if(refTotals)refTotals.textContent=(totals.adversarial??"—")+" adversariais · "+(totals.benign??"—")+" benignos";\n    const bySource=r.by_source||{}; const ow=bySource["OWASP LLM Top 10 2025"]; const at=bySource["MITRE ATLAS"]||bySource["MITRE ATLAS · dynamic sync"]; const ni=bySource["NIST AI 100-2e2025"]; if($("refOwasp")&&ow)$("refOwasp").textContent=ow.detected+"/"+ow.adversarial+" adversariais detectados"; if($("refAtlas")&&at)$("refAtlas").textContent=at.detected+"/"+at.adversarial+" adversariais detectados"; if($("refNist")&&ni)$("refNist").textContent=ni.detected+"/"+ni.adversarial+" adversariais detectados";
     $("intelBypass").textContent=r.metrics?.bypassed??"—";
     $("intelFP").textContent=r.metrics?.false_positives??"—";
     $("intelFingerprint").innerHTML="<strong>Publication fingerprint</strong><br>"+escapeHtml(p.publication_fingerprint||"—")+"<br><br><strong>Source snapshot SHA-256</strong><br>"+escapeHtml(p.source_snapshot_sha256||"—")+"<br><br><strong>Intelligence run</strong><br>"+escapeHtml(intel.run_id||"—");
