@@ -22,9 +22,7 @@
     <h1>AI Laboratory<br><em>AYORAI AI Shield</em></h1>
     <p>Um laboratório online e interativo de defesa cibernética. O <strong>AYORAI AI Shield</strong> executa casos controlados, transmite o processamento em tempo real, mede decisões observadas e mantém evidências auditáveis da execução.</p>
     <div class="hero-actions">
-      <button id="runAll" class="primary">▶ RUN SECURITY BENCHMARK</button><button id="runReference" class="secondary">◈ RUN REFERENCE BENCHMARK · 26 CASES</button>
-      <button id="continuousBtn" class="secondary">⚡ CONTINUOUS TESTING</button>
-      <button id="downloadReport" class="secondary" disabled>⇩ BAIXAR RELATÓRIO</button>
+      <span class="auto-badge">● AUTOMATED · HOURLY</span>
       <a class="secondary" href="security-report.html">▣ HISTORICAL REPORT</a>
     </div>
     <div class="trust-line"><span>●</span> Casos sintéticos controlados · sem malware · sem exploit executável · sem alvo externo · resultados observados</div>
@@ -54,7 +52,7 @@
 </section>
 
 <section class="reference-section">
-<div class="section-head"><div><span class="eyebrow">REFERENCE-ALIGNED EVALUATION</span><h2>AYORAI Reference Cybersecurity Benchmark</h2><p>26 casos sintéticos mapeados a referências públicas de segurança de IA. O objetivo é medir cobertura, revelar bypasses e transformar cada falha em uma hipótese de melhoria.</p></div><div class="reference-badge">OWASP 2025 · MITRE ATLAS · NIST AI 100-2e2025 · OASB</div></div>
+<div class="section-head"><div><span class="eyebrow">REFERENCE-ALIGNED EVALUATION</span><h2>AYORAI Reference Cybersecurity Benchmark</h2><p>Execução automática horária com casos sintéticos mapeados a referências públicas de segurança de IA. O objetivo é medir cobertura, revelar bypasses e transformar cada falha em uma hipótese de melhoria.</p></div><div class="reference-badge">AUTOMATED · OWASP 2025 · MITRE ATLAS · NIST AI 100-2e2025 · OASB</div></div>
 <div class="reference-kpis"><article><span>CASES</span><b id="refTests">26</b><small>21 adversariais · 5 benignos</small></article><article><span>DETECTION</span><b id="refDetection">—</b><small>observada nesta execução</small></article><article><span>BYPASS</span><b id="refBypass">—</b><small>adversarial permitido</small></article><article><span>FALSE POSITIVE</span><b id="refFP">—</b><small>benigno bloqueado</small></article></div>
 <div class="coverage-grid"><article><h3>OWASP Top 10 for LLM Applications 2025</h3><p>Riscos LLM01–LLM10 exercitados com casos seguros.</p><b id="refOwasp">Aguardando execução</b></article><article><h3>MITRE ATLAS</h3><p>Prompt injection, jailbreak, leakage, tool invocation, context poisoning e exfiltração.</p><b id="refAtlas">Aguardando execução</b></article><article><h3>NIST AI 100-2e2025</h3><p>Poisoning, evasion e privacy attack categories.</p><b id="refNist">Aguardando execução</b></article><article><h3>OASB</h3><p>Referência de cobertura para segurança de agentes; cenários não são copiados.</p><b id="refOasb">Technique coverage</b></article></div>
 <div class="finding-panel"><div><span class="eyebrow">LEARNING LOOP</span><h3>O relatório não esconde falhas</h3><p>Bypass e falso positivo ficam destacados. Cada finding pode virar novo teste, regra defensiva, regressão automatizada e evidência versionada.</p></div><div id="refFindings" class="finding-list">Execute o benchmark de referência para gerar findings.</div></div>
@@ -89,13 +87,16 @@
   </div>
 </section>
 
-<section class="archive-section"><div class="section-head"><div><span class="eyebrow">REPORT ARCHIVE</span><h2>Histórico local</h2><p>Os últimos resultados ficam disponíveis neste navegador para comparação rápida. A metodologia e a regressão ficam versionadas no GitHub.</p></div></div><div id="reportArchive" class="report-archive"></div></section>
+<section class="archive-section"><div class="section-head"><div><span class="eyebrow">REPORT ARCHIVE</span><h2>Histórico local</h2><p>O painel é atualizado automaticamente a partir da última evidência pública publicada. A metodologia e a regressão ficam versionadas no GitHub.</p></div></div><div id="reportArchive" class="report-archive"></div></section>
 
 <section class="defense-section"><div class="section-head"><div><span class="eyebrow">DEFENSE PIPELINE</span><h2>Camadas avaliadas</h2></div></div>
   <div class="pipeline"><div><span>01</span><b>INPUT GUARD</b><small>Entrada suspeita</small></div><i>→</i><div><span>02</span><b>CONTEXT BOUNDARY</b><small>Isola contexto externo</small></div><i>→</i><div><span>03</span><b>POLICY ENGINE</b><small>Autoriza / bloqueia</small></div><i>→</i><div><span>04</span><b>TOOL GUARD</b><small>Controla chamadas</small></div><i>→</i><div><span>05</span><b>AUDIT</b><small>Registra evidência</small></div></div>
 </section>
 
-<section class="report-callout"><div><div class="eyebrow">OPEN EVIDENCE</div><h2>Relatório gerado pela execução</h2><p>JSON e Markdown incluem run ID, timestamp, casos, decisões observadas, regras, latência, bypasses, falsos positivos e hash de evidência quando disponível.</p></div><button id="downloadReport2" class="primary" disabled>BAIXAR EVIDÊNCIAS</button></section>
+<section class="report-callout">
+  <div><div class="eyebrow">AUTOMATED EVIDENCE</div><h2>Laboratório em atualização automática</h2><p>Os testes de referência são executados automaticamente a cada hora. O site apenas apresenta a evidência publicada pelo pipeline, sem exigir cliques ou execução manual no navegador.</p></div>
+  <div class="auto-status"><span>●</span> AUTO-UPDATE · 1H</div>
+</section>
 
 <section class="method"><span class="eyebrow">SECURITY METHODOLOGY</span><h2>Attack generation → AYORAI AI Shield → live log → evaluation → audit report</h2>
   <div class="method-grid"><div><b>ATTACK</b><span>Casos adversariais controlados e reproduzíveis.</span></div><div><b>SHIELD</b><span>O AYORAI AI Shield executa a análise real.</span></div><div><b>EVALUATION</b><span>Decisão observada comparada com a esperada.</span></div><div><b>REPORT</b><span>Falhas ficam registradas para regressão e melhoria.</span></div></div>
