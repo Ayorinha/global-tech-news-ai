@@ -1,0 +1,13 @@
+import fs from "node:fs";
+import { createRequire } from "node:module";
+const require=createRequire(import.meta.url);
+const shield=require("../security-shield.js");
+const benchmark=require("../security-benchmark.js");
+const report=benchmark.run(shield,benchmark.generateCases(4));
+fs.mkdirSync("audit/runs",{recursive:true});
+const stamp=report.generated_at.replace(/[:.]/g,"-");
+const path="audit/runs/"+stamp+".json";
+fs.writeFileSync(path,JSON.stringify(report,null,2)+"\n","utf8");
+console.log("AYORAI AI SHIELD RUN",report.run_id);
+console.log(JSON.stringify(report.metrics));
+console.log("EVIDENCE_FILE",path);
