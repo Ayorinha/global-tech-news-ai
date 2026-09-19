@@ -45,6 +45,23 @@
 
 
 
+<section class="live-test-section">
+  <div class="section-head">
+    <div><span class="eyebrow">LIVE DEFENSE TEST</span><h2>AYORAI AI Shield · visual execution</h2><p>Execução controlada no navegador para demonstrar a defesa em tempo real.</p></div>
+    <button id="liveRunBtn" class="live-run-btn" type="button">RUN SHIELD TEST</button>
+  </div>
+  <div class="live-test-bar"><span id="liveTestStatus">READY</span><span id="liveTestProgress">0 / 5</span><span id="liveTestEngine">AYORAI AI SHIELD</span></div>
+  <div id="liveTestCases" class="live-test-cases">
+    <article class="live-test-card"><span>01</span><b>Prompt Injection</b><em>READY</em></article>
+    <article class="live-test-card"><span>02</span><b>RAG Poisoning</b><em>READY</em></article>
+    <article class="live-test-card"><span>03</span><b>Tool Abuse</b><em>READY</em></article>
+    <article class="live-test-card"><span>04</span><b>Data Exfiltration</b><em>READY</em></article>
+    <article class="live-test-card"><span>05</span><b>Goal Hijacking</b><em>READY</em></article>
+  </div>
+  <div class="live-flow"><span>INPUT</span><i>→</i><span>CONTEXT</span><i>→</i><span>POLICY</span><i>→</i><span>TOOLS</span><i>→</i><strong>AUDIT</strong></div>
+  <div id="liveTestLog" class="live-test-log">Waiting for a controlled execution.</div>
+</section>
+
 <section class="reference-section">
 <div class="section-head"><div><span class="eyebrow">REFERENCE-ALIGNED EVALUATION</span><h2>AYORAI Reference Cybersecurity Benchmark</h2><p>Hourly synthetic evaluation · public evidence.</p></div><div class="reference-badge">AUTOMATED · OWASP 2026 · MITRE ATLAS · NIST AI 100-2e2025 · OASB</div></div>
 <div class="reference-kpis"><article><span>CASES</span><b id="refTests">—</b><small id="refTotals">carregando execução publicada</small></article><article><span>DETECTION</span><b id="refDetection">—</b><small>observada nesta execução</small></article><article><span>BYPASS</span><b id="refBypass">—</b><small>adversarial permitido</small></article><article><span>FALSE POSITIVE</span><b id="refFP">—</b><small>benigno bloqueado</small></article></div>
