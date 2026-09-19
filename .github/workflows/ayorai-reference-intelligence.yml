@@ -1,12 +1,17 @@
 name: AYORAI Reference Intelligence · 5 Minute Cycle
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "audit/reference-runs/**"
+      - "audit/reference-intelligence/**"
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: ayorai-reference-intelligence
@@ -31,6 +36,19 @@ jobs:
       - name: Execute synthetic defensive benchmark
         run: node scripts/run_reference_intelligence_benchmark.mjs
 
+      - name: Publish changed evidence to the repository
+        run: |
+          node scripts/publish_reference_intelligence.mjs
+          if git diff --quiet -- audit/reference-runs/latest-public.json; then
+            echo "No material reference or defense change to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/reference-runs/latest-public.json
+          git commit -m "chore(security): publish reference intelligence evidence"
+          git push
+
       - name: Upload intelligence evidence
         uses: actions/upload-artifact@v4
         with:
@@ -38,6 +56,7 @@ jobs:
           path: |
             audit/reference-intelligence/*.json
             audit/reference-runs/*intelligence*.json
+            audit/reference-runs/latest-public.json
           retention-days: 30
 
       - name: Publish job summary
@@ -50,6 +69,7 @@ jobs:
             '## AYORAI Reference Intelligence',
             '',
             '- Intelligence run: ' + r.intelligence.run_id,
+            '- Checked at: ' + r.generated_at,
             '- Sources: ' + r.intelligence.source_count,
             '- Dynamic cases: ' + r.intelligence.dynamic_cases,
             '- Total tests: ' + r.totals.tests,
@@ -57,11 +77,18 @@ jobs:
             '- Bypassed: ' + r.metrics.bypassed,
             '- False positives: ' + r.metrics.false_positives,
             '',
-            '### Sources'
+            '### Source provenance'
           ];
           for (const s of r.intelligence.sources) {
-            lines.push('- ' + s.name + ' · ' + s.status + ' · ' + (s.sha256 || 'no hash'));
+            lines.push('- ' + s.name + ' · HTTP ' + s.status + ' · ' + (s.sha256 || 'no hash') + ' · ' + s.url);
           }
-          lines.push('', 'Safety boundary: reference intelligence only; no malware or executable exploit is run.');
+          lines.push(
+            '',
+            '### Authenticity boundary',
+            '- Public reference intelligence is fetched and hashed.',
+            '- Dynamic cases are synthetic and non-executable.',
+            '- No malware, exploit payload, credential, or external target is executed.',
+            '- Repository publication occurs only when the material reference/defense state changes.'
+          );
           fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
           NODE
