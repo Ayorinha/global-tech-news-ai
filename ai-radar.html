@@ -58,7 +58,38 @@
   <span class="safe-badge">● DEFENSIVE SANDBOX</span>
 </section>
 
-<section class="console-grid">
+<section class="benchmark-overview">
+  <div class="bench-card bench-live"><span class="bench-kicker">THREAT INTELLIGENCE</span><strong id="feedStatus">CONNECTING</strong><small id="feedUpdated">Public vulnerability signals · no malware downloaded</small></div>
+  <div class="bench-card"><span class="bench-kicker">BENCHMARK RUN</span><strong id="benchmarkStatus">IDLE</strong><small>Repeatable adversarial evaluation</small></div>
+  <div class="bench-card"><span class="bench-kicker">DEFENSE COVERAGE</span><strong id="coverageMetric">—</strong><small>Blocked / evaluated scenarios</small></div>
+  <div class="bench-card"><span class="bench-kicker">FALSE POSITIVE GUARD</span><strong>ON</strong><small>Benign controls included</small></div>
+</section>
+<section class="benchmark-grid">
+  <div class="panel feed-panel">
+    <div class="panel-head"><div><span class="eyebrow">LIVE CTI SIGNALS</span><h2>Threat Intelligence Queue</h2></div><button id="refreshFeed" class="mini-btn">↻ ATUALIZAR</button></div>
+    <p class="panel-intro">O radar consulta sinais públicos de vulnerabilidades conhecidas e transforma apenas metadados em casos de teste sintéticos. Nenhum malware, exploit executável ou alvo real é baixado ou executado.</p>
+    <div id="feedList" class="feed-list"><div class="telemetry-empty">Carregando sinais públicos…</div></div>
+  </div>
+  <div class="panel benchmark-panel">
+    <div class="panel-head"><div><span class="eyebrow">DEFENSE BENCHMARK</span><h2>Attack → Defend → Measure</h2></div><span id="benchRunState" class="panel-note">READY</span></div>
+    <div class="score-orb"><div><strong id="benchScore">—</strong><span>DEFENSE<br>COVERAGE</span></div></div>
+    <div class="score-grid">
+      <div><b id="evalCount">00</b><span>Evaluados</span></div><div><b id="blockCount">00</b><span>Bloqueados</span></div><div><b id="flagCount">00</b><span>Marcados</span></div><div><b id="fpCount">00</b><span>Benignos OK</span></div>
+    </div>
+    <button id="runBenchmark" class="run-btn">▶ RODAR BENCHMARK COMPLETO</button>
+    <div id="benchmarkLog" class="benchmark-log">Aguardando fila de cenários.</div>
+  </div>
+</section>
+<section class="panel benchmark-method">
+  <div><span class="eyebrow">BENCHMARK METHODOLOGY</span><h2>Threat-informed, repeatable, closed-loop</h2></div>
+  <div class="method-cards">
+    <article><b>01 · INGEST</b><span>CTI público → CVE/KEV e TTPs como sinais de contexto.</span></article>
+    <article><b>02 · SYNTHESIZE</b><span>Sinais viram payloads sintéticos e seguros para o agente.</span></article>
+    <article><b>03 · DEFEND</b><span>Input → Context → Policy → Tool → Output/Audit.</span></article>
+    <article><b>04 · SCORE</b><span>Block rate, detection rate, benign pass e regressões.</span></article>
+  </div>
+  <p class="source-note">Referências de desenho: OWASP AI Agent Security, Microsoft PyRIT, NVIDIA garak/NeMo, MITRE ATT&amp;CK/ATLAS e STIX/TAXII. O benchmark usa inteligência de ameaça para contextualizar testes, não para executar malware.</p>
+</section><section class="console-grid">
   <div class="panel scenario-panel">
     <div class="panel-head"><div><span class="eyebrow">ATTACK SCENARIOS</span><h2>Escolha um cenário</h2></div><span class="panel-note">payloads sintéticos</span></div>
     <div id="scenarioList" class="scenario-list"></div>
