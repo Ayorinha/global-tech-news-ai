@@ -9,7 +9,7 @@
  */
 const AyoraiAIShield = (() => {
   const rules = [
-    { id:"PI-001", family:"Prompt Injection", layer:"Input Guard", weight:0.92, patterns:[/ignore (all|the|previous|prior) instructions/i,/disregard (all|the|previous|prior) instructions/i,/system prompt/i,/reveal (the )?(hidden|system) prompt/i,/developer message/i] },
+    { id:"PI-001", family:"Prompt Injection", layer:"Input Guard", weight:0.92, patterns:[/ignore (all|the|previous|prior) instructions/i,/disregard.*instructions/i,/system prompt/i,/reveal (the )?(hidden|system) prompt/i,/developer message/i] },
     { id:"PI-002", family:"Prompt Injection", layer:"Context Boundary", weight:0.88, patterns:[/override.*instructions/i,/act as.*without restrictions/i,/bypass.*policy/i,/jailbreak/i] },
     { id:"RAG-001", family:"RAG Poisoning", layer:"Context Boundary", weight:0.90, patterns:[/retrieved document.*ignore/i,/trusted source.*override/i,/knowledge base.*ignore/i,/instruction.*from.*document/i] },
     { id:"RAG-002", family:"RAG Poisoning", layer:"Policy Engine", weight:0.84, patterns:[/retrieval.*instruction/i,/document.*exfiltrat/i,/poisoned context/i] },
