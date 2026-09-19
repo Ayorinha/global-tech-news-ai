@@ -40,4 +40,4 @@ The benchmark makes the lab traceable to established security taxonomies instead
 
 ## Automated publication
 
-Reference intelligence is checked every five minutes by GitHub Actions. Public source metadata is fetched and hashed, then selected MITRE ATLAS techniques are converted into synthetic, non-executable defensive cases for AYORAI AI SHIELD. The repository publishes the latest evidence only when the material reference or defensive state changes. The public laboratory reads `audit/reference-runs/latest-public.json` for provenance and current published findings.
+Reference intelligence is checked every hour by GitHub Actions. Public source metadata is fetched and hashed, then selected MITRE ATLAS techniques are converted into synthetic, non-executable defensive cases for AYORAI AI SHIELD. The repository publishes the latest evidence only when the material reference or defensive state changes. The public laboratory reads `audit/reference-runs/latest-public.json` for provenance and current published findings.
