@@ -1,12 +1,47 @@
 [
   {
+    "id": 9,
+    "category": "projeto",
+    "title": "🛡️ IEPTB Agentic AI Platform",
+    "description": "Secure, evaluated Agentic AI reference architecture for regulated remessa workflows, combining RAG, MCP, deterministic policy, RBAC, audit trails, threat modeling, evaluation and human approval boundaries. Public-safe prototype using synthetic data only.",
+    "link": "https://github.com/Ayorinha/ayorai-vision-intelligence/tree/feat/ieptb-agentic-ai-platform/projects/ieptb-agentic-ai",
+    "repo": "https://github.com/Ayorinha/ayorai-vision-intelligence",
+    "tags": [
+      "Agentic AI",
+      "AI Safety",
+      "RAG",
+      "MCP",
+      "Security",
+      "RBAC",
+      "Evaluation",
+      "Auditability",
+      "FastAPI",
+      "Python"
+    ],
+    "status": "em andamento",
+    "version": "0.2.0",
+    "created_at": "2026-09-19",
+    "image": ""
+  },
+  {
     "id": 8,
     "category": "projeto",
     "title": "🛡️ AyorAI Agent Defense Lab",
     "description": "AI Safety · Defensive AI · Agent Security",
     "link": "https://github.com/Ayorinha/global-tech-news-ai/tree/main/labs/ayorai-agent-defense-lab",
     "repo": "https://github.com/Ayorinha/global-tech-news-ai",
-    "tags": ["AI Safety", "Defensive AI", "Agent Security", "AI Security", "Red Team", "Blue Team", "RAG", "LLM", "Policy Engine", "Audit"],
+    "tags": [
+      "AI Safety",
+      "Defensive AI",
+      "Agent Security",
+      "AI Security",
+      "Red Team",
+      "Blue Team",
+      "RAG",
+      "LLM",
+      "Policy Engine",
+      "Audit"
+    ],
     "status": "ativo",
     "version": "1.0",
     "created_at": "2026-09-17",
@@ -19,7 +54,14 @@
     "description": "Projeto aplicado de modelagem de risco com dados sintéticos: geração de dados, EDA, comparação de modelos, métricas de score, auditoria de fairness e explicabilidade com SHAP. Desenvolvido para demonstrar uma arquitetura de análise responsável sem dados reais.",
     "link": "",
     "repo": "https://github.com/Ayorinha/protesto-credit-scoring",
-    "tags": ["Python", "Machine Learning", "Scikit-learn", "SHAP", "Fairness", "Risk Analytics"],
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "Scikit-learn",
+      "SHAP",
+      "Fairness",
+      "Risk Analytics"
+    ],
     "status": "ativo",
     "version": "1.0",
     "created_at": "2026-09-17",
@@ -32,7 +74,12 @@
     "description": "Projeto de reconhecimento óptico de caracteres em Python, focado em processamento documental e automação de extração de informação.",
     "link": "",
     "repo": "https://github.com/Ayorinha/OCR-Python",
-    "tags": ["Python", "OCR", "Document Intelligence", "Automation"],
+    "tags": [
+      "Python",
+      "OCR",
+      "Document Intelligence",
+      "Automation"
+    ],
     "status": "ativo",
     "version": "1.0",
     "created_at": "2026-01-01",
@@ -45,7 +92,13 @@
     "description": "Pipeline híbrido de dados e automação orientado a processos, integrando tratamento de dados e RPA para reduzir trabalho operacional repetitivo.",
     "link": "",
     "repo": "https://github.com/Ayorinha/hybrid-data-management-rpa-pipeline",
-    "tags": ["Python", "Data Engineering", "RPA", "ETL", "Automation"],
+    "tags": [
+      "Python",
+      "Data Engineering",
+      "RPA",
+      "ETL",
+      "Automation"
+    ],
     "status": "ativo",
     "version": "1.0",
     "created_at": "2026-01-01",
@@ -58,7 +111,13 @@
     "description": "Aplicação de controle e análise financeira construída como solução web, demonstrando transformação de dados, visualização e automação em uma interface orientada a negócio.",
     "link": "",
     "repo": "https://github.com/Ayorinha/project-ayorai-financial-control",
-    "tags": ["JavaScript", "Data Analytics", "BI", "ETL", "Ayorai"],
+    "tags": [
+      "JavaScript",
+      "Data Analytics",
+      "BI",
+      "ETL",
+      "Ayorai"
+    ],
     "status": "ativo",
     "version": "1.0",
     "created_at": "2026-01-01",
@@ -71,7 +130,12 @@
     "description": "Projeto experimental desenvolvido no contexto de aprendizagem em game development. Mantido como estudo técnico e não como produto oficial da franquia Sonic.",
     "link": "",
     "repo": "https://github.com/Ayorinha/sonic-mvp-game",
-    "tags": ["Game Development", "JavaScript", "MVP", "Hub Games"],
+    "tags": [
+      "Game Development",
+      "JavaScript",
+      "MVP",
+      "Hub Games"
+    ],
     "status": "em andamento",
     "version": "MVP",
     "created_at": "2026-09-01",
@@ -84,7 +148,13 @@
     "description": "Trilha contínua de estudos aplicada a Python, dados, machine learning, document intelligence, RAG, automação e engenharia de sistemas de IA.",
     "link": "",
     "repo": "",
-    "tags": ["Python", "Data Science", "AI Engineering", "RAG", "Automation"],
+    "tags": [
+      "Python",
+      "Data Science",
+      "AI Engineering",
+      "RAG",
+      "Automation"
+    ],
     "status": "em andamento",
     "version": "",
     "created_at": "2026-09-01",
