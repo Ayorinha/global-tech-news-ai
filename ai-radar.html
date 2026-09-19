@@ -4,74 +4,77 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#06111d">
-<meta name="description" content="AYORAI AI Laboratório · Security Lab — defesa, detecção e relatório histórico de testes sintéticos contra sistemas de IA.">
-<title>AYORAI · AI Laboratório · Security Lab</title>
+<meta name="description" content="AYORAI AI Laboratory — Iorai Security Shield adversarial benchmark, evidence and downloadable reports.">
+<title>AYORAI · AI Laboratory · Iorai Security Shield</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="ai-radar.css">
 </head>
 <body class="radar-page">
 <header class="radar-topbar">
-  <a class="radar-brand" href="index.html"><strong>AYORAI</strong><span>AI LABORATÓRIO</span></a>
-  <nav><a href="index.html">Notícias</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">Security Lab</a><a href="security-report.html">Relatório</a></nav>
-  <div class="top-status"><i></i>DEFENSE ONLINE</div>
+  <a class="radar-brand" href="index.html"><strong>AYORAI</strong><span>AI LABORATORY</span></a>
+  <nav><a href="index.html">News</a><a href="ai-tools.html">AI Index</a><a class="active" href="ai-radar.html">Security Lab</a><a href="security-report.html">Report</a></nav>
+  <div class="top-status"><i></i>IORAI SHIELD ONLINE</div>
   <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
-  <div id="mobileMenu" class="mobile-menu"><a href="index.html">Notícias</a><a href="ai-tools.html">AI Index</a><a href="security-report.html">🛡️ Relatório histórico</a></div>
+  <div id="mobileMenu" class="mobile-menu"><a href="index.html">News</a><a href="ai-tools.html">AI Index</a><a href="security-report.html">🛡️ Historical report</a></div>
 </header>
 
 <main class="shell">
 <section class="hero">
   <div class="hero-copy">
     <span class="eyebrow">AYORAI · APPLIED AI · AI SAFETY</span>
-    <h1>AI Laboratório<br><em>Security Lab</em></h1>
-    <p>Um painel limpo para testar, detectar, bloquear e registrar ameaças sintéticas contra arquiteturas de IA — RAG, MCP, agentes, tool-calling e fluxos multi-agent.</p>
+    <h1>AI Laboratory<br><em>Iorai Security Shield</em></h1>
+    <p>Um laboratório adversarial aberto que executa casos controlados contra o <strong>Iorai Security Shield</strong>, mede a decisão produzida pelo motor defensivo e registra evidências para evolução contínua.</p>
     <div class="hero-actions">
-      <button id="runAll" class="primary">▶ EXECUTAR DEFESA</button>
-      <a class="secondary" href="security-report.html">▣ VER RELATÓRIO HISTÓRICO</a>
+      <button id="runAll" class="primary">▶ RUN SECURITY BENCHMARK</button>
+      <button id="downloadReport" class="secondary" disabled>⇩ BAIXAR RELATÓRIO</button>
+      <a class="secondary" href="security-report.html">▣ RELATÓRIO HISTÓRICO</a>
     </div>
-    <div class="trust-line"><span>●</span> Ambiente fechado · sem malware · sem exploit executável · sem alvo externo</div>
+    <div class="trust-line"><span>●</span> Execução local no navegador · casos controlados · sem malware · sem exploit executável · sem alvo externo</div>
   </div>
   <div class="radar-visual">
     <div class="grid-ring r1"></div><div class="grid-ring r2"></div><div class="grid-ring r3"></div>
-    <div class="sweep"></div><div class="core"><span>AI</span><small>DEFENSE</small></div>
-    <button class="signal s1" data-id="pi">01</button><button class="signal s2" data-id="rag">02</button><button class="signal s3" data-id="tool">03</button><button class="signal s4" data-id="hijack">04</button>
-    <div class="radar-label">THREAT RADAR<br><b id="radarState">READY</b></div>
+    <div class="sweep"></div><div class="core"><span>IORAI</span><small>SHIELD</small></div>
+    <button class="signal s1" data-id="PI-001">01</button><button class="signal s2" data-id="RAG-001">02</button><button class="signal s3" data-id="TOOL-001">03</button><button class="signal s4" data-id="HIJ-001">04</button>
+    <div class="radar-label">SHIELD STATUS<br><b id="radarState">READY</b></div>
   </div>
 </section>
 
 <section class="status-grid">
-  <article><span>DEFENSE STATUS</span><b id="status">READY</b><small>Defense engine</small></article>
-  <article><span>THREATS TESTED</span><b id="tested">00</b><small>Synthetic cases</small></article>
-  <article><span>BLOCKED</span><b id="blocked">00</b><small>Prevented by policy</small></article>
-  <article><span>DETECTED</span><b id="detected">00</b><small>Flagged or blocked</small></article>
-  <article><span>BENIGN PASS</span><b id="benign">00</b><small>False-positive guard</small></article>
+  <article><span>SHIELD STATUS</span><b id="status">READY</b><small>Iorai Security Shield</small></article>
+  <article><span>TEST CASES</span><b id="tested">00</b><small>Executed by benchmark</small></article>
+  <article><span>BLOCKED</span><b id="blocked">00</b><small>Shield decision</small></article>
+  <article><span>BYPASSED</span><b id="bypassed">00</b><small>Adversarial cases allowed</small></article>
+  <article><span>FALSE POSITIVE</span><b id="falsePositive">00</b><small>Benign cases blocked</small></article>
 </section>
 
-<section class="section-head"><div><span class="eyebrow">ATTACKER PROFILES</span><h2>Quem o laboratório está simulando</h2><p>O laboratório não identifica uma IA real “atacando”. Cada perfil é um <strong>agente adversarial sintético</strong> que representa uma técnica.</p></div></section>
+<section class="section-head"><div><span class="eyebrow">LIVE BENCHMARK</span><h2>O laboratório tenta quebrar a defesa</h2><p>Os casos abaixo são executados pelo motor real do <strong>Iorai Security Shield</strong>. O resultado não é pré-programado na interface: cada entrada é analisada pelas regras defensivas e o benchmark calcula PASS/FAIL.</p></div></section>
 <section id="cases" class="case-grid"></section>
 
 <section class="defense-section">
-  <div class="section-head"><div><span class="eyebrow">DEFENSE PIPELINE</span><h2>O que o seu antivírus de IA conseguiu segurar</h2></div></div>
+  <div class="section-head"><div><span class="eyebrow">DEFENSE PIPELINE</span><h2>Camadas avaliadas</h2></div></div>
   <div class="pipeline">
     <div><span>01</span><b>INPUT GUARD</b><small>Entrada suspeita</small></div><i>→</i>
-    <div><span>02</span><b>CONTEXT BOUNDARY</b><small>Isola conteúdo externo</small></div><i>→</i>
+    <div><span>02</span><b>CONTEXT BOUNDARY</b><small>Isola contexto externo</small></div><i>→</i>
     <div><span>03</span><b>POLICY ENGINE</b><small>Autoriza / bloqueia</small></div><i>→</i>
-    <div><span>04</span><b>TOOL GUARD</b><small>Controla ferramentas</small></div><i>→</i>
+    <div><span>04</span><b>TOOL GUARD</b><small>Controla chamadas</small></div><i>→</i>
     <div><span>05</span><b>AUDIT</b><small>Registra evidência</small></div>
   </div>
 </section>
 
 <section class="report-callout">
-  <div><div class="eyebrow">PERMANENT RECORD</div><h2>Relatório histórico do laboratório</h2><p>O resultado consolidado fica em uma página versionada no GitHub Pages. Ela registra data, escopo, famílias de ameaça, arquitetura testada, controles defensivos e limitações.</p></div>
-  <a href="security-report.html">ABRIR RELATÓRIO ↗</a>
+  <div><div class="eyebrow">OPEN EVIDENCE</div><h2>Relatório gerado pela execução</h2><p>Cada benchmark produz JSON e Markdown no navegador. O relatório inclui timestamp, casos, decisões do Shield, regras acionadas, latência, bypasses e falsos positivos.</p></div>
+  <button id="downloadReport2" class="primary" disabled>BAIXAR EVIDÊNCIAS</button>
 </section>
 
 <section class="method">
-  <span class="eyebrow">SAFE BENCHMARK DESIGN</span>
-  <h2>Threat intelligence → teste sintético → defesa → evidência</h2>
-  <div class="method-grid"><div><b>CTI</b><span>CISA KEV e referências públicas fornecem contexto.</span></div><div><b>SYNTHETIC</b><span>O sinal vira um caso seguro, sem executar malware.</span></div><div><b>DEFENSE</b><span>RAG, MCP, agent, tool e output são tratados como superfícies.</span></div><div><b>EVIDENCE</b><span>Resultado, categoria e camada defensiva são registrados.</span></div></div>
+  <span class="eyebrow">SECURITY METHODOLOGY</span>
+  <h2>Attack case → Iorai Shield → decision → evidence</h2>
+  <div class="method-grid"><div><b>ATTACK</b><span>Casos adversariais controlados e reproduzíveis.</span></div><div><b>SHIELD</b><span>O Iorai Security Shield executa a análise real.</span></div><div><b>EVALUATION</b><span>O benchmark compara decisão observada e esperada.</span></div><div><b>REPORT</b><span>Falhas ficam registradas para regressão e melhoria.</span></div></div>
 </section>
 </main>
-<footer>AYORAI · AI Radar Security Lab · Defensive AI Engineering · Public-safe benchmark</footer>
+<footer>AYORAI · Iorai Security Shield · AI Security Laboratory · Open defensive benchmark</footer>
+<script src="security-shield.js"></script>
+<script src="security-benchmark.js"></script>
 <script src="ai-radar.js"></script>
 <script>
 (()=>{const b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu');b.onclick=()=>{m.classList.toggle('open');b.textContent=m.classList.contains('open')?'✕':'☰'}})();
