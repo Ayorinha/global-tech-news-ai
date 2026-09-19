@@ -6,9 +6,9 @@
 
 **One security identity. One evidence model. Many enforcement surfaces.**
 
-The long-term platform is designed to protect heterogeneous digital environments through a shared defensive core, native platform adapters, continuously validated intelligence, and controlled AI-assisted analysis.
+The long-term platform is designed to defend heterogeneous digital environments through a shared defensive core, native platform adapters, continuously validated intelligence, and controlled AI-assisted analysis.
 
-The product must never promise absolute security or “zero vulnerabilities”. Security claims must be scoped to a product version, platform, configuration, test methodology, time window and evidence set.
+The product must never make absolute-security guarantees. Security claims must be scoped to a product version, platform, configuration, test methodology, time window and evidence set.
 
 ## 1. Product family
 
@@ -206,12 +206,7 @@ Allowed:
 - “Independent assessment published on date D.”
 - “Protection is available for the following supported platforms.”
 
-Avoid:
-- “100% secure.”
-- “Impossible to hack.”
-- “Protects every device.”
-- “Zero vulnerabilities.”
-- “Guaranteed against all attacks.”
+Avoid absolute or universal security guarantees. State the tested scope, methodology, platform, configuration and evidence instead.
 
 ## 6. Failure-first engineering
 
