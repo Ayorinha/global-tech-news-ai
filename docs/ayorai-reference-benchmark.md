@@ -36,3 +36,8 @@ The benchmark is safe by design: it does not download malware, execute exploits,
 ## Why this matters
 
 The benchmark makes the lab traceable to established security taxonomies instead of relying only on an internally invented test corpus. Future iterations can add new reference mappings and improve the shield rules based on measured bypasses.
+
+
+## Automated publication
+
+Reference intelligence is checked every five minutes by GitHub Actions. Public source metadata is fetched and hashed, then selected MITRE ATLAS techniques are converted into synthetic, non-executable defensive cases for AYORAI AI SHIELD. The repository publishes the latest evidence only when the material reference or defensive state changes. The public laboratory reads `audit/reference-runs/latest-public.json` for provenance and current published findings.
