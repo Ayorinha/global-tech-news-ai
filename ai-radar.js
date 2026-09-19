@@ -70,7 +70,7 @@ async function loadPublishedReferenceEvidence(){
     const grid=$("intelSourcesGrid");
     grid.innerHTML=(intel.sources||[]).map(s=>{
       const status=String(s.status||"UNKNOWN");
-      const ok=status==="200";
+      const ok=status==="OK" || status==="200";
       return '<article class="intelligence-source"><h3>'+escapeHtml(s.name||s.id)+'</h3><p class="source-ok">'+escapeHtml(status)+' · '+escapeHtml(s.fetched_at||"")+'</p><p>SHA-256: '+escapeHtml(s.sha256||"not available")+'</p><code>'+escapeHtml(s.url||"")+'</code></article>';
     }).join("");
   }catch(error){
