@@ -94,3 +94,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
   .status-grid{grid-template-columns:1fr}
   .live-flow span,.live-flow strong{font-size:6px}
 }
+
+/* MOBILE RADAR LABELS */
+@media(max-width:700px){
+  .radar-visual{overflow:visible}
+  .radar-visual svg,.radar-visual canvas{max-width:100%;overflow:visible}
+  .radar-visual text{font-size:clamp(7px,2.2vw,10px)}
+  .radar-visual .label,.radar-visual .node-label{font-size:clamp(7px,2.2vw,10px);white-space:nowrap;overflow:visible}
+}
