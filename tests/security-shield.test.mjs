@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import { createRequire } from "node:module";
+const require=createRequire(import.meta.url);
+const shield=require("../security-shield.js");
+const benchmark=require("../security-benchmark.js");
+const report=benchmark.run(shield,benchmark.BASE_CASES);
+assert.equal(report.totals.tests,11);
+assert.equal(report.totals.adversarial,9);
+assert.equal(report.totals.benign,2);
+assert.equal(report.metrics.bypassed,0);
+assert.equal(report.metrics.false_positives,0);
+assert.equal(report.metrics.detection_rate,100);
+assert.ok(report.results.every(r=>r.passed),"All benchmark cases must meet their expected decision");
+assert.match(report.engine,/AYORAI AI SHIELD/);
+console.log(JSON.stringify(report,null,2));
