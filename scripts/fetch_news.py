@@ -36,7 +36,7 @@ logging.basicConfig(level=logging.INFO,
 log = logging.getLogger(__name__)
 
 # ── Configuracao ─────────────────────────────────────────────
-MAX_PER_FEED   = 10
+MAX_PER_FEED   = 12
 OUTPUT_DIR     = Path(__file__).parent.parent / "data"
 OUTPUT_FILE    = OUTPUT_DIR / "news.json"
 
