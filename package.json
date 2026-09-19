@@ -1,0 +1,8 @@
+{
+  "name": "iorai-security-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "security:test": "node tests/security-shield.test.mjs"
+  }
+}
