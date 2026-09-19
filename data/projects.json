@@ -3,7 +3,7 @@
     "id": 9,
     "category": "projeto",
     "title": "🛡️ IEPTB Agentic AI Platform",
-    "description": "Secure, evaluated Agentic AI reference architecture for regulated remessa workflows, combining RAG, MCP, deterministic policy, RBAC, audit trails, threat modeling, evaluation and human approval boundaries. Public-safe prototype using synthetic data only.",
+    "description": "Secure, evaluated Agentic AI reference architecture for regulated remessa workflows, combining RAG, MCP, deterministic policy, least privilege, audit trails, threat modeling, evaluation and human approval boundaries. Public-safe prototype using synthetic data only.",
     "link": "https://github.com/Ayorinha/ayorai-vision-intelligence",
     "repo": "https://github.com/Ayorinha/ayorai-vision-intelligence",
     "tags": [
@@ -12,7 +12,6 @@
       "RAG",
       "MCP",
       "Security",
-      "RBAC",
       "Evaluation",
       "Auditability",
       "FastAPI",
