@@ -29,13 +29,17 @@ async function translateText(text,target){
 }
 const translationCache=new Map();
 async function localizedArticle(a){
-  const l=currentLang();if(l==="pt")return {title:get(a,"title_pt","title_original","title"),desc:get(a,"description_pt","description_original","description")};
-  const key=(a.link||a.title_original||"")+"|"+l;if(translationCache.has(key))return translationCache.get(key);
-  const p=Promise.all([translateText(get(a,"title_original","title_pt","title"),l),translateText(get(a,"description_original","description_pt","description"),l)]).then(([title,desc])=>({title,desc}));
+  const l=currentLang();
+  const title=get(a,"title_"+l,"title_pt","title_original","title");
+  const desc=get(a,"description_"+l,"description_pt","description_original","description");
+  if(a["title_"+l]||a["description_"+l]||l==="pt")return {title,desc};
+  const key=(a.link||a.title_original||"")+"|"+l;
+  if(translationCache.has(key))return translationCache.get(key);
+  const p=Promise.all([translateText(get(a,"title_original","title_pt","title"),l),translateText(get(a,"description_original","description_pt","description"),l)]).then(([t,d])=>({title:t,desc:d}));
   translationCache.set(key,p);return p;
 }
 
-function getFiltered(){const q=state.query.toLowerCase();const list=state.articles.filter(a=>!q||[get(a,"title_pt","title_original","title"),get(a,"description_pt","description_original","description"),get(a,"source")].join(" ").toLowerCase().includes(q));list.sort((a,b)=>{const da=new Date(a.published||0).getTime(),db=new Date(b.published||0).getTime();return state.sort==="newest"?db-da:da-db});return list}
+function getFiltered(){const q=state.query.toLowerCase();const list=state.articles.filter(a=>!q||["pt","es","en"].flatMap(l=>[get(a,"title_"+l),get(a,"description_"+l)]).concat([get(a,"title_pt","title_original","title"),get(a,"description_pt","description_original","description"),get(a,"source")]).join(" ").toLowerCase().includes(q));list.sort((a,b)=>{const da=new Date(a.published||0).getTime(),db=new Date(b.published||0).getTime();return state.sort==="newest"?db-da:da-db});return list}
 async function newsItem(a,idx){const localized=await localizedArticle(a),title=esc(localized.title),desc=esc(localized.desc),link=esc(get(a,"link","url")),source=get(a,"source"),image=get(a,"image","image_url","img","thumbnail"),delay=Math.min(idx*35,700),emoji=EMOJIS[source]||"📰",lnk=link.replace(/'/g,"\\'");const thumb=image?'<div class="news-thumb">'+makeImg(image,localized.title,emoji,"news-thumb-ph")+'</div>':"";return '<a class="news-item'+(image?" has-img":"")+'" href="'+link+'" target="_blank" rel="noopener" style="animation-delay:'+delay+'ms" onclick="registerClick(\''+lnk+'\')">'+thumb+'<div class="news-body"><span class="news-badge">'+esc(source)+'</span><h2 class="news-item-title">'+title+'</h2>'+(desc?'<p class="news-desc">'+desc+'</p>':"")+'<div class="news-foot"><span class="news-tag">#'+esc(source.toLowerCase().replace(/\s+/g,""))+'</span><span class="news-time">'+timeAgo(a.published)+'</span></div></div></a>'}
 async function renderNews(){if(!$list)return;const filtered=getFiltered();$list.innerHTML=filtered.length?'<div class="loader"><div class="spinner"></div><p>'+T("loading")+'</p></div>':'<div class="empty">'+T("empty")+'</div>';if(!filtered.length)return;const html=await Promise.all(filtered.map(newsItem));$list.innerHTML=html.join("")}
 function buildFilters(){if(!$filters)return;const counts={};state.articles.forEach(a=>{const l=LANGS[a.language]?a.language:"en";counts[l]=(counts[l]||0)+1});$filters.innerHTML='';const all=document.createElement("button");all.className="filter-btn active";all.dataset.lang="all";all.innerHTML=T("all")+' <span class="cnt">('+state.articles.length+')</span>';$filters.appendChild(all);Object.keys(LANGS).forEach(code=>{if(!counts[code])return;const b=document.createElement("button");b.className="filter-btn";b.dataset.lang=code;b.innerHTML=LANGS[code].label+' <span class="cnt">('+counts[code]+')</span>';$filters.appendChild(b)})}
