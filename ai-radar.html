@@ -26,19 +26,34 @@
     <p>Um laboratório visual para simular ameaças contra agentes de IA, observar a superfície de ataque e validar camadas defensivas em um ambiente controlado.</p>
     <div class="hero-pills"><span>Prompt Injection</span><span>RAG Poisoning</span><span>Tool Abuse</span><span>Data Exfiltration</span><span>Agent Hijacking</span></div>
   </div>
-  <div class="threat-radar" aria-label="Radar visual de ameaças de IA">
-    <div class="radar-grid"></div><div class="radar-cross cross-x"></div><div class="radar-cross cross-y"></div>
-    <div class="radar-ring ring-1"></div><div class="radar-ring ring-2"></div><div class="radar-ring ring-3"></div><div class="radar-ring ring-4"></div>
-    <div class="radar-sweep"></div><div class="radar-origin"></div>
-    <button class="threat-dot dot-a" data-threat="Prompt Injection"></button>
-    <button class="threat-dot dot-b" data-threat="RAG Poisoning"></button>
-    <button class="threat-dot dot-c" data-threat="Tool Abuse"></button>
-    <button class="threat-dot dot-d" data-threat="Agent Hijacking"></button>
-    <div class="radar-readout"><span>THREAT SCAN</span><strong id="radarThreat">Scanning...</strong><small id="radarThreatState">isolated simulation</small></div>
+  <div class="threat-command-center" aria-label="Radar visual de ameaças de IA">
+    <div class="planet-stage">
+      <div class="planet-glow"></div><div class="planet"></div><div class="planet-grid"></div>
+      <div class="shield-dome"><span></span></div>
+      <div class="radar-orbit orbit-a"></div><div class="radar-orbit orbit-b"></div>
+      <div class="radar-sweep"></div><div class="radar-origin"></div>
+      <button class="threat-dot dot-a" data-threat="Prompt Injection"></button>
+      <button class="threat-dot dot-b" data-threat="RAG Poisoning"></button>
+      <button class="threat-dot dot-c" data-threat="Tool Abuse"></button>
+      <button class="threat-dot dot-d" data-threat="Agent Hijacking"></button>
+      <div class="threat-beam beam-a"></div><div class="threat-beam beam-b"></div>
+      <div class="radar-readout"><span>CYBER SHIELD AI · THREAT SCAN</span><strong id="radarThreat">Scanning...</strong><small id="radarThreatState">isolated simulation · perimeter active</small></div>
+      <div class="shield-logo" aria-label="Cyber Shield AI"><span>✦</span><b>CYBER<br>SHIELD AI</b></div>
+    </div>
+    <div class="hud-side hud-left">
+      <div class="hud-card"><small>THREAT DETECTION</small><strong>98.7%</strong><i><span style="width:98.7%"></span></i></div>
+      <div class="hud-card"><small>SHIELD INTEGRITY</small><strong>99.2%</strong><i><span style="width:99.2%"></span></i></div>
+      <div class="hud-card"><small>AGENT RISK</small><strong class="warn">LOW</strong><em>● MONITORED</em></div>
+    </div>
+    <div class="hud-side hud-right">
+      <div class="hud-card"><small>RAG SECURITY</small><strong>97.4%</strong><i><span style="width:97.4%"></span></i></div>
+      <div class="hud-card"><small>MCP SECURITY</small><strong>99.0%</strong><i><span style="width:99%"></span></i></div>
+      <div class="hud-card"><small>TOOL SECURITY</small><strong>96.8%</strong><i><span style="width:96.8%"></span></i></div>
+    </div>
   </div>
 </section>
 
-<section class="lab-toolbar">
+<section class="lab-toolbar"><div class="lab-telemetry-strip"><span>GLOBAL DEFENSE GRID</span><b>24 / 7</b><span>SIMULATED THREATS</span><b id="threatCount">04</b><span>PERIMETER</span><b>ACTIVE</b></div>
   <div><div class="eyebrow">CONTROLLED TEST ENVIRONMENT</div><h2>Attack Simulation Console</h2></div>
   <span class="safe-badge">● DEFENSIVE SANDBOX</span>
 </section>
