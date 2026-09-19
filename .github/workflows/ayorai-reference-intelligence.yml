@@ -39,7 +39,7 @@ jobs:
       - name: Publish changed evidence to the repository
         run: |
           node scripts/publish_reference_intelligence.mjs
-          if git diff --quiet -- audit/reference-runs/latest-public.json; then
+          if [ -z "$(git status --porcelain -- audit/reference-runs/latest-public.json)" ]; then
             echo "No material reference or defense change to publish."
             exit 0
           fi
