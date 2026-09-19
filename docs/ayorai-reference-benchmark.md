@@ -6,7 +6,7 @@ The public AYORAI AI Shield laboratory now includes a reference-aligned security
 
 ## Reference foundations
 
-- **OWASP Top 10 for LLM Applications 2025** — GenAI/LLM application risks.
+- **OWASP GenAI LLM Top 10 2026** — Current GenAI/LLM application risks and 2026 categories.
 - **MITRE ATLAS** — adversarial tactics and techniques for AI systems.
 - **NIST AI 100-2e2025** — adversarial machine-learning taxonomy and terminology.
 - **OASB** — external agent-security benchmark used as a technique-coverage reference; its scenarios are not copied into the public lab.
