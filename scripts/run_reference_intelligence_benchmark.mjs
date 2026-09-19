@@ -47,6 +47,8 @@ report.intelligence = {
   run_id: intel.intelligence_run_id,
   source_count: intel.sources.length,
   dynamic_cases: dynamicCases.length,
+  atlas_candidate_count: (intel.atlas_candidates || []).length,
+  atlas_candidate_ids: (intel.atlas_candidates || []).map(t => t.id),
   sources: intel.sources.map(s => ({
     id: s.id,
     name: s.name,
