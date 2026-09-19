@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url);
 const shield = require("../security-shield.js");
 const benchmark = require("../security-benchmark.js");
 
-const report = benchmark.run(shield);
+const report = benchmark.run(shield, benchmark.BASE_CASES);
 
 assert.equal(report.totals.tests, 11);
 assert.equal(report.totals.adversarial, 9);
