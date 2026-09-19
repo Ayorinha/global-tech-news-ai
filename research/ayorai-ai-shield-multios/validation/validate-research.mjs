@@ -36,10 +36,18 @@ for (const file of required) {
 const diagrams = fs.readFileSync(path.join(root, "DIAGRAMS.md"), "utf8");
 if (!diagrams.includes("mermaid")) failures.push("DIAGRAMS.md does not contain Mermaid diagrams");
 
-const claims = fs.readFileSync(path.join(root, "SECURITY-CLAIMS.md"), "utf8").toLowerCase();
-for (const phrase of forbiddenAbsoluteClaims) {
-  if (claims.includes(phrase.toLowerCase())) {
-    failures.push(`SECURITY-CLAIMS.md contains prohibited absolute claim: "${phrase}"`);
+const claims = fs.readFileSync(path.join(root, "SECURITY-CLAIMS.md"), "utf8");
+if (!claims.includes("## Prohibited absolute language")) {
+  failures.push("SECURITY-CLAIMS.md is missing its prohibited-language policy section");
+}
+
+const policyFiles = required.filter((file) => file !== "SECURITY-CLAIMS.md");
+for (const file of policyFiles) {
+  const text = fs.readFileSync(path.join(root, file), "utf8").toLowerCase();
+  for (const phrase of forbiddenAbsoluteClaims) {
+    if (text.includes(phrase.toLowerCase())) {
+      failures.push(`${file} contains an unscoped absolute security claim: "${phrase}"`);
+    }
   }
 }
 
