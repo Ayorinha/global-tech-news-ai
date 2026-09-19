@@ -128,6 +128,11 @@ FEEDS = {
         {"url": "https://feeds.arstechnica.com/arstechnica/index",  "name": "Ars Technica"},
         {"url": "https://www.wired.com/feed/rss",                   "name": "Wired"},
         {"url": "https://technologyreview.com/feed/",               "name": "MIT Tech Review"},
+        {"url": "https://openai.com/news/rss.xml",                   "name": "OpenAI News"},
+        {"url": "https://www.anthropic.com/news/rss.xml",            "name": "Anthropic News"},
+        {"url": "https://blog.google/technology/ai/rss/",            "name": "Google AI"},
+        {"url": "https://huggingface.co/blog/feed.xml",              "name": "Hugging Face"},
+        {"url": "https://github.blog/feed/",                         "name": "GitHub Blog"},
     ],
     "es": [
         {"url": "https://www.xataka.com/feed.xml",   "name": "Xataka"},
