@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "security:test": "node tests/security-shield.test.mjs",
-    "research:test": "node research/ayorai-ai-shield-multios/tests/runtime.test.mjs && node research/ayorai-ai-shield-multios/tests/extended-runtime.test.mjs",
+    "research:test": "node research/ayorai-ai-shield-multios/tests/runtime.test.mjs && node research/ayorai-ai-shield-multios/tests/extended-runtime.test.mjs && node research/ayorai-ai-shield-multios/tests/sensors.test.mjs",
     "research:agent": "node research/ayorai-ai-shield-multios/agent/read-only-agent.mjs",
     "research:control-plane": "node research/ayorai-ai-shield-multios/control-plane/local-control-plane.mjs"
   }
