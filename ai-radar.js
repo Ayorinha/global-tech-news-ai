@@ -47,6 +47,14 @@ function renderPublishedEvidence(report) {
   setText("refBypass", metrics.bypassed);
   setText("refFP", metrics.false_positives);
 
+  setText("processingStatus", "PUBLISHED · ONLINE");
+  setText("processingRun", report.run_id);
+  setText("processingDate", formatDate(report.generated_at));
+  setText("processingCases", totals.tests);
+  setText("processingDetection", `${metrics.detection_rate ?? "—"}%`);
+  setText("processingBypass", metrics.bypassed);
+  setText("processingFP", metrics.false_positives);
+
   setText("intelStatus", "REFERENCE INTELLIGENCE ONLINE");
   setText("intelPublished", formatDate(publication.published_at));
   setText("intelSources", intelligence.source_count);
