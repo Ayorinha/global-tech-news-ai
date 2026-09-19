@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The public AYORAI AI Shield laboratory now includes a reference-aligned security benchmark. The benchmark does not claim certification or reproduce live exploits. It uses safe synthetic cases mapped to recognized security references and measures the observed defensive coverage of the current shield.
+The public AYORAI AI Shield laboratory contains a real, executable defensive engine and a reference-aligned security benchmark. The engine runs actual detection logic; the benchmark scenarios are safe, synthetic and controlled. The project does not claim certification and does not reproduce live exploits. Official or recognized external references are used as evaluation foundations, while the benchmark implementation and observed results belong to AYORAI.
 
 ## Reference foundations
 
@@ -29,7 +29,7 @@ A **bypass** means an adversarial synthetic case was classified as ALLOW. A **fa
 
 ## Important boundary
 
-This is an evaluation benchmark, not a claim that AYORAI AI Shield covers all OWASP, MITRE ATLAS, NIST, or OASB techniques. Coverage is measured empirically and gaps are intentionally visible.
+This is an AYORAI evaluation benchmark, not an official OWASP, MITRE ATLAS, NIST, or OASB test or certification. The external references are used as documented foundations; the Shield engine, benchmark implementation, synthetic cases, and observed results are AYORAI's. It does not claim that AYORAI AI Shield covers all techniques. Coverage is measured empirically and gaps are intentionally visible.
 
 The benchmark is safe by design: it does not download malware, execute exploits, attack external systems, or perform unauthorized tool actions.
 
