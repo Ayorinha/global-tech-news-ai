@@ -60,6 +60,9 @@ async function loadPublishedReferenceEvidence(){
     $("intelPublished").textContent=p.published_at?new Date(p.published_at).toLocaleString("pt-BR"):"—";
     $("intelSources").textContent=intel.source_count??"—";
     $("intelDynamic").textContent=intel.dynamic_cases??"—";
+    const atlasVersion=intel.atlas_version || intel.atlas?.current_version || "latest";
+    const atlasCard=document.getElementById("intelAtlasVersion");
+    if(atlasCard) atlasCard.textContent="ATLAS "+atlasVersion;
     $("intelDetection").textContent=(r.metrics?.detection_rate??"—")+"%";
     $("intelBypass").textContent=r.metrics?.bypassed??"—";
     $("intelFP").textContent=r.metrics?.false_positives??"—";
