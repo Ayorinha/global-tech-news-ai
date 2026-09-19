@@ -12,6 +12,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: ayorai-reference-intelligence
@@ -20,6 +22,9 @@ concurrency:
 jobs:
   intelligence-benchmark:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     timeout-minutes: 8
     steps:
       - name: Checkout
@@ -48,6 +53,18 @@ jobs:
           git add audit/reference-runs/latest-public.json
           git commit -m "chore(security): publish reference intelligence evidence"
           git push
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Upload intelligence evidence
         uses: actions/upload-artifact@v4
