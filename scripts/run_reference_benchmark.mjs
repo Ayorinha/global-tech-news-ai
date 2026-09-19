@@ -1,0 +1,14 @@
+import fs from "node:fs";
+import { createRequire } from "node:module";
+const require=createRequire(import.meta.url);
+const shield=require("../security-shield.js");
+const benchmark=require("../security-reference-benchmark.js");
+const report=benchmark.run(shield);
+fs.mkdirSync("audit/reference-runs",{recursive:true});
+const stamp=report.generated_at.replace(/[:.]/g,"-");
+const path="audit/reference-runs/"+stamp+".json";
+fs.writeFileSync(path,JSON.stringify(report,null,2)+"\n","utf8");
+console.log("AYORAI REFERENCE BENCHMARK",report.run_id);
+console.log(JSON.stringify(report.metrics));
+console.log(JSON.stringify(report.by_source,null,2));
+console.log("EVIDENCE_FILE",path);
