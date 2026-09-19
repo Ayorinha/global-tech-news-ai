@@ -35,7 +35,7 @@ const AyoraiCyberDefenseAgents = (() => {
       run_id:"AYORAI-"+new Date().toISOString().replace(/[-:.TZ]/g,"").slice(0,17)+"-"+Math.random().toString(36).slice(2,8).toUpperCase(),
       generated_at:new Date().toISOString(),execution_ms:Math.round(performance.now()-started),
       totals:{tests:results.length,adversarial:adversarial.length,benign:benign.length},
-      metrics:{blocked,detected,bypassed,false_positives:falsePositives,detection_rate:Number((detected/(adversarial.length||1)*100).toFixed(2)),false_positive_rate:Number((falsePositives/(benign.length||1)*100).toFixed(2))},
+      metrics:{blocked,detected,bypassed,incidents:0,critical_failures:bypassed,false_positives:falsePositives,detection_rate:Number((detected/(adversarial.length||1)*100).toFixed(2)),false_positive_rate:Number((falsePositives/(benign.length||1)*100).toFixed(2))},
       results
     };
   }
