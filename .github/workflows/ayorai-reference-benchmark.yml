@@ -1,0 +1,46 @@
+name: AYORAI Reference Cybersecurity Benchmark
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "security-shield.js"
+      - "security-reference-benchmark.js"
+      - "scripts/run_reference_benchmark.mjs"
+      - "tests/reference-benchmark.test.mjs"
+      - ".github/workflows/ayorai-reference-benchmark.yml"
+  pull_request:
+    paths:
+      - "security-shield.js"
+      - "security-reference-benchmark.js"
+      - "scripts/run_reference_benchmark.mjs"
+      - "tests/reference-benchmark.test.mjs"
+      - ".github/workflows/ayorai-reference-benchmark.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  reference-benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate reference benchmark
+        run: node tests/reference-benchmark.test.mjs
+      - name: Execute reference benchmark
+        run: node scripts/run_reference_benchmark.mjs
+      - name: Publish reference evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ayorai-reference-cybersecurity-benchmark
+          path: audit/reference-runs/*.json
+          retention-days: 30
+      - name: Write benchmark summary
+        run: |
+          node -e "const fs=require('fs'); const f=fs.readdirSync('audit/reference-runs').sort().pop(); const r=JSON.parse(fs.readFileSync('audit/reference-runs/'+f)); fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '## AYORAI Reference Cybersecurity Benchmark\n\n- Run: '+r.run_id+'\n- Tests: '+r.totals.tests+'\n- Detection: '+r.metrics.detection_rate+'%\n- Bypassed: '+r.metrics.bypassed+'\n- False positives: '+r.metrics.false_positives+'\n');"
