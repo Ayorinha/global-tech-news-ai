@@ -1,133 +1,165 @@
 # Ayorai Global Tech News AI
 
-> Applied AI · Data · Intelligent Automation — technical portfolio and automated technology-news pipeline.
+> **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![RSS](https://img.shields.io/badge/Data-RSS%20Feeds-orange)](https://www.rssboard.org/rss-specification)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
 
-## Overview
+## Purpose
 
-Ayorai Global Tech News AI is a lightweight automated pipeline that collects technology news from multiple RSS sources, extracts available metadata and images, translates supported content to Portuguese, and publishes a browser-based experience through GitHub Pages.
+This repository is the public **AYORAI Applied Intelligence portfolio hub**. It combines a production-style technology-news pipeline with selected engineering projects and a public defensive AI laboratory.
 
-The repository also acts as the public technical showcase for the Ayorai portfolio, connecting the live application with selected projects in data, machine learning, document intelligence and automation.
+The repository is intentionally curated: experiments that are not useful for demonstrating professional engineering capability are kept out of the main portfolio surface.
 
-## Architecture
+## Platform map
 
 ```text
-RSS Sources
-    │
-    ▼
-Python Ingestion
-    │
-    ├── Feed parsing
-    ├── Metadata extraction
-    ├── Image discovery
-    └── Translation
-    │
-    ▼
-data/news.json
-    │
-    ▼
-Static Web Application
-    │
-    ├── News discovery
-    ├── Search / filters
-    └── Ayorai portfolio
-    │
-    ▼
-GitHub Pages
-
-GitHub Actions ── scheduled automation ──► pipeline
+AYORAI · APPLIED INTELLIGENCE
+│
+├── 01 · Intelligence Platform
+│   ├── Tech News ingestion
+│   ├── AI Index / tools catalog
+│   └── Structured data pipelines
+│
+├── 02 · AI Safety & Security
+│   ├── AYORAI AI Shield
+│   ├── AYORAI AI Laboratory — Security Lab
+│   └── AyorAI Agent Defense Lab
+│
+├── 03 · Applied AI Engineering
+│   ├── Document Intelligence / OCR
+│   ├── RAG
+│   ├── Data Engineering
+│   └── RPA
+│
+└── 04 · Supporting Portfolio Projects
+    ├── Financial Analytics
+    ├── Credit Risk / Explainability
+    └── Game-development learning project
 ```
 
-## Current capabilities
+## Public site
 
-- Multi-source RSS ingestion
-- Multiple source languages
-- Portuguese translation workflow
-- Article metadata normalization
-- Image extraction from RSS metadata/content
-- Timestamp normalization
-- Structured JSON output
-- Automated hourly execution through GitHub Actions
-- Automatic commit/publish of updated news data
-- Static browser-based frontend
-- Search, language filters and chronological sorting
-- Curated Ayorai project portfolio loaded from `data/projects.json`
+- **News:** `index.html`
+- **AI Index:** `ai-tools.html`
+- **AI Laboratory:** `ai-radar.html`
+- **Historical security report:** `security-report.html`
 
-## Technology
+The AI Laboratory is a public defensive evaluation surface. Its scenarios are synthetic and controlled; it is not presented as a certification or as a production endpoint security product.
 
-- Python 3.11+
-- feedparser
-- requests
-- deep-translator
-- HTML / CSS / JavaScript
-- GitHub Actions
-- GitHub Pages
+## Core architecture
 
-## Selected Ayorai portfolio
-
-The public site intentionally presents a curated set of projects rather than an exhaustive list of experiments.
-
-- **Ayorai Tech News AI** — automated RSS ingestion, translation, ETL and publishing.
-- **Protesto Credit Scoring** — synthetic-data credit-risk research with ML, fairness and SHAP explainability.
-- **OCR-Python** — OCR and document-processing study.
-- **Hybrid Data Management RPA Pipeline** — data engineering combined with process automation.
-- **Ayorai Financial Control** — browser-based financial data analysis and visualization.
-- **Sonic MVP Game** — learning project developed in the context of game-development training.
+```text
+RSS / Public References
+        │
+        ├── Python ingestion
+        ├── metadata normalization
+        ├── translation
+        └── reference intelligence
+        │
+        ▼
+Structured JSON / Published Evidence
+        │
+        ├── Public News
+        ├── AI Index
+        └── AYORAI AI Laboratory
+                │
+                ├── AYORAI AI Shield
+                ├── controlled benchmark
+                ├── evidence history
+                └── audit / assurance layer
+```
 
 ## Repository structure
 
 ```text
 .
-├── .github/workflows/      # CI automation
-├── data/                   # News dataset and portfolio metadata
-├── scripts/                # Ingestion and processing scripts
-├── index.html              # Web application and portfolio entry point
-├── script.js               # Frontend behavior
-├── style.css               # Frontend presentation
-├── requirements.txt        # Python dependencies
+├── .github/
+│   └── workflows/              # CI, scheduled data and security automation
+├── audit/                      # Published benchmark/evidence records
+│   ├── reference-intelligence/
+│   ├── reference-runs/
+│   └── runs/
+├── data/                       # Published news, AI catalog and project metadata
+├── docs/                       # Security, benchmark and audit documentation
+├── labs/
+│   └── ayorai-agent-defense-lab/ # Executable defensive-agent research lab
+├── scripts/                    # Data ingestion and benchmark runners
+├── tests/                      # Public AI Shield regression tests
+├── ai-radar.html               # AI Laboratory UI (legacy filename kept for URL stability)
+├── ai-radar.js                 # AI Laboratory controller
+├── ai-radar.css                # AI Laboratory styles
+├── security-shield.js          # AYORAI AI Shield defensive engine
+├── security-benchmark.js       # Controlled benchmark corpus/runner
+├── security-reference-benchmark.js
+├── security-report.html        # Historical/public report
+├── index.html                  # Main portfolio/news surface
+├── ai-tools.html               # AI Index
+├── script.js
+├── style.css
+├── package.json
+├── requirements.txt
 └── README.md
 ```
 
+### Naming note
+
+The public laboratory was renamed from the earlier **AI Radar** concept to **AYORAI AI Laboratory / Security Lab**. The `ai-radar.*` filenames remain temporarily because changing them would break existing GitHub Pages URLs and references. The visible product naming is the new one.
+
+The legacy `data/ai-radar.json` pipeline is separate from the security laboratory and should not be confused with the AYORAI AI Shield evidence system.
+
+## Curated projects
+
+The public portfolio metadata is maintained in `data/projects.json`.
+
+### Security / Agentic AI
+- **AYORAI AI Shield** — deterministic defensive architecture for autonomous AI agents.
+- **AYORAI AI Laboratory — Security Lab** — public controlled evaluation and evidence interface.
+- **AyorAI Agent Defense Lab** — executable local defensive-agent research environment using synthetic data.
+
+### Applied AI / Data
+- **Protesto Credit Scoring** — synthetic risk modelling, fairness and explainability.
+- **OCR-Python** — OCR and document-processing engineering.
+- **Hybrid Data Management RPA Pipeline** — data engineering and process automation.
+- **Ayorai Financial Control** — financial analytics and dashboard engineering.
+
+### Supporting study
+- **Sonic MVP Game** — explicitly maintained as a learning project, separate from the core AI portfolio.
+- **Python, Data & AI Engineering** — ongoing study track.
+
+## IEPTB Agentic AI Platform
+
+**IEPTB Agentic AI Platform — Flagship** is a proposed/organizational flagship direction, not a public repository currently represented as an implemented product in this repository.
+
+It should only be published with the appropriate institutional authorization and with confidential IEPTB data, credentials and internal architecture excluded. When a public implementation is intentionally released, it should have its own repository or clearly isolated module rather than being mixed into the news site.
+
+## Engineering principles
+
+- Reproducible tests and evidence
+- Synthetic/public data for security demonstrations
+- Explicit security boundaries
+- Human approval for high-impact actions
+- No secrets in source control
+- No offensive automation against external systems
+- Evidence before strong security claims
+- Clear separation between current implementation and future product concepts
+
 ## Automation
 
-The production workflow runs on a schedule and can also be triggered manually. The workflow has write permission only for repository contents because the generated dataset is committed back to the repository.
+GitHub Actions maintains scheduled data ingestion and security/reference evaluation workflows. Generated public datasets are committed only where the corresponding workflow explicitly requires it.
 
-The portfolio layer is deliberately separated from the news ingestion flow: project metadata lives in `data/projects.json`, while the news pipeline continues to publish `data/news.json`.
+## Privacy and attribution
 
-## Data and attribution
+The news pipeline stores metadata and links to original sources. It does not claim ownership of third-party articles.
 
-The project stores article metadata and links back to the original sources. It does not claim ownership of third-party articles. Source attribution remains part of the published dataset and user experience.
+No private organizational credentials, personal records or internal business datasets are required by the public pipeline.
 
-## Privacy and security
+## Portfolio positioning
 
-No private organizational credentials, personal records or internal business datasets are required by the public pipeline. API keys are not embedded in the application code.
-
-Portfolio projects that involve sensitive or organizational contexts are represented publicly only through appropriate public repositories, synthetic data or high-level descriptions.
-
-## Portfolio relevance
-
-This repository demonstrates:
-
-- Data ingestion pipelines
-- Lightweight ETL
-- Content normalization
-- Translation workflows
-- Automation engineering
-- GitHub Actions and scheduled jobs
-- Static deployment
-- Browser-based application design
-- Portfolio-oriented technical documentation
-
-## Status
-
-**Active project.** The automated news-update workflow remains the core function, while the public interface also serves as a curated Ayorai technical portfolio.
+**AI Engineering · Applied AI · Agentic Systems · AI Safety · LLM Security · RAG · MCP · Document Intelligence · RPA · Data Engineering · Python · GitHub Actions**
 
 ## Author
 
 **Anderson Leon Ayora**  
 Data Scientist · AI Engineer · Data Architect
 
-Ayorai — Applied AI · Data · Intelligent Automation
-
-[LinkedIn](https://www.linkedin.com/in/anderson-leon-ayora) · [GitHub](https://github.com/Ayorinha)
+**AYORAI · Applied Intelligence**
