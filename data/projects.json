@@ -69,26 +69,6 @@
     "image": ""
   },
   {
-    "id": 2,
-    "category": "projeto",
-    "title": "Protesto Credit Scoring",
-    "description": "Projeto aplicado de modelagem de risco com dados sintéticos: geração de dados, EDA, comparação de modelos, métricas de score, auditoria de fairness e explicabilidade com SHAP. Desenvolvido para demonstrar uma arquitetura de análise responsável sem dados reais.",
-    "link": "",
-    "repo": "https://github.com/Ayorinha/protesto-credit-scoring",
-    "tags": [
-      "Python",
-      "Machine Learning",
-      "Scikit-learn",
-      "SHAP",
-      "Fairness",
-      "Risk Analytics"
-    ],
-    "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-09-17",
-    "image": ""
-  },
-  {
     "id": 3,
     "category": "projeto",
     "title": "OCR-Python",
@@ -179,6 +159,64 @@
     "status": "em andamento",
     "version": "",
     "created_at": "2026-09-01",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "category": "projeto",
+    "title": "🤖 AYORAI — Agentic Intelligence & AI Safety",
+    "description": "Framework modular para sistemas agentic com orquestração, RAG, MCP, governança de ferramentas e avaliação adversarial.",
+    "link": "https://github.com/Ayorinha/ayorai",
+    "repo": "https://github.com/Ayorinha/ayorai",
+    "tags": [
+      "AI Engineering",
+      "Agentic AI",
+      "RAG",
+      "MCP",
+      "AI Safety",
+      "Python"
+    ],
+    "status": "ativo",
+    "version": "0.4.0",
+    "created_at": "2026-09-19",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "category": "projeto",
+    "title": "📄 AYORAI Offline OCR API",
+    "description": "API local Windows para OCR offline usando o runtime OneOCR, com interface web local, texto, linhas, palavras, bounding boxes e confiança.",
+    "link": "https://github.com/Ayorinha/ayorai/tree/feat/offline-ocr-api",
+    "repo": "https://github.com/Ayorinha/ayorai",
+    "tags": [
+      "OCR",
+      "Document Intelligence",
+      "OneOCR",
+      "FastAPI",
+      "Offline AI",
+      "Windows"
+    ],
+    "status": "em validação",
+    "version": "0.4.0",
+    "created_at": "2026-09-19",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "category": "projeto",
+    "title": "🧾 OCRWinRT-CSharp",
+    "description": "PoC de OCR offline em Windows usando Windows.Media.Ocr e C#/.NET, com execução local e exportação de texto.",
+    "link": "https://github.com/Ayorinha/OCRWinRT-CSharp",
+    "repo": "https://github.com/Ayorinha/OCRWinRT-CSharp",
+    "tags": [
+      "C#",
+      "OCR",
+      "Windows",
+      "Document Intelligence"
+    ],
+    "status": "ativo",
+    "version": "1.0",
+    "created_at": "2026-09-19",
     "image": ""
   }
 ]
