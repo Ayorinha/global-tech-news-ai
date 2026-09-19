@@ -22,3 +22,26 @@
 @media(max-width:560px){.intelligence-kpis{grid-template-columns:1fr}}
 
 .auto-badge{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid rgba(32,227,155,.28);background:rgba(32,227,155,.07);color:var(--green);border-radius:9px;font-size:11px;font-weight:900;letter-spacing:.08em}.auto-status{display:flex;align-items:center;gap:8px;color:var(--green);font-size:10px;font-weight:900;letter-spacing:.12em;white-space:nowrap}.auto-status span{font-size:15px;box-shadow:0 0 10px rgba(32,227,155,.35);border-radius:50%}@media(max-width:700px){.auto-badge{width:100%;justify-content:center}.auto-status{margin-top:18px}}
+
+/* AYORAI PRODUCT MODE · minimal security interface */
+body.radar-page{font-weight:300;letter-spacing:.005em}
+.radar-topbar{height:62px}
+.radar-brand strong,.radar-topbar nav a,.top-status,.eyebrow,.auto-badge,.reference-badge,.auto-status{font-weight:400}
+.radar-brand{letter-spacing:.08em}.radar-brand span{font-weight:300}
+.hero{min-height:510px;border-radius:18px;padding:clamp(28px,5vw,56px);background:linear-gradient(120deg,rgba(18,217,255,.045),rgba(9,21,34,.88) 58%,rgba(255,77,112,.02))}
+.hero h1{font-weight:300;letter-spacing:-.055em;font-size:clamp(44px,6vw,76px)}
+.hero p,.section-head p{font-weight:300;color:#91a8b8}
+.hero-actions{margin:20px 0}.auto-badge{min-height:40px;font-size:10px}.secondary{min-height:40px;font-weight:300}
+.status-grid{gap:6px;margin:10px 0 34px}
+.status-grid article{padding:14px;border-radius:10px;background:rgba(9,21,34,.5)}
+.status-grid b{font-weight:300;font-size:24px}.status-grid span{font-weight:300}
+.section-head{margin:42px 0 14px}.section-head h2,.defense-section h2,.report-callout h2,.method h2{font-weight:300;letter-spacing:-.025em}
+.reference-kpis article,.coverage-grid article,.finding-panel,.intelligence-kpis article,.intelligence-source{background:rgba(9,21,34,.48);border-radius:10px}
+.reference-kpis b,.intelligence-kpis b{font-weight:300}
+.intelligence-section{margin-top:54px}.intelligence-kpis{gap:7px;margin:16px 0}
+.intelligence-kpis article{padding:15px}.intelligence-kpis span,.intelligence-sources span{font-weight:300}
+.intelligence-sources{gap:7px}.intelligence-source{padding:15px}.intelligence-source h3{font-weight:300}
+.pipeline>div{background:rgba(9,21,34,.45);padding:14px}.pipeline b{font-weight:400}
+.report-callout{margin:38px 0;padding:20px;border-radius:12px;background:rgba(18,217,255,.025)}
+.report-callout p{font-weight:300}
+footer{font-weight:300}
