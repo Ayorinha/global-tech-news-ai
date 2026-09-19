@@ -7,7 +7,7 @@ on:
       - "audit/reference-runs/**"
       - "audit/reference-intelligence/**"
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -44,15 +44,15 @@ jobs:
       - name: Publish changed evidence to the repository
         run: |
           node scripts/publish_reference_intelligence.mjs
-          if [ -z "$(git status --porcelain -- audit/reference-runs/latest-public.json)" ]; then
+          if [ -n "$(git status --porcelain -- audit/reference-runs/latest-public.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add audit/reference-runs/latest-public.json
+            git commit -m "chore(security): publish reference intelligence evidence"
+            git push
+          else
             echo "No material reference or defense change to publish."
-            exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audit/reference-runs/latest-public.json
-          git commit -m "chore(security): publish reference intelligence evidence"
-          git push
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
