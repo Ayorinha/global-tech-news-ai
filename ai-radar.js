@@ -84,3 +84,27 @@ loadPublishedReferenceEvidence();
 // Public dashboard mode: no manual benchmark controls. Evidence is published by CI hourly.
 async function refreshPublishedEvidence(){ await loadPublishedReferenceEvidence(); }
 setInterval(refreshPublishedEvidence,5*60*1000);
+
+
+// Live visual demonstration: five representative controlled cases executed locally in the browser.
+function initLiveDefenseTest(){
+  const btn=$("liveRunBtn"), cards=[...document.querySelectorAll("#liveTestCases .live-test-card")], status=$("liveTestStatus"), progress=$("liveTestProgress"), log=$("liveTestLog");
+  if(!btn||!cards.length)return;
+  const demoIds=["PI-001","RAG-001","TOOL-001","EXF-001","HIJ-001"];
+  const cases=demoIds.map(id=>BASE_CASES.find(c=>c.id===id)).filter(Boolean);
+  btn.onclick=async()=>{
+    if(running)return; running=true; btn.disabled=true; status.textContent="RUNNING"; progress.textContent="0 / "+cases.length; log.textContent="AYORAI AI SHIELD · controlled execution initialized...";
+    cards.forEach((card,i)=>{card.classList.remove("processing","blocked","finding");card.querySelector("em").textContent="READY";});
+    for(let i=0;i<cases.length;i++){
+      const card=cards[i], test=cases[i]; card.classList.add("processing"); card.querySelector("em").textContent="ANALYZING";
+      log.textContent += "\\n["+(String(i+1).padStart(2,"0"))+"] "+test.family+" · INPUT → CONTEXT → POLICY";
+      await wait(650);
+      const result=AyoraiAIShield.runCase(test), passed=result.actual===test.expected;
+      card.classList.remove("processing"); card.classList.add(passed?"blocked":"finding"); card.querySelector("em").textContent=result.actual;
+      progress.textContent=(i+1)+" / "+cases.length;
+      log.innerHTML += "<span class='"+(passed?"ok":"warn")+"'>\\n  → "+escapeHtml(result.actual)+" · risk "+escapeHtml(result.result.risk_score)+" · "+escapeHtml(result.result.defense_layer)+" · "+(passed?"PASS":"FINDING")+"</span>";
+    }
+    status.textContent="COMPLETE"; log.innerHTML += "<span class='ok'>\\n\\nAUDIT · visual demonstration complete.</span>"; btn.disabled=false; running=false;
+  };
+}
+initLiveDefenseTest();
