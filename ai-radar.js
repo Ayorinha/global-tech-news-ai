@@ -21,7 +21,7 @@ const report=AyoraiCyberDefenseAgents.run(AyoraiAIShield,cases);report.results=r
 async function startContinuous(){if(continuous)return;continuous=true;$("continuousBtn").textContent="■ STOP CONTINUOUS";$("continuousBtn").classList.add("danger");logLine("CONTINUOUS MODE ENABLED · CONTROLLED VARIANT GENERATION");let cycle=0;while(continuous){cycle++;const cases=AyoraiCyberDefenseAgents.generateCases(3);logLine("AUTONOMOUS CYCLE "+cycle+" · "+cases.length+" GENERATED CASES");await run(cases,"continuous");if(continuous)await wait(900);}}
 function stopContinuous(){$("continuousBtn").textContent="⚡ CONTINUOUS TESTING";$("continuousBtn").classList.remove("danger");continuous=false;logLine("CONTINUOUS MODE STOPPED");}
 function downloadReports(){if(!lastReport)return;const stamp=lastReport.generated_at.replace(/[:.]/g,"-");downloadFile("ayorai-ai-shield-"+stamp+".json",JSON.stringify(lastReport,null,2),"application/json");setTimeout(()=>downloadFile("ayorai-ai-shield-"+stamp+".md",markdownReport(lastReport), "text/markdown"),250);}
-renderCases(BASE_CASES);renderArchive();$("runAll").onclick=()=>run(AyoraiCyberDefenseAgents.generateCases(1),"manual");$("continuousBtn").onclick=()=>continuous?stopContinuous():startContinuous();$("downloadReport").onclick=downloadReports;$("downloadReport2").onclick=downloadReports;document.querySelectorAll(".signal").forEach(s=>s.onclick=()=>{const c=BASE_CASES.find(x=>x.id===s.dataset.id);$("radarState").textContent=c?c.family.toUpperCase():"READY";});
+renderArchive();
 
 async function runReferenceBenchmark(){
   if(running)return;
@@ -120,3 +120,7 @@ async function loadPublishedReferenceEvidence(){
   }
 }
 loadPublishedReferenceEvidence();
+
+// Public dashboard mode: no manual benchmark controls. Evidence is published by CI hourly.
+async function refreshPublishedEvidence(){ await loadPublishedReferenceEvidence(); }
+setInterval(refreshPublishedEvidence,5*60*1000);
