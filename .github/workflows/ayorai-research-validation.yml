@@ -1,0 +1,40 @@
+name: AYORAI Research Validation
+
+on:
+  push:
+    branches:
+      - research/ayorai-ai-shield-multios
+  pull_request:
+    paths:
+      - "research/ayorai-ai-shield-multios/**"
+      - "package.json"
+      - "security-shield.js"
+      - "security-benchmark.js"
+      - "tests/**"
+      - ".github/workflows/ayorai-research-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate research package
+        working-directory: research/ayorai-ai-shield-multios
+        run: node validation/validate-research.mjs
+
+      - name: Run public Shield regression
+        run: npm run security:test
+
+      - name: Run cross-platform runtime tests
+        run: npm run research:test

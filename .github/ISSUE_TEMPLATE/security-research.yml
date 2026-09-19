@@ -1,0 +1,27 @@
+name: Security Research
+description: Propose a controlled cybersecurity research task
+title: "[research] "
+labels:
+  - security
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What defensive question should be answered?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and safety boundary
+      description: State the controlled environment and exclusions.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: What test, benchmark or documentation will validate the result?
+    validations:
+      required: true
