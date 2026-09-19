@@ -20,3 +20,5 @@
 #intelFingerprint{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;word-break:break-word}
 @media(max-width:900px){.intelligence-kpis{grid-template-columns:repeat(2,1fr)}.intelligence-sources{grid-template-columns:1fr}}
 @media(max-width:560px){.intelligence-kpis{grid-template-columns:1fr}}
+
+.auto-badge{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid rgba(32,227,155,.28);background:rgba(32,227,155,.07);color:var(--green);border-radius:9px;font-size:11px;font-weight:900;letter-spacing:.08em}.auto-status{display:flex;align-items:center;gap:8px;color:var(--green);font-size:10px;font-weight:900;letter-spacing:.12em;white-space:nowrap}.auto-status span{font-size:15px;box-shadow:0 0 10px rgba(32,227,155,.35);border-radius:50%}@media(max-width:700px){.auto-badge{width:100%;justify-content:center}.auto-status{margin-top:18px}}
