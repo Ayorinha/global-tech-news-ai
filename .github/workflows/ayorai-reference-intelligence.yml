@@ -1,0 +1,67 @@
+name: AYORAI Reference Intelligence · 5 Minute Cycle
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ayorai-reference-intelligence
+  cancel-in-progress: true
+
+jobs:
+  intelligence-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync public reference intelligence
+        run: node scripts/sync_reference_intelligence.mjs
+
+      - name: Execute synthetic defensive benchmark
+        run: node scripts/run_reference_intelligence_benchmark.mjs
+
+      - name: Upload intelligence evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ayorai-reference-intelligence
+          path: |
+            audit/reference-intelligence/*.json
+            audit/reference-runs/*intelligence*.json
+          retention-days: 30
+
+      - name: Publish job summary
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const f = 'audit/reference-runs/latest-intelligence.json';
+          const r = JSON.parse(fs.readFileSync(f, 'utf8'));
+          const lines = [
+            '## AYORAI Reference Intelligence',
+            '',
+            '- Intelligence run: ' + r.intelligence.run_id,
+            '- Sources: ' + r.intelligence.source_count,
+            '- Dynamic cases: ' + r.intelligence.dynamic_cases,
+            '- Total tests: ' + r.totals.tests,
+            '- Detection: ' + r.metrics.detection_rate + '%',
+            '- Bypassed: ' + r.metrics.bypassed,
+            '- False positives: ' + r.metrics.false_positives,
+            '',
+            '### Sources'
+          ];
+          for (const s of r.intelligence.sources) {
+            lines.push('- ' + s.name + ' · ' + s.status + ' · ' + (s.sha256 || 'no hash'));
+          }
+          lines.push('', 'Safety boundary: reference intelligence only; no malware or executable exploit is run.');
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
+          NODE
