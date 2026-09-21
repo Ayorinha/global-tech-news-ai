@@ -2,20 +2,20 @@
 
 > **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
 >
-> **AYORA SSI** — Secure Systems Intelligence.
+> **AYORAI SSI** — Secure Systems Intelligence.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
 ## Purpose
 
-This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its security and agentic work is organized around **AYORA SSI (Secure Systems Intelligence)**, a security architecture connecting research, defense, evaluation and controlled agent operations.
+This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its security and agentic work is organized around **AYORAI SSI (Secure Systems Intelligence)**, a security architecture connecting research, defense, evaluation and controlled agent operations.
 
-## AYORA SSI
+## AYORAI SSI
 
 **Secure Systems Intelligence** is the umbrella architecture for AYORAI's AI defense work.
 
 ```
-                         AYORA SSI
+                         AYORAI SSI
                  Secure Systems Intelligence
                               │
           ┌───────────────────┼───────────────────┐
@@ -38,14 +38,14 @@ This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its
                            Audit
 ```
 
-**AYORA SSI replaces the previous Great Attractor naming.** The underlying architecture remains the same; only the umbrella identity has been consolidated under **Secure Systems Intelligence**.
+**AYORAI SSI is the consolidated identity for the architecture previously called Great Attractor.** The underlying architecture remains the same.
 
 ### Platform map
 
 - **AI Laboratory** → research, benchmarks and controlled evaluation
 - **AI Shield** → defensive security boundaries
 - **Agent Defense Lab** → adversarial evaluation of defensive agents
-- **AYORA SSI** → umbrella security architecture and coordination layer
+- **AYORAI SSI** → umbrella security architecture and coordination layer
 - **Secure Operations Agent** → first practical agent implementation
 - **AI Antivirus** → planned/expanding protection layer for AI systems
 
@@ -69,7 +69,7 @@ The security surfaces use synthetic/public-safe scenarios and are not presented 
 ├── docs/                        # Security, benchmark and architecture docs
 ├── labs/
 │   ├── ayorai-agent-defense-lab/
-│   └── ayorai-secure-operations-agent/  # AYORA SSI's first practical agent
+│   └── ayorai-secure-operations-agent/  # AYORAI SSI's first practical agent
 ├── scripts/                     # Data and benchmark automation
 ├── tests/                       # Public regression tests
 ├── ai-radar.html                # AI Laboratory UI (legacy URL)
