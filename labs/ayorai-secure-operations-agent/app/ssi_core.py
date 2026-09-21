@@ -146,7 +146,7 @@ class SafetyGate:
             reasons.append("sensitive-data indicator detected")
 
         tool_ok, tool_reason = self.tools.authorize(
-            request.role, request.tool, request.amount
+            request.role, request.tool, request.amount, request.data_classification
         )
         if not tool_ok:
             reasons.append(f"tool denied: {tool_reason}")
