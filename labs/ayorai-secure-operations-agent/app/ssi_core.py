@@ -16,8 +16,10 @@ import re
 from typing import Any
 
 from .approval import Approval, action_digest, validate_approval
+from .dlp import inspect as dlp_inspect
 from .mcp_guard import MCPToolRegistry
 from .provenance import TRUST_LEVELS
+from .runtime_guard import RuntimeGuard
 
 
 DATA_LEVELS = {"PUBLIC": 0, "INTERNAL": 1, "CONFIDENTIAL": 2, "RESTRICTED": 3}
@@ -103,6 +105,7 @@ class SafetyGate:
 
     def __init__(self) -> None:
         self.tools = MCPToolRegistry()
+        self.runtime = RuntimeGuard()
 
     @staticmethod
     def _redact(text: str) -> str:
@@ -139,11 +142,14 @@ class SafetyGate:
             reasons.append("invalid transaction amount")
 
         injection = any(re.search(pattern, text) for pattern in self.BLOCK_PATTERNS)
-        sensitive = any(re.search(pattern, text) for pattern in self.SENSITIVE_PATTERNS)
+        dlp_found, dlp_kinds = dlp_inspect(request.request)
+        sensitive = any(re.search(pattern, text) for pattern in self.SENSITIVE_PATTERNS) or dlp_found
         if injection:
             reasons.append("context attack indicator detected")
         if sensitive:
             reasons.append("sensitive-data indicator detected")
+        if dlp_found:
+            reasons.append("dlp indicator: " + ",".join(dlp_kinds))
 
         tool_ok, tool_reason = self.tools.authorize(
             request.role, request.tool, request.amount, request.data_classification
@@ -152,6 +158,11 @@ class SafetyGate:
             reasons.append(f"tool denied: {tool_reason}")
 
         spec = self.tools.spec(request.tool)
+        runtime_status = self.runtime.observe(request.actor, request.tool or "assistant")
+        if runtime_status in {"BLOCK", "QUARANTINE"}:
+            reasons.append("runtime guard: " + runtime_status.lower())
+        elif runtime_status == "ESCALATE":
+            reasons.append("runtime guard: escalation required")
         high_impact = request.tool in self.HIGH_IMPACT_TOOLS or (request.amount or 0) > 10000
         approval_required = high_impact and tool_ok
 
@@ -189,6 +200,7 @@ class SafetyGate:
             or not tool_ok
             or request.provenance not in {"user", "trusted_internal"}
             or sensitive
+            or runtime_status in {"BLOCK", "QUARANTINE"}
             or (request.amount is not None and request.amount <= 0)
         ):
             status, risk = "BLOCK", "HIGH"
