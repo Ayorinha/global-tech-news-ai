@@ -2,18 +2,21 @@
 
 > **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
 >
-> **AYORAI · GREAT ATTRACTOR** — Agentic Intelligence & AI Safety Platform.
+> **AYORA SSI** — Secure Systems Intelligence.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
 ## Purpose
 
-This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its security and agentic work is organized around **AYORAI · GREAT ATTRACTOR**, a coordination architecture connecting research, defense, evaluation and controlled agent operations.
+This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its security and agentic work is organized around **AYORA SSI (Secure Systems Intelligence)**, a security architecture connecting research, defense, evaluation and controlled agent operations.
 
-## AYORAI · GREAT ATTRACTOR
+## AYORA SSI
+
+**Secure Systems Intelligence** is the umbrella architecture for AYORAI's AI defense work.
 
 ```
-                         GREAT ATTRACTOR
+                         AYORA SSI
+                 Secure Systems Intelligence
                               │
           ┌───────────────────┼───────────────────┐
           │                   │                   │
@@ -22,7 +25,7 @@ This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its
           │                   │                   │
           └───────────────────┼───────────────────┘
                               │
-                         Agent Core
+                       AI Defense Core
                               │
                     RAG · MCP · Policy
                               │
@@ -35,15 +38,16 @@ This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its
                            Audit
 ```
 
-**Great Attractor does not replace the existing laboratories. It gives them a common architecture and purpose.**
+**AYORA SSI replaces the previous Great Attractor naming.** The underlying architecture remains the same; only the umbrella identity has been consolidated under **Secure Systems Intelligence**.
 
 ### Platform map
 
 - **AI Laboratory** → research, benchmarks and controlled evaluation
 - **AI Shield** → defensive security boundaries
 - **Agent Defense Lab** → adversarial evaluation of defensive agents
-- **Great Attractor** → orchestration and coordination layer
+- **AYORA SSI** → umbrella security architecture and coordination layer
 - **Secure Operations Agent** → first practical agent implementation
+- **AI Antivirus** → planned/expanding protection layer for AI systems
 
 ## Public site
 
@@ -65,7 +69,7 @@ The security surfaces use synthetic/public-safe scenarios and are not presented 
 ├── docs/                        # Security, benchmark and architecture docs
 ├── labs/
 │   ├── ayorai-agent-defense-lab/
-│   └── ayorai-secure-operations-agent/  # Great Attractor's first agent
+│   └── ayorai-secure-operations-agent/  # AYORA SSI's first practical agent
 ├── scripts/                     # Data and benchmark automation
 ├── tests/                       # Public regression tests
 ├── ai-radar.html                # AI Laboratory UI (legacy URL)
@@ -88,7 +92,7 @@ The security surfaces use synthetic/public-safe scenarios and are not presented 
 
 ## Portfolio positioning
 
-**AI Engineering · Applied AI · Agentic Systems · AI Safety · LLM Security · RAG · MCP · Document Intelligence · RPA · Data Engineering · Python · GitHub Actions**
+**AI Engineering · Applied AI · Agentic Systems · AI Safety · AI Security · LLM Security · RAG · MCP · Document Intelligence · RPA · Data Engineering · Python · GitHub Actions**
 
 ## Author
 
