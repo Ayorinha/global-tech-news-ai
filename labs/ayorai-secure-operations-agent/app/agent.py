@@ -1,8 +1,9 @@
 from dataclasses import dataclass, field
 from typing import Any
 
+from .approval import Approval, issue_approval
 from .knowledge import retrieve
-from .policy import SafetyDecision, evaluate_request
+from .ssi_core import SecurityRequest, SSIControlPlane
 
 
 @dataclass
@@ -10,45 +11,70 @@ class AgentResult:
     request: str
     answer: str
     sources: list[str] = field(default_factory=list)
-    decision: SafetyDecision | None = None
+    decision: Any = None
     proposed_action: dict[str, Any] | None = None
     audit: dict[str, Any] = field(default_factory=dict)
 
 
 class SecureOperationsAgent:
-    """Deterministic agent showing a safe agentic control loop."""
+    """Reference agent whose output has no authority until SSI authorizes it."""
 
-    def run(self, request: str, approved: bool = False) -> AgentResult:
-        decision = evaluate_request(request, approved=approved)
+    def __init__(self) -> None:
+        self.control = SSIControlPlane()
+
+    def run(
+        self,
+        request: str,
+        *,
+        actor: str = "local-user",
+        role: str = "analyst",
+        tool: str | None = None,
+        amount: float | None = None,
+        data_classification: str = "PUBLIC",
+        provenance: str = "user",
+        session_id: str = "local-session",
+        approval: Approval | None = None,
+    ) -> AgentResult:
         context = retrieve(request)
+        decision = self.control.evaluate(
+            SecurityRequest(
+                actor=actor,
+                role=role,
+                request=request,
+                data_classification=data_classification,
+                tool=tool,
+                amount=amount,
+                provenance=provenance,
+                session_id=session_id,
+            ),
+            approval=approval,
+        )
 
         if decision.status == "BLOCK":
-            answer = "Request blocked by the safety policy."
+            answer = "Request blocked by AYORAI SSI."
             action = None
-        elif decision.status == "APPROVAL_REQUIRED" and not approved:
-            answer = "I can prepare this operation, but human approval is required before execution."
-            action = {
-                "type": "PROPOSED_OPERATION",
-                "requires_approval": True,
-                "scope": decision.scope,
-            }
+        elif decision.status == "APPROVAL_REQUIRED":
+            answer = "Prepared only. Independent human approval is required."
+            action = decision.proposed_action
         else:
             answer = self._draft_answer(request, context)
-            action = {
-                "type": "READ_ONLY_ASSISTANCE",
-                "requires_approval": False,
-                "scope": "local",
-            }
+            action = {"type": "READ_ONLY_ASSISTANCE", "scope": "local"}
 
         audit = {
-            "agent": "AyorAI Secure Operations Agent",
-            "request": request,
+            "agent": "AYORAI SSI Secure Operations Agent",
             "decision": decision.status,
             "risk": decision.risk,
             "sources": [item["id"] for item in context],
-            "human_approved": approved,
+            "audit_chain_valid": self.control.audit.verify(),
         }
-        return AgentResult(request, answer, [item["id"] for item in context], decision, action, audit)
+        return AgentResult(
+            request=request,
+            answer=answer,
+            sources=[item["id"] for item in context],
+            decision=decision,
+            proposed_action=action,
+            audit=audit,
+        )
 
     @staticmethod
     def _draft_answer(request: str, context: list[dict[str, str]]) -> str:
