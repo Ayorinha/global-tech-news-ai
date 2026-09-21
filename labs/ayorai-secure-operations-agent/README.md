@@ -1,17 +1,17 @@
-# AYORA SSI
+# AYORAI SSI
 
 > **Secure Systems Intelligence**
 >
 > *AI Security for Intelligent Systems.*
 
-**AYORA SSI** is the umbrella security architecture that connects AYORAI's research, defensive controls, adversarial evaluation and controlled agent operations.
+**AYORAI SSI** is the umbrella security architecture that connects AYORAI's research, defensive controls, adversarial evaluation and controlled agent operations.
 
-It replaces the previous **Great Attractor** naming while preserving the same architecture and safety boundaries.
+It is the consolidated identity for the architecture previously called **Great Attractor**, while preserving the same architecture and safety boundaries.
 
 ## Architecture
 
 ```
-                         AYORA SSI
+                         AYORAI SSI
                  Secure Systems Intelligence
                                   │
              ┌────────────────────┼────────────────────┐
@@ -58,11 +58,11 @@ The current implementation is a deterministic, local secure-agent foundation. It
 | Research | **AI Laboratory** | Threat research, benchmarks and controlled evaluation |
 | Defense | **AI Shield** | Defensive boundaries and security controls |
 | Evaluation | **Agent Defense Lab** | Adversarial testing of defensive agents |
-| Architecture | **AYORA SSI** | Secure Systems Intelligence umbrella and coordination layer |
+| Architecture | **AYORAI SSI** | Secure Systems Intelligence umbrella and coordination layer |
 | Operations | **Secure Operations Agent** | First practical agent implementation |
 | Protection | **AI Antivirus** | Planned/expanding protection layer for AI systems |
 
-The existing projects remain independently testable. **AYORA SSI** provides the architectural relationship between them.
+The existing projects remain independently testable. **AYORAI SSI** provides the architectural relationship between them.
 
 ## Safety boundary
 
@@ -112,6 +112,6 @@ pytest -q
 
 ## Relationship to the AI Safety stack
 
-**AYORA SSI is the umbrella security architecture.** AI Shield remains the defensive layer; AI Laboratory remains the research/evaluation surface; Agent Defense Lab remains the executable adversarial evaluation environment.
+**AYORAI SSI is the umbrella security architecture.** AI Shield remains the defensive layer; AI Laboratory remains the research/evaluation surface; Agent Defense Lab remains the executable adversarial evaluation environment.
 
 **Research → Defense → Evaluation → Secure Systems Intelligence → Controlled Action → Audit**
