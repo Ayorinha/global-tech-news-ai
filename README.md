@@ -2,7 +2,7 @@
 
 > **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shithub.com/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
 
 ## Purpose
 
@@ -126,12 +126,6 @@ The public portfolio metadata is maintained in `data/projects.json`.
 ### Supporting study
 - **Sonic MVP Game** — explicitly maintained as a learning project, separate from the core AI portfolio.
 - **Python, Data & AI Engineering** — ongoing study track.
-
-## IEPTB Agentic AI Platform
-
-**IEPTB Agentic AI Platform — Flagship** is a proposed/organizational flagship direction, not a public repository currently represented as an implemented product in this repository.
-
-It should only be published with the appropriate institutional authorization and with confidential IEPTB data, credentials and internal architecture excluded. When a public implementation is intentionally released, it should have its own repository or clearly isolated module rather than being mixed into the news site.
 
 ## Engineering principles
 
