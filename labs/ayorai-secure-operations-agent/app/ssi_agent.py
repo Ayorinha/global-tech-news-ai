@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Any
 
+from .approval import Approval
 from .knowledge import retrieve
 from .ssi_core import SecurityRequest, SSIControlPlane
 
@@ -29,8 +30,10 @@ class SSIAgent:
         role: str = "analyst",
         tool: str | None = None,
         amount: float | None = None,
+        data_classification: str = "PUBLIC",
         provenance: str = "user",
-        approved: bool = False,
+        session_id: str = "local-session",
+        approval: Approval | None = None,
     ) -> SSIResult:
         decision = self.control.evaluate(
             SecurityRequest(
@@ -39,9 +42,11 @@ class SSIAgent:
                 request=request,
                 tool=tool,
                 amount=amount,
+                data_classification=data_classification,
                 provenance=provenance,
+                session_id=session_id,
             ),
-            approved=approved,
+            approval=approval,
         )
         context = retrieve(request)
         sources = [item["id"] for item in context]
