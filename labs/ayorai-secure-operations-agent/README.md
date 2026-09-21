@@ -1,17 +1,18 @@
-# AYORAI · GREAT ATTRACTOR
+# AYORA SSI
 
-> **Agentic Intelligence & AI Safety Platform**
+> **Secure Systems Intelligence**
 >
-> *Where Agents, Knowledge and Safety Converge.*
+> *AI Security for Intelligent Systems.*
 
-Great Attractor is the orchestration layer that connects AYORAI's existing AI Safety, research and defensive-agent capabilities into a single agentic architecture.
+**AYORA SSI** is the umbrella security architecture that connects AYORAI's research, defensive controls, adversarial evaluation and controlled agent operations.
 
-It is **not a replacement** for AI Shield or AI Laboratory. It is the coordination layer above them.
+It replaces the previous **Great Attractor** naming while preserving the same architecture and safety boundaries.
 
 ## Architecture
 
 ```
-                         AYORAI · GREAT ATTRACTOR
+                         AYORA SSI
+                 Secure Systems Intelligence
                                   │
              ┌────────────────────┼────────────────────┐
              │                    │                    │
@@ -20,7 +21,7 @@ It is **not a replacement** for AI Shield or AI Laboratory. It is the coordinati
              │                    │                    │
              └────────────────────┼────────────────────┘
                                   │
-                           GREAT ATTRACTOR
+                           AI Defense Core
                                   │
                  ┌────────────────┼────────────────┐
                  │                │                │
@@ -50,17 +51,18 @@ The current implementation is a deterministic, local secure-agent foundation. It
 - Structured audit evidence
 - Deterministic tests and CI validation
 
-## How the existing AYORAI projects fit
+## How the AYORAI security stack fits
 
 | Layer | AYORAI capability | Role |
 |---|---|---|
 | Research | **AI Laboratory** | Threat research, benchmarks and controlled evaluation |
 | Defense | **AI Shield** | Defensive boundaries and security controls |
 | Evaluation | **Agent Defense Lab** | Adversarial testing of defensive agents |
-| Orchestration | **Great Attractor** | Connects knowledge, policy, agents and safety |
+| Architecture | **AYORA SSI** | Secure Systems Intelligence umbrella and coordination layer |
 | Operations | **Secure Operations Agent** | First practical agent implementation |
+| Protection | **AI Antivirus** | Planned/expanding protection layer for AI systems |
 
-The existing projects remain independently testable. Great Attractor provides the architectural relationship between them.
+The existing projects remain independently testable. **AYORA SSI** provides the architectural relationship between them.
 
 ## Safety boundary
 
@@ -96,6 +98,7 @@ Audit
 4. Provenance and evidence ledger
 5. Continuous AI Safety evaluation
 6. Human approval workflows for high-impact operations
+7. AI Antivirus / runtime defense layer
 
 The roadmap does not grant the model direct authority. Policy remains the authorization boundary.
 
@@ -109,6 +112,6 @@ pytest -q
 
 ## Relationship to the AI Safety stack
 
-Great Attractor is the **coordination concept**. AI Shield remains the defensive layer; AI Laboratory remains the research/evaluation surface; Agent Defense Lab remains the executable adversarial evaluation environment.
+**AYORA SSI is the umbrella security architecture.** AI Shield remains the defensive layer; AI Laboratory remains the research/evaluation surface; Agent Defense Lab remains the executable adversarial evaluation environment.
 
-**Research → Defense → Evaluation → Orchestration → Controlled Action → Audit**
+**Research → Defense → Evaluation → Secure Systems Intelligence → Controlled Action → Audit**
