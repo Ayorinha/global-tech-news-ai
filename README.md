@@ -1,98 +1,97 @@
 # Ayorai Global Tech News AI
 
-> **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
+> **AYORAI · Applied Intelligence** — automated technology intelligence platform and engineering portfolio.
 >
-> **AYORAI SSI** — Secure Systems Intelligence.
-
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
-
-## Purpose
-
-This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its security and agentic work is organized around **AYORAI SSI (Secure Systems Intelligence)**, a security architecture connecting research, defense, evaluation and controlled agent operations.
+> **AYORAI SSI — Secure Systems Intelligence**
 
 ## AYORAI SSI
 
-**Secure Systems Intelligence** is the umbrella architecture for AYORAI's AI defense work.
+**AYORAI SSI is a defense-in-depth security control plane for intelligent systems.** It is designed for AI applications, agents, RAG systems, MCP/tool integrations and high-impact enterprise workflows.
+
+> **The model is not the authorization boundary. Policy is.**
 
 ```
-                         AYORAI SSI
-                 Secure Systems Intelligence
-                              │
-          ┌───────────────────┼───────────────────┐
-          │                   │                   │
-      AI Laboratory       AI Shield         Agent Defense
-       Research           Defense            Evaluation
-          │                   │                   │
-          └───────────────────┼───────────────────┘
-                              │
-                       AI Defense Core
-                              │
-                    RAG · MCP · Policy
-                              │
-                         Safety Gate
-                              │
-                    Human-in-the-loop
-                              │
-                       Proposed Action
-                              │
-                           Audit
+Identity → Provenance → Data Security → AI Defense
+      → MCP/Tool Guard → Policy → Safety Gate
+      → Human Control → Execution Boundary → Audit
 ```
 
-**AYORAI SSI is the consolidated identity for the architecture previously called Great Attractor.** The underlying architecture remains the same.
+### Ten security layers
 
-### Platform map
+1. Identity & Session
+2. Provenance & Context
+3. Data Security & DLP
+4. AI Threat Defense
+5. Tool / MCP Security
+6. Policy Engine
+7. Safety Gate
+8. Human Control
+9. Controlled Execution
+10. Audit & Evidence
 
-- **AI Laboratory** → research, benchmarks and controlled evaluation
-- **AI Shield** → defensive security boundaries
-- **Agent Defense Lab** → adversarial evaluation of defensive agents
-- **AYORAI SSI** → umbrella security architecture and coordination layer
-- **Secure Operations Agent** → first practical agent implementation
-- **AI Antivirus** → planned/expanding protection layer for AI systems
+Each layer is independently testable. A model bypassing one detector must not automatically gain access to sensitive data or privileged tools.
 
-## Public site
+## Security domains
 
-- **News:** `index.html`
-- **AI Index:** `ai-tools.html`
-- **AI Laboratory:** `ai-radar.html`
-- **Historical security report:** `security-report.html`
-- **Shield research:** `shield-research.html`
+- **AI Shield** — input, context and output defense
+- **RAG Security** — provenance, corpus integrity and retrieval isolation
+- **MCP Security** — tool identity, schemas, permissions and egress
+- **Agent Defense Lab** — adversarial evaluation and continuous regression
+- **AI Antivirus** — runtime detection and containment
+- **Safety Governance** — policy, approvals and risk classification
+- **Secure Operations Agent** — controlled agentic workflows
+- **Audit & Evidence** — traceability and tamper-evident evidence
 
-The security surfaces use synthetic/public-safe scenarios and are not presented as certification or as production endpoint-security products.
+## Threat model
+
+SSI evaluates direct and indirect prompt injection, jailbreaks, RAG poisoning, sensitive-data disclosure, data exfiltration, tool abuse, privilege escalation, excessive agency, confused-deputy behavior, memory poisoning, supply-chain risks, multi-agent cascading failures, approval bypass, replay and resource exhaustion.
+
+## Financial and enterprise security
+
+The public implementation uses synthetic/local scenarios. High-impact operations become proposals and require independent policy and, where configured, human authorization. The public project does not contain production credentials or uncontrolled external execution.
+
+## Research and engineering basis
+
+SSI maps its design to current security research and industry guidance including NIST AI RMF/GenAI Profile, OWASP GenAI and Agentic AI security guidance, OWASP MCP Security, MITRE ATLAS and Google's Secure AI Framework. It also tracks practical security engineering from Microsoft Agent Framework/FIDES, NVIDIA NeMo Guardrails, Protect AI LLM Guard, garak and promptfoo.
+
+These references inform design; they do not constitute certification or proof of security.
 
 ## Repository structure
 
 ```
 .
-├── .github/workflows/           # CI and security automation
-├── audit/                       # Published evidence records
-├── data/                        # Public datasets and project metadata
-├── docs/                        # Security, benchmark and architecture docs
-├── labs/
-│   ├── ayorai-agent-defense-lab/
-│   └── ayorai-secure-operations-agent/  # AYORAI SSI's first practical agent
-├── scripts/                     # Data and benchmark automation
-├── tests/                       # Public regression tests
-├── ai-radar.html                # AI Laboratory UI (legacy URL)
-├── security-shield.js           # AYORAI AI Shield
-├── security-benchmark.js        # Controlled benchmark
-└── README.md
+├── .github/workflows/                 # CI and security automation
+├── audit/                              # evidence records
+├── docs/ssi/                           # SSI architecture and assurance
+├── labs/ayorai-agent-defense-lab/     # adversarial evaluation
+├── labs/ayorai-secure-operations-agent/# controlled agent implementation
+├── scripts/                            # benchmark automation
+├── tests/                              # regression tests
+├── security-shield.js                  # AI Shield
+└── security-benchmark.js               # benchmark surface
 ```
 
 ## Engineering principles
 
-- Reproducible tests and evidence
-- Synthetic/public data for security demonstrations
-- Explicit security boundaries
-- Human approval for high-impact actions
-- Least privilege for tools and agents
-- No secrets in source control
-- No offensive automation against external systems
-- Evidence before strong security claims
-- Clear separation between current implementation and future concepts
+- fail closed for privileged actions
+- least privilege
+- explicit trust and confidentiality boundaries
+- no ambient credentials
+- human control for high-impact actions
+- reproducible adversarial tests
+- evidence before security claims
+- synthetic/public-safe security research
+- independent assurance before production claims
 
-## Portfolio positioning
+## Documentation
 
-**AI Engineering · Applied AI · Agentic Systems · AI Safety · AI Security · LLM Security · RAG · MCP · Document Intelligence · RPA · Data Engineering · Python · GitHub Actions**
+- `docs/ssi/architecture.md`
+- `docs/ssi/information-flow.md`
+- `docs/ssi/policy-spec.md`
+- `docs/ssi/security-invariants.md`
+- `docs/ssi/benchmark-plan.md`
+- `docs/ssi/enterprise-reference.md`
+- `docs/ssi/company-structure.md`
 
 ## Author
 
