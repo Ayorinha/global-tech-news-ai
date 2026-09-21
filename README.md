@@ -1,41 +1,49 @@
 # Ayorai Global Tech News AI
 
 > **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
+>
+> **AYORAI · GREAT ATTRACTOR** — Agentic Intelligence & AI Safety Platform.
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shithub.com/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
 ## Purpose
 
-This repository is the public **AYORAI Applied Intelligence portfolio hub**. It combines a production-style technology-news pipeline with selected engineering projects and a public defensive AI laboratory.
+This repository is the public **AYORAI Applied Intelligence portfolio hub**. Its security and agentic work is organized around **AYORAI · GREAT ATTRACTOR**, a coordination architecture connecting research, defense, evaluation and controlled agent operations.
 
-The repository is intentionally curated: experiments that are not useful for demonstrating professional engineering capability are kept out of the main portfolio surface.
+## AYORAI · GREAT ATTRACTOR
 
-## Platform map
-
-```text
-AYORAI · APPLIED INTELLIGENCE
-│
-├── 01 · Intelligence Platform
-│   ├── Tech News ingestion
-│   ├── AI Index / tools catalog
-│   └── Structured data pipelines
-│
-├── 02 · AI Safety & Security
-│   ├── AYORAI AI Shield
-│   ├── AYORAI AI Laboratory — Security Lab
-│   └── AyorAI Agent Defense Lab
-│
-├── 03 · Applied AI Engineering
-│   ├── Document Intelligence / OCR
-│   ├── RAG
-│   ├── Data Engineering
-│   └── RPA
-│
-└── 04 · Supporting Portfolio Projects
-    ├── Financial Analytics
-    ├── Credit Risk / Explainability
-    └── Game-development learning project
 ```
+                         GREAT ATTRACTOR
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+      AI Laboratory       AI Shield         Agent Defense
+       Research           Defense            Evaluation
+          │                   │                   │
+          └───────────────────┼───────────────────┘
+                              │
+                         Agent Core
+                              │
+                    RAG · MCP · Policy
+                              │
+                         Safety Gate
+                              │
+                    Human-in-the-loop
+                              │
+                       Proposed Action
+                              │
+                           Audit
+```
+
+**Great Attractor does not replace the existing laboratories. It gives them a common architecture and purpose.**
+
+### Platform map
+
+- **AI Laboratory** → research, benchmarks and controlled evaluation
+- **AI Shield** → defensive security boundaries
+- **Agent Defense Lab** → adversarial evaluation of defensive agents
+- **Great Attractor** → orchestration and coordination layer
+- **Secure Operations Agent** → first practical agent implementation
 
 ## Public site
 
@@ -43,89 +51,28 @@ AYORAI · APPLIED INTELLIGENCE
 - **AI Index:** `ai-tools.html`
 - **AI Laboratory:** `ai-radar.html`
 - **Historical security report:** `security-report.html`
-- **Scientific Shield research:** `shield-research.html` — ASAE, threat model, validation matrix and global research map.
+- **Shield research:** `shield-research.html`
 
-The AI Laboratory is a public defensive evaluation surface. Its scenarios are synthetic and controlled; it is not presented as a certification or as a production endpoint security product.
-
-## Core architecture
-
-```text
-RSS / Public References
-        │
-        ├── Python ingestion
-        ├── metadata normalization
-        ├── translation
-        └── reference intelligence
-        │
-        ▼
-Structured JSON / Published Evidence
-        │
-        ├── Public News
-        ├── AI Index
-        └── AYORAI AI Laboratory
-                │
-                ├── AYORAI AI Shield
-                ├── controlled benchmark
-                ├── evidence history
-                └── audit / assurance layer
-```
+The security surfaces use synthetic/public-safe scenarios and are not presented as certification or as production endpoint-security products.
 
 ## Repository structure
 
-```text
+```
 .
-├── .github/
-│   └── workflows/              # CI, scheduled data and security automation
-├── audit/                      # Published benchmark/evidence records
-│   ├── reference-intelligence/
-│   ├── reference-runs/
-│   └── runs/
-├── data/                       # Published news, AI catalog and project metadata
-├── docs/                       # Security, benchmark and audit documentation
+├── .github/workflows/           # CI and security automation
+├── audit/                       # Published evidence records
+├── data/                        # Public datasets and project metadata
+├── docs/                        # Security, benchmark and architecture docs
 ├── labs/
-│   └── ayorai-agent-defense-lab/ # Executable defensive-agent research lab
-├── scripts/                    # Data ingestion and benchmark runners
-├── tests/                      # Public AI Shield regression tests
-├── ai-radar.html               # AI Laboratory UI (legacy filename kept for URL stability)
-├── ai-radar.js                 # AI Laboratory controller
-├── ai-radar.css                # AI Laboratory styles
-├── security-shield.js          # AYORAI AI Shield defensive engine
-├── security-benchmark.js       # Controlled benchmark corpus/runner
-├── security-reference-benchmark.js
-├── security-report.html        # Historical/public report
-├── index.html                  # Main portfolio/news surface
-├── ai-tools.html               # AI Index
-├── script.js
-├── style.css
-├── package.json
-├── requirements.txt
+│   ├── ayorai-agent-defense-lab/
+│   └── ayorai-secure-operations-agent/  # Great Attractor's first agent
+├── scripts/                     # Data and benchmark automation
+├── tests/                       # Public regression tests
+├── ai-radar.html                # AI Laboratory UI (legacy URL)
+├── security-shield.js           # AYORAI AI Shield
+├── security-benchmark.js        # Controlled benchmark
 └── README.md
 ```
-
-### Naming note
-
-The public laboratory was renamed from the earlier **AI Radar** concept to **AYORAI AI Laboratory / Security Lab**. The `ai-radar.*` filenames remain temporarily because changing them would break existing GitHub Pages URLs and references. The visible product naming is the new one.
-
-The legacy `data/ai-radar.json` pipeline is separate from the security laboratory and should not be confused with the AYORAI AI Shield evidence system.
-
-## Curated projects
-
-The public portfolio metadata is maintained in `data/projects.json`.
-
-### Security / Agentic AI
-- **AYORAI AI Shield** — deterministic defensive architecture for autonomous AI agents.
-- **AYORAI AI Laboratory — Security Lab** — public controlled evaluation and evidence interface.
-- **AyorAI Agent Defense Lab** — executable local defensive-agent research environment using synthetic data.
-
-### Applied AI / Data
-- **AYORAI Offline OCR** — Windows-first local OCR API and Document Intelligence foundation.
-- **OCR-Python** — OCR and document-processing engineering.
-- **Hybrid Data Management RPA Pipeline** — data engineering and process automation.
-- **Ayorai Financial Control** — financial analytics and dashboard engineering.
-
-### Supporting study
-- **Sonic MVP Game** — explicitly maintained as a learning project, separate from the core AI portfolio.
-- **Python, Data & AI Engineering** — ongoing study track.
 
 ## Engineering principles
 
@@ -133,20 +80,11 @@ The public portfolio metadata is maintained in `data/projects.json`.
 - Synthetic/public data for security demonstrations
 - Explicit security boundaries
 - Human approval for high-impact actions
+- Least privilege for tools and agents
 - No secrets in source control
 - No offensive automation against external systems
 - Evidence before strong security claims
-- Clear separation between current implementation and future product concepts
-
-## Automation
-
-GitHub Actions maintains scheduled data ingestion and security/reference evaluation workflows. Generated public datasets are committed only where the corresponding workflow explicitly requires it.
-
-## Privacy and attribution
-
-The news pipeline stores metadata and links to original sources. It does not claim ownership of third-party articles.
-
-No private organizational credentials, personal records or internal business datasets are required by the public pipeline.
+- Clear separation between current implementation and future concepts
 
 ## Portfolio positioning
 
