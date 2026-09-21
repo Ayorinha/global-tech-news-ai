@@ -43,6 +43,7 @@ AYORAI · APPLIED INTELLIGENCE
 - **AI Index:** `ai-tools.html`
 - **AI Laboratory:** `ai-radar.html`
 - **Historical security report:** `security-report.html`
+- **Scientific Shield research:** `shield-research.html` — ASAE, threat model, validation matrix and global research map.
 
 The AI Laboratory is a public defensive evaluation surface. Its scenarios are synthetic and controlled; it is not presented as a certification or as a production endpoint security product.
 
