@@ -11,8 +11,18 @@ from hashlib import sha256
 import json
 
 
+CLASSIFICATION_LEVELS = {
+    "PUBLIC": 0,
+    "INTERNAL": 1,
+    "CONFIDENTIAL": 2,
+    "RESTRICTED": 3,
+}
+
+
 def _canonical(payload: dict) -> bytes:
-    return json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
+    return json.dumps(
+        payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    ).encode()
 
 
 @dataclass(frozen=True)
@@ -24,6 +34,12 @@ class IntentContract:
     allowed_tools: frozenset[str] = frozenset()
     allowed_sequence: tuple[str, ...] = ()
     max_data_classification: str = "PUBLIC"
+
+    def __post_init__(self) -> None:
+        if self.max_data_classification not in CLASSIFICATION_LEVELS:
+            raise ValueError("invalid intent data classification")
+        if any(tool not in self.allowed_tools for tool in self.allowed_sequence):
+            raise ValueError("approved sequence contains a tool outside allowed_tools")
 
     def canonical(self) -> dict:
         return {
@@ -52,4 +68,9 @@ class IntentContract:
             reasons.append("intent purpose mismatch")
         if tx.operation not in self.allowed_operations:
             reasons.append("operation outside intent contract")
+        tx_class = CLASSIFICATION_LEVELS.get(tx.data_classification)
+        if tx_class is None:
+            reasons.append("transaction classification invalid")
+        elif tx_class > CLASSIFICATION_LEVELS[self.max_data_classification]:
+            reasons.append("transaction classification exceeds intent")
         return not reasons, tuple(reasons)
