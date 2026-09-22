@@ -18,6 +18,11 @@ from typing import Any, Mapping
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
+from .information_flow import Label
+from .intent_contract import IntentContract
+from .tool_chain_guard import ToolChainGuard
+from .trajectory_guard import TrajectoryGuard
+
 
 def _canonical(value: Mapping[str, Any]) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
@@ -267,12 +272,56 @@ class SSITransactionEngine:
     capability: CapabilityDefense = field(default_factory=CapabilityDefense)
     reconciler: Reconciler = field(default_factory=Reconciler)
     cell: SovereignDataCell = field(default_factory=SovereignDataCell)
+    tool_chain: ToolChainGuard = field(default_factory=ToolChainGuard)
+    trajectory: TrajectoryGuard = field(default_factory=TrajectoryGuard)
+    last_guard_reasons: tuple[str, ...] = ()
 
     def authorize(
         self,
         tx: SecurityTransaction,
         capability: str | None,
+        *,
+        intent: IntentContract | None = None,
+        observed_tools: tuple[str, ...] = (),
+        observed_trajectory: tuple[str, ...] = (),
+        source_label: Label | None = None,
+        sink_label: Label | None = None,
     ) -> tuple[DefenseDecision, DefenseDecision, str]:
+        """Authorize only when semantic, cryptographic and supplied guards agree.
+
+        Optional guards are fail-closed when supplied. They never create authority;
+        they only constrain the transaction further.
+        """
+        guard_reasons: list[str] = []
+
+        if intent is not None:
+            ok, reasons = intent.validate_transaction(tx)
+            if not ok:
+                guard_reasons.extend("intent: " + reason for reason in reasons)
+
+            chain = self.tool_chain.evaluate(
+                observed_tools, intent.allowed_tools, intent.allowed_sequence
+            )
+            guard_reasons.extend("tool-chain: " + reason for reason in chain.reasons)
+
+        if observed_trajectory:
+            if not intent or not intent.allowed_sequence:
+                guard_reasons.append("trajectory: no approved trajectory supplied")
+            else:
+                trajectory = self.trajectory.evaluate(
+                    observed_trajectory, intent.allowed_sequence
+                )
+                guard_reasons.extend("trajectory: " + reason for reason in trajectory.reasons)
+
+        if source_label is not None and sink_label is not None:
+            if not source_label.can_drive(sink_label):
+                guard_reasons.append("ifc: information-flow release denied")
+
+        self.last_guard_reasons = tuple(guard_reasons)
+
         a = self.semantic.evaluate(tx)
         b = self.capability.evaluate(tx, capability)
-        return a, b, self.reconciler.reconcile(a, b)
+        result = self.reconciler.reconcile(a, b)
+        if guard_reasons:
+            result = "QUARANTINE"
+        return a, b, result
