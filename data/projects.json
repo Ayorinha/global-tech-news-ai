@@ -1,5 +1,51 @@
 [
   {
+    "id": 14,
+    "category": "projeto",
+    "title": "🛡️ AYORAI SSI — Secure Systems Intelligence",
+    "description": "Arquitetura de segurança para sistemas agentivos: identidade e transações, capabilities, Information Flow Control, Intent Binding, Tool-Chain e Trajectory Guards, Memory/RAG/MCP Firewalls, defesa causal e execução em quarentena. Projeto de pesquisa orientado a avaliação adversarial e segurança verificável.",
+    "link": "https://ayorinha.github.io/global-tech-news-ai/shield-research.html",
+    "repo": "https://github.com/Ayorinha/global-tech-news-ai/tree/feat/ayorai-secure-operations-agent",
+    "tags": [
+      "AI Security",
+      "AI Safety",
+      "Agentic AI",
+      "Causal Defense",
+      "RAG Security",
+      "MCP Security",
+      "Capability Security",
+      "Information Flow",
+      "Adaptive Red Team",
+      "Python"
+    ],
+    "status": "em pesquisa",
+    "version": "SSI 2.0 research",
+    "created_at": "2026-09-22",
+    "image": "labs/ayorai-secure-operations-agent/assets/ayorai-ssi.jpg"
+  },
+  {
+    "id": 15,
+    "category": "projeto",
+    "title": "🧪 AYORAI SSI — Security Research & Validation Lab",
+    "description": "Laboratório experimental para testar ataques adaptativos e controles de segurança de agentes, com foco em prompt injection, memory poisoning, tool poisoning, exfiltração, privilege escalation, trajectory drift e falhas de delegação.",
+    "link": "https://ayorinha.github.io/global-tech-news-ai/shield-research.html",
+    "repo": "https://github.com/Ayorinha/global-tech-news-ai/tree/feat/ayorai-secure-operations-agent",
+    "tags": [
+      "Adversarial Testing",
+      "Adaptive Red Team",
+      "Agent Security",
+      "Memory Firewall",
+      "MCP Firewall",
+      "Threat Modeling",
+      "Security Evaluation",
+      "CI/CD"
+    ],
+    "status": "em pesquisa",
+    "version": "research lab",
+    "created_at": "2026-09-22",
+    "image": ""
+  },
+  {
     "id": 10,
     "category": "projeto",
     "title": "🛡️ AYORAI AI Laboratory — Security Lab",
@@ -18,30 +64,6 @@
     ],
     "status": "ativo",
     "version": "1.0",
-    "created_at": "2026-09-19",
-    "image": ""
-  },
-  {
-    "id": 9,
-    "category": "projeto",
-    "title": "🛡️ AYORAI AI Shield",
-    "description": "Agentic AI security research framework with zero-trust agent boundaries, provenance, least-privilege authorization, ASAE experimental action envelopes, multi-agent containment, audit evidence and adversarial evaluation. Public-safe research architecture using synthetic data.",
-    "link": "https://github.com/Ayorinha/ayorai",
-    "repo": "https://github.com/Ayorinha/ayorai",
-    "tags": [
-      "AI Safety",
-      "AI Engineering",
-      "Agentic AI",
-      "LLM Security",
-      "MCP",
-      "RAG",
-      "Cybersecurity",
-      "ASAE",
-      "Evaluation",
-      "Python"
-    ],
-    "status": "em pesquisa",
-    "version": "research/0.1",
     "created_at": "2026-09-19",
     "image": ""
   },
@@ -160,26 +182,6 @@
     "status": "em andamento",
     "version": "",
     "created_at": "2026-09-01",
-    "image": ""
-  },
-  {
-    "id": 11,
-    "category": "projeto",
-    "title": "🤖 AYORAI — Agentic Intelligence & AI Safety",
-    "description": "Framework modular para sistemas agentic com orquestração, RAG, MCP, governança de ferramentas e avaliação adversarial.",
-    "link": "https://github.com/Ayorinha/ayorai",
-    "repo": "https://github.com/Ayorinha/ayorai",
-    "tags": [
-      "AI Engineering",
-      "Agentic AI",
-      "RAG",
-      "MCP",
-      "AI Safety",
-      "Python"
-    ],
-    "status": "ativo",
-    "version": "0.4.0",
-    "created_at": "2026-09-19",
     "image": ""
   },
   {
