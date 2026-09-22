@@ -1,5 +1,9 @@
 # AYORAI SSI
 
+![AYORAI SSI — Secure Systems Intelligence](./assets/ayorai-ssi.jpg)
+
+> **Secure Systems Intelligence · AI Security for Intelligent Systems**
+
 > **Secure Systems Intelligence**
 >
 > *AI Security for Intelligent Systems.*
