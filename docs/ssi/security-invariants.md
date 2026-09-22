@@ -17,3 +17,11 @@ These invariants are intended to be machine-testable.
 13. Delegated agents cannot exceed the parent's capability envelope.
 14. Security claims require benchmark evidence and limitations.
 15. Security-control failure never silently enables privileged execution.
+16. A privileged transaction must bind requester, operation, resource, purpose, provenance, policy version, nonce and expiry.
+17. An intent contract can only constrain authority; it cannot manufacture authority.
+18. A transaction with an intent-hash mismatch cannot execute.
+19. An observed tool chain must remain inside the declared tool capability and approved sequence.
+20. An observed execution trajectory must remain a prefix of the approved trajectory.
+21. Confidential information cannot flow to a lower-confidentiality sink when IFC denies the release.
+22. Reconciliation cannot convert disagreement into authorization.
+23. A valid cryptographic capability for one transaction cannot authorize another transaction.
