@@ -128,3 +128,23 @@ def test_ifc_allows_internal_processing_when_labels_permit():
     )
 
     assert result == "EXECUTE"
+
+
+def test_intent_blocks_classification_escalation():
+    engine = SSITransactionEngine()
+    intent = make_intent()
+    tx = SecurityTransaction.create(
+        requester="agent-047",
+        operation="READ_BALANCE",
+        resource="account-8472",
+        purpose="customer_support",
+        data_classification="RESTRICTED",
+        provenance="trusted_internal",
+        context_hash=intent.intent_hash,
+    )
+    capability = engine.capability.issue(tx)
+
+    _, _, result = engine.authorize(tx, capability, intent=intent)
+
+    assert result == "QUARANTINE"
+    assert any("classification exceeds intent" in reason for reason in engine.last_guard_reasons)
