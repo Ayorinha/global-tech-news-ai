@@ -1,0 +1,41 @@
+name: Secure Agent Tests
+
+on:
+  pull_request:
+    paths:
+      - "labs/ayorai-secure-operations-agent/**"
+      - ".github/workflows/secure-agent-tests.yml"
+  push:
+    branches: [main]
+    paths:
+      - "labs/ayorai-secure-operations-agent/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: secure-agent-tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: labs/ayorai-secure-operations-agent
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: labs/ayorai-secure-operations-agent/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: Compile
+        run: python -m compileall -q app tests
+      - name: Tests
+        run: PYTHONPATH=. pytest -q
+      - name: Dependency audit
+        run: python -m pip install pip-audit && pip-audit -r requirements.txt
