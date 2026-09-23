@@ -1,164 +1,253 @@
 [
   {
-    "id": 14,
+    "id": 1,
     "category": "projeto",
-    "title": "🛡️ AYORAI SSI — Secure Systems Intelligence",
-    "description": "Arquitetura de segurança para sistemas agentivos: identidade e transações, capabilities, Information Flow Control, Intent Binding, Tool-Chain e Trajectory Guards, Memory/RAG/MCP Firewalls, defesa causal e execução em quarentena. Projeto de pesquisa orientado a avaliação adversarial e segurança verificável.",
-    "link": "https://ayorinha.github.io/global-tech-news-ai/shield-research.html",
-    "repo": "https://github.com/Ayorinha/global-tech-news-ai/tree/main/labs/ayorai-secure-operations-agent",
+    "title": "AyorGraph",
+    "description": "Orquestração de agentes de IA baseada em grafos, com foco em workflows determinísticos, composição de agentes e execução observável.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/AyorGraph",
     "tags": [
-      "AI Security",
-      "AI Safety",
-      "Agentic AI",
-      "Causal Defense",
-      "RAG Security",
-      "MCP Security",
-      "Capability Security",
-      "Information Flow",
-      "Adaptive Red Team",
-      "Python"
+      "AI Engineering",
+      "AYORAI",
+      "AI Engineering"
     ],
-    "status": "em pesquisa",
-    "version": "SSI 2.0 research",
-    "created_at": "2026-09-22",
-    "image": "labs/ayorai-secure-operations-agent/assets/ayorai-ssi.jpg"
-  },
-  {
-    "id": 15,
-    "category": "projeto",
-    "title": "🧪 AYORAI SSI — Security Research & Validation Lab",
-    "description": "Laboratório experimental para testar ataques adaptativos e controles de segurança de agentes, com foco em prompt injection, memory poisoning, tool poisoning, exfiltração, privilege escalation, trajectory drift e falhas de delegação.",
-    "link": "https://ayorinha.github.io/global-tech-news-ai/shield-research.html",
-    "repo": "https://github.com/Ayorinha/global-tech-news-ai/tree/main/labs/ayorai-secure-operations-agent",
-    "tags": [
-      "Adversarial Testing",
-      "Adaptive Red Team",
-      "Agent Security",
-      "Memory Firewall",
-      "MCP Firewall",
-      "Threat Modeling",
-      "Security Evaluation",
-      "CI/CD"
-    ],
-    "status": "em pesquisa",
-    "version": "research lab",
-    "created_at": "2026-09-22",
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
     "image": ""
   },
   {
-    "id": 10,
+    "id": 2,
     "category": "projeto",
-    "title": "🛡️ AYORAI AI Laboratory — Security Lab",
-    "description": "Laboratório público de defesa de IA para avaliação controlada de Prompt Injection, RAG Poisoning, Tool Abuse, Data Exfiltration e Goal Hijacking, com AYORAI AI Shield, evidência publicada e telemetria.",
-    "link": "https://ayorinha.github.io/global-tech-news-ai/ai-radar.html",
-    "repo": "https://github.com/Ayorinha/global-tech-news-ai/tree/main",
+    "title": "Indexa",
+    "description": "Retrieval com proveniência e geração fundamentada, priorizando rastreabilidade das fontes e redução de respostas não ancoradas.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/Indexa",
     "tags": [
-      "AI Safety",
-      "Agentic AI",
-      "LLM Security",
-      "Adversarial Testing",
       "RAG",
-      "MCP",
-      "Defensive AI",
-      "Audit"
+      "AYORAI",
+      "AI Engineering"
     ],
     "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-09-19",
-    "image": ""
-  },
-  {
-    "id": 8,
-    "category": "projeto",
-    "title": "🛡️ AyorAI Agent Defense Lab",
-    "description": "AI Safety · Defensive AI · Agent Security",
-    "link": "https://github.com/Ayorinha/global-tech-news-ai/tree/main/labs/ayorai-agent-defense-lab",
-    "repo": "https://github.com/Ayorinha/global-tech-news-ai",
-    "tags": [
-      "AI Safety",
-      "Defensive AI",
-      "Agent Security",
-      "AI Security",
-      "Red Team",
-      "Blue Team",
-      "RAG",
-      "LLM",
-      "Policy Engine",
-      "Audit"
-    ],
-    "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-09-17",
+    "version": "2026",
+    "created_at": "2026-09-23",
     "image": ""
   },
   {
     "id": 3,
     "category": "projeto",
-    "title": "OCR-Python",
-    "description": "Projeto de reconhecimento óptico de caracteres em Python, focado em processamento documental e automação de extração de informação.",
+    "title": "OrbisAgents",
+    "description": "Arquitetura colaborativa de múltiplos agentes para coordenação, delegação e execução de tarefas agentivas.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/OCR-Python",
+    "repo": "https://github.com/Ayorinha/OrbisAgents",
     "tags": [
-      "Python",
-      "OCR",
-      "Document Intelligence",
-      "Automation"
+      "Multi-Agent Systems",
+      "AYORAI",
+      "AI Engineering"
     ],
     "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-01-01",
+    "version": "2026",
+    "created_at": "2026-09-23",
     "image": ""
   },
   {
     "id": 4,
     "category": "projeto",
-    "title": "Hybrid Data Management RPA Pipeline",
-    "description": "Pipeline híbrido de dados e automação orientado a processos, integrando tratamento de dados e RPA para reduzir trabalho operacional repetitivo.",
+    "title": "MCP-Sentinel",
+    "description": "Gateway de segurança para ambientes Model Context Protocol com políticas determinísticas, validação de schema, least privilege, auditoria e controles de aprovação.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/hybrid-data-management-rpa-pipeline",
+    "repo": "https://github.com/Ayorinha/MCP-Sentinel",
     "tags": [
-      "Python",
-      "Data Engineering",
-      "RPA",
-      "ETL",
-      "Automation"
+      "AI Safety",
+      "AYORAI",
+      "AI Engineering"
     ],
     "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-01-01",
+    "version": "2026",
+    "created_at": "2026-09-23",
     "image": ""
   },
   {
     "id": 5,
     "category": "projeto",
-    "title": "Ayorai Financial Control",
-    "description": "Aplicação de controle e análise financeira construída como solução web, demonstrando transformação de dados, visualização e automação em uma interface orientada a negócio.",
+    "title": "Vectoris",
+    "description": "Benchmarking de recuperação vetorial para comparar estratégias de busca, qualidade de retrieval e comportamento de sistemas semânticos.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/project-ayorai-financial-control",
+    "repo": "https://github.com/Ayorinha/Vectoris",
     "tags": [
-      "JavaScript",
-      "Data Analytics",
-      "BI",
-      "ETL",
-      "Ayorai"
+      "Vector Search",
+      "AYORAI",
+      "AI Engineering"
     ],
     "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-01-01",
+    "version": "2026",
+    "created_at": "2026-09-23",
     "image": ""
   },
   {
     "id": 6,
+    "category": "projeto",
+    "title": "PgMind",
+    "description": "Retrieval sobre PostgreSQL/pgvector para arquiteturas de dados e IA com persistência relacional e busca vetorial.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/PgMind",
+    "tags": [
+      "PostgreSQL",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "category": "projeto",
+    "title": "InferFlow",
+    "description": "Benchmarking de inferência de LLMs, medindo desempenho e características operacionais de diferentes estratégias de execução.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/InferFlow",
+    "tags": [
+      "LLM Inference",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "category": "projeto",
+    "title": "LocalForge",
+    "description": "Infraestrutura para workloads de IA locais e privados, com foco em execução controlada e menor dependência de serviços externos.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/LocalForge",
+    "tags": [
+      "Private AI",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "category": "projeto",
+    "title": "DocuVision",
+    "description": "Document Intelligence para extração, estruturação e análise automatizada de documentos.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/DocuVision",
+    "tags": [
+      "Document AI",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "category": "projeto",
+    "title": "DataPulse",
+    "description": "Benchmarks e componentes de engenharia de dados para processamento, qualidade e observabilidade de pipelines.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/DataPulse",
+    "tags": [
+      "Data Engineering",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "category": "projeto",
+    "title": "FlowPilot",
+    "description": "Workflows versionados com human-in-the-loop, separando automação, revisão humana, aprovação e rastreabilidade.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/FlowPilot",
+    "tags": [
+      "Human-in-the-loop",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "category": "projeto",
+    "title": "TraceMind",
+    "description": "Observabilidade e avaliação de sistemas LLM, com rastreabilidade de execuções, métricas e análise de qualidade.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/TraceMind",
+    "tags": [
+      "LLM Observability",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "category": "projeto",
+    "title": "Ayoris",
+    "description": "APIs seguras para serviços de IA, com foco em contratos, validação, controle de acesso e integração produtiva.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/Ayoris",
+    "tags": [
+      "AI Security",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "category": "projeto",
+    "title": "EdgeMesh",
+    "description": "Infraestrutura containerizada para workloads de IA distribuídos e serviços de inferência com foco em operação controlada.",
+    "link": "",
+    "repo": "https://github.com/Ayorinha/EdgeMesh",
+    "tags": [
+      "AI Infrastructure",
+      "AYORAI",
+      "AI Engineering"
+    ],
+    "status": "ativo",
+    "version": "2026",
+    "created_at": "2026-09-23",
+    "image": ""
+  },
+  {
+    "id": 101,
     "category": "estudo",
     "title": "Sonic MVP Game",
-    "description": "Projeto experimental desenvolvido no contexto de aprendizagem em game development. Mantido como estudo técnico e não como produto oficial da franquia Sonic.",
+    "description": "Projeto experimental de aprendizagem em game development, mantido como estudo técnico e separado do portfólio principal de AI Engineering.",
     "link": "",
     "repo": "https://github.com/Ayorinha/sonic-mvp-game",
     "tags": [
       "Game Development",
       "JavaScript",
-      "MVP",
-      "Hub Games"
+      "MVP"
     ],
     "status": "em andamento",
     "version": "MVP",
@@ -166,60 +255,21 @@
     "image": ""
   },
   {
-    "id": 7,
+    "id": 102,
     "category": "estudo",
     "title": "Python, Data & AI Engineering",
-    "description": "Trilha contínua de estudos aplicada a Python, dados, machine learning, document intelligence, RAG, automação e engenharia de sistemas de IA.",
+    "description": "Trilha contínua de estudos aplicada a Python, dados, machine learning, Document Intelligence, RAG, automação e engenharia de sistemas de IA.",
     "link": "",
     "repo": "",
     "tags": [
       "Python",
       "Data Science",
       "AI Engineering",
-      "RAG",
-      "Automation"
+      "RAG"
     ],
     "status": "em andamento",
     "version": "",
     "created_at": "2026-09-01",
-    "image": ""
-  },
-  {
-    "id": 12,
-    "category": "projeto",
-    "title": "📄 AYORAI Offline OCR API",
-    "description": "API local Windows para OCR offline usando o runtime OneOCR, com interface web local, texto, linhas, palavras, bounding boxes e confiança.",
-    "link": "https://github.com/Ayorinha/ayorai/tree/feat/offline-ocr-api",
-    "repo": "https://github.com/Ayorinha/ayorai",
-    "tags": [
-      "OCR",
-      "Document Intelligence",
-      "OneOCR",
-      "FastAPI",
-      "Offline AI",
-      "Windows"
-    ],
-    "status": "em validação",
-    "version": "0.4.0",
-    "created_at": "2026-09-19",
-    "image": ""
-  },
-  {
-    "id": 13,
-    "category": "projeto",
-    "title": "🧾 OCRWinRT-CSharp",
-    "description": "PoC de OCR offline em Windows usando Windows.Media.Ocr e C#/.NET, com execução local e exportação de texto.",
-    "link": "https://github.com/Ayorinha/OCRWinRT-CSharp",
-    "repo": "https://github.com/Ayorinha/OCRWinRT-CSharp",
-    "tags": [
-      "C#",
-      "OCR",
-      "Windows",
-      "Document Intelligence"
-    ],
-    "status": "ativo",
-    "version": "1.0",
-    "created_at": "2026-09-19",
     "image": ""
   }
 ]
