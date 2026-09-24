@@ -2,7 +2,7 @@
 
 > **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shithub.com/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
 
 ## Purpose
 
@@ -155,6 +155,6 @@ No private organizational credentials, personal records or internal business dat
 ## Author
 
 **Anderson Leon Ayora**  
-Data Scientist · AI Engineer · Data Architect
+Data Scientist · AI Engineer
 
 **AYORAI · Applied Intelligence**
