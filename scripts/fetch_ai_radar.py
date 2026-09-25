@@ -130,8 +130,17 @@ def collect():
 
 
 def add_existing_news(items):
+    # collect() returns a list for scoring, while add_entry() expects a
+    # dictionary keyed by normalized title. Normalize here so existing news
+    # can be merged without type errors.
+    if isinstance(items, list):
+        items = {
+            re.sub(r"[^a-z0-9]+", " ", x.get("title", "").lower()).strip(): x
+            for x in items
+            if x.get("title")
+        }
     if not NEWS.exists():
-        return items
+        return list(items.values())
     try:
         data = json.loads(NEWS.read_text(encoding="utf-8"))
     except Exception:
