@@ -1,6 +1,10 @@
 name: Atualizar AI Radar
 
 on:
+  push:
+    paths:
+      - "scripts/fetch_ai_radar.py"
+      - ".github/workflows/update-ai-radar.yml"
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
