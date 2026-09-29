@@ -6,6 +6,10 @@ Public engineering hub by **Anderson Leon Ayora**, focused on building AI system
 
 ![AYORAI portfolio cover](assets/portfolio-cover.svg)
 
+### Live interface snapshot
+
+![AYORAI Tech live interface](assets/site-preview.webp)
+
 **Core principle:** Intelligence ≠ Authorization ≠ Execution
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Public-222222?logo=github)](https://pages.github.com/)
