@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07131f"/><stop offset="1" stop-color="#0b1f31"/></linearGradient>
+  <linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102b40"/><stop offset="1" stop-color="#0d2235"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#55d8ff"/></marker>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<path d="M0 120 H1600 M0 780 H1600" stroke="#17354a" stroke-width="1"/>
+<path d="M100 0 V900 M300 0 V900 M500 0 V900 M700 0 V900 M900 0 V900 M1100 0 V900 M1300 0 V900 M1500 0 V900" stroke="#10293b" stroke-width="1" opacity=".55"/>
+
+<text x="90" y="78" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" fill="#ffffff">AYORAI · SYSTEM ARCHITECTURE</text>
+<text x="90" y="108" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#7fa8c2">Applied AI · Agentic Systems · AI Safety · Auditability</text>
+
+<rect x="90" y="160" width="1420" height="570" rx="28" fill="#081a2a" stroke="#21465e" stroke-width="2"/>
+
+<text x="130" y="205" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#55d8ff">INPUT &amp; INTELLIGENCE</text>
+<text x="575" y="205" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#55d8ff">CONTROL PLANE</text>
+<text x="1050" y="205" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#55d8ff">EXECUTION &amp; EVIDENCE</text>
+
+<g stroke="#55d8ff" stroke-width="2" fill="url(#node)">
+  <rect x="125" y="250" width="250" height="105" rx="16"/>
+  <rect x="125" y="405" width="250" height="105" rx="16"/>
+  <rect x="125" y="560" width="250" height="105" rx="16"/>
+  <rect x="475" y="250" width="290" height="105" rx="16"/>
+  <rect x="475" y="405" width="290" height="105" rx="16"/>
+  <rect x="475" y="560" width="290" height="105" rx="16"/>
+  <rect x="865" y="250" width="250" height="105" rx="16"/>
+  <rect x="865" y="405" width="250" height="105" rx="16"/>
+  <rect x="865" y="560" width="250" height="105" rx="16"/>
+  <rect x="1215" y="250" width="250" height="105" rx="16"/>
+  <rect x="1215" y="405" width="250" height="105" rx="16"/>
+  <rect x="1215" y="560" width="250" height="105" rx="16"/>
+</g>
+
+<g font-family="Arial,Helvetica,sans-serif" fill="#ffffff">
+  <text x="150" y="286" font-size="21" font-weight="800">Data Sources</text>
+  <text x="150" y="316" font-size="15" fill="#9db9ca">news · documents · events</text>
+  <text x="150" y="338" font-size="15" fill="#9db9ca">structured / unstructured data</text>
+
+  <text x="150" y="441" font-size="21" font-weight="800">RAG &amp; Retrieval</text>
+  <text x="150" y="471" font-size="15" fill="#9db9ca">context construction</text>
+  <text x="150" y="493" font-size="15" fill="#9db9ca">grounded generation</text>
+
+  <text x="150" y="596" font-size="21" font-weight="800">Agent / Model</text>
+  <text x="150" y="626" font-size="15" fill="#9db9ca">reasoning · planning · tools</text>
+  <text x="150" y="648" font-size="15" fill="#9db9ca">capability proposal</text>
+
+  <text x="505" y="286" font-size="21" font-weight="800">Policy Engine</text>
+  <text x="505" y="316" font-size="15" fill="#9db9ca">deterministic rules</text>
+  <text x="505" y="338" font-size="15" fill="#9db9ca">allow · deny · review</text>
+
+  <text x="505" y="441" font-size="21" font-weight="800">Authorization</text>
+  <text x="505" y="471" font-size="15" fill="#9db9ca">least privilege</text>
+  <text x="505" y="493" font-size="15" fill="#9db9ca">scope · identity · provenance</text>
+
+  <text x="505" y="596" font-size="21" font-weight="800">Validation</text>
+  <text x="505" y="626" font-size="15" fill="#9db9ca">schema · freshness · replay</text>
+  <text x="505" y="648" font-size="15" fill="#9db9ca">security regression tests</text>
+
+  <text x="895" y="286" font-size="21" font-weight="800">Approval Gate</text>
+  <text x="895" y="316" font-size="15" fill="#9db9ca">human-in-the-loop</text>
+  <text x="895" y="338" font-size="15" fill="#9db9ca">high-impact actions</text>
+
+  <text x="895" y="441" font-size="21" font-weight="800">Execution Boundary</text>
+  <text x="895" y="471" font-size="15" fill="#9db9ca">MCP / APIs / tools</text>
+  <text x="895" y="493" font-size="15" fill="#9db9ca">controlled side effects</text>
+
+  <text x="895" y="596" font-size="21" font-weight="800">Recovery</text>
+  <text x="895" y="626" font-size="15" fill="#9db9ca">quarantine · rollback</text>
+  <text x="895" y="648" font-size="15" fill="#9db9ca">failure containment</text>
+
+  <text x="1245" y="286" font-size="21" font-weight="800">Audit Trail</text>
+  <text x="1245" y="316" font-size="15" fill="#9db9ca">events · decisions</text>
+  <text x="1245" y="338" font-size="15" fill="#9db9ca">evidence · traceability</text>
+
+  <text x="1245" y="441" font-size="21" font-weight="800">Observability</text>
+  <text x="1245" y="471" font-size="15" fill="#9db9ca">metrics · traces · logs</text>
+  <text x="1245" y="493" font-size="15" fill="#9db9ca">evaluation evidence</text>
+
+  <text x="1245" y="596" font-size="21" font-weight="800">Research / CI</text>
+  <text x="1245" y="626" font-size="15" fill="#9db9ca">benchmarks · regression</text>
+  <text x="1245" y="648" font-size="15" fill="#9db9ca">reproducible workflows</text>
+</g>
+
+<g stroke="#55d8ff" stroke-width="3" fill="none" marker-end="url(#arrow)" opacity=".9">
+  <path d="M375 302 H475"/>
+  <path d="M375 457 H475"/>
+  <path d="M375 612 H475"/>
+  <path d="M765 302 H865"/>
+  <path d="M765 457 H865"/>
+  <path d="M765 612 H865"/>
+  <path d="M1115 302 H1215"/>
+  <path d="M1115 457 H1215"/>
+  <path d="M1115 612 H1215"/>
+</g>
+
+<g font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#5e8ca6">
+  <text x="392" y="290">context</text>
+  <text x="392" y="445">retrieved evidence</text>
+  <text x="392" y="600">proposed action</text>
+  <text x="784" y="290">decision</text>
+  <text x="784" y="445">authorized scope</text>
+  <text x="784" y="600">validated intent</text>
+  <text x="1134" y="290">approval</text>
+  <text x="1134" y="445">controlled effect</text>
+  <text x="1134" y="600">recovery evidence</text>
+</g>
+
+<rect x="90" y="770" width="1420" height="70" rx="18" fill="#0b2436" stroke="#1d516b"/>
+<text x="125" y="813" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="800" fill="#ffffff">Intelligence ≠ Authorization ≠ Execution</text>
+<text x="820" y="813" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#8fb1c4">Every consequential action should be bounded, validated and observable.</text>
+</svg>
