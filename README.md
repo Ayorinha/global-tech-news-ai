@@ -4,11 +4,9 @@
 
 Public engineering hub by **Anderson Leon Ayora**, focused on building AI systems with explicit boundaries between intelligence, authorization, execution and auditability.
 
-![AYORAI portfolio cover](assets/portfolio-cover.svg)
+## System architecture
 
-### Live interface snapshot
-
-![AYORAI Tech live interface](assets/site-preview.webp)
+![AYORAI system architecture](assets/system-architecture.svg)
 
 **Core principle:** Intelligence ≠ Authorization ≠ Execution
 
@@ -137,7 +135,7 @@ Policy + Validation
 ├── scripts/                 # ingestion and benchmark automation
 ├── tests/                   # regression/security tests
 ├── assets/                  # portfolio visual assets
-│   └── portfolio-cover.svg
+│   └── system-architecture.svg
 ├── index.html               # main intelligence/news surface
 ├── ai-tools.html            # AI Index
 ├── ai-radar.html            # public Security Lab UI
