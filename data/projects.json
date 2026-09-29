@@ -2,260 +2,185 @@
   {
     "id": 1,
     "category": "projeto",
-    "title": "AyorGraph",
-    "description": "Orquestração de agentes de IA baseada em grafos, com foco em workflows determinísticos, composição de agentes e execução observável.",
+    "title": "AYORAI AI Shield",
+    "description": "Runtime security determinístico para agentes autônomos, com políticas, validação de ações, enforcement e evidências de auditoria.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/AyorGraph",
+    "repo": "https://github.com/Ayorinha/ayorai-vision-intelligence",
     "tags": [
-      "AI Engineering",
-      "AYORAI",
-      "AI Engineering"
+      "AI Safety",
+      "Agent Security",
+      "Policy Enforcement",
+      "AYORAI"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 2,
     "category": "projeto",
-    "title": "Indexa",
-    "description": "Retrieval com proveniência e geração fundamentada, priorizando rastreabilidade das fontes e redução de respostas não ancoradas.",
+    "title": "AYORAI",
+    "description": "Plataforma de Applied AI com arquitetura orientada a agentes, RAG, ferramentas, automação e integração de sistemas.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/Indexa",
+    "repo": "https://github.com/Ayorinha/ayorai",
     "tags": [
+      "Applied AI",
+      "Agentic AI",
       "RAG",
-      "AYORAI",
       "AI Engineering"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 3,
     "category": "projeto",
-    "title": "OrbisAgents",
-    "description": "Arquitetura colaborativa de múltiplos agentes para coordenação, delegação e execução de tarefas agentivas.",
+    "title": "AgentHound",
+    "description": "Laboratório de análise e defesa de agentes, com foco em capacidades, fronteiras de execução e avaliação de comportamento agentivo.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/OrbisAgents",
+    "repo": "https://github.com/Ayorinha/AgentHound",
     "tags": [
-      "Multi-Agent Systems",
-      "AYORAI",
-      "AI Engineering"
+      "Agent Security",
+      "AI Safety",
+      "Evaluation",
+      "Agents"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 4,
     "category": "projeto",
     "title": "MCP-Sentinel",
-    "description": "Gateway de segurança para ambientes Model Context Protocol com políticas determinísticas, validação de schema, least privilege, auditoria e controles de aprovação.",
+    "description": "Gateway de segurança para MCP com políticas determinísticas, validação de schema, least privilege, aprovação e auditoria.",
     "link": "",
     "repo": "https://github.com/Ayorinha/MCP-Sentinel",
     "tags": [
-      "AI Safety",
-      "AYORAI",
-      "AI Engineering"
+      "MCP",
+      "AI Security",
+      "Least Privilege",
+      "Audit"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 5,
     "category": "projeto",
-    "title": "Vectoris",
-    "description": "Benchmarking de recuperação vetorial para comparar estratégias de busca, qualidade de retrieval e comportamento de sistemas semânticos.",
+    "title": "AyorGraph",
+    "description": "Orquestração de agentes baseada em grafos, com workflows determinísticos, composição de agentes e execução observável.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/Vectoris",
+    "repo": "https://github.com/Ayorinha/AyorGraph",
     "tags": [
-      "Vector Search",
-      "AYORAI",
-      "AI Engineering"
+      "AI Engineering",
+      "Agent Orchestration",
+      "Graphs",
+      "Observability"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 6,
     "category": "projeto",
-    "title": "PgMind",
-    "description": "Retrieval sobre PostgreSQL/pgvector para arquiteturas de dados e IA com persistência relacional e busca vetorial.",
+    "title": "RAG Framework",
+    "description": "Componentes de Retrieval-Augmented Generation para ingestão, recuperação, contexto e respostas fundamentadas.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/PgMind",
+    "repo": "https://github.com/Ayorinha/RAG-framework",
     "tags": [
-      "PostgreSQL",
-      "AYORAI",
+      "RAG",
+      "LLM",
+      "Retrieval",
       "AI Engineering"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 7,
     "category": "projeto",
-    "title": "InferFlow",
-    "description": "Benchmarking de inferência de LLMs, medindo desempenho e características operacionais de diferentes estratégias de execução.",
+    "title": "vault-mcp",
+    "description": "Integração MCP orientada a ferramentas e controle de acesso, com foco em execução segura e fronteiras explícitas entre modelo e recurso.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/InferFlow",
+    "repo": "https://github.com/Ayorinha/vault-mcp",
     "tags": [
-      "LLM Inference",
-      "AYORAI",
+      "MCP",
+      "Tooling",
+      "Security",
       "AI Engineering"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 8,
     "category": "projeto",
-    "title": "LocalForge",
-    "description": "Infraestrutura para workloads de IA locais e privados, com foco em execução controlada e menor dependência de serviços externos.",
+    "title": "Hybrid Data Management RPA Pipeline",
+    "description": "Pipeline de engenharia de dados e automação com integração de fontes, processamento, controle operacional e rastreabilidade.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/LocalForge",
+    "repo": "https://github.com/Ayorinha/hybrid-data-management-rpa-pipeline",
     "tags": [
-      "Private AI",
-      "AYORAI",
-      "AI Engineering"
+      "Data Engineering",
+      "RPA",
+      "Automation",
+      "Python"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 9,
     "category": "projeto",
-    "title": "DocuVision",
-    "description": "Document Intelligence para extração, estruturação e análise automatizada de documentos.",
+    "title": "Global Tech News AI",
+    "description": "Hub público de inteligência tecnológica com ingestão, normalização, curadoria, dados estruturados, AI Index e laboratório defensivo.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/DocuVision",
+    "repo": "https://github.com/Ayorinha/global-tech-news-ai",
     "tags": [
-      "Document AI",
-      "AYORAI",
-      "AI Engineering"
+      "Applied AI",
+      "Data Engineering",
+      "Automation",
+      "AYORAI"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 10,
     "category": "projeto",
-    "title": "DataPulse",
-    "description": "Benchmarks e componentes de engenharia de dados para processamento, qualidade e observabilidade de pipelines.",
+    "title": "AYORAI Financial Control",
+    "description": "Aplicação de analytics e engenharia de dados para controle financeiro, indicadores e tomada de decisão baseada em dados.",
     "link": "",
-    "repo": "https://github.com/Ayorinha/DataPulse",
+    "repo": "https://github.com/Ayorinha/project-ayorai-financial-control",
     "tags": [
+      "Analytics",
       "Data Engineering",
-      "AYORAI",
-      "AI Engineering"
+      "Financial AI",
+      "Power BI"
     ],
     "status": "ativo",
     "version": "2026",
-    "created_at": "2026-09-23",
-    "image": ""
-  },
-  {
-    "id": 11,
-    "category": "projeto",
-    "title": "FlowPilot",
-    "description": "Workflows versionados com human-in-the-loop, separando automação, revisão humana, aprovação e rastreabilidade.",
-    "link": "",
-    "repo": "https://github.com/Ayorinha/FlowPilot",
-    "tags": [
-      "Human-in-the-loop",
-      "AYORAI",
-      "AI Engineering"
-    ],
-    "status": "ativo",
-    "version": "2026",
-    "created_at": "2026-09-23",
-    "image": ""
-  },
-  {
-    "id": 12,
-    "category": "projeto",
-    "title": "TraceMind",
-    "description": "Observabilidade e avaliação de sistemas LLM, com rastreabilidade de execuções, métricas e análise de qualidade.",
-    "link": "",
-    "repo": "https://github.com/Ayorinha/TraceMind",
-    "tags": [
-      "LLM Observability",
-      "AYORAI",
-      "AI Engineering"
-    ],
-    "status": "ativo",
-    "version": "2026",
-    "created_at": "2026-09-23",
-    "image": ""
-  },
-  {
-    "id": 13,
-    "category": "projeto",
-    "title": "Ayoris",
-    "description": "APIs seguras para serviços de IA, com foco em contratos, validação, controle de acesso e integração produtiva.",
-    "link": "",
-    "repo": "https://github.com/Ayorinha/Ayoris",
-    "tags": [
-      "AI Security",
-      "AYORAI",
-      "AI Engineering"
-    ],
-    "status": "ativo",
-    "version": "2026",
-    "created_at": "2026-09-23",
-    "image": ""
-  },
-  {
-    "id": 14,
-    "category": "projeto",
-    "title": "EdgeMesh",
-    "description": "Infraestrutura containerizada para workloads de IA distribuídos e serviços de inferência com foco em operação controlada.",
-    "link": "",
-    "repo": "https://github.com/Ayorinha/EdgeMesh",
-    "tags": [
-      "AI Infrastructure",
-      "AYORAI",
-      "AI Engineering"
-    ],
-    "status": "ativo",
-    "version": "2026",
-    "created_at": "2026-09-23",
+    "created_at": "2026-09",
     "image": ""
   },
   {
     "id": 101,
-    "category": "estudo",
-    "title": "Sonic MVP Game",
-    "description": "Projeto experimental de aprendizagem em game development, mantido como estudo técnico e separado do portfólio principal de AI Engineering.",
-    "link": "",
-    "repo": "https://github.com/Ayorinha/sonic-mvp-game",
-    "tags": [
-      "Game Development",
-      "JavaScript",
-      "MVP"
-    ],
-    "status": "em andamento",
-    "version": "MVP",
-    "created_at": "2026-09-01",
-    "image": ""
-  },
-  {
-    "id": 102,
     "category": "estudo",
     "title": "Python, Data & AI Engineering",
     "description": "Trilha contínua de estudos aplicada a Python, dados, machine learning, Document Intelligence, RAG, automação e engenharia de sistemas de IA.",
@@ -269,7 +194,7 @@
     ],
     "status": "em andamento",
     "version": "",
-    "created_at": "2026-09-01",
+    "created_at": "2026-09",
     "image": ""
   }
 ]
