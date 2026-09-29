@@ -1,158 +1,209 @@
-# Ayorai Global Tech News AI
+# AYORAI · Applied Intelligence
 
-> **AYORAI · Applied Intelligence** — automated technology intelligence platform and curated engineering portfolio.
+> **AI Engineering · Applied AI · Agentic Systems · AI Safety**
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222?logo=github)](https://pages.github.com/)
+Public engineering hub by **Anderson Leon Ayora**, focused on building AI systems with explicit boundaries between intelligence, authorization, execution and auditability.
 
-## Purpose
+![AYORAI portfolio cover](assets/portfolio-cover.svg)
 
-This repository is the public **AYORAI Applied Intelligence portfolio hub**. It combines a production-style technology-news pipeline with selected engineering projects and a public defensive AI laboratory.
+**Core principle:** Intelligence ≠ Authorization ≠ Execution
 
-The repository is intentionally curated: experiments that are not useful for demonstrating professional engineering capability are kept out of the main portfolio surface.
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Public-222222?logo=github)](https://pages.github.com/)
 
-## Platform map
+---
 
-```text
-AYORAI · APPLIED INTELLIGENCE
-│
-├── 01 · Intelligence Platform
-│   ├── Tech News ingestion
-│   ├── AI Index / tools catalog
-│   └── Structured data pipelines
-│
-├── 02 · AI Safety & Security
-│   ├── AYORAI AI Shield
-│   ├── AYORAI AI Laboratory — Security Lab
-│   └── AyorAI Agent Defense Lab
-│
-├── 03 · Applied AI Engineering
-│   ├── Document Intelligence / OCR
-│   ├── RAG
-│   ├── Data Engineering
-│   └── RPA
-│
-└── 04 · Supporting Portfolio Projects
-    ├── Financial Analytics
-    ├── Credit Risk / Explainability
-    └── Game-development learning project
-```
+## What this repository demonstrates
 
-## Site preview
+This repository is the **public portfolio hub** for a broader AI Engineering portfolio.
 
-![AYORAI Tech — current site preview](assets/site-preview.webp)
+It combines:
 
-> Current visual snapshot of the public portfolio/news interface. The image is stored in the repository so the project presentation can be reviewed directly from GitHub.
+- technology intelligence and structured data pipelines;
+- agentic AI and orchestration;
+- RAG and Document Intelligence;
+- MCP/tool integration;
+- runtime AI security and policy enforcement;
+- controlled evaluation and audit evidence;
+- automation with reproducible engineering practices.
 
-## Public site
+The site is deliberately curated to expose engineering work rather than act as a generic personal homepage.
 
-- **News:** `index.html`
-- **AI Index:** `ai-tools.html`
-- **AI Laboratory:** `ai-radar.html`
-- **Historical security report:** `security-report.html`
-- **Scientific Shield research:** `shield-research.html` — ASAE, threat model, validation matrix and global research map.
+---
 
-The AI Laboratory is a public defensive evaluation surface. Its scenarios are synthetic and controlled; it is not presented as a certification or as a production endpoint security product.
+## Featured engineering track
 
-## Core architecture
+| Layer | Project | Engineering focus |
+|---|---|---|
+| **01 · AI Safety** | [AYORAI AI Shield](https://github.com/Ayorinha/ayorai-vision-intelligence) | deterministic runtime security, policy enforcement, action validation |
+| **02 · Applied AI** | [AYORAI](https://github.com/Ayorinha/ayorai) | agentic systems, RAG, integrations and automation |
+| **03 · Agent Security** | [AgentHound](https://github.com/Ayorinha/AgentHound) | agent capability analysis, defensive evaluation and boundaries |
+| **04 · MCP Security** | [MCP-Sentinel](https://github.com/Ayorinha/MCP-Sentinel) | least privilege, schema validation, approvals and audit |
+| **05 · Orchestration** | [AyorGraph](https://github.com/Ayorinha/AyorGraph) | graph-based agent workflows and observable execution |
+| **06 · Retrieval** | [RAG Framework](https://github.com/Ayorinha/RAG-framework) | retrieval, context construction and grounded generation |
+| **07 · Tooling** | [vault-mcp](https://github.com/Ayorinha/vault-mcp) | controlled tool access and MCP integration |
+| **08 · Data Engineering** | [Hybrid Data Management RPA Pipeline](https://github.com/Ayorinha/hybrid-data-management-rpa-pipeline) | pipelines, automation and operational traceability |
 
-```text
-RSS / Public References
-        │
-        ├── Python ingestion
-        ├── metadata normalization
-        ├── translation
-        └── reference intelligence
-        │
-        ▼
-Structured JSON / Published Evidence
-        │
-        ├── Public News
-        ├── AI Index
-        └── AYORAI AI Laboratory
-                │
-                ├── AYORAI AI Shield
-                ├── controlled benchmark
-                ├── evidence history
-                └── audit / assurance layer
-```
+---
+
+## Portfolio architecture
+
+~~~text
+                    AYORAI · APPLIED INTELLIGENCE
+                               │
+             ┌─────────────────┴─────────────────┐
+             │                                   │
+        INTELLIGENCE                         CONTROL
+             │                                   │
+     ┌───────┼────────┐                  ┌───────┼────────┐
+     │       │        │                  │       │        │
+    RAG   Agents   Document AI         Policy  Security  Audit
+     │       │        │                  │       │        │
+     └───────┴────────┴──────────┬───────┴───────┴────────┘
+                                  │
+                              EXECUTION
+                                  │
+                       Human approval / tools
+                                  │
+                              Evidence
+~~~
+
+The portfolio is intentionally organized around **system boundaries**, not only model capabilities.
+
+---
+
+## Public platform
+
+The GitHub Pages application provides four public surfaces:
+
+- **Technology News** — curated and structured technology intelligence.
+- **AI Index** — directory of AI tools and technologies.
+- **AI Laboratory** — controlled defensive evaluation surface.
+- **Shield Research** — technical research, threat model and validation material.
+
+The public laboratory uses synthetic/controlled scenarios and is not presented as a certification or as a production endpoint-security product.
+
+---
+
+## Security and AI Safety
+
+The security work follows a defensive engineering model:
+
+- deterministic policy checks;
+- explicit authorization boundaries;
+- least-privilege principles;
+- schema and input validation;
+- human approval for high-impact actions;
+- audit/event evidence;
+- regression tests;
+- controlled benchmark scenarios;
+- separation between implemented capabilities and future concepts.
+
+### Security boundary
+
+~~~text
+LLM / Agent
+    │
+    ▼
+Intent / Proposed Action
+    │
+    ▼
+Policy + Validation
+    │
+    ├── DENY ───────────────► Audit
+    │
+    ├── REVIEW ─────────────► Human approval
+    │
+    └── ALLOW ──────────────► Controlled execution
+                                      │
+                                      ▼
+                                   Evidence
+~~~
+
+---
 
 ## Repository structure
 
-```text
+~~~text
 .
-├── .github/
-│   └── workflows/              # CI, scheduled data and security automation
-├── audit/                      # Published benchmark/evidence records
-│   ├── reference-intelligence/
-│   ├── reference-runs/
-│   └── runs/
-├── data/                       # Published news, AI catalog and project metadata
-├── docs/                       # Security, benchmark and audit documentation
-├── labs/
-│   └── ayorai-agent-defense-lab/ # Executable defensive-agent research lab
-├── scripts/                    # Data ingestion and benchmark runners
-├── tests/                      # Public AI Shield regression tests
-├── ai-radar.html               # AI Laboratory UI (legacy filename kept for URL stability)
-├── ai-radar.js                 # AI Laboratory controller
-├── ai-radar.css                # AI Laboratory styles
-├── security-shield.js          # AYORAI AI Shield defensive engine
-├── security-benchmark.js       # Controlled benchmark corpus/runner
-├── security-reference-benchmark.js
-├── security-report.html        # Historical/public report
-├── index.html                  # Main portfolio/news surface
-├── ai-tools.html               # AI Index
-├── script.js
-├── style.css
+├── .github/workflows/       # CI, scheduled data and security automation
+├── audit/                   # benchmark and evidence records
+├── data/                    # published news and portfolio metadata
+├── docs/                    # technical and security documentation
+├── labs/                    # executable defensive-agent research
+├── scripts/                 # ingestion and benchmark automation
+├── tests/                   # regression/security tests
+├── assets/                  # portfolio visual assets
+│   └── portfolio-cover.svg
+├── index.html               # main intelligence/news surface
+├── ai-tools.html            # AI Index
+├── ai-radar.html            # public Security Lab UI
+├── shield-research.html     # Shield research
+├── security-report.html     # historical security report
+├── script.js                # main application controller
 ├── package.json
 ├── requirements.txt
 └── README.md
-```
+~~~
 
-### Naming note
+### Legacy URL compatibility
 
-The public laboratory was renamed from the earlier **AI Radar** concept to **AYORAI AI Laboratory / Security Lab**. The `ai-radar.*` filenames remain temporarily because changing them would break existing GitHub Pages URLs and references. The visible product naming is the new one.
+The public laboratory is now presented as **AYORAI AI Laboratory / Security Lab**. The ai-radar.* filenames remain for URL compatibility with existing GitHub Pages references.
 
-The legacy `data/ai-radar.json` pipeline is separate from the security laboratory and should not be confused with the AYORAI AI Shield evidence system.
+---
 
-## Curated projects
+## Engineering standards
 
-The public portfolio metadata is maintained in `data/projects.json`.
+| Standard | Evidence in portfolio |
+|---|---|
+| Reproducibility | tests, scripts, deterministic workflows |
+| Security boundaries | Shield, MCP-Sentinel, AgentHound |
+| Observability | execution traces, evidence and audit records |
+| Data engineering | structured datasets and ingestion pipelines |
+| AI engineering | RAG, agents, orchestration and tool integration |
+| Automation | GitHub Actions and scheduled pipelines |
+| Documentation | architecture, threat models and research pages |
+| Privacy | synthetic/public data for security demonstrations |
+| Operational discipline | explicit separation of implementation vs. roadmap |
 
-### Security / Agentic AI
-- **AYORAI AI Shield** — deterministic defensive architecture for autonomous AI agents.
-- **AYORAI AI Laboratory — Security Lab** — public controlled evaluation and evidence interface.
-- **AyorAI Agent Defense Lab** — executable local defensive-agent research environment using synthetic data.
+---
 
-### Applied AI / Data
-- **AYORAI Offline OCR** — Windows-first local OCR API and Document Intelligence foundation.
-- **OCR-Python** — OCR and document-processing engineering.
-- **Hybrid Data Management RPA Pipeline** — data engineering and process automation.
-- **Ayorai Financial Control** — financial analytics and dashboard engineering.
+## Why the portfolio is structured this way
 
-### Supporting study
-- **Sonic MVP Game** — explicitly maintained as a learning project, separate from the core AI portfolio.
-- **Python, Data & AI Engineering** — ongoing study track.
+The projects are presented as an engineering system:
 
-## Engineering principles
+~~~text
+Data
+  ↓
+Retrieval / Intelligence
+  ↓
+Agentic reasoning
+  ↓
+Policy / Authorization
+  ↓
+Tool execution
+  ↓
+Audit / Observability
+~~~
 
-- Reproducible tests and evidence
-- Synthetic/public data for security demonstrations
-- Explicit security boundaries
-- Human approval for high-impact actions
-- No secrets in source control
-- No offensive automation against external systems
-- Evidence before strong security claims
-- Clear separation between current implementation and future product concepts
+This makes the portfolio readable from both an **AI Engineering** and **AI Safety / Security Engineering** perspective.
+
+---
 
 ## Automation
 
-GitHub Actions maintains scheduled data ingestion and security/reference evaluation workflows. Generated public datasets are committed only where the corresponding workflow explicitly requires it.
+GitHub Actions supports scheduled data ingestion and security/reference evaluation. Generated public datasets are committed only where the corresponding workflow requires it.
+
+The repository does not require private organizational credentials or internal business datasets to reproduce the public portfolio experience.
+
+---
 
 ## Privacy and attribution
 
 The news pipeline stores metadata and links to original sources. It does not claim ownership of third-party articles.
 
-No private organizational credentials, personal records or internal business datasets are required by the public pipeline.
+Security demonstrations use controlled or synthetic scenarios and avoid offensive automation against external systems.
+
+---
 
 ## Portfolio positioning
 
@@ -161,6 +212,17 @@ No private organizational credentials, personal records or internal business dat
 ## Author
 
 **Anderson Leon Ayora**  
-Data Scientist · AI Engineer
+AI Engineer · Data Scientist
 
 **AYORAI · Applied Intelligence**
+
+---
+
+### Start here
+
+- **Flagship security:** [AYORAI AI Shield](https://github.com/Ayorinha/ayorai-vision-intelligence)
+- **Agentic AI:** [AYORAI](https://github.com/Ayorinha/ayorai)
+- **Agent security:** [AgentHound](https://github.com/Ayorinha/AgentHound)
+- **MCP security:** [MCP-Sentinel](https://github.com/Ayorinha/MCP-Sentinel)
+- **Public platform:** [Global Tech News AI](https://github.com/Ayorinha/global-tech-news-ai)
+- **Professional profile:** [LinkedIn](https://www.linkedin.com/in/anderson-leon-ayora)
