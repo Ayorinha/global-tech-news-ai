@@ -80,7 +80,7 @@ The GitHub Pages application provides four public surfaces:
 - **Technology News** — curated and structured technology intelligence.
 - **AI Index** — directory of AI tools and technologies.
 - **AI Laboratory** — controlled defensive evaluation surface.
-- **Shield Research** — technical research, threat model and validation material.
+- **AI Safety Research** — technical research, threat model and validation material.
 
 The public laboratory uses synthetic/controlled scenarios and is not presented as a certification or as a production endpoint-security product.
 
@@ -149,7 +149,7 @@ Policy + Validation
 
 ### Legacy URL compatibility
 
-The public laboratory is now presented as **AYORAI AI Laboratory / Security Lab**. The ai-radar.* filenames remain for URL compatibility with existing GitHub Pages references.
+The public laboratory is now presented as **AYORAI AI Laboratory**, with a separate **AI Safety Research** surface for threat models, protocol hypotheses and validation material. The ai-radar.* filenames remain for URL compatibility with existing GitHub Pages references.
 
 ---
 
