@@ -37,6 +37,12 @@ AYORAI · APPLIED INTELLIGENCE
     └── Game-development learning project
 ```
 
+## Site preview
+
+![AYORAI Tech — current site preview](assets/site-preview.webp)
+
+> Current visual snapshot of the public portfolio/news interface. The image is stored in the repository so the project presentation can be reviewed directly from GitHub.
+
 ## Public site
 
 - **News:** `index.html`
