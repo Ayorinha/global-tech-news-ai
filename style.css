@@ -188,6 +188,18 @@ body {
   overflow-y: auto;
 }
 
+.proj-tier {
+  display: inline-flex; align-items: center;
+  margin-bottom: .5rem; padding: .16rem .45rem;
+  border-radius: 5px; border: 1px solid rgba(0,212,255,.22);
+  background: var(--cyan-dim); color: var(--cyan);
+  font-size: .56rem; font-weight: 800; letter-spacing: .07em;
+}
+.proj-card.featured {
+  border-color: rgba(0,212,255,.34);
+  background: linear-gradient(145deg, rgba(15,48,72,.92), var(--navy-card));
+}
+.proj-card.featured:hover { border-color: var(--cyan); }
 .proj-card {
   background: var(--navy-card);
   border: 1px solid var(--border);
