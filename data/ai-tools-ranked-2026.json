@@ -1259,5 +1259,57 @@
       "Enterprise",
       "Governance"
     ]
+  },
+  {
+    "name": "Qdrant",
+    "category": "RAG & Vector Search",
+    "description": "Banco vetorial open source para busca semântica, híbrida e recuperação de contexto em aplicações de IA.",
+    "url": "https://qdrant.tech",
+    "domain": "qdrant.tech",
+    "tags": [
+      "Vector DB",
+      "RAG",
+      "Hybrid Search",
+      "Open Source"
+    ]
+  },
+  {
+    "name": "pgvector",
+    "category": "RAG & Vector Search",
+    "description": "Extensão open source do PostgreSQL para busca por similaridade vetorial junto aos dados relacionais.",
+    "url": "https://github.com/pgvector/pgvector",
+    "domain": "github.com",
+    "tags": [
+      "Vector DB",
+      "PostgreSQL",
+      "RAG",
+      "Open Source"
+    ]
+  },
+  {
+    "name": "LlamaIndex",
+    "category": "RAG & Vector Search",
+    "description": "Framework para construir aplicações com agentes, RAG, conectores de dados e workflows orientados a conhecimento.",
+    "url": "https://www.llamaindex.ai",
+    "domain": "llamaindex.ai",
+    "tags": [
+      "RAG",
+      "Agents",
+      "Data",
+      "Python"
+    ]
+  },
+  {
+    "name": "Haystack",
+    "category": "RAG & Vector Search",
+    "description": "Framework open source para aplicações de RAG, agentes, busca multimodal e pipelines de IA em produção.",
+    "url": "https://haystack.deepset.ai",
+    "domain": "haystack.deepset.ai",
+    "tags": [
+      "RAG",
+      "Agents",
+      "Search",
+      "Open Source"
+    ]
   }
 ]
