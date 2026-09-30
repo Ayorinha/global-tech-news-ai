@@ -1311,5 +1311,44 @@
       "Search",
       "Open Source"
     ]
+  },
+  {
+    "name": "Amazon Q Developer",
+    "category": "Desenvolvimento",
+    "description": "Assistente de desenvolvimento da AWS para programação, modernização e operações em cloud.",
+    "url": "https://aws.amazon.com/q/developer/",
+    "domain": "aws.amazon.com",
+    "tags": [
+      "Coding",
+      "Cloud",
+      "Agents",
+      "AWS"
+    ]
+  },
+  {
+    "name": "JetBrains Junie",
+    "category": "Desenvolvimento",
+    "description": "Agente de programação da JetBrains para IDEs e tarefas de engenharia de software.",
+    "url": "https://www.jetbrains.com/junie/",
+    "domain": "jetbrains.com",
+    "tags": [
+      "Coding",
+      "Agents",
+      "IDE",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Mistral Vibe",
+    "category": "Desenvolvimento",
+    "description": "Agente de programação da Mistral para desenvolvimento assistido por IA em terminal.",
+    "url": "https://mistral.ai",
+    "domain": "mistral.ai",
+    "tags": [
+      "Coding",
+      "Agents",
+      "CLI",
+      "Mistral"
+    ]
   }
 ]
