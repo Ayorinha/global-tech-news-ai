@@ -145,7 +145,7 @@ def add_existing_news(items):
         data = json.loads(NEWS.read_text(encoding="utf-8"))
     except Exception:
         return items
-    seen = {x["link"] for x in items if x.get("link")}
+    seen = {x["link"] for x in items.values() if x.get("link")}
     for a in data:
         title = clean(a.get("title_pt") or a.get("title_original") or a.get("title"))
         link = a.get("link") or a.get("url")
