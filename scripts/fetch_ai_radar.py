@@ -156,7 +156,7 @@ def add_existing_news(items):
             continue
         add_entry(items, title, link, a.get("source", "News"), parse_date(a), text)
         seen.add(link)
-    return items
+    return list(items.values())
 
 
 def score_items(items):
