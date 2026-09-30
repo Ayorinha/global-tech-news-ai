@@ -137,7 +137,7 @@ def add_existing_news(items):
         items = {
             re.sub(r"[^a-z0-9]+", " ", x.get("title", "").lower()).strip(): x
             for x in items
-            if x.get("title")
+            if isinstance(x, dict) and x.get("title")
         }
     if not NEWS.exists():
         return list(items.values())
