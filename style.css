@@ -200,6 +200,30 @@ body {
   background: linear-gradient(145deg, rgba(15,48,72,.92), var(--navy-card));
 }
 .proj-card.featured:hover { border-color: var(--cyan); }
+.proj-card.featured:first-child {
+  border-color: rgba(0,212,255,.62);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(0,212,255,.14), transparent 42%),
+    linear-gradient(145deg, rgba(15,48,72,.98), var(--navy-card));
+  box-shadow: 0 0 0 1px rgba(0,212,255,.08), 0 10px 28px rgba(0,0,0,.22);
+  position: relative;
+  overflow: hidden;
+}
+.proj-card.featured:first-child::before {
+  content: "★ FEATURED · CLAIM VERIFICATION";
+  display: block;
+  margin: -.25rem 0 .55rem;
+  color: var(--cyan);
+  font-size: .55rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.proj-card.featured:first-child .proj-title {
+  font-size: 1rem;
+}
+.proj-card.featured:first-child .proj-desc {
+  -webkit-line-clamp: 4;
+}
 .proj-card {
   background: var(--navy-card);
   border: 1px solid var(--border);
