@@ -1,6 +1,28 @@
 [
   {
-    "id": 1,
+    "id": 0,
+    "category": "projeto",
+    "title": "AYORAI ATTRACTOR",
+    "description": "Camada de verificação de claims baseada em evidências: verifica se cada afirmação é realmente suportada pelas fontes citadas, com stance, proveniência e Judge determinístico.",
+    "link": "https://github.com/Ayorinha/ayorai-opensearch",
+    "repo": "https://github.com/Ayorinha/ayorai-opensearch",
+    "tags": [
+      "AI Safety",
+      "Claim Verification",
+      "LLM Evaluation",
+      "RAG",
+      "Evidence",
+      "OpenSearch"
+    ],
+    "status": "ativo",
+    "version": "F1",
+    "created_at": "2026-10",
+    "image": "",
+    "tier": "01 · FLAGSHIP · VERIFICATION",
+    "featured": true
+  },
+  {
+    "id": 2,
     "category": "projeto",
     "title": "AYORAI AI Shield",
     "description": "Runtime security determinístico para agentes autônomos, com políticas, validação de ações, enforcement e evidências de auditoria.",
@@ -16,11 +38,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "01 · FLAGSHIP",
+    "tier": "02 · FLAGSHIP · SECURITY",
     "featured": true
   },
   {
-    "id": 2,
+    "id": 3,
     "category": "projeto",
     "title": "AYORAI",
     "description": "Plataforma de Applied AI com arquitetura orientada a agentes, RAG, ferramentas, automação e integração de sistemas.",
@@ -36,11 +58,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "02 · FLAGSHIP",
+    "tier": "03 · APPLIED AI",
     "featured": true
   },
   {
-    "id": 3,
+    "id": 4,
     "category": "projeto",
     "title": "AgentHound",
     "description": "Laboratório de análise e defesa de agentes, com foco em capacidades, fronteiras de execução e avaliação de comportamento agentivo.",
@@ -56,11 +78,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "03 · SECURITY",
+    "tier": "04 · SECURITY",
     "featured": true
   },
   {
-    "id": 4,
+    "id": 5,
     "category": "projeto",
     "title": "MCP-Sentinel",
     "description": "Gateway de segurança para MCP com políticas determinísticas, validação de schema, least privilege, aprovação e auditoria.",
@@ -76,11 +98,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "04 · SECURITY",
+    "tier": "05 · SECURITY",
     "featured": true
   },
   {
-    "id": 5,
+    "id": 6,
     "category": "projeto",
     "title": "AyorGraph",
     "description": "Orquestração de agentes baseada em grafos, com workflows determinísticos, composição de agentes e execução observável.",
@@ -96,11 +118,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "05 · ENGINEERING",
+    "tier": "06 · ENGINEERING",
     "featured": false
   },
   {
-    "id": 6,
+    "id": 7,
     "category": "projeto",
     "title": "RAG Framework",
     "description": "Componentes de Retrieval-Augmented Generation para ingestão, recuperação, contexto e respostas fundamentadas.",
@@ -116,11 +138,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "06 · ENGINEERING",
+    "tier": "07 · ENGINEERING",
     "featured": false
   },
   {
-    "id": 7,
+    "id": 8,
     "category": "projeto",
     "title": "vault-mcp",
     "description": "Integração MCP orientada a ferramentas e controle de acesso, com foco em execução segura e fronteiras explícitas entre modelo e recurso.",
@@ -136,11 +158,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "07 · ENGINEERING",
+    "tier": "08 · ENGINEERING",
     "featured": false
   },
   {
-    "id": 8,
+    "id": 9,
     "category": "projeto",
     "title": "Hybrid Data Management RPA Pipeline",
     "description": "Pipeline de engenharia de dados e automação com integração de fontes, processamento, controle operacional e rastreabilidade.",
@@ -156,11 +178,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "08 · DATA ENGINEERING",
+    "tier": "09 · DATA ENGINEERING",
     "featured": false
   },
   {
-    "id": 9,
+    "id": 10,
     "category": "projeto",
     "title": "Global Tech News AI",
     "description": "Hub público de inteligência tecnológica com ingestão, normalização, curadoria, dados estruturados, AI Index e laboratório defensivo.",
@@ -176,11 +198,11 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "09 · APPLIED",
+    "tier": "10 · APPLIED",
     "featured": false
   },
   {
-    "id": 10,
+    "id": 11,
     "category": "projeto",
     "title": "AYORAI Financial Control",
     "description": "Aplicação de analytics e engenharia de dados para controle financeiro, indicadores e tomada de decisão baseada em dados.",
@@ -196,7 +218,7 @@
     "version": "2026",
     "created_at": "2026-09",
     "image": "",
-    "tier": "10 · APPLIED",
+    "tier": "11 · APPLIED",
     "featured": false
   },
   {
