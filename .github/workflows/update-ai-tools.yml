@@ -1,0 +1,27 @@
+name: Update AyorAI Tools
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"
+permissions:
+  contents: write
+concurrency:
+  group: ayorai-tools-refresh
+  cancel-in-progress: true
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/update_ai_tools.py
+      - name: Commit catalog changes
+        run: |
+          git config user.name "ayorai-tools-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/ai-tools-ranked-2026.json; then exit 0; fi
+          git add data/ai-tools-ranked-2026.json
+          git commit -m "chore(ai-tools): refresh curated AI directory"
+          git push
