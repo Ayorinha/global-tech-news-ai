@@ -1,5 +1,24 @@
 [
   {
+    "title_original": "Your Next Great Read Might Be Certified ‘Organic’",
+    "description_original": "Amid a sea of AI writing slop, a new stamp for “organic literature” will help readers to pick out books authored by real, corn-fed, free-range humans.",
+    "link": "https://www.wired.com/story/organic-literature-books-by-people-stamp-ai/",
+    "published": "2026-10-07T08:30:00+00:00",
+    "source": "Wired",
+    "language": "en",
+    "image": "https://media.wired.com/photos/6abfd3ec63cea41649272758/master/pass/Business_Plagued%20By%20AI%20Scandals,%20Publishers%20Are%20Starting%20To%20Sell%20%E2%80%98Organic%20Literature%E2%80%99_v1.jpg",
+    "editorial": {
+      "is_technical": true,
+      "category": "technology"
+    },
+    "title_pt": "Your Next Great Read Might Be Certified ‘Organic’",
+    "description_pt": "Amid a sea of AI writing slop, a new stamp for “organic literature” will help readers to pick out books authored by real, corn-fed, free-range humans.",
+    "title_es": "Your Next Great Read Might Be Certified ‘Organic’",
+    "description_es": "Amid a sea of AI writing slop, a new stamp for “organic literature” will help readers to pick out books authored by real, corn-fed, free-range humans.",
+    "title_en": "Your Next Great Read Might Be Certified ‘Organic’",
+    "description_en": "Amid a sea of AI writing slop, a new stamp for “organic literature” will help readers to pick out books authored by real, corn-fed, free-range humans."
+  },
+  {
     "title_original": "Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers",
     "description_original": "Decisão ocorre depois de iniciativa anterior, a Project Glasswing, que ajudou parceiros a encontrar pelo menos 129 mil vulnerabilidades de software verificadas entre abril e julho de 2026 O post Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers apareceu primeiro em Olhar Digital .",
     "link": "https://olhardigital.com.br/2026/10/06/inteligencia-artificial/anthropic-libera-ia-mais-poderosa-para-equipes-que-cacam-falhas-antes-de-hackers/",
@@ -16,7 +35,13 @@
     "title_es": "Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers",
     "description_es": "Decisão ocorre depois de iniciativa anterior, a Project Glasswing, que ajudou parceiros a encontrar pelo menos 129 mil vulnerabilidades de software verificadas entre abril e julho de 2026 O post Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers apareceu primeiro em Olhar Digital .",
     "title_en": "Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers",
-    "description_en": "Decisão ocorre depois de iniciativa anterior, a Project Glasswing, que ajudou parceiros a encontrar pelo menos 129 mil vulnerabilidades de software verificadas entre abril e julho de 2026 O post Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers apareceu primeiro em Olhar Digital ."
+    "description_en": "Decisão ocorre depois de iniciativa anterior, a Project Glasswing, que ajudou parceiros a encontrar pelo menos 129 mil vulnerabilidades de software verificadas entre abril e julho de 2026 O post Anthropic libera IA mais poderosa para equipes que caçam falhas antes de hackers apareceu primeiro em Olhar Digital .",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/anthropics/anthropic-sdk-python",
+        "repository": "anthropics/anthropic-sdk-python"
+      }
+    }
   },
   {
     "title_original": "Fala AI: Nobel de Física vai para detector de ‘partículas fantasmas’",
@@ -247,25 +272,6 @@
     "description_en": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct."
   },
   {
-    "title_original": "Mirror Particle is building a ‘world model’ of human behavior",
-    "description_original": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
-    "link": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
-    "published": "2026-10-06T16:35:00+00:00",
-    "source": "TechCrunch",
-    "language": "en",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1404749040.jpg?resize=1200,675",
-    "editorial": {
-      "is_technical": true,
-      "category": "technology"
-    },
-    "title_pt": "Mirror Particle is building a ‘world model’ of human behavior",
-    "description_pt": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
-    "title_es": "Mirror Particle is building a ‘world model’ of human behavior",
-    "description_es": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
-    "title_en": "Mirror Particle is building a ‘world model’ of human behavior",
-    "description_en": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy."
-  },
-  {
     "title_original": "How Jump Trading is scaling quant research with ChatGPT",
     "description_original": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
     "link": "https://openai.com/index/jump-trading",
@@ -301,7 +307,13 @@
     "title_es": "Sharing AI progress in mathematics",
     "description_es": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
     "title_en": "Sharing AI progress in mathematics",
-    "description_en": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub."
+    "description_en": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/openai/openai-python",
+        "repository": "openai/openai-python"
+      }
+    }
   },
   {
     "title_original": "Advancing computer use with Ironclad",
@@ -320,7 +332,13 @@
     "title_es": "Advancing computer use with Ironclad",
     "description_es": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
     "title_en": "Advancing computer use with Ironclad",
-    "description_en": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
+    "description_en": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/openai/openai-python",
+        "repository": "openai/openai-python"
+      }
+    }
   },
   {
     "title_original": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
@@ -491,7 +509,13 @@
     "title_es": "How Albertsons Companies is reimagining retail from the inside out",
     "description_es": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
     "title_en": "How Albertsons Companies is reimagining retail from the inside out",
-    "description_en": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
+    "description_en": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/openai/openai-python",
+        "repository": "openai/openai-python"
+      }
+    }
   },
   {
     "title_original": "10 technical talks I’m excited about at GitHub Universe 2026",
