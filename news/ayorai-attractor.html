@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>AYORAI ATTRACTOR · Documento técnico v1.1</title>
+<meta name="description" content="AYORAI ATTRACTOR: motor de código aberto que verifica, afirmação por afirmação, se as respostas de IA são sustentadas pelas fontes citadas. Documento técnico v1.1.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AYORAI ATTRACTOR publica documento técnico v1.1">
+<meta property="og:description" content="Verificação auditável, afirmação por afirmação, de respostas de inteligência artificial. Código aberto, Apache-2.0.">
+<meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<style>
+:root{--bg:#0b1829;--card:#0e1f33;--card2:#132840;--line:rgba(120,170,210,.2);--cyan:#00d4ff;--green:#00e676;--amber:#ffd54f;--text:#eef6ff;--muted:#9fb3c8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7}
+a{color:var(--cyan)}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:rgba(11,24,41,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.top a{color:var(--text);text-decoration:none;font-weight:800}
+.top .brand span{color:var(--cyan)}
+.top .back{font-size:.85rem;font-weight:700;border:1px solid var(--line);border-radius:9px;padding:8px 12px;background:var(--card)}
+.hero{background:#000;border-bottom:1px solid rgba(0,212,255,.25)}
+.hero img{display:block;width:100%;max-width:1600px;margin:0 auto;aspect-ratio:4/1;object-fit:contain}
+main{max-width:780px;margin:0 auto;padding:28px 16px 64px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.badge{font-size:.72rem;font-weight:800;letter-spacing:.04em;border-radius:20px;padding:4px 10px;border:1px solid var(--line);background:var(--card2);color:var(--text)}
+.badge.pin{color:var(--cyan);border-color:rgba(0,212,255,.45);background:rgba(0,212,255,.1)}
+.badge.dev{color:var(--cyan)}
+h1{font-size:clamp(1.7rem,4.6vw,2.5rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lead{font-size:1.1rem;color:#d6e6f5;margin:0 0 10px}
+.meta{font-size:.82rem;color:var(--muted);margin-bottom:26px}
+h2{font-size:1.3rem;margin:34px 0 10px;letter-spacing:-.01em}
+p{margin:0 0 14px}
+ul{padding-left:20px;margin:0 0 16px}
+li{margin-bottom:6px}
+.quote{border-left:3px solid var(--cyan);background:var(--card);padding:14px 18px;border-radius:0 10px 10px 0;margin:22px 0;color:#dceaf7}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{display:block;font-size:1.6rem;color:var(--cyan);line-height:1.1}
+.stat span{font-size:.78rem;color:var(--muted);line-height:1.35;display:block;margin-top:6px}
+.verdicts{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}
+.verdicts code{font-size:.78rem;padding:5px 9px;border-radius:7px;background:var(--card2);border:1px solid var(--line);color:var(--text)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0}
+.box.warn{border-color:rgba(255,213,79,.4);background:rgba(255,213,79,.05)}
+.box.warn strong{color:var(--amber)}
+.cta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0}
+.cta a{display:flex;flex-direction:column;justify-content:center;min-height:68px;padding:12px 14px;border-radius:11px;border:1px solid var(--line);background:var(--card);color:var(--text);text-decoration:none;font-weight:800}
+.cta a small{color:var(--muted);font-weight:500;font-size:.75rem}
+.cta a.primary{border-color:var(--cyan);background:rgba(0,212,255,.1)}
+.cta a:hover{border-color:var(--cyan)}
+.note{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:38px;padding-top:16px}
+@media(max-width:640px){.stats{grid-template-columns:1fr 1fr}.cta{grid-template-columns:1fr}.lead{font-size:1rem}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">Ayorai<span>Tech</span></a>
+  <a class="back" href="../index.html">← Voltar às notícias</a>
+</header>
+
+<div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI" width="1600" height="400"></div>
+
+<main>
+  <article>
+    <div class="badges">
+      <span class="badge pin">📌 Notícia fixada</span>
+      <span class="badge">Publicidade · conteúdo do autor do projeto</span>
+      <span class="badge dev">Em desenvolvimento · v0.5.0</span>
+    </div>
+
+    <h1>AYORAI ATTRACTOR publica documento técnico: verificação auditável, afirmação por afirmação, de respostas de IA</h1>
+    <p class="lead">O projeto de código aberto confere se cada afirmação de uma resposta de inteligência artificial é sustentada pelo trecho exato da fonte que ela diz usar, e registra essa conferência de forma que qualquer pessoa possa refazê-la e chegar ao mesmo resultado.</p>
+    <div class="meta">Por Anderson Leon Ayora · Documento técnico público v1.1 (revisão auditada), outubro de 2026 · Código sob licença Apache-2.0 · DOI 10.5281/zenodo.23125082</div>
+
+    <p>O AYORAI ATTRACTOR acaba de ganhar a versão 1.1 do seu documento técnico público. O texto reúne arquitetura, funcionamento, rastreabilidade, aplicações por setor e planos do projeto, e foi revisado após uma auditoria em 18 de outubro de 2026. O documento declara que não é parecer jurídico nem certificação, e que cada afirmação técnica relevante aponta para um arquivo do repositório ou para uma fonte pública.</p>
+
+    <h2>A ideia central: a IA não pode ser juíza de si mesma</h2>
+    <p>Um modelo de linguagem pode ajudar a analisar textos, mas, no ATTRACTOR, ele não decide se a própria resposta está correta. A decisão final sobre cada afirmação fica com um componente determinístico, o <strong>Judge</strong>, que aplica regras explícitas, versionadas e identificadas por hash criptográfico. Com a mesma versão das regras e a mesma entrada estruturada, o Judge 2.0 produz o mesmo resultado, byte a byte.</p>
+
+    <div class="quote">O objetivo é transformar “a IA disse, e citou uma fonte” em “este trecho, desta fonte, nesta posição, sustenta (ou contradiz) esta afirmação, segundo estas regras, e qualquer um pode recalcular o mesmo resultado”.</div>
+
+    <h2>Por que isso importa</h2>
+    <p>Uma resposta de IA costuma conter várias afirmações. A fonte citada pode sustentar uma, contradizer outra e não dizer nada sobre uma terceira. Avaliada como um bloco, a presença de uma citação real empresta credibilidade a tudo. O ATTRACTOR separa a resposta em afirmações e julga cada uma contra trechos localizados no documento original.</p>
+    <p>O documento lembra casos públicos que ilustram o problema, no Brasil e no exterior: advogados sancionados nos Estados Unidos por citar precedentes inexistentes gerados por IA (Mata v. Avianca, 2023); uma multa aplicada pelo TJPR por citação de precedente do STJ que não foi localizado; e uma petição na Paraíba que escondia comandos dirigidos a ferramentas de IA para tentar manipular a análise judicial. O próprio texto ressalta que esses casos são contexto relatado pelas fontes e não foram analisados pelo sistema.</p>
+
+    <h2>Como funciona</h2>
+    <ul>
+      <li><strong>Afirmação por afirmação.</strong> Afirmações compostas são divididas em partes menores (átomos), cada uma apontando para o trecho exato da frase original.</li>
+      <li><strong>Evidência conferida na fonte.</strong> Uma citação só vale se o trecho existir no texto-fonte, nas posições declaradas. Evidência rejeitada aparece no resultado com o motivo: nada é descartado em silêncio.</li>
+      <li><strong>Fontes dependentes contam como uma.</strong> Republicações e cadeias de citação são agrupadas, para que três sites repetindo a mesma origem não pareçam três confirmações.</li>
+      <li><strong>Texto é dado, nunca instrução.</strong> O conteúdo das evidências é sempre tratado como dado, o que protege contra documentos que tentam instruir a máquina.</li>
+      <li><strong>Trilha de prova.</strong> Cada resultado liga afirmação, trecho, posição no documento, hash da fonte, versão das regras e hash do resultado, em serialização canônica (RFC 8785).</li>
+    </ul>
+    <p>Cada afirmação recebe um de cinco vereditos:</p>
+    <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
+
+    <div class="stats">
+      <div class="stat"><b>5</b><span>vereditos possíveis por afirmação</span></div>
+      <div class="stat"><b>1</b><span>autoridade de veredito: o Judge determinístico</span></div>
+      <div class="stat"><b>1.057</b><span>testes aprovados no commit de referência do documento</span></div>
+      <div class="stat"><b>4</b><span>releases arquivadas com DOI no Zenodo (v0.2.0 a v0.5.0)</span></div>
+    </div>
+
+    <h2>Onde pode ser aplicado</h2>
+    <p>O documento descreve aplicações potenciais em judiciário e advocacia, setor público, telecomunicações, serviços financeiros, mercado de capitais, seguros, saúde, auditoria interna, pesquisa e educação. Em todos os casos, o padrão é o mesmo: decompor a resposta, verificar cada afirmação contra um conjunto de evidências autorizado e registrar o resultado de forma reproduzível. O primeiro domínio do benchmark em português é o Regulamento Geral de Direitos do Consumidor de Telecomunicações (Resolução Anatel nº 765/2023), escolhido por ser um texto oficial, público e cheio de prazos, direitos e exceções.</p>
+
+    <div class="box warn">
+      <strong>O que o projeto ainda não entrega</strong>
+      <ul style="margin:8px 0 0">
+        <li>Ainda não há resultado de benchmark em português: o protocolo não está congelado e o sistema não foi executado sobre casos em português.</li>
+        <li>Os números publicados vêm de conjuntos sintéticos de desenvolvimento em inglês, com 30 casos, e não são evidência confirmatória.</li>
+        <li>A API recebe afirmações e evidências já estruturadas; ela ainda não extrai afirmações nem infere stance sozinha.</li>
+        <li>O registro de auditoria verificável por criptografia (log de transparência) ainda não está implantado.</li>
+        <li>O projeto não é certificado, não tem cliente em produção e não declara parceria com nenhuma instituição.</li>
+      </ul>
+    </div>
+
+    <h2>Próximos passos</h2>
+    <p>O caminho até o primeiro resultado em português segue portões sucessivos: um segundo piloto de cerca de 10 casos anotados sem ferramentas de IA, o congelamento do protocolo, um conjunto de 300 casos (70% público e 30% oculto), um segundo anotador com concordância mínima medida, e uma execução única do sistema após os rótulos completos. Resultados negativos ou inconclusivos também serão publicados.</p>
+
+    <div class="cta">
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">📄 Ler o documento técnico<small>PDF · v1.1</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch" target="_blank" rel="noopener">⌘ Repositório no GitHub<small>código aberto · Apache-2.0</small></a>
+      <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">🔗 DOI no Zenodo<small>10.5281/zenodo.23125082</small></a>
+    </div>
+
+    <p class="note">Conteúdo publicitário sobre projeto do próprio autor deste site, baseado no documento técnico público AYORAI ATTRACTOR v1.1 (outubro de 2026). Números e estados refletem o documento na data da revisão; em caso de divergência, vale o estado atual do repositório.</p>
+  </article>
+</main>
+</body>
+</html>

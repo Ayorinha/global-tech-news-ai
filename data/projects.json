@@ -3,25 +3,25 @@
     "id": 0,
     "category": "projeto",
     "title": "AYORAI ATTRACTOR",
-    "description": "Evidence-first claim-level verification engine: separates claims, evidence, stance and provenance, then applies a deterministic Judge to verify whether cited sources actually support each claim. F1: A 76.67% (EVAL_ONLY), B 66.67% (candidate commercial path), C 33.33%, versus a 43.33% majority baseline.",
-    "link": "https://github.com/Ayorinha/ayorai-opensearch",
+    "description": "Projeto principal. Motor de código aberto que verifica, afirmação por afirmação, se as respostas de IA são sustentadas pelas fontes citadas. A decisão final é de um Judge determinístico com regras versionadas e reproduzíveis, e cada veredito gera uma trilha de prova auditável.",
+    "link": "news/ayorai-attractor.html",
     "repo": "https://github.com/Ayorinha/ayorai-opensearch",
     "tags": [
       "AI Safety",
       "Claim Verification",
-      "LLM Evaluation",
-      "Evidence",
-      "Provenance",
       "Deterministic Judge",
-      "RAG",
-      "OpenSearch"
+      "Auditoria de IA",
+      "Provenance",
+      "Open Source"
     ],
-    "status": "ativo",
-    "version": "v0.3.0 · F1",
-    "created_at": "2026-10",
-    "image": "",
-    "tier": "01 · FLAGSHIP · VERIFICATION",
-    "featured": true
+    "status": "em desenvolvimento",
+    "version": "0.5.0",
+    "created_at": "2026-09",
+    "image": "assets/ayorai-attractor-banner.jpg",
+    "tier": "01 · PROJETO PRINCIPAL · VERIFICAÇÃO",
+    "featured": true,
+    "pdf": "https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf",
+    "principal": true
   },
   {
     "id": 2,

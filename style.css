@@ -210,7 +210,7 @@ body {
   overflow: hidden;
 }
 .proj-card.featured:first-child::before {
-  content: "★ FEATURED · CLAIM VERIFICATION";
+  content: "★ PROJETO PRINCIPAL · EM DESENVOLVIMENTO";
   display: block;
   margin: -.25rem 0 .55rem;
   color: var(--cyan);
@@ -598,3 +598,33 @@ body {
 ::-webkit-scrollbar-track { background: var(--navy); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::selection { background: var(--cyan-dim); color: var(--cyan); }
+
+/* Cards nunca encolhem dentro da lista lateral (o 1º card ficava com 29px) */
+.sidebar-list > .proj-card { flex-shrink: 0; }
+
+/* Banner do projeto: arte inteira, sem corte nem distorção, sobre fundo preto */
+.proj-banner {
+  margin: -.85rem -.85rem .7rem; aspect-ratio: 4 / 1;
+  background: #000; border-bottom: 1px solid rgba(0,212,255,.25);
+}
+.proj-banner img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.proj-card.principal { border-color: var(--cyan); box-shadow: 0 0 0 1px rgba(0,212,255,.18), 0 12px 32px rgba(0,0,0,.3); }
+.proj-card.principal.featured:first-child::before { margin-top: 0; }
+.proj-card.principal .proj-desc { -webkit-line-clamp: 6; }
+
+/* Notícia fixada */
+.news-item.pinned {
+  flex-direction: column; gap: 0; padding: 0; margin-bottom: 1.4rem;
+  border: 1px solid rgba(0,212,255,.45); border-radius: 12px; overflow: hidden;
+  background: linear-gradient(160deg, rgba(0,212,255,.07), var(--navy-card) 55%);
+}
+.news-item.pinned + .news-item { border-top: 1px solid var(--border); }
+.pinned-banner { width: 100%; aspect-ratio: 4 / 1; background: #000; }
+.pinned-banner img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.news-item.pinned .news-body { padding: 1.1rem 1.3rem 1.2rem; }
+.news-item.pinned .news-desc { -webkit-line-clamp: 4; }
+.news-item.pinned .news-badge { margin-right: .35rem; }
+.pin-badge { background: var(--cyan-dim) !important; color: var(--cyan) !important; border-color: rgba(0,212,255,.4) !important; font-weight: 800 !important; }
+.proj-card.principal.featured:first-child::before { display: none; }
+.proj-card.principal .proj-banner { margin-top: -.85rem; }
+.proj-card.principal .proj-link { white-space: nowrap; }
