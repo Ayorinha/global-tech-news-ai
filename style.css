@@ -628,3 +628,9 @@ body {
 .proj-card.principal.featured:first-child::before { display: none; }
 .proj-card.principal .proj-banner { margin-top: -.85rem; }
 .proj-card.principal .proj-link { white-space: nowrap; }
+
+/* Seletor de idioma PT / EN */
+.lang-switch{display:inline-flex;border:1px solid var(--border);border-radius:9px;overflow:hidden;background:var(--navy-3)}
+.lang-switch button{min-width:38px;height:34px;border:0;background:transparent;color:var(--gray-1);font-weight:800;font-size:.75rem;cursor:pointer}
+.lang-switch button.on{background:var(--cyan-dim);color:var(--cyan)}
+.lang-switch button:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}

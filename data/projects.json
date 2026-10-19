@@ -21,7 +21,17 @@
     "tier": "01 · PROJETO PRINCIPAL · VERIFICAÇÃO",
     "featured": true,
     "pdf": "https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf",
-    "principal": true
+    "principal": true,
+    "description_en": "Main project. Open-source engine that checks, claim by claim, whether AI answers are supported by the sources they cite. The final decision comes from a deterministic Judge with versioned, reproducible rules, and every verdict produces an auditable evidence trail.",
+    "tier_en": "01 · MAIN PROJECT · VERIFICATION",
+    "tags_en": [
+      "AI Safety",
+      "Claim Verification",
+      "Deterministic Judge",
+      "AI Auditing",
+      "Provenance",
+      "Open Source"
+    ]
   },
   {
     "id": 2,

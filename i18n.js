@@ -17,11 +17,20 @@ function detectLang(){
   }
   return 'pt';
 }
-function lang(){return detectLang()}
+function saved(){try{const v=localStorage.getItem('ayorai_lang');return DICT[v]?v:null}catch(_){return null}}
+function lang(){return saved()||detectLang()}
+function setLang(code){if(!DICT[code])return;try{localStorage.setItem('ayorai_lang',code)}catch(_){}location.reload()}
+function mountSwitch(){
+  const host=document.querySelector('.topbar-right');if(!host||document.getElementById('langSwitch'))return;
+  const box=document.createElement('div');box.id='langSwitch';box.className='lang-switch';box.setAttribute('role','group');box.setAttribute('aria-label','Idioma / Language');
+  [['pt','PT'],['en','EN']].forEach(([c,label])=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.lang=c;b.setAttribute('aria-pressed',String(lang()===c));if(lang()===c)b.classList.add('on');b.onclick=()=>setLang(c);box.appendChild(b)});
+  host.insertBefore(box,host.firstChild);
+}
 function L(){return DICT[lang()]||DICT.pt}
 function t(k){return L()[k]||k}
 function setText(sel,key){const e=document.querySelector(sel);if(e)e.textContent=t(key)}
 function apply(){
+  mountSwitch();
   document.documentElement.lang=L().html;
   setText('.topbar-nav .tlink:nth-child(1)','news');
   const q=document.getElementById('searchInput');if(q)q.placeholder=t('search');
@@ -30,6 +39,6 @@ function apply(){
   const live=document.querySelector('.live-pill');if(live){const dot=live.querySelector('.live-dot');live.textContent='';if(dot)live.appendChild(dot);live.appendChild(document.createTextNode(' '+t('updated')))}
   const sort=document.getElementById('sortSelect');if(sort){sort.options[0].text=t('sortNew');sort.options[1].text=t('sortOld')}
 }
-window.AyoraiI18n={t,lang};
+window.AyoraiI18n={t,lang,setLang};
 document.addEventListener('DOMContentLoaded',apply);window.addEventListener('load',apply);
 })();

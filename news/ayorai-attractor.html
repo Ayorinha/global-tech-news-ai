@@ -11,6 +11,8 @@
 <meta property="og:description" content="Verificação auditável, afirmação por afirmação, de respostas de inteligência artificial. Código aberto, Apache-2.0.">
 <meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="pt-BR" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=pt">
+<link rel="alternate" hreflang="en" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=en">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <style>
 :root{--bg:#0b1829;--card:#0e1f33;--card2:#132840;--line:rgba(120,170,210,.2);--cyan:#00d4ff;--green:#00e676;--amber:#ffd54f;--text:#eef6ff;--muted:#9fb3c8}
@@ -51,6 +53,12 @@ li{margin-bottom:6px}
 .cta a small{color:var(--muted);font-weight:500;font-size:.75rem}
 .cta a.primary{border-color:var(--cyan);background:rgba(0,212,255,.1)}
 .cta a:hover{border-color:var(--cyan)}
+.right{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--card)}
+.lang button{min-width:40px;height:36px;border:0;background:transparent;color:var(--muted);font-weight:800;cursor:pointer}
+.lang button.on{background:rgba(0,212,255,.14);color:var(--cyan)}
+article[lang]{display:none}
+html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"],html[data-l="en"] article[lang="en"]{display:block}
 .note{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:38px;padding-top:16px}
 @media(max-width:640px){.stats{grid-template-columns:1fr 1fr}.cta{grid-template-columns:1fr}.lead{font-size:1rem}}
 </style>
@@ -58,13 +66,13 @@ li{margin-bottom:6px}
 <body>
 <header class="top">
   <a class="brand" href="../index.html">Ayorai<span>Tech</span></a>
-  <a class="back" href="../index.html">← Voltar às notícias</a>
+  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-en="← News">← Notícias</a></div>
 </header>
 
 <div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI" width="1600" height="400"></div>
 
 <main>
-  <article>
+  <article lang="pt-BR">
     <div class="badges">
       <span class="badge pin">📌 Notícia fixada</span>
       <span class="badge">Publicidade · conteúdo do autor do projeto</span>
@@ -129,6 +137,93 @@ li{margin-bottom:6px}
 
     <p class="note">Conteúdo publicitário sobre projeto do próprio autor deste site, baseado no documento técnico público AYORAI ATTRACTOR v1.1 (outubro de 2026). Números e estados refletem o documento na data da revisão; em caso de divergência, vale o estado atual do repositório.</p>
   </article>
+  <article lang="en">
+    <div class="badges">
+      <span class="badge pin">📌 Pinned article</span>
+      <span class="badge">Advertising · content by the project's author</span>
+      <span class="badge dev">In development · v0.5.0</span>
+    </div>
+
+    <h1>AYORAI ATTRACTOR publishes technical document: auditable, claim-by-claim verification of AI answers</h1>
+    <p class="lead">The open-source project checks whether each claim in an artificial intelligence answer is supported by the exact passage of the source it says it uses, and records that check so that anyone can redo it and reach the same result.</p>
+    <div class="meta">By Anderson Leon Ayora · Public technical document v1.1 (audited revision), October 2026 · Code under the Apache-2.0 license · DOI 10.5281/zenodo.23125082</div>
+
+    <p>AYORAI ATTRACTOR has just released version 1.1 of its public technical document. It covers the project's architecture, how it works, traceability, applications by sector and plans, and it was revised after an audit on October 18, 2026. The document states that it is neither a legal opinion nor a certification, and that every relevant technical claim points to a file in the repository or to a public source.</p>
+
+    <h2>The core idea: AI cannot be its own judge</h2>
+    <p>A language model can help analyze texts, but in ATTRACTOR it does not decide whether its own answer is correct. The final decision on each claim belongs to a deterministic component, the <strong>Judge</strong>, which applies explicit rules that are versioned and identified by a cryptographic hash. With the same rules version and the same structured input, Judge 2.0 produces the same result, byte for byte.</p>
+
+    <div class="quote">The goal is to turn “the AI said it, and cited a source” into “this passage, from this source, at this position, supports (or contradicts) this claim, according to these rules, and anyone can recompute the same result”.</div>
+
+    <h2>Why it matters</h2>
+    <p>An AI answer usually contains several claims. The cited source may support one, contradict another and say nothing about a third. When the answer is judged as a single block, the presence of a real citation lends credibility to everything. ATTRACTOR splits the answer into claims and judges each one against passages located in the original document.</p>
+    <p>The document recalls public cases that illustrate the problem, in Brazil and abroad: lawyers sanctioned in the United States for citing nonexistent AI-generated precedents (Mata v. Avianca, 2023); a fine imposed by the Paraná State Court (TJPR) over a citation of a Superior Court of Justice (STJ) precedent that could not be found; and a court filing in the state of Paraíba that hid instructions aimed at AI tools to try to manipulate the judicial analysis. The text itself stresses that these cases are context reported by the sources and were not analyzed by the system.</p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li><strong>Claim by claim.</strong> Compound claims are split into smaller parts (atoms), each pointing to the exact span of the original sentence.</li>
+      <li><strong>Evidence checked against the source.</strong> A citation only counts if the passage exists in the source text at the declared positions. Rejected evidence appears in the result with its reason: nothing is discarded silently.</li>
+      <li><strong>Dependent sources count as one.</strong> Republications and citation chains are grouped, so three sites repeating the same origin do not look like three confirmations.</li>
+      <li><strong>Text is data, never instruction.</strong> Evidence content is always treated as data, which protects against documents that try to instruct the machine.</li>
+      <li><strong>Evidence trail.</strong> Each result links claim, passage, position in the document, source hash, rules version and result hash, in canonical serialization (RFC 8785).</li>
+    </ul>
+    <p>Each claim receives one of five verdicts:</p>
+    <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
+
+    <div class="stats">
+      <div class="stat"><b>5</b><span>possible verdicts per claim</span></div>
+      <div class="stat"><b>1</b><span>verdict authority: the deterministic Judge</span></div>
+      <div class="stat"><b>1,057</b><span>tests passed at the document's reference commit</span></div>
+      <div class="stat"><b>4</b><span>releases archived with a DOI on Zenodo (v0.2.0 to v0.5.0)</span></div>
+    </div>
+
+    <h2>Where it can be applied</h2>
+    <p>The document describes potential applications in courts and law firms, the public sector, telecommunications, financial services, capital markets, insurance, healthcare, internal audit, research and education. In every case the pattern is the same: break the answer down, check each claim against an authorized set of evidence and record the result reproducibly. The first domain of the Portuguese-language benchmark is Brazil's General Regulation on Telecommunications Consumer Rights (Anatel Resolution No. 765/2023), chosen because it is an official, public text full of deadlines, rights and exceptions.</p>
+
+    <div class="box warn">
+      <strong>What the project does not deliver yet</strong>
+      <ul style="margin:8px 0 0">
+        <li>There is no Portuguese benchmark result yet: the protocol is not frozen and the system has not been run on Portuguese cases.</li>
+        <li>The published numbers come from synthetic English development sets with 30 cases and are not confirmatory evidence.</li>
+        <li>The API receives claims and evidence already structured; it does not yet extract claims or infer stance on its own.</li>
+        <li>The cryptographically verifiable audit log (transparency log) is not deployed yet.</li>
+        <li>The project is not certified, has no customer in production and claims no partnership with any institution.</li>
+      </ul>
+    </div>
+
+    <h2>Next steps</h2>
+    <p>The path to the first Portuguese result follows successive gates: a second pilot of about 10 cases annotated without AI tools, freezing the protocol, a set of 300 cases (70% public and 30% hidden), a second annotator with a minimum measured agreement, and a single run of the system after the labels are complete. Negative or inconclusive results will also be published.</p>
+
+    <div class="cta">
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">📄 Read the technical document<small>PDF · v1.1 · in Portuguese</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch" target="_blank" rel="noopener">⌘ GitHub repository<small>open source · Apache-2.0</small></a>
+      <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">🔗 DOI on Zenodo<small>10.5281/zenodo.23125082</small></a>
+    </div>
+
+    <p class="note">Advertising content about a project by the author of this site, based on the public technical document AYORAI ATTRACTOR v1.1 (October 2026, in Portuguese). Numbers and statuses reflect the document at the revision date; if they differ, the current state of the repository prevails.</p>
+  </article>
 </main>
+<script>
+(function(){
+  var TITLE={pt:"AYORAI ATTRACTOR · Documento técnico v1.1",en:"AYORAI ATTRACTOR · Technical document v1.1"};
+  var ALT={pt:"AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI",en:"AYORAI ATTRACTOR — the dandelion forms the letter I in AYORAI"};
+  function pick(){
+    var q=new URLSearchParams(location.search).get("lang");
+    if(q==="pt"||q==="en")return q;
+    try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="en")return s}catch(e){}
+    var n=(navigator.languages&&navigator.languages[0])||navigator.language||"pt";
+    return /^pt/i.test(n)?"pt":"en";
+  }
+  function set(l,save){
+    var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":"en";
+    document.title=TITLE[l];document.querySelector(".hero img").alt=ALT[l];
+    var back=document.querySelector(".back");back.textContent=back.getAttribute("data-"+l);
+    document.querySelectorAll(".lang button").forEach(function(b){var on=b.getAttribute("data-l")===l;b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});
+    if(save){try{localStorage.setItem("ayorai_lang",l)}catch(e){}var u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.getAttribute("data-l"),true)})});
+  set(pick(),false);
+})();
+</script>
 </body>
 </html>
