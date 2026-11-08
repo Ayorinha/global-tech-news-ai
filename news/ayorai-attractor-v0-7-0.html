@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>AYORAI ATTRACTOR v0.7.0 · Primeiro resultado em benchmark internacional</title>
+<meta name="description" content="AYORAI ATTRACTOR v0.7.0: 74,7% de acurácia balanceada cross-fitted na partição DEV do LLM-AggreFact, com calibração pré-registrada. Release arquivada com DOI no Zenodo.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AYORAI ATTRACTOR v0.7.0: primeiro resultado em benchmark internacional">
+<meta property="og:description" content="74,7% de acurácia balanceada na partição DEV do LLM-AggreFact, com método pré-registrado e probabilidades calibradas. Código aberto, Apache-2.0.">
+<meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="pt-BR" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor-v0-7-0.html?lang=pt">
+<link rel="alternate" hreflang="en" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor-v0-7-0.html?lang=en">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<style>
+:root{--bg:#0b1829;--card:#0e1f33;--card2:#132840;--line:rgba(120,170,210,.2);--cyan:#00d4ff;--green:#00e676;--amber:#ffd54f;--text:#eef6ff;--muted:#9fb3c8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7}
+a{color:var(--cyan)}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:rgba(11,24,41,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.top a{color:var(--text);text-decoration:none;font-weight:800}
+.top .brand span{color:var(--cyan)}
+.top .back{font-size:.85rem;font-weight:700;border:1px solid var(--line);border-radius:9px;padding:8px 12px;background:var(--card)}
+.hero{background:#000;border-bottom:1px solid rgba(0,212,255,.25)}
+.hero img{display:block;width:100%;max-width:1600px;margin:0 auto;aspect-ratio:4/1;object-fit:contain}
+main{max-width:780px;margin:0 auto;padding:28px 16px 64px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.badge{font-size:.72rem;font-weight:800;letter-spacing:.04em;border-radius:20px;padding:4px 10px;border:1px solid var(--line);background:var(--card2);color:var(--text)}
+.badge.pin{color:var(--cyan);border-color:rgba(0,212,255,.45);background:rgba(0,212,255,.1)}
+.badge.dev{color:var(--cyan)}
+h1{font-size:clamp(1.7rem,4.6vw,2.5rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lead{font-size:1.1rem;color:#d6e6f5;margin:0 0 10px}
+.meta{font-size:.82rem;color:var(--muted);margin-bottom:26px}
+h2{font-size:1.3rem;margin:34px 0 10px;letter-spacing:-.01em}
+p{margin:0 0 14px}
+ul{padding-left:20px;margin:0 0 16px}
+li{margin-bottom:6px}
+.quote{border-left:3px solid var(--cyan);background:var(--card);padding:14px 18px;border-radius:0 10px 10px 0;margin:22px 0;color:#dceaf7}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{display:block;font-size:1.6rem;color:var(--cyan);line-height:1.1}
+.stat span{font-size:.78rem;color:var(--muted);line-height:1.35;display:block;margin-top:6px}
+.verdicts{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}
+.verdicts code{font-size:.78rem;padding:5px 9px;border-radius:7px;background:var(--card2);border:1px solid var(--line);color:var(--text)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0}
+.box.warn{border-color:rgba(255,213,79,.4);background:rgba(255,213,79,.05)}
+.box.warn strong{color:var(--amber)}
+.cta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0}
+.cta a{display:flex;flex-direction:column;justify-content:center;min-height:68px;padding:12px 14px;border-radius:11px;border:1px solid var(--line);background:var(--card);color:var(--text);text-decoration:none;font-weight:800}
+.cta a small{color:var(--muted);font-weight:500;font-size:.75rem}
+.cta a.primary{border-color:var(--cyan);background:rgba(0,212,255,.1)}
+.cta a:hover{border-color:var(--cyan)}
+.right{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--card)}
+.lang button{min-width:40px;height:36px;border:0;background:transparent;color:var(--muted);font-weight:800;cursor:pointer}
+.lang button.on{background:rgba(0,212,255,.14);color:var(--cyan)}
+article[lang]{display:none}
+html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"],html[data-l="en"] article[lang="en"]{display:block}
+.note{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:38px;padding-top:16px}
+@media(max-width:640px){.stats{grid-template-columns:1fr 1fr}.cta{grid-template-columns:1fr}.lead{font-size:1rem}}
+.table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:.9rem}
+.table th,.table td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left}
+.table th{color:var(--muted);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+.table td.n{text-align:right;font-variant-numeric:tabular-nums}
+.table tr.sel td{color:var(--cyan);font-weight:800}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">Ayorai<span>Tech</span></a>
+  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-en="← News">← Notícias</a></div>
+</header>
+<div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI" width="1600" height="400"></div>
+<main>
+  <article lang="pt-BR">
+    <div class="badges">
+      <span class="badge pin">📌 Notícia fixada</span>
+      <span class="badge">Publicidade · conteúdo do autor do projeto</span>
+      <span class="badge dev">Release v0.7.0 · DOI 10.5281/zenodo.24045951</span>
+    </div>
+    <h1>AYORAI ATTRACTOR v0.7.0: primeiro resultado em benchmark internacional, com calibração pré-registrada</h1>
+    <p class="lead">O projeto mediu pela primeira vez o seu pipeline de verificação no LLM-AggreFact, um benchmark público de verificação factual. Na partição de desenvolvimento (DEV), a acurácia balanceada passou de 49,2% da linha de base por regras para 74,7%, com probabilidades bem calibradas. A versão foi arquivada com DOI no Zenodo.</p>
+    <div class="meta">Por Anderson Leon Ayora · 7 de novembro de 2026 · Release v0.7.0 · Código sob licença Apache-2.0 · DOI 10.5281/zenodo.24045951</div>
+
+    <div class="stats">
+      <div class="stat"><b>74,7%</b><span>acurácia balanceada cross-fitted em DEV-A (média por dataset)</span></div>
+      <div class="stat"><b>30.420</b><span>casos da partição DEV, em 11 coortes</span></div>
+      <div class="stat"><b>0,5%</b><span>erro de calibração esperado (ECE) das probabilidades</span></div>
+      <div class="stat"><b>0/11</b><span>coortes certificadas pela regra registrada (ver abaixo)</span></div>
+    </div>
+
+    <h2>O que foi medido</h2>
+    <p>O LLM-AggreFact reúne 11 conjuntos de dados em que a pergunta é sempre a mesma: um documento sustenta ou não uma afirmação? O AYORAI executou três verificadores abertos sobre os 30.420 casos da partição DEV, em CPU, com cada versão de modelo e do dataset fixada por hash. Antes de rodar, o método foi <strong>pré-registrado</strong>: a regra de escolha do modelo, a calibração e o teste estatístico foram escritos e publicados antes de qualquer número existir.</p>
+    <p>O DEV foi dividido em duas metades fixas. Na primeira (DEV-A), um único modelo foi escolhido pela regra pré-registrada e as probabilidades foram calibradas com Venn-Abers (IVAP). A segunda (DEV-B) foi reservada para a certificação estatística.</p>
+
+    <h2>Resultado</h2>
+    <table class="table">
+      <thead><tr><th>Modelo</th><th>Acurácia balanceada (DEV-A)</th><th>AUROC</th></tr></thead>
+      <tbody>
+        <tr class="sel"><td>FactCG (selecionado)</td><td class="n">74,68%</td><td class="n">0,865</td></tr>
+        <tr><td>MiniCheck</td><td class="n">72,87%</td><td class="n">0,822</td></tr>
+        <tr><td>mDeBERTa</td><td class="n">62,57%</td><td class="n">0,694</td></tr>
+      </tbody>
+    </table>
+    <p>O FactCG ficou a cerca de um ponto do valor publicado pelos seus autores (75,6%), o que indica uma replicação fiel do protocolo oficial. As probabilidades calibradas tiveram erro de calibração de 0,5%: quando o sistema atribui 90% de confiança, ele acerta perto de 90% das vezes. Por coorte, o resultado vai de 59,5% (ExpertQA, a mais difícil) a 89,5% (Reveal).</p>
+
+    <h2>O que não foi alcançado, e por quê</h2>
+    <p>A terceira camada do método é a certificação seletiva (Learn then Test): em cada coorte, garantir estatisticamente que o sistema acerta pelo menos 90% das vezes em que decide responder, abstendo-se no resto. <strong>Nenhuma das 11 coortes foi certificada pela regra registrada.</strong></p>
+    <p>O motivo foi uma falha de desenho do próprio pré-registro, e não do modelo: a regra mandava parar no primeiro limiar não aprovado, e os limiares mais exigentes quase nunca reúnem os 25 casos mínimos para serem testados. O resultado foi publicado como aconteceu. A correção será registrada como emenda, declarando que foi escrita depois de ver os dados, e a certificação confirmatória fica para a avaliação final, em dados ainda não vistos.</p>
+
+    <div class="box">
+      <strong>Créditos</strong>
+      <p style="margin:8px 0 0">FactCG, MiniCheck e mDeBERTa são modelos de terceiros, publicados por seus autores sob licença MIT e usados sem modificação. O LLM-AggreFact é mantido pelos autores do MiniCheck. A contribuição do AYORAI está no pipeline de avaliação, na calibração, no pré-registro, na execução protegida e na trilha de proveniência.</p>
+    </div>
+
+    <div class="box warn">
+      <strong>Limites deste resultado</strong>
+      <ul style="margin:8px 0 0">
+        <li>É um resultado da partição DEV: não é a avaliação final (TEST) nem uma entrada de ranking.</li>
+        <li>A linha de base de 49,2% foi medida no TEST, outra partição; serve como referência, não como comparação direta.</li>
+        <li>Nenhuma certificação estatística foi obtida.</li>
+        <li>O benchmark é em inglês. Ainda não há resultado em português; o protocolo RGC continua em desenvolvimento.</li>
+      </ul>
+    </div>
+
+    <h2>Próximos passos</h2>
+    <p>Registrar a emenda ao pré-registro, combinar os verificadores num conjunto calibrado e, com a configuração congelada, executar uma única vez a avaliação no TEST. Em paralelo, segue o trabalho no benchmark em português.</p>
+
+    <div class="cta">
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">📊 Relatório completo<small>resultados, proveniência e hashes</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">⌘ Release v0.7.0<small>GitHub · Apache-2.0</small></a>
+      <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">🔗 DOI no Zenodo<small>10.5281/zenodo.24045951</small></a>
+    </div>
+    <p>Leia também: <a href="ayorai-attractor.html">documento técnico v1.1 do AYORAI ATTRACTOR</a>.</p>
+
+    <p class="note">Conteúdo publicitário sobre projeto do próprio autor deste site, baseado no relatório público da release v0.7.0 (7 de novembro de 2026). Em caso de divergência, vale o relatório no repositório.</p>
+  </article>
+  <article lang="en">
+    <div class="badges">
+      <span class="badge pin">📌 Pinned article</span>
+      <span class="badge">Advertising · content by the project's author</span>
+      <span class="badge dev">Release v0.7.0 · DOI 10.5281/zenodo.24045951</span>
+    </div>
+    <h1>AYORAI ATTRACTOR v0.7.0: first international benchmark result, with preregistered calibration</h1>
+    <p class="lead">For the first time, the project measured its verification pipeline on LLM-AggreFact, a public fact-verification benchmark. On the development split (DEV), balanced accuracy went from 49.2% for the rule-based baseline to 74.7%, with well-calibrated probabilities. The release was archived with a DOI on Zenodo.</p>
+    <div class="meta">By Anderson Leon Ayora · November 7, 2026 · Release v0.7.0 · Code under the Apache-2.0 license · DOI 10.5281/zenodo.24045951</div>
+
+    <div class="stats">
+      <div class="stat"><b>74.7%</b><span>cross-fitted balanced accuracy on DEV-A (per-dataset mean)</span></div>
+      <div class="stat"><b>30,420</b><span>cases in the DEV split, across 11 cohorts</span></div>
+      <div class="stat"><b>0.5%</b><span>expected calibration error (ECE) of the probabilities</span></div>
+      <div class="stat"><b>0/11</b><span>cohorts certified under the registered rule (see below)</span></div>
+    </div>
+
+    <h2>What was measured</h2>
+    <p>LLM-AggreFact combines 11 datasets that all ask the same question: does a document support a claim or not? AYORAI ran three open verifiers on the 30,420 cases of the DEV split, on CPU, with every model and dataset version pinned by hash. Before the run, the method was <strong>preregistered</strong>: the model-selection rule, the calibration and the statistical test were written and published before any number existed.</p>
+    <p>DEV was split into two fixed halves. On the first (DEV-A), a single model was chosen by the preregistered rule and its probabilities were calibrated with Venn-Abers (IVAP). The second (DEV-B) was reserved for statistical certification.</p>
+
+    <h2>Result</h2>
+    <table class="table">
+      <thead><tr><th>Model</th><th>Balanced accuracy (DEV-A)</th><th>AUROC</th></tr></thead>
+      <tbody>
+        <tr class="sel"><td>FactCG (selected)</td><td class="n">74.68%</td><td class="n">0.865</td></tr>
+        <tr><td>MiniCheck</td><td class="n">72.87%</td><td class="n">0.822</td></tr>
+        <tr><td>mDeBERTa</td><td class="n">62.57%</td><td class="n">0.694</td></tr>
+      </tbody>
+    </table>
+    <p>FactCG landed about one point from the value published by its authors (75.6%), which indicates a faithful replication of the official protocol. The calibrated probabilities had a calibration error of 0.5%: when the system assigns 90% confidence, it is right close to 90% of the time. Per cohort, the result ranges from 59.5% (ExpertQA, the hardest) to 89.5% (Reveal).</p>
+
+    <h2>What was not achieved, and why</h2>
+    <p>The method's third layer is selective certification (Learn then Test): in each cohort, statistically guarantee that the system is right at least 90% of the times it chooses to answer, abstaining otherwise. <strong>None of the 11 cohorts was certified under the registered rule.</strong></p>
+    <p>The cause was a design flaw in the preregistration itself, not in the model: the rule required stopping at the first threshold that did not pass, and the strictest thresholds almost never gather the 25 cases needed to be tested. The result was published as it happened. The fix will be recorded as an amendment that states it was written after seeing the data, and confirmatory certification is left for the final evaluation, on data not yet seen.</p>
+
+    <div class="box">
+      <strong>Credits</strong>
+      <p style="margin:8px 0 0">FactCG, MiniCheck and mDeBERTa are third-party models, published by their authors under the MIT license and used unmodified. LLM-AggreFact is maintained by the MiniCheck authors. AYORAI's contribution is the evaluation pipeline, the calibration, the preregistration, the protected execution and the provenance trail.</p>
+    </div>
+
+    <div class="box warn">
+      <strong>Limits of this result</strong>
+      <ul style="margin:8px 0 0">
+        <li>This is a DEV-split result: it is not the final (TEST) evaluation or a leaderboard entry.</li>
+        <li>The 49.2% baseline was measured on TEST, a different split; it is a reference, not a direct comparison.</li>
+        <li>No statistical certification was obtained.</li>
+        <li>The benchmark is in English. There is no Portuguese result yet; the RGC protocol is still in development.</li>
+      </ul>
+    </div>
+
+    <h2>Next steps</h2>
+    <p>Record the preregistration amendment, combine the verifiers into a calibrated ensemble and, with the configuration frozen, run the TEST evaluation exactly once. Work on the Portuguese benchmark continues in parallel.</p>
+
+    <div class="cta">
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">📊 Full report<small>results, provenance and hashes · in Portuguese</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">⌘ Release v0.7.0<small>GitHub · Apache-2.0</small></a>
+      <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">🔗 DOI on Zenodo<small>10.5281/zenodo.24045951</small></a>
+    </div>
+    <p>See also: <a href="ayorai-attractor.html">AYORAI ATTRACTOR technical document v1.1</a>.</p>
+
+    <p class="note">Advertising content about a project by the author of this site, based on the public report of release v0.7.0 (November 7, 2026). If they differ, the report in the repository prevails.</p>
+  </article>
+</main>
+<script>
+(function(){
+  var TITLE={pt:"AYORAI ATTRACTOR v0.7.0 · Primeiro resultado em benchmark internacional",en:"AYORAI ATTRACTOR v0.7.0 · First international benchmark result"};
+  var ALT={pt:"AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI",en:"AYORAI ATTRACTOR — the dandelion forms the letter I in AYORAI"};
+  function pick(){
+    var q=new URLSearchParams(location.search).get("lang");
+    if(q==="pt"||q==="en")return q;
+    try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="en")return s}catch(e){}
+    var n=(navigator.languages&&navigator.languages[0])||navigator.language||"pt";
+    return /^pt/i.test(n)?"pt":"en";
+  }
+  function set(l,save){
+    var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":"en";
+    document.title=TITLE[l];document.querySelector(".hero img").alt=ALT[l];
+    var back=document.querySelector(".back");back.textContent=back.getAttribute("data-"+l);
+    document.querySelectorAll(".lang button").forEach(function(b){var on=b.getAttribute("data-l")===l;b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});
+    if(save){try{localStorage.setItem("ayorai_lang",l)}catch(e){}var u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.getAttribute("data-l"),true)})});
+  set(pick(),false);
+})();
+</script>
+</body>
+</html>
