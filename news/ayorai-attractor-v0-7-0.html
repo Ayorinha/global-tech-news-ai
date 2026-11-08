@@ -77,11 +77,11 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
 <main>
   <article lang="pt-BR">
     <div class="badges">
-      <span class="badge pin">📌 Notícia fixada</span>
-      <span class="badge">Divulgação técnica · projeto do próprio autor</span>
+      <span class="badge pin">Relatório técnico</span>
+      <span class="badge">Avaliação experimental · partição DEV</span>
       <span class="badge dev">Release v0.7.0 · DOI 10.5281/zenodo.24045951</span>
     </div>
-    <h1>AYORAI ATTRACTOR v0.7.0: resultados da avaliação DEV no LLM-AggreFact, com calibração pré-registrada</h1>
+    <h1>AYORAI ATTRACTOR v0.7.0: resultados da avaliação DEV no LLM-AggreFact</h1>
     <p class="lead">O relatório da release v0.7.0 documenta a avaliação de três verificadores na partição DEV do LLM-AggreFact. Em DEV-A, o FactCG obteve 74,68% de acurácia balanceada cross-fitted (média macro por dataset). O ECE foi 0,0054 em 15 bins. Em DEV-B, nenhuma coorte foi certificada pela regra LTT originalmente registrada (0/11).</p>
     <div class="meta">Por Anderson Leon Ayora · 7 de novembro de 2026 · Release v0.7.0 · Código sob licença Apache-2.0 · DOI 10.5281/zenodo.24045951</div>
 
@@ -126,8 +126,8 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
       </ul>
     </div>
 
-    <h2>Próximos passos</h2>
-    <p>Registrar a emenda ao pré-registro, combinar os verificadores num conjunto calibrado e, com a configuração congelada, executar uma única vez a avaliação no TEST. Em paralelo, segue o trabalho no benchmark em português.</p>
+    <h2>Escopo e estado da avaliação</h2>
+    <p>Os resultados apresentados referem-se exclusivamente às partições DEV-A e DEV-B. A avaliação confirmatória em TEST não está incluída nesta release. A curva de cobertura apresentada no relatório completo é descritiva e não substitui nem altera o resultado de certificação 0/11 obtido pela regra original.</p>
 
     <div class="cta">
       <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">📊 Relatório completo<small>resultados, proveniência e hashes</small></a>
@@ -194,11 +194,11 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
   </article>
   <article lang="en">
     <div class="badges">
-      <span class="badge pin">📌 Pinned article</span>
-      <span class="badge">Technical disclosure · project by the author</span>
+      <span class="badge pin">Technical report</span>
+      <span class="badge">Experimental evaluation · DEV split</span>
       <span class="badge dev">Release v0.7.0 · DOI 10.5281/zenodo.24045951</span>
     </div>
-    <h1>AYORAI ATTRACTOR v0.7.0: DEV calibration results on LLM-AggreFact</h1>
+    <h1>AYORAI ATTRACTOR v0.7.0: DEV evaluation results on LLM-AggreFact</h1>
     <p class="lead">The v0.7.0 report documents the evaluation of three verifiers on the LLM-AggreFact DEV split. On DEV-A, FactCG achieved 74.68% cross-fitted balanced accuracy (macro-average across datasets). ECE was 0.0054 across 15 bins. On DEV-B, none of the cohorts was certified under the originally registered LTT rule (0/11).</p>
     <div class="meta">By Anderson Leon Ayora · November 7, 2026 · Release v0.7.0 · Code under the Apache-2.0 license · DOI 10.5281/zenodo.24045951</div>
 
@@ -243,8 +243,8 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
       </ul>
     </div>
 
-    <h2>Next steps</h2>
-    <p>Record the preregistration amendment, combine the verifiers into a calibrated ensemble and, with the configuration frozen, run the TEST evaluation exactly once. Work on the Portuguese benchmark continues in parallel.</p>
+    <h2>Evaluation scope and status</h2>
+    <p>The results presented here refer exclusively to DEV-A and DEV-B. Confirmatory evaluation on TEST is not included in this release. The coverage curve in the full report is descriptive and does not replace or modify the 0/11 certification result obtained under the original rule.</p>
 
     <div class="cta">
       <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">📊 Full report<small>results, provenance and hashes · in Portuguese</small></a>
@@ -258,7 +258,7 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
 </main>
 <script>
 (function(){
-  var TITLE={pt:"AYORAI ATTRACTOR v0.7.0 · Resultados DEV no LLM-AggreFact",en:"AYORAI ATTRACTOR v0.7.0 · DEV evaluation results on LLM-AggreFact"};
+  var TITLE={pt:"AYORAI ATTRACTOR v0.7.0 · Resultados da avaliação DEV no LLM-AggreFact",es:"AYORAI ATTRACTOR v0.7.0 · Resultados de la evaluación DEV en LLM-AggreFact",en:"AYORAI ATTRACTOR v0.7.0 · DEV evaluation results on LLM-AggreFact"};
   var ALT={pt:"AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI",es:"AYORAI ATTRACTOR — el diente de león forma la letra I de AYORAI",en:"AYORAI ATTRACTOR — the dandelion forms the letter I in AYORAI"};
   function pick(){
     var q=new URLSearchParams(location.search).get("lang");
