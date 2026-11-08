@@ -3,7 +3,7 @@
     "id": 0,
     "category": "projeto",
     "title": "AYORAI ATTRACTOR",
-    "description": "Projeto principal. Motor de código aberto que verifica, afirmação por afirmação, se as respostas de IA são sustentadas pelas fontes citadas, com decisão final de um Judge determinístico e trilha de prova auditável. Na v0.7.0, primeiro resultado em benchmark internacional: 74,7% de acurácia balanceada na partição DEV do LLM-AggreFact, com método pré-registrado.",
+    "description": "Projeto de código aberto para verificar, afirmação por afirmação, se respostas de IA são sustentadas pelas fontes citadas. A decisão final cabe a um Judge determinístico, com regras versionadas e trilha de evidências. Na release v0.7.0, o FactCG obteve 74,68% de acurácia balanceada cross-fitted em DEV-A do LLM-AggreFact (média macro por dataset); o relatório também registra ECE 0,0054 e 0/11 coortes certificadas pela regra LTT original. Resultado DEV, não TEST.",
     "link": "news/ayorai-attractor-v0-7-0.html",
     "repo": "https://github.com/Ayorinha/ayorai-opensearch",
     "tags": [
@@ -22,7 +22,7 @@
     "featured": true,
     "pdf": "https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf",
     "principal": true,
-    "description_en": "Main project. Open-source engine that checks, claim by claim, whether AI answers are supported by the sources they cite, with the final decision made by a deterministic Judge and an auditable evidence trail. In v0.7.0, first international benchmark result: 74.7% balanced accuracy on the LLM-AggreFact DEV split, with a preregistered method.",
+    "description_en": "Open-source project that checks, claim by claim, whether AI answers are supported by their cited sources. Final decisions are made by a deterministic Judge, with versioned rules and an evidence trail. In release v0.7.0, FactCG achieved 74.68% cross-fitted balanced accuracy on LLM-AggreFact DEV-A (macro-average across datasets); the report also records ECE 0.0054 and 0/11 cohorts certified under the original LTT rule. DEV result, not TEST.",
     "tier_en": "01 · MAIN PROJECT · VERIFICATION",
     "tags_en": [
       "AI Safety",
