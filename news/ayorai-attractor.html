@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-<meta name="theme-color" content="#000000">
-<title>AYORAI ATTRACTOR · Documento técnico v1.1 · Registro histórico</title>
-<meta name="description" content="Resumo histórico do documento técnico AYORAI ATTRACTOR v1.1, publicado em outubro de 2026, com referência ao estado de avaliação da release v0.7.0.">
+<meta name="theme-color" content="#0b1829">
+<title>AYORAI ATTRACTOR: documento técnico atualizado · avaliação DEV v0.7.0</title>
+<meta name="description" content="Documento técnico do AYORAI ATTRACTOR atualizado em 7 de novembro de 2026: arquitetura de verificação por afirmação, resultados DEV, limites metodológicos e DOI da release v0.7.0.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AYORAI ATTRACTOR · Documento técnico v1.1">
-<meta property="og:description" content="Escopo técnico documentado na versão 1.1 e referência aos resultados de avaliação DEV publicados na release v0.7.0.">
-<meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-og.jpg">
+<meta property="og:title" content="AYORAI ATTRACTOR: documento técnico atualizado">
+<meta property="og:description" content="Verificação de afirmações, Judge determinístico, rastreabilidade e resultados da avaliação DEV v0.7.0, com limitações explícitas.">
+<meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-banner.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-banner.jpg">
+<link rel="canonical" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html">
 <link rel="alternate" hreflang="pt-BR" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=pt">
 <link rel="alternate" hreflang="es" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=es">
 <link rel="alternate" hreflang="en" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=en">
@@ -67,101 +69,209 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
 <body>
 <header class="top">
   <a class="brand" href="../index.html">Ayorai<span>Tech</span></a>
-  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="es">ES</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-es="← Noticias" data-en="← News">← Notícias</a></div>
+  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="es">ES</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Projetos e notícias" data-es="← Proyectos y noticias" data-en="← Projects and news">← Projetos e notícias</a></div>
 </header>
-<div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — identidade visual do projeto" width="1600" height="400"></div>
+<div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — imagem original do projeto com dente-de-leão formando a letra I" width="1600" height="400" fetchpriority="high"></div>
 <main>
-  <article lang="pt-BR">
-    <div class="badges"><span class="badge">Documento técnico v1.1</span><span class="badge">Registro histórico · outubro de 2026</span></div>
-    <h1>AYORAI ATTRACTOR — documento técnico v1.1</h1>
-    <p class="lead">Esta página resume o escopo descrito na versão 1.1 do documento técnico, publicada em outubro de 2026. Ela é um registro daquela versão, não uma declaração do estado atual de todos os componentes.</p>
-    <div class="meta">Documento v1.1 · outubro de 2026 · Código sob licença Apache-2.0 · Atualização de contexto: release v0.7.0, 7 de novembro de 2026</div>
-    <h2>Escopo técnico documentado</h2>
-    <p>A versão 1.1 descrevia uma arquitetura para verificar afirmações individualmente em respostas de IA. O fluxo documentado separava a decomposição das afirmações, a localização de evidências na fonte original e a decisão final por um componente determinístico (Judge), com regras versionadas.</p>
-    <ul>
-      <li><strong>Verificação por afirmação:</strong> dividir afirmações compostas em unidades menores e associá-las aos trechos de evidência relevantes.</li>
-      <li><strong>Validação da evidência:</strong> conferir a existência do trecho no texto-fonte e as posições declaradas.</li>
-      <li><strong>Dependência entre fontes:</strong> considerar republicações e cadeias de citação para evitar contar a mesma origem como confirmações independentes.</li>
-      <li><strong>Separação entre dado e instrução:</strong> tratar o conteúdo dos documentos como dado, não como instrução para o sistema.</li>
-      <li><strong>Rastreabilidade:</strong> registrar afirmação, trecho, posição, hash da fonte, versão das regras e resultado.</li>
+<article lang="pt-BR">
+  <div class="badges"><span class="badge">Documento técnico público v1.1</span><span class="badge">Atualização de estado · 7 nov. 2026</span><span class="badge dev">Release de software v0.7.0</span></div>
+  <h1>AYORAI ATTRACTOR: verificação auditável de afirmações em respostas de IA</h1>
+  <p class="lead">O projeto de código aberto verifica, afirmação por afirmação, se o conteúdo de uma resposta de inteligência artificial é sustentado pelas evidências associadas. A decisão final é emitida por um componente determinístico, com regras versionadas e registros que permitem inspecionar como o resultado foi obtido.</p>
+  <div class="meta">Por Anderson Leon Ayora · Documento técnico público v1.1, com atualização de estado em 7 de novembro de 2026 · Código sob Apache-2.0 · Software v0.7.0 · DOI da versão: 10.5281/zenodo.24045951 · DOI conceitual: 10.5281/zenodo.23125082</div>
+
+  <h2>Escopo desta atualização</h2>
+  <p>Esta página mantém o documento técnico público v1.1 e atualiza suas informações de estado para a release de software v0.7.0, publicada em 7 de novembro de 2026. A atualização não altera retroativamente o PDF v1.1 arquivado: ela acrescenta os resultados DEV disponíveis, identifica o DOI da versão do software e explicita o que ainda não foi demonstrado.</p>
+  <p>O DOI <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">10.5281/zenodo.24045951</a> identifica a versão de software v0.7.0. O DOI conceitual <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">10.5281/zenodo.23125082</a> reúne o registro do projeto e suas versões. Esses identificadores não devem ser interpretados como DOI de uma nova edição do documento PDF.</p>
+
+  <h2>O princípio de decisão</h2>
+  <p>Um modelo de linguagem pode auxiliar a análise, mas não é a autoridade final para validar a própria resposta. No ATTRACTOR, a decisão é atribuída a um componente determinístico, o <strong>Judge</strong>, que aplica regras explícitas e versionadas a afirmações e evidências estruturadas. A separação entre análise probabilística e decisão determinística reduz a possibilidade de o modelo declarar correta a própria saída sem uma verificação independente.</p>
+  <div class="quote">A pergunta operacional não é apenas “a resposta citou uma fonte?”, mas “qual trecho da fonte sustenta, contradiz ou não permite concluir cada afirmação?”</div>
+
+  <h2>Como a verificação é estruturada</h2>
+  <ul>
+    <li><strong>Decomposição por afirmação.</strong> Respostas compostas são representadas por afirmações menores, para que uma evidência não transfira credibilidade automaticamente a todo o parágrafo.</li>
+    <li><strong>Localização da evidência.</strong> Os trechos são associados à fonte original e a posições verificáveis no texto, preservando a referência ao conteúdo de origem.</li>
+    <li><strong>Validação estrutural.</strong> O sistema verifica se os trechos declarados existem no texto-fonte e se as posições informadas correspondem ao conteúdo apresentado.</li>
+    <li><strong>Proveniência.</strong> Registros associam afirmações, evidências, posições, hashes de fonte, versão das regras e resultado, permitindo inspeção e reprodução do processamento estruturado.</li>
+    <li><strong>Separação entre dado e instrução.</strong> O conteúdo de documentos usados como evidência é tratado como dado, não como instrução para alterar o comportamento do sistema.</li>
+    <li><strong>Dependência entre fontes.</strong> A análise de proveniência considera relações entre fontes e republicações quando esses vínculos estão disponíveis; fontes derivadas não devem ser tratadas automaticamente como confirmações independentes.</li>
+  </ul>
+
+  <h2>Classificações possíveis</h2>
+  <p>Cada afirmação recebe uma classificação, de acordo com a relação entre a afirmação e as evidências disponíveis:</p>
+  <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
+  <p>As classificações descrevem a relação entre afirmação e evidência fornecida. Não constituem, isoladamente, garantia de que a fonte externa seja verdadeira, completa ou atualizada.</p>
+
+  <h2>Avaliação experimental publicada na v0.7.0</h2>
+  <p>A release v0.7.0 inclui um relatório de avaliação dos verificadores no conjunto LLM-AggreFact. O conjunto DEV utilizado contém 30.420 registros e foi dividido em DEV-A e DEV-B para finalidades distintas. Os números abaixo são resultados experimentais nas partições DEV, não uma avaliação confirmatória em TEST.</p>
+  <div class="stats">
+    <div class="stat"><b>74,68%</b><span>BA cross-fitted do FactCG em DEV-A; média macro por dataset</span></div>
+    <div class="stat"><b>0,0054</b><span>ECE do FactCG em DEV-A, calculado em 15 bins</span></div>
+    <div class="stat"><b>0/11</b><span>Coortes certificadas pela regra LTT original em DEV-B</span></div>
+    <div class="stat"><b>30.420</b><span>Registros do conjunto DEV utilizado na avaliação</span></div>
+  </div>
+  <p>Em DEV-A, o FactCG apresentou 74,68% de acurácia balanceada cross-fitted, calculada como média macro por dataset. O ECE de 0,0054 resume a diferença de calibração observada nos 15 bins utilizados; não significa calibração perfeita nem permite afirmar que uma previsão individual com determinada confiança terá exatamente a mesma taxa de acerto.</p>
+  <p>Em DEV-B, nenhuma das 11 coortes foi certificada pela regra LTT originalmente registrada. Em todas elas, o primeiro limiar considerado (0,99) ficou abaixo do mínimo de 25 respostas aceitas. Portanto, nenhum limiar chegou a ser efetivamente testado. O resultado 0/11 significa ausência de certificação sob a regra original; não demonstra, por si só, que a acurácia seja inferior a 90%.</p>
+  <div class="box warn"><strong>Limites de interpretação</strong>
+    <ul style="margin:8px 0 0">
+      <li>74,68% e ECE 0,0054 são resultados DEV-A; 0/11 é o resultado da regra LTT original em DEV-B.</li>
+      <li>A referência de 49,2% pertence a uma avaliação TEST de outro procedimento e não é diretamente comparável ao resultado DEV-A.</li>
+      <li>A curva de cobertura apresentada no relatório é descritiva; não substitui nem altera a certificação LTT original.</li>
+      <li>Esta publicação não apresenta resultado confirmatório em TEST nem resultado validado no benchmark em português.</li>
     </ul>
-    <h2>Limitações registradas na versão 1.1</h2>
-    <p>Na data daquela documentação, a API recebia afirmações e evidências já estruturadas; não fazia, por si só, a extração de afirmações nem a inferência de stance. O registro de auditoria baseado em log de transparência não estava implantado. O documento também declarava que o projeto não possuía certificação, cliente em produção ou parceria institucional. Essas declarações são um retrato documental de outubro de 2026, não uma certificação independente.</p>
-    <p>Os números citados naquela versão provinham de um conjunto sintético de desenvolvimento com 30 casos e eram explicitamente descritos como não confirmatórios. Eles não devem ser confundidos com a avaliação DEV publicada posteriormente.</p>
-    <h2>Estado de avaliação publicado na release v0.7.0</h2>
-    <p>O relatório de 7 de novembro de 2026 registra a avaliação de três verificadores no conjunto LLM-AggreFact, com 30.420 casos na partição DEV. Em DEV-A, o FactCG obteve 74,68% de acurácia balanceada cross-fitted (média macro por dataset) e ECE 0,0054 em 15 bins.</p>
-    <p>Em DEV-B, nenhuma das 11 coortes foi certificada pela regra LTT originalmente registrada (0/11). Em todas as coortes, o primeiro limiar (0,99) ficou abaixo do mínimo de 25 respostas aceitas; nenhum limiar foi efetivamente testado. Esse resultado não demonstra, por si só, acurácia inferior a 90%. A curva de cobertura apresentada no relatório é descritiva, não uma certificação.</p>
-    <div class="box warn"><strong>Limites atuais do resultado publicado</strong><ul style="margin:8px 0 0"><li>Os números acima pertencem à partição DEV; não são avaliação TEST nem resultado de ranking.</li><li>A referência de 49,2% pertence a TEST e não é comparável aos 74,68% de DEV-A.</li><li>Não há, nesta release, resultado confirmatório em dados TEST nem resultado validado em português.</li></ul></div>
-    <h2>Documentos e artefatos</h2>
-    <div class="cta">
-      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Documento técnico v1.1<small>PDF · versão histórica</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>código e artefatos publicados</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Relatório de avaliação DEV<small>métricas, proveniência e hashes</small></a>
-    </div>
-    <p class="note">Resumo editorial do documento técnico v1.1. Para o estado mais recente, prevalecem os artefatos da release v0.7.0 e o relatório de avaliação associado.</p>
-  </article>
-  <article lang="es">
-    <div class="badges"><span class="badge">Documento técnico v1.1</span><span class="badge">Registro histórico · octubre de 2026</span></div>
-    <h1>AYORAI ATTRACTOR — documento técnico v1.1</h1>
-    <p class="lead">Esta página resume el alcance descrito en la versión 1.1 del documento técnico, publicada en octubre de 2026. Es un registro de aquella versión, no una declaración del estado actual de todos los componentes.</p>
-    <div class="meta">Documento v1.1 · octubre de 2026 · Código bajo licencia Apache-2.0 · Actualización de contexto: release v0.7.0, 7 de noviembre de 2026</div>
-    <h2>Alcance técnico documentado</h2>
-    <p>La versión 1.1 describía una arquitectura para verificar afirmaciones individuales en respuestas de IA. El flujo documentado separaba la descomposición de afirmaciones, la localización de evidencias en la fuente original y la decisión final mediante un componente determinista (Judge), con reglas versionadas.</p>
-    <ul>
-      <li><strong>Verificación por afirmación:</strong> dividir afirmaciones compuestas en unidades menores y asociarlas con los fragmentos de evidencia pertinentes.</li>
-      <li><strong>Validación de evidencias:</strong> comprobar la existencia del fragmento en el texto fuente y las posiciones declaradas.</li>
-      <li><strong>Dependencia entre fuentes:</strong> considerar republicaciones y cadenas de citas para no contar un mismo origen como confirmaciones independientes.</li>
-      <li><strong>Separación entre dato e instrucción:</strong> tratar el contenido de los documentos como dato, no como instrucciones para el sistema.</li>
-      <li><strong>Trazabilidad:</strong> registrar afirmación, fragmento, posición, hash de la fuente, versión de las reglas y resultado.</li>
-    </ul>
-    <h2>Limitaciones registradas en la versión 1.1</h2>
-    <p>En la fecha de esa documentación, la API recibía afirmaciones y evidencias ya estructuradas; no extraía afirmaciones ni infería stance por sí sola. El registro de auditoría basado en un log de transparencia no estaba implementado. El documento también declaraba que el proyecto no tenía certificación, clientes en producción ni alianzas institucionales. Estas declaraciones describen el documento de octubre de 2026 y no constituyen una certificación independiente.</p>
-    <p>Las cifras citadas en aquella versión procedían de un conjunto sintético de desarrollo con 30 casos y se describían expresamente como no confirmatorias. No deben confundirse con la evaluación DEV publicada posteriormente.</p>
-    <h2>Estado de evaluación publicado en la release v0.7.0</h2>
-    <p>El informe del 7 de noviembre de 2026 registra la evaluación de tres verificadores en LLM-AggreFact, con 30.420 casos en la partición DEV. En DEV-A, FactCG obtuvo un 74,68% de exactitud balanceada cross-fitted (promedio macro por conjunto de datos) y un ECE de 0,0054 en 15 intervalos.</p>
-    <p>En DEV-B, ninguna de las 11 cohortes obtuvo certificación según la regla LTT registrada originalmente (0/11). En todas las cohortes, el primer umbral (0,99) quedó por debajo del mínimo de 25 respuestas aceptadas; no se probó efectivamente ningún umbral. Este resultado no demuestra, por sí solo, una exactitud inferior al 90%. La curva de cobertura del informe es descriptiva, no una certificación.</p>
-    <div class="box warn"><strong>Límites de los resultados publicados</strong><ul style="margin:8px 0 0"><li>Las cifras corresponden a la partición DEV; no son una evaluación TEST ni un resultado de ranking.</li><li>La referencia del 49,2% pertenece a TEST y no es comparable con el 74,68% de DEV-A.</li><li>Esta release no incluye evaluación confirmatoria con datos TEST ni resultados validados en portugués.</li></ul></div>
-    <h2>Documentos y artefactos</h2>
-    <div class="cta">
-      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Documento técnico v1.1<small>PDF · versión histórica</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>código y artefactos publicados</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Informe de evaluación DEV<small>métricas, procedencia y hashes</small></a>
-    </div>
-    <p class="note">Resumen editorial del documento técnico v1.1. Para el estado más reciente, prevalecen los artefactos de la release v0.7.0 y el informe de evaluación asociado.</p>
-  </article>
-  <article lang="en">
-    <div class="badges"><span class="badge">Technical document v1.1</span><span class="badge">Historical record · October 2026</span></div>
-    <h1>AYORAI ATTRACTOR — technical document v1.1</h1>
-    <p class="lead">This page summarizes the scope described in version 1.1 of the technical document, published in October 2026. It is a record of that version, not a statement about the current state of every component.</p>
-    <div class="meta">Document v1.1 · October 2026 · Code under Apache-2.0 · Context update: release v0.7.0, November 7, 2026</div>
-    <h2>Documented technical scope</h2>
-    <p>Version 1.1 described an architecture for checking individual claims in AI answers. The documented flow separated claim decomposition, evidence localization in the original source and the final decision by a deterministic component (Judge) using versioned rules.</p>
-    <ul>
-      <li><strong>Claim-level verification:</strong> split compound claims into smaller units and associate them with relevant evidence spans.</li>
-      <li><strong>Evidence validation:</strong> check that a passage exists in the source text at the declared positions.</li>
-      <li><strong>Source dependence:</strong> account for republications and citation chains so the same origin is not counted as independent confirmation.</li>
-      <li><strong>Data/instruction separation:</strong> treat document content as data, not as instructions to the system.</li>
-      <li><strong>Traceability:</strong> record the claim, passage, position, source hash, rules version and result.</li>
-    </ul>
-    <h2>Limitations recorded in version 1.1</h2>
-    <p>At the time of that document, the API received claims and evidence that were already structured; it did not itself extract claims or infer stance. The transparency-log-based audit record had not been deployed. The document also stated that the project had no certification, production customer or institutional partnership. These statements describe the October 2026 document and are not an independent certification.</p>
-    <p>The figures cited in that version came from a synthetic development set of 30 cases and were explicitly described as non-confirmatory. They should not be confused with the DEV evaluation published later.</p>
-    <h2>Evaluation status published in release v0.7.0</h2>
-    <p>The November 7, 2026 report records the evaluation of three verifiers on LLM-AggreFact, with 30,420 cases in the DEV split. On DEV-A, FactCG achieved 74.68% cross-fitted balanced accuracy (macro-average across datasets) and ECE 0.0054 across 15 bins.</p>
-    <p>On DEV-B, none of the 11 cohorts was certified under the originally registered LTT rule (0/11). In every cohort, the first threshold (0.99) was below the minimum of 25 accepted responses; no threshold was actually tested. This result does not, by itself, demonstrate accuracy below 90%. The coverage curve in the report is descriptive, not a certification.</p>
-    <div class="box warn"><strong>Limits of the published results</strong><ul style="margin:8px 0 0"><li>The figures belong to the DEV split; they are not a TEST evaluation or leaderboard result.</li><li>The 49.2% reference belongs to TEST and is not comparable to the 74.68% DEV-A result.</li><li>This release does not include confirmatory evaluation on TEST data or validated Portuguese results.</li></ul></div>
-    <h2>Documents and artifacts</h2>
-    <div class="cta">
-      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Technical document v1.1<small>PDF · historical version</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>published code and artifacts</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">DEV evaluation report<small>metrics, provenance and hashes</small></a>
-    </div>
-    <p class="note">Editorial summary of technical document v1.1. For the latest status, the v0.7.0 release artifacts and associated evaluation report take precedence.</p>
-  </article>
+  </div>
+
+  <h2>Modelos, protocolo e proveniência</h2>
+  <p>A avaliação DEV considerou mDeBERTa, MiniCheck e FactCG, com revisões dos modelos e do dataset registradas nos arquivos de proveniência. FactCG e MiniCheck seguem seus protocolos oficiais de referência; mDeBERTa utiliza um protocolo específico do projeto, descrito nos artefatos da avaliação. Os resultados não devem ser interpretados como uma comparação universal entre modelos nem como ranking independente.</p>
+  <p>Os artefatos agregados, os hashes SHA-256, a revisão do dataset e as revisões dos modelos estão documentados no repositório. A publicação não disponibiliza registros individuais do conjunto protegido.</p>
+
+  <h2>Aplicações potenciais</h2>
+  <p>A arquitetura pode ser avaliada em contextos nos quais seja importante rastrear a relação entre afirmações e documentos de referência, como serviços financeiros, telecomunicações, setor público, jurídico, seguros, saúde, auditoria interna, pesquisa e educação. Esses exemplos indicam domínios potenciais de aplicação, não implantação comprovada ou validação setorial.</p>
+  <p>O primeiro domínio planejado para um benchmark em português é o Regulamento Geral de Direitos do Consumidor de Telecomunicações, da Resolução Anatel nº 765/2023. O protocolo permanece proposto e não congelado; ainda não há resultado validado em português publicado nesta release.</p>
+
+  <h2>Limitações e trabalho pendente</h2>
+  <ul>
+    <li><strong>Benchmark em português:</strong> o protocolo ainda não está congelado e não há resultado publicado de avaliação do sistema em casos anotados em português.</li>
+    <li><strong>Generalização:</strong> os resultados DEV no LLM-AggreFact não demonstram desempenho equivalente em outros datasets, idiomas, setores ou condições operacionais.</li>
+    <li><strong>Entrada estruturada:</strong> a API recebe afirmações e evidências estruturadas; não se deve presumir que ela extraia automaticamente todas as afirmações ou infira stance de qualquer documento.</li>
+    <li><strong>Log de transparência:</strong> um log criptográfico público e append-only não é apresentado como funcionalidade implantada nesta release.</li>
+    <li><strong>Validação externa:</strong> os resultados publicados não constituem certificação, auditoria independente, aprovação regulatória nem evidência de cliente em produção.</li>
+  </ul>
+  <p>Os próximos passos incluem concluir os procedimentos humanos de anotação, congelar o protocolo antes da avaliação confirmatória, documentar concordância entre anotadores e publicar resultados positivos, negativos ou inconclusivos com a mesma disciplina de proveniência.</p>
+
+  <h2>Documentos, código e identificadores</h2>
+  <div class="cta">
+    <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Documento técnico v1.1<small>PDF · edição arquivada</small></a>
+    <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release de software v0.7.0<small>7 de novembro de 2026</small></a>
+    <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Relatório DEV e proveniência<small>métricas, protocolo e hashes</small></a>
+  </div>
+  <p><strong>DOI da versão v0.7.0:</strong> <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">10.5281/zenodo.24045951</a> · <strong>DOI conceitual:</strong> <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">10.5281/zenodo.23125082</a>.</p>
+  <p class="note">Atualização editorial do documento técnico público v1.1 em 7 de novembro de 2026. O PDF vinculado permanece a edição arquivada v1.1. O DOI 10.5281/zenodo.24045951 identifica a release de software v0.7.0, não uma nova edição do PDF. Consulte os artefatos versionados para detalhes metodológicos e proveniência.</p>
+</article>
+
+<article lang="es">
+  <div class="badges"><span class="badge">Documento técnico público v1.1</span><span class="badge">Actualización de estado · 7 nov. 2026</span><span class="badge dev">Versión de software v0.7.0</span></div>
+  <h1>AYORAI ATTRACTOR: verificación auditable de afirmaciones en respuestas de IA</h1>
+  <p class="lead">El proyecto de código abierto verifica, afirmación por afirmación, si el contenido de una respuesta de inteligencia artificial está respaldado por las evidencias asociadas. La decisión final corresponde a un componente determinista, con reglas versionadas y registros que permiten inspeccionar cómo se obtuvo el resultado.</p>
+  <div class="meta">Por Anderson Leon Ayora · Documento técnico público v1.1, con actualización de estado al 7 de noviembre de 2026 · Código bajo Apache-2.0 · Software v0.7.0 · DOI de versión: 10.5281/zenodo.24045951 · DOI conceptual: 10.5281/zenodo.23125082</div>
+  <h2>Alcance de esta actualización</h2>
+  <p>Esta página conserva el documento técnico público v1.1 y actualiza su información de estado para la versión de software v0.7.0, publicada el 7 de noviembre de 2026. La actualización no modifica retroactivamente el PDF v1.1 archivado: incorpora los resultados DEV disponibles, identifica el DOI de la versión de software y explicita qué aspectos aún no han sido demostrados.</p>
+  <p>El DOI <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">10.5281/zenodo.24045951</a> identifica la versión de software v0.7.0. El DOI conceptual <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">10.5281/zenodo.23125082</a> reúne el registro del proyecto y sus versiones. Estos identificadores no corresponden a un nuevo DOI para una edición del PDF.</p>
+  <h2>Principio de decisión</h2>
+  <p>Un modelo de lenguaje puede ayudar en el análisis, pero no es la autoridad final para validar su propia respuesta. En ATTRACTOR, la decisión corresponde a un componente determinista, el <strong>Judge</strong>, que aplica reglas explícitas y versionadas a afirmaciones y evidencias estructuradas. La separación entre análisis probabilístico y decisión determinista reduce la posibilidad de que el modelo declare correcta su propia salida sin una verificación independiente.</p>
+  <div class="quote">La pregunta operativa no es solo “¿la respuesta citó una fuente?”, sino “¿qué fragmento de la fuente respalda, contradice o no permite concluir cada afirmación?”.</div>
+  <h2>Estructura de verificación</h2>
+  <ul>
+    <li><strong>Descomposición por afirmación.</strong> Las respuestas compuestas se representan mediante afirmaciones menores, evitando que una evidencia otorgue credibilidad automáticamente a todo el párrafo.</li>
+    <li><strong>Localización de evidencias.</strong> Los fragmentos se asocian con la fuente original y con posiciones verificables en el texto.</li>
+    <li><strong>Validación estructural.</strong> Se comprueba que los fragmentos declarados existan en el texto fuente y que las posiciones correspondan al contenido.</li>
+    <li><strong>Procedencia.</strong> Los registros relacionan afirmaciones, evidencias, posiciones, hashes de fuente, versión de reglas y resultado.</li>
+    <li><strong>Separación entre dato e instrucción.</strong> El contenido de los documentos usados como evidencia se trata como dato, no como instrucción para modificar el comportamiento del sistema.</li>
+    <li><strong>Dependencia entre fuentes.</strong> Se consideran relaciones de procedencia y republicaciones cuando están disponibles; las fuentes derivadas no deben contarse automáticamente como confirmaciones independientes.</li>
+  </ul>
+  <h2>Clasificaciones posibles</h2>
+  <p>Cada afirmación recibe una clasificación según su relación con las evidencias disponibles:</p>
+  <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
+  <p>Las clasificaciones describen la relación entre afirmación y evidencia. Por sí solas, no garantizan que una fuente externa sea verdadera, completa o esté actualizada.</p>
+  <h2>Evaluación experimental publicada en v0.7.0</h2>
+  <p>La versión v0.7.0 incluye un informe de evaluación de verificadores en LLM-AggreFact. El conjunto DEV utilizado contiene 30.420 registros y se dividió en DEV-A y DEV-B para fines distintos. Las cifras siguientes son resultados en particiones DEV, no una evaluación confirmatoria en TEST.</p>
+  <div class="stats">
+    <div class="stat"><b>74,68%</b><span>BA cross-fitted de FactCG en DEV-A; promedio macro por dataset</span></div>
+    <div class="stat"><b>0,0054</b><span>ECE de FactCG en DEV-A, calculado en 15 bins</span></div>
+    <div class="stat"><b>0/11</b><span>Cohortes certificadas por la regla LTT original en DEV-B</span></div>
+    <div class="stat"><b>30.420</b><span>Registros del conjunto DEV utilizado</span></div>
+  </div>
+  <p>En DEV-A, FactCG obtuvo un 74,68% de exactitud balanceada cross-fitted, calculada como promedio macro por dataset. El ECE de 0,0054 resume la diferencia de calibración observada en los 15 bins; no significa calibración perfecta ni permite afirmar que una predicción individual con determinado nivel de confianza tendrá exactamente la misma tasa de acierto.</p>
+  <p>En DEV-B, ninguna de las 11 cohortes obtuvo certificación según la regla LTT registrada originalmente. En todas ellas, el primer umbral considerado (0,99) quedó por debajo del mínimo de 25 respuestas aceptadas. Por tanto, ningún umbral llegó a probarse efectivamente. El resultado 0/11 significa ausencia de certificación bajo la regla original; no demuestra por sí solo una exactitud inferior al 90%.</p>
+  <div class="box warn"><strong>Límites de interpretación</strong><ul style="margin:8px 0 0"><li>74,68% y ECE 0,0054 son resultados DEV-A; 0/11 es el resultado de la regla LTT original en DEV-B.</li><li>La referencia del 49,2% pertenece a una evaluación TEST de otro procedimiento y no es directamente comparable con DEV-A.</li><li>La curva de cobertura del informe es descriptiva; no sustituye ni modifica la certificación LTT original.</li><li>Esta publicación no presenta un resultado confirmatorio en TEST ni resultados validados en el benchmark en portugués.</li></ul></div>
+  <h2>Modelos, protocolo y procedencia</h2>
+  <p>La evaluación DEV consideró mDeBERTa, MiniCheck y FactCG, con revisiones de modelos y dataset registradas en los archivos de procedencia. FactCG y MiniCheck siguen sus protocolos oficiales de referencia; mDeBERTa utiliza un protocolo específico del proyecto, descrito en los artefactos de evaluación. Los resultados no constituyen una comparación universal entre modelos ni un ranking independiente.</p>
+  <p>Los artefactos agregados, hashes SHA-256, revisión del dataset y revisiones de modelos están documentados en el repositorio. La publicación no incluye registros individuales del conjunto protegido.</p>
+  <h2>Aplicaciones potenciales</h2>
+  <p>La arquitectura puede evaluarse en contextos donde sea importante rastrear la relación entre afirmaciones y documentos de referencia, como servicios financieros, telecomunicaciones, sector público, ámbito jurídico, seguros, salud, auditoría interna, investigación y educación. Son ámbitos potenciales, no implantaciones demostradas ni validaciones sectoriales.</p>
+  <p>El primer dominio previsto para un benchmark en portugués es el Reglamento General de Derechos del Consumidor de Telecomunicaciones de la Resolución Anatel n.º 765/2023. El protocolo sigue propuesto y no está congelado; esta versión no publica resultados validados en portugués.</p>
+  <h2>Limitaciones y trabajo pendiente</h2>
+  <ul>
+    <li><strong>Benchmark en portugués:</strong> el protocolo aún no está congelado y no hay resultados publicados de evaluación del sistema en casos anotados en portugués.</li>
+    <li><strong>Generalización:</strong> los resultados DEV en LLM-AggreFact no demuestran un rendimiento equivalente en otros datasets, idiomas, sectores o condiciones operativas.</li>
+    <li><strong>Entrada estructurada:</strong> la API recibe afirmaciones y evidencias estructuradas; no debe suponerse que extraiga automáticamente todas las afirmaciones o infiera stance de cualquier documento.</li>
+    <li><strong>Registro de transparencia:</strong> esta versión no presenta como implantado un log criptográfico público y append-only.</li>
+    <li><strong>Validación externa:</strong> los resultados no constituyen certificación, auditoría independiente, aprobación regulatoria ni evidencia de clientes en producción.</li>
+  </ul>
+  <p>Los próximos pasos incluyen completar los procedimientos de anotación humana, congelar el protocolo antes de la evaluación confirmatoria, documentar la concordancia entre anotadores y publicar resultados positivos, negativos o inconclusos con la misma disciplina de procedencia.</p>
+  <h2>Documentos, código e identificadores</h2>
+  <div class="cta">
+    <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Documento técnico v1.1<small>PDF · edición archivada</small></a>
+    <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Versión de software v0.7.0<small>7 de noviembre de 2026</small></a>
+    <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Informe DEV y procedencia<small>métricas, protocolo y hashes</small></a>
+  </div>
+  <p><strong>DOI de la versión v0.7.0:</strong> <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">10.5281/zenodo.24045951</a> · <strong>DOI conceptual:</strong> <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">10.5281/zenodo.23125082</a>.</p>
+  <p class="note">Actualización editorial del documento técnico público v1.1 al 7 de noviembre de 2026. El PDF enlazado sigue siendo la edición archivada v1.1. El DOI 10.5281/zenodo.24045951 identifica la versión de software v0.7.0, no una nueva edición del PDF.</p>
+</article>
+
+<article lang="en">
+  <div class="badges"><span class="badge">Public technical document v1.1</span><span class="badge">Status update · Nov 7, 2026</span><span class="badge dev">Software release v0.7.0</span></div>
+  <h1>AYORAI ATTRACTOR: auditable claim verification for AI answers</h1>
+  <p class="lead">The open-source project checks, claim by claim, whether statements in an artificial-intelligence response are supported by the associated evidence. Final decisions are issued by a deterministic component using versioned rules and records that make the processing path inspectable.</p>
+  <div class="meta">By Anderson Leon Ayora · Public technical document v1.1, status updated November 7, 2026 · Apache-2.0 code license · Software v0.7.0 · Version DOI: 10.5281/zenodo.24045951 · Concept DOI: 10.5281/zenodo.23125082</div>
+  <h2>Scope of this update</h2>
+  <p>This page retains public technical document v1.1 and updates its status information to software release v0.7.0, published on November 7, 2026. It does not retroactively modify the archived v1.1 PDF: it adds the available DEV results, identifies the software-version DOI and states what has not yet been demonstrated.</p>
+  <p>DOI <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">10.5281/zenodo.24045951</a> identifies software version v0.7.0. Concept DOI <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">10.5281/zenodo.23125082</a> groups the project record and its versions. Neither identifier should be read as a DOI for a new edition of the PDF.</p>
+  <h2>Decision principle</h2>
+  <p>A language model may assist with analysis, but it is not the final authority for validating its own answer. In ATTRACTOR, the decision is assigned to a deterministic component, the <strong>Judge</strong>, which applies explicit, versioned rules to structured claims and evidence. Separating probabilistic analysis from deterministic decision-making reduces the risk of a model validating its own output without an independent check.</p>
+  <div class="quote">The operational question is not merely “did the answer cite a source?” but “which passage supports, contradicts or fails to establish each claim?”</div>
+  <h2>Verification structure</h2>
+  <ul>
+    <li><strong>Claim-level decomposition.</strong> Compound answers are represented as smaller claims, so one piece of evidence does not automatically lend credibility to an entire paragraph.</li>
+    <li><strong>Evidence localization.</strong> Passages are linked to the original source and verifiable text positions.</li>
+    <li><strong>Structural validation.</strong> The system checks whether declared passages exist in the source text and whether their positions match the supplied content.</li>
+    <li><strong>Provenance.</strong> Records connect claims, evidence, positions, source hashes, rule versions and outcomes.</li>
+    <li><strong>Data/instruction separation.</strong> Document content used as evidence is treated as data, not as instructions to change system behavior.</li>
+    <li><strong>Source dependence.</strong> Provenance analysis considers source relationships and republications when those links are available; derivative sources should not automatically count as independent confirmations.</li>
+  </ul>
+  <h2>Available classifications</h2>
+  <p>Each claim receives a classification according to its relationship with the available evidence:</p>
+  <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
+  <p>These classifications describe the relationship between a claim and the supplied evidence. On their own, they do not guarantee that an external source is true, complete or current.</p>
+  <h2>Experimental evaluation published in v0.7.0</h2>
+  <p>Release v0.7.0 includes an evaluation report for verifiers on LLM-AggreFact. The DEV set used contains 30,420 records and was split into DEV-A and DEV-B for distinct purposes. The figures below are DEV-split results, not a confirmatory TEST evaluation.</p>
+  <div class="stats">
+    <div class="stat"><b>74.68%</b><span>FactCG cross-fitted BA on DEV-A; macro-average by dataset</span></div>
+    <div class="stat"><b>0.0054</b><span>FactCG ECE on DEV-A, calculated across 15 bins</span></div>
+    <div class="stat"><b>0/11</b><span>Cohorts certified under the original LTT rule on DEV-B</span></div>
+    <div class="stat"><b>30,420</b><span>Records in the DEV set used</span></div>
+  </div>
+  <p>On DEV-A, FactCG achieved 74.68% cross-fitted balanced accuracy, calculated as a macro-average across datasets. The ECE of 0.0054 summarizes the calibration gap observed across 15 bins; it does not mean perfect calibration and does not imply that an individual prediction at a given confidence level will have exactly that accuracy.</p>
+  <p>On DEV-B, none of the 11 cohorts was certified under the originally registered LTT rule. In every cohort, the first threshold considered (0.99) fell below the minimum of 25 accepted responses. Therefore, no threshold was actually tested. The 0/11 result means no certification under the original rule; by itself, it does not demonstrate accuracy below 90%.</p>
+  <div class="box warn"><strong>Interpretation limits</strong><ul style="margin:8px 0 0"><li>74.68% and ECE 0.0054 are DEV-A results; 0/11 is the original LTT-rule result on DEV-B.</li><li>The 49.2% reference belongs to a TEST evaluation of a different procedure and is not directly comparable to DEV-A.</li><li>The report's coverage curve is descriptive; it does not replace or modify the original LTT certification result.</li><li>This publication does not present confirmatory TEST results or validated results on the Portuguese benchmark.</li></ul></div>
+  <h2>Models, protocol and provenance</h2>
+  <p>The DEV evaluation included mDeBERTa, MiniCheck and FactCG, with model and dataset revisions recorded in provenance files. FactCG and MiniCheck follow their official reference protocols; mDeBERTa uses a project-specific protocol described in the evaluation artifacts. These results should not be read as a universal comparison among models or as an independent leaderboard.</p>
+  <p>Aggregated artifacts, SHA-256 hashes, the dataset revision and model revisions are documented in the repository. Individual records from the protected set are not published.</p>
+  <h2>Potential applications</h2>
+  <p>The architecture may be evaluated in contexts where tracing the relationship between claims and reference documents matters, including financial services, telecommunications, the public sector, legal work, insurance, healthcare, internal audit, research and education. These are potential areas of application, not demonstrated deployments or sector-specific validations.</p>
+  <p>The first planned domain for a Portuguese benchmark is Brazil's General Regulation on Consumer Rights in Telecommunications, under Anatel Resolution No. 765/2023. The protocol remains proposed and not frozen; this release does not publish validated Portuguese results.</p>
+  <h2>Limitations and pending work</h2>
+  <ul>
+    <li><strong>Portuguese benchmark:</strong> the protocol is not yet frozen and no system-evaluation results on Portuguese annotated cases have been published.</li>
+    <li><strong>Generalization:</strong> DEV results on LLM-AggreFact do not demonstrate equivalent performance on other datasets, languages, sectors or operating conditions.</li>
+    <li><strong>Structured input:</strong> the API receives structured claims and evidence; it should not be assumed to automatically extract every claim or infer stance from arbitrary documents.</li>
+    <li><strong>Transparency log:</strong> a public cryptographic append-only log is not presented as an implemented feature in this release.</li>
+    <li><strong>External validation:</strong> the published results are not a certification, independent audit, regulatory approval or evidence of a production customer.</li>
+  </ul>
+  <p>Next steps include completing human annotation procedures, freezing the protocol before confirmatory evaluation, documenting inter-annotator agreement and publishing positive, negative or inconclusive results with the same provenance discipline.</p>
+  <h2>Documents, code and identifiers</h2>
+  <div class="cta">
+    <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Technical document v1.1<small>PDF · archived edition</small></a>
+    <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Software release v0.7.0<small>November 7, 2026</small></a>
+    <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">DEV report and provenance<small>metrics, protocol and hashes</small></a>
+  </div>
+  <p><strong>v0.7.0 version DOI:</strong> <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">10.5281/zenodo.24045951</a> · <strong>Concept DOI:</strong> <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">10.5281/zenodo.23125082</a>.</p>
+  <p class="note">Editorial update to public technical document v1.1 as of November 7, 2026. The linked PDF remains the archived v1.1 edition. DOI 10.5281/zenodo.24045951 identifies software release v0.7.0, not a new PDF edition.</p>
+</article>
 </main>
 <script>
 (function(){
-  var TITLE={pt:"AYORAI ATTRACTOR · Documento técnico v1.1 · Registro histórico",es:"AYORAI ATTRACTOR · Documento técnico v1.1 · Registro histórico",en:"AYORAI ATTRACTOR · Technical document v1.1 · Historical record"};
+  var TITLE={pt:"AYORAI ATTRACTOR: documento técnico atualizado · v0.7.0",es:"AYORAI ATTRACTOR: documento técnico actualizado · v0.7.0",en:"AYORAI ATTRACTOR: updated technical document · v0.7.0"};
   function pick(){var q=new URLSearchParams(location.search).get("lang");if(q==="pt"||q==="es"||q==="en")return q;try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="es"||s==="en")return s}catch(e){}var n=(navigator.languages&&navigator.languages[0])||navigator.language||"pt";return /^pt/i.test(n)?"pt":/^es/i.test(n)?"es":"en"}
   function set(l,save){var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":l==="es"?"es-ES":"en";document.title=TITLE[l];var back=document.querySelector(".back");back.textContent=back.getAttribute("data-"+l);document.querySelectorAll(".lang button").forEach(function(b){var on=b.getAttribute("data-l")===l;b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});if(save){try{localStorage.setItem("ayorai_lang",l)}catch(e){}var u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}}
   document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.getAttribute("data-l"),true)})});set(pick(),false);
