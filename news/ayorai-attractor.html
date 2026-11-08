@@ -4,14 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>AYORAI ATTRACTOR · Documento técnico v1.1</title>
-<meta name="description" content="AYORAI ATTRACTOR: motor de código aberto que verifica, afirmação por afirmação, se as respostas de IA são sustentadas pelas fontes citadas. Documento técnico v1.1.">
+<title>AYORAI ATTRACTOR · Documento técnico v1.1 · Registro histórico</title>
+<meta name="description" content="Resumo histórico do documento técnico AYORAI ATTRACTOR v1.1, publicado em outubro de 2026, com referência ao estado de avaliação da release v0.7.0.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AYORAI ATTRACTOR publica documento técnico v1.1">
-<meta property="og:description" content="Verificação auditável, afirmação por afirmação, de respostas de inteligência artificial. Código aberto, Apache-2.0.">
+<meta property="og:title" content="AYORAI ATTRACTOR · Documento técnico v1.1">
+<meta property="og:description" content="Escopo técnico documentado na versão 1.1 e referência aos resultados de avaliação DEV publicados na release v0.7.0.">
 <meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="pt-BR" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=pt">
+<link rel="alternate" hreflang="es" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=es">
 <link rel="alternate" hreflang="en" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor.html?lang=en">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <style>
@@ -58,7 +59,7 @@ li{margin-bottom:6px}
 .lang button{min-width:40px;height:36px;border:0;background:transparent;color:var(--muted);font-weight:800;cursor:pointer}
 .lang button.on{background:rgba(0,212,255,.14);color:var(--cyan)}
 article[lang]{display:none}
-html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"],html[data-l="en"] article[lang="en"]{display:block}
+html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"],html[data-l="es"] article[lang="es"],html[data-l="en"] article[lang="en"]{display:block}
 .note{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:38px;padding-top:16px}
 @media(max-width:640px){.stats{grid-template-columns:1fr 1fr}.cta{grid-template-columns:1fr}.lead{font-size:1rem}}
 </style>
@@ -66,163 +67,104 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
 <body>
 <header class="top">
   <a class="brand" href="../index.html">Ayorai<span>Tech</span></a>
-  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-en="← News">← Notícias</a></div>
+  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="es">ES</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-es="← Noticias" data-en="← News">← Notícias</a></div>
 </header>
-
-<div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI" width="1600" height="400"></div>
-
+<div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — identidade visual do projeto" width="1600" height="400"></div>
 <main>
   <article lang="pt-BR">
-    <div class="badges">
-      <span class="badge pin">📌 Notícia fixada</span>
-      <span class="badge">Publicidade · conteúdo do autor do projeto</span>
-      <span class="badge dev">Em desenvolvimento · v0.5.0</span>
-    </div>
-
-    <h1>AYORAI ATTRACTOR publica documento técnico: verificação auditável, afirmação por afirmação, de respostas de IA</h1>
-    <p class="lead">O projeto de código aberto confere se cada afirmação de uma resposta de inteligência artificial é sustentada pelo trecho exato da fonte que ela diz usar, e registra essa conferência de forma que qualquer pessoa possa refazê-la e chegar ao mesmo resultado.</p>
-    <div class="meta">Por Anderson Leon Ayora · Documento técnico público v1.1 (revisão auditada), outubro de 2026 · Código sob licença Apache-2.0 · DOI 10.5281/zenodo.23125082</div>
-
-    <p>O AYORAI ATTRACTOR acaba de ganhar a versão 1.1 do seu documento técnico público. O texto reúne arquitetura, funcionamento, rastreabilidade, aplicações por setor e planos do projeto, e foi revisado após uma auditoria em 18 de outubro de 2026. O documento declara que não é parecer jurídico nem certificação, e que cada afirmação técnica relevante aponta para um arquivo do repositório ou para uma fonte pública.</p>
-
-    <h2>A ideia central: a IA não pode ser juíza de si mesma</h2>
-    <p>Um modelo de linguagem pode ajudar a analisar textos, mas, no ATTRACTOR, ele não decide se a própria resposta está correta. A decisão final sobre cada afirmação fica com um componente determinístico, o <strong>Judge</strong>, que aplica regras explícitas, versionadas e identificadas por hash criptográfico. Com a mesma versão das regras e a mesma entrada estruturada, o Judge 2.0 produz o mesmo resultado, byte a byte.</p>
-
-    <div class="quote">O objetivo é transformar “a IA disse, e citou uma fonte” em “este trecho, desta fonte, nesta posição, sustenta (ou contradiz) esta afirmação, segundo estas regras, e qualquer um pode recalcular o mesmo resultado”.</div>
-
-    <h2>Por que isso importa</h2>
-    <p>Uma resposta de IA costuma conter várias afirmações. A fonte citada pode sustentar uma, contradizer outra e não dizer nada sobre uma terceira. Avaliada como um bloco, a presença de uma citação real empresta credibilidade a tudo. O ATTRACTOR separa a resposta em afirmações e julga cada uma contra trechos localizados no documento original.</p>
-    <p>O documento lembra casos públicos que ilustram o problema, no Brasil e no exterior: advogados sancionados nos Estados Unidos por citar precedentes inexistentes gerados por IA (Mata v. Avianca, 2023); uma multa aplicada pelo TJPR por citação de precedente do STJ que não foi localizado; e uma petição na Paraíba que escondia comandos dirigidos a ferramentas de IA para tentar manipular a análise judicial. O próprio texto ressalta que esses casos são contexto relatado pelas fontes e não foram analisados pelo sistema.</p>
-
-    <h2>Como funciona</h2>
+    <div class="badges"><span class="badge">Documento técnico v1.1</span><span class="badge">Registro histórico · outubro de 2026</span></div>
+    <h1>AYORAI ATTRACTOR — documento técnico v1.1</h1>
+    <p class="lead">Esta página resume o escopo descrito na versão 1.1 do documento técnico, publicada em outubro de 2026. Ela é um registro daquela versão, não uma declaração do estado atual de todos os componentes.</p>
+    <div class="meta">Documento v1.1 · outubro de 2026 · Código sob licença Apache-2.0 · Atualização de contexto: release v0.7.0, 7 de novembro de 2026</div>
+    <h2>Escopo técnico documentado</h2>
+    <p>A versão 1.1 descrevia uma arquitetura para verificar afirmações individualmente em respostas de IA. O fluxo documentado separava a decomposição das afirmações, a localização de evidências na fonte original e a decisão final por um componente determinístico (Judge), com regras versionadas.</p>
     <ul>
-      <li><strong>Afirmação por afirmação.</strong> Afirmações compostas são divididas em partes menores (átomos), cada uma apontando para o trecho exato da frase original.</li>
-      <li><strong>Evidência conferida na fonte.</strong> Uma citação só vale se o trecho existir no texto-fonte, nas posições declaradas. Evidência rejeitada aparece no resultado com o motivo: nada é descartado em silêncio.</li>
-      <li><strong>Fontes dependentes contam como uma.</strong> Republicações e cadeias de citação são agrupadas, para que três sites repetindo a mesma origem não pareçam três confirmações.</li>
-      <li><strong>Texto é dado, nunca instrução.</strong> O conteúdo das evidências é sempre tratado como dado, o que protege contra documentos que tentam instruir a máquina.</li>
-      <li><strong>Trilha de prova.</strong> Cada resultado liga afirmação, trecho, posição no documento, hash da fonte, versão das regras e hash do resultado, em serialização canônica (RFC 8785).</li>
+      <li><strong>Verificação por afirmação:</strong> dividir afirmações compostas em unidades menores e associá-las aos trechos de evidência relevantes.</li>
+      <li><strong>Validação da evidência:</strong> conferir a existência do trecho no texto-fonte e as posições declaradas.</li>
+      <li><strong>Dependência entre fontes:</strong> considerar republicações e cadeias de citação para evitar contar a mesma origem como confirmações independentes.</li>
+      <li><strong>Separação entre dado e instrução:</strong> tratar o conteúdo dos documentos como dado, não como instrução para o sistema.</li>
+      <li><strong>Rastreabilidade:</strong> registrar afirmação, trecho, posição, hash da fonte, versão das regras e resultado.</li>
     </ul>
-    <p>Cada afirmação recebe um de cinco vereditos:</p>
-    <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
-
-    <div class="stats">
-      <div class="stat"><b>5</b><span>vereditos possíveis por afirmação</span></div>
-      <div class="stat"><b>1</b><span>autoridade de veredito: o Judge determinístico</span></div>
-      <div class="stat"><b>1.057</b><span>testes aprovados no commit de referência do documento</span></div>
-      <div class="stat"><b>4</b><span>releases arquivadas com DOI no Zenodo (v0.2.0 a v0.5.0)</span></div>
-    </div>
-
-    <h2>Onde pode ser aplicado</h2>
-    <p>O documento descreve aplicações potenciais em judiciário e advocacia, setor público, telecomunicações, serviços financeiros, mercado de capitais, seguros, saúde, auditoria interna, pesquisa e educação. Em todos os casos, o padrão é o mesmo: decompor a resposta, verificar cada afirmação contra um conjunto de evidências autorizado e registrar o resultado de forma reproduzível. O primeiro domínio do benchmark em português é o Regulamento Geral de Direitos do Consumidor de Telecomunicações (Resolução Anatel nº 765/2023), escolhido por ser um texto oficial, público e cheio de prazos, direitos e exceções.</p>
-
-    <div class="box warn">
-      <strong>O que o projeto ainda não entrega</strong>
-      <ul style="margin:8px 0 0">
-        <li>Ainda não há resultado de benchmark em português: o protocolo não está congelado e o sistema não foi executado sobre casos em português.</li>
-        <li>Os números publicados vêm de conjuntos sintéticos de desenvolvimento em inglês, com 30 casos, e não são evidência confirmatória.</li>
-        <li>A API recebe afirmações e evidências já estruturadas; ela ainda não extrai afirmações nem infere stance sozinha.</li>
-        <li>O registro de auditoria verificável por criptografia (log de transparência) ainda não está implantado.</li>
-        <li>O projeto não é certificado, não tem cliente em produção e não declara parceria com nenhuma instituição.</li>
-      </ul>
-    </div>
-
-    <h2>Próximos passos</h2>
-    <p>O caminho até o primeiro resultado em português segue portões sucessivos: um segundo piloto de cerca de 10 casos anotados sem ferramentas de IA, o congelamento do protocolo, um conjunto de 300 casos (70% público e 30% oculto), um segundo anotador com concordância mínima medida, e uma execução única do sistema após os rótulos completos. Resultados negativos ou inconclusivos também serão publicados.</p>
-
+    <h2>Limitações registradas na versão 1.1</h2>
+    <p>Na data daquela documentação, a API recebia afirmações e evidências já estruturadas; não fazia, por si só, a extração de afirmações nem a inferência de stance. O registro de auditoria baseado em log de transparência não estava implantado. O documento também declarava que o projeto não possuía certificação, cliente em produção ou parceria institucional. Essas declarações são um retrato documental de outubro de 2026, não uma certificação independente.</p>
+    <p>Os números citados naquela versão provinham de um conjunto sintético de desenvolvimento com 30 casos e eram explicitamente descritos como não confirmatórios. Eles não devem ser confundidos com a avaliação DEV publicada posteriormente.</p>
+    <h2>Estado de avaliação publicado na release v0.7.0</h2>
+    <p>O relatório de 7 de novembro de 2026 registra a avaliação de três verificadores no conjunto LLM-AggreFact, com 30.420 casos na partição DEV. Em DEV-A, o FactCG obteve 74,68% de acurácia balanceada cross-fitted (média macro por dataset) e ECE 0,0054 em 15 bins.</p>
+    <p>Em DEV-B, nenhuma das 11 coortes foi certificada pela regra LTT originalmente registrada (0/11). Em todas as coortes, o primeiro limiar (0,99) ficou abaixo do mínimo de 25 respostas aceitas; nenhum limiar foi efetivamente testado. Esse resultado não demonstra, por si só, acurácia inferior a 90%. A curva de cobertura apresentada no relatório é descritiva, não uma certificação.</p>
+    <div class="box warn"><strong>Limites atuais do resultado publicado</strong><ul style="margin:8px 0 0"><li>Os números acima pertencem à partição DEV; não são avaliação TEST nem resultado de ranking.</li><li>A referência de 49,2% pertence a TEST e não é comparável aos 74,68% de DEV-A.</li><li>Não há, nesta release, resultado confirmatório em dados TEST nem resultado validado em português.</li></ul></div>
+    <h2>Documentos e artefatos</h2>
     <div class="cta">
-      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">📄 Ler o documento técnico<small>PDF · v1.1</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch" target="_blank" rel="noopener">⌘ Repositório no GitHub<small>código aberto · Apache-2.0</small></a>
-      <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">🔗 DOI no Zenodo<small>10.5281/zenodo.23125082</small></a>
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Documento técnico v1.1<small>PDF · versão histórica</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>código e artefatos publicados</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Relatório de avaliação DEV<small>métricas, proveniência e hashes</small></a>
     </div>
-
-    <p class="note">Conteúdo publicitário sobre projeto do próprio autor deste site, baseado no documento técnico público AYORAI ATTRACTOR v1.1 (outubro de 2026). Números e estados refletem o documento na data da revisão; em caso de divergência, vale o estado atual do repositório.</p>
+    <p class="note">Resumo editorial do documento técnico v1.1. Para o estado mais recente, prevalecem os artefatos da release v0.7.0 e o relatório de avaliação associado.</p>
+  </article>
+  <article lang="es">
+    <div class="badges"><span class="badge">Documento técnico v1.1</span><span class="badge">Registro histórico · octubre de 2026</span></div>
+    <h1>AYORAI ATTRACTOR — documento técnico v1.1</h1>
+    <p class="lead">Esta página resume el alcance descrito en la versión 1.1 del documento técnico, publicada en octubre de 2026. Es un registro de aquella versión, no una declaración del estado actual de todos los componentes.</p>
+    <div class="meta">Documento v1.1 · octubre de 2026 · Código bajo licencia Apache-2.0 · Actualización de contexto: release v0.7.0, 7 de noviembre de 2026</div>
+    <h2>Alcance técnico documentado</h2>
+    <p>La versión 1.1 describía una arquitectura para verificar afirmaciones individuales en respuestas de IA. El flujo documentado separaba la descomposición de afirmaciones, la localización de evidencias en la fuente original y la decisión final mediante un componente determinista (Judge), con reglas versionadas.</p>
+    <ul>
+      <li><strong>Verificación por afirmación:</strong> dividir afirmaciones compuestas en unidades menores y asociarlas con los fragmentos de evidencia pertinentes.</li>
+      <li><strong>Validación de evidencias:</strong> comprobar la existencia del fragmento en el texto fuente y las posiciones declaradas.</li>
+      <li><strong>Dependencia entre fuentes:</strong> considerar republicaciones y cadenas de citas para no contar un mismo origen como confirmaciones independientes.</li>
+      <li><strong>Separación entre dato e instrucción:</strong> tratar el contenido de los documentos como dato, no como instrucciones para el sistema.</li>
+      <li><strong>Trazabilidad:</strong> registrar afirmación, fragmento, posición, hash de la fuente, versión de las reglas y resultado.</li>
+    </ul>
+    <h2>Limitaciones registradas en la versión 1.1</h2>
+    <p>En la fecha de esa documentación, la API recibía afirmaciones y evidencias ya estructuradas; no extraía afirmaciones ni infería stance por sí sola. El registro de auditoría basado en un log de transparencia no estaba implementado. El documento también declaraba que el proyecto no tenía certificación, clientes en producción ni alianzas institucionales. Estas declaraciones describen el documento de octubre de 2026 y no constituyen una certificación independiente.</p>
+    <p>Las cifras citadas en aquella versión procedían de un conjunto sintético de desarrollo con 30 casos y se describían expresamente como no confirmatorias. No deben confundirse con la evaluación DEV publicada posteriormente.</p>
+    <h2>Estado de evaluación publicado en la release v0.7.0</h2>
+    <p>El informe del 7 de noviembre de 2026 registra la evaluación de tres verificadores en LLM-AggreFact, con 30.420 casos en la partición DEV. En DEV-A, FactCG obtuvo un 74,68% de exactitud balanceada cross-fitted (promedio macro por conjunto de datos) y un ECE de 0,0054 en 15 intervalos.</p>
+    <p>En DEV-B, ninguna de las 11 cohortes obtuvo certificación según la regla LTT registrada originalmente (0/11). En todas las cohortes, el primer umbral (0,99) quedó por debajo del mínimo de 25 respuestas aceptadas; no se probó efectivamente ningún umbral. Este resultado no demuestra, por sí solo, una exactitud inferior al 90%. La curva de cobertura del informe es descriptiva, no una certificación.</p>
+    <div class="box warn"><strong>Límites de los resultados publicados</strong><ul style="margin:8px 0 0"><li>Las cifras corresponden a la partición DEV; no son una evaluación TEST ni un resultado de ranking.</li><li>La referencia del 49,2% pertenece a TEST y no es comparable con el 74,68% de DEV-A.</li><li>Esta release no incluye evaluación confirmatoria con datos TEST ni resultados validados en portugués.</li></ul></div>
+    <h2>Documentos y artefactos</h2>
+    <div class="cta">
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Documento técnico v1.1<small>PDF · versión histórica</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>código y artefactos publicados</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Informe de evaluación DEV<small>métricas, procedencia y hashes</small></a>
+    </div>
+    <p class="note">Resumen editorial del documento técnico v1.1. Para el estado más reciente, prevalecen los artefactos de la release v0.7.0 y el informe de evaluación asociado.</p>
   </article>
   <article lang="en">
-    <div class="badges">
-      <span class="badge pin">📌 Pinned article</span>
-      <span class="badge">Advertising · content by the project's author</span>
-      <span class="badge dev">In development · v0.5.0</span>
-    </div>
-
-    <h1>AYORAI ATTRACTOR publishes technical document: auditable, claim-by-claim verification of AI answers</h1>
-    <p class="lead">The open-source project checks whether each claim in an artificial intelligence answer is supported by the exact passage of the source it says it uses, and records that check so that anyone can redo it and reach the same result.</p>
-    <div class="meta">By Anderson Leon Ayora · Public technical document v1.1 (audited revision), October 2026 · Code under the Apache-2.0 license · DOI 10.5281/zenodo.23125082</div>
-
-    <p>AYORAI ATTRACTOR has just released version 1.1 of its public technical document. It covers the project's architecture, how it works, traceability, applications by sector and plans, and it was revised after an audit on October 18, 2026. The document states that it is neither a legal opinion nor a certification, and that every relevant technical claim points to a file in the repository or to a public source.</p>
-
-    <h2>The core idea: AI cannot be its own judge</h2>
-    <p>A language model can help analyze texts, but in ATTRACTOR it does not decide whether its own answer is correct. The final decision on each claim belongs to a deterministic component, the <strong>Judge</strong>, which applies explicit rules that are versioned and identified by a cryptographic hash. With the same rules version and the same structured input, Judge 2.0 produces the same result, byte for byte.</p>
-
-    <div class="quote">The goal is to turn “the AI said it, and cited a source” into “this passage, from this source, at this position, supports (or contradicts) this claim, according to these rules, and anyone can recompute the same result”.</div>
-
-    <h2>Why it matters</h2>
-    <p>An AI answer usually contains several claims. The cited source may support one, contradict another and say nothing about a third. When the answer is judged as a single block, the presence of a real citation lends credibility to everything. ATTRACTOR splits the answer into claims and judges each one against passages located in the original document.</p>
-    <p>The document recalls public cases that illustrate the problem, in Brazil and abroad: lawyers sanctioned in the United States for citing nonexistent AI-generated precedents (Mata v. Avianca, 2023); a fine imposed by the Paraná State Court (TJPR) over a citation of a Superior Court of Justice (STJ) precedent that could not be found; and a court filing in the state of Paraíba that hid instructions aimed at AI tools to try to manipulate the judicial analysis. The text itself stresses that these cases are context reported by the sources and were not analyzed by the system.</p>
-
-    <h2>How it works</h2>
+    <div class="badges"><span class="badge">Technical document v1.1</span><span class="badge">Historical record · October 2026</span></div>
+    <h1>AYORAI ATTRACTOR — technical document v1.1</h1>
+    <p class="lead">This page summarizes the scope described in version 1.1 of the technical document, published in October 2026. It is a record of that version, not a statement about the current state of every component.</p>
+    <div class="meta">Document v1.1 · October 2026 · Code under Apache-2.0 · Context update: release v0.7.0, November 7, 2026</div>
+    <h2>Documented technical scope</h2>
+    <p>Version 1.1 described an architecture for checking individual claims in AI answers. The documented flow separated claim decomposition, evidence localization in the original source and the final decision by a deterministic component (Judge) using versioned rules.</p>
     <ul>
-      <li><strong>Claim by claim.</strong> Compound claims are split into smaller parts (atoms), each pointing to the exact span of the original sentence.</li>
-      <li><strong>Evidence checked against the source.</strong> A citation only counts if the passage exists in the source text at the declared positions. Rejected evidence appears in the result with its reason: nothing is discarded silently.</li>
-      <li><strong>Dependent sources count as one.</strong> Republications and citation chains are grouped, so three sites repeating the same origin do not look like three confirmations.</li>
-      <li><strong>Text is data, never instruction.</strong> Evidence content is always treated as data, which protects against documents that try to instruct the machine.</li>
-      <li><strong>Evidence trail.</strong> Each result links claim, passage, position in the document, source hash, rules version and result hash, in canonical serialization (RFC 8785).</li>
+      <li><strong>Claim-level verification:</strong> split compound claims into smaller units and associate them with relevant evidence spans.</li>
+      <li><strong>Evidence validation:</strong> check that a passage exists in the source text at the declared positions.</li>
+      <li><strong>Source dependence:</strong> account for republications and citation chains so the same origin is not counted as independent confirmation.</li>
+      <li><strong>Data/instruction separation:</strong> treat document content as data, not as instructions to the system.</li>
+      <li><strong>Traceability:</strong> record the claim, passage, position, source hash, rules version and result.</li>
     </ul>
-    <p>Each claim receives one of five verdicts:</p>
-    <div class="verdicts"><code>SUPPORTED</code><code>PARTIALLY_SUPPORTED</code><code>REFUTED</code><code>CONFLICTING</code><code>UNVERIFIED</code></div>
-
-    <div class="stats">
-      <div class="stat"><b>5</b><span>possible verdicts per claim</span></div>
-      <div class="stat"><b>1</b><span>verdict authority: the deterministic Judge</span></div>
-      <div class="stat"><b>1,057</b><span>tests passed at the document's reference commit</span></div>
-      <div class="stat"><b>4</b><span>releases archived with a DOI on Zenodo (v0.2.0 to v0.5.0)</span></div>
-    </div>
-
-    <h2>Where it can be applied</h2>
-    <p>The document describes potential applications in courts and law firms, the public sector, telecommunications, financial services, capital markets, insurance, healthcare, internal audit, research and education. In every case the pattern is the same: break the answer down, check each claim against an authorized set of evidence and record the result reproducibly. The first domain of the Portuguese-language benchmark is Brazil's General Regulation on Telecommunications Consumer Rights (Anatel Resolution No. 765/2023), chosen because it is an official, public text full of deadlines, rights and exceptions.</p>
-
-    <div class="box warn">
-      <strong>What the project does not deliver yet</strong>
-      <ul style="margin:8px 0 0">
-        <li>There is no Portuguese benchmark result yet: the protocol is not frozen and the system has not been run on Portuguese cases.</li>
-        <li>The published numbers come from synthetic English development sets with 30 cases and are not confirmatory evidence.</li>
-        <li>The API receives claims and evidence already structured; it does not yet extract claims or infer stance on its own.</li>
-        <li>The cryptographically verifiable audit log (transparency log) is not deployed yet.</li>
-        <li>The project is not certified, has no customer in production and claims no partnership with any institution.</li>
-      </ul>
-    </div>
-
-    <h2>Next steps</h2>
-    <p>The path to the first Portuguese result follows successive gates: a second pilot of about 10 cases annotated without AI tools, freezing the protocol, a set of 300 cases (70% public and 30% hidden), a second annotator with a minimum measured agreement, and a single run of the system after the labels are complete. Negative or inconclusive results will also be published.</p>
-
+    <h2>Limitations recorded in version 1.1</h2>
+    <p>At the time of that document, the API received claims and evidence that were already structured; it did not itself extract claims or infer stance. The transparency-log-based audit record had not been deployed. The document also stated that the project had no certification, production customer or institutional partnership. These statements describe the October 2026 document and are not an independent certification.</p>
+    <p>The figures cited in that version came from a synthetic development set of 30 cases and were explicitly described as non-confirmatory. They should not be confused with the DEV evaluation published later.</p>
+    <h2>Evaluation status published in release v0.7.0</h2>
+    <p>The November 7, 2026 report records the evaluation of three verifiers on LLM-AggreFact, with 30,420 cases in the DEV split. On DEV-A, FactCG achieved 74.68% cross-fitted balanced accuracy (macro-average across datasets) and ECE 0.0054 across 15 bins.</p>
+    <p>On DEV-B, none of the 11 cohorts was certified under the originally registered LTT rule (0/11). In every cohort, the first threshold (0.99) was below the minimum of 25 accepted responses; no threshold was actually tested. This result does not, by itself, demonstrate accuracy below 90%. The coverage curve in the report is descriptive, not a certification.</p>
+    <div class="box warn"><strong>Limits of the published results</strong><ul style="margin:8px 0 0"><li>The figures belong to the DEV split; they are not a TEST evaluation or leaderboard result.</li><li>The 49.2% reference belongs to TEST and is not comparable to the 74.68% DEV-A result.</li><li>This release does not include confirmatory evaluation on TEST data or validated Portuguese results.</li></ul></div>
+    <h2>Documents and artifacts</h2>
     <div class="cta">
-      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">📄 Read the technical document<small>PDF · v1.1 · in Portuguese</small></a>
-      <a href="https://github.com/Ayorinha/ayorai-opensearch" target="_blank" rel="noopener">⌘ GitHub repository<small>open source · Apache-2.0</small></a>
-      <a href="https://doi.org/10.5281/zenodo.23125082" target="_blank" rel="noopener">🔗 DOI on Zenodo<small>10.5281/zenodo.23125082</small></a>
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf" target="_blank" rel="noopener">Technical document v1.1<small>PDF · historical version</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>published code and artifacts</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">DEV evaluation report<small>metrics, provenance and hashes</small></a>
     </div>
-
-    <p class="note">Advertising content about a project by the author of this site, based on the public technical document AYORAI ATTRACTOR v1.1 (October 2026, in Portuguese). Numbers and statuses reflect the document at the revision date; if they differ, the current state of the repository prevails.</p>
+    <p class="note">Editorial summary of technical document v1.1. For the latest status, the v0.7.0 release artifacts and associated evaluation report take precedence.</p>
   </article>
 </main>
 <script>
 (function(){
-  var TITLE={pt:"AYORAI ATTRACTOR · Documento técnico v1.1",en:"AYORAI ATTRACTOR · Technical document v1.1"};
-  var ALT={pt:"AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI",en:"AYORAI ATTRACTOR — the dandelion forms the letter I in AYORAI"};
-  function pick(){
-    var q=new URLSearchParams(location.search).get("lang");
-    if(q==="pt"||q==="en")return q;
-    try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="en")return s}catch(e){}
-    var n=(navigator.languages&&navigator.languages[0])||navigator.language||"pt";
-    return /^pt/i.test(n)?"pt":"en";
-  }
-  function set(l,save){
-    var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":"en";
-    document.title=TITLE[l];document.querySelector(".hero img").alt=ALT[l];
-    var back=document.querySelector(".back");back.textContent=back.getAttribute("data-"+l);
-    document.querySelectorAll(".lang button").forEach(function(b){var on=b.getAttribute("data-l")===l;b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});
-    if(save){try{localStorage.setItem("ayorai_lang",l)}catch(e){}var u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}
-  }
-  document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.getAttribute("data-l"),true)})});
-  set(pick(),false);
+  var TITLE={pt:"AYORAI ATTRACTOR · Documento técnico v1.1 · Registro histórico",es:"AYORAI ATTRACTOR · Documento técnico v1.1 · Registro histórico",en:"AYORAI ATTRACTOR · Technical document v1.1 · Historical record"};
+  function pick(){var q=new URLSearchParams(location.search).get("lang");if(q==="pt"||q==="es"||q==="en")return q;try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="es"||s==="en")return s}catch(e){}var n=(navigator.languages&&navigator.languages[0])||navigator.language||"pt";return /^pt/i.test(n)?"pt":/^es/i.test(n)?"es":"en"}
+  function set(l,save){var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":l==="es"?"es-ES":"en";document.title=TITLE[l];var back=document.querySelector(".back");back.textContent=back.getAttribute("data-"+l);document.querySelectorAll(".lang button").forEach(function(b){var on=b.getAttribute("data-l")===l;b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});if(save){try{localStorage.setItem("ayorai_lang",l)}catch(e){}var u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}}
+  document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.getAttribute("data-l"),true)})});set(pick(),false);
 })();
 </script>
 </body>
