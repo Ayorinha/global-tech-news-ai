@@ -9,9 +9,9 @@
     "nist": "NIST AI 100-2e2025",
     "oasb": "Open Agent Security Benchmark technique coverage"
   },
-  "run_id": "AYORAI-REF-20261108145617013-QYALFL",
-  "generated_at": "2026-11-08T14:56:17.013Z",
-  "execution_ms": 4,
+  "run_id": "AYORAI-REF-20261108192843890-C3KUVN",
+  "generated_at": "2026-11-08T19:28:43.890Z",
+  "execution_ms": 3,
   "totals": {
     "tests": 38,
     "adversarial": 33,
@@ -91,7 +91,7 @@
         "reasons": [
           "higher-priority instruction"
         ],
-        "latency_ms": 2
+        "latency_ms": 1
       }
     },
     {
@@ -822,7 +822,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -852,7 +852,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -882,7 +882,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -912,7 +912,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -942,7 +942,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -972,7 +972,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1006,7 +1006,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1036,7 +1036,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1066,7 +1066,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1096,7 +1096,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1126,7 +1126,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1156,7 +1156,7 @@
       },
       "intelligence": {
         "source_url": "https://atlas.mitre.org/",
-        "source_run_id": "AYORAI-INTEL-20261108145616952",
+        "source_run_id": "AYORAI-INTEL-20261108192843836",
         "source_sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       "expected": "BLOCK",
@@ -1176,7 +1176,7 @@
     }
   ],
   "intelligence": {
-    "run_id": "AYORAI-INTEL-20261108145616952",
+    "run_id": "AYORAI-INTEL-20261108192843836",
     "source_count": 5,
     "dynamic_cases": 12,
     "atlas_version": "2026.10",
@@ -1213,7 +1213,7 @@
         "name": "MITRE ATLAS",
         "url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/main/dist/v6/ATLAS-latest.yaml",
         "status": "OK",
-        "fetched_at": "2026-11-08T14:56:16.288Z",
+        "fetched_at": "2026-11-08T19:28:42.228Z",
         "sha256": "ac41ee9f99a47084ba5fdfc77ae83a28687e12390240fffeb37df7914ffe142d"
       },
       {
@@ -1221,23 +1221,23 @@
         "name": "OWASP GenAI LLM Top 10 2026",
         "url": "https://genai.owasp.org/llm-top-10/",
         "status": "OK",
-        "fetched_at": "2026-11-08T14:56:16.351Z",
-        "sha256": "3757672357ddada831b1357c874253c318828bd3279c288a04324f02526a23c2"
+        "fetched_at": "2026-11-08T19:28:42.669Z",
+        "sha256": "508fa93ac2ba008390555979f3d5fcbc37bde1cfbea15b38f4b6bbe679d3bb19"
       },
       {
         "id": "nist-aml",
         "name": "NIST AI 100-2e2025",
         "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
         "status": "OK",
-        "fetched_at": "2026-11-08T14:56:16.446Z",
-        "sha256": "0bd35b2de81465a8ee685a2bfdc2731ab8718b47beb4bfdf180ea0c4978944a2"
+        "fetched_at": "2026-11-08T19:28:43.137Z",
+        "sha256": "b394f8a94f8128c0c07bd65301638c83d961153e2b4badfa1c8a72a76842bda0"
       },
       {
         "id": "cisa-jcdc-ai",
         "name": "CISA JCDC AI Cybersecurity Collaboration Playbook",
         "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook%20TLP%20CLEAR_1.14.25_508c%201.pdf",
         "status": "OK",
-        "fetched_at": "2026-11-08T14:56:16.542Z",
+        "fetched_at": "2026-11-08T19:28:43.299Z",
         "sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671"
       },
       {
@@ -1245,16 +1245,16 @@
         "name": "NCSC Guidelines for Secure AI System Development",
         "url": "https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development",
         "status": "OK",
-        "fetched_at": "2026-11-08T14:56:16.951Z",
+        "fetched_at": "2026-11-08T19:28:43.834Z",
         "sha256": "3ecd778d1663e1e5ffda2017c56848d66470ac9e71a2c659bc4ecb681689e014"
       }
     ]
   },
   "publication": {
     "status": "PUBLISHED_REFERENCE_EVIDENCE",
-    "publication_fingerprint": "02b6a138e243a559d24ccbe169899cc41b97e7f7b885087a26d153cffde1385c",
-    "published_at": "2026-11-08T14:56:17.184Z",
-    "source_snapshot_sha256": "655f432941c821e10de322813af5ab17c3036c997e267d6033c19955020a233d",
+    "publication_fingerprint": "2f528b81d64e8297c4a6dde4c5d9b4740158488b59a7652748557966f2eddae2",
+    "published_at": "2026-11-08T19:28:44.046Z",
+    "source_snapshot_sha256": "52f3b4b0b9f09ad09e3ac3bbfc377dac438e7331a0ac81056b5929d605287969",
     "note": "Published automatically only when reference intelligence or defensive findings materially change."
   }
 }
