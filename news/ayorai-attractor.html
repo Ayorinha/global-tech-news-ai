@@ -103,25 +103,16 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
   <p>As classificações descrevem a relação entre afirmação e evidência fornecida. Não constituem, isoladamente, garantia de que a fonte externa seja verdadeira, completa ou atualizada.</p>
 
   <h2>Avaliação experimental publicada na v0.7.0</h2>
-  <p>A release v0.7.0 inclui um relatório de avaliação dos verificadores no conjunto LLM-AggreFact. O conjunto DEV utilizado contém 30.420 registros e foi dividido em DEV-A e DEV-B para finalidades distintas. Os números abaixo são resultados experimentais nas partições DEV, não uma avaliação confirmatória em TEST.</p>
+  <p>A avaliação Calibration V2 foi executada no conjunto LLM-AggreFact, com 30.420 exemplos distribuídos em 11 coortes. Em DEV-A, três verificadores foram avaliados por acurácia balanceada (BA) cross-fitted, calculada pela média macro entre datasets. O FactCG foi selecionado pela regra de seleção registrada. DEV-B foi reservado à análise LTT. Os resultados abaixo são métricas de modelos em desenvolvimento, não acurácia global de vereditos do AYORAI ATTRACTOR.</p>
   <div class="stats">
-    <div class="stat"><b>74,68%</b><span>BA cross-fitted do FactCG em DEV-A; média macro por dataset</span></div>
-    <div class="stat"><b>0,0054</b><span>ECE do FactCG em DEV-A, calculado em 15 bins</span></div>
-    <div class="stat"><b>0/11</b><span>Coortes certificadas pela regra LTT original em DEV-B</span></div>
-    <div class="stat"><b>30.420</b><span>Registros do conjunto DEV utilizado na avaliação</span></div>
+    <div class="stat"><b>74,68%</b><span>FactCG · BA cross-fitted em DEV-A</span></div>
+    <div class="stat"><b>72,87%</b><span>MiniCheck · BA cross-fitted em DEV-A</span></div>
+    <div class="stat"><b>62,57%</b><span>mDeBERTa · BA cross-fitted em DEV-A</span></div>
+    <div class="stat"><b>30.420</b><span>Exemplos DEV · 11 coortes do LLM-AggreFact</span></div>
   </div>
-  <p>Em DEV-A, o FactCG apresentou 74,68% de acurácia balanceada cross-fitted, calculada como média macro por dataset. O ECE de 0,0054 resume a diferença de calibração observada nos 15 bins utilizados; não significa calibração perfeita nem permite afirmar que uma previsão individual com determinada confiança terá exatamente a mesma taxa de acerto.</p>
-  <p>Em DEV-B, nenhuma das 11 coortes foi certificada pela regra LTT originalmente registrada. Em todas elas, o primeiro limiar considerado (0,99) ficou abaixo do mínimo de 25 respostas aceitas. Portanto, nenhum limiar chegou a ser efetivamente testado. O resultado 0/11 significa ausência de certificação sob a regra original; não demonstra, por si só, que a acurácia seja inferior a 90%.</p>
-  <div class="box warn"><strong>Limites de interpretação</strong>
-    <ul style="margin:8px 0 0">
-      <li>74,68% e ECE 0,0054 são resultados DEV-A; 0/11 é o resultado da regra LTT original em DEV-B.</li>
-      <li>A referência de 49,2% pertence a uma avaliação TEST de outro procedimento e não é diretamente comparável ao resultado DEV-A.</li>
-      <li>A curva de cobertura apresentada no relatório é descritiva; não substitui nem altera a certificação LTT original.</li>
-      <li>Esta publicação não apresenta resultado confirmatório em TEST nem resultado validado no benchmark em português.</li>
-    </ul>
-  </div>
-
-  <h2>Modelos, protocolo e proveniência</h2>
+  <p><strong>Métricas probabilísticas do FactCG em DEV-A:</strong> AUROC 0,8650 · AUPRC 0,9454 · Brier 0,1168 · ECE (15 bins) 0,0054 · Log-loss 0,3708. Para MiniCheck: AUROC 0,8224 · AUPRC 0,9200 · Brier 0,1306 · ECE 0,0076 · Log-loss 0,4132. Para mDeBERTa: AUROC 0,6936 · AUPRC 0,8569 · Brier 0,1630 · ECE 0,0083 · Log-loss 0,5013.</p>
+  <p>Em DEV-B, nenhuma das 11 coortes foi certificada pela regra LTT originalmente registrada. O resultado 0/11 significa ausência de certificação sob essa regra; não deve ser interpretado isoladamente como prova de desempenho abaixo de um patamar de acurácia. A análise e suas limitações estão detalhadas no relatório versionado.</p>
+  <h2>Modelos, protocolo e proveniência</h2>,undefined,undefined
   <p>A avaliação DEV considerou mDeBERTa, MiniCheck e FactCG, com revisões dos modelos e do dataset registradas nos arquivos de proveniência. FactCG e MiniCheck seguem seus protocolos oficiais de referência; mDeBERTa utiliza um protocolo específico do projeto, descrito nos artefatos da avaliação. Os resultados não devem ser interpretados como uma comparação universal entre modelos nem como ranking independente.</p>
   <p>Os artefatos agregados, os hashes SHA-256, a revisão do dataset e as revisões dos modelos estão documentados no repositório. A publicação não disponibiliza registros individuais do conjunto protegido.</p>
 
