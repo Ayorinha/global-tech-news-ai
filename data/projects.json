@@ -3,7 +3,7 @@
     "id": 0,
     "category": "projeto",
     "title": "AYORAI ATTRACTOR",
-    "description": "Projeto de código aberto para verificar, afirmação por afirmação, se respostas de IA são sustentadas pelas fontes citadas. A decisão final cabe a um Judge determinístico, com regras versionadas e trilha de evidências. Na release v0.7.0, o FactCG obteve 74,68% de acurácia balanceada cross-fitted em DEV-A do LLM-AggreFact (média macro por dataset); o relatório também registra ECE 0,0054 e 0/11 coortes certificadas pela regra LTT original. Resultado DEV, não TEST.",
+    "description": "Projeto de código aberto para verificar se afirmações em respostas de IA são sustentadas pelas fontes citadas. A decisão final cabe a um Judge determinístico, com regras versionadas e trilha de evidências.",
     "link": "news/ayorai-attractor-v0-7-0.html",
     "repo": "https://github.com/Ayorinha/ayorai-opensearch",
     "tags": [
@@ -18,12 +18,12 @@
     "version": "0.7.0",
     "created_at": "2026-09",
     "image": "assets/ayorai-attractor-banner.jpg",
-    "tier": "01 · PROJETO PRINCIPAL · VERIFICAÇÃO",
+    "tier": "01 · VERIFICAÇÃO DE AFIRMAÇÕES",
     "featured": true,
     "pdf": "https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf",
     "principal": true,
-    "description_en": "Open-source project that checks, claim by claim, whether AI answers are supported by their cited sources. Final decisions are made by a deterministic Judge, with versioned rules and an evidence trail. In release v0.7.0, FactCG achieved 74.68% cross-fitted balanced accuracy on LLM-AggreFact DEV-A (macro-average across datasets); the report also records ECE 0.0054 and 0/11 cohorts certified under the original LTT rule. DEV result, not TEST.",
-    "tier_en": "01 · MAIN PROJECT · VERIFICATION",
+    "description_en": "Open-source project that checks whether claims in AI answers are supported by cited sources. Final decisions are made by a deterministic Judge, with versioned rules and an evidence trail.",
+    "tier_en": "01 · CLAIM VERIFICATION",
     "tags_en": [
       "AI Safety",
       "Claim Verification",
@@ -31,7 +31,9 @@
       "AI Auditing",
       "Provenance",
       "Open Source"
-    ]
+    ],
+    "description_es": "Proyecto de código abierto que verifica si las afirmaciones en respuestas de IA están respaldadas por las fuentes citadas. La decisión final corresponde a un Judge determinista, con reglas versionadas y trazabilidad de evidencias.",
+    "tier_es": "01 · VERIFICACIÓN DE AFIRMACIONES"
   },
   {
     "id": 2,
