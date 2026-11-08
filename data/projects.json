@@ -3,7 +3,7 @@
     "id": 0,
     "category": "projeto",
     "title": "AYORAI ATTRACTOR",
-    "description": "Projeto de código aberto para verificar afirmações em respostas de IA contra evidências associadas. Um Judge determinístico aplica regras versionadas e registra a relação entre afirmações, trechos e fontes. Release v0.7.0 publicada em 07/11/2026.",
+    "description": "Projeto open source de verificação de afirmações em respostas de IA, com evidências rastreáveis e decisão por Judge determinístico. Calibration V2 (LLM-AggreFact, DEV-A): BA cross-fitted de 74,68% para FactCG, 72,87% para MiniCheck e 62,57% para mDeBERTa. Métricas de modelos em desenvolvimento, não acurácia global de vereditos.",
     "link": "news/ayorai-attractor.html",
     "repo": "https://github.com/Ayorinha/ayorai-opensearch",
     "tags": [
@@ -22,7 +22,7 @@
     "featured": true,
     "pdf": "https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf",
     "principal": true,
-    "description_en": "Open-source project for checking claims in AI answers against associated evidence. A deterministic Judge applies versioned rules and records the relationship between claims, passages and sources. Release v0.7.0 published on 2026-11-07.",
+    "description_en": "Open-source claim-verification project for AI responses, with traceable evidence and deterministic Judge decisions. Calibration V2 (LLM-AggreFact, DEV-A): cross-fitted BA of 74.68% for FactCG, 72.87% for MiniCheck and 62.57% for mDeBERTa. Development-stage model metrics, not end-to-end verdict accuracy.",
     "tier_en": "01 · CLAIM VERIFICATION",
     "tags_en": [
       "AI Safety",
@@ -32,7 +32,7 @@
       "Provenance",
       "Open Source"
     ],
-    "description_es": "Proyecto de código abierto para verificar afirmaciones en respuestas de IA frente a las evidencias asociadas. Un Judge determinista aplica reglas versionadas y registra la relación entre afirmaciones, fragmentos y fuentes. Versión v0.7.0 publicada el 07/11/2026.",
+    "description_es": "Proyecto de código abierto para verificar afirmaciones en respuestas de IA, con evidencias trazables y decisiones de un Judge determinista. Calibration V2 (LLM-AggreFact, DEV-A): BA cross-fitted de 74,68% para FactCG, 72,87% para MiniCheck y 62,57% para mDeBERTa. Métricas de modelos en desarrollo, no exactitud global de veredictos.",
     "tier_es": "01 · VERIFICACIÓN DE AFIRMACIONES",
     "release_date": "2026-11-07",
     "version_doi": "10.5281/zenodo.24045951",
