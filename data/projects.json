@@ -3,8 +3,8 @@
     "id": 0,
     "category": "projeto",
     "title": "AYORAI ATTRACTOR",
-    "description": "Projeto principal. Motor de código aberto que verifica, afirmação por afirmação, se as respostas de IA são sustentadas pelas fontes citadas. A decisão final é de um Judge determinístico com regras versionadas e reproduzíveis, e cada veredito gera uma trilha de prova auditável.",
-    "link": "news/ayorai-attractor.html",
+    "description": "Projeto de código aberto para verificar se afirmações em respostas de IA são sustentadas pelas fontes citadas. A decisão final cabe a um Judge determinístico, com regras versionadas e trilha de evidências.",
+    "link": "news/ayorai-attractor-v0-7-0.html",
     "repo": "https://github.com/Ayorinha/ayorai-opensearch",
     "tags": [
       "AI Safety",
@@ -15,15 +15,15 @@
       "Open Source"
     ],
     "status": "em desenvolvimento",
-    "version": "0.5.0",
+    "version": "0.7.0",
     "created_at": "2026-09",
     "image": "assets/ayorai-attractor-banner.jpg",
-    "tier": "01 · PROJETO PRINCIPAL · VERIFICAÇÃO",
+    "tier": "01 · VERIFICAÇÃO DE AFIRMAÇÕES",
     "featured": true,
     "pdf": "https://github.com/Ayorinha/ayorai-opensearch/blob/main/docs/institutional/AYORAI-ATTRACTOR-Documento-Tecnico-v1.1.pdf",
     "principal": true,
-    "description_en": "Main project. Open-source engine that checks, claim by claim, whether AI answers are supported by the sources they cite. The final decision comes from a deterministic Judge with versioned, reproducible rules, and every verdict produces an auditable evidence trail.",
-    "tier_en": "01 · MAIN PROJECT · VERIFICATION",
+    "description_en": "Open-source project that checks whether claims in AI answers are supported by cited sources. Final decisions are made by a deterministic Judge, with versioned rules and an evidence trail.",
+    "tier_en": "01 · CLAIM VERIFICATION",
     "tags_en": [
       "AI Safety",
       "Claim Verification",
@@ -31,7 +31,9 @@
       "AI Auditing",
       "Provenance",
       "Open Source"
-    ]
+    ],
+    "description_es": "Proyecto de código abierto que verifica si las afirmaciones en respuestas de IA están respaldadas por las fuentes citadas. La decisión final corresponde a un Judge determinista, con reglas versionadas y trazabilidad de evidencias.",
+    "tier_es": "01 · VERIFICACIÓN DE AFIRMACIONES"
   },
   {
     "id": 2,
