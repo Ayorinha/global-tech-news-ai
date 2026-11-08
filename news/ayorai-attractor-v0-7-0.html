@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>AYORAI ATTRACTOR v0.7.0 · Resultados DEV no LLM-AggreFact</title>
-<meta name="description" content="Resultados DEV-A do AYORAI ATTRACTOR v0.7.0 no LLM-AggreFact: 74,68% de acurácia balanceada cross-fitted do FactCG (média macro por dataset), ECE 0,0054 em 15 bins e 0/11 coortes certificadas pela regra LTT original.">
+<title>AYORAI ATTRACTOR v0.7.0 · Resultados da avaliação DEV no LLM-AggreFact</title>
+<meta name="description" content="Resultados da avaliação DEV-A do AYORAI ATTRACTOR v0.7.0 no LLM-AggreFact: métricas de classificação e calibração do FactCG, além do resultado da regra LTT original em DEV-B.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AYORAI ATTRACTOR v0.7.0: resultados DEV de calibração no LLM-AggreFact">
-<meta property="og:description" content="Resultados DEV-A do LLM-AggreFact; não representam avaliação TEST, ranking ou validação em português.">
+<meta property="og:title" content="AYORAI ATTRACTOR v0.7.0: resultados da avaliação DEV no LLM-AggreFact">
+<meta property="og:description" content="Resultados restritos às partições DEV do LLM-AggreFact; não representam avaliação TEST, ranking ou validação em português.">
 <meta property="og:image" content="https://ayorinha.github.io/global-tech-news-ai/assets/ayorai-attractor-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="pt-BR" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor-v0-7-0.html?lang=pt">
-<link rel="alternate" hreflang="en" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor-v0-7-0.html?lang=en">
+<link rel="alternate" hreflang="en" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor-v0-7-0.html?lang=en">\n<link rel="alternate" hreflang="es" href="https://ayorinha.github.io/global-tech-news-ai/news/ayorai-attractor-v0-7-0.html?lang=es">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <style>
 :root{--bg:#0b1829;--card:#0e1f33;--card2:#132840;--line:rgba(120,170,210,.2);--cyan:#00d4ff;--green:#00e676;--amber:#ffd54f;--text:#eef6ff;--muted:#9fb3c8}
@@ -58,7 +58,7 @@ li{margin-bottom:6px}
 .lang button{min-width:40px;height:36px;border:0;background:transparent;color:var(--muted);font-weight:800;cursor:pointer}
 .lang button.on{background:rgba(0,212,255,.14);color:var(--cyan)}
 article[lang]{display:none}
-html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"],html[data-l="en"] article[lang="en"]{display:block}
+html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"],html[data-l="es"] article[lang="es"],html[data-l="en"] article[lang="en"]{display:block}
 .note{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);margin-top:38px;padding-top:16px}
 @media(max-width:640px){.stats{grid-template-columns:1fr 1fr}.cta{grid-template-columns:1fr}.lead{font-size:1rem}}
 .table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:.9rem}
@@ -71,7 +71,7 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
 <body>
 <header class="top">
   <a class="brand" href="../index.html">Ayorai<span>Tech</span></a>
-  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-en="← News">← Notícias</a></div>
+  <div class="right"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="pt">PT</button><button type="button" data-l="es">ES</button><button type="button" data-l="en">EN</button></div><a class="back" href="../index.html" data-pt="← Notícias" data-es="← Noticias" data-en="← News">← Notícias</a></div>
 </header>
 <div class="hero"><img src="../assets/ayorai-attractor-banner.jpg" alt="AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI" width="1600" height="400"></div>
 <main>
@@ -81,7 +81,7 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
       <span class="badge">Divulgação técnica · projeto do próprio autor</span>
       <span class="badge dev">Release v0.7.0 · DOI 10.5281/zenodo.24045951</span>
     </div>
-    <h1>AYORAI ATTRACTOR v0.7.0: resultados DEV de calibração no LLM-AggreFact, com calibração pré-registrada</h1>
+    <h1>AYORAI ATTRACTOR v0.7.0: resultados da avaliação DEV no LLM-AggreFact, com calibração pré-registrada</h1>
     <p class="lead">O relatório da release v0.7.0 documenta a avaliação de três verificadores na partição DEV do LLM-AggreFact. Em DEV-A, o FactCG obteve 74,68% de acurácia balanceada cross-fitted (média macro por dataset). O ECE foi 0,0054 em 15 bins. Em DEV-B, nenhuma coorte foi certificada pela regra LTT originalmente registrada (0/11).</p>
     <div class="meta">Por Anderson Leon Ayora · 7 de novembro de 2026 · Release v0.7.0 · Código sob licença Apache-2.0 · DOI 10.5281/zenodo.24045951</div>
 
@@ -93,7 +93,7 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
     </div>
 
     <h2>O que foi medido</h2>
-    <p>O LLM-AggreFact reúne 11 conjuntos de dados para avaliação de verificação factual. A execução cobriu os 30.420 casos da partição DEV, em CPU, com versões de modelos e dataset fixadas por revisão e hash. O procedimento de seleção, calibração e teste estatístico foi documentado no pré-registro antes da execução.</p>
+    <p>O LLM-AggreFact reúne 11 conjuntos de dados para avaliação de verificação factual. A execução cobriu os 30.420 casos da partição DEV em CPU (fp32), com revisões de modelos e dataset fixadas e hashes registrados. O procedimento de seleção, calibração e teste estatístico foi documentado no pré-registro antes da execução.</p>
     <p>O DEV foi dividido em duas metades fixas. Na primeira (DEV-A), um único modelo foi escolhido pela regra pré-registrada e as probabilidades foram calibradas com Venn-Abers (IVAP). A segunda (DEV-B) foi reservada para a certificação estatística.</p>
 
     <h2>Resultado</h2>
@@ -105,11 +105,11 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
         <tr><td>mDeBERTa</td><td class="n">62,57%</td><td class="n">0,694</td></tr>
       </tbody>
     </table>
-    <p>FactCG e MiniCheck foram avaliados com os respectivos protocolos oficiais de referência. mDeBERTa utilizou um protocolo próprio do AYORAI, descrito no relatório. A métrica ECE resume a diferença média entre confiança prevista e frequência observada em 15 bins; não significa que cada previsão de 90% corresponda individualmente a 90% de acerto. Por dataset, a BA do FactCG em DEV-A variou de 59,51% (ExpertQA) a 89,53% (Reveal).</p>
+    <p>FactCG e MiniCheck foram avaliados com os respectivos protocolos oficiais de referência. mDeBERTa utilizou um protocolo próprio do AYORAI, descrito no relatório. A ECE é a média ponderada das diferenças absolutas entre confiança prevista e frequência observada nos 15 bins; não significa que cada previsão de 90% corresponda individualmente a 90% de acerto. Por dataset, a BA do FactCG em DEV-A variou de 59,51% (ExpertQA) a 89,53% (Reveal).</p>
 
     <h2>O que não foi alcançado, e por quê</h2>
     <p>A terceira camada do método é a certificação seletiva (Learn then Test): em cada coorte, garantir estatisticamente que o sistema acerta pelo menos 90% das vezes em que decide responder, abstendo-se no resto. <strong>Nenhuma das 11 coortes foi certificada pela regra registrada.</strong></p>
-    <p>O relatório identifica uma falha de desenho e operacionalização da regra registrada. Em todas as coortes, o primeiro limiar considerado (0,99) tinha menos de 25 respostas aceitas; por isso, nenhum limiar foi efetivamente testado e a sequência foi interrompida. Assim, 0/11 significa que nenhuma coorte recebeu certificação pela regra original — não demonstra, por si só, que o modelo tenha acurácia inferior a 90%. Uma eventual emenda deve ser identificada como posterior à observação de DEV-B; ela não altera retroativamente este resultado. A avaliação confirmatória permanece pendente para dados TEST ainda não vistos.</p>
+    <p>O relatório identifica uma falha de desenho e operacionalização na regra registrada. Em todas as coortes, o primeiro limiar considerado (0,99) tinha menos de 25 respostas aceitas; por isso, nenhum limiar foi efetivamente testado e a sequência foi interrompida. Assim, 0/11 significa que nenhuma coorte recebeu certificação pela regra original — não demonstra, por si só, que o modelo tenha acurácia inferior a 90%. Uma eventual emenda deve ser identificada como posterior à observação de DEV-B; ela não altera retroativamente este resultado. A avaliação confirmatória permanece pendente para dados TEST ainda não vistos.</p>
 
     <div class="box">
       <strong>Créditos</strong>
@@ -136,7 +136,61 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
     </div>
     <p>Leia também: <a href="ayorai-attractor.html">documento técnico v1.1 do AYORAI ATTRACTOR</a>.</p>
 
-    <p class="note">Divulgação técnica escrita pelo autor do projeto. Os números e procedimentos resumidos aqui seguem o relatório público da release v0.7.0 (7 de novembro de 2026); em caso de divergência, consulte o relatório e os arquivos de proveniência no repositório.</p>
+    <p class="note">Relatório elaborado pelo responsável pelo projeto. Os números e procedimentos resumidos seguem o relatório público da release v0.7.0 (7 de novembro de 2026). Em caso de divergência, prevalecem o relatório completo, os artefatos agregados e os arquivos de proveniência do repositório.</p>
+  </article>
+  <article lang="es">
+    <div class="badges">
+      <span class="badge pin">Informe técnico</span>
+      <span class="badge">Evaluación experimental · partición DEV</span>
+      <span class="badge dev">Release v0.7.0 · DOI 10.5281/zenodo.24045951</span>
+    </div>
+    <h1>AYORAI ATTRACTOR v0.7.0: resultados de la evaluación DEV en LLM-AggreFact</h1>
+    <p class="lead">El informe de la versión v0.7.0 documenta la evaluación de tres verificadores en la partición DEV de LLM-AggreFact. En DEV-A, FactCG obtuvo un 74,68% de exactitud balanceada cross-fitted (promedio macro por conjunto de datos). El ECE fue 0,0054 en 15 intervalos. En DEV-B, ninguna cohorte obtuvo certificación según la regla LTT registrada originalmente (0/11).</p>
+    <div class="meta">Por Anderson Leon Ayora · 7 de noviembre de 2026 · Release v0.7.0 · Código bajo licencia Apache-2.0 · DOI 10.5281/zenodo.24045951</div>
+    <div class="stats">
+      <div class="stat"><b>74,7%</b><span>exactitud balanceada cross-fitted en DEV-A (promedio por conjunto de datos)</span></div>
+      <div class="stat"><b>30.420</b><span>casos en la partición DEV, distribuidos en 11 cohortes</span></div>
+      <div class="stat"><b>0,0054</b><span>ECE en 15 intervalos, calculado en DEV-A</span></div>
+      <div class="stat"><b>0/11</b><span>cohortes certificadas según la regla registrada (véase abajo)</span></div>
+    </div>
+    <h2>Qué se midió</h2>
+    <p>LLM-AggreFact reúne 11 conjuntos de datos para evaluar la verificación factual. La ejecución cubrió los 30.420 casos de la partición DEV en CPU (fp32), con revisiones de modelos y dataset fijadas y hashes registrados. Los procedimientos de selección, calibración y prueba estadística se documentaron en el preregistro antes de la ejecución.</p>
+    <p>DEV se dividió en dos mitades fijas. En la primera (DEV-A), se seleccionó un único modelo según la regla preregistrada y sus probabilidades se calibraron con Venn-Abers (IVAP). La segunda (DEV-B) se reservó para la certificación estadística.</p>
+    <h2>Resultados</h2>
+    <table class="table">
+      <thead><tr><th>Modelo</th><th>Exactitud balanceada (DEV-A)</th><th>AUROC</th></tr></thead>
+      <tbody>
+        <tr class="sel"><td>FactCG (seleccionado)</td><td class="n">74,68%</td><td class="n">0,865</td></tr>
+        <tr><td>MiniCheck</td><td class="n">72,87%</td><td class="n">0,822</td></tr>
+        <tr><td>mDeBERTa</td><td class="n">62,57%</td><td class="n">0,694</td></tr>
+      </tbody>
+    </table>
+    <p>FactCG y MiniCheck se evaluaron con sus respectivos protocolos oficiales de referencia. mDeBERTa utilizó un protocolo propio de AYORAI, descrito en el informe. El ECE es el promedio ponderado de las diferencias absolutas entre la confianza prevista y la frecuencia observada en los 15 intervalos; no significa que cada predicción con un 90% de confianza corresponda individualmente a un 90% de aciertos. La exactitud balanceada de FactCG por conjunto de datos en DEV-A osciló entre el 59,51% (ExpertQA) y el 89,53% (Reveal).</p>
+    <h2>Qué no se logró y por qué</h2>
+    <p>La tercera capa del método es la certificación selectiva (Learn then Test): garantizar estadísticamente, en cada cohorte, que el sistema acierta al menos el 90% de las veces que decide responder y se abstiene en los demás casos. <strong>Ninguna de las 11 cohortes obtuvo certificación según la regla registrada.</strong></p>
+    <p>El informe identifica un problema de diseño y operacionalización en la regla registrada. En todas las cohortes, el primer umbral considerado (0,99) tenía menos de 25 respuestas aceptadas; por ello, no se probó efectivamente ningún umbral y la secuencia se interrumpió. Por tanto, 0/11 significa que ninguna cohorte recibió certificación según la regla original; por sí solo, no demuestra que el modelo tenga una exactitud inferior al 90%. Cualquier enmienda debe identificarse como posterior a la observación de DEV-B y no puede modificar retroactivamente este resultado. La evaluación confirmatoria con datos TEST no vistos sigue pendiente.</p>
+    <div class="box">
+      <strong>Créditos y procedencia</strong>
+      <p style="margin:8px 0 0">FactCG, MiniCheck y mDeBERTa son modelos de terceros; las versiones y licencias declaradas utilizadas se identifican en el informe de procedencia. FactCG y MiniCheck siguen sus protocolos oficiales de referencia; mDeBERTa utiliza un protocolo propio de AYORAI. El dataset LLM-AggreFact se utilizó exclusivamente para evaluación de benchmark, de acuerdo con los términos de acceso registrados. AYORAI es responsable del pipeline de evaluación, la calibración, el preregistro y la trazabilidad de procedencia; no es autor de los modelos ni del dataset.</p>
+    </div>
+    <div class="box warn">
+      <strong>Limitaciones de estos resultados</strong>
+      <ul style="margin:8px 0 0">
+        <li>Este es un resultado de la partición DEV; no es la evaluación final (TEST) ni una entrada de ranking.</li>
+        <li>La referencia del 49,2% corresponde a la partición TEST y no es comparable con el resultado DEV-A presentado aquí.</li>
+        <li>No se obtuvo ninguna certificación estadística.</li>
+        <li>El benchmark está en inglés. Todavía no hay resultados en portugués; el protocolo RGC sigue en desarrollo.</li>
+      </ul>
+    </div>
+    <h2>Alcance y estado de la evaluación</h2>
+    <p>Los resultados presentados se refieren exclusivamente a DEV-A y DEV-B. La evaluación confirmatoria en TEST no está incluida en esta release. La curva de cobertura del informe completo es descriptiva y no sustituye ni modifica el resultado de certificación 0/11 obtenido con la regla original.</p>
+    <div class="cta">
+      <a class="primary" href="https://github.com/Ayorinha/ayorai-opensearch/tree/v0.7.0/reports/benchmarks/2026-11-07-dev-calibration-v2" target="_blank" rel="noopener">Informe completo<small>resultados, procedencia y hashes</small></a>
+      <a href="https://github.com/Ayorinha/ayorai-opensearch/releases/tag/v0.7.0" target="_blank" rel="noopener">Release v0.7.0<small>GitHub · Apache-2.0</small></a>
+      <a href="https://doi.org/10.5281/zenodo.24045951" target="_blank" rel="noopener">DOI en Zenodo<small>10.5281/zenodo.24045951</small></a>
+    </div>
+    <p>Véase también: <a href="ayorai-attractor.html">documento técnico v1.1 de AYORAI ATTRACTOR</a>.</p>
+    <p class="note">Informe elaborado por el responsable del proyecto. Las cifras y procedimientos resumidos siguen el informe público de la release v0.7.0 (7 de noviembre de 2026). En caso de discrepancia, prevalecen el informe completo, los artefactos agregados y los archivos de procedencia del repositorio.</p>
   </article>
   <article lang="en">
     <div class="badges">
@@ -168,7 +222,7 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
         <tr><td>mDeBERTa</td><td class="n">62.57%</td><td class="n">0.694</td></tr>
       </tbody>
     </table>
-    <p>FactCG and MiniCheck were evaluated with their respective official reference protocols. mDeBERTa used an AYORAI-specific protocol described in the report. ECE summarizes the average gap between predicted confidence and observed frequency across 15 bins; it does not mean that each 90% prediction individually corresponds to 90% accuracy. FactCG balanced accuracy by dataset in DEV-A ranged from 59.51% (ExpertQA) to 89.53% (Reveal).</p>
+    <p>FactCG and MiniCheck were evaluated with their respective official reference protocols. mDeBERTa used an AYORAI-specific protocol described in the report. ECE is the weighted average of the absolute gaps between predicted confidence and observed frequency across 15 bins; it does not mean that each 90% prediction individually corresponds to 90% accuracy. FactCG balanced accuracy by dataset in DEV-A ranged from 59.51% (ExpertQA) to 89.53% (Reveal).</p>
 
     <h2>What was not achieved, and why</h2>
     <p>The method's third layer is selective certification (Learn then Test): in each cohort, statistically guarantee that the system is right at least 90% of the times it chooses to answer, abstaining otherwise. <strong>None of the 11 cohorts was certified under the registered rule.</strong></p>
@@ -199,22 +253,22 @@ html:not([data-l]) article[lang="pt-BR"],html[data-l="pt"] article[lang="pt-BR"]
     </div>
     <p>See also: <a href="ayorai-attractor.html">AYORAI ATTRACTOR technical document v1.1</a>.</p>
 
-    <p class="note">Technical disclosure written by the project author. The figures and procedures summarized here follow the public v0.7.0 report (November 7, 2026); if anything differs, consult the report and provenance files in the repository.</p>
+    <p class="note">Report prepared by the project maintainer. The figures and procedures summarized here follow the public v0.7.0 report (November 7, 2026). In case of discrepancy, the full report, aggregated artifacts and provenance files in the repository take precedence.</p>
   </article>
 </main>
 <script>
 (function(){
-  var TITLE={pt:"AYORAI ATTRACTOR v0.7.0 · Resultados DEV no LLM-AggreFact",en:"AYORAI ATTRACTOR v0.7.0 · DEV calibration results on LLM-AggreFact"};
-  var ALT={pt:"AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI",en:"AYORAI ATTRACTOR — the dandelion forms the letter I in AYORAI"};
+  var TITLE={pt:"AYORAI ATTRACTOR v0.7.0 · Resultados DEV no LLM-AggreFact",en:"AYORAI ATTRACTOR v0.7.0 · DEV evaluation results on LLM-AggreFact"};
+  var ALT={pt:"AYORAI ATTRACTOR — o dente-de-leão forma a letra I de AYORAI",es:"AYORAI ATTRACTOR — el diente de león forma la letra I de AYORAI",en:"AYORAI ATTRACTOR — the dandelion forms the letter I in AYORAI"};
   function pick(){
     var q=new URLSearchParams(location.search).get("lang");
-    if(q==="pt"||q==="en")return q;
-    try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="en")return s}catch(e){}
+    if(q==="pt"||q==="es"||q==="en")return q;
+    try{var s=localStorage.getItem("ayorai_lang");if(s==="pt"||s==="es"||s==="en")return s}catch(e){}
     var n=(navigator.languages&&navigator.languages[0])||navigator.language||"pt";
-    return /^pt/i.test(n)?"pt":"en";
+    return /^pt/i.test(n)?"pt":/^es/i.test(n)?"es":"en";
   }
   function set(l,save){
-    var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":"en";
+    var r=document.documentElement;r.setAttribute("data-l",l);r.lang=l==="pt"?"pt-BR":l==="es"?"es-ES":"en";
     document.title=TITLE[l];document.querySelector(".hero img").alt=ALT[l];
     var back=document.querySelector(".back");back.textContent=back.getAttribute("data-"+l);
     document.querySelectorAll(".lang button").forEach(function(b){var on=b.getAttribute("data-l")===l;b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});
