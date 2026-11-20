@@ -1,32 +1,94 @@
 {
-  "updated_at": "2026-11-19T18:30:54.763231+00:00",
+  "updated_at": "2026-11-20T01:05:09.984922+00:00",
   "window": "7d",
   "stats": {
     "signals": 200,
-    "new_24h": 58,
-    "categories": 9,
-    "sources": 119
+    "new_24h": 68,
+    "categories": 8,
+    "sources": 118
   },
   "categories": [
     "AI Agents",
     "AI Ecosystem",
     "AI Safety",
-    "Audio & Voice",
     "Data & Research",
     "Developer AI",
     "Enterprise AI",
     "Image AI",
-    "Video AI"
+    "LLMs & Models"
   ],
   "signals": [
     {
-      "title": "Inside GitHub’s new Git storage architecture",
-      "description": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub&#8217;s new Git storage architecture appeared first on The GitHub Blog .",
-      "link": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-      "source": "GitHub Blog",
-      "published": "2026-11-19T18:30:54.762085+00:00",
-      "category": "AI Agents",
+      "title": "Meta’s new Muse Charm device may cost $300",
+      "description": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+      "link": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "source": "TechCrunch",
+      "published": "2026-11-20T01:05:09.981898+00:00",
+      "category": "AI Ecosystem",
       "score": 79.9
+    },
+    {
+      "title": "Want to see your live AI usage on your Mac’s icons? This clever new app lets you",
+      "description": "IconSwapper brings your Mac's app icons to life with real-time data, animations, and playful customizations that make your desktop more fun.",
+      "link": "https://techcrunch.com/2026/11/19/want-to-see-your-live-ai-usage-on-your-macs-icons-this-clever-new-app-lets-you/",
+      "source": "TechCrunch",
+      "published": "2026-11-20T01:05:09.981663+00:00",
+      "category": "AI Ecosystem",
+      "score": 79.9
+    },
+    {
+      "title": "ThreatsDay roundup covers AI model safety gaps, ransomware cases and phishing kits - news.lavx.hu",
+      "description": "ThreatsDay roundup covers AI model safety gaps, ransomware cases and phishing kits &nbsp;&nbsp; news.lavx.hu",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcHhOUkc5cVdLc2tlZU9WMnFoRDlrcmpyb2Z4N2w1QlpfUlRYNjFaelR4VkxnNVltajYtTUowc2R2bEY5c1FvYjhjdWtZY0J0Q3M3aHhDYmh1clc1V2JhVDVsQWFrZHdsTlNySks5ODNpdWR2bk53VDdyaE9wVHNsYm1zMi1ldW9BeWZaOTc2dUZITmZJTW53RDRXQ2V2SlBPV3ZTcTdTUV91ejhZNlVz?oc=5",
+      "source": "news.lavx.hu",
+      "published": "2026-11-19T21:30:57+00:00",
+      "category": "AI Safety",
+      "score": 77.8
+    },
+    {
+      "title": "Mitiga Launches Agentless Security for Enterprise AI Agents - Unite.AI",
+      "description": "Mitiga Launches Agentless Security for Enterprise AI Agents &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOemxsLUNIUWJvTHFtYnI0ZWdQU2VYc2Y5NGdxbXZYajF6OF83SzlFeTBMNlpGLURTWllDRlNRYXlSMzk4NGFkTjd3X20yTG1VYzNJOTdSNU5Pbm9JTWYzZ2lyRWtKaUFpTFRqQ2Rmc2JjRUhfQnZXSE9xcTRTTDNPMlNOSWdfMWhh?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-19T21:13:03+00:00",
+      "category": "AI Agents",
+      "score": 77.6
+    },
+    {
+      "title": "Reply.io Launches an Open-Source AI Agent Harness for Sales Outreach - Unite.AI",
+      "description": "Reply.io Launches an Open-Source AI Agent Harness for Sales Outreach &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14cEFHd1hXWTM4VTBaaDJoeHlvd2F2bjdNNGF6QlEtX2ZwSmFkYlRmVHcza25fdEYyRGFpVDB2eGZjN3BTSlB3eVRhTnRKS1U2cjF3RlFHWDU2SVBqWTEyRWQ4cWpnSEF3RjR5QlR4Y1ZEaFlQTVpKSExjaFoxY1k?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-19T19:59:05+00:00",
+      "category": "AI Agents",
+      "score": 76.8
+    },
+    {
+      "title": "AI model helps improve Alzheimer’s detection, LSUS student finds - KTALnews.com",
+      "description": "AI model helps improve Alzheimer’s detection, LSUS student finds &nbsp;&nbsp; KTALnews.com",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOV0ZKVVZfWG4yRHV0Z21YSWNLcHFMU1dmaUdTNkdHdVRFOEdpU3luc1p4c01BM2F0M3lWazhldXJxYmdNZUQ0Ym9YcDJqVC13S1JxbkZvUGpGS2FyTTgzdDFSLXY1SWZHTVNhWXhNclZ0eDZoSmtoNVdjd2FKY3gzYXJyNGJrZ9IBiwFBVV95cUxPLXhfRWdQS00wNkJOS3hmUUR3SnA1ZTBDZnRLNDRMajJSdHpzbnpjVjc0RXcyT1FUTm1ycTJvZlpUbEJUWmRmQ093bUVlcFZ3TEZ2SmVJV2Vvd3lGTDgzbjAxNTRCc2RnQmhzTThIMFBaQWtnbGJOdlNBT3hSMVpTMHJuS09fRmJrQ0hV?oc=5",
+      "source": "KTALnews.com",
+      "published": "2026-11-19T19:37:53+00:00",
+      "category": "AI Ecosystem",
+      "score": 76.6
+    },
+    {
+      "title": "SSOGEN Releases Version 4.5: Single Sign-On for AI Agents, Customer Identity and VPN-Free Access, Built for the Rise of AI-Driven Attacks - Newswire",
+      "description": "SSOGEN Releases Version 4.5: Single Sign-On for AI Agents, Customer Identity and VPN-Free Access, Built for the Rise of AI-Driven Attacks &nbsp;&nbsp; Newswire",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRWhMMGI5RXo2bDZSWUQ2MllHYXdmblY3M2pOeWQtSmZrdVZBV1c0MDBDR3pJS2R3NUJRQU1SRjJzQ2xIS0p5ZVdTYUZMajQ0aW1IMElNU1FwUzNURHpUY2l5MnVLMGxVT1ZkWmZ5U25EZG9LRXFrNF9yRERGSkJFb0ZfNFpPLXo1R2JkNFVVQmlUcDE1YUNIcnA5Y0tnU2owR0xPUXF2RQ?oc=5",
+      "source": "Newswire",
+      "published": "2026-11-19T19:21:00+00:00",
+      "category": "AI Agents",
+      "score": 76.4
+    },
+    {
+      "title": "ACDSee Launches Photo Studio 27 With Generative AI - Wisevoter",
+      "description": "ACDSee Launches Photo Studio 27 With Generative AI &nbsp;&nbsp; Wisevoter",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT2tRT1cwQUlOZE53MVZWb3dTb2c4X3VJTnVuZ20yZzlJUzk3QzRLY1ItVlY5anI0MnkwbDlUZHN6LXhCZEk5MWR5bHc4QkVfREtVQkZuemJYRzZRZklmR1VNSDVOQ29PbDVsTXN5NEtBZmNOaHlWZDI4TVhrU1NObkdHdGN4Zw?oc=5",
+      "source": "Wisevoter",
+      "published": "2026-11-19T18:07:50+00:00",
+      "category": "AI Ecosystem",
+      "score": 75.7
     },
     {
       "title": "Firecrawl launches Alexandria to connect your AI agents to more than 550 specialized data sources - VentureBeat",
@@ -35,7 +97,25 @@
       "source": "VentureBeat",
       "published": "2026-11-19T15:23:45+00:00",
       "category": "AI Agents",
-      "score": 78.1
+      "score": 73.9
+    },
+    {
+      "title": "California releases next steps on mandatory safety standards and oversight of AI safety framework - Lake County Record-Bee",
+      "description": "California releases next steps on mandatory safety standards and oversight of AI safety framework &nbsp;&nbsp; Lake County Record-Bee",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMXAxSTZCSTFBUVA1NW1MVlNIakRwU3I3djdhYW1EdDRRQjZCSUJucVktNjVLYVM2WGtqRnJZNV9vTVdiREJmREthYmxjc01kNng5RUxSRU9IZ1lfV056aWlwRVN2R2VBcTBZZUt0MmM3aG51NWRBemtfRDVUTkdWT3VJajBMNEpEcFpNN2s2d3JDbGlERElUYzhqQ25xcXRNLVFUWWVqdzFQTmJxOV85VnVOWGJ6U2IwZGZGOWFKMG5pb3RNdzlSNl90MWtILVZ2MXc?oc=5",
+      "source": "Lake County Record-Bee",
+      "published": "2026-11-19T14:27:51+00:00",
+      "category": "AI Safety",
+      "score": 73.4
+    },
+    {
+      "title": "Salt Security Research: 92% of Executives Would Let AI Agents Act Independently, Yet 77% Have Already Seen AI Act Outside Its Intended Behavior - PR Newswire",
+      "description": "Salt Security Research: 92% of Executives Would Let AI Agents Act Independently, Yet 77% Have Already Seen AI Act Outside Its Intended Behavior &nbsp;&nbsp; PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQbzVXX3pkU2xlNFpkV2Y2WjdxOGdqbGJtMEIxWlhaaVVjTG11a2kyRVdnUEUweWkzOTNZdUJCMTFTUUZtdXNwbkl2clFJQUZ1bHpubkhpRHVLX0ZmNDJBWE1QeVZpTkVMRXpwaU5GZ3RaN1FLellnMkRqcVFZVEtESGlDd0J0MWU2cFpwaUlPcGZYUkZJT19YOVhLaTNSRjZ1dGV1RmF6bUZIUjVZclh4SHRqbVhHVjJIWl90QVE0ZDFXZjhMaU5JMDdvdi1VTjRhWjJFY1d5MEdjeUd2NkFVaTBVQVNCUUVUNWptdlVDdThOVDUzbWFPME0xOXNOaHhrdnlpc1JTd3U3YUl5RV9oN1VkRVRzNXVEOGVzZzhxemU?oc=5",
+      "source": "PR Newswire",
+      "published": "2026-11-19T14:00:00+00:00",
+      "category": "AI Agents",
+      "score": 73.1
     },
     {
       "title": "ATS Mako Unleashes 15 Powerful New Features This Thanksgiving, Putting AI Agents, Calling, Video and Employee Management in One Platform - HRTech Series",
@@ -44,7 +124,7 @@
       "source": "HRTech Series",
       "published": "2026-11-19T13:25:58+00:00",
       "category": "AI Agents",
-      "score": 76.8
+      "score": 72.7
     },
     {
       "title": "Alibaba Qwen4-Max Launch: 2.4T Parameters and Malaysia AI Push - KLGadgetGuy",
@@ -53,16 +133,7 @@
       "source": "KLGadgetGuy",
       "published": "2026-11-19T13:23:42+00:00",
       "category": "AI Ecosystem",
-      "score": 76.8
-    },
-    {
-      "title": "ACD Systems Launches ACDSee Photo Studio for Mac 27 Bringing Generative AI and Smarter Organization to macOS - Business Wire",
-      "description": "ACD Systems Launches ACDSee Photo Studio for Mac 27 Bringing Generative AI and Smarter Organization to macOS &nbsp;&nbsp; Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVVlMRUk0cTlBSXd5WXJZdFNPdFVaZ1Q4Zi1LSEVQY3FJdDJDR25aTHZjc3k3LVhfZ1hvRUs3NDJ4QnE0NFg1M0dmME1WOGJIMzFRbVdYWE9SRnRWVG1RcEhrVXdMYzdFLTZPS2xnTklIOHdKUHo0RXlwOENZYW9nekNLdVI0QVFGWGZNWGhZeVFZSDVQbnJ4R0tQOVNvakxmQ29IcGNpLXZqZkdBWVl4Vndkb2NUTWRqamlKTWJuTDg0V1FDcXJnNnh0R0pQb2FQR1JUc2ZhTG9tYURfaHViY2JiOFhzSzlxUnRqNWUxaVpkWU5PLVhRUg?oc=5",
-      "source": "Business Wire",
-      "published": "2026-11-19T13:00:00+00:00",
-      "category": "Enterprise AI",
-      "score": 76.6
+      "score": 72.7
     },
     {
       "title": "Hire your first AI agent: Pertlink releases The Hotel AI Agent Playbook, a free, step-by-step guide for every hotel - Hospitality Net",
@@ -71,7 +142,7 @@
       "source": "Hospitality Net",
       "published": "2026-11-19T11:00:00+00:00",
       "category": "AI Agents",
-      "score": 75.3
+      "score": 71.2
     },
     {
       "title": "Eclipse Foundation launches Eclipse Enclave 1.0, bringing security and choice to autonomous AI coding - GlobeNewswire",
@@ -80,7 +151,34 @@
       "source": "GlobeNewswire",
       "published": "2026-11-19T11:00:00+00:00",
       "category": "AI Agents",
-      "score": 75.3
+      "score": 71.2
+    },
+    {
+      "title": "Google launches new AI model 'Neon' with 99% honesty rate | Neon scored 61 on Analysis Intelligence Index | Inshorts - Inshorts",
+      "description": "Google launches new AI model 'Neon' with 99% honesty rate | Neon scored 61 on Analysis Intelligence Index | Inshorts &nbsp;&nbsp; Inshorts",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPa3A5bENXVFZmdHZ0dGZhZGY5Y25FMDhTSU5pYVJycldvWjhCaDc4OEtSUk5peWxLcFJYZVZPcGFWeDZNLUVQclB5MHhOQ3EtemE1Y3FrTUc4SE1UTU1kRXRCUWsyMmNQcVNmNlQ0R1RZYnFaNkpZX21zMlVpRVh1ZUJwUUVKb3FKTmUwcS1uMHpUbEJ0ZXV1MjY1bkctekYxazVUNW9pTdIBpwFBVV95cUxPa3A5bENXVFZmdHZ0dGZhZGY5Y25FMDhTSU5pYVJycldvWjhCaDc4OEtSUk5peWxLcFJYZVZPcGFWeDZNLUVQclB5MHhOQ3EtemE1Y3FrTUc4SE1UTU1kRXRCUWsyMmNQcVNmNlQ0R1RZYnFaNkpZX21zMlVpRVh1ZUJwUUVKb3FKTmUwcS1uMHpUbEJ0ZXV1MjY1bkctekYxazVUNW9pTQ?oc=5",
+      "source": "Inshorts",
+      "published": "2026-11-19T10:44:40+00:00",
+      "category": "AI Ecosystem",
+      "score": 71.0
+    },
+    {
+      "title": "Google Gemini 4 Neon: Google launches new AI model for coding, research and cyber defence - The Financial Express",
+      "description": "Google Gemini 4 Neon: Google launches new AI model for coding, research and cyber defence &nbsp;&nbsp; The Financial Express",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNX0J2N2FDUWxGSGFydzlrUmZDZ1hWMGtyWWU5Tk1LaV9VOEZTOWRBTzRzbmh5LVBiUGNqelBYcHlyMnhwOVJWbjVyaUFxbzFpZlBmTGc3TVlFYUdtMUIwd0Q2cXlaVGJNN1l5RHREQU1MTEU1cDludjJ0WHVkaEtXeDZtSEFaWVF3UWRFTWFibkk2aVlkb0RQNlFXdmxDSnRQY1pMbW02bG9GZ1djNXJlWklVMlRPU0RQWkxwRjVWYS1UaWtCZUY2VUdzYzN3TUZVcmZzb3dnUljSAd8BQVVfeXFMTlZ5ZFp3cnZwb09LWGVnTGFWWmZ6STl4Y2F6ZG9GZXViZ1RnU2JCSlZWeW1QQU5mb0dCeWowNVpFNks2RjdQZ3hKY2FWa2N2R3RyM0Y1NUNFRWpueGVnUjFGdm5XbzRYVFVkX3hFSUwzWWpMY09BRy1OWG9qNXI3c2p2RkNTdHItbXk5dHd5NmhOZkNTSTRlZ19ySFNMdWtOb1BQMDBBR2d0bV9GYzVOWDQ5dmtOcVRFemE4Vm5lWUJBeHkwbndTUHRUUzB0VXd2RFZ6TUhSemF0YkdEcktsZw?oc=5",
+      "source": "The Financial Express",
+      "published": "2026-11-19T10:14:09+00:00",
+      "category": "Data & Research",
+      "score": 70.7
+    },
+    {
+      "title": "Google debuts Gemini 4 Neon, an AI model aimed at complex tasks for enterprises - The Indian Express",
+      "description": "Google debuts Gemini 4 Neon, an AI model aimed at complex tasks for enterprises &nbsp;&nbsp; The Indian Express",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORW1vUjRFZDBjOTVJZHR6SEp0bk1La3NSU2lkdlFnZlNBQkdTVjc0am5JVU1tM3J4TWk5WFpKWmJmdm02bGZXYW9nZG1GSXoxWnpmYmZhcnNZT0sxVjFhcHE5VWp4VVpzdkFYaGJtXzBrX1g1UmZBRjU1VkFrTmhzbEZxNHRyd1Zqc2x3eURuSnF1S1l6V3BTbGNDMW1qcExsRXhTWWJNN2JZTWVnM0lNOExUYnZrQdIBvAFBVV95cUxPUm80U3dkcHNUWUlNRUxMdEpQTW5tVjYxdVg1cFlXYmhEc0xmTkw0aFcyR1BfeHU4aTlJalA5WmRkbVVmTE53LXc4OEhCbGQ5SFJvQVBaYkMtRlZWNEJzSWlaXzVvVnlYbEVTR21fQkNVRzBZelEtSm1rWUFQS3VsVVBMVjFRWGhlenBhQ2h0NFZXaC1IWTI3SFUzcENPNzJvandwd28yeU5aRFhSVlRVOFhjOHc3aHBDcGtsTg?oc=5",
+      "source": "The Indian Express",
+      "published": "2026-11-19T10:02:51+00:00",
+      "category": "Enterprise AI",
+      "score": 70.6
     },
     {
       "title": "AI Safety Rules Your Company Never Signed May Be Used Against It - Bloomberg Law News",
@@ -89,7 +187,7 @@
       "source": "Bloomberg Law News",
       "published": "2026-11-19T09:30:00+00:00",
       "category": "AI Safety",
-      "score": 74.4
+      "score": 70.3
     },
     {
       "title": "Revenium Launches Sidekick, Putting Real-Time AI Coding - GlobeNewswire",
@@ -98,16 +196,16 @@
       "source": "GlobeNewswire",
       "published": "2026-11-19T09:00:00+00:00",
       "category": "Developer AI",
-      "score": 74.1
+      "score": 69.9
     },
     {
-      "title": "Code Effects Releases Version 7 with Secure AI Agents, Rule Governance, and Auditing for .NET0 - HackerNoon",
-      "description": "Code Effects Releases Version 7 with Secure AI Agents, Rule Governance, and Auditing for .NET0 &nbsp;&nbsp; HackerNoon",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR3Ztbi1Wb3NuYlVPT0RDUGtiVUV0VjVsZlp1cU5wNUhNdGwxalB2YkIwSGxxVHUzc056dUVwWExqMVlrcEJQS1BCU3p0WC1QVzhRMDFkS0VJV0RLR0RjN0QxV1FUQ20wR3kxQ19yTjlQaVNQbmNwSUdSY2dyVWVvUGxzQk1ybVhxVV9kMEtsUjZWN2lnZTBLZGp5WXhrOTNrNFRoTlBDUUpHbFJvbVE1M3lEUlM?oc=5",
-      "source": "HackerNoon",
-      "published": "2026-11-19T06:36:20+00:00",
-      "category": "AI Agents",
-      "score": 72.6
+      "title": "Google Gemini 4 Neon: New AI Model Promises Three Times Faster Performance - The Hans India",
+      "description": "Google Gemini 4 Neon: New AI Model Promises Three Times Faster Performance &nbsp;&nbsp; The Hans India",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRFhFamdLdzhDV0Y3a0hHclNoMzVkWUx0SXhGSEJUZ29kbVRFaGpKTjB6VkplajZvbFZRcVE0UjNneG9QdkZid0ZNWFNPVjJHNEVpWmt6cFM2UzRjOVNWVVgwbW15OWJYVkdUWmE3cXRsWVdvbVNZMVA5SnUzNjA0LVk4LXlKQS1ObVZJOXdJYVEzaFFqcVpMcFJYOFRfdTV1U3hUM3FxMnA1bkVvakFYRHJ2c0hNd9IBuwFBVV95cUxNeUR3UXN6dG9vNGsxOFUwOGNmU2N5X0lxUldTZlpIb2pOWmhpcGVpSFg1dGtNSGxoZWxPTERmR2RQcHhERWJTUV9CQWh4QV9VNVJnbWEtaHZkUlVsbWtDTDdEdzktdzB1Mk5Ua1J2RmVUaVNEM3lhTDl5czMtOHJ2TTFfaTVvM0liY05JaXA0ODdHeUo5UjBTUzhPcU4wcXBjb2VmTVkzU2RqUmp2Q3lRc0dGdEoyQzUyMHRz?oc=5",
+      "source": "The Hans India",
+      "published": "2026-11-19T07:18:19+00:00",
+      "category": "AI Ecosystem",
+      "score": 68.9
     },
     {
       "title": "Microsoft launches new AI models for coding and cybersecurity to challenge OpenAI and Anthropic: What sof - The Times of India",
@@ -116,7 +214,7 @@
       "source": "The Times of India",
       "published": "2026-11-19T06:36:00+00:00",
       "category": "Developer AI",
-      "score": 72.6
+      "score": 68.4
     },
     {
       "title": "Linq Raises $90 Million in New Funding Led by Andreessen Horowitz to Build the Infrastructure Platform for AI Agents - PR Newswire",
@@ -125,7 +223,7 @@
       "source": "PR Newswire",
       "published": "2026-11-19T03:45:00+00:00",
       "category": "AI Agents",
-      "score": 70.8
+      "score": 66.7
     },
     {
       "title": "Reva.AI launches security tool for coding agents - SecurityBrief Asia",
@@ -134,16 +232,16 @@
       "source": "SecurityBrief Asia",
       "published": "2026-11-19T03:00:00+00:00",
       "category": "AI Agents",
-      "score": 70.3
+      "score": 66.2
     },
     {
       "title": "Kookmin University, United Nations University launch research hub on AI-driven digital governance - The Korea Times",
       "description": "Kookmin University, United Nations University launch research hub on AI-driven digital governance &nbsp;&nbsp; The Korea Times",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN3lZcURxeU9wTENfMFBXa25CeEk0TEo0UUs0OWRDWlZjMkpMSnoxbkdWQmhHaXB5dmY3Ukk5WnZLbENIMlhwWWZsbmwwckZnQ3dYS3p0V1FDaW81c3VNcVhwdm4yaWVTZ0J6dDVLZTA0RzEtR1MxaXVzYWtReGd0NFh1TklVM2taYTFFUDd3NEx6a0VBX1hIeWItT21CSmZVd1ItLVNPOU9iemc5dVBHLUdYbnZpMzllc3FpRG83a0M2VGF5cy05bHQxRlVhQkdFQl9pOGR4dndNeEVPcGVMZzZ1R2VQcWY2OXJv0gHwAUFVX3lxTFBjVjdBSmxlV0hubGNIdndMaUIzOTJ1dEwwNXBKcEp2LUlJT0tXN2FvMnpXNE9pV2dMNUotR3I3ejJndkxVR2NYYTBzbGJsbDl3TDhEQ2plNjEwU3JoRDBkcnRDRHlyMTFlaGpVdllHdXVqYVZ3UXpheU1lN0QwWjI2ZDVlXzBUZXNPNURqSk1WQkhwV0xORjN2N2dlZEJCa2RKc1dBTkd2RjlnNm5oSkoxdlV4SlBPSmZvUEtHN05jRkhIZF9CMEhUQURaV0hFOHBmNHdEOU9NRjRSZE9qT0laUzVrVnVYVTd6dFkzc1NZaw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQY1Y3QUpsZVdIbmxjSHZ3TGlCMzkydXRMMDVwSnBKdi1JSU9LVzdhbzJ6VzRPaVdnTDVKLUdyN3oyZ3ZMVUdjWGEwc2xibGw5d0w4RENqZTYxMFNyaEQwZHJ0Q0R5cjExZWhqVXZZR3V1amFWd1F6YXlNZTdEMFoyNmQ1ZV8wVGVzTzVEakpNVkJIcFdMTkYzdjdnZWRCQmtkSnNXQU5HdkY5ZzZuaEpKMXZVeEpQT0pmb1BLRzdOY0ZISGRfQjBIVEFEWldIRThwZjR3RDlPTUY0UmRPak9JWlM1a1Z1WFU3enRZM3NTWWvSAfABQVVfeXFMUGNWN0FKbGVXSG5sY0h2d0xpQjM5MnV0TDA1cEpwSnYtSUlPS1c3YW8yelc0T2lXZ0w1Si1Hcjd6Mmd2TFVHY1hhMHNsYmxsOXdMOERDamU2MTBTcmhEMGRydENEeXIxMWVoalV2WUd1dWphVndRemF5TWU3RDBaMjZkNWVfMFRlc081RGpKTVZCSHBXTE5GM3Y3Z2VkQkJrZEpzV0FOR3ZGOWc2bmhKSjF2VXhKUE9KZm9QS0c3TmNGSEhkX0IwSFRBRFpXSEU4cGY0d0Q5T01GNFJkT2pPSVpTNWtWdVhVN3p0WTNzU1lr?oc=5",
       "source": "The Korea Times",
       "published": "2026-11-19T02:07:04+00:00",
       "category": "Data & Research",
-      "score": 69.8
+      "score": 65.6
     },
     {
       "title": "From cows to pasture, Halter’s new AI tool connects the dots - Farmers Weekly",
@@ -152,7 +250,16 @@
       "source": "Farmers Weekly",
       "published": "2026-11-19T01:00:56+00:00",
       "category": "AI Ecosystem",
-      "score": 69.1
+      "score": 65.0
+    },
+    {
+      "title": "Code Effects Releases Version 7 with Secure AI Agents, Rule Governance, and Auditing for .NET - GlobeNewswire",
+      "description": "Code Effects Releases Version 7 with Secure AI Agents, Rule Governance, and Auditing for .NET &nbsp;&nbsp; GlobeNewswire",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQM2RNbGdKMHNLaUlvQ3BGS3gzN0NjS0JHdkxNeW5ZMkpoQmtIYzRNdDhOLWR0cGRkS3MwU0RTTDNOTzFFNm1UOUh0WTBSZndRR2xJclM3SGY5U3plMWNGdm9nRXdMWndVSG4wTGRwYU9ZOFlNR2VxM0wxTlRqXzBPSUFoczVrY182MzlldGdpN1pobTU5aktqenRaTHJydVN5SUVabWFia0FUMkU5dG1JZG5HMHItejQwWHBYQkpwYWpwcmZaZEdfNEdTTzJITUZxNzhPY2tld0lud0Vpb00zaDhnaFU1SVBUbFRmTWoxMGZTelo5?oc=5",
+      "source": "GlobeNewswire",
+      "published": "2026-11-18T23:53:55+00:00",
+      "category": "AI Agents",
+      "score": 64.3
     },
     {
       "title": "Chargebee Launches AI Agents That Help Audit Contracts and Collect Cash - PYMNTS.com",
@@ -161,7 +268,7 @@
       "source": "PYMNTS.com",
       "published": "2026-11-18T22:04:39+00:00",
       "category": "AI Agents",
-      "score": 67.2
+      "score": 63.1
     },
     {
       "title": "OWASP GenAI Releases Data Security Guidance As AI Agents Create New Paths To Sensitive Information - LinkedIn",
@@ -170,7 +277,7 @@
       "source": "LinkedIn",
       "published": "2026-11-18T22:00:12+00:00",
       "category": "AI Agents",
-      "score": 67.2
+      "score": 63.1
     },
     {
       "title": "Proof Launches ChatGPT Integration to Solve the AI Agent Trust Gap - FF News",
@@ -179,105 +286,15 @@
       "source": "FF News",
       "published": "2026-11-18T21:52:36+00:00",
       "category": "AI Agents",
-      "score": 67.1
-    },
-    {
-      "title": "California Strengthens Nation-Leading AI Safety Standards - - Random Lengths News",
-      "description": "California Strengthens Nation-Leading AI Safety Standards - &nbsp;&nbsp; Random Lengths News",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcU40SnoyZU9GQTFScXI1REZqTHR3RFlkM3JmOGpFNEZ4V3hYRi1adGxWY2F0ZE1CelphcDltTWJoR1ZYaDNUYzN6Vk85bTBubnB0MWk3a2VyR0pVcWpqcWZDZlhndVFsQnBQU2xyUEhpQnB5dFZLMmplcXlwdlE0THgzVnNnUQ?oc=5",
-      "source": "Random Lengths News",
-      "published": "2026-11-18T20:44:06+00:00",
-      "category": "AI Safety",
-      "score": 66.4
-    },
-    {
-      "title": "Microsoft Introduces New Models to Cut the Cost of AI Coding and Cybersecurity - PYMNTS.com",
-      "description": "Microsoft Introduces New Models to Cut the Cost of AI Coding and Cybersecurity &nbsp;&nbsp; PYMNTS.com",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNb2djcnV3b3Z1NEU2UkdrN2dkZmc4RmVsMGgxMkJTOG9kMy13cUR4UzlHSzUwVnRRdWVkWm5XVFpIdXQwb3FaUkdjb3lsWU40RHc4YVNIZkVFR01UVG9NOVlDRFFmbzBPc0ZvbDlXWHhHQUxVU3M4YXhEdjd6MXdwbG1ld0wzSjZsS3Z0SDBGVzNSN0VGaTN2SHNwYm1zV3JQU185N0hKSHJlS3dZY1Z6UGlOdDRiNUVXY0pTS2hYRmMtV0VnWm8wNEdhdEFtb2ZJMUE?oc=5",
-      "source": "PYMNTS.com",
-      "published": "2026-11-18T20:43:29+00:00",
-      "category": "Developer AI",
-      "score": 66.4
-    },
-    {
-      "title": "Media Challengers and Analytic Route Release Joint 2026 AI Search & Attribution Framework to Help Marketers Track User - The Detroit News",
-      "description": "Media Challengers and Analytic Route Release Joint 2026 AI Search & Attribution Framework to Help Marketers Track User &nbsp;&nbsp; The Detroit News",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOMXJDVnQzS3JlRUR4TWcwQ0dUNEI3TU9Rd0ZWVWgyaWQ4c1JoY0V5U2pYMGt2RGh3OElMby1ReldXQmhfMnN0S0NVX1Q1aWxBY3BqdU5rRFBHTXh4bUJDZklJVnBaTk9QNzFOd2lNeEJidDU3Qjc2a2xsWDJ4MHVhQnlUU1J0UUtHS0ZzTFlKZjV5OHd3bWZzY0FfYV9RS3dCU01xLTAwcF9PelRUWHB5ZkZrRzgyd3EtckJ6MFZzemlPSTZaNVBET2NuNEQ2Z3hkdlgtbzVXaU9tdUFTQ1FlekFIR1Z1RnFHY1lWaEx4MmJhemw0bzJ3MFZyTDVvcWI1UlE?oc=5",
-      "source": "The Detroit News",
-      "published": "2026-11-18T19:17:19+00:00",
-      "category": "Data & Research",
-      "score": 65.5
-    },
-    {
-      "title": "Genie 4 is now available",
-      "description": "",
-      "link": "https://deepmind.google/blog/genie-4-is-now-available/",
-      "source": "Google DeepMind",
-      "published": "2026-11-18T18:13:42+00:00",
-      "category": "AI Ecosystem",
-      "score": 64.8
-    },
-    {
-      "title": "European game worker unions release manifesto on genAI & its harm - Shacknews",
-      "description": "European game worker unions release manifesto on genAI & its harm &nbsp;&nbsp; Shacknews",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcVNDV0NmanZuM2YybFV6ZjEtb1JzT3BpZnhoOXJ2NEt1WVAzcWZuZzJBUDBsSm5sUmZMejhIZkc2R3BGOWo5ckVINFMyVWJuYlpxZy1ERUpMX244YjlKbS1XSk1qSDlwcWhheWpFcUgwMDZ2XzBhSmp2cGZZRkRsNklONm9UeUE?oc=5",
-      "source": "Shacknews",
-      "published": "2026-11-18T17:23:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 64.3
-    },
-    {
-      "title": "Introducing Easy Lens CLI: Create Snapchat Lenses with the AI Coding Assistant You Already Use - Snap Newsroom",
-      "description": "Introducing Easy Lens CLI: Create Snapchat Lenses with the AI Coding Assistant You Already Use &nbsp;&nbsp; Snap Newsroom",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VS09EanA4eVRtZ1BqOG5NMVpqTGFNR2xUc2Z6VFJISkpGWnFqMmJuU0ZrdjVaYVpFX0lQZzZHdGtDdkFNQ2FEblNhbFNxMUs2WU41dk5KaE9IS1VUcjBSVw?oc=5",
-      "source": "Snap Newsroom",
-      "published": "2026-11-18T17:13:08+00:00",
-      "category": "Developer AI",
-      "score": 64.2
-    },
-    {
-      "title": "Oleria Extends Identity Governance to AI Agents, Tracing Every Agent Through the People and Credentials It Acts For - ACCESS Newswire",
-      "description": "Oleria Extends Identity Governance to AI Agents, Tracing Every Agent Through the People and Credentials It Acts For &nbsp;&nbsp; ACCESS Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZkQ5UWZQa0V4OTR3THUyTm5pdXlkMVBieE1lR2V5ekpYRmszWDRZOFZSNVhJV0JFaWQ5Z2dvc01NdzhFY2lUTDJDSmpza1BXemJxclhpdFlGb1huVVBrb2tUbWx3b0haSXFmNTU4YzRkUFpucG42d3E0RjBlczFjMzVfaFhKWkdqTGFESDNTUTF6dkZ6ZXRYTWFpbFZrbEhMVFNYZ2NETWcwTThVVUhZSEhkTU9rSWhieHFQc2tzX1p2dk9wRkR3RGNMU01sU1JoRHlYUjgxQjFWaW1JamlHUkdSR3U?oc=5",
-      "source": "ACCESS Newswire",
-      "published": "2026-11-18T17:00:00+00:00",
-      "category": "AI Agents",
-      "score": 64.1
-    },
-    {
-      "title": "Governor Newsom’s nation-leading AI safety framework is getting even stronger as California releases next steps on mandatory safety standards and oversight - California State Portal | CA.gov",
-      "description": "Governor Newsom’s nation-leading AI safety framework is getting even stronger as California releases next steps on mandatory safety standards and oversight &nbsp;&nbsp; California State Portal | CA.gov",
-      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOSTExb21JRlBpZTFvNUlRZFhncGQzNzdSYUR5WWdpSmFzbTlYMnp3M25qVGhjUk1nTXJJdThUMmVpMmpLVWdmZ296R2xxckVlYTJoRjY5ZHBRUXNybGxaN2xTWVA4X2FIZGh4cTB6NTlieHBMb3gwbGh6b2xLbHRmamJZcnlDZmxsRGgtcDB0dzJpRGRYdXVRVGhnSzN5Rlg1TU5FRjJFbTJtbTZMTFlpSXE5MjVOSkJhSXE3MHVaOTFtMFV1ZVNaT2hHSjg1ZlIzbF9hbDNlYkpFSDZVOTdnY0pVeXF1OTdRWFItdGdSTUJKTTVudjVRcGtCakxraFJxbWFWRGlqZi0tbjg4TnZmU0EzX0pZQTc1?oc=5",
-      "source": "California State Portal | CA.gov",
-      "published": "2026-11-18T16:20:44+00:00",
-      "category": "AI Safety",
-      "score": 63.6
-    },
-    {
-      "title": "Samsara debuts Agent Studio and AI safety, maintenance and compliance upgrades - Fleet World",
-      "description": "Samsara debuts Agent Studio and AI safety, maintenance and compliance upgrades &nbsp;&nbsp; Fleet World",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM2R0cnk5dHltTXNGN3R3dFdnMEFubUp6WXJlLUpVNUJidWZFejZVbWZBUjlQRWItTkJfX21zYnhHeW9fNE9qSU1LR3FsWWJTREx4eEtLWDNDdF95Qm5YWVZWbWR1V3lzallRM0FRamdGOTNpTnhOWXk1anBQUnVNVVZiaXJEUEM3SDN6d2YzaW9FVFdDMW5xQy1ER0FOcDB4dlJGUXpR?oc=5",
-      "source": "Fleet World",
-      "published": "2026-11-18T15:29:57+00:00",
-      "category": "AI Agents",
-      "score": 63.1
+      "score": 63.0
     },
     {
       "title": "Beyond code generation: A developer’s guide to agentic engineering",
       "description": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation: A developer&#8217;s guide to agentic engineering appeared first on The GitHub Blog .",
       "link": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
       "source": "GitHub Blog",
-      "published": "2026-11-19T18:30:54.762026+00:00",
+      "published": "2026-11-20T01:05:09.983062+00:00",
       "category": "AI Agents",
-      "score": 62.9
-    },
-    {
-      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-      "description": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
-      "link": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
-      "source": "Google AI",
-      "published": "2026-11-19T18:30:54.761970+00:00",
-      "category": "Enterprise AI",
       "score": 62.9
     },
     {
@@ -285,7 +302,7 @@
       "description": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub Blog .",
       "link": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
       "source": "GitHub Blog",
-      "published": "2026-11-19T18:30:54.761892+00:00",
+      "published": "2026-11-20T01:05:09.982969+00:00",
       "category": "AI Agents",
       "score": 62.9
     },
@@ -294,7 +311,7 @@
       "description": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: October 2026 appeared first on The GitHub Blog .",
       "link": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
       "source": "GitHub Blog",
-      "published": "2026-11-19T18:30:54.761853+00:00",
+      "published": "2026-11-20T01:05:09.982921+00:00",
       "category": "AI Ecosystem",
       "score": 62.9
     },
@@ -303,7 +320,7 @@
       "description": "Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post Building the Agent Host Protocol for sessions that continue across devices appeared first on The GitHub Blog .",
       "link": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
       "source": "GitHub Blog",
-      "published": "2026-11-19T18:30:54.761803+00:00",
+      "published": "2026-11-20T01:05:09.982862+00:00",
       "category": "AI Agents",
       "score": 62.9
     },
@@ -312,71 +329,17 @@
       "description": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half. The post Maintainers don&#8217;t need more AI bug reports. They need fixes. appeared first on The GitHub Blog .",
       "link": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
       "source": "GitHub Blog",
-      "published": "2026-11-19T18:30:54.761749+00:00",
-      "category": "AI Ecosystem",
-      "score": 62.9
-    },
-    {
-      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "description": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
-      "link": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-      "source": "TechCrunch",
-      "published": "2026-11-19T18:30:54.761679+00:00",
+      "published": "2026-11-20T01:05:09.982795+00:00",
       "category": "AI Ecosystem",
       "score": 62.9
     },
     {
       "title": "Anthropic’s Record-Breaking IPO Highlights the AI Giant’s Worst Enemy—Itself",
-      "description": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger towards data centers could impact its growth.",
+      "description": "Investors betting a barnstorming $107 billion will weigh whether the company’s AI safety strategy and growing public anger toward data centers could impact its growth.",
       "link": "https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/",
       "source": "Wired",
-      "published": "2026-11-19T18:30:54.761635+00:00",
+      "published": "2026-11-20T01:05:09.982709+00:00",
       "category": "AI Safety",
-      "score": 62.9
-    },
-    {
-      "title": "Superhuman pushes its Go assistant everywhere",
-      "description": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
-      "link": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
-      "source": "TechCrunch",
-      "published": "2026-11-19T18:30:54.761600+00:00",
-      "category": "AI Agents",
-      "score": 62.9
-    },
-    {
-      "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
-      "description": "Anthropic faces enormous compute commitments as it goes public, but its biggest infrastructure partners, including Amazon and Google, could continue profiting from AI even if Anthropic loses its lead.",
-      "link": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-      "source": "TechCrunch",
-      "published": "2026-11-19T18:30:54.761560+00:00",
-      "category": "AI Ecosystem",
-      "score": 62.9
-    },
-    {
-      "title": "Grok Bot tentou acessar contas sem autorização e depois mentiu",
-      "description": "Pesquisadores registraram 31 tentativas de acesso da IA a serviços como e-mail, Slack, calendário e GitHub, inclusive durante a madrugada. Grok Bot tentou acessar contas sem autorização e depois mentiu",
-      "link": "https://tecnoblog.net/noticias/grok-bot-tentou-acessar-contas-sem-autorizacao-e-depois-mentiu/",
-      "source": "Tecnoblog",
-      "published": "2026-11-19T18:30:54.761517+00:00",
-      "category": "AI Ecosystem",
-      "score": 62.9
-    },
-    {
-      "title": "At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development",
-      "description": "In his Nasdaq opening bell speech, Dario Amodei reiterated Anthropic's commitment to pacing AI development, regardless of business or political pressure.",
-      "link": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
-      "source": "TechCrunch",
-      "published": "2026-11-19T18:30:54.761466+00:00",
-      "category": "Audio & Voice",
-      "score": 62.9
-    },
-    {
-      "title": "Black November: iPhone 16e volta a cair com cupom em até 12x sem juros",
-      "description": "iPhone 16e (128 GB) traz chip A18 e suporta Apple Intelligence; celular \"baratinho\" da maçã recebe desconto de 47% no prazo em oferta do Magalu no AliExpress Black November: iPhone 16e volta a cair com cupom em até 12x sem juros",
-      "link": "https://tecnoblog.net/achados/black-november-iphone-16e-volta-a-cair-com-cupom-em-ate-12x-sem-juros/",
-      "source": "Tecnoblog",
-      "published": "2026-11-19T18:30:54.761423+00:00",
-      "category": "AI Ecosystem",
       "score": 62.9
     },
     {
@@ -384,7 +347,7 @@
       "description": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
       "link": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
       "source": "Google AI",
-      "published": "2026-11-19T18:30:54.761379+00:00",
+      "published": "2026-11-20T01:05:09.982629+00:00",
       "category": "AI Ecosystem",
       "score": 62.9
     },
@@ -393,25 +356,7 @@
       "description": "The company’s alternate-universe internet serves as a massive sandbox that allows the Chrome team to properly train AI browsing agents—without the risk of them going rogue.",
       "link": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
       "source": "Wired",
-      "published": "2026-11-19T18:30:54.761331+00:00",
-      "category": "AI Agents",
-      "score": 62.9
-    },
-    {
-      "title": "No IPO da Anthropic, CEO diz que IA ficará “sob controle humano”",
-      "description": "Durante a abertura da Nasdaq, Dario Amodei afirmou que a empresa não cederá a pressões comerciais ou políticas e manterá o desenvolvimento da inteligência artificial sob controle humano O post No IPO da Anthropic, CEO diz que IA ficará “sob controle humano” apareceu primeiro em Olhar Digital .",
-      "link": "https://olhardigital.com.br/2026/11/19/inteligencia-artificial/no-ipo-da-anthropic-ceo-diz-que-ia-ficara-sob-controle-humano/",
-      "source": "Olhar Digital",
-      "published": "2026-11-19T18:30:54.761275+00:00",
-      "category": "AI Ecosystem",
-      "score": 62.9
-    },
-    {
-      "title": "Meta’s AI agent Muse is mixing up conversations and exposing private data, report says",
-      "description": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
-      "link": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-      "source": "TechCrunch",
-      "published": "2026-11-19T18:30:54.761217+00:00",
+      "published": "2026-11-20T01:05:09.982573+00:00",
       "category": "AI Agents",
       "score": 62.9
     },
@@ -420,7 +365,7 @@
       "description": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
       "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
       "source": "TechCrunch",
-      "published": "2026-11-19T18:30:54.761175+00:00",
+      "published": "2026-11-20T01:05:09.982521+00:00",
       "category": "AI Agents",
       "score": 62.9
     },
@@ -429,9 +374,252 @@
       "description": "Modelo substitui Gemini 4 Argon e está disponível para assinantes dos planos AI Pro e Ultra do Google. Google lança Gemini 4 Neon, nova IA para tarefas complexas",
       "link": "https://tecnoblog.net/noticias/google-lanca-gemini-4-neon-nova-ia-para-tarefas-complexas/",
       "source": "Tecnoblog",
-      "published": "2026-11-19T18:30:54.761080+00:00",
+      "published": "2026-11-20T01:05:09.982457+00:00",
       "category": "AI Ecosystem",
       "score": 62.9
+    },
+    {
+      "title": "Anthropic levanta US$ 81 bi no maior IPO da história e supera SpaceX",
+      "description": "A Anthropic, empresa respons&aacute;vel pela intelig&ecirc;ncia artificial (IA) Claude, estreou na bolsa de valores dos Estados Unidos nesta quinta-feira (19) ap&oacute;s levantar US$ 81,3 bilh&otilde;es (cerca de R$ 481,5 bilh&otilde;es) na maior oferta p&uacute;blica inicial de a&ccedil;&otilde;es (IPO) da hist&oacute;ria. Os pap&eacute;is abriram em alta de 34%, levando a companhia a atingir um valor de mercado es",
+      "link": "https://canaltech.com.br/mercado/anthropic-levanta-us-81-bi-no-maior-ipo-da-historia-e-supera-spacex/",
+      "source": "Canaltech",
+      "published": "2026-11-20T01:05:09.982381+00:00",
+      "category": "AI Ecosystem",
+      "score": 62.9
+    },
+    {
+      "title": "Google is putting AI chats right on the homepage",
+      "description": "Google is updating its homepage to include AI searches. In a post on X, Google's vice president of product, Robby Stein, shows how you can now open a collapsible sidebar to view and continue your AI chats. Based on the GIF shared by Stein, it looks like you can open the sidebar by clicking the [&#8230;]",
+      "link": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+      "source": "The Verge",
+      "published": "2026-11-20T01:05:09.982308+00:00",
+      "category": "Data & Research",
+      "score": 62.9
+    },
+    {
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "description": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "link": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "source": "TechCrunch",
+      "published": "2026-11-20T01:05:09.982259+00:00",
+      "category": "AI Safety",
+      "score": 62.9
+    },
+    {
+      "title": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
+      "description": "Lawsuit: Over 99% of school system’s AI gun alerts were false positives.",
+      "link": "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/",
+      "source": "Ars Technica",
+      "published": "2026-11-20T01:05:09.982213+00:00",
+      "category": "AI Ecosystem",
+      "score": 62.9
+    },
+    {
+      "title": "Meta’s Muse Charm might cost $300",
+      "description": "Meta is planning to price the Muse Charm, a little gadget with a screen that lets you chat with your Muse AI agent, at $300, according to The Information. CEO Mark Zuckerberg revealed the gadget earlier this year and said the company expected to ship the Charm \"in time for the holidays in December,\" but [&#8230;]",
+      "link": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
+      "source": "The Verge",
+      "published": "2026-11-20T01:05:09.982154+00:00",
+      "category": "AI Agents",
+      "score": 62.9
+    },
+    {
+      "title": "Assinantes do Google AI Ultra ganham upgrade grátis para o YouTube Premium Família",
+      "description": "Assinatura mais cara dos servi&ccedil;os de IA do Google, o plano Google AI Ultra passou a incluir a vers&atilde;o familiar do YouTube Premium . O n&iacute;vel permite compartilhar os benef&iacute;cios do YT com outras cinco pessoas do mesmo grupo familiar, totalizando seis contas. A novidade foi compartilhada pela l&iacute;der de Google One e assinaturas de IA do Google, Shimrit Ben-Yair. Antes, o plano mais caro pe",
+      "link": "https://canaltech.com.br/apps/assinantes-do-google-ai-ultra-ganham-upgrade-gratis-para-o-youtube-premium-familia/",
+      "source": "Canaltech",
+      "published": "2026-11-20T01:05:09.982070+00:00",
+      "category": "AI Ecosystem",
+      "score": 62.9
+    },
+    {
+      "title": "These tech outages are giving Y2K, AI agent style",
+      "description": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+      "link": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "source": "TechCrunch",
+      "published": "2026-11-20T01:05:09.982002+00:00",
+      "category": "AI Agents",
+      "score": 62.9
+    },
+    {
+      "title": "What’s With All These Outages?",
+      "description": "This week on “Uncanny Valley,” we discuss the outages that have swept digital life over the past week, where new money from Anthropic’s IPO is going, and the AI chip world post-Jensen Huang.",
+      "link": "https://www.wired.com/story/uncanny-valley-podcast-whats-with-all-these-outages/",
+      "source": "Wired",
+      "published": "2026-11-20T01:05:09.981948+00:00",
+      "category": "AI Ecosystem",
+      "score": 62.9
+    },
+    {
+      "title": "A brief history of Nvidia’s recent stock fluctuations",
+      "description": "\"We've got this,\" Colette Kress, interim CEO of Nvidia, said Tuesday night as she closed out the embattled chip company's third quarter earnings call. By Thursday, the company's stock price was hovering at around $150 per share, a nearly 40 percent drop from its all-time high on October 6th, and wiping out a brief post-earnings [&#8230;]",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
+      "source": "The Verge",
+      "published": "2026-11-20T01:05:09.981834+00:00",
+      "category": "AI Ecosystem",
+      "score": 62.9
+    },
+    {
+      "title": "Apple is hiring engineers to build its own AI agent",
+      "description": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic AI assistant. [&#8230;]",
+      "link": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "source": "The Verge",
+      "published": "2026-11-20T01:05:09.981742+00:00",
+      "category": "AI Agents",
+      "score": 62.9
+    },
+    {
+      "title": "Anthropic rival says companies can (mostly) skip the pricey models",
+      "description": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open-source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’ trust.",
+      "link": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+      "source": "TechCrunch",
+      "published": "2026-11-20T01:05:09.981593+00:00",
+      "category": "AI Ecosystem",
+      "score": 62.9
+    },
+    {
+      "title": "Microsoft Introduces New Models to Cut the Cost of AI Coding and Cybersecurity - PYMNTS.com",
+      "description": "Microsoft Introduces New Models to Cut the Cost of AI Coding and Cybersecurity &nbsp;&nbsp; PYMNTS.com",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNb2djcnV3b3Z1NEU2UkdrN2dkZmc4RmVsMGgxMkJTOG9kMy13cUR4UzlHSzUwVnRRdWVkWm5XVFpIdXQwb3FaUkdjb3lsWU40RHc4YVNIZkVFR01UVG9NOVlDRFFmbzBPc0ZvbDlXWHhHQUxVU3M4YXhEdjd6MXdwbG1ld0wzSjZsS3Z0SDBGVzNSN0VGaTN2SHNwYm1zV3JQU185N0hKSHJlS3dZY1Z6UGlOdDRiNUVXY0pTS2hYRmMtV0VnWm8wNEdhdEFtb2ZJMUE?oc=5",
+      "source": "PYMNTS.com",
+      "published": "2026-11-18T20:43:29+00:00",
+      "category": "Developer AI",
+      "score": 62.3
+    },
+    {
+      "title": "OpenAI Ties Frontier Model Releases to Lifecycle Safety Reviews - Unite.AI",
+      "description": "OpenAI Ties Frontier Model Releases to Lifecycle Safety Reviews &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYzR6QWxhOXEzdTZtczhuaUpvbE1BQzMxZTBUb0hwU25sTDNCQ19IR29uZjVpVTBDVnN6cU5rTERBMGpXTVJ2TEVWaHNyRmFaTDJsOW1tSmQ4YnJOU2M2a25fd0s1elJXTjB2Y0N5d3JLT2NVMVZiZHpzSUFuenJYREZjNEdEYmsydHZYa3d3?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T20:24:06+00:00",
+      "category": "LLMs & Models",
+      "score": 62.1
+    },
+    {
+      "title": "Media Challengers and Analytic Route Release Joint 2026 AI Search & Attribution Framework to Help Marketers Track User - The Detroit News",
+      "description": "Media Challengers and Analytic Route Release Joint 2026 AI Search & Attribution Framework to Help Marketers Track User &nbsp;&nbsp; The Detroit News",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOMXJDVnQzS3JlRUR4TWcwQ0dUNEI3TU9Rd0ZWVWgyaWQ4c1JoY0V5U2pYMGt2RGh3OElMby1ReldXQmhfMnN0S0NVX1Q1aWxBY3BqdU5rRFBHTXh4bUJDZklJVnBaTk9QNzFOd2lNeEJidDU3Qjc2a2xsWDJ4MHVhQnlUU1J0UUtHS0ZzTFlKZjV5OHd3bWZzY0FfYV9RS3dCU01xLTAwcF9PelRUWHB5ZkZrRzgyd3EtckJ6MFZzemlPSTZaNVBET2NuNEQ2Z3hkdlgtbzVXaU9tdUFTQ1FlekFIR1Z1RnFHY1lWaEx4MmJhemw0bzJ3MFZyTDVvcWI1UlE?oc=5",
+      "source": "The Detroit News",
+      "published": "2026-11-18T19:17:19+00:00",
+      "category": "Data & Research",
+      "score": 61.4
+    },
+    {
+      "title": "Anthropic CEO pledges AI safety and business success at Nasdaq listing - Chosunbiz",
+      "description": "Anthropic CEO pledges AI safety and business success at Nasdaq listing &nbsp;&nbsp; Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LOVZuYXVCNDBNTGN1RTdBVFp2TVlqYkhZc3g2MzIwYy13azMxMTBwbzlfLXlneGpvTmpMa2ZkdkJtQWNUcm9LWHRoR2M5OFllYlNrcldJWEd4N1lNdzNjUXZjZms1TUI0a0cxQUZrVjJ0WTlkQi1lRHFB0gGOAUFVX3lxTE5WRi1rTkpIZkt1NHJ2SUxsRXNrYUU3Qk92Ymt0QWF6QVFtd0NZd0N0dlpQcVkyUWl6QkczQjZKYnFaX0FjMlNhbDRtaXRzYkxfdnA2WFcyelRQc203emJMREdpMG53Z0s4ZjRoS1drLThmRTlyX0hqNGRVUko2QTZtaU50QWltNElsbkZWSEE?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-11-19T22:07:00+00:00",
+      "category": "Enterprise AI",
+      "score": 61.1
+    },
+    {
+      "title": "Newsom Proposes Mandatory Frontier AI Oversight and Shutdown Powers - Unite.AI",
+      "description": "Newsom Proposes Mandatory Frontier AI Oversight and Shutdown Powers &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSTAtbWUyUGZnNDdpNXB4ZFdpanpiQXVwZEdoNmYxaHd1RXNlX3lYem1iZVBibWQzNlRTdWJ6bEtOMmp0MnBKQTc5djdhdVpIOHhPc3NhLUxVcmZVYnpyN1RxMTUzSTVQYlRrajZoUl9welFySUM2M2xqOVRid0E4dUt6TzNpNElZc3d3YXRaVFI4d00?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T18:21:03+00:00",
+      "category": "AI Ecosystem",
+      "score": 60.8
+    },
+    {
+      "title": "Genie 4 is now available",
+      "description": "",
+      "link": "https://deepmind.google/blog/genie-4-is-now-available/",
+      "source": "Google DeepMind",
+      "published": "2026-11-18T18:13:42+00:00",
+      "category": "AI Ecosystem",
+      "score": 60.7
+    },
+    {
+      "title": "HYPR Launches AgentPass to Tie AI Agent Actions to Human Accountability - Unite.AI",
+      "description": "HYPR Launches AgentPass to Tie AI Agent Actions to Human Accountability &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE05NmJPTGNuM1ZHbTVoc0FETWN3LTdYVUxkaVhyWGl1by1TcEVXZXZwTFNTWEpVWkFTcEN2WWxrMEk4LWNINkZqTF9vbkN5cER2RmN5MjlHZXZNQzVvaVFtTXIzc3ZXbFBMY0MwZzd5TWNTZkE2?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T17:33:05+00:00",
+      "category": "AI Agents",
+      "score": 60.3
+    },
+    {
+      "title": "European game worker unions release manifesto on genAI & its harm - Shacknews",
+      "description": "European game worker unions release manifesto on genAI & its harm &nbsp;&nbsp; Shacknews",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcVNDV0NmanZuM2YybFV6ZjEtb1JzT3BpZnhoOXJ2NEt1WVAzcWZuZzJBUDBsSm5sUmZMejhIZkc2R3BGOWo5ckVINFMyVWJuYlpxZy1ERUpMX244YjlKbS1XSk1qSDlwcWhheWpFcUgwMDZ2XzBhSmp2cGZZRkRsNklONm9UeUE?oc=5",
+      "source": "Shacknews",
+      "published": "2026-11-18T17:23:00+00:00",
+      "category": "AI Ecosystem",
+      "score": 60.2
+    },
+    {
+      "title": "Gemini 4 Neon brings Google’s cheaper AI model for coding and analysis - DNE Africa",
+      "description": "Gemini 4 Neon brings Google’s cheaper AI model for coding and analysis &nbsp;&nbsp; DNE Africa",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5FOFlITVdWbWdGSWVZSzg4cWktTGxscWR6SGZOTnRPYmJzV2JvUHJObnZoXzZCSXdLWmREb3Z2Yml4Ni1YZTRyOU9aN1ZZOEZoRjdXbjJ2VEdDUXhSSUIzU21Wb0wtdw?oc=5",
+      "source": "DNE Africa",
+      "published": "2026-11-19T20:28:00+00:00",
+      "category": "Developer AI",
+      "score": 60.1
+    },
+    {
+      "title": "Introducing Easy Lens CLI: Create Snapchat Lenses with the AI Coding Assistant You Already Use - Snap Newsroom",
+      "description": "Introducing Easy Lens CLI: Create Snapchat Lenses with the AI Coding Assistant You Already Use &nbsp;&nbsp; Snap Newsroom",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VS09EanA4eVRtZ1BqOG5NMVpqTGFNR2xUc2Z6VFJISkpGWnFqMmJuU0ZrdjVaYVpFX0lQZzZHdGtDdkFNQ2FEblNhbFNxMUs2WU41dk5KaE9IS1VUcjBSVw?oc=5",
+      "source": "Snap Newsroom",
+      "published": "2026-11-18T17:13:08+00:00",
+      "category": "Developer AI",
+      "score": 60.1
+    },
+    {
+      "title": "Oleria Extends Identity Governance to AI Agents, Tracing Every Agent Through the People and Credentials It Acts For - ACCESS Newswire",
+      "description": "Oleria Extends Identity Governance to AI Agents, Tracing Every Agent Through the People and Credentials It Acts For &nbsp;&nbsp; ACCESS Newswire",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZkQ5UWZQa0V4OTR3THUyTm5pdXlkMVBieE1lR2V5ekpYRmszWDRZOFZSNVhJV0JFaWQ5Z2dvc01NdzhFY2lUTDJDSmpza1BXemJxclhpdFlGb1huVVBrb2tUbWx3b0haSXFmNTU4YzRkUFpucG42d3E0RjBlczFjMzVfaFhKWkdqTGFESDNTUTF6dkZ6ZXRYTWFpbFZrbEhMVFNYZ2NETWcwTThVVUhZSEhkTU9rSWhieHFQc2tzX1p2dk9wRkR3RGNMU01sU1JoRHlYUjgxQjFWaW1JamlHUkdSR3U?oc=5",
+      "source": "ACCESS Newswire",
+      "published": "2026-11-18T17:00:00+00:00",
+      "category": "AI Agents",
+      "score": 59.9
+    },
+    {
+      "title": "Microsoft (MSFT) Stock: New AI Model Takes Aim at Anthropic and OpenAI on Price - Blockonomi",
+      "description": "Microsoft (MSFT) Stock: New AI Model Takes Aim at Anthropic and OpenAI on Price &nbsp;&nbsp; Blockonomi",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU3lFMWFTTnBhU21mU3BPU1R6cDJUVTVpS1JLMTRrOUZReVBtb05ad2tHQVNJdDMwRFoyR0hLLThhNDkybUFaQlFVSTNoOHJqbFdKWmNZbEVfeXRpQnZ6WmZiMWFEdVd1ejlqMDJOeWg0MTZadC16YWtQT0JSOHlYWlNTemxLM1gyR1ZNOTV5MXVSQnp4WmZ1YTAwZ2pHckpYV2c?oc=5",
+      "source": "Blockonomi",
+      "published": "2026-11-18T16:59:53+00:00",
+      "category": "AI Ecosystem",
+      "score": 59.9
+    },
+    {
+      "title": "Dynatrace Survey Finds AI Agent Adoption Outpacing Oversight - Unite.AI",
+      "description": "Dynatrace Survey Finds AI Agent Adoption Outpacing Oversight &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQUJqYks1ZURqNkk0S1RQa21yOUZ3cVd4R1NvUDQybTJld09Fa1FZUlFLbmpXc2FqdG9SbUJOdE9Ma1A3ZGVIaWtCMmhzdTI0NDdaT2h2d2lPUFZRM0ZhaG1FTDdBVmxRTy1mVVhkNXhVdEFkaFVqWmFITjJvZHp5RA?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-19T19:59:22+00:00",
+      "category": "AI Agents",
+      "score": 59.8
+    },
+    {
+      "title": "From anti-war physicist to AI power broker, Anthropic CEO Amodei takes his safety approach public - The Straits Times",
+      "description": "From anti-war physicist to AI power broker, Anthropic CEO Amodei takes his safety approach public &nbsp;&nbsp; The Straits Times",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNejBINzgta0VYZVlsM0Rmc2dpYmxwQm5zRHVhd2oycmVGM29iSkZTOVBEZEhEVVp0NURieTZ0cTRHTDhlS29HSm8yRXlsQzBVUWNPeXVtaTJDTklmMjJibUJib1F2ckhDanVGcHRWQUNJYWlnX1YtVFk0Y0U3Y2FPRHV1U09DS3piTFkxcDZDN0c5MTJiRUdKVG5neG4tM1hkdjlFRkVwc3RSaE1wYzlURW5fUFRPMTR6?oc=5",
+      "source": "The Straits Times",
+      "published": "2026-11-19T19:25:00+00:00",
+      "category": "AI Safety",
+      "score": 59.5
+    },
+    {
+      "title": "Governor Newsom’s nation-leading AI safety framework is getting even stronger as California releases next steps on mandatory safety standards and oversight - California State Portal | CA.gov",
+      "description": "Governor Newsom’s nation-leading AI safety framework is getting even stronger as California releases next steps on mandatory safety standards and oversight &nbsp;&nbsp; California State Portal | CA.gov",
+      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOSTExb21JRlBpZTFvNUlRZFhncGQzNzdSYUR5WWdpSmFzbTlYMnp3M25qVGhjUk1nTXJJdThUMmVpMmpLVWdmZ296R2xxckVlYTJoRjY5ZHBRUXNybGxaN2xTWVA4X2FIZGh4cTB6NTlieHBMb3gwbGh6b2xLbHRmamJZcnlDZmxsRGgtcDB0dzJpRGRYdXVRVGhnSzN5Rlg1TU5FRjJFbTJtbTZMTFlpSXE5MjVOSkJhSXE3MHVaOTFtMFV1ZVNaT2hHSjg1ZlIzbF9hbDNlYkpFSDZVOTdnY0pVeXF1OTdRWFItdGdSTUJKTTVudjVRcGtCakxraFJxbWFWRGlqZi0tbjg4TnZmU0EzX0pZQTc1?oc=5",
+      "source": "California State Portal | CA.gov",
+      "published": "2026-11-18T16:20:44+00:00",
+      "category": "AI Safety",
+      "score": 59.5
+    },
+    {
+      "title": "Samsara debuts Agent Studio and AI safety, maintenance and compliance upgrades - Van Fleet World",
+      "description": "Samsara debuts Agent Studio and AI safety, maintenance and compliance upgrades &nbsp;&nbsp; Van Fleet World",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPb0dRYThiZ1pXSl9XY202V2VwTzFfT3I5dTU3bkNPakVTd005Z05MRnhDSy1qMEhyemtNeWlVZ3l0Sk0tbEVTbXlfNnNYQmNRcDNoNWJhTHh3ZWZQVkJ6Vk9QakpCb0luQXY4elo3Z3dUU213T2ZUTENIbE8xa0JYR3YtLWxFZVJrdUJEZmhEZUZXSC1CTjV0LVExdVhMaXZhbEhVWGVTWk9ydw?oc=5",
+      "source": "Van Fleet World",
+      "published": "2026-11-18T15:43:05+00:00",
+      "category": "AI Agents",
+      "score": 59.1
     },
     {
       "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
@@ -440,7 +628,7 @@
       "source": "Hugging Face",
       "published": "2026-11-18T15:00:23+00:00",
       "category": "AI Ecosystem",
-      "score": 62.8
+      "score": 58.7
     },
     {
       "title": "Vmake Labs AI Video Enhancer Brings 4K Restoration to Mike Upchurch’s POWERLOAFING Archive - GlobeNewswire",
@@ -449,7 +637,16 @@
       "source": "GlobeNewswire",
       "published": "2026-11-18T15:00:00+00:00",
       "category": "AI Ecosystem",
-      "score": 62.8
+      "score": 58.7
+    },
+    {
+      "title": "alphaXiv opens an AI research server. The archive has an asterisk. - Digg",
+      "description": "alphaXiv opens an AI research server. The archive has an asterisk. &nbsp;&nbsp; Digg",
+      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9JNTlCQjZqZFFhSU0zcmJ2U1ZRajdFT2pPTmJUOXVjektRTTZKRDNFWmphOElkNjd2a1BZMlRSbGsxUQ?oc=5",
+      "source": "Digg",
+      "published": "2026-11-19T18:07:05+00:00",
+      "category": "Data & Research",
+      "score": 58.6
     },
     {
       "title": "Can a new AI tool help fish farmers spot disease before it’s too late? - Global Seafood Alliance",
@@ -458,16 +655,16 @@
       "source": "Global Seafood Alliance",
       "published": "2026-11-18T14:51:55+00:00",
       "category": "AI Ecosystem",
-      "score": 62.7
+      "score": 58.6
     },
     {
-      "title": "Telegram prepares Dictator AI agent with its own VM on Mac - TestingCatalog AI News",
-      "description": "Telegram prepares Dictator AI agent with its own VM on Mac &nbsp;&nbsp; TestingCatalog AI News",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT19MQlc3RWV4VEpMYmZQOHl5bUFSM1lLREhEU2g0REtIRnBDTERnUVBlMFd1VDF3cjg1YlN2TW83MWpvM0tfdGxhcG0zekc3TUxyMXQ1VHFCLUNJcnl1NjBRcV9lTUlhTVY2M2NvM3l0bVRzZXhtSXRFM083a1RvSHF6aHhERXRaUTFvTllTalREYmtT?oc=5",
-      "source": "TestingCatalog AI News",
-      "published": "2026-11-18T14:07:32+00:00",
-      "category": "AI Agents",
-      "score": 62.3
+      "title": "Beyond LLMs: AmericanAI Announces Major Advances in Six Proprietary AI Model Platforms in 2026 - Las Cruces Sun-News",
+      "description": "Beyond LLMs: AmericanAI Announces Major Advances in Six Proprietary AI Model Platforms in 2026 &nbsp;&nbsp; Las Cruces Sun-News",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOc2xDdkFrczJMYnIxTjJKdkY5cldrUllfZTd3RmhUZ1ZabEV5cDlRMHl5VHh5MDdTbU81czR1ZUYzcTBxR1dYSFYxM1VoYzU5QXEyT21Jci12STZuVWJHX1EzN3M3ZTBtWVBqWThTb0o4eG1SQmI4RG9xeUZRdGxscUM5eXN0QkE4aG9vTGo2dU1WdEl3S1lqbS1meDdOWFd3MnZkX09ibFBaSjhHdlRxMzVxaGdCMm1SemNoa3dybTU3NFVpeUhwU2ttREE4NV9IcXE1YnJxTENVemVMS0F3aGtB?oc=5",
+      "source": "Las Cruces Sun-News",
+      "published": "2026-11-18T14:20:28+00:00",
+      "category": "LLMs & Models",
+      "score": 58.3
     },
     {
       "title": "Suno Brings AI Music Videos to Creators with New Visuals Feature: What You Need to Know - Analytics Insight",
@@ -476,7 +673,7 @@
       "source": "Analytics Insight",
       "published": "2026-11-18T14:00:00+00:00",
       "category": "Data & Research",
-      "score": 62.2
+      "score": 58.1
     },
     {
       "title": "AIM Intelligence's 10-Country AI Safety Benchmark XL-SafetyBench Accepted to NeurIPS 2026 - Detroit Free Press",
@@ -485,25 +682,34 @@
       "source": "Detroit Free Press",
       "published": "2026-11-19T16:45:48+00:00",
       "category": "AI Safety",
-      "score": 61.9
+      "score": 57.8
     },
     {
-      "title": "Gemini 4 Neon brings Google’s cheaper AI model for coding and analysis - DNE Africa",
-      "description": "Gemini 4 Neon brings Google’s cheaper AI model for coding and analysis &nbsp;&nbsp; DNE Africa",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5FOFlITVdWbWdGSWVZSzg4cWktTGxscWR6SGZOTnRPYmJzV2JvUHJObnZoXzZCSXdLWmREb3Z2Yml4Ni1YZTRyOU9aN1ZZOEZoRjdXbjJ2VEdDUXhSSUIzU21Wb0wtdw?oc=5",
-      "source": "DNE Africa",
-      "published": "2026-11-19T15:14:05+00:00",
-      "category": "Developer AI",
-      "score": 60.9
+      "title": "ANS standard makes domain names the identity for AI agents - ActuIA",
+      "description": "ANS standard makes domain names the identity for AI agents &nbsp;&nbsp; ActuIA",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTjdzYXBLYmpCdklJSWVwOE5SQnBTdDlyY3lqRDdKMS1mTF9wcEFnejAxTFZpVmg1bWJWcHpVeDk4Zzg5bl9fRXdrQlo4LUdSaHhiNmxSdW9nb3RGRFlnNWNnbHRZdVBJclBvVmM0S3o2bTc1Z1BHbDBPenJTa0FpY0drQVJFbFdVODRuYUtwMXQzczg1?oc=5",
+      "source": "ActuIA",
+      "published": "2026-11-19T16:00:00+00:00",
+      "category": "AI Agents",
+      "score": 57.3
+    },
+    {
+      "title": "ChatGPT 6.2 Astra: How OpenAI's new AI model could help legal professionals; internet seeks 'EU certification' - Livemint",
+      "description": "ChatGPT 6.2 Astra: How OpenAI's new AI model could help legal professionals; internet seeks 'EU certification' &nbsp;&nbsp; Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPaFVaUVZfM3p1ZDgzREZzQUJ4cjBXTlpLb0xhNnVhM2lPc1dONnoyeU0tLVRvLTlPZ2pJYW85MUFfamdIZkRqY09FYzdLbzlDZlRIRHdhM3Z5ZEd1ZWx6Rjdtdm45enRZZV9zTlBkaGdSelNxcC1Cd0lmTEN2ZURhR0lnNDN6TzB1TDhWNk1TWlJTWWdPLVZ1SkpJTGMwdHE2VVh6MTVidXJ2amh1NDEtbHhlQUhTVjBoaUYtc2NSRWJhNHNGaEp2b1loTFlvY0lJR1VZZW44X0xLN1VMVGpRRDF5QU9yeURW0gHuAUFVX3lxTE1vMWpIMXRnZmlLbGc2VkVGYlBpZHRYeFdBeUZ4dXBYTG5aZ2hoVl9JN0Y1a2hQdm1yUENwSWRkOHBpdENEV21tSWE0WndnSUw4RUwzaWlYRmNiekpyNmFZaHlLckhWeDVtYlNPeXBwU0VCMW5CWWVZbV9qUGNCSUxDekt1WHFHS3ZfQWNrRmVxb2F2cXZqdkNlQm9YR0VydDQ1QXJKRFVOeVluSTVSTzc3UEpYNk1BNUV3WnpYR0U1SXdqaG10VEJrUTlEYWtGMzdhY1lLX2FqQ05MSWxQcE1RQzVZUHVZc3pEWE5Gc3c?oc=5",
+      "source": "Livemint",
+      "published": "2026-11-18T12:00:07+00:00",
+      "category": "Enterprise AI",
+      "score": 56.8
     },
     {
       "title": "Hackers Turn AI Coding Agent Configuration Files Into Malware Execution and Propagation Channels - GBHackers News",
       "description": "Hackers Turn AI Coding Agent Configuration Files Into Malware Execution and Propagation Channels &nbsp;&nbsp; GBHackers News",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4xUmJubk8yRzRkSGljUEw0YTdxQlpieXFaek9IOXI4VTFTSlo0UXJ6ZnF4eG9YelZ4R0Z0eFd5Q2RCX2ZQZ2ZKTkt5MnhsVWvSAVRBVV95cUxNMDdiNGw5MzMwaHl4ODBJY2JZN0pTNl9qYWg0cGJqZjU4bUp4RW9JamFuX3VjdHlhUEtGblpGN3VYcTFxUXhCTWZKLVdlekRkcUxzV0o?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wN2I0bDkzMzBoeXg4MEljYlk3SlM2X2phaDRwYmpmNThtSnhFb0lqYW5fdWN0eWFQS0ZuWkY3dVhxMXFReEJNZkotV2V6RGRxTHNXStIBVEFVX3lxTE0wN2I0bDkzMzBoeXg4MEljYlk3SlM2X2phaDRwYmpmNThtSnhFb0lqYW5fdWN0eWFQS0ZuWkY3dVhxMXFReEJNZkotV2V6RGRxTHNXSg?oc=5",
       "source": "GBHackers News",
-      "published": "2026-11-18T11:48:34+00:00",
+      "published": "2026-11-18T11:48:47+00:00",
       "category": "AI Agents",
-      "score": 60.8
+      "score": 56.7
     },
     {
       "title": "DepEd’s new AI tool screens a Grade 2 learner in 15 minutes. The old test took 2 hours - astig.ph",
@@ -512,7 +718,7 @@
       "source": "astig.ph",
       "published": "2026-11-18T11:36:42+00:00",
       "category": "AI Ecosystem",
-      "score": 60.7
+      "score": 56.6
     },
     {
       "title": "Lightchain AI Sets Three-Month Plan for AI Agents and Pay-Per-Call Payments - BeInCrypto",
@@ -521,7 +727,7 @@
       "source": "BeInCrypto",
       "published": "2026-11-19T14:30:00+00:00",
       "category": "AI Agents",
-      "score": 60.5
+      "score": 56.4
     },
     {
       "title": "Flow AI Video Expands Integrated AI Creation Suite for Video, Images and Multi-Format Campaigns - The Tuscaloosa News",
@@ -530,7 +736,16 @@
       "source": "The Tuscaloosa News",
       "published": "2026-11-18T10:58:19+00:00",
       "category": "AI Ecosystem",
-      "score": 60.3
+      "score": 56.2
+    },
+    {
+      "title": "Lianlian DigiTech Launches XCard with Controls for AI Agent Payments - Unite.AI",
+      "description": "Lianlian DigiTech Launches XCard with Controls for AI Agent Payments &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWjYzcTFKeVowYThQU3FyZWp6LVdmRGFEM2c1V1JhZ05DREVzc3BoTWNSNDRVMUJ5dHUyTzhFSW5td2xnUlBBcHluUlhucE5ielBPR0FUTXZHOVF1cWxndVQ0bW5IMkZBWHk3bGFEX0NwQXRGUHc1UW5fLWxrQVVpdmxiUElvWXVsdDdDSkx4VE1KbUtW?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T10:27:02+00:00",
+      "category": "AI Agents",
+      "score": 55.9
     },
     {
       "title": "UK MPs urge AI safety bill with power to halt dangerous models - news.lavx.hu",
@@ -539,7 +754,7 @@
       "source": "news.lavx.hu",
       "published": "2026-11-18T10:13:04+00:00",
       "category": "AI Safety",
-      "score": 59.8
+      "score": 55.7
     },
     {
       "title": "The Download: a living liver, a billion-dollar battery deal, and AI hype",
@@ -548,7 +763,7 @@
       "source": "MIT Technology Review",
       "published": "2026-11-19T13:10:00+00:00",
       "category": "Data & Research",
-      "score": 59.7
+      "score": 55.6
     },
     {
       "title": "Canva adds a switch that turns off most of its generative AI tools - Startup Fortune",
@@ -557,7 +772,7 @@
       "source": "Startup Fortune",
       "published": "2026-11-19T13:02:41+00:00",
       "category": "AI Ecosystem",
-      "score": 59.6
+      "score": 55.5
     },
     {
       "title": "Microsoft Unveils New AI Models to Challenge OpenAI and Anthropic - Analytics Insight",
@@ -566,7 +781,7 @@
       "source": "Analytics Insight",
       "published": "2026-11-18T09:30:00+00:00",
       "category": "Data & Research",
-      "score": 59.4
+      "score": 55.3
     },
     {
       "title": "Best Free AI for Coding in 2026: DeepSeek V4 Pro, Qwen 3.6 & Kimi K2.6 Tested - Fello AI",
@@ -575,7 +790,7 @@
       "source": "Fello AI",
       "published": "2026-11-19T12:14:34+00:00",
       "category": "Developer AI",
-      "score": 59.1
+      "score": 55.0
     },
     {
       "title": "A human liver has been kept alive outside the body for a record seven weeks",
@@ -584,7 +799,25 @@
       "source": "MIT Technology Review",
       "published": "2026-11-19T12:00:00+00:00",
       "category": "Data & Research",
-      "score": 58.9
+      "score": 54.8
+    },
+    {
+      "title": "AI Labs Say Their Models Are Speeding Up AI Research - The Defiant",
+      "description": "AI Labs Say Their Models Are Speeding Up AI Research &nbsp;&nbsp; The Defiant",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSk1wRWs1ZG45T0hxSEZQclVreWtraWpNTHJoOWpaLXZ4RW5GdnhGYWxURVpacG5xTGd6anZCR19GOHhXRnZkY0l3UEt2bDNSVWFIeFVSRGtZamUwcFRkVGlKMnUwVlhLU28wLVF2bHpaeXhFY1N1LS1mYWx6YVNPaGQ5ZnhNWEZFMzJLWERhSQ?oc=5",
+      "source": "The Defiant",
+      "published": "2026-11-19T11:34:58+00:00",
+      "category": "Data & Research",
+      "score": 54.6
+    },
+    {
+      "title": "ACD Systems Launches ACDSee Photo Studio for Mac 27 Bringing Generative AI and Smarter Organization to macOS - Business Wire",
+      "description": "ACD Systems Launches ACDSee Photo Studio for Mac 27 Bringing Generative AI and Smarter Organization to macOS &nbsp;&nbsp; Business Wire",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVVlMRUk0cTlBSXd5WXJZdFNPdFVaZ1Q4Zi1LSEVQY3FJdDJDR25aTHZjc3k3LVhfZ1hvRUs3NDJ4QnE0NFg1M0dmME1WOGJIMzFRbVdYWE9SRnRWVG1RcEhrVXdMYzdFLTZPS2xnTklIOHdKUHo0RXlwOENZYW9nekNLdVI0QVFGWGZNWGhZeVFZSDVQbnJ4R0tQOVNvakxmQ29IcGNpLXZqZkdBWVl4Vndkb2NUTWRqamlKTWJuTDg0V1FDcXJnNnh0R0pQb2FQR1JUc2ZhTG9tYURfaHViY2JiOFhzSzlxUnRqNWUxaVpkWU5PLVhRUg?oc=5",
+      "source": "Business Wire",
+      "published": "2026-11-18T08:00:00+00:00",
+      "category": "Enterprise AI",
+      "score": 54.3
     },
     {
       "title": "What a billion-dollar deal says about the US battery market",
@@ -593,7 +826,25 @@
       "source": "MIT Technology Review",
       "published": "2026-11-19T11:00:00+00:00",
       "category": "AI Ecosystem",
-      "score": 58.3
+      "score": 54.2
+    },
+    {
+      "title": "OpenAI’s new AI model found 35 Apple security flaws, including a Lockdown Mode bypass - News9live",
+      "description": "OpenAI’s new AI model found 35 Apple security flaws, including a Lockdown Mode bypass &nbsp;&nbsp; News9live",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWDlqTXhRX2Y1NlFpZURJVzJOSXhHbl9CSy1OTHVndEFDWHllblpOTjNNV3pHWlNrZU9MXzdWVGlzU0M1LS1oMFJIRU1aZmprZWVFRkNxbkhhQ2c0TkotbloyNUkwbE5ycF9MVlVwT0JzaksxOGJiM2x1RjF3bTZOcEhwZDdnN2VELV90Mm04Q0paLUUzV2NmTnlQWThGOXdjQ0g4UkpXWDNzbHNSMUgydnpHNnA4clhNOHUwVDFyeUwzUDBWazNzamM2bXTSAdIBQVVfeXFMTk1BRG1WZC1zcURWLWZGZ2dOVWlUUTFpbmpidlJ4Y0djaTUzMDVLTjR6YVBMUVBvLS1ld3ZPb19UekhoSVduMW1KY1RVTUNna1lHdFZhNWVkQ2F2UkYtc0FZZ1JsQmJsZkppTXdUSDdGN1N5UkNVa1RrX3BFd19hdjZhSmszaURhS0Q5UHVvOXpNeWpPOS0wbDFnYmFNaHVkXzhObk1kQkZpMnFEWGZrNXFSeUxTY1pscVJTYTV0VlJsT294Zm12RWF6SllnS0J2RFRn?oc=5",
+      "source": "News9live",
+      "published": "2026-11-18T07:43:50+00:00",
+      "category": "AI Safety",
+      "score": 54.2
+    },
+    {
+      "title": "How Generative AI Is Changing the Role of Data Analysts - TechBullion",
+      "description": "How Generative AI Is Changing the Role of Data Analysts &nbsp;&nbsp; TechBullion",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOd1J1TkQtc1dPWUNIQkxxaUwyUndiNHRfb0JhaUhmWjE0T0o3VG12QlpxRkd6dWtMTWkyZUltLWl2TXoyc1V6eEQ4NWluaGc5eWV4R2JmNGM0SFRoTDdWYWVmcmc4M2M3Qjl6X2dBYTQ4Vi1rRk42MFVMQkg3SjBwVUpMQUxjLUk?oc=5",
+      "source": "TechBullion",
+      "published": "2026-11-19T10:32:26+00:00",
+      "category": "AI Ecosystem",
+      "score": 53.9
     },
     {
       "title": "Graftcode moves integration platform to stable release - IT Brief UK",
@@ -602,7 +853,16 @@
       "source": "IT Brief UK",
       "published": "2026-11-19T09:15:00+00:00",
       "category": "AI Ecosystem",
-      "score": 57.2
+      "score": 53.1
+    },
+    {
+      "title": "LG AI Research promotes heads of EXAONE and Physical AI in dual move to strengthen next growth engines - finance.biggo.com",
+      "description": "LG AI Research promotes heads of EXAONE and Physical AI in dual move to strengthen next growth engines &nbsp;&nbsp; finance.biggo.com",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE85cV96VHlGU05mQmYxX1UzS2RkeHlOWlBZOWtvdlBxMkFqWjRGQmNZRUdoMFFHV3dBOEFuelplMDdYRW84akdnODlHMmpJMDhkZ2REUHpZUV85R1J5UVpVUW1mVG9QUzNLUm1XdU11ZnB2N21XeVE?oc=5",
+      "source": "finance.biggo.com",
+      "published": "2026-11-19T08:55:00+00:00",
+      "category": "Data & Research",
+      "score": 52.9
     },
     {
       "title": "OpenAI Opens Labs to 4 Independent Evaluators After Rogue Agent Incidents - OpenTools",
@@ -611,7 +871,7 @@
       "source": "OpenTools",
       "published": "2026-11-19T08:10:58+00:00",
       "category": "AI Agents",
-      "score": 56.5
+      "score": 52.4
     },
     {
       "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
@@ -620,7 +880,16 @@
       "source": "OpenAI",
       "published": "2026-11-19T08:00:00+00:00",
       "category": "AI Agents",
-      "score": 56.4
+      "score": 52.3
+    },
+    {
+      "title": "Mayor Mamdani, Chancellor Samuels Launch Schools Technology Coalition Following AI Ban - Harlem World Magazine",
+      "description": "Mayor Mamdani, Chancellor Samuels Launch Schools Technology Coalition Following AI Ban &nbsp;&nbsp; Harlem World Magazine",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGlaUi0tQkxYQmpLeTl4MDFId2t5Z0lTZWJRWm5zc0RJdHBNRUN3U0ptMkpFVlYtVlduTVdDTG5tY2ZWZkZocGp0UEdRbGI0SS14aC13ekpIUHJ5eThaTEp1OGhzRzlTOTU4ZU9wMHlqYlJyWGlodml6em5KYWNYNHNtQ0UwYUV3MExRQVFoM0RXSUlubm9rSTRCanllOEZWOFpiTDVENnZBY0tnZHkxdTV3c3ZZV0lpMW51UHl5dw?oc=5",
+      "source": "Harlem World Magazine",
+      "published": "2026-11-18T04:01:48+00:00",
+      "category": "AI Ecosystem",
+      "score": 51.8
     },
     {
       "title": "Kling AI Launches Kling Image 4.0 with Photographic Realism and Native 8K Generation - Detroit Free Press",
@@ -629,7 +898,16 @@
       "source": "Detroit Free Press",
       "published": "2026-11-18T03:12:28+00:00",
       "category": "AI Ecosystem",
-      "score": 55.4
+      "score": 51.3
+    },
+    {
+      "title": "ResearchMonkey AI Puts More Than 40 Research Tools and Several AI Models Under One Subscription - markets.businessinsider.com",
+      "description": "ResearchMonkey AI Puts More Than 40 Research Tools and Several AI Models Under One Subscription &nbsp;&nbsp; markets.businessinsider.com",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdmllNVdYNjZZUjhTWlFLLWRvSFozZTVpZ20taWtwQUdVYW84cENzTTNuRDVsMDQxZTVoMlcyWEtuT3dYeFFGZUVrQmVlRzJBdkhMQnVnenYxOVBUR01wWkN2MnlySDdDMjU4WEo5M1VsdlJRMXFqUTlsSjRTd2xha0JlckJCa1phbnVTM29OUFdMcWZ0RzF0Um16VlRzRE11eUdoNkUwQ2Q2SmlROHBJc2doVEJOVGNqajN0b2pWZ3RIdnUyekRncUYtQ0ZRMjk1anYzSVFpOHkyVVNtcEdHcU5xZXlTejFhNHc?oc=5",
+      "source": "markets.businessinsider.com",
+      "published": "2026-11-19T05:16:25+00:00",
+      "category": "Data & Research",
+      "score": 50.6
     },
     {
       "title": "CBA fights fraud with new AI tool as blame game grips lending industry - Australian Broker News",
@@ -638,7 +916,16 @@
       "source": "Australian Broker News",
       "published": "2026-11-18T01:51:58+00:00",
       "category": "AI Ecosystem",
-      "score": 54.6
+      "score": 50.5
+    },
+    {
+      "title": "OP Pohjola And QuTwo Expand Quantum AI Research Centre Work - Quantum Zeitgeist",
+      "description": "OP Pohjola And QuTwo Expand Quantum AI Research Centre Work &nbsp;&nbsp; Quantum Zeitgeist",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93N3IyVVNrVEgydzlOWFlYazVnZnphOHY4RjVfemFMUUMtVE5VdDBUbHB0Sm1ocXlzX2tiel82TUttTkpkVTdoRnd6clpEejhLeWZuWEtYM0pHSlUzWW4xOUhqQ1FURkVONUVKQ1RTa0RwZUsz?oc=5",
+      "source": "Quantum Zeitgeist",
+      "published": "2026-11-19T03:45:43+00:00",
+      "category": "Data & Research",
+      "score": 49.7
     },
     {
       "title": "Accenture, Google Cloud plan AI labs and centres across 1,000 Indian schools and colleges - EdexLive",
@@ -647,7 +934,7 @@
       "source": "EdexLive",
       "published": "2026-11-19T03:30:00+00:00",
       "category": "AI Ecosystem",
-      "score": 53.6
+      "score": 49.5
     },
     {
       "title": "'Essentially unusable': OpenAI launches GPT-6.2 Astra and Sol to negative reception from AI power users - VentureBeat",
@@ -656,7 +943,16 @@
       "source": "VentureBeat",
       "published": "2026-11-17T22:33:40+00:00",
       "category": "AI Ecosystem",
-      "score": 52.5
+      "score": 48.4
+    },
+    {
+      "title": "CommBank launches CodeCheck to help Australian businesses find software vulnerabilities - CommBank",
+      "description": "CommBank launches CodeCheck to help Australian businesses find software vulnerabilities &nbsp;&nbsp; CommBank",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQU1Q2dUVlc1JZc1E5U3BiOVdkTVMzQzhWYmVadXBDODQ3NE9vbUItMkxzZWp0ZDR3WENZNmhKZWtyZUF0aXNadjdta19EbjlSTUE2b2REQ3lfZnAxZzFVZ1lJRjAxZUcxa1BubmhYTFdLSHVGWWpvSURJZkI0b3VhM3FqbjJlRld1ZF9QemlaWDkySmtoY0J1ZmVYTQ?oc=5",
+      "source": "CommBank",
+      "published": "2026-11-17T21:29:56+00:00",
+      "category": "Enterprise AI",
+      "score": 47.8
     },
     {
       "title": "Flow AI Video Expands Multi-Model Creation for Short-Form and Product Campaigns - The Columbus Dispatch",
@@ -665,7 +961,16 @@
       "source": "The Columbus Dispatch",
       "published": "2026-11-19T00:33:04+00:00",
       "category": "AI Ecosystem",
-      "score": 51.8
+      "score": 47.7
+    },
+    {
+      "title": "OpenAI Reports Agent Gains on Multihour Research Tasks - The Defiant",
+      "description": "OpenAI Reports Agent Gains on Multihour Research Tasks &nbsp;&nbsp; The Defiant",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNGhKTF9KNVl2Um5SMDJJajJVWFVjQmNDTno5bk11OHhVQUFtUnAwMVA1NndFREN3NEdDcy1UWkh3NVg3VVlfc1N5ZmE5bW1JcmEyYTNGMHNzWnVuMFJlTlVJcVU4Skl1T3RKVEp1Z2NaVFV4aHhXaVQyMHdDTmRrLWhleUwxV1o1ZWNyTlRuUmJSUQ?oc=5",
+      "source": "The Defiant",
+      "published": "2026-11-19T00:24:04+00:00",
+      "category": "Data & Research",
+      "score": 47.6
     },
     {
       "title": "Flova Introduces AI Animation Generator That Turns Text or Images into Animated Video - The Journal News | lohud.com",
@@ -674,7 +979,7 @@
       "source": "The Journal News | lohud.com",
       "published": "2026-11-17T21:05:01+00:00",
       "category": "AI Ecosystem",
-      "score": 51.6
+      "score": 47.5
     },
     {
       "title": "Advocacy groups sue five AI companies, seek halt to new AI model development - Canadian Lawyer",
@@ -683,16 +988,61 @@
       "source": "Canadian Lawyer",
       "published": "2026-11-17T20:52:15+00:00",
       "category": "AI Ecosystem",
-      "score": 51.5
+      "score": 47.4
     },
     {
-      "title": "PR Newswire report reveals how AI-powered search is reshaping press release strategies worldwide - BOE Report",
-      "description": "PR Newswire report reveals how AI-powered search is reshaping press release strategies worldwide &nbsp;&nbsp; BOE Report",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONEo5YVF5WXZFeFpTYzdwRnBoX0hWa1lBRV9mSnFQeXhMV2Z3cW5sYnZvdmhIN29iMDJadUYtMUNDSEtWTGRIS1lQM3hwQkZQUlNMMHN5YzBhc041ZHMtV0pDTnZWc0FTOTVrZHFMUFBNbWdUN0lIVTBVQjJhbmpFbXFtcVczdGFhRTVfUDF1UWVuc3JlZnJVUGUwbE9EYTBIZzlwNEpadDBYMkVXZ3J6RVNCX0ZhQ212bkZiNzZZcmhHOUdrQ2NYdU130gHPAUFVX3lxTE9lNjNQQnBPTU11ZFZXQ2RRUmpFa2FjOGtZRnV1WFlrbDA4d2hybWJUczlNVjVvYXQxLWUyQURYd0RkVF9qNVUyUUFJeVZsaHFpX1VlRDZOMjdKWkszSHBXbGliMUplSVVjMnBTYW1uZlNudHJrdVZINko3UGlyVWt6YUdlWjB4LVB4RFFjYnNnMzA5dXBTMk1wUndycE83WC1ld0NuVDZCOExQaU1IYk5BS2ZYVlI2V0twUWVmakE4amdUdU5UTnA1d1BZcnlpQQ?oc=5",
-      "source": "BOE Report",
-      "published": "2026-11-17T20:48:00+00:00",
+      "title": "A Field Guide to AI-Native Market Research - Morning Consult",
+      "description": "A Field Guide to AI-Native Market Research &nbsp;&nbsp; Morning Consult",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ieFFKVjdwNzdQbnZDSlZtNGxGclRhb2NOWGY3VThTenZlX3lfTl9NQmoyWG5zMFpSdHc0TzBZbFNkaHNkRmoyenAtYXBfX0ZmcmZQTS1PbkctOFRCUlBxVWVRUk92UzA5TDlxcjNlM252Vk0?oc=5",
+      "source": "Morning Consult",
+      "published": "2026-11-19T00:00:00+00:00",
       "category": "Data & Research",
-      "score": 51.4
+      "score": 47.3
+    },
+    {
+      "title": "Deploying Daybreak Red",
+      "description": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+      "link": "https://openai.com/business/learn/deploying-daybreak-red",
+      "source": "OpenAI",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "AI Safety",
+      "score": 47.3
+    },
+    {
+      "title": "See PR scans in action",
+      "description": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+      "link": "https://openai.com/business/learn/pr-scans-demo",
+      "source": "OpenAI",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "AI Agents",
+      "score": 47.3
+    },
+    {
+      "title": "Explore the Codex Security Plugin",
+      "description": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+      "link": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "source": "OpenAI",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "AI Safety",
+      "score": 47.3
+    },
+    {
+      "title": "Get started with Daybreak Blue",
+      "description": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+      "link": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "source": "OpenAI",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "AI Ecosystem",
+      "score": 47.3
+    },
+    {
+      "title": "Daydream Launches AI Fashion Agent With Shopper-Approved Checkout - Unite.AI",
+      "description": "Daydream Launches AI Fashion Agent With Shopper-Approved Checkout &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMzl0VS1mX2JuT2FPOUZDWFN1a3hwV2ZvdGVNZk9xUlRyTXFLaTA3VGgyRmdjOWpOa05NQllOZzMwVlB6TllsTnhWMy1qcXRRcVU0Zktuck84OTg0emZDNFhDdWRDY0R5bFZZT2ZJcHFEQkFUdVJSZzBYWGtNcUcybHdiWkxsSmQ1T1E1cExWOV8?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-17T20:05:04+00:00",
+      "category": "AI Agents",
+      "score": 46.9
     },
     {
       "title": "Does GTA 6 use AI? What Rockstar says about its NPCs - Kingy AI",
@@ -701,7 +1051,16 @@
       "source": "Kingy AI",
       "published": "2026-11-18T22:34:15+00:00",
       "category": "AI Ecosystem",
-      "score": 50.5
+      "score": 46.4
+    },
+    {
+      "title": "Tomorrow.io Research Shows Better Starting Data Can Improve AI Weather Forecasts - Unite.AI",
+      "description": "Tomorrow.io Research Shows Better Starting Data Can Improve AI Weather Forecasts &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeVhWbDBneXZFXy1jYlBPTVFSN1NpT3lDa2hNSFQ5TTYyeEhXbXRfcWJRRkdIajJFUlpaRW00TFI0c185WGdpZVFuZVFIdVdlcWNOX2NRTDFyTkcwMHNTblFISFJLQjRwM0FNWG9lTTJpLU1ORlJOU2kyOExwSGJMOXU3UQ?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T22:03:17+00:00",
+      "category": "Data & Research",
+      "score": 46.1
     },
     {
       "title": "Introducing Gemini 4 Neon",
@@ -710,7 +1069,34 @@
       "source": "Google DeepMind",
       "published": "2026-11-18T21:35:43+00:00",
       "category": "AI Ecosystem",
-      "score": 49.9
+      "score": 45.8
+    },
+    {
+      "title": "Palo Alto Networks Reaches $4.5B Agreement for Applied Compute - Unite.AI",
+      "description": "Palo Alto Networks Reaches $4.5B Agreement for Applied Compute &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMHJGSURCYzNFOEZXdWlnUU9nei11RTNnQU10SURwZWlLZFRqdWdpREctNndLX19xLUhReUxFc3l6TVhvTnFpakRaWnNTR3RtMlhScVlwWnlfN0Q1V3FxejI2amptc1BWaVgyY3FCcGZEb1FRUmVUaU1hYm9zRHBvbzNJOERqMF8ycHhn?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T21:28:05+00:00",
+      "category": "AI Ecosystem",
+      "score": 45.7
+    },
+    {
+      "title": "Snap lets developers build Snapchat effects with their existing AI coding assistants - Superpower Daily",
+      "description": "Snap lets developers build Snapchat effects with their existing AI coding assistants &nbsp;&nbsp; Superpower Daily",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdzM5U0taUkRmRTJrWWRxRjBLQy1uN2tLbmJNTDVvZURiR1hQUXlyQVZrTmtudE5KY3FfaGNZWXhkSFdSMzRsNDZ2dHJNU0NWakVhTi13THJzUU5oOHJhdTNPZGJzNUpleVhHZWhRTDZFaHp0Umh4UVZaOGpsTmxsUFJ2dmphZHRFOXZ6Z2cwQ1RHS1pLaWVxZnh2OGRVUFhSQkZ3NXJuQVZneVhyNXYwN3VWbzRvWXpsR1E?oc=5",
+      "source": "Superpower Daily",
+      "published": "2026-11-18T21:19:00+00:00",
+      "category": "Developer AI",
+      "score": 45.6
+    },
+    {
+      "title": "Former Shop Owners Launch Collision CoPilot AI Research Tool for Insurer Disputes - CollisionWeek",
+      "description": "Former Shop Owners Launch Collision CoPilot AI Research Tool for Insurer Disputes &nbsp;&nbsp; CollisionWeek",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ3lCNFE0TDB3R1YzamplVm1KMm5QZW9WOHRkSWRyNVN6ZUl1V0dpVWtyQzR1RTJfYkpVVkJYUXNMZUhZQzlrZ3N2Yms0WkIxRlRBWnlLbG41LUtRcVkxVTJUYm02a2RnVVBaWmVBcWdCNVJpR2liRkxOVGlfWWhieEkzVnhvU2lpWmV3bGFEczd6MlM5bkJrMGNuM1NoSUZJTFM0cWVhVkl5TEszX1lKVHNCWlpSZw?oc=5",
+      "source": "CollisionWeek",
+      "published": "2026-11-17T17:53:09+00:00",
+      "category": "Data & Research",
+      "score": 45.5
     },
     {
       "title": "FreshRobot Launches Service to Get AI-Built Business Apps Ready for Everyday Use - USA Today",
@@ -719,7 +1105,7 @@
       "source": "USA Today",
       "published": "2026-11-17T17:39:37+00:00",
       "category": "Enterprise AI",
-      "score": 49.5
+      "score": 45.4
     },
     {
       "title": "AI agents are coming to help hire, schedule and manage frontline workers as Fountain launches Orchestra - VentureBeat",
@@ -728,7 +1114,7 @@
       "source": "VentureBeat",
       "published": "2026-11-17T16:51:51+00:00",
       "category": "AI Agents",
-      "score": 49.0
+      "score": 44.9
     },
     {
       "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
@@ -737,7 +1123,7 @@
       "source": "Hugging Face",
       "published": "2026-11-18T19:54:56+00:00",
       "category": "AI Ecosystem",
-      "score": 48.9
+      "score": 44.8
     },
     {
       "title": "Rain or shine? New AI tool lets Filipinos check neighborhood weather forecasts for free - https://mytv.ph/",
@@ -746,7 +1132,16 @@
       "source": "https://mytv.ph/",
       "published": "2026-11-17T16:00:00+00:00",
       "category": "AI Ecosystem",
-      "score": 48.4
+      "score": 44.3
+    },
+    {
+      "title": "AMD completes acquisition of AI research firm World Labs - Engineering.com",
+      "description": "AMD completes acquisition of AI research firm World Labs &nbsp;&nbsp; Engineering.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSnBrZWRhUTdUM1NTTWZWQnRhQnRSVHViVE5UUzJGcjZ6NHNXYzhsbDkzUkRWZUhaUG1BUkxZalVYNEFjZzFQdHRCbGFqOVZ6QlVnZFRFc0hLZXRxQTBNaG1vYkQ4QWRpLUZDdk1yNTZnY3g4TUl5bTcwRXl2aW5GczR5MjgzLXRWSVN3VGl3?oc=5",
+      "source": "Engineering.com",
+      "published": "2026-11-18T18:56:15+00:00",
+      "category": "Data & Research",
+      "score": 44.2
     },
     {
       "title": "Why your fine-tuning job takes longer than the FLOPs say",
@@ -755,7 +1150,7 @@
       "source": "Hugging Face",
       "published": "2026-11-18T18:53:43+00:00",
       "category": "AI Ecosystem",
-      "score": 48.2
+      "score": 44.1
     },
     {
       "title": "Will Wright Returns With MyMems, a Game That Turns Your Memories Into a Playable World - BigGo Finance",
@@ -764,7 +1159,7 @@
       "source": "BigGo Finance",
       "published": "2026-11-18T18:35:00+00:00",
       "category": "Enterprise AI",
-      "score": 48.0
+      "score": 43.9
     },
     {
       "title": "MAI Image 2.7: Microsoft's #1 Image Editor, Its Price and Where to Use It - Fello AI",
@@ -773,7 +1168,25 @@
       "source": "Fello AI",
       "published": "2026-11-18T18:18:12+00:00",
       "category": "AI Ecosystem",
-      "score": 47.9
+      "score": 43.8
+    },
+    {
+      "title": "What Do People Want out of AI? New Research Finds Pastors Want a Tool; Christians Want a Friend. - Yahoo Finance Singapore",
+      "description": "What Do People Want out of AI? New Research Finds Pastors Want a Tool; Christians Want a Friend. &nbsp;&nbsp; Yahoo Finance Singapore",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeFhsWjkydXQzeWRGWHFVdnFLbGk4VHhRNW5nT1pydEdYdVFCU253MjhZc3FwaU11QTE4dWlPTnFGaGNFLVBWQTFUaktkaHJuTGlLOXRsWlNvM2xqZ2lISmxHTkJxZHBiaW90YVZJRkYwaXJpMG9oZTdfREkyY203TEhDSXE?oc=5",
+      "source": "Yahoo Finance Singapore",
+      "published": "2026-11-17T15:00:00+00:00",
+      "category": "Data & Research",
+      "score": 43.7
+    },
+    {
+      "title": "Citi Makes Customers Responsible for Third-Party AI Agent Activity - Unite.AI",
+      "description": "Citi Makes Customers Responsible for Third-Party AI Agent Activity &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNejJJS2JSSkljRXlBSnQxX2RJakh2T3lZc0trVHVHNmhTM2x5NmN3Yk5SeEk1V0N0bzFiSmFBOV9HTVpQWC0yS0RMN3JleTNkQTFwRGhDZ2toNURyUFFDRjRSa2o2QzRtaEF0eXRuZDdlcWVwN0hFY3NDWUVwVTJwYlJYcDYzeFgyaFYwMmNoY1U3dw?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T17:57:01+00:00",
+      "category": "AI Agents",
+      "score": 43.5
     },
     {
       "title": "Samsara Inc. Introduces Agent Studio and New Ai Safety, Maintenance, and Compliance Innovations - marketscreener.com",
@@ -782,7 +1195,7 @@
       "source": "marketscreener.com",
       "published": "2026-11-17T14:38:35+00:00",
       "category": "AI Agents",
-      "score": 47.6
+      "score": 43.5
     },
     {
       "title": "Citibank updates terms, holds customers liable for AI agent risks - Crypto Briefing",
@@ -791,7 +1204,43 @@
       "source": "Crypto Briefing",
       "published": "2026-11-18T17:35:29+00:00",
       "category": "AI Agents",
-      "score": 47.4
+      "score": 43.3
+    },
+    {
+      "title": "OneTrust Expands AI Governance With Model Intelligence and Continuous Oversight - Unite.AI",
+      "description": "OneTrust Expands AI Governance With Model Intelligence and Continuous Oversight &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmZ3pTQUFzZmUyUEFBOFBCelZISi1rLWlBVlJrTHhMeHJwU1ZkSXVGYjY5WUZlME9JcUVPUjdadWM3UEdRampzVExxQUNnZi1pYzkyMkF1V2hFTERHRk9fUmFEY2JESUJhTEUzckNNMEN5bGNoOFFuUjlkTGRHQQ?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T17:30:03+00:00",
+      "category": "AI Ecosystem",
+      "score": 43.3
+    },
+    {
+      "title": "OpenAI Reports Model-Driven Gains in AMD Flagship Chip Designs - Unite.AI",
+      "description": "OpenAI Reports Model-Driven Gains in AMD Flagship Chip Designs &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOHdtR3JRNy02d0c3VUx5Qm1TSThPV0xWRW5tTlpYd3JSSmI2YUxub0VwRU0ya0lkRTNtNTFkMi1zZm5UVzdfSUkxY0pRQllYcWJXbWZTR0pDa01MTUpyb2NUWG9ONE8tbHBUMkxvZW5ncFBodXNlMHYySGxsUmRTYUI4Ny1NWkx3aWxBTw?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T17:24:02+00:00",
+      "category": "AI Ecosystem",
+      "score": 43.2
+    },
+    {
+      "title": "PromoTech Marketing Helps Small Businesses Learn AI with Beginner-Friendly Certification and Weekly Updates - USA Today",
+      "description": "PromoTech Marketing Helps Small Businesses Learn AI with Beginner-Friendly Certification and Weekly Updates &nbsp;&nbsp; USA Today",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNVVhQTHdjSnFOUmFqcmN4ZmdrRjVXSUowT3BzelplN2g0NXFMZGJDQmttRHMxZmdQNEJNM2dqWWhBZjk2VS1pYnoyMEUyNVUzNTNLb25pM21pN21TY0tkVHd3SnM4V1FKUTNyLWxtLUlsT19qV0tVLXVaekcwSzQ5ZHc1RW04c0dMRVVLVnAzckJrR3h5eHZLWDZqR0YzU1djYTlGaFl6WUhZQ3FOR0J1c0pyTjZ3UGtWdkI1VFNpeThMSkY4dkJkTEFOMnJFazJoQ2JfOHVKTG5LQmctVjJVbUxNVGpaQVhLT0pRamlqSnk?oc=5",
+      "source": "USA Today",
+      "published": "2026-11-18T17:14:16+00:00",
+      "category": "Enterprise AI",
+      "score": 43.1
+    },
+    {
+      "title": "Cato Networks Unveils AgentSense to Stop Harmful AI Agent Actions Before Execution - Unite.AI",
+      "description": "Cato Networks Unveils AgentSense to Stop Harmful AI Agent Actions Before Execution &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QWFhVeFdaUHJtVlJMeERETC1DWVVwQzZybW96czJDWTVWR1V1VDJURWFNREV1V2NJYmNsYzVDWkZWU3lDR2xzQlF6UjRpemtxaURfbnVJM01ILXQyX0ItM0ozTzVWMmd0UUk1eWp2Vkt4UDFqTjJxbnFVOTU?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-17T13:30:00+00:00",
+      "category": "AI Agents",
+      "score": 42.8
     },
     {
       "title": "Perfect Corp. introduces a brand-new AI Song & Music Video Platform, YouCam Muse, and kicks off the AI Music Video Challenge with Cash Prizes - Business Wire",
@@ -800,7 +1249,7 @@
       "source": "Business Wire",
       "published": "2026-11-17T13:00:00+00:00",
       "category": "Enterprise AI",
-      "score": 46.6
+      "score": 42.4
     },
     {
       "title": "Generative AI can empower entrepreneurs, but also entrap them - GlobeNewswire",
@@ -809,7 +1258,16 @@
       "source": "GlobeNewswire",
       "published": "2026-11-17T12:55:00+00:00",
       "category": "AI Ecosystem",
-      "score": 46.5
+      "score": 42.4
+    },
+    {
+      "title": "PR Newswire report reveals how AI-powered search is reshaping press release strategies worldwide - Yahoo Finance",
+      "description": "PR Newswire report reveals how AI-powered search is reshaping press release strategies worldwide &nbsp;&nbsp; Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaUZ6S0NSY1hLcTZUZE5XNG0tVHdJdzBNdW93b2JHRUk0bS1kM0o1Q1ROWGk0b2Z0VE1hZzBBdzVQM29xaGFwMG5fM0NETHpibDN1UTJhejk2cjZRZ2I1S0hCcTlzQnRReGJPdjBDQjhrM0NGODNnZDFsbmkzaXpGT3hHdmcwc0xYTDNfOFJUWUt5ODRsU0FlTQ?oc=5",
+      "source": "Yahoo Finance",
+      "published": "2026-11-17T12:48:00+00:00",
+      "category": "Data & Research",
+      "score": 42.3
     },
     {
       "title": "SalesCloser Launches Live AI Video Sales Agent for Shopify Stores - GlobeNewswire",
@@ -818,7 +1276,7 @@
       "source": "GlobeNewswire",
       "published": "2026-11-17T12:25:00+00:00",
       "category": "AI Agents",
-      "score": 46.2
+      "score": 42.1
     },
     {
       "title": "The AI Hype Index: AI is everywhere",
@@ -827,7 +1285,34 @@
       "source": "MIT Technology Review",
       "published": "2026-11-18T14:42:44+00:00",
       "category": "AI Ecosystem",
-      "score": 45.6
+      "score": 41.5
+    },
+    {
+      "title": "【Exclusive Launch】Limited Spots Open for WAIC City Walk! Wander Through Hong Kong's AI Industry Sites - 36Kr",
+      "description": "【Exclusive Launch】Limited Spots Open for WAIC City Walk! Wander Through Hong Kong's AI Industry Sites &nbsp;&nbsp; 36Kr",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TaS1TdFNFQ2V1aENhY2lHaE04MF9fZmk5UnlfOGJaR2xDM0lPRUhGMWFZWURaaVJaLWZOdkNETlBSdExQLWRycjJzRUlRTVNRN2hv?oc=5",
+      "source": "36Kr",
+      "published": "2026-11-17T11:11:25+00:00",
+      "category": "AI Ecosystem",
+      "score": 41.3
+    },
+    {
+      "title": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign - Computerworld",
+      "description": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign &nbsp;&nbsp; Computerworld",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaXhkZEN4NmgyMnMyeWJ1TGdwT1NSam54emd6UnlhTm41X3hORmJGam5PLVg1eHM3Vm52VjdYOUY0R2tHMXZpX2RHSndNYl9SdjZiN2NoNlhMaHhRTy1uY05keVZCTUU5Z3hkWE1qWEtaUWhRN1EyMk9obVJUREtjNEEzX19HYTl0X3ZERVNPdmdJTDFnUkhvOXlhZTVWZWdUYkpieVRKOTJiWmlUWDVmd3RyYXRhY0s1aUUxaUoybDlFaGdR?oc=5",
+      "source": "Computerworld",
+      "published": "2026-11-17T11:08:12+00:00",
+      "category": "AI Ecosystem",
+      "score": 41.3
+    },
+    {
+      "title": "Airlock Digital Launches Agentic Steering to Control AI Agent Actions Before Execution - Unite.AI",
+      "description": "Airlock Digital Launches Agentic Steering to Control AI Agent Actions Before Execution &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYUUyblFuSFgyS05TQnhrY3dJdm5LYy1rQjdzY3lpVEtBeml0M2dvSmpfTUZOdVpXYlVJR0VFb1BZUDh6Yk0xSDJJNy1Eel9razZIT0s4YWtOU0xlNUprdm5kYU5WZm5PellIMS1fUEoyQ0J2bURUUDlrbmdfeTJBMkJzOGFtcEpG?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-17T11:00:00+00:00",
+      "category": "AI Agents",
+      "score": 41.2
     },
     {
       "title": "AI Is Writing the Code. Robonito Launches AI Agents to Test It. - The Detroit News",
@@ -836,7 +1321,7 @@
       "source": "The Detroit News",
       "published": "2026-11-17T10:52:21+00:00",
       "category": "AI Agents",
-      "score": 45.2
+      "score": 41.1
     },
     {
       "title": "The Download: AI learns to smell and hydropower struggles",
@@ -845,16 +1330,16 @@
       "source": "MIT Technology Review",
       "published": "2026-11-18T13:10:00+00:00",
       "category": "Data & Research",
-      "score": 44.7
+      "score": 40.6
     },
     {
-      "title": "AI Is Writing the Code. Robonito Launches AI Agents to Test It. - The Des Moines Register",
-      "description": "AI Is Writing the Code. Robonito Launches AI Agents to Test It. &nbsp;&nbsp; The Des Moines Register",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPektCRmZCX1QycS1xWGNsOWhPVFlyN1JDejlxSFdTV0RsdktLWDFmU1BYOFB3V2lpY1dHWEpjeTRLRGtrZS13b2ROekFFVnY1VHI4U0l6QjBvWnRnb1pSNFUycmlONUFzNjRZdksxOEdLZUl0R3RDdlJhM2c4aXVRNmo1amZsT0FEQThieHJJb2ZWN05vd3hBV0w0TTNPNTdTSlBFM3JaZmlNb2lyck5MRFQxc2tmU3Nhdjk0bi02NDY?oc=5",
-      "source": "The Des Moines Register",
-      "published": "2026-11-17T09:57:20+00:00",
+      "title": "Appian Expands AI Agent Controls and Unveils Ask Appian - Unite.AI",
+      "description": "Appian Expands AI Agent Controls and Unveils Ask Appian &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMnJ2aHl6VlJ2djNfdERfNjJfVjlfYUVLNC1mbnNmcU9DUUpOSUZ1NlF2S1Zham4tWmotbEhwSzhuR0MzVkN0dHltWF9zV3RGNWFRb1pMd3F3dFIyRW8zd29OemxIbFphSllzY1o1aEVfcjM3UTZvdzVwT2Fsd3VZV1RDQQ?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-17T10:02:02+00:00",
       "category": "AI Agents",
-      "score": 44.7
+      "score": 40.6
     },
     {
       "title": "Digital.ai Release 26.3 Brings AI Agents into Governed Enterprise Delivery - Business Wire",
@@ -863,7 +1348,7 @@
       "source": "Business Wire",
       "published": "2026-11-18T13:00:00+00:00",
       "category": "AI Agents",
-      "score": 44.6
+      "score": 40.4
     },
     {
       "title": "OpenAI pens AI safety agreement with four firms - IT Pro",
@@ -872,7 +1357,16 @@
       "source": "IT Pro",
       "published": "2026-11-18T13:00:00+00:00",
       "category": "AI Safety",
-      "score": 44.6
+      "score": 40.4
+    },
+    {
+      "title": "Unsiloed AI Raises $7.5M Seed to Grow Research, Engineering and Sales - Unite.AI",
+      "description": "Unsiloed AI Raises $7.5M Seed to Grow Research, Engineering and Sales &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVlNZdXNMNmxUYm91Z09EQzRMSjlqemd0di1haV9HZkZ2TzJ6VFE4MUFxdlJ0TUZRTGQwZ09WYm9ncFh2V1dGMktVdndJRE9rM0pZZGlwQ0VoUWxYSi1udmVHRkRPT3U0aWRTOXJLQUxDdGpHa1U5eFlqOFJNOG1Ec3FXYmhtck5iTWNOTDI4S2tvN2c?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-18T12:53:02+00:00",
+      "category": "Data & Research",
+      "score": 40.4
     },
     {
       "title": "IXICO Plc Develops New AI Tool Supporting Radiologists To Detect Vascular Dysfunction In Alzheimer?s Disease - www.marketscreener.com",
@@ -881,7 +1375,7 @@
       "source": "www.marketscreener.com",
       "published": "2026-11-17T09:36:28+00:00",
       "category": "AI Ecosystem",
-      "score": 44.4
+      "score": 40.3
     },
     {
       "title": "Intershop Fall 2026 Release advances AI-first B2B commerce with new agents and enhanced product discovery - TradingView",
@@ -890,7 +1384,7 @@
       "source": "TradingView",
       "published": "2026-11-17T09:05:33+00:00",
       "category": "AI Agents",
-      "score": 44.1
+      "score": 40.0
     },
     {
       "title": "Meta Muse AI Agent Faces Privacy Concerns After Reports of Unauthorized Data Access - The Defense Watch",
@@ -899,7 +1393,7 @@
       "source": "The Defense Watch",
       "published": "2026-11-18T11:33:52+00:00",
       "category": "AI Agents",
-      "score": 43.7
+      "score": 39.5
     },
     {
       "title": "As Meta bets big on Muse AI agent, early safety mishaps surface - Reuters",
@@ -908,16 +1402,16 @@
       "source": "Reuters",
       "published": "2026-11-18T11:23:13+00:00",
       "category": "AI Agents",
-      "score": 43.5
+      "score": 39.4
     },
     {
-      "title": "Meta’s Muse safety issues surface as AI agent scales consumer rollout - Traders Union",
-      "description": "Meta’s Muse safety issues surface as AI agent scales consumer rollout &nbsp;&nbsp; Traders Union",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcWhoMlFvOHJ3aHVvZjJBZUk5NTIxT09ORnRzdnVXRFRfOTdhY0xVM2RxVUFEQVR0XzdSQjBzb0hyWU50SXJRM2J5N3owNFpHeUplbHJXc1EwMkplWTUxMTdSOEp4UjdLOGQzQ2dEYzcxaVUyRDBLQ2xNM3FvSUp6RVc2dlM3T1NP?oc=5",
-      "source": "Traders Union",
-      "published": "2026-11-18T11:12:27+00:00",
-      "category": "AI Agents",
-      "score": 43.4
+      "title": "PR Newswire Report Finds AI Reshaping Press Releases - Wisevoter",
+      "description": "PR Newswire Report Finds AI Reshaping Press Releases &nbsp;&nbsp; Wisevoter",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaWY5WFhMS3ZhdDNJU3RlaHVMcktHOVU0QzdqM08zN0F6cHVicHpQaEszc2hDcEoxUS1oYkhsckZkTHNiZEFBTWRCTGV2bnRVdUhSSUdKNTRoX3pONDI1OGtDekEzUzBJTDh6Tzd5NUNyVHBITXlZM3FxSEZ1QTF0SFhHbGhfb0puQlpodA?oc=5",
+      "source": "Wisevoter",
+      "published": "2026-11-17T08:00:00+00:00",
+      "category": "AI Ecosystem",
+      "score": 39.3
     },
     {
       "title": "Lovable Pivots from Vibe-Coding Apps to Business Automation - The Tech Buzz",
@@ -926,7 +1420,7 @@
       "source": "The Tech Buzz",
       "published": "2026-11-18T11:03:47+00:00",
       "category": "Developer AI",
-      "score": 43.3
+      "score": 39.2
     },
     {
       "title": "This smell startup says its AI nose is as good as a human’s",
@@ -935,7 +1429,7 @@
       "source": "MIT Technology Review",
       "published": "2026-11-18T10:20:30+00:00",
       "category": "AI Ecosystem",
-      "score": 42.9
+      "score": 38.8
     },
     {
       "title": "The Silent Consensus",
@@ -944,7 +1438,16 @@
       "source": "OpenAI",
       "published": "2026-11-18T10:00:00+00:00",
       "category": "AI Ecosystem",
-      "score": 42.7
+      "score": 38.6
+    },
+    {
+      "title": "OpenAI’s Cofounder & Research Chief Explain Self-Improving AI｜a16z - BigGo Finance",
+      "description": "OpenAI’s Cofounder & Research Chief Explain Self-Improving AI｜a16z &nbsp;&nbsp; BigGo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9XSDU4NVZxLVVLeUt4SzAzcFFQcUZiaW9EQmRCblR1Y09xRXYwUl90ZlI3WG5oclZ5dUJPelRpTUdaWDZzc0lrbU5pY1BLT1RxclQ4V2REb3UwZVNoS1hR?oc=5",
+      "source": "BigGo Finance",
+      "published": "2026-11-18T08:02:04+00:00",
+      "category": "Data & Research",
+      "score": 37.3
     },
     {
       "title": "Gemini 4 Carbon: Benchmarks, Price and Release Date - Fello AI",
@@ -953,16 +1456,7 @@
       "source": "Fello AI",
       "published": "2026-11-18T08:00:00+00:00",
       "category": "AI Ecosystem",
-      "score": 41.4
-    },
-    {
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "description": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-      "link": "https://openai.com/business/customer-stories/sumitomo-life",
-      "source": "OpenAI",
-      "published": "2026-11-18T08:00:00+00:00",
-      "category": "Data & Research",
-      "score": 41.4
+      "score": 37.3
     },
     {
       "title": "Research acceleration: The jagged frontier",
@@ -971,7 +1465,16 @@
       "source": "OpenAI",
       "published": "2026-11-18T08:00:00+00:00",
       "category": "Data & Research",
-      "score": 41.4
+      "score": 37.3
+    },
+    {
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+      "description": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+      "link": "https://openai.com/business/customer-stories/sumitomo-life",
+      "source": "OpenAI",
+      "published": "2026-11-18T08:00:00+00:00",
+      "category": "Data & Research",
+      "score": 37.3
     },
     {
       "title": "Inside the Codex sandbox",
@@ -980,7 +1483,7 @@
       "source": "OpenAI",
       "published": "2026-11-18T08:00:00+00:00",
       "category": "AI Ecosystem",
-      "score": 41.4
+      "score": 37.3
     },
     {
       "title": "Hackers Poison GitHub Repositories to Make AI Coding Assistants Execute Malicious JavaScript - Cyber Press",
@@ -989,16 +1492,16 @@
       "source": "Cyber Press",
       "published": "2026-11-18T07:37:06+00:00",
       "category": "Developer AI",
-      "score": 41.2
+      "score": 37.1
     },
     {
-      "title": "OpenAI lawsuit puts agent safeguards and safety promises under scrutiny - iTWire",
-      "description": "OpenAI lawsuit puts agent safeguards and safety promises under scrutiny &nbsp;&nbsp; iTWire",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQX21fSDZ1b1YwTFY2Vm1nazdvc2JjNUR1RVBxQ1c4RGs0TE1Vc1JyYktXS1NYdkpzN2lFeV9YRHR0UWtGZHNXWVk3bnJleFh4dGhBY2x1d0VBMThMbkpfaUprMVZtQkxienFXem5iTDAyZjJEaXpzMlRpemM0cV9zVjA4SVZHamFkSnJwZjQ2R0RQOUp4TTVJZF9EMHg1MWZNczl3eVV6VUx5R2xqNkY0UjMxQ1lrOEE?oc=5",
-      "source": "iTWire",
-      "published": "2026-11-18T06:27:45+00:00",
-      "category": "AI Agents",
-      "score": 40.5
+      "title": "“Ask a Public Inquiry on KakaoTalk, and It Even Shows Sources”... Yangpyeong County to Launch AI Chatbot in January - 아시아경제",
+      "description": "“Ask a Public Inquiry on KakaoTalk, and It Even Shows Sources”... Yangpyeong County to Launch AI Chatbot in January &nbsp;&nbsp; 아시아경제",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1mcVNoUTZlZ2JVMkhpa05XSmw5TkpmaWQ1RjUwSktENzYxd0pWa3ROQjQxVzZuOW4wcmxMZ0hDZHBMOUNQS3R2a3ZuTWRxd083OUxDZDV3RmhoblJqQlpwVTdUcVA?oc=5",
+      "source": "아시아경제",
+      "published": "2026-11-17T03:18:14+00:00",
+      "category": "AI Ecosystem",
+      "score": 36.4
     },
     {
       "title": "Managing frontier AI risk: From training to deployment",
@@ -1007,7 +1510,16 @@
       "source": "OpenAI",
       "published": "2026-11-18T06:00:00+00:00",
       "category": "AI Safety",
-      "score": 40.2
+      "score": 36.1
+    },
+    {
+      "title": "AI Claim Governance Tools: Validix Builds a Layer That Checks Generative AI Content… - Trend Hunter",
+      "description": "AI Claim Governance Tools: Validix Builds a Layer That Checks Generative AI Content… &nbsp;&nbsp; Trend Hunter",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZQjNuWlNzZ3RybncybVpWSEUtZ2N2YjZab1pHQmJEeXJ1Um1kbmJjWWp6c1VWOHlNbnhnU2wtbEktV1VROThEWTdMT21ZX3BVeFNCcGRPMTNxZktkYUFqZnJjOG9IbjFVSXJLSg?oc=5",
+      "source": "Trend Hunter",
+      "published": "2026-11-18T04:58:46+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.4
     },
     {
       "title": "OpenAI Launches New AI Tool to Detect AI-Generated CSAM, Adds 24-Hour ChatGPT Suspensions - Windows Report",
@@ -1016,16 +1528,7 @@
       "source": "Windows Report",
       "published": "2026-11-17T01:22:00+00:00",
       "category": "AI Ecosystem",
-      "score": 39.3
-    },
-    {
-      "title": "Can China keep rogue AI in check? Meet the start-up testing the top models - South China Morning Post",
-      "description": "Can China keep rogue AI in check? Meet the start-up testing the top models &nbsp;&nbsp; South China Morning Post",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaHlVYXNNc2dsNkZibkg5cEtSNnpoTUQ2UzVpODBJcnNVbWphbTc2d2RjM3dwZmFEWkFVLVFwRkFSaUdCakkzWkhCTG9vaktfeWRSVHBWQWJuXzcwRlQ5ZVZZSHpPOVAyRE5xNmNpRTM1SXJRZ0tDR1RSRGJESDNIYm5rWF9FYXkwQURlQkJodU95S1lvZ2F6TnBlMm9LN2pZMjlXdm16c1IySEVtWXQySkVHTFotYjFnYU1kdTNzMXlsN03SAcMBQVVfeXFMTmh5VWFzTXNnbDZGYm5IOXBLUjZ6aE1ENlM1aTgwSXJzVW1qYW03NndkYzN3cGZhRFpBVS1RcEZBUmlHQmpJM1pIQkxvb2pLX3lkUlRwVkFibl83MEZUOWVWWUh6TzlQMkROcTZjaUUzNUlyUWdLQ0dUUkRiREgzSGJua1hfRWF5MEFEZUJCaHVPeUtZb2dhek5wZTJvSzdqWTI5V3ZtenNSMkhFbVl0MkpFR0xaLWIxZ2FNZHUzczF5bDdN?oc=5",
-      "source": "South China Morning Post",
-      "published": "2026-11-18T04:00:10+00:00",
-      "category": "AI Ecosystem",
-      "score": 38.9
+      "score": 35.2
     },
     {
       "title": "Apple, OpenEvidence launch conversational health AI study and app - MedTech Dive",
@@ -1034,52 +1537,16 @@
       "source": "MedTech Dive",
       "published": "2026-11-16T22:59:42+00:00",
       "category": "AI Ecosystem",
-      "score": 37.8
+      "score": 35.0
     },
     {
-      "title": "Close AI safety gaps to secure Britain’s £400 billion AI growth opportunity, MPs urge - UK Parliament",
-      "description": "Close AI safety gaps to secure Britain’s £400 billion AI growth opportunity, MPs urge &nbsp;&nbsp; UK Parliament",
-      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQUkZPcW9pYkJlcWt4VmtKaEVPdy12Qk0yZ3hPaW1zdUVTSHg3MmZJTjczQVctZjE2VHpETy1JemN3dDNscHQyRzJyb2lPV3p3VW1XZm9NZXJGQlpfMllFNlNrRGNSeDNfM0FHdERIQTZRcldLZzRjeWstU2Vna21TQlBYNFBMMWpQRGtRTG9qanBjRWpaMzRiREE1Ym1IVEVWVEtUUDJ6VWgyVnFRT1F3Z2EwMU50Q2V1WFdOajRkSUMtU19kUWhLUndJNGZlR01Fb2tocW1VSjJmbFhvakhnSzhQOFFXNlVlcDY2cjhwU1MyNmxpaWtkb2xjUDNIUlhvbXlBWUZvMEdYSm5SUjRVdU1Md0x1MUlmOFE?oc=5",
-      "source": "UK Parliament",
-      "published": "2026-11-18T00:06:16+00:00",
-      "category": "AI Safety",
-      "score": 36.5
-    },
-    {
-      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
-      "description": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
-      "link": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-      "source": "OpenAI",
-      "published": "2026-11-18T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 36.4
-    },
-    {
-      "title": "Advancing chip design with OpenAI models",
-      "description": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
-      "link": "https://openai.com/index/advancing-chip-design-with-our-models",
-      "source": "OpenAI",
-      "published": "2026-11-18T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 36.4
-    },
-    {
-      "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-      "description": "",
-      "link": "https://huggingface.co/blog/moe-expert-streaming",
-      "source": "Hugging Face",
-      "published": "2026-11-18T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 36.4
-    },
-    {
-      "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
-      "description": "",
-      "link": "https://huggingface.co/blog/rumble-2-flash",
-      "source": "Hugging Face",
-      "published": "2026-11-18T00:00:00+00:00",
-      "category": "Audio & Voice",
-      "score": 36.4
+      "title": "League Launches Healthcare AI Agents With Safety Controls - Unite.AI",
+      "description": "League Launches Healthcare AI Agents With Safety Controls &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNczFzaWNBNFFRLXVnM0pXLVJGTVFfRjlaQzhhaU5qQUJUdTY0MEFUZmVUa2FkYlVMU2UtZll0WkNRbXJJLUdDNXNtcTM0YXdyV2pqVnRiQTVXZFZLYXhnU194WWxyd0tLcktYYnlDczEydld2MUNveUtMT09PZ25QY2NMby13dw?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-16T19:08:02+00:00",
+      "category": "AI Agents",
+      "score": 35.0
     },
     {
       "title": "JA Canada launches generative AI with Qalius and Amazon Bedrock - Amazon Web Services (AWS)",
@@ -1100,12 +1567,12 @@
       "score": 35.0
     },
     {
-      "title": "McKinsey, Cognition launch AI coding partnership for enterprise software projects - Traders Union",
-      "description": "McKinsey, Cognition launch AI coding partnership for enterprise software projects &nbsp;&nbsp; Traders Union",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbHJ5MFVzOFZDQlFmRFNjcWZRX2lXWHd0SThreFRwRlY1QWdNLXdEdVhJVjZ2MlZiT3F0WEJGYXF1NlVWNW9tendqeDNjaFVpSDBhZnJkSEVuN0o1b0IwYkVhVnViSF9VWGRDYWEzTGdLdnM4TE01N3NkRERBOFNIODJKVnIxM2QzLTk3OWphWnJSUFM5U3kxNFF3?oc=5",
-      "source": "Traders Union",
-      "published": "2026-11-16T17:27:28+00:00",
-      "category": "Developer AI",
+      "title": "Google Unveils Ask AdMob and AI Agent Tools for App Monetization - Unite.AI",
+      "description": "Google Unveils Ask AdMob and AI Agent Tools for App Monetization &nbsp;&nbsp; Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHJoTk8xM0JpcUV0MlhNYmd0cDQ0YzJveGU0UXdzN3ZMQkRDcjQzYnk3TlRyRzk5dHBXUHlkTzYxc2lFTjVlc2dkdUx2Z2FhNnA3NnBFc0l3Q3haT01PWC1lTFJZZzVMc2RoOHNwWE5XcVdBcXBpOGlZM0c1eFJyMGZiZUw4NEhkX0xBdWJIcw?oc=5",
+      "source": "Unite.AI",
+      "published": "2026-11-16T17:27:02+00:00",
+      "category": "AI Agents",
       "score": 35.0
     },
     {
@@ -1127,6 +1594,15 @@
       "score": 35.0
     },
     {
+      "title": "27,382 heart scans read in seconds by new AI model, outdoes clinicians by a slight margin - Yahoo",
+      "description": "27,382 heart scans read in seconds by new AI model, outdoes clinicians by a slight margin &nbsp;&nbsp; Yahoo",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOY0lxMjZ2WHItc0JiZ2Q4T252TVVJUDlrUlM3SjFFckFTTjNFc3JtZFlQYlJfNnc0ZzYyc3lneDZLQkxyYnhzV282UGlmQVpDWWp6ek40X1YyclJZbkpHQVdoRW5vSEVXSlFRVlBCc0pac25mSlVwQm9jaXNrUGlLWVRhMW9vTlE5QVE?oc=5",
+      "source": "Yahoo",
+      "published": "2026-11-16T13:43:25+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
       "title": "Aveni releases new AI tool to help wealth management sector - Scottish Financial News",
       "description": "Aveni releases new AI tool to help wealth management sector &nbsp;&nbsp; Scottish Financial News",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQ0hySUUwSl9KVkZwMDVtVk5LY2lLWUtLRXp1QjVCUVljcVBxRHEwaGJxWWlBanIwNnl4by15ekpyTHpPNHlETzJwSzM3YkE1M2VVdDh2SFdBUXBwXzV5SEZxTWxCb3pjTWRXa3RUNkNjQXRUUk9LU0hVZ280NjNSWVdLNXZKWnVvV2RVQ05oUDBvbHktb3ZtY19xRXYtbXZ1UHZJMkZVRVhCQQ?oc=5",
@@ -1136,11 +1612,47 @@
       "score": 35.0
     },
     {
+      "title": "Alibaba’s New AI Model Is Two-Thirds Cheaper. What Does It Mean for the Stock? - Yahoo Finance",
+      "description": "Alibaba’s New AI Model Is Two-Thirds Cheaper. What Does It Mean for the Stock? &nbsp;&nbsp; Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQLVNJVHUxYnNFYXpMMFdZY3NKRmJ6R3F2NHNpVHBieHBfMFBqZnFadlhFY2QtMEFaaGthOWpIbHhzZkZESm9td3h4MUpTeTdGTUZibG1UTDZLWWRaeEZBRFl5M0J3djhZd3BGT3dLcFpNQlJjYVk0d1p0Y3g4bHFjbHZueDZPOW4zTGNkc3pXWHBsTFRwMDRn?oc=5",
+      "source": "Yahoo Finance",
+      "published": "2026-11-16T11:00:00+00:00",
+      "category": "Enterprise AI",
+      "score": 35.0
+    },
+    {
+      "title": "Exclusive: AI Models May Need To Pass Tests Before Launch Under India's Draft Rules - NDTV Profit",
+      "description": "Exclusive: AI Models May Need To Pass Tests Before Launch Under India's Draft Rules &nbsp;&nbsp; NDTV Profit",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPN1BjUF9nNUpGQldNRFFXZURnNHBNaXZ1Z1dtT2NtZ2o4VDdMcTA5aHpNTWtDVzBCaDliVUkzeGp1M0NLaExGek9vRHVILXZhM2ZocVdpaHZjVllIa3JXNGJYZmVnVk5tVHBPWjI0SFNLN0xnV2pWUDNMOWVZcnhQb25SakEwZGRDWms1ajl2d0dNclhnVzFHcTlHMDdBelhhU0NOSUhlRE1Wb3lMRGxxWDZlaXZMR1d0RS1GU25jZzE?oc=5",
+      "source": "NDTV Profit",
+      "published": "2026-11-16T09:43:09+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
       "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
       "description": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
       "link": "https://openai.com/index/lvmh-media-division-partnership",
       "source": "OpenAI",
       "published": "2026-11-16T09:00:00+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
+      "title": "Samsung-Google AI Glasses Launch December 10, Challenging Meta's 90% Dominance - BigGo Finance",
+      "description": "Samsung-Google AI Glasses Launch December 10, Challenging Meta's 90% Dominance &nbsp;&nbsp; BigGo Finance",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KN2w1Mmw2Nmh1dkhQMG8zNEtBOFBOY1ZpajAwWWYyOUVjZHNiS0taT21aWDNmdENuMUhnODFtTjBrcGR4ckE3SnFqMWlINUdJYkpBUlU3UWU2aHg2NFF6VXhpQ0pYN2dNU250aGY0dDNFLUFBQUE?oc=5",
+      "source": "BigGo Finance",
+      "published": "2026-11-16T08:35:00+00:00",
+      "category": "Enterprise AI",
+      "score": 35.0
+    },
+    {
+      "title": "Alibaba launches new AI model Qwen4-max - The Peninsula Qatar",
+      "description": "Alibaba launches new AI model Qwen4-max &nbsp;&nbsp; The Peninsula Qatar",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYzJPTjdkVl9VdHd3MDM1eE1NS213bDdWdDc4X1VpdWFrRkl2N3pkcDg5a0t1bVBPQzVmT0JLeTlaU3plUnBNMDlsZ3ZQUzEtR21ZRlgzNm95SVUyc3NndmRJZS13bG5Jbmt0OFBid045V1ltYXZlMkxQMm80LThEamlta2dROXVJR2Y2emZIbHg0UQ?oc=5",
+      "source": "The Peninsula Qatar",
+      "published": "2026-11-16T08:02:20+00:00",
       "category": "AI Ecosystem",
       "score": 35.0
     },
@@ -1181,11 +1693,38 @@
       "score": 35.0
     },
     {
+      "title": "Gemini 4 Argon Unpacked: What Google’s New AI Model Actually Does - Tech Build Africa",
+      "description": "Gemini 4 Argon Unpacked: What Google’s New AI Model Actually Does &nbsp;&nbsp; Tech Build Africa",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5qVV94bjdQTmxCVDFaTVE4WGE2eW9fRlFsTWxGTHVKcUkybTc1ZnJ4ZUlOWmZZWFo1eElLY1pjdE0tNnJweW83U1BiZ1d5MkgzRmNjTW1zLW9ndXFjOERqM2hIX0pqYVVkVFVOb2VoSi1Bay1KeEFVOUNB?oc=5",
+      "source": "Tech Build Africa",
+      "published": "2026-11-16T07:49:55+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
+      "title": "Alibaba says new AI model outperforms OpenAI, Anthropic's top offerings - NewsBytes",
+      "description": "Alibaba says new AI model outperforms OpenAI, Anthropic's top offerings &nbsp;&nbsp; NewsBytes",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTzhfcmlYakYweDlTWE9pbGx5akcxS014NDQwelZrd3JLaUd4YVFCbWJ1bC1NUFF2Ql93ZV9SNHpUTTJlRzR2RFFiUHJVZHhadlpvYzRjbWYzanRCS2NKZUNjNUQ0SUxLNkFLeFdMZGxTS2FvVTdTNm0waDgycUstNktoUGhFM2hLdWJrZFE1MHc1NjNYMXQ3TkpWUWhCTFdydmZjbk83U0FacGRlbklhMHhBWEpLaTJJbFJxVWp6Zk1VWDhaWmNEQw?oc=5",
+      "source": "NewsBytes",
+      "published": "2026-11-16T07:32:09+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
       "title": "Questions swirl around FAA's new SMART AI system, though officials say no link to ground stop - Bangor Daily News",
       "description": "Questions swirl around FAA's new SMART AI system, though officials say no link to ground stop &nbsp;&nbsp; Bangor Daily News",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQajRTb0k3bTRfcnlIRUFhZWtwSDZ5SFVkX2lZSkVHVFl3WVdUSTVyekk4MjF0Q2t3czNRNFRfNjQxc2xaNjhocUwyd3BOVTdGV0tuS0RXNHl1V3B2UnAtRFJJV0NaSV9MblZzZUVyaEJ0cjJrYWxJWUhQcjhlRXF1Tlk0Wi1qX3NZT1E?oc=5",
       "source": "Bangor Daily News",
       "published": "2026-11-16T07:27:35+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
+      "title": "Alibaba unveils new AI model; claims it beat Claude Fable 5.1, Kimi K3.1 Pro | Firm said Qwen4-Max outperforms Qwen3.8-Max | Inshorts - Inshorts",
+      "description": "Alibaba unveils new AI model; claims it beat Claude Fable 5.1, Kimi K3.1 Pro | Firm said Qwen4-Max outperforms Qwen3.8-Max | Inshorts &nbsp;&nbsp; Inshorts",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb0tMRXRRa1VRc3hkSDlpV01BMHJFaWNsU3ktZlBFcmZYbWVCM0dzQWVQMUZyeXlDT0dHZ2g0QVoxODlFWEY4VUI1eFNURnd6d2Fid1U0S2kwa1BJdDJacEdqNTVteGZGa3BIVEsyekE2ZnoxRlBiV2xhaGR6dDMwaUo5OWpqaWNrQVJXSm5rM0Myc0pYUHJrQm5jM1lDazZxWW51b3loZTRXQjJGS2J4NmxtNTl6aU9aSjZCNkdLSEzSAcABQVVfeXFMTW9LTEV0UWtVUXN4ZEg5aVdNQTByRWljbFN5LWZQRXJmWG1lQjNHc0FlUDFGcnl5Q09HR2doNEFaMTg5RVhGOFVCNXhTVEZ3endhYndVNEtpMGtQSXQyWnBHajU1bXhmRmtwSFRLMnpBNmZ6MUZQYldsYWhkenQzMGlKOTlqamlja0FSV0puazNDMnNKWFBya0JuYzNZQ2s2cVludW95aGU0V0IyRktieDZsbTU5emlPWko2QjZHS0hM?oc=5",
+      "source": "Inshorts",
+      "published": "2026-11-16T06:51:44+00:00",
       "category": "AI Ecosystem",
       "score": 35.0
     },
@@ -1199,11 +1738,29 @@
       "score": 35.0
     },
     {
+      "title": "BIM, University of Texas at Arlington to launch AI master's programme in Chennai in 2027 - EdexLive",
+      "description": "BIM, University of Texas at Arlington to launch AI master's programme in Chennai in 2027 &nbsp;&nbsp; EdexLive",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNLWZOVG9sOWlYYTBOOVRWb3ZzQjE2Nm90QVRmeXpId24zeGhiUkxETU5Qd2tVbnJEMm1sM2RpUHNpd0l4SHpPRFByNFhDLVpzVnhJRFdfdGJ3MHF0SFlOVmVZbUxYb1NpdHlBMVZ6TFI0SV80LVJ4YXRHV1hueVdSU3g1Um1LeFVaamh2SVJtdnpPc3ZqM0VPczBsQ3pUVXh5WGVpM3I1SGljNlF2SWwzWWd3RkNfQm_SAcQBQVVfeXFMUFdmWk1ieXFyWmdnWmJJOXh0TFhIR0hsdm1kZ1pna19XVEQ4aldoTjV3b2x6bnVWZzU3b1NWVDVhTDBsbnBqQWJXMFZzeENDT3I5WjVOdHlTMHR4eUlMZzItbTZ3eGg0ek9pN012dXBxb2tHTVZZS1czbWVCLU5pTEZrYmwweHIwbDlVZks0aVZrQU5nNzcwS29hVHVXcDRaVjhJRUpvbHR6dW1ZQVFrZldoQVpsWmxiY3VZUFlVN2VfRVQtcg?oc=5",
+      "source": "EdexLive",
+      "published": "2026-11-16T03:30:00+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
       "title": "New AI tool aims to flag property sale problems before conveyancing begins - Property Industry Eye",
       "description": "New AI tool aims to flag property sale problems before conveyancing begins &nbsp;&nbsp; Property Industry Eye",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdzR1ajhpY1lsY1NiVUVYaUVfcVM1S0x0d3Fta1N4blFrdGNuTVA2eXkzd29MUFdHdGt5cEI3eE55cl9ITk55TXhoWnFaaXJlU0hWNXJzOHJPUkFwOGVIXzNnVThUeWJyaE53a0hLWHdqdXVKcUNoQ3VVV0RSRXVUeEZfYVp3Q3JKUzlHbkZ6ekcwZ2xwb0lFMnZaYUQwTmVpc1ZXLUtFRWZhRGs?oc=5",
       "source": "Property Industry Eye",
       "published": "2026-11-16T02:20:30+00:00",
+      "category": "AI Ecosystem",
+      "score": 35.0
+    },
+    {
+      "title": "Alibaba Says New AI Model Cuts Task Costs by 60 Percent - CEO Insights Asia",
+      "description": "Alibaba Says New AI Model Cuts Task Costs by 60 Percent &nbsp;&nbsp; CEO Insights Asia",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNThibEk1M2dNUzAtNDhDclRFWWNEUS1UbDVQLTN0SktOSmZLbGVVemMxaThLSjNMVXB2b2FkX2RiS0UzRWR4Ukxic1ZCZnh2aDFVRlBGR01VZF94VlNoWkhCSFVkUUZvQ3NvUERtZE9zQjhjRTJaSVJiY2lWMWdScTRJaURIVjhaUjFUZ2hyU1BTcnlDZHZrWDRINTk1dnN3YkhhRHFsMlduTXhm?oc=5",
+      "source": "CEO Insights Asia",
+      "published": "2026-11-16T01:55:32+00:00",
       "category": "AI Ecosystem",
       "score": 35.0
     },
@@ -1260,564 +1817,6 @@
       "published": "2026-11-14T17:41:00+00:00",
       "category": "AI Ecosystem",
       "score": 35.0
-    },
-    {
-      "title": "FAA’s new AI tool not connected to ATC issues, Sec. Duffy says - NBC News",
-      "description": "FAA’s new AI tool not connected to ATC issues, Sec. Duffy says &nbsp;&nbsp; NBC News",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZGF6MTlBYURScVNleXFkV1lDbTEwX1pGRlc5dkc4aWJ1VTJoVEV6dkNISnRtMHdFLUdPVjdqSEpuYUZJem1IQlVlOXA4d1VaM0xSTk1wb1VGMk5EWk9LejNjU05NVDQ4eV9YYlloSi1VZkNXdGV2SzItSFU3RXI0VHlJaVozRkNkaXNqVnl0eTktUkRLZUVkQWN2RFhHZXM3eGoyY3Y5NUc?oc=5",
-      "source": "NBC News",
-      "published": "2026-11-14T17:04:25+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "The FAA’s new AI tool went live at all 22 air route centers three days before the ground stop - astig.ph",
-      "description": "The FAA’s new AI tool went live at all 22 air route centers three days before the ground stop &nbsp;&nbsp; astig.ph",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBPTGNWS3ItVlJNYUUyWndQRTdlcjZ2ZHZTbE1rQ3lObnYwR0RIWWlYb3FLamRHUXVMWV9WLXc2ZHJIS0xseGZpcFRFMlhyeTJGQWh2VXdleENnb19QM2RHcmRRRWoyamZjdmdn?oc=5",
-      "source": "astig.ph",
-      "published": "2026-11-14T16:13:37+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "Just 16% of AI-using healthcare organizations fully document model checks after launch, CHIME finds - MarketScale",
-      "description": "Just 16% of AI-using healthcare organizations fully document model checks after launch, CHIME finds &nbsp;&nbsp; MarketScale",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQclZkZFM2aUNORF9XdC1TU0ttS2VPLVJUeWU5T2hHbE02MVZ4VnZDSk9UUVIybGpCd0poWG5LTHdQX0xPQUNYYW5HOWNtVFZLc2xlaDl4c3R6MXk5eXJVS3RZS1VvcGc0TDUwSmhkY2RQLTZpeFZjb1BJcU9aU3VJUFlScHF4MlVHRndPWXlNM3dmcHZmU1dpa3FqWERRUGVTWDN6QjQ3eDc5LWd6NTRnVS0wYVdlTU5KZmJ3X1czNF84Z1NtSFlsb0ZFVGpfZTNOT0c0?oc=5",
-      "source": "MarketScale",
-      "published": "2026-11-14T11:13:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "Vercel Releases UI SDK: 50+ UI Behaviors for AI Coding Agents - MarkTechPost",
-      "description": "Vercel Releases UI SDK: 50+ UI Behaviors for AI Coding Agents &nbsp;&nbsp; MarkTechPost",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0tNXZ2WGxkci1oakJJZUVhdUN4V0RZVVdsTkhnM2Raak15TURNanJqNUdHSlVxczBTUnY1bGZNcTh5S1NMZTZkbTR4bVJGM3JqdF96UGV2RU5RY09GcDBYbTYyQzk1QU14WElmb2ZDR1dnQi1PTFVjX2Zrd0RtQdIBfkFVX3lxTE0tNXZ2WGxkci1oakJJZUVhdUN4V0RZVVdsTkhnM2Raak15TURNanJqNUdHSlVxczBTUnY1bGZNcTh5S1NMZTZkbTR4bVJGM3JqdF96UGV2RU5RY09GcDBYbTYyQzk1QU14WElmb2ZDR1dnQi1PTFVjX2Zrd0RtQQ?oc=5",
-      "source": "MarkTechPost",
-      "published": "2026-11-14T06:38:14+00:00",
-      "category": "AI Agents",
-      "score": 35.0
-    },
-    {
-      "title": "Company Behind FAA’s New AI-Powered ATC Tool Denies It Caused Nationwide Flight Chaos - Mediaite",
-      "description": "Company Behind FAA’s New AI-Powered ATC Tool Denies It Caused Nationwide Flight Chaos &nbsp;&nbsp; Mediaite",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRXpHRENpaklBNDhBRkV1VnhzMXBLZ2s4NUNnbmRlYlZ6UUVpUnBYWG45cUJlR2t2bGRBZmU2dTNrVWdDallWSjRGNDdEMVNRNmpfOHJNMmoySlpRa2pmYzRkamx5cVR3ZG5vTk9ZTUJwN1d1a2hzcFVvblg3YndLLWtWSU1YaGZmV05SY2RnMUJaRURuOGYzZjdyaVRjZHRkTjF6WWp4RUFnd0tKUEVZcjRwSThSZWNY?oc=5",
-      "source": "Mediaite",
-      "published": "2026-11-13T23:59:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "Coincidence? FAA Rolled Out New AI Tool Days Before Friday's Groundstop - The Western Journal",
-      "description": "Coincidence? FAA Rolled Out New AI Tool Days Before Friday's Groundstop &nbsp;&nbsp; The Western Journal",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQemFoQXlLTVV5NkJuVlEzVjNZNE1EWXJMT1hQUDhtYkUtb095OXhLT0VlalVFSGZpdFUtTVU4V2RqQlhxeWxGalRpMkJyTk9MdGJ1Q0tMcF9WU3RpS2pSdlZIekwwVGhfYWszbHczajdvVUJ0aVJveno1dS1lNDJLS0dEbkZZY3pybUl3bl9ocld3dEI1?oc=5",
-      "source": "The Western Journal",
-      "published": "2026-11-13T23:46:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "\"You Can't Rule Out Anything\": Mullin Refuses to Clear the FAA's New AI Tool as Ground Stop Investigation Unfolds - Latin Times",
-      "description": "\"You Can't Rule Out Anything\": Mullin Refuses to Clear the FAA's New AI Tool as Ground Stop Investigation Unfolds &nbsp;&nbsp; Latin Times",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNERTenpVbTJzcXZwTEJVWWJPdzRUX1ZKVkNNekYyckpzcXhhOWpXMmJaUnhFeThFd0NVb25sMTNWZTB2YnVjTlpqbjc1YU9SUUFGZGkxZFZrQ2NUZlRpb002cC1saTVSYWdEb0xyT0tESWVDNWZyb3RHQVFBN01DREVHSQ?oc=5",
-      "source": "Latin Times",
-      "published": "2026-11-13T23:25:13+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "Nationwide ground stop happened just as FAA rolled out new AI tool - KRON4",
-      "description": "Nationwide ground stop happened just as FAA rolled out new AI tool &nbsp;&nbsp; KRON4",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdzhjRU1sR1BTdlE0YzFtTF9SdlFuWGlIX25aUlkzUVltRFduQi0tV3FlZEtjV1lBYV9UOGplME9VOGpybUMtRU8zZkhrSDFZcEY1ejdoVDZjTEZlbFVLUDlOSjAyYUNJeTluejdSR2txUTBvUGRSenFLbjhtZkFHWTZZY0NTOVcxUnFycFVsUXBsVmlvWXVSaldWcmVxSERrODlENnpTV01CTEdM0gGyAUFVX3lxTE0xMzJUZFRPMVB2czJhYnRDbWQ2bzBIMUk2LWl4N0JfbTJ1c1NXdk9iOGxuZXduTTg5RkRRYWtWaGdUYVk2c25HUkxvSFJDRUJQSDlSN1JxZFU1SEZVYlVhb1hVdHFpTmhpcXhNU19rNzVaOFQ4Z0FSM2E5OGllc2hwR1ZFa2ZpbVZIdnIzc1lBaTUwLXVrS3hFcExxM3pzcGlqSGxfX2E2VkJTSm55dFBPaEE?oc=5",
-      "source": "KRON4",
-      "published": "2026-11-13T22:58:37+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "CNN Analyst on Ground Stop: ‘Too Much of Coincidence’ New AI Tool Just Launched - Yahoo",
-      "description": "CNN Analyst on Ground Stop: ‘Too Much of Coincidence’ New AI Tool Just Launched &nbsp;&nbsp; Yahoo",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ1lLRUJhd2FFTU9UVkFsWFBwY2gwZFZIWk55TkxiV3FXMHVSS2JXS3ZCWFhfMmZIRmZGLXJWclB2NTZmNjlrQmp3akZEdzBuWm04QjFxeXpHUXBDb21xT2luNGE5WTNlVjNiVkcwYTdqZzRlQjNoRWV4WTBwVVRFamdn?oc=5",
-      "source": "Yahoo",
-      "published": "2026-11-13T21:55:05+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "Jordan Welch Acquires Stake in AI Video Ad Platform MakeUGC - ACCESS Newswire",
-      "description": "Jordan Welch Acquires Stake in AI Video Ad Platform MakeUGC &nbsp;&nbsp; ACCESS Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSWVGQnBoNnFxZmFoNGJhc0VwVmRvbWdCdmZhV3RMdmhkYlpHOWUzM2NMdTF3QzFsajZhQ1NvTTdXaGhfdWQ2WE1aVHM5T3NQOUs1WUtJeEhQWnVKQkFTRTFIb2NoSU0xRWRHMmpCckZLaU5XbnJXRjBmblNCNEU5WWFlTU5GQnAxdGlRQ2xPQ0M4bnZ2UHJQd1Q0dEFxUUNVbHBUcDJuS2E4X01SVXRuVnNLZnZzRTBDVFdPbWxJemdyRnh2bU5LUVZ1bkxsaG9RWndPYnI2aDQ5dkZlaUE?oc=5",
-      "source": "ACCESS Newswire",
-      "published": "2026-11-13T16:55:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "ByteDance plans AI assistant launch as it steps up competition with US tech firms - Adgully",
-      "description": "ByteDance plans AI assistant launch as it steps up competition with US tech firms &nbsp;&nbsp; Adgully",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQnhxd3hHb1ZwMU9QMGxFYVlGOGpRMVNpR3p3eFRxTzh0STFzUE8zT0lldjlDZ1BkM2hONmtrSGRTaHNlbzFMcGlUZG1RZ0cta25tZlNfT2s1WTY3R3FEVjBERGxUVUY5bXZLb0dsSEI1NkI0SjljTkdRNkNCMUhERVo4QnVPTVdEVG1VdlNnYndnUm9KX3dBblNXU1NwSlAxaDJ5WE1LX0s0U3A5Vko2LUFjWUNIVlk?oc=5",
-      "source": "Adgully",
-      "published": "2026-11-13T11:59:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "SBC Medical Announces Capital and Business Alliance with NeuroBrain Dynamics to Advance Clinic Profitability Through Medical AI - STT Info",
-      "description": "SBC Medical Announces Capital and Business Alliance with NeuroBrain Dynamics to Advance Clinic Profitability Through Medical AI &nbsp;&nbsp; STT Info",
-      "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOeU9VbDZzWl9lcWJjVDZRNHdXRHpiYmRkakRlTWgwNE5KQWRTS09kOXNkc3hwbWZvTThlVENxRnBXblpIWHpOV1ltUV91dXM4ZUdOcmFmUXpISE0yWFduaEFibkpsWDdhTXRndlF5Q2lSZnZ1ckdzNktfdFBTY3hFOTdZTkFxN1dQNXVYUDh4WDZfRnBOZlNsdmZoajRWazVaSGFFWDgya3R4R1hQcXRuSHF6UkJGLW9iVzVONV9pNDA2Q2FKWmhIemVIX1ZtWGpCTFpfemVDNzNzYkxTOFRnUEdvQmVqaWdRQXdNN3BRaTlwT21iUHBzY0xwdldiRW9lbUg3enFMTkd6elNLRDUxZW14Sm5lRlU?oc=5",
-      "source": "STT Info",
-      "published": "2026-11-13T11:30:00+00:00",
-      "category": "Enterprise AI",
-      "score": 35.0
-    },
-    {
-      "title": "Equity Bank’s New AI Tool Can Track Workers Likely to Resign - Business Today Kenya",
-      "description": "Equity Bank’s New AI Tool Can Track Workers Likely to Resign &nbsp;&nbsp; Business Today Kenya",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY1pDeTE3QjJEb0pUQ3dIeXJTSUg2aXR6eEJ2b3FOMHRQZGNVc0Z1dXhuaUVJZzloMmRlRlVvczIySlZrMGxaWnVrQW9Qc29yaHA1ZHVYenRrcjRfZ3hEbG00OU1oYVlOcWdlckRucFpKWVpHcmZEdkNhblpVR0FPVg?oc=5",
-      "source": "Business Today Kenya",
-      "published": "2026-11-13T07:59:37+00:00",
-      "category": "Enterprise AI",
-      "score": 35.0
-    },
-    {
-      "title": "ByteDance to Launch AI Agent Targeting Meta's Muse Within Weeks in $70 Billion Bet - BigGo Finance",
-      "description": "ByteDance to Launch AI Agent Targeting Meta's Muse Within Weeks in $70 Billion Bet &nbsp;&nbsp; BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WdHBiY1Y2ZkJ3Z1BjODhtYW95VHMxME41QzR0YUw4amNhNlJEdjRINWI0VlNzcm9GS3ZoY3ZuQWRNTWtqMnVUdkZSWnF1dFo3TUJfN2M3bGZIYmcxVGNuX255cjhGeklxWkRMdExvVzlxRDhrX0E?oc=5",
-      "source": "BigGo Finance",
-      "published": "2026-11-13T06:25:00+00:00",
-      "category": "AI Agents",
-      "score": 35.0
-    },
-    {
-      "title": "Gaxos.ai (NASDAQ:GXAI) Gains 4% as ArtGen Introduces New AI Video Model - Kalkine",
-      "description": "Gaxos.ai (NASDAQ:GXAI) Gains 4% as ArtGen Introduces New AI Video Model &nbsp;&nbsp; Kalkine",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMGk1T3lpTFBXOFBGTmRrcVdkdGpvQ3NFY2tZcEtoMDZxcERYTTVBbThsbDdod0Q5REpxRUJGX09NUjhVWjdMMk9GZWFrSmVGcWd2b2NtY3VPSTBLYU1YMUhFeFozTnVJeHJkR082N2dNT0p3dFhaNWdaWDRZZU9xVk5wbjVwR0dRc2hJZFNxdjVVZlJwZDNGT0QzaTBXcUpGcWlWSG9qQkR0RGxfSUhYZ1NHNkwwR05vNmc?oc=5",
-      "source": "Kalkine",
-      "published": "2026-11-13T03:54:00+00:00",
-      "category": "Video AI",
-      "score": 35.0
-    },
-    {
-      "title": "New AI-based tool may predict when Duchenne kids will lose ability to walk - Muscular Dystrophy News",
-      "description": "New AI-based tool may predict when Duchenne kids will lose ability to walk &nbsp;&nbsp; Muscular Dystrophy News",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYS1FREp3OEl2bWhGNXRGMjJuaW5DWG5aZXJfc0NtNFNSOWdUWHgyYjFDMkpHOGNRanhDU1BKU3hYVXAzVXcwU3J5OEwtQU9BaFNNX0loMmpCQW1pZlhJRnlRYW9VNm1zMllXNlVfWnZ0T1FPZ2xIX09GcWlXMjdKS2J6OWpzb1BuRHNjbHhOT01DVkxJblVYc2pYcktCZGhDMVhUcXN4cDRQZw?oc=5",
-      "source": "Muscular Dystrophy News",
-      "published": "2026-11-12T23:07:58+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "Google Launches Gemini 4 Hydrogen for Faster AI Coding - WinBuzzer",
-      "description": "Google Launches Gemini 4 Hydrogen for Faster AI Coding &nbsp;&nbsp; WinBuzzer",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb29mU2YzU3pMakVHNUI4TklDNXdPOXE0WHpaeEc1TnR6LXJZWTljdFRHMWEzbGttTHFYN1hUNnZGRHRsTFJQdXNvdXVhaTE4a1A0S1J0cHlPOTNoZkYySndZNjQxa0ZPQ2pGWldKbGFVV2NnTUpYQ0plRzZWMmpZSnFGOURVR2JqeHdwTjBlck9zajNlVEI4WUJaWQ?oc=5",
-      "source": "WinBuzzer",
-      "published": "2026-11-12T22:23:10+00:00",
-      "category": "Developer AI",
-      "score": 35.0
-    },
-    {
-      "title": "New AI tool exposes plant pathogens and the genes behind them - Phys.org",
-      "description": "New AI tool exposes plant pathogens and the genes behind them &nbsp;&nbsp; Phys.org",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jYlliNEhwUlo5MUdHaDNObTdqcm5pTEhtR0hEakoycmliWjFRcGh4WWljM0pYTTZtLVBrbUdaX1FjMDNrZm5RenphWWNxS1dOY3hCR25RMmxvVjlNc09MVHlfNnVyemNheG9fZmJBWDNLazB3?oc=5",
-      "source": "Phys.org",
-      "published": "2026-11-12T22:00:11+00:00",
-      "category": "AI Ecosystem",
-      "score": 35.0
-    },
-    {
-      "title": "4 insights from Block Builderlab Launch Event 2026: AI agents join the team as working colleagues - SiliconANGLE",
-      "description": "4 insights from Block Builderlab Launch Event 2026: AI agents join the team as working colleagues &nbsp;&nbsp; SiliconANGLE",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVDdoeFZ5WjJiUW5qNnNHWFlVTDFPRlEydG5hXzQ3VkFHcEJxejh3aXoxRmlaLXZQOEhCZ1lRVmVuVXFFakpwTTBUZHBMd2YwNUtROEE0d3BGY2E2ZFJHNHR3WGw4TE1VZnZaclBPNjRoRUFiTFVKYmxJZUd3ZnVOcURCeHNua2RWWVpaYnVFNEQtNFU2X3c?oc=5",
-      "source": "SiliconANGLE",
-      "published": "2026-11-12T20:48:00+00:00",
-      "category": "AI Agents",
-      "score": 35.0
-    },
-    {
-      "title": "Personal AI agents are calling customer service. No one is sure how to handle them - www.thestack.technology",
-      "description": "Personal AI agents are calling customer service. No one is sure how to handle them &nbsp;&nbsp; www.thestack.technology",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTnVwTjZ0MEFKZ29QOGVvVmF5eXNNdzJWZWp3bzVxMHJObS0yWXk3c0RxYTRXTTFNLWhIUk1HR3hiMWN1WGFwM1htSUowUmN5ekdQRnBNZDg4eks0eW1FTE51cGI0Z1U5MW5rbktlc3ltOFNoaFlBeWZhN193R0Z6X2NvRTk1V0JYNXplMjlIYnJieE1fZXByNG0wcEVFODd0ZkQtVXNreTY3Q3poa2FTZzdqT0tNa3ZHNUVwaFNYZVBNUm1L?oc=5",
-      "source": "www.thestack.technology",
-      "published": "2026-11-17T19:06:01+00:00",
-      "category": "AI Agents",
-      "score": 33.4
-    },
-    {
-      "title": "Roundtables: Inside the Quest for Cognitive Immortality",
-      "description": "Listen to the session or watch below In an effort to reach an elusive continuity of the self, some far-thinking technologists are working on ways to keep your brain going—even beyond death. Science editor Mary Beth Griggs and senior editor for biomedicine Antonio Regalado explore possible paths to keep your mind going, including gradual brain&#8230;",
-      "link": "https://www.technologyreview.com/2026/11/17/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
-      "source": "MIT Technology Review",
-      "published": "2026-11-17T18:46:47+00:00",
-      "category": "Data & Research",
-      "score": 33.2
-    },
-    {
-      "title": "Hydropower hit record lows in the US Southwest this summer",
-      "description": "The US Southwest generated 28% less electricity via hydropower between April and August than the 10-year average, according to new data from the US Energy Information Administration. Most hydropower plants in the US rely on dams to hold back water, creating reservoirs. The water can be released through turbines, generating electricity on demand. But an&#8230;",
-      "link": "https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/",
-      "source": "MIT Technology Review",
-      "published": "2026-11-17T17:52:10+00:00",
-      "category": "AI Ecosystem",
-      "score": 32.6
-    },
-    {
-      "title": "Introducing GPT-6.2 Astra and Sol",
-      "description": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
-      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "source": "OpenAI",
-      "published": "2026-11-17T17:45:00+00:00",
-      "category": "AI Agents",
-      "score": 32.5
-    },
-    {
-      "title": "Exclusive: Cognition bets on ‘Devin Bots’ coding agents in challenge to Anthropic’s Duet and OpenAI’s Dots - Fortune",
-      "description": "Exclusive: Cognition bets on ‘Devin Bots’ coding agents in challenge to Anthropic’s Duet and OpenAI’s Dots &nbsp;&nbsp; Fortune",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPYWh3cjdteXRQZVYzMnh1MDN3SFBPOHlyWUhnMzlkSUFiTHNwSm9mN2R1ZjVseGRlXzROcVY5cnBvLVhkZG83Mm0wOUdnNjdGSTFtSFhObFpLbXhLdmlINUpQNmVQNnN6NmFCd1h5YV9vQVJSTjRwcUs2NmdhOUhmMDdZVHh5ekN2bjdOTGNPNlZLVVJNU05fa2xRbVo5RWp3WEg0U2tOT2d2TElvM25xSzdGWTJIYUhDWUZmTVRhTHZvNHpCUWVWdkppRVpqZw?oc=5",
-      "source": "Fortune",
-      "published": "2026-11-17T17:01:00+00:00",
-      "category": "AI Agents",
-      "score": 32.1
-    },
-    {
-      "title": "Research Reports",
-      "description": "To access a report, click on the corresponding image below.",
-      "link": "https://www.technologyreview.com/2026/11/17/1148203/research-reports/",
-      "source": "MIT Technology Review",
-      "published": "2026-11-17T14:39:46+00:00",
-      "category": "Data & Research",
-      "score": 30.6
-    },
-    {
-      "title": "Phison AI Data Platform Brings Sovereign, On-Premises Generative BI to Enterprises - Via TT",
-      "description": "Phison AI Data Platform Brings Sovereign, On-Premises Generative BI to Enterprises &nbsp;&nbsp; Via TT",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPa2xIVmJwVURaU3FDS09QbDh3YnE5WU56QTlfVFlwWUJnMXlOb0hsSkI2UkRUUl94VENCSzRBZFI1TUdWcjA5LXFIOFZYNm5NdkNwZGgwSVlwamZ6bUtYR3VWc2g4MUpTdDVnNy1HOEJoeE5PQzM0eV9uX1cyVW9kZElmSU9ZV0twWWhBY3hCOEJEVUVheTVlbWtHRnJEQ3NjR3FsTThrX2hoY3hzbnBObFNLdWY5d0ZlQ0tSNDdCc252R0dDbnVMSGViOUM0WFh1X0Z0ajlDc3ZSNndKeUVzak9Udi0?oc=5",
-      "source": "Via TT",
-      "published": "2026-11-17T14:00:00+00:00",
-      "category": "Enterprise AI",
-      "score": 30.2
-    },
-    {
-      "title": "Airlock Digital blocks unauthorized AI agent actions at the endpoint - Help Net Security",
-      "description": "Airlock Digital blocks unauthorized AI agent actions at the endpoint &nbsp;&nbsp; Help Net Security",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPU2ljWmNfMnB1TFNZY2I1ekM4U3NqaFljaUNmMlVGOXh6Q19adlFnemRZNnJUUzk5ZGhkeHp1V3puQlBHX1lHdDA4NVN0bHBaWE9LSkQxdmNfSEFvX0ExNXJXY0pCTUxCN0pLbjZSenNVVE1kX0g1TWZ2VENuczJSdA?oc=5",
-      "source": "Help Net Security",
-      "published": "2026-11-17T13:39:57+00:00",
-      "category": "AI Agents",
-      "score": 30.0
-    },
-    {
-      "title": "The Download: Jensen Huang’s open-source dilemma and cognitive immortality",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The open-source movement wants Jensen Huang back A petition to reinstate Jensen Huang as Nvidia CEO has attracted more than 115,000 signatures, including Elon Musk, but comb through the names, and&#8230;",
-      "link": "https://www.technologyreview.com/2026/11/17/1148679/the-download-jensen-huang-open-source-ai-cognitive-immortality/",
-      "source": "MIT Technology Review",
-      "published": "2026-11-17T13:10:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 29.7
-    },
-    {
-      "title": "Samsara Brings Agentic AI to European Operations - Business Wire",
-      "description": "Samsara Brings Agentic AI to European Operations &nbsp;&nbsp; Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdW8zeEprdERld0JQSkVLSnllUDZPMW05bWFUTWQ2c0hHSEx0NnhrV1Q5NndQZGJwQzlrNzBieExiRVBjcF8wV3BTRnI5VnhLVnJuQXdkYVl0eFdLQVR1WWJpRUxJUV94cDAwZEJRV2xwUUxCaks0aGk2OEJsTmdqLVNSa1djQXJqNmxKWmROLUZMbmhDM0FMOV82WWFWSE1kRnpWVGZIT1k?oc=5",
-      "source": "Business Wire",
-      "published": "2026-11-17T11:30:00+00:00",
-      "category": "AI Agents",
-      "score": 28.6
-    },
-    {
-      "title": "GPT-6.2 Astra release: what one coding test found - NeoTeo",
-      "description": "GPT-6.2 Astra release: what one coding test found &nbsp;&nbsp; NeoTeo",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9kRklrVnhWS2lLOU9zcGpBQjhZaURIWVJfeTVxOXJTUENITkJSRmprRGRWUTdnWWdtazJnMUF2NnplTFlEYUxjcWJWNmRzV3Q1cHU0LWVnSXp2S1JZb0ZJSTBGTUd2cE5QQ2VfdmRxTkhmaDRuSkdjTjNGSkt6QQ?oc=5",
-      "source": "NeoTeo",
-      "published": "2026-11-17T08:00:00+00:00",
-      "category": "Developer AI",
-      "score": 26.4
-    },
-    {
-      "title": "Introducing ChatGPT for Sales",
-      "description": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
-      "link": "https://openai.com/index/introducing-chatgpt-for-sales",
-      "source": "OpenAI",
-      "published": "2026-11-17T08:00:00+00:00",
-      "category": "Data & Research",
-      "score": 26.4
-    },
-    {
-      "title": "California sues OpenAI over AI model’s alleged rogue attack on company systems - 联合早报",
-      "description": "California sues OpenAI over AI model’s alleged rogue attack on company systems &nbsp;&nbsp; 联合早报",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPREVYMDVsSHM0VkU1RjhxTXNTQVN3X2pRcW1mSHJ6NnRCSnVBQURFWGNsc1JzUEg5R002UWcyN1ZaWExmMEZmWTl4N0NyU3RpekFFdnF4Qkt6Y3p6bFItS3UxTVk3MGFrVmxONG41SjJ4bXhITkZ5OXEycGdxWGkxVk1DYUpPZklHLWhKWERvMGNqdDJvdmpxZzFjYnM4TXRyWC02b0xKandpdnZVZUR3dDNiVlY?oc=5",
-      "source": "联合早报",
-      "published": "2026-11-17T07:54:35+00:00",
-      "category": "AI Ecosystem",
-      "score": 26.4
-    },
-    {
-      "title": "40% of organizations struggle to retrace AI agents’ actions - Help Net Security",
-      "description": "40% of organizations struggle to retrace AI agents’ actions &nbsp;&nbsp; Help Net Security",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbXZxMVI3QjlCYVMzQzI1MnJUb3dRVUcyaHl2Q0FCLUtvR2V1QWVuQWpBSk5feWhWWFlSNVpSOVVXVlVRRHBLUEl1REN1RkZSS19LSThYaUt3Z1VBQlZuelJ4VkdVRnR2WXJYTXJ0Q1J0MHlFa3JObGdFdloyWnYwMVR5akw2VGxPY0JRRmpIcU8tdnJVUEpzOQ?oc=5",
-      "source": "Help Net Security",
-      "published": "2026-11-17T05:30:58+00:00",
-      "category": "AI Agents",
-      "score": 24.9
-    },
-    {
-      "title": "California sues OpenAI over AI safety concerns - KRCR",
-      "description": "California sues OpenAI over AI safety concerns &nbsp;&nbsp; KRCR",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORFI1Yk5tdjk0c212bk5ZR0ZoU051cEE4U3NuOXRQak9TZGpzNk9VTmFnTk5wbGthaVdYZVQ3aWdyYVlrSHNIdC1zRXJFd0hQd3hhM0x4WGJ0SlkxcGp3MTVkTHFNblZaOHkxQ2stTzNVWktEUWpWNEpkc3lCSFRnZ0dn?oc=5",
-      "source": "KRCR",
-      "published": "2026-11-17T05:07:50+00:00",
-      "category": "AI Safety",
-      "score": 24.6
-    },
-    {
-      "title": "Strengthening NATO and allied cyber defenses with AI",
-      "description": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-      "source": "OpenAI",
-      "published": "2026-11-17T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 21.4
-    },
-    {
-      "title": "Introducing OpenAI for Chile",
-      "description": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
-      "link": "https://openai.com/index/introducing-openai-for-chile",
-      "source": "OpenAI",
-      "published": "2026-11-17T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 21.4
-    },
-    {
-      "title": "Astra for Law leads in legal intelligence",
-      "description": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
-      "link": "https://openai.com/index/astra-law-6-2",
-      "source": "OpenAI",
-      "published": "2026-11-17T00:00:00+00:00",
-      "category": "Enterprise AI",
-      "score": 21.4
-    },
-    {
-      "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website - BleepingComputer",
-      "description": "Gemini AI agents repeatedly bypassed safeguards to attack real website &nbsp;&nbsp; BleepingComputer",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRzl4dV9lNTc4VFo4cGFuS2xKWVY2cjhCNG02V05yZ1phaW11QXRDYjlCeXMxcldNQnB2NHg4aXl0bXhONXRMTnVNZENXZkdlTl9tMWJqQVlXQlB2eUJncW9IZ1hxeDkxUFh1N3VqZ241ZFBhaWhiTTVPd0ljLXBjcWpqRVZBZzVVdFpRUG1lY3dqS3JNZUFGMDFkMjRlVTAxcEVlRjZZQ1VSZDVNaHJuNlFKZUdENWZpNlE?oc=5",
-      "source": "BleepingComputer",
-      "published": "2026-11-16T22:54:00+00:00",
-      "category": "AI Agents",
-      "score": 20.7
-    },
-    {
-      "title": "EU Scientific and Ethics Advisors Call for Independent AI Model Evaluation - CASRAI",
-      "description": "EU Scientific and Ethics Advisors Call for Independent AI Model Evaluation &nbsp;&nbsp; CASRAI",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdGE5aFQ4X1NSNVkybE1CWmJzRkJZUGFMQkZDV0xuMnMyNWIxbUt3S2RfZzk2aXRSNWVfejN5d01vSFBVQnl5R091SS11RXA5V3BzVWFDRjJlTUlnWjB6MGRNV0p5dHpNUVc2MUluanFSeUZiUWR4eVhIdEpkU2V2VDJlTQ?oc=5",
-      "source": "CASRAI",
-      "published": "2026-11-16T22:04:06+00:00",
-      "category": "AI Safety",
-      "score": 20.2
-    },
-    {
-      "title": "California sues OpenAI over Hugging Face, other AI model loss of control - CNBC",
-      "description": "California sues OpenAI over Hugging Face, other AI model loss of control &nbsp;&nbsp; CNBC",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3M3plemQ2SHBfdWZaTERYakxMNURwT3d0YjVJWFU3TVl1NTQyQjhZbEpDRFJvNGc2ZFNtVjBmbk1nR0p5a2d2UHhJelJPSXg5ZlpKY1dKODUtUWF2UkNZNlhRTUxub0dWek8zRk5WenBDcW9EaDZWeHFHUdIBgAFBVV95cUxOMlcxTkRKLXpNZTlBMW01ZHFVWmoxX1c1TWY4Wk15VmhkRTlzTkVnMlI2R1NUSzNwb0xnZUtHNGVTRlRWWFRoNndaekJMbjNhTmtVeldYMEJuLXVBUTdib3JOUHhmOGJ5MDlHbllhU0F6MUdQMGxmdzR6RE1SX19OMA?oc=5",
-      "source": "CNBC",
-      "published": "2026-11-16T18:48:51+00:00",
-      "category": "AI Ecosystem",
-      "score": 18.2
-    },
-    {
-      "title": "OpenAI pilots embedded AI safety evaluators to monitor model subversion risks. - Pluang",
-      "description": "OpenAI pilots embedded AI safety evaluators to monitor model subversion risks. &nbsp;&nbsp; Pluang",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONllLMXJyUzRmeE54NGVVMndfdDlXVDB3R1FhdThKQTFEckl6QllDT1ZSRnJpZkR6LWRQRW1ZNDhfQmM4NzVFWVpRVlZMX3VLOHo3Ql8yR25mNGRRbGFvVTFaV3dwZUZsX3ZoTmw2MlU2Y3ZsZEFCLWdXa1VydThmZlpEU0M1OTR2VFdoT3pITll2clE?oc=5",
-      "source": "Pluang",
-      "published": "2026-11-16T17:17:10+00:00",
-      "category": "AI Safety",
-      "score": 18.0
-    },
-    {
-      "title": "OpenAI will embed safety researchers to investigate AI subversion - TechCrunch",
-      "description": "OpenAI will embed safety researchers to investigate AI subversion &nbsp;&nbsp; TechCrunch",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTGwxMmpFWW1rLXdmMmZSeG9faHNxQjQzNmVZN1k0ZXVMY0wxQXhtRWNrNjFhOW9kRlp4M0RvVy0tczdJQ0k1TFZXa2xRTTNfSlJVMlViRXVQajZTRDhyMldKQ3hTVmIwT0FuVlBMcnJBeDlVNGxla2Z5TWR3MlBNTVh3N201c3N1bnQ4a3l6NV82cTg3ZzNYTjlVMmVHcVl4TUE?oc=5",
-      "source": "TechCrunch",
-      "published": "2026-11-16T17:02:43+00:00",
-      "category": "Data & Research",
-      "score": 18.0
-    },
-    {
-      "title": "Broadening access to AI for scientists",
-      "description": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
-      "link": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-      "source": "OpenAI",
-      "published": "2026-11-16T17:00:00+00:00",
-      "category": "Data & Research",
-      "score": 18.0
-    },
-    {
-      "title": "MiniMax H3-Image: 16MP AI images in seconds with up to 16 references - PTTL.gr",
-      "description": "MiniMax H3-Image: 16MP AI images in seconds with up to 16 references &nbsp;&nbsp; PTTL.gr",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVcHROZlUxbXp1UHhic2MyOW1FLU1TcGI4MGsxRHFkejIwQ2locFJaZndzSkpLY01nZ2lGX3V4SGxJZUFZRE1SS2FwWWp0RmZPNXZnbkwwaGxmelk3aWFra1RCLWVkTi12RVE?oc=5",
-      "source": "PTTL.gr",
-      "published": "2026-11-16T16:59:38+00:00",
-      "category": "AI Ecosystem",
-      "score": 18.0
-    },
-    {
-      "title": "Science at the Frontier: How scientists use ChatGPT",
-      "description": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
-      "link": "https://openai.com/index/science-at-the-frontier",
-      "source": "OpenAI",
-      "published": "2026-11-16T12:00:00+00:00",
-      "category": "Data & Research",
-      "score": 18.0
-    },
-    {
-      "title": "IBM brings 6,000+ agents and assets to Imagine Enterprise - MarketScale",
-      "description": "IBM brings 6,000+ agents and assets to Imagine Enterprise &nbsp;&nbsp; MarketScale",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQR01hbHZqSjEzZmUtLTdpWjIzbmN5YlVORUoxRHE5bkZqU0c3ZTQySERHNDg1NmtPMGVBR2JSeHFpQ1R1VUROakpleXd2TmlPajVoUlUzQUhKdEVJLVF3dzlXV3RmX2tPMHRIUWJPV0VWam9SeTRFa2ZWUExLOXVaYXRDc2xHUFFKMHFMSHYtOUdlUmc1dXdoLWlVcGVueDFCYWc3NmRDd21nYW9GLW5Ra0hVSHB6dzZxMkFEUUY1QmRrYmRlcnIzNTNJMDNTUVdxQ1Y4Z0tNOTBqMDdOWGpKZElaT3BQcEk?oc=5",
-      "source": "MarketScale",
-      "published": "2026-11-16T11:39:35+00:00",
-      "category": "AI Agents",
-      "score": 18.0
-    },
-    {
-      "title": "As AI scrutiny grows, tech companies strengthen internal safety evaluations - Business Standard",
-      "description": "As AI scrutiny grows, tech companies strengthen internal safety evaluations &nbsp;&nbsp; Business Standard",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZGpmaDZkcExnVXZMTDhNMjdlQjhGdXhnQUtLRkZhWGQzbmFjSC14WlBqWklFTDNKRGVYTUVXZlJyb1l5WVZ6dUF2ZUl4U1JpcjI4alpFbWZvRUlvc3ctTWd2eE14TF9kSzIxTWIwektpeG1sRHZiS3d4WjJfUDdJMTBFa2M4S3JKaHBKZFh3VG1naEtldkxfTUd5clNDbVJWYnFQbzZfcHYzbWpXSlQxVlY0bUVNWml6MzI2cVJBdUVyLWJ4TlFyNE00b0JpMm1tMTFCc3gtRF9odm5sNFFoZkk0enU5TWpQNWs2TGx3d0Z1OFZKSGfSAfsBQVVfeXFMUG0wbFVObUphVXZwOW1IVDNmdFM5Q05YRHFneTczTDZfNDQtNzJtbEc1ZVowNlRiM2FBWFpTNXRWZnVmU2tBVHNCZ00xX1VhZG1NLXFHY1MyN28wWDA3Y3Mzc2M3c0pIWHlMS1ZiQmtweVV3VG9CQzFTZXQ5dElZc3A2cWtybTZJSGxlR2ZYSTZTZTVUeXp2c1Joenk4RDNJYjlJaURiMGs5dVREcTlVMVNLbFMtV3g5UXE1dGxVMXgtRGh4eDRjSlBySzFPTVplWk9ITFVhZ1BYUERKVVpmcE12TDFvclVrQjlZSHRIWTN3OG1MaFZfUk9PMHM?oc=5",
-      "source": "Business Standard",
-      "published": "2026-11-16T10:52:06+00:00",
-      "category": "AI Safety",
-      "score": 18.0
-    },
-    {
-      "title": "Buyer's Guide to NSFW AI Image Generators - UB - Universitat de Barcelona",
-      "description": "Buyer's Guide to NSFW AI Image Generators &nbsp;&nbsp; UB - Universitat de Barcelona",
-      "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQUXpUWnNEd3lteElxd2J2eThzSDRmT05zUGlxUUluWm9JTjRtQUF5UUJqQzRMdnlyMV9JdFlpbEg3X1hxQm8tV1loQ3NQM0JCbFVIRThuX29TM0NwbDB1U2dWX2ktbkppMWdla1RMLTNMT0VwQXJtX2ktcV93bVNvTHduU01ya2lMbkg4OGJwSkpBSXRfTkJ3dkhIblVrUmRmenJXcDNYUFBPWmFpdEpRU2o1MGc4NHc3ejlWRmpSemlkTjU2czNlZFJ0TVdHVXk4dzAyN2MzaXJZTDRaS0VlZ1k5ZUxoeUJWSDhhaTZxaURHY0cxdFlJVERKLUN1ajQ1WXRfSlVzbHFINTRQTmJCcVlNREFwZms?oc=5",
-      "source": "UB - Universitat de Barcelona",
-      "published": "2026-11-16T09:56:52+00:00",
-      "category": "Image AI",
-      "score": 18.0
-    },
-    {
-      "title": "How Revolut raises ambition without lowering the bar",
-      "description": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
-      "link": "https://openai.com/business/customer-stories/revolut",
-      "source": "OpenAI",
-      "published": "2026-11-16T09:30:00+00:00",
-      "category": "Developer AI",
-      "score": 18.0
-    },
-    {
-      "title": "Our first phase of embedded assessments",
-      "description": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
-      "link": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-      "source": "OpenAI",
-      "published": "2026-11-16T08:00:00+00:00",
-      "category": "Data & Research",
-      "score": 18.0
-    },
-    {
-      "title": "ReA-Bench Preprint Benchmarks Responsible Auditing of Autonomous AI Agents - CASRAI",
-      "description": "ReA-Bench Preprint Benchmarks Responsible Auditing of Autonomous AI Agents &nbsp;&nbsp; CASRAI",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdmhFZjZDejBWTzR2VFVsX1BTc3pXTGdUM3o3ZGhCZ0VhdjNTRm1JaU15MkU5U243ay1PVkRzTGtfdDZmSkJyMHlxSXVTNmhkUVRnOEdZZy1FZDJmMHZMMWxDbGhjVnVuMFIyQ2cxa2ZPVUNnTTl5azBQSjdDWk9sbg?oc=5",
-      "source": "CASRAI",
-      "published": "2026-11-16T07:29:37+00:00",
-      "category": "AI Agents",
-      "score": 18.0
-    },
-    {
-      "title": "More ways to move care forward with ChatGPT for Healthcare",
-      "description": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-      "link": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-      "source": "OpenAI",
-      "published": "2026-11-16T06:00:00+00:00",
-      "category": "AI Agents",
-      "score": 18.0
-    },
-    {
-      "title": "Advancing computer-use agents for healthcare teams",
-      "description": "",
-      "link": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-      "source": "OpenAI",
-      "published": "2026-11-16T06:00:00+00:00",
-      "category": "AI Agents",
-      "score": 18.0
-    },
-    {
-      "title": "At Holiday Extras, dots get to work before anyone asks",
-      "description": "Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
-      "link": "https://openai.com/business/customer-stories/holiday-extras-dots",
-      "source": "OpenAI",
-      "published": "2026-11-16T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 18.0
-    },
-    {
-      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
-      "description": "",
-      "link": "https://huggingface.co/blog/openrouter",
-      "source": "Hugging Face",
-      "published": "2026-11-16T00:00:00+00:00",
-      "category": "AI Ecosystem",
-      "score": 18.0
-    },
-    {
-      "title": "A step toward defining the Standard Model on a lattice",
-      "description": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-      "link": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "source": "OpenAI",
-      "published": "2026-11-15T22:00:01+00:00",
-      "category": "AI Ecosystem",
-      "score": 18.0
-    },
-    {
-      "title": "LG Uplus says AI coding costs cut by 90%, plans token business next year - 머니투데이",
-      "description": "LG Uplus says AI coding costs cut by 90%, plans token business next year &nbsp;&nbsp; 머니투데이",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ZSGpiWmZobVFPQ1puaThURlVzc1M1Y3FlM2FvZkZfWW1VdmVRSmFrbW5sNVNuRG9ta2xsNWk5QmNQeUFCck04T3FKUlViLV9EaGFzMHhEUG40RWcxdGVOaDg4MWdWMmE1aUhN?oc=5",
-      "source": "머니투데이",
-      "published": "2026-11-15T09:15:06+00:00",
-      "category": "Developer AI",
-      "score": 18.0
-    },
-    {
-      "title": "SpaceXAI cuts about 60 Grok Imagine staff to push coding tools and agents - Startup Fortune",
-      "description": "SpaceXAI cuts about 60 Grok Imagine staff to push coding tools and agents &nbsp;&nbsp; Startup Fortune",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZjA3LWd0RjhIRWo5R29iVW1oMmRkeHRQRmlMVkF2UlNMY0oyaUxyV2ZQYXk5eHY2NF96cWN6c1lvTEtnc2IwSkZ1M1VnM0ZfbnJ0bl96bzhlTlM3RmFqUjNnMTl6TVFuS0pfLUhDS2x1ck1UQ1Bkb2xhSUxjY0dmZG4yYU5GSXJxUnpUQVVuTXk3VkxoVU9tMWtWR3BYb1FVbVBr?oc=5",
-      "source": "Startup Fortune",
-      "published": "2026-11-14T12:47:27+00:00",
-      "category": "AI Agents",
-      "score": 18.0
-    },
-    {
-      "title": "Building strong safety evaluations - Anthropic",
-      "description": "Building strong safety evaluations &nbsp;&nbsp; Anthropic",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WQ1RoMWFsN1VyVjdlam5YZkZ4M1I1SUNjeWExWm1OcHR5MlRpRmtwU2NIT0dSQUhXSjlfb2hrZGhHYlVRUjUtUzBtRzRZUUZhcE9PNERJekdzNW1PUWhOd0s5MjBRXzVFdnFWZlJ5c0VSak5RZ3lUaA?oc=5",
-      "source": "Anthropic",
-      "published": "2026-11-14T01:40:13+00:00",
-      "category": "AI Safety",
-      "score": 18.0
-    },
-    {
-      "title": "NiCE's next-generation Cognigy bets the hard part of AI agents is running them, not building them - SiliconANGLE",
-      "description": "NiCE's next-generation Cognigy bets the hard part of AI agents is running them, not building them &nbsp;&nbsp; SiliconANGLE",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZlNBVlZFaElpMF8yenlzZzlLRE53THl4a19EZE5PX3UtUlVYeDUxQWk3OFZ6NzhLOG1HR3BTT2NMdXh5Y3FQM3lMaUUxam5ySjlIVnppaWRBWVl6MW9XY253Z1J2a0dWbks2VV9EaXltTTBGX3B0c3BXUmtyemNUcWhlYjRUNUpMRGNPa0FPQ3Q5TTN2a01XU3ZKY0RSLTZoWHRRQ2J0TURqMHc2TjYxQTg0eVlqbDFveUtkRFFMODV6RVFGSE9DZVdWV2M?oc=5",
-      "source": "SiliconANGLE",
-      "published": "2026-11-14T00:49:00+00:00",
-      "category": "AI Agents",
-      "score": 18.0
-    },
-    {
-      "title": "Anthropic Says AI Safety Scores Can Mislead, Urges Overhaul of Model Testing - BigGo Finance",
-      "description": "Anthropic Says AI Safety Scores Can Mislead, Urges Overhaul of Model Testing &nbsp;&nbsp; BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Ta0RZMXVwNTBhTXpHM3lCZzRDSTZoODJ0aHJCMU83eHFPTHh3SjZSM1l6YlVyU0lwYXdndUNLNHlUMEhxMkhwZ0VwcXl6WjRMM2N5YTgzcUdsWUlwWVRpRzl3SzRBZl9faHl2Qm9QYU5BTmtqOWc?oc=5",
-      "source": "BigGo Finance",
-      "published": "2026-11-13T20:55:00+00:00",
-      "category": "Enterprise AI",
-      "score": 18.0
-    },
-    {
-      "title": "Anthropic Warns AI Safety Scores Can Be Misleading: ‘Good Ones Are Hard To Build’ - Benzinga",
-      "description": "Anthropic Warns AI Safety Scores Can Be Misleading: ‘Good Ones Are Hard To Build’ &nbsp;&nbsp; Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMjB1b2VuMTMya1dGbkhBQmpSb1JfWkVxYnBpdUx2S0FhMm5uZkRHWGlXQ0Y2NUxiRDY2ekZGOE5RSXdibWlaQlBsQWZORmY5a3pNV3hYTmI2N0NpMjZlTjVITzMwalFlbTNZVXN4b2t2R202NjhsOHNleWYtUENkZG9GVzRXZ3ZJZzlCaTRudkZ6U3ZzS3JvRlhlSzBkZWtDSG9IV2h6TFFuM1BHMEZtWWMxQnFMRTVLNWY1T2xNTzZLZzk3VGljSnlHOGZ6ejFodDlvbFpILW5xUQ?oc=5",
-      "source": "Benzinga",
-      "published": "2026-11-13T20:31:12+00:00",
-      "category": "AI Safety",
-      "score": 18.0
     }
   ],
   "trends": [
@@ -1838,6 +1837,10 @@
       "score": 100
     },
     {
+      "name": "Enterprise AI",
+      "score": 100
+    },
+    {
       "name": "Developer AI",
       "score": 100
     },
@@ -1846,15 +1849,19 @@
       "score": 100
     },
     {
-      "name": "Agents",
-      "score": 100
-    },
-    {
       "name": "Launches",
       "score": 100
     },
     {
-      "name": "Openai",
+      "name": "Agents",
+      "score": 100
+    },
+    {
+      "name": "Unite.Ai",
+      "score": 100
+    },
+    {
+      "name": "Research",
       "score": 100
     },
     {
@@ -1862,11 +1869,23 @@
       "score": 100
     },
     {
+      "name": "Model",
+      "score": 100
+    },
+    {
+      "name": "Openai",
+      "score": 100
+    },
+    {
       "name": "Coding",
       "score": 100
     },
     {
-      "name": "News",
+      "name": "Google",
+      "score": 100
+    },
+    {
+      "name": "Tool",
       "score": 92
     },
     {
@@ -1874,32 +1893,12 @@
       "score": 84
     },
     {
-      "name": "Enterprise AI",
-      "score": 83
-    },
-    {
-      "name": "Tool",
-      "score": 76
-    },
-    {
-      "name": "Release",
-      "score": 76
-    },
-    {
       "name": "Your",
-      "score": 68
+      "score": 76
     },
     {
-      "name": "Models",
-      "score": 68
-    },
-    {
-      "name": "Anthropic",
-      "score": 68
-    },
-    {
-      "name": "Business",
-      "score": 60
+      "name": "Releases",
+      "score": 76
     }
   ],
   "methodology": "Public RSS/news signals and vendor feeds, deduplication, category classification and recency/momentum scoring. Updated automatically by GitHub Actions."
