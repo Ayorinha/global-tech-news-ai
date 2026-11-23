@@ -35,7 +35,13 @@
     "title_es": "OpenAI’s chief scientist has thoughts on how to limit AI development",
     "description_es": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
     "title_en": "OpenAI’s chief scientist has thoughts on how to limit AI development",
-    "description_en": "To establish a speed limit on AI development, you need to agree on how to measure speed."
+    "description_en": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/openai/openai-python",
+        "repository": "openai/openai-python"
+      }
+    }
   },
   {
     "title_original": "Anthropic e SpaceX impuseram regras incomuns e irritaram bancos no IPO",
@@ -358,7 +364,13 @@
     "title_es": "Combatting adversarial distillation",
     "description_es": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
     "title_en": "Combatting adversarial distillation",
-    "description_en": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction."
+    "description_en": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/openai/openai-python",
+        "repository": "openai/openai-python"
+      }
+    }
   },
   {
     "title_original": "Can AI help scientists identify promising drug candidates?",
@@ -586,7 +598,13 @@
     "title_es": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
     "description_es": "",
     "title_en": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-    "description_en": ""
+    "description_en": "",
+    "technical_refs": {
+      "github": {
+        "url": "https://github.com/huggingface/transformers",
+        "repository": "huggingface/transformers"
+      }
+    }
   },
   {
     "title_original": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
